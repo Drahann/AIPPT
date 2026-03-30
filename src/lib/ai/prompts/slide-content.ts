@@ -86,9 +86,9 @@ const layoutSchemas: Record<string, string> = {
   "title": "与当前页面语义一致的标题",
   "subtitle": "可选副标题",
   "cards": [
-    { "icon": "bar-chart", "heading": "卡片标题1", "body": "卡片说明1" },
-    { "icon": "globe", "heading": "卡片标题2", "body": "卡片说明2" },
-    { "icon": "code", "heading": "卡片标题3", "body": "卡片说明3" }
+    { "icon": "bar-chart", "heading": "卡片标题1", "body": "- 深度技术细节或数据\\n- 衍生影响或价值论述" },
+    { "icon": "globe", "heading": "卡片标题2", "body": "- 跨区域业务部署指标\\n- 相关环境或合规说明" },
+    { "icon": "code", "heading": "卡片标题3", "body": "- 代码级抽象或架构方案\\n- 提升的性能或吞吐量等参数" }
   ]
 }`,
   'cards-4': `{
@@ -96,10 +96,10 @@ const layoutSchemas: Record<string, string> = {
   "title": "与当前页面语义一致的标题",
   "subtitle": "可选副标题",
   "cards": [
-    { "icon": "terminal", "heading": "卡片标题1", "body": "卡片说明1" },
-    { "icon": "settings", "heading": "卡片标题2", "body": "卡片说明2" },
-    { "icon": "search", "heading": "卡片标题3", "body": "卡片说明3" },
-    { "icon": "money", "heading": "卡片标题4", "body": "卡片说明4" }
+    { "icon": "terminal", "heading": "卡片标题1", "body": "- 详情要点1\\n- 补充说明文本段落" },
+    { "icon": "settings", "heading": "卡片标题2", "body": "- 详情要点2\\n- 补充说明文本段落" },
+    { "icon": "search", "heading": "卡片标题3", "body": "- 详情要点3\\n- 补充说明文本段落" },
+    { "icon": "money", "heading": "卡片标题4", "body": "- 详情要点4\\n- 补充说明文本段落" }
   ]
 }`,
 comparison: `{
@@ -247,10 +247,10 @@ comparison: `{
   "title": "与当前页面语义一致的标题",
   "subtitle": "可选副标题",
   "cards": [
-    { "heading": "亮点1", "body": "亮点说明1", "image": { "url": "https://images.unsplash.com/photo-1618477462146-050d2767eac4?auto=format&fit=crop&q=80&w=1400" } },
-    { "heading": "亮点2", "body": "亮点说明2", "image": { "url": "https://images.unsplash.com/photo-1557682250-33bd709cbe85?auto=format&fit=crop&q=80&w=1400" } },
-    { "heading": "亮点3", "body": "亮点说明3", "image": { "url": "https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?auto=format&fit=crop&q=80&w=1400" } },
-    { "heading": "亮点4", "body": "亮点说明4", "image": { "url": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1400" } }
+    { "heading": "亮点1", "body": "- 核心技术或产品特性解析\\n- 该特性带来的直接用户价值或业务收益指标", "image": { "url": "https://images.unsplash.com/photo-1618477462146-050d2767eac4?auto=format&fit=crop&q=80&w=1400" } },
+    { "heading": "亮点2", "body": "- 核心技术或产品特性解析\\n- 该特性带来的直接用户价值或业务收益指标", "image": { "url": "https://images.unsplash.com/photo-1557682250-33bd709cbe85?auto=format&fit=crop&q=80&w=1400" } },
+    { "heading": "亮点3", "body": "- 核心技术或产品特性解析\\n- 该特性带来的直接用户价值或业务收益指标", "image": { "url": "https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?auto=format&fit=crop&q=80&w=1400" } },
+    { "heading": "亮点4", "body": "- 核心技术或产品特性解析\\n- 该特性带来的直接用户价值或业务收益指标", "image": { "url": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1400" } }
   ]
 }`,
   'features-list-image': `{
@@ -267,9 +267,9 @@ comparison: `{
   "layout": "staggered-cards",
   "title": "与当前页面语义一致的标题",
   "cards": [
-    { "icon": "target", "heading": "要点1", "body": "要点说明1" },
-    { "icon": "users", "heading": "要点2", "body": "要点说明2" },
-    { "icon": "settings", "heading": "要点3", "body": "要点说明3" }
+    { "icon": "target", "heading": "要点1", "body": "- 具体业务指标或落地成果\\n- 进一步的深度解析" },
+    { "icon": "users", "heading": "要点2", "body": "- 具体业务指标或落地成果\\n- 进一步的深度解析" },
+    { "icon": "settings", "heading": "要点3", "body": "- 具体业务指标或落地成果\\n- 进一步的深度解析" }
   ]
 }`,
   'team-members': `{
@@ -330,14 +330,15 @@ export function buildSlideContentPrompt(
 2. 不允许复用模板示例标题或模板样例正文。
 3. 若参考内容不足，可以补充概括，但不得写成泛化空话。
 4. text-bullets 优先 6-8 条。
-5. 卡片类文字规则：
-   - cards-2: 必须提供详尽的信息量（建议 2-4 个分点陈述），总字数控制在 80-150 字以内，避免溢出。
-   - team-members: 严格保持 1 句极其精炼的角色描述（20字以内），严禁使用分点。
-   - 其他卡片 (cards-3/4/split等): 严格保持 1-2 句极其精炼的短句，严禁使用分点或换行。
-6. image-text / text-image: 文字内容严禁超过 60 字，若原文较长，必须进行精简总结后再填入。
+5. 卡片类/图文类文字规模要求（核心高价值输出）：
+   - 核心原则：**必须提供详尽、深度且有价值的信息量**。严格提取并保留原文中的核心技术细节、业务数据和强逻辑观点，绝对禁止生成高阶、空洞、笼统的废话套话。
+   - 分点卡片 (cards-2 / cards-split / feature-* 等): 强烈建议使用 2-4 个分点进行陈述（格式形如 "- 要点\\n- 要点"），每个卡片字数控制在 80-180 字之间。
+   - 密集卡片 (cards-3 / cards-4 等): 允许适当使用换行或小碎点，内容必须饱满，字数控制在 60-120 字（严禁写成极其干瘪的一句话）。
+   - team-members: 保持 1 句精炼的角色描述（20-30字以内），严禁使用分点。
+6. 重型半页图文 (image-text / text-image): 必须提供巨大的信息深度（总字数 150-350 字以内），必须使用多个段落或 "- " 等分点形式详尽阐述，千万不要为了精简而损失原文精华。
 7. comparison 布局中关键差异项前缀 "!"。
 8. image-center 必须提供 body，不要留空。
-9. metrics / metrics-rings: "value" 字段严禁出现纯中文字词（如“无损化”“数字化”），必须包含数字（阿拉伯数字）、百分号（%）、加号（+）、倍数（x）或【数字+单位】（如 "100+家", "50人", "1.2亿"）。若参考文本无具体数字，请根据语境合理估算或使用范围。
+9. metrics / metrics-rings: "value" 字段严禁出现纯中文字词，必须包含数字（如 "100+", "1.2亿"）或特殊符号。
 
 [字段形状规则]
 1. cards-* / list-featured / quote / quote-no-avatar / staggered-cards / features-list-image / team-members 必须输出 "cards"。
