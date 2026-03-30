@@ -1,0 +1,33 @@
+[
+  {
+    "idx": 0,
+    "tag": "DIV",
+    "className": "slide-card-inner corporate-insights-frame",
+    "originalBg": "rgb(255, 255, 255)",
+    "bgParts": [
+      "255",
+      "255",
+      "255"
+    ],
+    "hex": "FFFFFF",
+    "alpha": 1,
+    "finalAlpha": 1,
+    "transparency": 0
+  },
+  {
+    "idx": 2,
+    "tag": "DIV",
+    "className": "corporate-insights-panel corporate-insights-panel--matrix",
+    "originalBg": "color(srgb 1 1 1 / 0.92)",
+    "bgParts": [
+      "1",
+      "1",
+      "1",
+      "0.92"
+    ],
+    "hex": "010101",
+    "alpha": 0.92,
+    "finalAlpha": 0.92,
+    "transparency": 8
+  }
+]

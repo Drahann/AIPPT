@@ -1,0 +1,13 @@
+<svg preserveAspectRatio="none" width="100%" height="100%" overflow="visible" style="display: block;" viewBox="0 0 339.961 366.498" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Frame 1618872664" clip-path="url(#clip0_0_4)">
+<circle id="Ellipse 3" cx="286.17" cy="286.887" r="284.018" fill="var(--fill-0, #00CEFF)"/>
+<rect id="Rectangle 40" x="68.1357" y="300.835" width="336.187" height="336.187" rx="28.0156" transform="rotate(-45 68.1357 300.835)" fill="var(--fill-0, #2569ED)"/>
+<path id="Polygon 2" d="M128.17 170.754C119.259 137.498 149.69 107.066 182.946 115.977L453.715 188.529C486.971 197.44 498.109 239.01 473.764 263.355L275.548 461.572C251.203 485.917 209.633 474.778 200.722 441.522L128.17 170.754Z" fill="var(--fill-0, #EDB842)"/>
+<path id="Polygon 3" d="M260.131 264.613L294.713 259.374L318.293 287.337L307.291 320.538L272.709 325.777L249.129 297.814L260.131 264.613Z" fill="var(--fill-0, #000614)"/>
+</g>
+<defs>
+<clipPath id="clip0_0_4">
+<rect width="339.961" height="366.498" fill="white"/>
+</clipPath>
+</defs>
+</svg>

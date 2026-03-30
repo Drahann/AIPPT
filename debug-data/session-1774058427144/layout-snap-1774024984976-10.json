@@ -1,0 +1,62 @@
+{
+  "timestamp": "2026-03-20T16:43:04.297Z",
+  "slideIndex": 10,
+  "slideWidth": 960,
+  "slideHeight": 540,
+  "elements": [
+    {
+      "tag": "SPAN",
+      "className": "slide-number",
+      "text": "11",
+      "x": "95.42%",
+      "y": "2.96%",
+      "width": "2.92%",
+      "height": "5.19%",
+      "fontSize": "12px",
+      "fontWeight": "600",
+      "fontFamily": "\"Instrument Sans\", system-ui, -apple-system, sans-serif",
+      "lineHeight": "18px",
+      "color": "rgb(108, 108, 108)",
+      "padding": "0px",
+      "margin": "0px",
+      "borderRadius": "8px",
+      "backgroundColor": "rgb(246, 248, 251)"
+    },
+    {
+      "tag": "P",
+      "className": "metrics-rings-overline",
+      "text": "创新成果",
+      "x": "4.45%",
+      "y": "8.15%",
+      "width": "40.00%",
+      "height": "5.51%",
+      "fontSize": "19.84px",
+      "fontWeight": "700",
+      "fontFamily": "\"Radio Canada Big\", \"Noto Sans SC\", sans-serif",
+      "lineHeight": "29.76px",
+      "color": "rgb(38, 131, 235)",
+      "padding": "0px",
+      "margin": "0px 0px 4.48px",
+      "borderRadius": "0px",
+      "backgroundColor": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "H2",
+      "className": "metrics-rings-title",
+      "text": "系统性创新成果",
+      "x": "4.45%",
+      "y": "14.49%",
+      "width": "40.00%",
+      "height": "6.29%",
+      "fontSize": "33.28px",
+      "fontWeight": "600",
+      "fontFamily": "\"Radio Canada Big\", \"Noto Sans SC\", sans-serif",
+      "lineHeight": "33.9456px",
+      "color": "rgb(0, 0, 0)",
+      "padding": "0px",
+      "margin": "0px",
+      "borderRadius": "0px",
+      "backgroundColor": "rgba(0, 0, 0, 0)"
+    }
+  ]
+}

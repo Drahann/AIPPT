@@ -1,0 +1,3144 @@
+{
+  "id": "dbg-1774170396822-g8o3ct",
+  "createdAt": "2026-03-22T09:13:20.930Z",
+  "presentationId": "7199961e-cd3f-4bd6-837e-8c2e353fba98",
+  "themeId": "group-01",
+  "slideCount": 24,
+  "entries": [
+    {
+      "ts": "2026-03-22T09:06:37.274Z",
+      "stage": "pipeline.parse.result",
+      "payload": {
+        "chunkCount": 19,
+        "imageCount": 51,
+        "headings": [
+          {
+            "order": 0,
+            "heading": "引言",
+            "level": 1
+          },
+          {
+            "order": 1,
+            "heading": "背景分析",
+            "level": 2
+          },
+          {
+            "order": 2,
+            "heading": "现状调研",
+            "level": 2
+          },
+          {
+            "order": 3,
+            "heading": "作品简介",
+            "level": 2
+          },
+          {
+            "order": 4,
+            "heading": "应用场景 - 本作品全面采用国产化的关键组件，以减少对进口部件的依赖，并有效填补了国内软硬件全国产化轮式导航机器人...",
+            "level": 2
+          },
+          {
+            "order": 5,
+            "heading": "应用场景 - 小型物流运输：该机器人可以结合AGV技术，通过搭配机械臂和运输装置，实现小型仓库内的物流运输。这种机...",
+            "level": 2
+          },
+          {
+            "order": 6,
+            "heading": "应用场景 - 工厂巡检：该机器人可结合人工智能系统，搭配各种检测和传感器装置，能够自动识别并检测工厂内的各种设备和...",
+            "level": 2
+          },
+          {
+            "order": 7,
+            "heading": "应用场景 - 家用清洁：该机器人可以整合到鸿蒙物联网生态圈中，与其他智能家居设备实现互联互通。它们能够自动规划清洁...",
+            "level": 2
+          },
+          {
+            "order": 8,
+            "heading": "项目价值",
+            "level": 2
+          },
+          {
+            "order": 9,
+            "heading": "技术优势",
+            "level": 2
+          },
+          {
+            "order": 10,
+            "heading": "作品创新",
+            "level": 2
+          },
+          {
+            "order": 11,
+            "heading": "功能总览",
+            "level": 2
+          },
+          {
+            "order": 12,
+            "heading": "模块功能介绍",
+            "level": 2
+          },
+          {
+            "order": 13,
+            "heading": "功能设计思路与方案",
+            "level": 2
+          },
+          {
+            "order": 14,
+            "heading": "硬件底层设计实现",
+            "level": 2
+          },
+          {
+            "order": 15,
+            "heading": "中间层设计实现",
+            "level": 2
+          },
+          {
+            "order": 16,
+            "heading": "应用层设计实现",
+            "level": 2
+          },
+          {
+            "order": 17,
+            "heading": "模块参数",
+            "level": 2
+          },
+          {
+            "order": 18,
+            "heading": "成本计算",
+            "level": 2
+          }
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:06:37.274Z",
+      "stage": "pipeline.imagePool",
+      "payload": {
+        "count": 54,
+        "sources": [
+          {
+            "index": 0,
+            "source": "user",
+            "description": "OPENHARMONY鸿蒙生态说明"
+          },
+          {
+            "index": 1,
+            "source": "user",
+            "description": "机器车实拍图"
+          },
+          {
+            "index": 2,
+            "source": "user",
+            "description": "项目架构流程图"
+          },
+          {
+            "index": 3,
+            "source": "docx",
+            "description": ">（4）自主导航：客户端可以在地图中选定目标位置，之后机器人便可以进行导航，自主生成路径并达到目标点。在硬件层面，采用国产商用轮式底盘、支持Openharmony的主控板和国产电机雷达等，自行设计发的机器人舵机控制板，并借助第三方实现制板。机器人整体构成如下图所示：图1.1 机器人整体构成示意图作品实现思路本作品的实现框架如下：<img alt=\"演示文稿1_01(1)\" src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgA"
+          },
+          {
+            "index": 4,
+            "source": "docx",
+            "description": "gOQJJxjApA8kRSI5AcgSSI5AcgeQIJEcgOQKxEfh/tXpsg817nUMAAAAASUVORK5CYII=\" />图1.1 机器人整体构成示意图作品实现思路本作品的实现框架如下：图1.2 作品整体实现框架（1）开发板选取思路由于本项目需要构建一个移动式机器人，因此开发板必须具有良好的抗颠簸性，同时需要较为优良的性能，从而在多进程间通信时降低其丢包率。<a id=\"_T"
+          },
+          {
+            "index": 5,
+            "source": "docx",
+            "description": "（2）舵机控制板设计方案首先尝试在鸿蒙操作系统内核下对舵机需要的驱动CH340进行交叉编译，未能成功，因此采用自主设计兼容鸿蒙操作系统的电机驱动板卡，支持双轮驱动和多轮驱动。电机驱动板卡的设计图如下图所示：图1.3 电机驱动板卡设计图（3）激光雷达及电机本项目所使用的雷达为RPLIDAR A2M8型号雷达，是由SLAMTEC公司开发的新一代低成本二维激光雷达。RPLIDAR 在不断的输出中包含了激光采样点数据"
+          },
+          {
+            "index": 6,
+            "source": "docx",
+            "description": "3）激光雷达及电机本项目所使用的雷达为RPLIDAR A2M8型号雷达，是由SLAMTEC公司开发的新一代低成本二维激光雷达。RPLIDAR 在不断的输出中包含了激光采样点数据帧。外部系统可以通过发送控制指令使 RPLIDAR 停止输出数据，或者对输出数据的格式进行配置。图1.4 RPLIDAR A2M8型号雷达 （4）鸿蒙操作系统 由于项目旨在搭建一个软硬件全部国产化的实践场景，因此团队在开发过程中首要考虑国产操作系统。而在国产众多操作系统中，华为自主研发的"
+          },
+          {
+            "index": 7,
+            "source": "docx",
+            "description": "统下可实现应用一次开发多端部署，同时具备面向多终端开发的IDE，提供针对面向应用开发和面向设备开发的两个不同的IDE，为之后项目的多端部署创造良好契机。（5） 驱动及导航控制算法设计导航模块的整体设计如下：图1.5 导航模块整体设计图导航模块通过接收主控模块发布的控制指令和雷达模块的激光数据，执行slam建图、定位和路径规划，并向主控模块发布机器人的实时位姿和导航方案。在机器人的整体系统中，导航模块负责系统算法的slam建图、定位及导航部分。导航"
+          },
+          {
+            "index": 8,
+            "source": "docx",
+            "description": "/li>LCM库小巧且易于集成，适合嵌入式系统和资源受限的应用场景。而轮式导航机器人通常需要在供给资源紧张的环境中运行，LCM的轻量级特性使其能够高效地运行在这些环境中，并且易于部署和维护。项目中单机器人的多进程间通信设计包括以下通信内容，如图3.7所示：图1.6 单机器人的LCM进程通信（7）客户端APP设计客户端app的业务流程大致如下：机器人启动后，初始状态下等待用户APP侧连接。当用户发起连接请求后，机器人开始发送心跳信息"
+          },
+          {
+            "index": 9,
+            "source": "docx",
+            "description": ">当用户APP侧接收完成后，开始解析地图信息并进行绘制。在使用过程中，用户可选终点坐标点，确认后发送地图终点到机器人侧，机器人开始前进。当前进完成后给用户APP侧发送ACK应答，用户APP弹窗提示完成。APP与机器人交互如下业务流时序图如图3.9所示：图1.7 APP与机器人交互业务流时序图应用场景本作品全面采用国产化的关键组件，以减少对进口部件的依赖，并有效填补了国内软硬件全国产化轮式导航机器人在生产实习行业的空白，具有极大的市场潜力和应用价值：<"
+          },
+          {
+            "index": 10,
+            "source": "docx",
+            "description": ">体积精巧：紫派的尺寸设计与卡片相当，其便携性与易用性均优于传统的大禹板卡。在携带与安装过程中，紫派展现了极高的便捷性，无需复杂的操作。同时，紫派仅需通过一根Type-C线缆即可满足供电和应用程序安装的需求，这一设计极大简化了操作流程，充分满足了用户在实际应用中的各项需求。图2.1 紫派（左）与大禹（右）体积对比性能强大：紫派配备Rockchip RK3566四核Cortex-A55处理器，主频最高1.8GHz，LPDDR4/LPDDR4X 默认2GB ，最大可以支持8GB内存。芯片内嵌的新一代GPU(Mali-G52 2EE)支"
+          },
+          {
+            "index": 11,
+            "source": "docx",
+            "description": "保证语言的国产可控。功能设计功能总览系统按功能划分，由五部分模块构成：驱动模块、通信模块、导航和路径规划模块、主控模块、人机交互及外部控制系统模块。图3.1 功能总览模块功能介绍（1）电机驱动本项目采用的是后机驱动的三轮底盘驱动，通过两个驱动轮控制机器人前进与转向，通过前机的万向轮来维持机器人平衡，使得机器人具"
+          },
+          {
+            "index": 12,
+            "source": "docx",
+            "description": "蒙控制器发送开始扫描地图、结束扫描地图指令，实现机器人行进、左转与右转，并在行走过程中对周围环境进行激光扫描；2)行走完成后，将机器人板卡扫描后的地图图片渲染在APP上，供用户查看；3)为用户提供终点选取功能，并开始路径规划后在地图上呈现机器人实时位置坐标。图3.2 外部控制示例截图系统实现（本章节主要描述实现功能所采用物联网技术架构，包括感知层技术、传输层技术、控制层技术、软件开发技术、云应用、数据挖掘和可视化应用等。）<a id=\"_Toc129"
+          },
+          {
+            "index": 13,
+            "source": "docx",
+            "description": "率；得益于SLAMTEC 的高性能激光三角测距系统，RPLIDR A2在各种室内环境以及无日光直接照射的室外环境下均表现出色；每一台RPLIDAR A2均在出厂前经过了严格检测，确保所发射激光功率符合FDA Class I 人眼安全等级。图4.1 RPLIDAR A2工作原理示意图<img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAwoAAAHwCAIAAACJzA8gAAAACXBIWXMAABJ0AAASdAHeZh94AAAgAElEQV"
+          },
+          {
+            "index": 14,
+            "source": "docx",
+            "description": "AYhmEY5gBYLjAMwzAMcwAsFxiGYRiGOQCWCwzDMAzDHADLBYZhGIZhDoDlAsMwDMMwB8BygWEYhmGYA/h/QWpdTpuM6iEAAAAASUVORK5CYII=\" />图4.1 RPLIDAR A2工作原理示意图图4.2 RPLIDAR扫描所得环境示意图<img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAuIAAACsCAIAAACxTF5dAAAACXBIWXMAABJ0AAASdAHeZh94AAAgAElEQVR"
+          },
+          {
+            "index": 15,
+            "source": "docx",
+            "description": "OERQgghhNATMDxCCCGEEHoChkcIIYQQQk/A8AghhBBC6AkYHiGEEEIIPQHDI4QQQgihJ2B4hBBCCCH0hP8PVbSrBIZW9k0AAAAASUVORK5CYII=\" />图4.2 RPLIDAR扫描所得环境示意图图4.3 RPLIDAR采样点数据帧 RPLIDAR 在不断的输出中包含了上述信息的采样点数据帧。外部系统可以通过发送控制指令使 RPLIDAR 停止输出数据，或者对输出数据的格式进行配置。其数据格式如下：表4-1 雷达采样点的数据格式Tabl"
+          },
+          {
+            "index": 16,
+            "source": "docx",
+            "description": ">测量同步位u8-表示当前采集点是否属于一次新的扫描在RPLIDAR雷达的官方SDK文档中，提供了使用雷达的函数库：图4.4 RPLIDAR雷达官方SDK文件结构在用户程序与一个RPLIDAR设备进行通讯操作前，首先需要通过SDK创建一个对应的RPlidarDriver 实例。该操作可以通过如下静态函数接口实现： RPlidarDriver *RPlidarDriver:"
+          },
+          {
+            "index": 17,
+            "source": "docx",
+            "description": "口，本项目能成功获取到雷达数据，并通过LCM通信发送至主控模块。电机及驱动板本项目所使用的电机为兆威厂商出品的Φ32mm 行星减速箱（MD版）电机，型号为ZWMD032032-33-01，其相关参数如下表所示：图4.5 兆威厂商Φ32mm行星减速箱（MD版）电机表4-4 电机参数Table4-4 Motor parameter描述<td col"
+          },
+          {
+            "index": 18,
+            "source": "docx",
+            "description": ">电机的驱动需要对舵机进行编译。我们团队首先尝试在鸿蒙操作系统内核下对舵机需要的驱动CH340进行交叉编译，但这种方式未能成功，因此采用自主设计兼容鸿蒙操作系统的电机驱动板卡，支持双轮驱动和多轮驱动。根据电机驱动板卡设计图，借助第三方实现制板，舵机板实物如下图所示：图4.6 舵机板实物由于电机驱动的额定电压为12V，所以还要搭配一个12V的变压器：/<img alt=\"1721717981875\" src=\"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEA3ADcAAD/2wBDA"
+          },
+          {
+            "index": 19,
+            "source": "docx",
+            "description": "ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAf/2Q==\" />图4.6 舵机板实物由于电机驱动的额定电压为12V，所以还要搭配一个12V的变压器：/图4.7 12V变压器紫派主板Purple Pi是一款功能强大的开发板，由深圳触觉智能科技有限公司推出。以下是对本项目所选取的Purple Pi OH Pro的详细介绍：Purple Pi OH作为"
+          },
+          {
+            "index": 20,
+            "source": "docx",
+            "description": "120Hz；1路4-Lane MIPI-DSI，支持到1080P@60Hz；1路4-Lane MIPI-CSI摄像头；支持多屏同显；1路自适应千兆以太网口；WIFI蓝牙无线通信；板载 1路USB3.0，3路USB2.0；极小型PCBA尺寸，85mm*56mm产品外观如下：图4.8 Purple Pi OH正面接口图<img alt=\"IMG_256\" src=\"data:image/unknown;base64,iVBORw0KGgoAAAANSUhEUgAAAycAAAIfCAYAAABq96PdAAAAAXNSR0IArs4c6QAA"
+          },
+          {
+            "index": 21,
+            "source": "docx",
+            "description": "Ng0XmsTaFQKBSK+lEiVaFQKBQKhUKhUCgUpw1KpCoUCoVCoVAoFAqF4rRBiVSFQqFQKBQKhUKhUJw2/D8A/foggtW0yQAAAABJRU5ErkJggg==\" />图4.8 Purple Pi OH正面接口图图4.9 Purple Pi OH背面接口图由于该板卡的额定电压为5V，还需要为其准备5V的变压器：<img alt=\"1721718033671\" src=\"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEA3ADcAA"
+          },
+          {
+            "index": 22,
+            "source": "docx",
+            "description": "r8CmpxoaGhoaGhoaGhoaPwroMmJhoaGhoaGhoaGhsa/Av8HzaRLcVGLIucAAAAASUVORK5CYII=\" />图4.9 Purple Pi OH背面接口图由于该板卡的额定电压为5V，还需要为其准备5V的变压器：图4.10 5V变压器其他机器人硬件在硬件层面，采用商用轮式底盘，设计机器人舵机控制板并借助第三方实现制板。机器人硬件系统主要由五部分构成：电机及驱动板卡、主控制器、激光雷达、外部控制器、路由器。<"
+          },
+          {
+            "index": 23,
+            "source": "docx",
+            "description": ">图4.10 5V变压器其他机器人硬件在硬件层面，采用商用轮式底盘，设计机器人舵机控制板并借助第三方实现制板。机器人硬件系统主要由五部分构成：电机及驱动板卡、主控制器、激光雷达、外部控制器、路由器。图4.11 移动机器人整机状态与整机拆分中间层设计实现OpenHarmony操作系统<strong"
+          },
+          {
+            "index": 24,
+            "source": "docx",
+            "description": ">中间层设计实现OpenHarmony操作系统（1）系统拉取通过repo和ssh下载源码，以获取标准系统源码：图4.12 OpenHarmony源码下载<img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABB0AAAKSCAYAAACeM6OpAAAACXBIWXMAACHVAAAh1QEEnLSdAAAgAElEQVR"
+          },
+          {
+            "index": 25,
+            "source": "docx",
+            "description": "anl05uXyxh/v6TZRlZNltLdWvEl4zX7Kh6p1X/z5nt8Y1PcmM7t44AfXUhafDsVfb/g0SIvuLzAHWxWBv8DCnR5dYA2rdkAAAAASUVORK5CYII=\" />图4.12 OpenHarmony源码下载图4.13 源码拉取成功（2）系统及内核编译 在源码根目录下执行脚本，安装编译器及二进制工具：<img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABC"
+          },
+          {
+            "index": 26,
+            "source": "docx",
+            "description": "ioqKioqKioqKioqKio6Fro/wGe1FcGPz2MkAAAAABJRU5ErkJggg==\" />图4.13 源码拉取成功（2）系统及内核编译 在源码根目录下执行脚本，安装编译器及二进制工具：图4.14 prebuilds执行结果 最后对源码进行编译与调试：<img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABEgAAAKtCAYAAAA0IlvdAAAACXBIWXMAACHVAAAh"
+          },
+          {
+            "index": 27,
+            "source": "docx",
+            "description": "IYQQQsii0DhBCCGEEEIIIYSQRaFxghBCCCGEEEIIIYtC4wQhhBBCCCGEEEIW5f8BC20RGObJbrkAAAAASUVORK5CYII=\" />图4.14 prebuilds执行结果 最后对源码进行编译与调试：图4.15 源码编译成功编译所生成的文件都归档在out目录下，结果镜像输出在out / rk3568 / packages / phone / images目录下。编译源码完成，之后可进行镜像烧录。（3）开发板移植</stron"
+          },
+          {
+            "index": 28,
+            "source": "docx",
+            "description": "t / rk3568 / packages / phone / images目录下。编译源码完成，之后可进行镜像烧录。（3）开发板移植使用配套烧录工具将编译源码输出的结果镜像烧录到开发板卡中，烧录结果如下所示：图4.16 开发板烧录成功自编驱动实现主控模块主要分为udp转lcm服务器、轮控两大部分。（1） UDP转LCM</strong"
+          },
+          {
+            "index": 29,
+            "source": "docx",
+            "description": "4.16 开发板烧录成功自编驱动实现主控模块主要分为udp转lcm服务器、轮控两大部分。（1） UDP转LCM图4.17 UDP转LCM的工作流程图按照上述约定，udp转lcm在开始后，先拉起udp接收线程并阻塞，等待来自手机端的连接请求；接收到连接请求后，即记录手机端的ip和端口号信息，此后向这个地址发送数据。连接建立后，拉起udp发送线程，每隔1s按照约定的格式向手机端发送心"
+          },
+          {
+            "index": 30,
+            "source": "docx",
+            "description": ">·该方案误差大致在10%，对于目前机器人的使用场景是足够的。导航控制算法实现导航控制算法部分主要实现slam建图与定位以及路径导航规划，其整体实现方案如下：图4.18 导航控制算法实现方案图（1）信道订阅导航模块共订阅了三个信道：“HOKUYO_LIDAR”信道该信道回调LaserDataHandle函数，用于处理激光数据，将其转换为固定格式的数据集，以便后续转"
+          },
+          {
+            "index": 31,
+            "source": "docx",
+            "description": "e函数判断m_waypoint中点的个数大于0，便开始获取激光数据地图，并进行路径规划。基于LCM的多进程间通信首先对LCM所依赖的Glib2库进行交叉编译：图4.19 交叉编译生成ARMv8架构的libglib-2.0.so动态库文件之后对LCM进行交叉编译，编译输出符合鸿蒙架构的动态库版本：<img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA4cA"
+          },
+          {
+            "index": 32,
+            "source": "docx",
+            "description": "IYQQQogyQhI8IYQQQgghhCgj/h+E4W/ur1xf9gAAAABJRU5ErkJggg==\" />图4.19 交叉编译生成ARMv8架构的libglib-2.0.so动态库文件之后对LCM进行交叉编译，编译输出符合鸿蒙架构的动态库版本：图4.20 执行cmake命令结果<img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA5YAAAJeCAYAAADPx5oTAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAA"
+          },
+          {
+            "index": 33,
+            "source": "docx",
+            "description": "zgQ+MDdIxyAwUZUtzPvgB/hkZsVvbY7ebyJtADMlSRmI2J+b7xOtaLWWnazN9PsPfaYGwvb8cUbDP3vzyqX+vw/wC6hPZJyVvEAAAAASUVORK5CYII=\" />图4.20 执行cmake命令结果图4.21 执行make和sudo make install命令生成的动态库文件如下所示：<img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA4kAAAJeCAYAAAAZYkB2AAAACXBI"
+          },
+          {
+            "index": 34,
+            "source": "docx",
+            "description": "gO/cJ5+U7k9+4E7Mienmz9kDhk9f+nftj448camfvU+f3vjSmw//D+LZBODIx/p7AAAAAElFTkSuQmCC\" />图4.21 执行make和sudo make install命令生成的动态库文件如下所示：图4.22 输出liblcm.so动态库文件对LCM交叉编译成功后，根据机器人多进程间通信内容制定通信标准：<img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgcAAAJ0CAYAAACGF4B"
+          },
+          {
+            "index": 35,
+            "source": "docx",
+            "description": "ROn5acKSe4W7WPal5S/tA63FsrG2+aorZnuwSEh///wKlA4WfefbQAAAABJRU5ErkJggg==\" />图4.22 输出liblcm.so动态库文件对LCM交叉编译成功后，根据机器人多进程间通信内容制定通信标准：图4.23 多进程间通信标准的制定首先在Ubuntu下测试单机多进程间通信：<img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABMQAAAKACAYAAABzKaS6AAAAAXNSR0IArs4"
+          },
+          {
+            "index": 36,
+            "source": "docx",
+            "description": "sLggIiIiKwwOCAiIiIrDA6IiIjICoMDIiIissLggIiIiKwwOCAiIiILwP8PhRmnR7IfQzkAAAAASUVORK5CYII=\" />图4.23 多进程间通信标准的制定首先在Ubuntu下测试单机多进程间通信：图4.24 Ubuntu下对LCM进行单机多进程间通信的测试可以看到，接收程序成功接收到了发布程序发布的数据流并将其输出到终端。 之后将交叉编译后的LCM动态库文件迁移到开发板卡上，在开发板卡上测试：<img src=\"data:image/png;base"
+          },
+          {
+            "index": 37,
+            "source": "docx",
+            "description": "5gz6tTgAAAABJRU5ErkJggg==\" />图4.24 Ubuntu下对LCM进行单机多进程间通信的测试可以看到，接收程序成功接收到了发布程序发布的数据流并将其输出到终端。 之后将交叉编译后的LCM动态库文件迁移到开发板卡上，在开发板卡上测试：图4.25 鸿蒙板卡下使用LCM进行多节点通信示意图<img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABPUAAAKoCAYAAAAf58rnAAAACXBIWXMAACHVAAAh1QEEnLSdAAAgAE"
+          },
+          {
+            "index": 38,
+            "source": "docx",
+            "description": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA+L83YsR/Adjg1JQ9/k2wAAAAAElFTkSuQmCC\" />图4.25 鸿蒙板卡下使用LCM进行多节点通信示意图图4.26 开发板卡上测试多进程间LCM通信效果可以看到，在连接局域网的开发板上进行多进程间LCM通信测试，收发文件的丢包率为0%，接收率为100%，可靠性高，且传输速度快。应用层设计实现<a"
+          },
+          {
+            "index": 39,
+            "source": "docx",
+            "description": "单体机器人控制实现主控模块实现主要分为udp转lcm服务器实现、轮控实现两大部分。4.3.1.1 UDP转LCM实现UDP转LCM主要部分实现代码如图所示：图4.27 UDP转LCM主要实现代码<img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABE0AAAOKCAYAAABu1a6jAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAA"
+          },
+          {
+            "index": 40,
+            "source": "docx",
+            "description": "yTOuufoso6woAAAAAAOCO3Df5kpmrPPMa0KDMeimJGzPtcTcXP1IK9pe2vCJ1+pPkdZ0U54wBAAAAAIDqTvr/RzFHL5uWUTgAAAAASUVORK5CYII=\" />图4.27 UDP转LCM主要实现代码图4.28 UDP转LCM主要实现代码4.3.1.2 轮控模块轮控主要实现的部分代码如图所示：<img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA8"
+          },
+          {
+            "index": 41,
+            "source": "docx",
+            "description": "iIiHQwaUJEREREREREVA/w/wH5/aMODVxwmgAAAABJRU5ErkJggg==\" />图4.28 UDP转LCM主要实现代码4.3.1.2 轮控模块轮控主要实现的部分代码如图所示：图4.29 轮控主要实现代码<img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABCgAAAMoCAYAAAANz9FyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcE"
+          },
+          {
+            "index": 42,
+            "source": "docx",
+            "description": "AAw89qHncX3maPbEdHRys3N9dUAAAAAAANGSPJAAAAAAAYhGQAAAAAAAxCMgAAAAAABiEZAAAAAACDkAwAAAAAgEP6/53VQe/ssktOAAAAAElFTkSuQmCC\" />图4.29 轮控主要实现代码图4.30 轮控主要实现代码<img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA4MAAAF3CAYAAAAfC57cAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcE"
+          },
+          {
+            "index": 43,
+            "source": "docx",
+            "description": "REREStzukDFMYNHdChg53iHaO2ICIiIiIiIqK2jj0oiIiIiIiIiKjVMUBBRERERERERK2OAQoiIiIiIiIiamXA/wNEHXer/vX5fQAAAABJRU5ErkJggg==\" />图4.30 轮控主要实现代码图4.31 轮控主要实现代码 在客户端的控制下，整个主控模块的运行情况如下：<img src=\"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEA3ADcAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDA"
+          },
+          {
+            "index": 44,
+            "source": "docx",
+            "description": "gghhJA+iIJBQgghhBBCCOmDKBgkhBBCCCGEkD6IgkFCCCGEEEII6XOA/x/Q5H0CnajK0QAAAABJRU5ErkJggg==\" />图4.31 轮控主要实现代码 在客户端的控制下，整个主控模块的运行情况如下：图4.32 主控模块运行情况鸿蒙系统下控制APP实现4.3.2.1 官方库API使用详述使用到的官方提供API包如下所述:表4-6 项"
+          },
+          {
+            "index": 45,
+            "source": "docx",
+            "description": "eforeStart）』状态，这一状态是bindUdp函数尝试绑定和监听本机UDP，同时调用getIp函数将上一次连接成功的IP地址显示在输入框中。如果用户点击“连接”后连接成功，将调用setIpLocalStorage存储此IP到持久存储中，以便下一次使用。如下图所示：图4.33 『等待连接（beforeStart）』状态操作图示（3）控制运动阶段接下来进入『控制运动（pending）』状态。用户操控移动时，会使用makeSendData、udpSend函数发送操作信息到机器人端；如果用户改变速度，会调用ch"
+          },
+          {
+            "index": 46,
+            "source": "docx",
+            "description": "eiveData函数将接收的UDP数据ArrayBuffer格式转换为string字符串格式并解析、拆分为语义化数据，同时调用changeRobotState函数同步更新APP与机器人所在状态。心跳会在后续状态中都一直存在，下文不再赘述。操作示意如下图所示：<img src=\"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEA3ADcAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zN"
+          },
+          {
+            "index": 47,
+            "source": "docx",
+            "description": "AFFFFAGV4juWtNBu5E+8U2j8eK4m0jEdsijsKKK9LAfC2aQJ6KKK9AoKKKKBMSiiigQlIaKKZLCiiimIKSiigQUhoooJCiiigTEooopksKSiigTCg0UUxCUhNFFBIUUUUCYUlFFMQUUUUEn//Z\" /><img src=\"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEA3ADcAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zN"
+          },
+          {
+            "index": 48,
+            "source": "docx",
+            "description": "5QVZ8L6Diiis0lcRi687Jo0+0kE7VJHoWANY0IAiXHpRRXXR6jRJRRRWo2FFFFMkSiiimIKQ9aKKACiiigkKSiimAUUUUITEooopiCg0UUCEooooBiUUUUyQooooAKSiigkKKKKYBRRRQSf//Z\" />图4.34 建图环节示意图（4）建图与选点阶段用户点击“结束建图”后进入『建图与选点（afterEnd）』状态。APP会调用udpSend函数发送“结束建图”数据包到机器人，等待机器人回复“建"
+          },
+          {
+            "index": 49,
+            "source": "docx",
+            "description": "图坐标系转换成机器人所属真实世界坐标以便在地图上展示机器人当前坐标。在下一个状态也存在机器人实时坐标更新，不再赘述。同样的，若用户选择终点，调用canvas2map函数进行坐标换算，将APP的地图坐标系转换成机器人所属真实世界坐标。建图与选点结果如下图所示：<img src=\"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEA3ADcAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zN"
+          },
+          {
+            "index": 50,
+            "source": "docx",
+            "description": "RQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAH/9k=\" /><img src=\"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEA3ADcAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PT"
+          },
+          {
+            "index": 51,
+            "source": "docx",
+            "description": "ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/9k=\" /><img src=\"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEA3ADcAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zN"
+          },
+          {
+            "index": 52,
+            "source": "docx",
+            "description": "FFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFBoooAq3FnFOpDqDWefD1oX3eUufpW1RTTa2FZMp21hFbgBFAq2BilopDCiiigD//Z\" />图4.35 『建图与选点（afterEnd）』状态示意图4.3.2.3 地图操作详述地图中存在3套坐标系，分别是真实世界坐标系、屏幕地图坐标系、终点选点坐标系。其中真实世界坐标系是由获取主控模块上的建图部分生成"
+          },
+          {
+            "index": 53,
+            "source": "docx",
+            "description": "/p>在『导航中（startRoute）』状态中，若接收到坐标信息计算得到机器人到达终点附近，则弹出“导航结束”的toast提示，并回到上一个状态——『建图与选点（afterEnd）』状态。用户可按上述流程重新选点。关于各组件或封装组件与状态关系的流程图如下图所示：图4.36 各组件或封装组件与状态关系流程图4.3.2.5 UI设计细节为了增强用户体验，我们采取了许多UI设计的相关方法来增强观感视觉效果和使用体验。以下我们将一一列举：·阴影（shadow）我"
+          }
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:06:37.274Z",
+      "stage": "pipeline.outline.start",
+      "payload": {
+        "chunkCount": 19,
+        "imagePoolCount": 54,
+        "language": "zh-CN",
+        "requestedSlideCount": null
+      }
+    },
+    {
+      "ts": "2026-03-22T09:06:37.276Z",
+      "stage": "outline.start",
+      "payload": {
+        "chunkCount": 19,
+        "language": "zh-CN",
+        "targetSlides": null,
+        "imagePoolCount": 54
+      }
+    },
+    {
+      "ts": "2026-03-22T09:06:37.276Z",
+      "stage": "outline.llm.start",
+      "payload": {
+        "model": "deepseek-reasoner",
+        "clientIndex": 0,
+        "systemLength": 16080,
+        "userLength": 37524
+      }
+    },
+    {
+      "ts": "2026-03-22T09:12:54.755Z",
+      "stage": "outline.llm.success",
+      "payload": {
+        "model": "deepseek-reasoner",
+        "clientIndex": 0,
+        "durationMs": 377479,
+        "attemptDurationMs": 377479,
+        "attempts": 1,
+        "contentLength": 6787
+      }
+    },
+    {
+      "ts": "2026-03-22T09:12:54.755Z",
+      "stage": "outline.raw",
+      "payload": "{\n  \"title\": \"基于OpenHarmony和HarmonyOS的轮式导航机器人\",\n  \"slideCount\": 25,\n  \"slides\": [\n    {\n      \"index\": 1,\n      \"title\": \"基于OpenHarmony和HarmonyOS的轮式导航机器人\",\n      \"subtitle\": \"全国大学生物联网设计竞赛 | 哈尔滨工业大学 | 计算之光团队\",\n      \"layout\": \"cover\",\n      \"contentHint\": \"项目封面，展示标题和团队信息\",\n      \"imageHint\": \"鸿蒙生态背景图\",\n      \"imageIndex\": 0,\n      \"refChunks\": [0],\n      \"speakerNotes\": \"欢迎介绍项目，强调全国产化和创新性\"\n    },\n    {\n      \"index\": 2,\n      \"title\": \"设计需求分析\",\n      \"subtitle\": \"\",\n      \"layout\": \"section-header\",\n      \"contentHint\": \"引入项目背景和现状分析部分\",\n      \"imageHint\": \"\",\n      \"imageIndex\": null,\n      \"refChunks\": [1,2],\n      \"speakerNotes\": \"过渡到设计需求分析\"\n    },\n    {\n      \"index\": 3,\n      \"title\": \"背景与现状分析\",\n      \"subtitle\": \"\",\n      \"layout\": \"comparison\",\n      \"contentHint\": \"对比机器人产业发展背景和国内外研究现状\",\n      \"imageHint\": \"\",\n      \"imageIndex\": null,\n      \"refChunks\": [1,2],\n      \"speakerNotes\": \"分析产业挑战和技术依赖，引出项目必要性\"\n    },\n    {\n      \"index\": 4,\n      \"title\": \"作品简介\",\n      \"subtitle\": \"\",\n      \"layout\": \"section-header\",\n      \"contentHint\": \"引入作品介绍部分\",\n      \"imageHint\": \"\",\n      \"imageIndex\": null,\n      \"refChunks\": [3],\n      \"speakerNotes\": \"介绍作品整体概念\"\n    },\n    {\n      \"index\": 5,\n      \"title\": \"作品功能与实现\",\n      \"subtitle\": \"\",\n      \"layout\": \"image-text\",\n      \"contentHint\": \"展示机器人实物和核心功能描述\",\n      \"imageHint\": \"机器车实拍图\",\n      \"imageIndex\": 1,\n      \"refChunks\": [3],\n      \"speakerNotes\": \"详细说明机器人的四大功能和硬件选型\"\n    },\n    {\n      \"index\": 6,\n      \"title\": \"应用场景\",\n      \"subtitle\": \"\",\n      \"layout\": \"section-header\",\n      \"contentHint\": \"引入应用场景部分\",\n      \"imageHint\": \"\",\n      \"imageIndex\": null,\n      \"refChunks\": [4,5,6,7],\n      \"speakerNotes\": \"展示机器人的多样化应用\"\n    },\n    {\n      \"index\": 7,\n      \"title\": \"小型物流运输\",\n      \"subtitle\": \"\",\n      \"layout\": \"image-text\",\n      \"contentHint\": \"机器人在仓库物流中的自动搬运应用\",\n      \"imageHint\": \"物流场景示意图\",\n      \"imageIndex\": null,\n      \"refChunks\": [5],\n      \"speakerNotes\": \"解释机器人在物流领域的效率和准确性\"\n    },\n    {\n      \"index\": 8,\n      \"title\": \"工厂巡检\",\n      \"subtitle\": \"\",\n      \"layout\": \"image-text\",\n      \"contentHint\": \"机器人在工厂环境中的智能巡检应用\",\n      \"imageHint\": \"工厂巡检示意图\",\n      \"imageIndex\": null,\n      \"refChunks\": [6],\n      \"speakerNotes\": \"强调机器人在巡检中的安全性和稳定性提升\"\n    },\n    {\n      \"index\": 9,\n      \"title\": \"家用清洁\",\n      \"subtitle\": \"\",\n      \"layout\": \"image-text\",\n      \"contentHint\": \"机器人在家庭清洁中的互联互通应用\",\n      \"imageHint\": \"智能家居场景图\",\n      \"imageIndex\": null,\n      \"refChunks\": [7],\n      \"speakerNotes\": \"展示机器人与鸿蒙生态的集成优势\"\n    },\n    {\n      \"index\": 10,\n      \"title\": \"项目价值与特色创新\",\n      \"subtitle\": \"\",\n      \"layout\": \"section-header\",\n      \"contentHint\": \"引入价值和创新部分\",\n      \"imageHint\": \"\",\n      \"imageIndex\": null,\n      \"refChunks\": [8,9,10],\n      \"speakerNotes\": \"过渡到项目价值和技术创新\"\n    },\n    {\n      \"index\": 11,\n      \"title\": \"项目价值\",\n      \"subtitle\": \"\",\n      \"layout\": \"cards-4\",\n      \"contentHint\": \"阐述项目的四大价值：填补空白、自主可控、促进行业、降低成本\",\n      \"imageHint\": \"\",\n      \"imageIndex\": null,\n      \"refChunks\": [8],\n      \"speakerNotes\": \"详细说明每个价值点的具体含义\"\n    },\n    {\n      \"index\": 12,\n      \"title\": \"技术优势\",\n      \"subtitle\": \"\",\n      \"layout\": \"section-header\",\n      \"contentHint\": \"引入技术优势详细分析\",\n      \"imageHint\": \"\",\n      \"imageIndex\": null,\n      \"refChunks\": [9],\n      \"speakerNotes\": \"开始介绍关键技术优势\"\n    },\n    {\n      \"index\": 13,\n      \"title\": \"紫派主板优势\",\n      \"subtitle\": \"\",\n      \"layout\": \"cards-4\",\n      \"contentHint\": \"体积精巧、性能强大、价格低廉、高扩展性\",\n      \"imageHint\": \"紫派与大禹对比图\",\n      \"imageIndex\": 10,\n      \"refChunks\": [9],\n      \"speakerNotes\": \"对比紫派与传统板卡，突出性价比和性能\"\n    },\n    {\n      \"index\": 14,\n      \"title\": \"自主开发SLAM算法\",\n      \"subtitle\": \"\",\n      \"layout\": \"text-image\",\n      \"contentHint\": \"介绍自研SLAM算法的创新点和优化\",\n      \"imageHint\": \"SLAM算法示意图\",\n      \"imageIndex\": 7,\n      \"refChunks\": [9],\n      \"speakerNotes\": \"解释算法如何替代ROS并提升建图精度\"\n    },\n    {\n      \"index\": 15,\n      \"title\": \"改研路径规划算法\",\n      \"subtitle\": \"\",\n      \"layout\": \"text-image\",\n      \"contentHint\": \"基于A*算法的优化，提升路径规划效率和安全性\",\n      \"imageHint\": \"路径规划示意图\",\n      \"imageIndex\": null,\n      \"refChunks\": [9],\n      \"speakerNotes\": \"说明算法改进如何增强机器人导航能力\"\n    },\n    {\n      \"index\": 16,\n      \"title\": \"LCM通讯技术\",\n      \"subtitle\": \"\",\n      \"layout\": \"comparison\",\n      \"contentHint\": \"对比LCM与TCP/UDP在通信中的优势\",\n      \"imageHint\": \"\",\n      \"imageIndex\": null,\n      \"refChunks\": [9],\n      \"speakerNotes\": \"突出LCM在进程间通信的高效性和可靠性\"\n    },\n    {\n      \"index\": 17,\n      \"title\": \"模块化设计\",\n      \"subtitle\": \"\",\n      \"layout\": \"list-featured\",\n      \"contentHint\": \"模块化设计支持教育实训和灵活配置\",\n      \"imageHint\": \"\",\n      \"imageIndex\": null,\n      \"refChunks\": [9],\n      \"speakerNotes\": \"展示模块化如何便于教学和扩展\"\n    },\n    {\n      \"index\": 18,\n      \"title\": \"作品创新\",\n      \"subtitle\": \"\",\n      \"layout\": \"cards-3\",\n      \"contentHint\": \"全国产化软硬件、交叉编译工具链、ArkTS语言开发\",\n      \"imageHint\": \"\",\n      \"imageIndex\": null,\n      \"refChunks\": [10],\n      \"speakerNotes\": \"总结项目在软硬件国产化方面的突破\"\n    },\n    {\n      \"index\": 19,\n      \"title\": \"功能设计\",\n      \"subtitle\": \"\",\n      \"layout\": \"section-header\",\n      \"contentHint\": \"引入功能设计部分\",\n      \"imageHint\": \"\",\n      \"imageIndex\": null,\n      \"refChunks\": [11,12,13],\n      \"speakerNotes\": \"过渡到系统功能模块介绍\"\n    },\n    {\n      \"index\": 20,\n      \"title\": \"功能设计总览\",\n      \"subtitle\": \"\",\n      \"layout\": \"image-center\",\n      \"contentHint\": \"展示系统功能模块架构和介绍\",\n      \"imageHint\": \"项目架构流程图\",\n      \"imageIndex\": 2,\n      \"refChunks\": [11,12,13],\n      \"speakerNotes\": \"详细解说五大功能模块的协同工作\"\n    },\n    {\n      \"index\": 21,\n      \"title\": \"系统实现\",\n      \"subtitle\": \"\",\n      \"layout\": \"section-header\",\n      \"contentHint\": \"引入系统实现部分\",\n      \"imageHint\": \"\",\n      \"imageIndex\": null,\n      \"refChunks\": [14,15,16],\n      \"speakerNotes\": \"开始介绍实现细节\"\n    },\n    {\n      \"index\": 22,\n      \"title\": \"系统实现关键步骤\",\n      \"subtitle\": \"\",\n      \"layout\": \"milestone-list\",\n      \"contentHint\": \"展示硬件、中间层、应用层的实现里程碑\",\n      \"imageHint\": \"\",\n      \"imageIndex\": null,\n      \"refChunks\": [14,15,16],\n      \"speakerNotes\": \"逐步说明从硬件到软件的实现过程\"\n    },\n    {\n      \"index\": 23,\n      \"title\": \"其他内容\",\n      \"subtitle\": \"\",\n      \"layout\": \"section-header\",\n      \"contentHint\": \"引入参数和成本部分\",\n      \"imageHint\": \"\",\n      \"imageIndex\": null,\n      \"refChunks\": [17,18],\n      \"speakerNotes\": \"过渡到项目参数和成本分析\"\n    },\n    {\n      \"index\": 24,\n      \"title\": \"模块参数与成本分析\",\n      \"subtitle\": \"\",\n      \"layout\": \"chart-pie\",\n      \"contentHint\": \"展示项目成本明细和各部分占比，并列出关键模块参数\",\n      \"imageHint\": \"成本分布饼图\",\n      \"imageIndex\": null,\n      \"refChunks\": [17,18],\n      \"speakerNotes\": \"分析成本结构，强调性价比\"\n    },\n    {\n      \"index\": 25,\n      \"title\": \"谢谢观看\",\n      \"subtitle\": \"\",\n      \"layout\": \"ending\",\n      \"contentHint\": \"结束页面，致谢\",\n      \"imageHint\": \"\",\n      \"imageIndex\": null,\n      \"refChunks\": [],\n      \"speakerNotes\": \"感谢观众，欢迎提问\"\n    }\n  ]\n}"
+    },
+    {
+      "ts": "2026-03-22T09:12:54.755Z",
+      "stage": "outline.cleaned",
+      "payload": "{\n  \"title\": \"基于OpenHarmony和HarmonyOS的轮式导航机器人\",\n  \"slideCount\": 25,\n  \"slides\": [\n    {\n      \"index\": 1,\n      \"title\": \"基于OpenHarmony和HarmonyOS的轮式导航机器人\",\n      \"subtitle\": \"全国大学生物联网设计竞赛 | 哈尔滨工业大学 | 计算之光团队\",\n      \"layout\": \"cover\",\n      \"contentHint\": \"项目封面，展示标题和团队信息\",\n      \"imageHint\": \"鸿蒙生态背景图\",\n      \"imageIndex\": 0,\n      \"refChunks\": [0],\n      \"speakerNotes\": \"欢迎介绍项目，强调全国产化和创新性\"\n    },\n    {\n      \"index\": 2,\n      \"title\": \"设计需求分析\",\n      \"subtitle\": \"\",\n      \"layout\": \"section-header\",\n      \"contentHint\": \"引入项目背景和现状分析部分\",\n      \"imageHint\": \"\",\n      \"imageIndex\": null,\n      \"refChunks\": [1,2],\n      \"speakerNotes\": \"过渡到设计需求分析\"\n    },\n    {\n      \"index\": 3,\n      \"title\": \"背景与现状分析\",\n      \"subtitle\": \"\",\n      \"layout\": \"comparison\",\n      \"contentHint\": \"对比机器人产业发展背景和国内外研究现状\",\n      \"imageHint\": \"\",\n      \"imageIndex\": null,\n      \"refChunks\": [1,2],\n      \"speakerNotes\": \"分析产业挑战和技术依赖，引出项目必要性\"\n    },\n    {\n      \"index\": 4,\n      \"title\": \"作品简介\",\n      \"subtitle\": \"\",\n      \"layout\": \"section-header\",\n      \"contentHint\": \"引入作品介绍部分\",\n      \"imageHint\": \"\",\n      \"imageIndex\": null,\n      \"refChunks\": [3],\n      \"speakerNotes\": \"介绍作品整体概念\"\n    },\n    {\n      \"index\": 5,\n      \"title\": \"作品功能与实现\",\n      \"subtitle\": \"\",\n      \"layout\": \"image-text\",\n      \"contentHint\": \"展示机器人实物和核心功能描述\",\n      \"imageHint\": \"机器车实拍图\",\n      \"imageIndex\": 1,\n      \"refChunks\": [3],\n      \"speakerNotes\": \"详细说明机器人的四大功能和硬件选型\"\n    },\n    {\n      \"index\": 6,\n      \"title\": \"应用场景\",\n      \"subtitle\": \"\",\n      \"layout\": \"section-header\",\n      \"contentHint\": \"引入应用场景部分\",\n      \"imageHint\": \"\",\n      \"imageIndex\": null,\n      \"refChunks\": [4,5,6,7],\n      \"speakerNotes\": \"展示机器人的多样化应用\"\n    },\n    {\n      \"index\": 7,\n      \"title\": \"小型物流运输\",\n      \"subtitle\": \"\",\n      \"layout\": \"image-text\",\n      \"contentHint\": \"机器人在仓库物流中的自动搬运应用\",\n      \"imageHint\": \"物流场景示意图\",\n      \"imageIndex\": null,\n      \"refChunks\": [5],\n      \"speakerNotes\": \"解释机器人在物流领域的效率和准确性\"\n    },\n    {\n      \"index\": 8,\n      \"title\": \"工厂巡检\",\n      \"subtitle\": \"\",\n      \"layout\": \"image-text\",\n      \"contentHint\": \"机器人在工厂环境中的智能巡检应用\",\n      \"imageHint\": \"工厂巡检示意图\",\n      \"imageIndex\": null,\n      \"refChunks\": [6],\n      \"speakerNotes\": \"强调机器人在巡检中的安全性和稳定性提升\"\n    },\n    {\n      \"index\": 9,\n      \"title\": \"家用清洁\",\n      \"subtitle\": \"\",\n      \"layout\": \"image-text\",\n      \"contentHint\": \"机器人在家庭清洁中的互联互通应用\",\n      \"imageHint\": \"智能家居场景图\",\n      \"imageIndex\": null,\n      \"refChunks\": [7],\n      \"speakerNotes\": \"展示机器人与鸿蒙生态的集成优势\"\n    },\n    {\n      \"index\": 10,\n      \"title\": \"项目价值与特色创新\",\n      \"subtitle\": \"\",\n      \"layout\": \"section-header\",\n      \"contentHint\": \"引入价值和创新部分\",\n      \"imageHint\": \"\",\n      \"imageIndex\": null,\n      \"refChunks\": [8,9,10],\n      \"speakerNotes\": \"过渡到项目价值和技术创新\"\n    },\n    {\n      \"index\": 11,\n      \"title\": \"项目价值\",\n      \"subtitle\": \"\",\n      \"layout\": \"cards-4\",\n      \"contentHint\": \"阐述项目的四大价值：填补空白、自主可控、促进行业、降低成本\",\n      \"imageHint\": \"\",\n      \"imageIndex\": null,\n      \"refChunks\": [8],\n      \"speakerNotes\": \"详细说明每个价值点的具体含义\"\n    },\n    {\n      \"index\": 12,\n      \"title\": \"技术优势\",\n      \"subtitle\": \"\",\n      \"layout\": \"section-header\",\n      \"contentHint\": \"引入技术优势详细分析\",\n      \"imageHint\": \"\",\n      \"imageIndex\": null,\n      \"refChunks\": [9],\n      \"speakerNotes\": \"开始介绍关键技术优势\"\n    },\n    {\n      \"index\": 13,\n      \"title\": \"紫派主板优势\",\n      \"subtitle\": \"\",\n      \"layout\": \"cards-4\",\n      \"contentHint\": \"体积精巧、性能强大、价格低廉、高扩展性\",\n      \"imageHint\": \"紫派与大禹对比图\",\n      \"imageIndex\": 10,\n      \"refChunks\": [9],\n      \"speakerNotes\": \"对比紫派与传统板卡，突出性价比和性能\"\n    },\n    {\n      \"index\": 14,\n      \"title\": \"自主开发SLAM算法\",\n      \"subtitle\": \"\",\n      \"layout\": \"text-image\",\n      \"contentHint\": \"介绍自研SLAM算法的创新点和优化\",\n      \"imageHint\": \"SLAM算法示意图\",\n      \"imageIndex\": 7,\n      \"refChunks\": [9],\n      \"speakerNotes\": \"解释算法如何替代ROS并提升建图精度\"\n    },\n    {\n      \"index\": 15,\n      \"title\": \"改研路径规划算法\",\n      \"subtitle\": \"\",\n      \"layout\": \"text-image\",\n      \"contentHint\": \"基于A*算法的优化，提升路径规划效率和安全性\",\n      \"imageHint\": \"路径规划示意图\",\n      \"imageIndex\": null,\n      \"refChunks\": [9],\n      \"speakerNotes\": \"说明算法改进如何增强机器人导航能力\"\n    },\n    {\n      \"index\": 16,\n      \"title\": \"LCM通讯技术\",\n      \"subtitle\": \"\",\n      \"layout\": \"comparison\",\n      \"contentHint\": \"对比LCM与TCP/UDP在通信中的优势\",\n      \"imageHint\": \"\",\n      \"imageIndex\": null,\n      \"refChunks\": [9],\n      \"speakerNotes\": \"突出LCM在进程间通信的高效性和可靠性\"\n    },\n    {\n      \"index\": 17,\n      \"title\": \"模块化设计\",\n      \"subtitle\": \"\",\n      \"layout\": \"list-featured\",\n      \"contentHint\": \"模块化设计支持教育实训和灵活配置\",\n      \"imageHint\": \"\",\n      \"imageIndex\": null,\n      \"refChunks\": [9],\n      \"speakerNotes\": \"展示模块化如何便于教学和扩展\"\n    },\n    {\n      \"index\": 18,\n      \"title\": \"作品创新\",\n      \"subtitle\": \"\",\n      \"layout\": \"cards-3\",\n      \"contentHint\": \"全国产化软硬件、交叉编译工具链、ArkTS语言开发\",\n      \"imageHint\": \"\",\n      \"imageIndex\": null,\n      \"refChunks\": [10],\n      \"speakerNotes\": \"总结项目在软硬件国产化方面的突破\"\n    },\n    {\n      \"index\": 19,\n      \"title\": \"功能设计\",\n      \"subtitle\": \"\",\n      \"layout\": \"section-header\",\n      \"contentHint\": \"引入功能设计部分\",\n      \"imageHint\": \"\",\n      \"imageIndex\": null,\n      \"refChunks\": [11,12,13],\n      \"speakerNotes\": \"过渡到系统功能模块介绍\"\n    },\n    {\n      \"index\": 20,\n      \"title\": \"功能设计总览\",\n      \"subtitle\": \"\",\n      \"layout\": \"image-center\",\n      \"contentHint\": \"展示系统功能模块架构和介绍\",\n      \"imageHint\": \"项目架构流程图\",\n      \"imageIndex\": 2,\n      \"refChunks\": [11,12,13],\n      \"speakerNotes\": \"详细解说五大功能模块的协同工作\"\n    },\n    {\n      \"index\": 21,\n      \"title\": \"系统实现\",\n      \"subtitle\": \"\",\n      \"layout\": \"section-header\",\n      \"contentHint\": \"引入系统实现部分\",\n      \"imageHint\": \"\",\n      \"imageIndex\": null,\n      \"refChunks\": [14,15,16],\n      \"speakerNotes\": \"开始介绍实现细节\"\n    },\n    {\n      \"index\": 22,\n      \"title\": \"系统实现关键步骤\",\n      \"subtitle\": \"\",\n      \"layout\": \"milestone-list\",\n      \"contentHint\": \"展示硬件、中间层、应用层的实现里程碑\",\n      \"imageHint\": \"\",\n      \"imageIndex\": null,\n      \"refChunks\": [14,15,16],\n      \"speakerNotes\": \"逐步说明从硬件到软件的实现过程\"\n    },\n    {\n      \"index\": 23,\n      \"title\": \"其他内容\",\n      \"subtitle\": \"\",\n      \"layout\": \"section-header\",\n      \"contentHint\": \"引入参数和成本部分\",\n      \"imageHint\": \"\",\n      \"imageIndex\": null,\n      \"refChunks\": [17,18],\n      \"speakerNotes\": \"过渡到项目参数和成本分析\"\n    },\n    {\n      \"index\": 24,\n      \"title\": \"模块参数与成本分析\",\n      \"subtitle\": \"\",\n      \"layout\": \"chart-pie\",\n      \"contentHint\": \"展示项目成本明细和各部分占比，并列出关键模块参数\",\n      \"imageHint\": \"成本分布饼图\",\n      \"imageIndex\": null,\n      \"refChunks\": [17,18],\n      \"speakerNotes\": \"分析成本结构，强调性价比\"\n    },\n    {\n      \"index\": 25,\n      \"title\": \"谢谢观看\",\n      \"subtitle\": \"\",\n      \"layout\": \"ending\",\n      \"contentHint\": \"结束页面，致谢\",\n      \"imageHint\": \"\",\n      \"imageIndex\": null,\n      \"refChunks\": [],\n      \"speakerNotes\": \"感谢观众，欢迎提问\"\n    }\n  ]\n}"
+    },
+    {
+      "ts": "2026-03-22T09:12:54.756Z",
+      "stage": "outline.candidates",
+      "payload": {
+        "index": 1,
+        "title": "基于OpenHarmony和HarmonyOS的轮式导航机器人",
+        "current": "cover",
+        "candidates": [
+          "cover"
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:12:54.756Z",
+      "stage": "outline.candidates",
+      "payload": {
+        "index": 2,
+        "title": "设计需求分析",
+        "current": "section-header",
+        "candidates": [
+          "section-header"
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:12:54.757Z",
+      "stage": "outline.candidates",
+      "payload": {
+        "index": 3,
+        "title": "背景与现状分析",
+        "current": "comparison",
+        "candidates": [
+          "text-bullets",
+          "text-center",
+          "image-center",
+          "comparison"
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:12:54.757Z",
+      "stage": "outline.candidates",
+      "payload": {
+        "index": 4,
+        "title": "作品简介",
+        "current": "section-header",
+        "candidates": [
+          "section-header"
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:12:54.757Z",
+      "stage": "outline.candidates",
+      "payload": {
+        "index": 5,
+        "title": "作品功能与实现",
+        "current": "image-text",
+        "candidates": [
+          "timeline",
+          "milestone-list",
+          "text-bullets",
+          "text-center",
+          "image-center",
+          "image-text"
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:12:54.757Z",
+      "stage": "outline.candidates",
+      "payload": {
+        "index": 6,
+        "title": "本作品全面采用国产化的关键组件，以减少对进口部件的依赖，并有效填补了国内软硬件全国产化轮式导航机器人...",
+        "current": "text-center",
+        "candidates": [
+          "image-text",
+          "text-image",
+          "image-center",
+          "list-featured",
+          "text-bullets",
+          "text-center"
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:12:54.757Z",
+      "stage": "outline.candidates",
+      "payload": {
+        "index": 7,
+        "title": "小型物流运输",
+        "current": "image-text",
+        "candidates": [
+          "cards-split",
+          "staggered-cards",
+          "text-bullets",
+          "text-center",
+          "image-center",
+          "image-text"
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:12:54.757Z",
+      "stage": "outline.candidates",
+      "payload": {
+        "index": 8,
+        "title": "工厂巡检",
+        "current": "image-text",
+        "candidates": [
+          "image-text",
+          "text-image",
+          "image-center",
+          "list-featured",
+          "text-bullets",
+          "text-center"
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:12:54.758Z",
+      "stage": "outline.candidates",
+      "payload": {
+        "index": 9,
+        "title": "家用清洁",
+        "current": "image-text",
+        "candidates": [
+          "image-text",
+          "text-image",
+          "image-center",
+          "list-featured",
+          "text-bullets",
+          "text-center"
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:12:54.758Z",
+      "stage": "outline.candidates",
+      "payload": {
+        "index": 10,
+        "title": "项目价值与特色创新",
+        "current": "section-header",
+        "candidates": [
+          "section-header"
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:12:54.758Z",
+      "stage": "outline.candidates",
+      "payload": {
+        "index": 11,
+        "title": "项目价值",
+        "current": "cards-4",
+        "candidates": [
+          "chart-bar",
+          "chart-line",
+          "chart-pie",
+          "text-bullets",
+          "text-center",
+          "image-center",
+          "cards-4"
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:12:54.758Z",
+      "stage": "outline.candidates",
+      "payload": {
+        "index": 12,
+        "title": "技术优势",
+        "current": "section-header",
+        "candidates": [
+          "section-header"
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:12:54.758Z",
+      "stage": "outline.candidates",
+      "payload": {
+        "index": 13,
+        "title": "紫派主板优势",
+        "current": "cards-4",
+        "candidates": [
+          "chart-bar",
+          "chart-line",
+          "chart-pie",
+          "cards-split",
+          "staggered-cards",
+          "text-bullets",
+          "text-center",
+          "image-center",
+          "cards-4"
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:12:54.758Z",
+      "stage": "outline.candidates",
+      "payload": {
+        "index": 14,
+        "title": "自主开发SLAM算法",
+        "current": "text-image",
+        "candidates": [
+          "chart-bar",
+          "chart-line",
+          "chart-pie",
+          "cards-split",
+          "staggered-cards",
+          "text-bullets",
+          "text-center",
+          "image-center",
+          "text-image"
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:12:54.758Z",
+      "stage": "outline.candidates",
+      "payload": {
+        "index": 15,
+        "title": "改研路径规划算法",
+        "current": "text-image",
+        "candidates": [
+          "chart-bar",
+          "chart-line",
+          "chart-pie",
+          "cards-split",
+          "staggered-cards",
+          "text-bullets",
+          "text-center",
+          "image-center",
+          "text-image"
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:12:54.758Z",
+      "stage": "outline.candidates",
+      "payload": {
+        "index": 16,
+        "title": "LCM通讯技术",
+        "current": "comparison",
+        "candidates": [
+          "chart-bar",
+          "chart-line",
+          "chart-pie",
+          "cards-split",
+          "staggered-cards",
+          "text-bullets",
+          "text-center",
+          "image-center",
+          "comparison"
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:12:54.758Z",
+      "stage": "outline.candidates",
+      "payload": {
+        "index": 17,
+        "title": "模块化设计",
+        "current": "list-featured",
+        "candidates": [
+          "chart-bar",
+          "chart-line",
+          "chart-pie",
+          "cards-split",
+          "staggered-cards",
+          "text-bullets",
+          "text-center",
+          "image-center",
+          "list-featured"
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:12:54.758Z",
+      "stage": "outline.candidates",
+      "payload": {
+        "index": 18,
+        "title": "作品创新",
+        "current": "cards-3",
+        "candidates": [
+          "image-text",
+          "text-image",
+          "image-center",
+          "list-featured",
+          "text-bullets",
+          "text-center",
+          "cards-3"
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:12:54.758Z",
+      "stage": "outline.candidates",
+      "payload": {
+        "index": 19,
+        "title": "功能设计",
+        "current": "section-header",
+        "candidates": [
+          "section-header"
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:12:54.760Z",
+      "stage": "outline.candidates",
+      "payload": {
+        "index": 20,
+        "title": "功能设计总览",
+        "current": "image-center",
+        "candidates": [
+          "quote",
+          "quote-no-avatar",
+          "text-bullets",
+          "text-center",
+          "image-center"
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:12:54.760Z",
+      "stage": "outline.candidates",
+      "payload": {
+        "index": 21,
+        "title": "系统实现",
+        "current": "section-header",
+        "candidates": [
+          "section-header"
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:12:54.761Z",
+      "stage": "outline.candidates",
+      "payload": {
+        "index": 22,
+        "title": "系统实现关键步骤",
+        "current": "milestone-list",
+        "candidates": [
+          "timeline",
+          "milestone-list",
+          "text-bullets",
+          "text-center",
+          "image-center"
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:12:54.761Z",
+      "stage": "outline.candidates",
+      "payload": {
+        "index": 23,
+        "title": "其他内容",
+        "current": "section-header",
+        "candidates": [
+          "section-header"
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:12:54.762Z",
+      "stage": "outline.candidates",
+      "payload": {
+        "index": 24,
+        "title": "模块参数与成本分析",
+        "current": "chart-pie",
+        "candidates": [
+          "timeline",
+          "milestone-list",
+          "text-bullets",
+          "text-center",
+          "image-center",
+          "chart-pie"
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:12:54.762Z",
+      "stage": "pipeline.outline",
+      "payload": {
+        "title": "基于OpenHarmony和HarmonyOS的轮式导航机器人",
+        "slideCount": 24,
+        "slides": [
+          {
+            "index": 1,
+            "title": "基于OpenHarmony和HarmonyOS的轮式导航机器人",
+            "subtitle": "全国大学生物联网设计竞赛 | 哈尔滨工业大学 | 计算之光团队",
+            "layout": "cover",
+            "contentHint": "项目封面，展示标题和团队信息",
+            "imageHint": "鸿蒙生态背景图",
+            "imageIndex": 0,
+            "refChunks": [
+              0
+            ],
+            "speakerNotes": "欢迎介绍项目，强调全国产化和创新性"
+          },
+          {
+            "index": 2,
+            "title": "设计需求分析",
+            "layout": "section-header",
+            "contentHint": "引入项目背景和现状分析部分",
+            "imageIndex": null,
+            "refChunks": [
+              1,
+              2
+            ],
+            "speakerNotes": "过渡到设计需求分析"
+          },
+          {
+            "index": 3,
+            "title": "背景与现状分析",
+            "layout": "comparison",
+            "contentHint": "对比机器人产业发展背景和国内外研究现状",
+            "imageIndex": null,
+            "refChunks": [
+              1,
+              2
+            ],
+            "speakerNotes": "分析产业挑战和技术依赖，引出项目必要性"
+          },
+          {
+            "index": 4,
+            "title": "作品简介",
+            "layout": "section-header",
+            "contentHint": "引入作品介绍部分",
+            "imageIndex": null,
+            "refChunks": [
+              3
+            ],
+            "speakerNotes": "介绍作品整体概念"
+          },
+          {
+            "index": 5,
+            "title": "作品功能与实现",
+            "layout": "image-text",
+            "contentHint": "展示机器人实物和核心功能描述",
+            "imageHint": "机器车实拍图",
+            "imageIndex": 1,
+            "refChunks": [
+              3
+            ],
+            "speakerNotes": "详细说明机器人的四大功能和硬件选型"
+          },
+          {
+            "index": 6,
+            "title": "本作品全面采用国产化的关键组件，以减少对进口部件的依赖，并有效填补了国内软硬件全国产化轮式导航机器人...",
+            "subtitle": "应用场景",
+            "layout": "text-center",
+            "contentHint": "本作品全面采用国产化的关键组件，以减少对进口部件的依赖，并有效填补了国内软硬件全国产化轮式导航机器人在生产实习行业的空白，具有极大的市场潜力和应用价值：",
+            "refChunks": [
+              4
+            ]
+          },
+          {
+            "index": 7,
+            "title": "小型物流运输",
+            "layout": "image-text",
+            "contentHint": "机器人在仓库物流中的自动搬运应用",
+            "imageHint": "物流场景示意图",
+            "imageIndex": null,
+            "refChunks": [
+              5
+            ],
+            "speakerNotes": "解释机器人在物流领域的效率和准确性"
+          },
+          {
+            "index": 8,
+            "title": "工厂巡检",
+            "layout": "image-text",
+            "contentHint": "机器人在工厂环境中的智能巡检应用",
+            "imageHint": "工厂巡检示意图",
+            "imageIndex": null,
+            "refChunks": [
+              6
+            ],
+            "speakerNotes": "强调机器人在巡检中的安全性和稳定性提升"
+          },
+          {
+            "index": 9,
+            "title": "家用清洁",
+            "layout": "image-text",
+            "contentHint": "机器人在家庭清洁中的互联互通应用",
+            "imageHint": "智能家居场景图",
+            "imageIndex": null,
+            "refChunks": [
+              7
+            ],
+            "speakerNotes": "展示机器人与鸿蒙生态的集成优势"
+          },
+          {
+            "index": 10,
+            "title": "项目价值与特色创新",
+            "layout": "section-header",
+            "contentHint": "引入价值和创新部分",
+            "imageIndex": null,
+            "refChunks": [
+              8,
+              9,
+              10
+            ],
+            "speakerNotes": "过渡到项目价值和技术创新"
+          },
+          {
+            "index": 11,
+            "title": "项目价值",
+            "layout": "cards-4",
+            "contentHint": "阐述项目的四大价值：填补空白、自主可控、促进行业、降低成本",
+            "imageIndex": null,
+            "refChunks": [
+              8
+            ],
+            "speakerNotes": "详细说明每个价值点的具体含义"
+          },
+          {
+            "index": 12,
+            "title": "技术优势",
+            "layout": "section-header",
+            "contentHint": "引入技术优势详细分析",
+            "imageIndex": null,
+            "refChunks": [
+              9
+            ],
+            "speakerNotes": "开始介绍关键技术优势"
+          },
+          {
+            "index": 13,
+            "title": "紫派主板优势",
+            "layout": "cards-4",
+            "contentHint": "体积精巧、性能强大、价格低廉、高扩展性",
+            "imageHint": "紫派与大禹对比图",
+            "imageIndex": 10,
+            "refChunks": [
+              9
+            ],
+            "speakerNotes": "对比紫派与传统板卡，突出性价比和性能"
+          },
+          {
+            "index": 14,
+            "title": "自主开发SLAM算法",
+            "layout": "text-image",
+            "contentHint": "介绍自研SLAM算法的创新点和优化",
+            "imageHint": "SLAM算法示意图",
+            "imageIndex": 7,
+            "refChunks": [
+              9
+            ],
+            "speakerNotes": "解释算法如何替代ROS并提升建图精度"
+          },
+          {
+            "index": 15,
+            "title": "改研路径规划算法",
+            "layout": "text-image",
+            "contentHint": "基于A*算法的优化，提升路径规划效率和安全性",
+            "imageHint": "路径规划示意图",
+            "imageIndex": null,
+            "refChunks": [
+              9
+            ],
+            "speakerNotes": "说明算法改进如何增强机器人导航能力"
+          },
+          {
+            "index": 16,
+            "title": "LCM通讯技术",
+            "layout": "comparison",
+            "contentHint": "对比LCM与TCP/UDP在通信中的优势",
+            "imageIndex": null,
+            "refChunks": [
+              9
+            ],
+            "speakerNotes": "突出LCM在进程间通信的高效性和可靠性"
+          },
+          {
+            "index": 17,
+            "title": "模块化设计",
+            "layout": "list-featured",
+            "contentHint": "模块化设计支持教育实训和灵活配置",
+            "imageIndex": null,
+            "refChunks": [
+              9
+            ],
+            "speakerNotes": "展示模块化如何便于教学和扩展"
+          },
+          {
+            "index": 18,
+            "title": "作品创新",
+            "layout": "cards-3",
+            "contentHint": "全国产化软硬件、交叉编译工具链、ArkTS语言开发",
+            "imageIndex": null,
+            "refChunks": [
+              10
+            ],
+            "speakerNotes": "总结项目在软硬件国产化方面的突破"
+          },
+          {
+            "index": 19,
+            "title": "功能设计",
+            "layout": "section-header",
+            "contentHint": "引入功能设计部分",
+            "imageIndex": null,
+            "refChunks": [
+              11,
+              12,
+              13
+            ],
+            "speakerNotes": "过渡到系统功能模块介绍"
+          },
+          {
+            "index": 20,
+            "title": "功能设计总览",
+            "layout": "image-center",
+            "contentHint": "展示系统功能模块架构和介绍",
+            "imageHint": "项目架构流程图",
+            "imageIndex": 2,
+            "refChunks": [
+              11,
+              12,
+              13
+            ],
+            "speakerNotes": "详细解说五大功能模块的协同工作"
+          },
+          {
+            "index": 21,
+            "title": "系统实现",
+            "layout": "section-header",
+            "contentHint": "引入系统实现部分",
+            "imageIndex": null,
+            "refChunks": [
+              14,
+              15,
+              16
+            ],
+            "speakerNotes": "开始介绍实现细节"
+          },
+          {
+            "index": 22,
+            "title": "系统实现关键步骤",
+            "layout": "milestone-list",
+            "contentHint": "展示硬件、中间层、应用层的实现里程碑",
+            "imageIndex": null,
+            "refChunks": [
+              14,
+              15,
+              16
+            ],
+            "speakerNotes": "逐步说明从硬件到软件的实现过程"
+          },
+          {
+            "index": 23,
+            "title": "其他内容",
+            "layout": "section-header",
+            "contentHint": "引入参数和成本部分",
+            "imageIndex": null,
+            "refChunks": [
+              17,
+              18
+            ],
+            "speakerNotes": "过渡到项目参数和成本分析"
+          },
+          {
+            "index": 24,
+            "title": "模块参数与成本分析",
+            "layout": "ending",
+            "contentHint": "展示项目成本明细和各部分占比，并列出关键模块参数",
+            "imageHint": "成本分布饼图",
+            "imageIndex": null,
+            "refChunks": [
+              17,
+              18
+            ],
+            "speakerNotes": "分析成本结构，强调性价比"
+          }
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:12:54.762Z",
+      "stage": "pipeline.outline.success",
+      "payload": {
+        "title": "基于OpenHarmony和HarmonyOS的轮式导航机器人",
+        "slideCount": 24
+      }
+    },
+    {
+      "ts": "2026-03-22T09:12:54.762Z",
+      "stage": "pipeline.slidegen.start",
+      "payload": {
+        "slideCount": 24,
+        "layouts": [
+          {
+            "index": 1,
+            "layout": "cover",
+            "title": "基于OpenHarmony和HarmonyOS的轮式导航机器人"
+          },
+          {
+            "index": 2,
+            "layout": "section-header",
+            "title": "设计需求分析"
+          },
+          {
+            "index": 3,
+            "layout": "comparison",
+            "title": "背景与现状分析"
+          },
+          {
+            "index": 4,
+            "layout": "section-header",
+            "title": "作品简介"
+          },
+          {
+            "index": 5,
+            "layout": "image-text",
+            "title": "作品功能与实现"
+          },
+          {
+            "index": 6,
+            "layout": "text-center",
+            "title": "本作品全面采用国产化的关键组件，以减少对进口部件的依赖，并有效填补了国内软硬件全国产化轮式导航机器人..."
+          },
+          {
+            "index": 7,
+            "layout": "image-text",
+            "title": "小型物流运输"
+          },
+          {
+            "index": 8,
+            "layout": "image-text",
+            "title": "工厂巡检"
+          },
+          {
+            "index": 9,
+            "layout": "image-text",
+            "title": "家用清洁"
+          },
+          {
+            "index": 10,
+            "layout": "section-header",
+            "title": "项目价值与特色创新"
+          },
+          {
+            "index": 11,
+            "layout": "cards-4",
+            "title": "项目价值"
+          },
+          {
+            "index": 12,
+            "layout": "section-header",
+            "title": "技术优势"
+          },
+          {
+            "index": 13,
+            "layout": "cards-4",
+            "title": "紫派主板优势"
+          },
+          {
+            "index": 14,
+            "layout": "text-image",
+            "title": "自主开发SLAM算法"
+          },
+          {
+            "index": 15,
+            "layout": "text-image",
+            "title": "改研路径规划算法"
+          },
+          {
+            "index": 16,
+            "layout": "comparison",
+            "title": "LCM通讯技术"
+          },
+          {
+            "index": 17,
+            "layout": "list-featured",
+            "title": "模块化设计"
+          },
+          {
+            "index": 18,
+            "layout": "cards-3",
+            "title": "作品创新"
+          },
+          {
+            "index": 19,
+            "layout": "section-header",
+            "title": "功能设计"
+          },
+          {
+            "index": 20,
+            "layout": "image-center",
+            "title": "功能设计总览"
+          },
+          {
+            "index": 21,
+            "layout": "section-header",
+            "title": "系统实现"
+          },
+          {
+            "index": 22,
+            "layout": "milestone-list",
+            "title": "系统实现关键步骤"
+          },
+          {
+            "index": 23,
+            "layout": "section-header",
+            "title": "其他内容"
+          },
+          {
+            "index": 24,
+            "layout": "ending",
+            "title": "模块参数与成本分析"
+          }
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:12:54.762Z",
+      "stage": "slide.batch.start",
+      "payload": {
+        "batchStartIndex": 1,
+        "batchEndIndex": 8,
+        "total": 24,
+        "slideIndexes": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:12:54.762Z",
+      "stage": "slide.1.llm.start",
+      "payload": {
+        "model": "deepseek-chat",
+        "clientIndex": 0,
+        "systemLength": 1934,
+        "userLength": 2371
+      }
+    },
+    {
+      "ts": "2026-03-22T09:12:54.763Z",
+      "stage": "slide.2.llm.start",
+      "payload": {
+        "model": "deepseek-chat",
+        "clientIndex": 0,
+        "systemLength": 1934,
+        "userLength": 2495
+      }
+    },
+    {
+      "ts": "2026-03-22T09:12:54.763Z",
+      "stage": "slide.3.llm.start",
+      "payload": {
+        "model": "deepseek-chat",
+        "clientIndex": 0,
+        "systemLength": 1934,
+        "userLength": 2709
+      }
+    },
+    {
+      "ts": "2026-03-22T09:12:54.763Z",
+      "stage": "slide.4.llm.start",
+      "payload": {
+        "model": "deepseek-chat",
+        "clientIndex": 0,
+        "systemLength": 1934,
+        "userLength": 3248
+      }
+    },
+    {
+      "ts": "2026-03-22T09:12:54.763Z",
+      "stage": "slide.5.llm.start",
+      "payload": {
+        "model": "deepseek-chat",
+        "clientIndex": 0,
+        "systemLength": 1934,
+        "userLength": 3470
+      }
+    },
+    {
+      "ts": "2026-03-22T09:12:54.763Z",
+      "stage": "slide.6.llm.start",
+      "payload": {
+        "model": "deepseek-chat",
+        "clientIndex": 0,
+        "systemLength": 1934,
+        "userLength": 537
+      }
+    },
+    {
+      "ts": "2026-03-22T09:12:54.763Z",
+      "stage": "slide.7.llm.start",
+      "payload": {
+        "model": "deepseek-chat",
+        "clientIndex": 0,
+        "systemLength": 1934,
+        "userLength": 570
+      }
+    },
+    {
+      "ts": "2026-03-22T09:12:54.763Z",
+      "stage": "slide.8.llm.start",
+      "payload": {
+        "model": "deepseek-chat",
+        "clientIndex": 0,
+        "systemLength": 1934,
+        "userLength": 592
+      }
+    },
+    {
+      "ts": "2026-03-22T09:12:56.914Z",
+      "stage": "slide.4.llm.success",
+      "payload": {
+        "model": "deepseek-chat",
+        "clientIndex": 0,
+        "durationMs": 2151,
+        "attemptDurationMs": 2151,
+        "attempts": 1,
+        "contentLength": 69
+      }
+    },
+    {
+      "ts": "2026-03-22T09:12:56.914Z",
+      "stage": "slide.4.raw",
+      "payload": {
+        "attempt": 1,
+        "raw": "{\n  \"layout\": \"section-header\",\n  \"title\": \"作品简介\",\n  \"subtitle\": \"\"\n}"
+      }
+    },
+    {
+      "ts": "2026-03-22T09:12:56.914Z",
+      "stage": "slide.4.cleaned",
+      "payload": {
+        "attempt": 1,
+        "cleaned": "{\n  \"layout\": \"section-header\",\n  \"title\": \"作品简介\",\n  \"subtitle\": \"\"\n}"
+      }
+    },
+    {
+      "ts": "2026-03-22T09:12:56.914Z",
+      "stage": "slide.4.shape.beforeValidation",
+      "payload": {
+        "attempt": 1,
+        "layout": "section-header",
+        "title": "作品简介",
+        "keys": [
+          "layout",
+          "title",
+          "subtitle",
+          "speakerNotes"
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:12:56.914Z",
+      "stage": "slide.4.finalShape",
+      "payload": {
+        "attempt": 1,
+        "layout": "section-header",
+        "keys": [
+          "layout",
+          "title",
+          "subtitle",
+          "speakerNotes"
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:12:57.176Z",
+      "stage": "slide.2.llm.success",
+      "payload": {
+        "model": "deepseek-chat",
+        "clientIndex": 0,
+        "durationMs": 2413,
+        "attemptDurationMs": 2413,
+        "attempts": 1,
+        "contentLength": 80
+      }
+    },
+    {
+      "ts": "2026-03-22T09:12:57.176Z",
+      "stage": "slide.2.raw",
+      "payload": {
+        "attempt": 1,
+        "raw": "{\n  \"layout\": \"section-header\",\n  \"title\": \"设计需求分析\",\n  \"subtitle\": \"项目背景与现状分析\"\n}"
+      }
+    },
+    {
+      "ts": "2026-03-22T09:12:57.176Z",
+      "stage": "slide.2.cleaned",
+      "payload": {
+        "attempt": 1,
+        "cleaned": "{\n  \"layout\": \"section-header\",\n  \"title\": \"设计需求分析\",\n  \"subtitle\": \"项目背景与现状分析\"\n}"
+      }
+    },
+    {
+      "ts": "2026-03-22T09:12:57.176Z",
+      "stage": "slide.2.shape.beforeValidation",
+      "payload": {
+        "attempt": 1,
+        "layout": "section-header",
+        "title": "设计需求分析",
+        "keys": [
+          "layout",
+          "title",
+          "subtitle",
+          "speakerNotes"
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:12:57.176Z",
+      "stage": "slide.2.finalShape",
+      "payload": {
+        "attempt": 1,
+        "layout": "section-header",
+        "keys": [
+          "layout",
+          "title",
+          "subtitle",
+          "speakerNotes"
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:12:57.277Z",
+      "stage": "slide.1.llm.success",
+      "payload": {
+        "model": "deepseek-chat",
+        "clientIndex": 0,
+        "durationMs": 2515,
+        "attemptDurationMs": 2515,
+        "attempts": 1,
+        "contentLength": 118
+      }
+    },
+    {
+      "ts": "2026-03-22T09:12:57.277Z",
+      "stage": "slide.1.raw",
+      "payload": {
+        "attempt": 1,
+        "raw": "{\n  \"layout\": \"cover\",\n  \"title\": \"基于OpenHarmony和HarmonyOS的轮式导航机器人\",\n  \"subtitle\": \"全国大学生物联网设计竞赛 | 哈尔滨工业大学 | 计算之光团队\"\n}"
+      }
+    },
+    {
+      "ts": "2026-03-22T09:12:57.277Z",
+      "stage": "slide.1.cleaned",
+      "payload": {
+        "attempt": 1,
+        "cleaned": "{\n  \"layout\": \"cover\",\n  \"title\": \"基于OpenHarmony和HarmonyOS的轮式导航机器人\",\n  \"subtitle\": \"全国大学生物联网设计竞赛 | 哈尔滨工业大学 | 计算之光团队\"\n}"
+      }
+    },
+    {
+      "ts": "2026-03-22T09:12:57.277Z",
+      "stage": "slide.1.shape.beforeValidation",
+      "payload": {
+        "attempt": 1,
+        "layout": "cover",
+        "title": "基于OpenHarmony和HarmonyOS的轮式导航机器人",
+        "keys": [
+          "layout",
+          "title",
+          "subtitle",
+          "speakerNotes",
+          "image"
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:12:57.277Z",
+      "stage": "slide.1.finalShape",
+      "payload": {
+        "attempt": 1,
+        "layout": "cover",
+        "keys": [
+          "layout",
+          "title",
+          "subtitle",
+          "speakerNotes",
+          "image"
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:12:59.457Z",
+      "stage": "slide.6.llm.success",
+      "payload": {
+        "model": "deepseek-chat",
+        "clientIndex": 0,
+        "durationMs": 4694,
+        "attemptDurationMs": 4694,
+        "attempts": 1,
+        "contentLength": 273
+      }
+    },
+    {
+      "ts": "2026-03-22T09:12:59.457Z",
+      "stage": "slide.6.raw",
+      "payload": {
+        "attempt": 1,
+        "raw": "{\n  \"layout\": \"text-center\",\n  \"title\": \"本作品全面采用国产化的关键组件，以减少对进口部件的依赖，并有效填补了国内软硬件全国产化轮式导航机器人...\",\n  \"subtitle\": \"应用场景\",\n  \"body\": [\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"本作品通过全面采用国产化关键组件，显著降低了对进口部件的依赖，成功填补了国内软硬件全国产化轮式导航机器人在生产实习行业的市场空白，展现出巨大的市场潜力与应用价值。\"\n    }\n  ]\n}"
+      }
+    },
+    {
+      "ts": "2026-03-22T09:12:59.457Z",
+      "stage": "slide.6.cleaned",
+      "payload": {
+        "attempt": 1,
+        "cleaned": "{\n  \"layout\": \"text-center\",\n  \"title\": \"本作品全面采用国产化的关键组件，以减少对进口部件的依赖，并有效填补了国内软硬件全国产化轮式导航机器人...\",\n  \"subtitle\": \"应用场景\",\n  \"body\": [\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"本作品通过全面采用国产化关键组件，显著降低了对进口部件的依赖，成功填补了国内软硬件全国产化轮式导航机器人在生产实习行业的市场空白，展现出巨大的市场潜力与应用价值。\"\n    }\n  ]\n}"
+      }
+    },
+    {
+      "ts": "2026-03-22T09:12:59.457Z",
+      "stage": "slide.6.shape.beforeValidation",
+      "payload": {
+        "attempt": 1,
+        "layout": "text-center",
+        "title": "本作品全面采用国产化的关键组件，以减少对进口部件的依赖，并有效填补了国内软硬件全国产化轮式导航机器人...",
+        "keys": [
+          "layout",
+          "title",
+          "subtitle",
+          "body",
+          "speakerNotes"
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:12:59.457Z",
+      "stage": "slide.6.finalShape",
+      "payload": {
+        "attempt": 1,
+        "layout": "text-center",
+        "keys": [
+          "layout",
+          "title",
+          "subtitle",
+          "body",
+          "speakerNotes"
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:00.258Z",
+      "stage": "slide.8.llm.success",
+      "payload": {
+        "model": "deepseek-chat",
+        "clientIndex": 0,
+        "durationMs": 5495,
+        "attemptDurationMs": 5495,
+        "attempts": 1,
+        "contentLength": 474
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:00.258Z",
+      "stage": "slide.8.raw",
+      "payload": {
+        "attempt": 1,
+        "raw": "{\n  \"layout\": \"image-text\",\n  \"title\": \"工厂巡检\",\n  \"subtitle\": \"\",\n  \"body\": [\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"机器人搭载AI与多类传感器，沿预设路线自动巡检，实时监测设备与环境参数，及时发现并预警潜在问题，提升工厂安全稳定运行水平。\"\n    }\n  ],\n  \"image\": {\n    \"prompt\": \"A futuristic autonomous robot with multiple sensors and cameras, moving along a fixed path in a modern industrial factory setting, inspecting machinery and monitoring environmental parameters on a control panel.\",\n    \"alt\": \"工厂智能巡检机器人工作示意图\"\n  }\n}"
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:00.258Z",
+      "stage": "slide.8.cleaned",
+      "payload": {
+        "attempt": 1,
+        "cleaned": "{\n  \"layout\": \"image-text\",\n  \"title\": \"工厂巡检\",\n  \"subtitle\": \"\",\n  \"body\": [\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"机器人搭载AI与多类传感器，沿预设路线自动巡检，实时监测设备与环境参数，及时发现并预警潜在问题，提升工厂安全稳定运行水平。\"\n    }\n  ],\n  \"image\": {\n    \"prompt\": \"A futuristic autonomous robot with multiple sensors and cameras, moving along a fixed path in a modern industrial factory setting, inspecting machinery and monitoring environmental parameters on a control panel.\",\n    \"alt\": \"工厂智能巡检机器人工作示意图\"\n  }\n}"
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:00.258Z",
+      "stage": "slide.8.shape.beforeValidation",
+      "payload": {
+        "attempt": 1,
+        "layout": "image-text",
+        "title": "工厂巡检",
+        "keys": [
+          "layout",
+          "title",
+          "subtitle",
+          "body",
+          "image",
+          "speakerNotes"
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:00.258Z",
+      "stage": "slide.8.finalShape",
+      "payload": {
+        "attempt": 1,
+        "layout": "image-text",
+        "keys": [
+          "layout",
+          "title",
+          "subtitle",
+          "body",
+          "image",
+          "speakerNotes"
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:00.438Z",
+      "stage": "slide.5.llm.success",
+      "payload": {
+        "model": "deepseek-chat",
+        "clientIndex": 0,
+        "durationMs": 5675,
+        "attemptDurationMs": 5675,
+        "attempts": 1,
+        "contentLength": 516
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:00.439Z",
+      "stage": "slide.5.raw",
+      "payload": {
+        "attempt": 1,
+        "raw": "```json\n{\n    \"layout\": \"image-text\",\n    \"title\": \"作品功能与实现\",\n    \"subtitle\": \"\",\n    \"body\": [\n        {\n            \"type\": \"paragraph\",\n            \"text\": \"基于OpenHarmony的轮式导航机器人，具备自主导航与定位能力。通过鸿蒙APP实现远程控制、地图构建与自主导航，并采用国产硬件与LCM通信机制，确保高效交互与多机协同潜力。\"\n        }\n    ],\n    \"image\": {\n        \"prompt\": \"A realistic photograph of a wheeled navigation robot on a table or floor, with visible sensors and a sleek design, showcasing its physical form and key hardware components.\",\n        \"alt\": \"轮式导航机器人实物展示\"\n    }\n}\n```"
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:00.439Z",
+      "stage": "slide.5.cleaned",
+      "payload": {
+        "attempt": 1,
+        "cleaned": "{\n    \"layout\": \"image-text\",\n    \"title\": \"作品功能与实现\",\n    \"subtitle\": \"\",\n    \"body\": [\n        {\n            \"type\": \"paragraph\",\n            \"text\": \"基于OpenHarmony的轮式导航机器人，具备自主导航与定位能力。通过鸿蒙APP实现远程控制、地图构建与自主导航，并采用国产硬件与LCM通信机制，确保高效交互与多机协同潜力。\"\n        }\n    ],\n    \"image\": {\n        \"prompt\": \"A realistic photograph of a wheeled navigation robot on a table or floor, with visible sensors and a sleek design, showcasing its physical form and key hardware components.\",\n        \"alt\": \"轮式导航机器人实物展示\"\n    }\n}"
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:00.439Z",
+      "stage": "slide.5.shape.beforeValidation",
+      "payload": {
+        "attempt": 1,
+        "layout": "image-text",
+        "title": "作品功能与实现",
+        "keys": [
+          "layout",
+          "title",
+          "subtitle",
+          "body",
+          "image",
+          "speakerNotes"
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:00.439Z",
+      "stage": "slide.5.finalShape",
+      "payload": {
+        "attempt": 1,
+        "layout": "image-text",
+        "keys": [
+          "layout",
+          "title",
+          "subtitle",
+          "body",
+          "image",
+          "speakerNotes"
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:00.953Z",
+      "stage": "slide.3.llm.success",
+      "payload": {
+        "model": "deepseek-chat",
+        "clientIndex": 0,
+        "durationMs": 6190,
+        "attemptDurationMs": 6190,
+        "attempts": 1,
+        "contentLength": 404
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:00.953Z",
+      "stage": "slide.3.raw",
+      "payload": {
+        "attempt": 1,
+        "raw": "{\n  \"layout\": \"comparison\",\n  \"title\": \"背景与现状分析\",\n  \"subtitle\": \"机器人产业发展背景与国内外研究现状对比\",\n  \"left\": {\n    \"heading\": \"产业发展背景\",\n    \"items\": [\"机器人是衡量国家科技创新与高端制造水平的重要标志\", \"!中国机器人市场规模全球领先，年复合增长率达5%\", \"技术快速积累，应用领域广泛普及\"],\n    \"tone\": \"positive\"\n  },\n  \"right\": {\n    \"heading\": \"国内外研究现状\",\n    \"items\": [\"轮式导航机器人在物流、仓储、医疗等领域应用前景广阔\", \"!核心技术依赖国外系统与架构，存在‘卡脖子’风险\", \"国产化操作系统为自主可控发展提供新机遇\"],\n    \"tone\": \"negative\"\n  }\n}"
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:00.953Z",
+      "stage": "slide.3.cleaned",
+      "payload": {
+        "attempt": 1,
+        "cleaned": "{\n  \"layout\": \"comparison\",\n  \"title\": \"背景与现状分析\",\n  \"subtitle\": \"机器人产业发展背景与国内外研究现状对比\",\n  \"left\": {\n    \"heading\": \"产业发展背景\",\n    \"items\": [\"机器人是衡量国家科技创新与高端制造水平的重要标志\", \"!中国机器人市场规模全球领先，年复合增长率达5%\", \"技术快速积累，应用领域广泛普及\"],\n    \"tone\": \"positive\"\n  },\n  \"right\": {\n    \"heading\": \"国内外研究现状\",\n    \"items\": [\"轮式导航机器人在物流、仓储、医疗等领域应用前景广阔\", \"!核心技术依赖国外系统与架构，存在'卡脖子'风险\", \"国产化操作系统为自主可控发展提供新机遇\"],\n    \"tone\": \"negative\"\n  }\n}"
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:00.953Z",
+      "stage": "slide.3.shape.beforeValidation",
+      "payload": {
+        "attempt": 1,
+        "layout": "comparison",
+        "title": "背景与现状分析",
+        "keys": [
+          "layout",
+          "title",
+          "subtitle",
+          "left",
+          "right",
+          "speakerNotes"
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:00.953Z",
+      "stage": "slide.3.finalShape",
+      "payload": {
+        "attempt": 1,
+        "layout": "comparison",
+        "keys": [
+          "layout",
+          "title",
+          "subtitle",
+          "left",
+          "right",
+          "speakerNotes"
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:00.965Z",
+      "stage": "slide.7.llm.success",
+      "payload": {
+        "model": "deepseek-chat",
+        "clientIndex": 0,
+        "durationMs": 6202,
+        "attemptDurationMs": 6202,
+        "attempts": 1,
+        "contentLength": 502
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:00.965Z",
+      "stage": "slide.7.raw",
+      "payload": {
+        "attempt": 1,
+        "raw": "{\n  \"layout\": \"image-text\",\n  \"title\": \"小型物流运输\",\n  \"subtitle\": \"\",\n  \"body\": [\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"该机器人结合AGV技术，配备机械臂与运输装置，在小型仓库内实现自动物流运输。它能自主规划路径，精准定位并抓取货物，运送至指定地点，显著提升搬运效率。\"\n    }\n  ],\n  \"image\": {\n    \"prompt\": \"A compact autonomous mobile robot with a robotic arm in a small warehouse setting, navigating aisles and picking up a box from a shelf, conveying a sense of automated logistics and efficient material handling.\",\n    \"alt\": \"小型仓库内，配备机械臂的自主移动机器人正在执行货物搬运任务\"\n  }\n}"
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:00.965Z",
+      "stage": "slide.7.cleaned",
+      "payload": {
+        "attempt": 1,
+        "cleaned": "{\n  \"layout\": \"image-text\",\n  \"title\": \"小型物流运输\",\n  \"subtitle\": \"\",\n  \"body\": [\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"该机器人结合AGV技术，配备机械臂与运输装置，在小型仓库内实现自动物流运输。它能自主规划路径，精准定位并抓取货物，运送至指定地点，显著提升搬运效率。\"\n    }\n  ],\n  \"image\": {\n    \"prompt\": \"A compact autonomous mobile robot with a robotic arm in a small warehouse setting, navigating aisles and picking up a box from a shelf, conveying a sense of automated logistics and efficient material handling.\",\n    \"alt\": \"小型仓库内，配备机械臂的自主移动机器人正在执行货物搬运任务\"\n  }\n}"
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:00.965Z",
+      "stage": "slide.7.shape.beforeValidation",
+      "payload": {
+        "attempt": 1,
+        "layout": "image-text",
+        "title": "小型物流运输",
+        "keys": [
+          "layout",
+          "title",
+          "subtitle",
+          "body",
+          "image",
+          "speakerNotes"
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:00.965Z",
+      "stage": "slide.7.finalShape",
+      "payload": {
+        "attempt": 1,
+        "layout": "image-text",
+        "keys": [
+          "layout",
+          "title",
+          "subtitle",
+          "body",
+          "image",
+          "speakerNotes"
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:00.966Z",
+      "stage": "slide.batch.success",
+      "payload": {
+        "batchStartIndex": 1,
+        "batchEndIndex": 8,
+        "total": 24,
+        "durationMs": 6204
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:00.966Z",
+      "stage": "slide.batch.start",
+      "payload": {
+        "batchStartIndex": 9,
+        "batchEndIndex": 16,
+        "total": 24,
+        "slideIndexes": [
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:00.966Z",
+      "stage": "slide.9.llm.start",
+      "payload": {
+        "model": "deepseek-chat",
+        "clientIndex": 0,
+        "systemLength": 1934,
+        "userLength": 573
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:00.966Z",
+      "stage": "slide.10.llm.start",
+      "payload": {
+        "model": "deepseek-chat",
+        "clientIndex": 0,
+        "systemLength": 1934,
+        "userLength": 3318
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:00.966Z",
+      "stage": "slide.11.llm.start",
+      "payload": {
+        "model": "deepseek-chat",
+        "clientIndex": 0,
+        "systemLength": 1934,
+        "userLength": 1122
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:00.966Z",
+      "stage": "slide.12.llm.start",
+      "payload": {
+        "model": "deepseek-chat",
+        "clientIndex": 0,
+        "systemLength": 1934,
+        "userLength": 2139
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:00.966Z",
+      "stage": "slide.13.llm.start",
+      "payload": {
+        "model": "deepseek-chat",
+        "clientIndex": 0,
+        "systemLength": 1934,
+        "userLength": 2437
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:00.966Z",
+      "stage": "slide.14.llm.start",
+      "payload": {
+        "model": "deepseek-chat",
+        "clientIndex": 0,
+        "systemLength": 1934,
+        "userLength": 2368
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:00.966Z",
+      "stage": "slide.15.llm.start",
+      "payload": {
+        "model": "deepseek-chat",
+        "clientIndex": 0,
+        "systemLength": 1934,
+        "userLength": 2372
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:00.967Z",
+      "stage": "slide.16.llm.start",
+      "payload": {
+        "model": "deepseek-chat",
+        "clientIndex": 0,
+        "systemLength": 1934,
+        "userLength": 2359
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:03.490Z",
+      "stage": "slide.12.llm.success",
+      "payload": {
+        "model": "deepseek-chat",
+        "clientIndex": 0,
+        "durationMs": 2524,
+        "attemptDurationMs": 2524,
+        "attempts": 1,
+        "contentLength": 79
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:03.490Z",
+      "stage": "slide.12.raw",
+      "payload": {
+        "attempt": 1,
+        "raw": "{\n  \"layout\": \"section-header\",\n  \"title\": \"技术优势\",\n  \"subtitle\": \"引入技术优势详细分析\"\n}"
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:03.490Z",
+      "stage": "slide.12.cleaned",
+      "payload": {
+        "attempt": 1,
+        "cleaned": "{\n  \"layout\": \"section-header\",\n  \"title\": \"技术优势\",\n  \"subtitle\": \"引入技术优势详细分析\"\n}"
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:03.491Z",
+      "stage": "slide.12.shape.beforeValidation",
+      "payload": {
+        "attempt": 1,
+        "layout": "section-header",
+        "title": "技术优势",
+        "keys": [
+          "layout",
+          "title",
+          "subtitle",
+          "speakerNotes"
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:03.491Z",
+      "stage": "slide.12.finalShape",
+      "payload": {
+        "attempt": 1,
+        "layout": "section-header",
+        "keys": [
+          "layout",
+          "title",
+          "subtitle",
+          "speakerNotes"
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:03.693Z",
+      "stage": "slide.10.llm.success",
+      "payload": {
+        "model": "deepseek-chat",
+        "clientIndex": 0,
+        "durationMs": 2727,
+        "attemptDurationMs": 2727,
+        "attempts": 1,
+        "contentLength": 74
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:03.693Z",
+      "stage": "slide.10.raw",
+      "payload": {
+        "attempt": 1,
+        "raw": "{\n  \"layout\": \"section-header\",\n  \"title\": \"项目价值与特色创新\",\n  \"subtitle\": \"\"\n}"
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:03.693Z",
+      "stage": "slide.10.cleaned",
+      "payload": {
+        "attempt": 1,
+        "cleaned": "{\n  \"layout\": \"section-header\",\n  \"title\": \"项目价值与特色创新\",\n  \"subtitle\": \"\"\n}"
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:03.693Z",
+      "stage": "slide.10.shape.beforeValidation",
+      "payload": {
+        "attempt": 1,
+        "layout": "section-header",
+        "title": "项目价值与特色创新",
+        "keys": [
+          "layout",
+          "title",
+          "subtitle",
+          "speakerNotes"
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:03.693Z",
+      "stage": "slide.10.finalShape",
+      "payload": {
+        "attempt": 1,
+        "layout": "section-header",
+        "keys": [
+          "layout",
+          "title",
+          "subtitle",
+          "speakerNotes"
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:06.637Z",
+      "stage": "slide.9.llm.success",
+      "payload": {
+        "model": "deepseek-chat",
+        "clientIndex": 0,
+        "durationMs": 5671,
+        "attemptDurationMs": 5671,
+        "attempts": 1,
+        "contentLength": 459
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:06.637Z",
+      "stage": "slide.9.raw",
+      "payload": {
+        "attempt": 1,
+        "raw": "{\n  \"layout\": \"image-text\",\n  \"title\": \"家用清洁\",\n  \"subtitle\": \"\",\n  \"body\": [\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"机器人融入鸿蒙生态，与智能家居互联互通，实现自动规划路线、避障、远程控制与定时定点清洁，打造整洁舒适的家庭环境。\"\n    }\n  ],\n  \"image\": {\n    \"prompt\": \"A modern living room scene with a smart cleaning robot navigating autonomously, integrated with a smart home ecosystem showing connected devices like lights and thermostat on a smartphone app interface.\",\n    \"alt\": \"智能家居场景中的清洁机器人\"\n  }\n}"
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:06.637Z",
+      "stage": "slide.9.cleaned",
+      "payload": {
+        "attempt": 1,
+        "cleaned": "{\n  \"layout\": \"image-text\",\n  \"title\": \"家用清洁\",\n  \"subtitle\": \"\",\n  \"body\": [\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"机器人融入鸿蒙生态，与智能家居互联互通，实现自动规划路线、避障、远程控制与定时定点清洁，打造整洁舒适的家庭环境。\"\n    }\n  ],\n  \"image\": {\n    \"prompt\": \"A modern living room scene with a smart cleaning robot navigating autonomously, integrated with a smart home ecosystem showing connected devices like lights and thermostat on a smartphone app interface.\",\n    \"alt\": \"智能家居场景中的清洁机器人\"\n  }\n}"
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:06.637Z",
+      "stage": "slide.9.shape.beforeValidation",
+      "payload": {
+        "attempt": 1,
+        "layout": "image-text",
+        "title": "家用清洁",
+        "keys": [
+          "layout",
+          "title",
+          "subtitle",
+          "body",
+          "image",
+          "speakerNotes"
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:06.637Z",
+      "stage": "slide.9.finalShape",
+      "payload": {
+        "attempt": 1,
+        "layout": "image-text",
+        "keys": [
+          "layout",
+          "title",
+          "subtitle",
+          "body",
+          "image",
+          "speakerNotes"
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:07.805Z",
+      "stage": "slide.16.llm.success",
+      "payload": {
+        "model": "deepseek-chat",
+        "clientIndex": 0,
+        "durationMs": 6838,
+        "attemptDurationMs": 6838,
+        "attempts": 1,
+        "contentLength": 420
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:07.805Z",
+      "stage": "slide.16.raw",
+      "payload": {
+        "attempt": 1,
+        "raw": "{\n  \"layout\": \"comparison\",\n  \"title\": \"LCM通讯技术\",\n  \"subtitle\": \"对比LCM与TCP/UDP在通信中的优势\",\n  \"left\": {\n    \"heading\": \"LCM\",\n    \"items\": [\"用于进程间、设备间通信\", \"!简化消息传递，隐藏连接与数据包处理复杂性\", \"无需提供IP地址，适合多进程通信场景\", \"开发者可专注于应用逻辑\"],\n    \"tone\": \"positive\"\n  },\n  \"right\": {\n    \"heading\": \"TCP/UDP\",\n    \"items\": [\"用于进程间、设备间通信\", \"!TCP需建立维护连接，UDP需手动处理数据包顺序与完整性\", \"TCP开销大，UDP缺乏应用层优化\", \"连接均需提供IP地址，多进程通信时地址资源受限\"],\n    \"tone\": \"negative\"\n  }\n}"
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:07.805Z",
+      "stage": "slide.16.cleaned",
+      "payload": {
+        "attempt": 1,
+        "cleaned": "{\n  \"layout\": \"comparison\",\n  \"title\": \"LCM通讯技术\",\n  \"subtitle\": \"对比LCM与TCP/UDP在通信中的优势\",\n  \"left\": {\n    \"heading\": \"LCM\",\n    \"items\": [\"用于进程间、设备间通信\", \"!简化消息传递，隐藏连接与数据包处理复杂性\", \"无需提供IP地址，适合多进程通信场景\", \"开发者可专注于应用逻辑\"],\n    \"tone\": \"positive\"\n  },\n  \"right\": {\n    \"heading\": \"TCP/UDP\",\n    \"items\": [\"用于进程间、设备间通信\", \"!TCP需建立维护连接，UDP需手动处理数据包顺序与完整性\", \"TCP开销大，UDP缺乏应用层优化\", \"连接均需提供IP地址，多进程通信时地址资源受限\"],\n    \"tone\": \"negative\"\n  }\n}"
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:07.805Z",
+      "stage": "slide.16.shape.beforeValidation",
+      "payload": {
+        "attempt": 1,
+        "layout": "comparison",
+        "title": "LCM通讯技术",
+        "keys": [
+          "layout",
+          "title",
+          "subtitle",
+          "left",
+          "right",
+          "speakerNotes"
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:07.805Z",
+      "stage": "slide.16.finalShape",
+      "payload": {
+        "attempt": 1,
+        "layout": "comparison",
+        "keys": [
+          "layout",
+          "title",
+          "subtitle",
+          "left",
+          "right",
+          "speakerNotes"
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:08.037Z",
+      "stage": "slide.14.llm.success",
+      "payload": {
+        "model": "deepseek-chat",
+        "clientIndex": 0,
+        "durationMs": 7071,
+        "attemptDurationMs": 7071,
+        "attempts": 1,
+        "contentLength": 623
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:08.037Z",
+      "stage": "slide.14.raw",
+      "payload": {
+        "attempt": 1,
+        "raw": "{\n  \"layout\": \"text-image\",\n  \"title\": \"自主开发SLAM算法\",\n  \"subtitle\": \"\",\n  \"body\": [\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"团队自主研发SLAM算法，在不依赖ROS系统的情况下，采用逐步扩展方式创建概率地图，通过scan to map提升建图精度并过滤动态障碍物。算法支持地图扩展、局部更新与长走廊环境自适应建图，定位过程结合实时更新与局部SLAM，确保在环境变化中保持高精度，同时优化了地图构建速度。\"\n    }\n  ],\n  \"image\": {\n    \"prompt\": \"A schematic diagram illustrating Simultaneous Localization and Mapping (SLAM) algorithm, showing a robot navigating through an indoor environment while constructing a probabilistic map with dynamic obstacle filtering, featuring scan-to-map matching and path planning visualization.\",\n    \"alt\": \"SLAM算法示意图\"\n  }\n}"
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:08.037Z",
+      "stage": "slide.14.cleaned",
+      "payload": {
+        "attempt": 1,
+        "cleaned": "{\n  \"layout\": \"text-image\",\n  \"title\": \"自主开发SLAM算法\",\n  \"subtitle\": \"\",\n  \"body\": [\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"团队自主研发SLAM算法，在不依赖ROS系统的情况下，采用逐步扩展方式创建概率地图，通过scan to map提升建图精度并过滤动态障碍物。算法支持地图扩展、局部更新与长走廊环境自适应建图，定位过程结合实时更新与局部SLAM，确保在环境变化中保持高精度，同时优化了地图构建速度。\"\n    }\n  ],\n  \"image\": {\n    \"prompt\": \"A schematic diagram illustrating Simultaneous Localization and Mapping (SLAM) algorithm, showing a robot navigating through an indoor environment while constructing a probabilistic map with dynamic obstacle filtering, featuring scan-to-map matching and path planning visualization.\",\n    \"alt\": \"SLAM算法示意图\"\n  }\n}"
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:08.037Z",
+      "stage": "slide.14.shape.beforeValidation",
+      "payload": {
+        "attempt": 1,
+        "layout": "text-image",
+        "title": "自主开发SLAM算法",
+        "keys": [
+          "layout",
+          "title",
+          "subtitle",
+          "body",
+          "image",
+          "speakerNotes"
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:08.037Z",
+      "stage": "slide.14.finalShape",
+      "payload": {
+        "attempt": 1,
+        "layout": "text-image",
+        "keys": [
+          "layout",
+          "title",
+          "subtitle",
+          "body",
+          "image",
+          "speakerNotes"
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:08.585Z",
+      "stage": "slide.15.llm.success",
+      "payload": {
+        "model": "deepseek-chat",
+        "clientIndex": 0,
+        "durationMs": 7619,
+        "attemptDurationMs": 7619,
+        "attempts": 1,
+        "contentLength": 695
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:08.585Z",
+      "stage": "slide.15.raw",
+      "payload": {
+        "attempt": 1,
+        "raw": "{\n  \"layout\": \"text-image\",\n  \"title\": \"改研路径规划算法\",\n  \"subtitle\": \"\",\n  \"body\": [\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"在A*算法基础上进行优化，通过为地图点赋予状态信息（如空闲、障碍、危险等），并结合启发式搜索，显著提升了路径规划的效率和安全性。算法最终输出机器人的实时线速度与角速度，确保其在复杂环境中的可靠导航。\"\n    }\n  ],\n  \"image\": {\n    \"prompt\": \"A detailed schematic diagram of a robot path planning algorithm, showing a grid-based map with color-coded points representing different states (free, occupied, near obstacle, high cost, danger). A red line indicates the optimal path calculated by the A* algorithm, avoiding obstacles and high-cost areas. Arrows show the robot's calculated linear and angular velocities along the path.\",\n    \"alt\": \"基于状态信息的A*路径规划算法示意图\"\n  }\n}"
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:08.585Z",
+      "stage": "slide.15.cleaned",
+      "payload": {
+        "attempt": 1,
+        "cleaned": "{\n  \"layout\": \"text-image\",\n  \"title\": \"改研路径规划算法\",\n  \"subtitle\": \"\",\n  \"body\": [\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"在A*算法基础上进行优化，通过为地图点赋予状态信息（如空闲、障碍、危险等），并结合启发式搜索，显著提升了路径规划的效率和安全性。算法最终输出机器人的实时线速度与角速度，确保其在复杂环境中的可靠导航。\"\n    }\n  ],\n  \"image\": {\n    \"prompt\": \"A detailed schematic diagram of a robot path planning algorithm, showing a grid-based map with color-coded points representing different states (free, occupied, near obstacle, high cost, danger). A red line indicates the optimal path calculated by the A* algorithm, avoiding obstacles and high-cost areas. Arrows show the robot's calculated linear and angular velocities along the path.\",\n    \"alt\": \"基于状态信息的A*路径规划算法示意图\"\n  }\n}"
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:08.585Z",
+      "stage": "slide.15.shape.beforeValidation",
+      "payload": {
+        "attempt": 1,
+        "layout": "text-image",
+        "title": "改研路径规划算法",
+        "keys": [
+          "layout",
+          "title",
+          "subtitle",
+          "body",
+          "image",
+          "speakerNotes"
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:08.585Z",
+      "stage": "slide.15.finalShape",
+      "payload": {
+        "attempt": 1,
+        "layout": "text-image",
+        "keys": [
+          "layout",
+          "title",
+          "subtitle",
+          "body",
+          "image",
+          "speakerNotes"
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:09.009Z",
+      "stage": "slide.11.llm.success",
+      "payload": {
+        "model": "deepseek-chat",
+        "clientIndex": 0,
+        "durationMs": 8043,
+        "attemptDurationMs": 8043,
+        "attempts": 1,
+        "contentLength": 598
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:09.009Z",
+      "stage": "slide.11.raw",
+      "payload": {
+        "attempt": 1,
+        "raw": "{\n  \"layout\": \"cards-4\",\n  \"title\": \"项目价值\",\n  \"subtitle\": \"\",\n  \"cards\": [\n    {\n      \"icon\": \"search\",\n      \"heading\": \"填补市场空白\",\n      \"body\": \"实现国内软硬件全国产化轮式导航机器人在生产实习行业的零突破，打造实习实训平台，推动行业智能化进程。\"\n    },\n    {\n      \"icon\": \"settings\",\n      \"heading\": \"提升自主可控能力\",\n      \"body\": \"基于国产鸿蒙操作系统开发，规避外部技术风险，确保操作系统层面完全自主可控，保障系统安全与稳定。\"\n    },\n    {\n      \"icon\": \"terminal\",\n      \"heading\": \"促进相关行业发展\",\n      \"body\": \"全面采用国产处理器、传感器等关键硬件，减少进口依赖，提升供应链安全，带动上下游产业链共同进步。\"\n    },\n    {\n      \"icon\": \"money\",\n      \"heading\": \"降低开发成本\",\n      \"body\": \"逐步采用低成本国产部件替代高费用部件，有效降低整体项目成本，为产品大规模应用提供价格优势。\"\n    }\n  ]\n}"
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:09.009Z",
+      "stage": "slide.11.cleaned",
+      "payload": {
+        "attempt": 1,
+        "cleaned": "{\n  \"layout\": \"cards-4\",\n  \"title\": \"项目价值\",\n  \"subtitle\": \"\",\n  \"cards\": [\n    {\n      \"icon\": \"search\",\n      \"heading\": \"填补市场空白\",\n      \"body\": \"实现国内软硬件全国产化轮式导航机器人在生产实习行业的零突破，打造实习实训平台，推动行业智能化进程。\"\n    },\n    {\n      \"icon\": \"settings\",\n      \"heading\": \"提升自主可控能力\",\n      \"body\": \"基于国产鸿蒙操作系统开发，规避外部技术风险，确保操作系统层面完全自主可控，保障系统安全与稳定。\"\n    },\n    {\n      \"icon\": \"terminal\",\n      \"heading\": \"促进相关行业发展\",\n      \"body\": \"全面采用国产处理器、传感器等关键硬件，减少进口依赖，提升供应链安全，带动上下游产业链共同进步。\"\n    },\n    {\n      \"icon\": \"money\",\n      \"heading\": \"降低开发成本\",\n      \"body\": \"逐步采用低成本国产部件替代高费用部件，有效降低整体项目成本，为产品大规模应用提供价格优势。\"\n    }\n  ]\n}"
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:09.010Z",
+      "stage": "slide.11.shape.beforeValidation",
+      "payload": {
+        "attempt": 1,
+        "layout": "cards-4",
+        "title": "项目价值",
+        "keys": [
+          "layout",
+          "title",
+          "subtitle",
+          "cards",
+          "speakerNotes"
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:09.010Z",
+      "stage": "slide.11.finalShape",
+      "payload": {
+        "attempt": 1,
+        "layout": "cards-4",
+        "keys": [
+          "layout",
+          "title",
+          "subtitle",
+          "cards",
+          "speakerNotes"
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:09.782Z",
+      "stage": "slide.13.llm.success",
+      "payload": {
+        "model": "deepseek-chat",
+        "clientIndex": 0,
+        "durationMs": 8816,
+        "attemptDurationMs": 8816,
+        "attempts": 1,
+        "contentLength": 609
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:09.782Z",
+      "stage": "slide.13.raw",
+      "payload": {
+        "attempt": 1,
+        "raw": "{\n  \"layout\": \"cards-4\",\n  \"title\": \"紫派主板优势\",\n  \"subtitle\": \"\",\n  \"cards\": [\n    {\n      \"icon\": \"terminal\",\n      \"heading\": \"体积精巧\",\n      \"body\": \"尺寸如卡片，便携易用。仅需一根Type-C线缆即可完成供电与程序安装，极大简化操作流程。\"\n    },\n    {\n      \"icon\": \"settings\",\n      \"heading\": \"性能强大\",\n      \"body\": \"搭载RK3566四核处理器，主频最高1.8GHz，支持8GB内存。集成Mali-G52 GPU，性能较大禹板卡提升20%。\"\n    },\n    {\n      \"icon\": \"search\",\n      \"heading\": \"价格低廉\",\n      \"body\": \"价格约400元，远低于2000元以上大禹板卡。性价比在开源鸿蒙板卡中领先，有效降低项目成本。\"\n    },\n    {\n      \"icon\": \"money\",\n      \"heading\": \"高扩展性\",\n      \"body\": \"提供HDMI、M.2 PCIe、千兆网口、USB及40pin扩展排针等丰富接口，适用于AIoT各行业，便于功能扩展。\"\n    }\n  ]\n}"
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:09.782Z",
+      "stage": "slide.13.cleaned",
+      "payload": {
+        "attempt": 1,
+        "cleaned": "{\n  \"layout\": \"cards-4\",\n  \"title\": \"紫派主板优势\",\n  \"subtitle\": \"\",\n  \"cards\": [\n    {\n      \"icon\": \"terminal\",\n      \"heading\": \"体积精巧\",\n      \"body\": \"尺寸如卡片，便携易用。仅需一根Type-C线缆即可完成供电与程序安装，极大简化操作流程。\"\n    },\n    {\n      \"icon\": \"settings\",\n      \"heading\": \"性能强大\",\n      \"body\": \"搭载RK3566四核处理器，主频最高1.8GHz，支持8GB内存。集成Mali-G52 GPU，性能较大禹板卡提升20%。\"\n    },\n    {\n      \"icon\": \"search\",\n      \"heading\": \"价格低廉\",\n      \"body\": \"价格约400元，远低于2000元以上大禹板卡。性价比在开源鸿蒙板卡中领先，有效降低项目成本。\"\n    },\n    {\n      \"icon\": \"money\",\n      \"heading\": \"高扩展性\",\n      \"body\": \"提供HDMI、M.2 PCIe、千兆网口、USB及40pin扩展排针等丰富接口，适用于AIoT各行业，便于功能扩展。\"\n    }\n  ]\n}"
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:09.782Z",
+      "stage": "slide.13.shape.beforeValidation",
+      "payload": {
+        "attempt": 1,
+        "layout": "cards-4",
+        "title": "紫派主板优势",
+        "keys": [
+          "layout",
+          "title",
+          "subtitle",
+          "cards",
+          "speakerNotes",
+          "image"
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:09.782Z",
+      "stage": "slide.13.finalShape",
+      "payload": {
+        "attempt": 1,
+        "layout": "cards-4",
+        "keys": [
+          "layout",
+          "title",
+          "subtitle",
+          "cards",
+          "speakerNotes",
+          "image"
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:09.783Z",
+      "stage": "slide.batch.success",
+      "payload": {
+        "batchStartIndex": 9,
+        "batchEndIndex": 16,
+        "total": 24,
+        "durationMs": 8817
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:09.783Z",
+      "stage": "slide.batch.start",
+      "payload": {
+        "batchStartIndex": 17,
+        "batchEndIndex": 24,
+        "total": 24,
+        "slideIndexes": [
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:09.783Z",
+      "stage": "slide.17.llm.start",
+      "payload": {
+        "model": "deepseek-chat",
+        "clientIndex": 0,
+        "systemLength": 1934,
+        "userLength": 2414
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:09.783Z",
+      "stage": "slide.18.llm.start",
+      "payload": {
+        "model": "deepseek-chat",
+        "clientIndex": 0,
+        "systemLength": 1934,
+        "userLength": 1039
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:09.783Z",
+      "stage": "slide.19.llm.start",
+      "payload": {
+        "model": "deepseek-chat",
+        "clientIndex": 0,
+        "systemLength": 1934,
+        "userLength": 1655
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:09.783Z",
+      "stage": "slide.20.llm.start",
+      "payload": {
+        "model": "deepseek-chat",
+        "clientIndex": 0,
+        "systemLength": 1934,
+        "userLength": 1840
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:09.783Z",
+      "stage": "slide.21.llm.start",
+      "payload": {
+        "model": "deepseek-chat",
+        "clientIndex": 0,
+        "systemLength": 1934,
+        "userLength": 21971
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:09.783Z",
+      "stage": "slide.22.llm.start",
+      "payload": {
+        "model": "deepseek-chat",
+        "clientIndex": 0,
+        "systemLength": 1934,
+        "userLength": 22268
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:09.783Z",
+      "stage": "slide.23.llm.start",
+      "payload": {
+        "model": "deepseek-chat",
+        "clientIndex": 0,
+        "systemLength": 1934,
+        "userLength": 1980
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:09.783Z",
+      "stage": "slide.24.llm.start",
+      "payload": {
+        "model": "deepseek-chat",
+        "clientIndex": 0,
+        "systemLength": 1934,
+        "userLength": 2007
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:11.648Z",
+      "stage": "slide.19.llm.success",
+      "payload": {
+        "model": "deepseek-chat",
+        "clientIndex": 0,
+        "durationMs": 1865,
+        "attemptDurationMs": 1865,
+        "attempts": 1,
+        "contentLength": 69
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:11.648Z",
+      "stage": "slide.19.raw",
+      "payload": {
+        "attempt": 1,
+        "raw": "{\n  \"layout\": \"section-header\",\n  \"title\": \"功能设计\",\n  \"subtitle\": \"\"\n}"
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:11.648Z",
+      "stage": "slide.19.cleaned",
+      "payload": {
+        "attempt": 1,
+        "cleaned": "{\n  \"layout\": \"section-header\",\n  \"title\": \"功能设计\",\n  \"subtitle\": \"\"\n}"
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:11.648Z",
+      "stage": "slide.19.shape.beforeValidation",
+      "payload": {
+        "attempt": 1,
+        "layout": "section-header",
+        "title": "功能设计",
+        "keys": [
+          "layout",
+          "title",
+          "subtitle",
+          "speakerNotes"
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:11.648Z",
+      "stage": "slide.19.finalShape",
+      "payload": {
+        "attempt": 1,
+        "layout": "section-header",
+        "keys": [
+          "layout",
+          "title",
+          "subtitle",
+          "speakerNotes"
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:11.721Z",
+      "stage": "slide.24.llm.success",
+      "payload": {
+        "model": "deepseek-chat",
+        "clientIndex": 0,
+        "durationMs": 1938,
+        "attemptDurationMs": 1938,
+        "attempts": 1,
+        "contentLength": 66
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:11.721Z",
+      "stage": "slide.24.raw",
+      "payload": {
+        "attempt": 1,
+        "raw": "{\n  \"layout\": \"ending\",\n  \"title\": \"模块参数与成本分析\",\n  \"subtitle\": \"\"\n}"
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:11.721Z",
+      "stage": "slide.24.cleaned",
+      "payload": {
+        "attempt": 1,
+        "cleaned": "{\n  \"layout\": \"ending\",\n  \"title\": \"模块参数与成本分析\",\n  \"subtitle\": \"\"\n}"
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:11.721Z",
+      "stage": "slide.24.shape.beforeValidation",
+      "payload": {
+        "attempt": 1,
+        "layout": "ending",
+        "title": "模块参数与成本分析",
+        "keys": [
+          "layout",
+          "title",
+          "subtitle",
+          "speakerNotes"
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:11.721Z",
+      "stage": "slide.24.finalShape",
+      "payload": {
+        "attempt": 1,
+        "layout": "ending",
+        "keys": [
+          "layout",
+          "title",
+          "subtitle",
+          "speakerNotes"
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:12.006Z",
+      "stage": "slide.23.llm.success",
+      "payload": {
+        "model": "deepseek-chat",
+        "clientIndex": 0,
+        "durationMs": 2223,
+        "attemptDurationMs": 2223,
+        "attempts": 1,
+        "contentLength": 78
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:12.006Z",
+      "stage": "slide.23.raw",
+      "payload": {
+        "attempt": 1,
+        "raw": "{\n  \"layout\": \"section-header\",\n  \"title\": \"其他内容\",\n  \"subtitle\": \"引入参数和成本部分\"\n}"
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:12.006Z",
+      "stage": "slide.23.cleaned",
+      "payload": {
+        "attempt": 1,
+        "cleaned": "{\n  \"layout\": \"section-header\",\n  \"title\": \"其他内容\",\n  \"subtitle\": \"引入参数和成本部分\"\n}"
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:12.007Z",
+      "stage": "slide.23.shape.beforeValidation",
+      "payload": {
+        "attempt": 1,
+        "layout": "section-header",
+        "title": "其他内容",
+        "keys": [
+          "layout",
+          "title",
+          "subtitle",
+          "speakerNotes"
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:12.007Z",
+      "stage": "slide.23.finalShape",
+      "payload": {
+        "attempt": 1,
+        "layout": "section-header",
+        "keys": [
+          "layout",
+          "title",
+          "subtitle",
+          "speakerNotes"
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:13.330Z",
+      "stage": "slide.21.llm.success",
+      "payload": {
+        "model": "deepseek-chat",
+        "clientIndex": 0,
+        "durationMs": 3547,
+        "attemptDurationMs": 3547,
+        "attempts": 1,
+        "contentLength": 69
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:13.330Z",
+      "stage": "slide.21.raw",
+      "payload": {
+        "attempt": 1,
+        "raw": "{\n  \"layout\": \"section-header\",\n  \"title\": \"系统实现\",\n  \"subtitle\": \"\"\n}"
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:13.330Z",
+      "stage": "slide.21.cleaned",
+      "payload": {
+        "attempt": 1,
+        "cleaned": "{\n  \"layout\": \"section-header\",\n  \"title\": \"系统实现\",\n  \"subtitle\": \"\"\n}"
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:13.330Z",
+      "stage": "slide.21.shape.beforeValidation",
+      "payload": {
+        "attempt": 1,
+        "layout": "section-header",
+        "title": "系统实现",
+        "keys": [
+          "layout",
+          "title",
+          "subtitle",
+          "speakerNotes"
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:13.330Z",
+      "stage": "slide.21.finalShape",
+      "payload": {
+        "attempt": 1,
+        "layout": "section-header",
+        "keys": [
+          "layout",
+          "title",
+          "subtitle",
+          "speakerNotes"
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:16.601Z",
+      "stage": "slide.20.llm.success",
+      "payload": {
+        "model": "deepseek-chat",
+        "clientIndex": 0,
+        "durationMs": 6818,
+        "attemptDurationMs": 6818,
+        "attempts": 1,
+        "contentLength": 610
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:16.601Z",
+      "stage": "slide.20.raw",
+      "payload": {
+        "attempt": 1,
+        "raw": "{\n  \"layout\": \"image-center\",\n  \"title\": \"功能设计总览\",\n  \"body\": [\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"系统由五大核心模块构成：驱动模块负责机器人底盘运动控制；通信模块基于LCM实现高效消息传递；导航与路径规划模块实现自主定位与目标点导航；主控模块负责消息处理与系统协调；人机交互模块提供鸿蒙APP进行远程操控与地图交互。\"\n    }\n  ],\n  \"image\": {\n    \"prompt\": \"A detailed system architecture flowchart showing five functional modules: Motor Drive, LCM Communication, Navigation & Path Planning, Main Control, and Human-Machine Interaction (OpenHarmony App). Arrows indicate data flow and control signals between modules, with a central main control unit coordinating all parts.\",\n    \"alt\": \"系统功能模块架构流程图\"\n  }\n}"
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:16.601Z",
+      "stage": "slide.20.cleaned",
+      "payload": {
+        "attempt": 1,
+        "cleaned": "{\n  \"layout\": \"image-center\",\n  \"title\": \"功能设计总览\",\n  \"body\": [\n    {\n      \"type\": \"paragraph\",\n      \"text\": \"系统由五大核心模块构成：驱动模块负责机器人底盘运动控制；通信模块基于LCM实现高效消息传递；导航与路径规划模块实现自主定位与目标点导航；主控模块负责消息处理与系统协调；人机交互模块提供鸿蒙APP进行远程操控与地图交互。\"\n    }\n  ],\n  \"image\": {\n    \"prompt\": \"A detailed system architecture flowchart showing five functional modules: Motor Drive, LCM Communication, Navigation & Path Planning, Main Control, and Human-Machine Interaction (OpenHarmony App). Arrows indicate data flow and control signals between modules, with a central main control unit coordinating all parts.\",\n    \"alt\": \"系统功能模块架构流程图\"\n  }\n}"
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:16.601Z",
+      "stage": "slide.20.shape.beforeValidation",
+      "payload": {
+        "attempt": 1,
+        "layout": "image-center",
+        "title": "功能设计总览",
+        "keys": [
+          "layout",
+          "title",
+          "body",
+          "image",
+          "subtitle",
+          "speakerNotes"
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:16.601Z",
+      "stage": "slide.20.finalShape",
+      "payload": {
+        "attempt": 1,
+        "layout": "image-center",
+        "keys": [
+          "layout",
+          "title",
+          "body",
+          "image",
+          "subtitle",
+          "speakerNotes"
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:17.842Z",
+      "stage": "slide.18.llm.success",
+      "payload": {
+        "model": "deepseek-chat",
+        "clientIndex": 0,
+        "durationMs": 8059,
+        "attemptDurationMs": 8059,
+        "attempts": 1,
+        "contentLength": 556
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:17.842Z",
+      "stage": "slide.18.raw",
+      "payload": {
+        "attempt": 1,
+        "raw": "{\n  \"layout\": \"cards-3\",\n  \"title\": \"作品创新\",\n  \"subtitle\": \"\",\n  \"cards\": [\n    {\n      \"icon\": \"cpu\",\n      \"heading\": \"全国产化软硬件\",\n      \"body\": \"从机器人控制到上位机应用，实现ROS系统替代。主控板、处理器、雷达、电机等核心部件均采用国产供应商产品，并自制适配鸿蒙系统的舵机控制板。\"\n    },\n    {\n      \"icon\": \"tool\",\n      \"heading\": \"交叉编译工具链\",\n      \"body\": \"基于华为官方NDK源码，在Ubuntu环境下自主配置CMake、Ninja、Clang等工具链。将常用工具及LCM通信库移植至OpenHarmony系统，为应用开发提供底层支持。\"\n    },\n    {\n      \"icon\": \"code\",\n      \"heading\": \"ArkTS语言开发\",\n      \"body\": \"外控应用完全采用华为ArkTS语言开发，替代Java/Kotlin。开发了机器人控制、建图导航等APP，高度契合鸿蒙运行环境，优化用户体验并确保语言自主可控。\"\n    }\n  ]\n}"
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:17.843Z",
+      "stage": "slide.18.cleaned",
+      "payload": {
+        "attempt": 1,
+        "cleaned": "{\n  \"layout\": \"cards-3\",\n  \"title\": \"作品创新\",\n  \"subtitle\": \"\",\n  \"cards\": [\n    {\n      \"icon\": \"cpu\",\n      \"heading\": \"全国产化软硬件\",\n      \"body\": \"从机器人控制到上位机应用，实现ROS系统替代。主控板、处理器、雷达、电机等核心部件均采用国产供应商产品，并自制适配鸿蒙系统的舵机控制板。\"\n    },\n    {\n      \"icon\": \"tool\",\n      \"heading\": \"交叉编译工具链\",\n      \"body\": \"基于华为官方NDK源码，在Ubuntu环境下自主配置CMake、Ninja、Clang等工具链。将常用工具及LCM通信库移植至OpenHarmony系统，为应用开发提供底层支持。\"\n    },\n    {\n      \"icon\": \"code\",\n      \"heading\": \"ArkTS语言开发\",\n      \"body\": \"外控应用完全采用华为ArkTS语言开发，替代Java/Kotlin。开发了机器人控制、建图导航等APP，高度契合鸿蒙运行环境，优化用户体验并确保语言自主可控。\"\n    }\n  ]\n}"
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:17.843Z",
+      "stage": "slide.18.shape.beforeValidation",
+      "payload": {
+        "attempt": 1,
+        "layout": "cards-3",
+        "title": "作品创新",
+        "keys": [
+          "layout",
+          "title",
+          "subtitle",
+          "cards",
+          "speakerNotes"
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:17.843Z",
+      "stage": "slide.18.finalShape",
+      "payload": {
+        "attempt": 1,
+        "layout": "cards-3",
+        "keys": [
+          "layout",
+          "title",
+          "subtitle",
+          "cards",
+          "speakerNotes"
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:18.943Z",
+      "stage": "slide.17.llm.success",
+      "payload": {
+        "model": "deepseek-chat",
+        "clientIndex": 0,
+        "durationMs": 9160,
+        "attemptDurationMs": 9160,
+        "attempts": 1,
+        "contentLength": 629
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:18.943Z",
+      "stage": "slide.17.raw",
+      "payload": {
+        "attempt": 1,
+        "raw": "{\n  \"layout\": \"list-featured\",\n  \"title\": \"模块化设计\",\n  \"subtitle\": \"\",\n  \"cards\": [\n    {\n      \"icon\": \"cpu\",\n      \"heading\": \"硬件模块化\",\n      \"body\": \"采用紫派作为核心硬件，其精巧体积、强大性能与丰富接口支持传感器与执行机构的灵活更换与升级，满足教育实训的多样化需求。\"\n    },\n    {\n      \"icon\": \"code\",\n      \"heading\": \"软件模块化\",\n      \"body\": \"操作系统、驱动、通信协议与功能模块采用低耦合设计，确保高独立性，支持自底向上的多门计算机实践课程与贯穿式国产化教学。\"\n    },\n    {\n      \"icon\": \"map\",\n      \"heading\": \"自主导航算法\",\n      \"body\": \"自主研发SLAM与路径规划算法，脱离ROS依赖，实现高精度建图、动态障碍过滤及高效路径决策，适应复杂环境。\"\n    },\n    {\n      \"icon\": \"refresh-cw\",\n      \"heading\": \"灵活配置与扩展\",\n      \"body\": \"模块化设计支持硬件按需替换与软件功能独立开发，便于学生进行生产实训、科创活动与科研工作，提升教学与实践灵活性。\"\n    }\n  ]\n}"
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:18.943Z",
+      "stage": "slide.17.cleaned",
+      "payload": {
+        "attempt": 1,
+        "cleaned": "{\n  \"layout\": \"list-featured\",\n  \"title\": \"模块化设计\",\n  \"subtitle\": \"\",\n  \"cards\": [\n    {\n      \"icon\": \"cpu\",\n      \"heading\": \"硬件模块化\",\n      \"body\": \"采用紫派作为核心硬件，其精巧体积、强大性能与丰富接口支持传感器与执行机构的灵活更换与升级，满足教育实训的多样化需求。\"\n    },\n    {\n      \"icon\": \"code\",\n      \"heading\": \"软件模块化\",\n      \"body\": \"操作系统、驱动、通信协议与功能模块采用低耦合设计，确保高独立性，支持自底向上的多门计算机实践课程与贯穿式国产化教学。\"\n    },\n    {\n      \"icon\": \"map\",\n      \"heading\": \"自主导航算法\",\n      \"body\": \"自主研发SLAM与路径规划算法，脱离ROS依赖，实现高精度建图、动态障碍过滤及高效路径决策，适应复杂环境。\"\n    },\n    {\n      \"icon\": \"refresh-cw\",\n      \"heading\": \"灵活配置与扩展\",\n      \"body\": \"模块化设计支持硬件按需替换与软件功能独立开发，便于学生进行生产实训、科创活动与科研工作，提升教学与实践灵活性。\"\n    }\n  ]\n}"
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:18.943Z",
+      "stage": "slide.17.shape.beforeValidation",
+      "payload": {
+        "attempt": 1,
+        "layout": "list-featured",
+        "title": "模块化设计",
+        "keys": [
+          "layout",
+          "title",
+          "subtitle",
+          "cards",
+          "speakerNotes"
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:18.943Z",
+      "stage": "slide.17.finalShape",
+      "payload": {
+        "attempt": 1,
+        "layout": "list-featured",
+        "keys": [
+          "layout",
+          "title",
+          "subtitle",
+          "cards",
+          "speakerNotes"
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:20.929Z",
+      "stage": "slide.22.llm.success",
+      "payload": {
+        "model": "deepseek-chat",
+        "clientIndex": 0,
+        "durationMs": 11146,
+        "attemptDurationMs": 11146,
+        "attempts": 1,
+        "contentLength": 712
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:20.929Z",
+      "stage": "slide.22.raw",
+      "payload": {
+        "attempt": 1,
+        "raw": "{\n  \"layout\": \"milestone-list\",\n  \"title\": \"系统实现关键步骤\",\n  \"subtitle\": \"\",\n  \"events\": [\n    {\n      \"date\": \"硬件层\",\n      \"title\": \"硬件选型与集成\",\n      \"description\": \"选定RPLIDAR A2M8激光雷达、兆威行星减速电机及Purple Pi OH Pro主控板，完成硬件组装与驱动板卡设计，为系统提供感知、执行与计算基础。\"\n    },\n    {\n      \"date\": \"中间层\",\n      \"title\": \"系统移植与通信实现\",\n      \"title\": \"系统移植与通信实现\",\n      \"description\": \"完成OpenHarmony系统源码拉取、编译与板卡烧录；交叉编译LCM库，实现基于LCM的多进程间可靠通信，丢包率为0%。\"\n    },\n    {\n      \"date\": \"应用层\",\n      \"title\": \"主控与导航算法开发\",\n      \"description\": \"实现UDP转LCM服务器与轮控模块，完成SLAM建图、定位及路径规划算法，支持通过指令控制建图、导航与地图保存。\"\n    },\n    {\n      \"date\": \"应用层\",\n      \"title\": \"鸿蒙控制APP开发\",\n      \"description\": \"开发基于ArkUI的移动控制应用，集成UDP通信、地图绘制、手势操作与状态管理，实现机器人远程控制与可视化交互。\"\n    }\n  ]\n}"
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:20.929Z",
+      "stage": "slide.22.cleaned",
+      "payload": {
+        "attempt": 1,
+        "cleaned": "{\n  \"layout\": \"milestone-list\",\n  \"title\": \"系统实现关键步骤\",\n  \"subtitle\": \"\",\n  \"events\": [\n    {\n      \"date\": \"硬件层\",\n      \"title\": \"硬件选型与集成\",\n      \"description\": \"选定RPLIDAR A2M8激光雷达、兆威行星减速电机及Purple Pi OH Pro主控板，完成硬件组装与驱动板卡设计，为系统提供感知、执行与计算基础。\"\n    },\n    {\n      \"date\": \"中间层\",\n      \"title\": \"系统移植与通信实现\",\n      \"title\": \"系统移植与通信实现\",\n      \"description\": \"完成OpenHarmony系统源码拉取、编译与板卡烧录；交叉编译LCM库，实现基于LCM的多进程间可靠通信，丢包率为0%。\"\n    },\n    {\n      \"date\": \"应用层\",\n      \"title\": \"主控与导航算法开发\",\n      \"description\": \"实现UDP转LCM服务器与轮控模块，完成SLAM建图、定位及路径规划算法，支持通过指令控制建图、导航与地图保存。\"\n    },\n    {\n      \"date\": \"应用层\",\n      \"title\": \"鸿蒙控制APP开发\",\n      \"description\": \"开发基于ArkUI的移动控制应用，集成UDP通信、地图绘制、手势操作与状态管理，实现机器人远程控制与可视化交互。\"\n    }\n  ]\n}"
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:20.929Z",
+      "stage": "slide.22.shape.beforeValidation",
+      "payload": {
+        "attempt": 1,
+        "layout": "milestone-list",
+        "title": "系统实现关键步骤",
+        "keys": [
+          "layout",
+          "title",
+          "subtitle",
+          "events",
+          "speakerNotes"
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:20.929Z",
+      "stage": "slide.22.finalShape",
+      "payload": {
+        "attempt": 1,
+        "layout": "milestone-list",
+        "keys": [
+          "layout",
+          "title",
+          "subtitle",
+          "events",
+          "speakerNotes"
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:20.929Z",
+      "stage": "slide.batch.success",
+      "payload": {
+        "batchStartIndex": 17,
+        "batchEndIndex": 24,
+        "total": 24,
+        "durationMs": 11146
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:20.929Z",
+      "stage": "pipeline.slides",
+      "payload": {
+        "count": 24,
+        "layouts": [
+          {
+            "index": 1,
+            "layout": "cover",
+            "title": "基于OpenHarmony和HarmonyOS的轮式导航机器人"
+          },
+          {
+            "index": 2,
+            "layout": "section-header",
+            "title": "设计需求分析"
+          },
+          {
+            "index": 3,
+            "layout": "comparison",
+            "title": "背景与现状分析"
+          },
+          {
+            "index": 4,
+            "layout": "section-header",
+            "title": "作品简介"
+          },
+          {
+            "index": 5,
+            "layout": "image-text",
+            "title": "作品功能与实现"
+          },
+          {
+            "index": 6,
+            "layout": "text-center",
+            "title": "本作品全面采用国产化的关键组件，以减少对进口部件的依赖，并有效填补了国内软硬件全国产化轮式导航机器人..."
+          },
+          {
+            "index": 7,
+            "layout": "image-text",
+            "title": "小型物流运输"
+          },
+          {
+            "index": 8,
+            "layout": "image-text",
+            "title": "工厂巡检"
+          },
+          {
+            "index": 9,
+            "layout": "image-text",
+            "title": "家用清洁"
+          },
+          {
+            "index": 10,
+            "layout": "section-header",
+            "title": "项目价值与特色创新"
+          },
+          {
+            "index": 11,
+            "layout": "cards-4",
+            "title": "项目价值"
+          },
+          {
+            "index": 12,
+            "layout": "section-header",
+            "title": "技术优势"
+          },
+          {
+            "index": 13,
+            "layout": "cards-4",
+            "title": "紫派主板优势"
+          },
+          {
+            "index": 14,
+            "layout": "text-image",
+            "title": "自主开发SLAM算法"
+          },
+          {
+            "index": 15,
+            "layout": "text-image",
+            "title": "改研路径规划算法"
+          },
+          {
+            "index": 16,
+            "layout": "comparison",
+            "title": "LCM通讯技术"
+          },
+          {
+            "index": 17,
+            "layout": "list-featured",
+            "title": "模块化设计"
+          },
+          {
+            "index": 18,
+            "layout": "cards-3",
+            "title": "作品创新"
+          },
+          {
+            "index": 19,
+            "layout": "section-header",
+            "title": "功能设计"
+          },
+          {
+            "index": 20,
+            "layout": "image-center",
+            "title": "功能设计总览"
+          },
+          {
+            "index": 21,
+            "layout": "section-header",
+            "title": "系统实现"
+          },
+          {
+            "index": 22,
+            "layout": "milestone-list",
+            "title": "系统实现关键步骤"
+          },
+          {
+            "index": 23,
+            "layout": "section-header",
+            "title": "其他内容"
+          },
+          {
+            "index": 24,
+            "layout": "ending",
+            "title": "模块参数与成本分析"
+          }
+        ]
+      }
+    },
+    {
+      "ts": "2026-03-22T09:13:20.929Z",
+      "stage": "pipeline.slidegen.success",
+      "payload": {
+        "count": 24
+      }
+    }
+  ]
+}

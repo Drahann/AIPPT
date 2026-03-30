@@ -1,0 +1,526 @@
+[
+  {
+    "index": 1,
+    "title": "龙影元宇宙多模态智能数据手套项目汇报",
+    "subtitle": "基于高精度传感与实时触觉反馈的元宇宙交互解决方案",
+    "layout": "cover",
+    "contentHint": "项目背景与核心价值概述",
+    "imageHint": "项目logo或概念图",
+    "imageIndex": 0,
+    "refChunks": [
+      0
+    ],
+    "speakerNotes": "欢迎各位领导专家，本汇报将展示我们在元宇宙交互领域的创新突破。"
+  },
+  {
+    "index": 2,
+    "title": "项目背景",
+    "subtitle": "政策驱动与市场需求",
+    "layout": "section-header",
+    "contentHint": "介绍元宇宙交互瓶颈与国家战略导向",
+    "refChunks": [
+      0
+    ],
+    "speakerNotes": "当前元宇宙产业面临交互瓶颈，国家政策明确支持未来产业发展。"
+  },
+  {
+    "index": 3,
+    "title": "元宇宙交互瓶颈与政策机遇",
+    "subtitle": "",
+    "layout": "image-text",
+    "contentHint": "传统设备操作生硬、触觉反馈缺失，导致沉浸感弱；国家政策明确布局未来产业。",
+    "imageHint": "元宇宙概念图或政策文件示意图",
+    "imageIndex": 0,
+    "refChunks": [
+      0
+    ],
+    "speakerNotes": "《\\\"十四五\\\"数字经济发展规划》等政策为高精度交互技术提供战略机遇。"
+  },
+  {
+    "index": 4,
+    "title": "产业现状分析",
+    "subtitle": "虚拟现实产业发展与挑战",
+    "layout": "section-header",
+    "contentHint": "概述虚拟现实产业规模、趋势与核心短板",
+    "refChunks": [
+      1
+    ],
+    "speakerNotes": "虚拟现实产业加速向B端渗透，但交互环节仍是关键制约因素。"
+  },
+  {
+    "index": 5,
+    "title": "虚拟现实产业规模与目标",
+    "subtitle": "",
+    "layout": "chart-bar",
+    "contentHint": "2026年产业总体规模目标超3500亿元，加速向工业仿真、远程协作等B端场景渗透。",
+    "imageHint": "产业规模增长柱状图",
+    "imageIndex": 0,
+    "refChunks": [
+      1
+    ],
+    "speakerNotes": "政策驱动下，产业规模目标明确，但自然交互设备成为突破口。"
+  },
+  {
+    "index": 6,
+    "title": "产业调研识别的三重瓶颈",
+    "subtitle": "",
+    "layout": "cards-split",
+    "contentHint": "低成本高精度传感器缺失、算法框架匮乏、生态封闭制约交互设备发展。",
+    "imageHint": "调研现场照片或企业logo",
+    "imageIndex": 0,
+    "refChunks": [
+      2
+    ],
+    "speakerNotes": "深入企业调研揭示国内高精度交互设备研发的关键技术瓶颈。"
+  },
+  {
+    "index": 7,
+    "title": "创新基础与团队实力",
+    "subtitle": "跨学科团队与技术积累",
+    "layout": "section-header",
+    "contentHint": "展示团队专业背景与哈工大技术平台支撑",
+    "refChunks": [
+      3
+    ],
+    "speakerNotes": "团队依托哈工大跨学科优势，构建全链条创新梯队。"
+  },
+  {
+    "index": 8,
+    "title": "核心团队构成与专业背景",
+    "subtitle": "",
+    "layout": "staggered-cards",
+    "contentHint": "团队成员来自材料科学、人工智能、算法设计等领域，覆盖感知-算法-交互-系统全链条。",
+    "imageHint": "团队合影或成员头像",
+    "imageIndex": 0,
+    "refChunks": [
+      3
+    ],
+    "speakerNotes": "团队深度融合多学科知识，具备工程化整合能力。"
+  },
+  {
+    "index": 9,
+    "title": "柔性传感技术性能对比",
+    "subtitle": "",
+    "layout": "chart-bar-compare",
+    "contentHint": "现有技术灵敏度达5–8 kPa⁻¹但迟滞误差高（>15%），凸显创新需求。",
+    "imageHint": "灵敏度与迟滞误差对比柱状图",
+    "imageIndex": 0,
+    "refChunks": [
+      4
+    ],
+    "speakerNotes": "当前柔性传感器存在稳定性与成本问题，需突破材料与架构限制。"
+  },
+  {
+    "index": 10,
+    "title": "创新设计与技术路线",
+    "subtitle": "龙影数据手套的系统性创新",
+    "layout": "section-header",
+    "contentHint": "介绍创新设计方向与技术实施路径",
+    "refChunks": [
+      5
+    ],
+    "speakerNotes": "本项目从材料到系统开展多维度创新，遵循五阶闭环路径。"
+  },
+  {
+    "index": 11,
+    "title": "核心性能指标与研究方向",
+    "subtitle": "",
+    "layout": "metrics-split",
+    "contentHint": "实现0.1mm级空间分辨率，研究涵盖材料、硬件、算法、系统四大方向。",
+    "imageHint": "传感器结构图或性能指标图",
+    "imageIndex": 0,
+    "refChunks": [
+      5
+    ],
+    "speakerNotes": "基于仿生结构设计，提升传感精度与稳定性。"
+  },
+  {
+    "index": 12,
+    "title": "五阶闭环技术实施路径",
+    "subtitle": "",
+    "layout": "milestone-list",
+    "contentHint": "从材料设计、硬件开发、算法优化、系统集成到验证测试，分阶段推进。",
+    "imageHint": "技术路线图",
+    "imageIndex": 0,
+    "refChunks": [
+      5
+    ],
+    "speakerNotes": "技术路径清晰，确保各环节协同与迭代优化。"
+  },
+  {
+    "index": 13,
+    "title": "多模态人机交互系统架构",
+    "subtitle": "",
+    "layout": "text-image",
+    "contentHint": "构建\"感知-意图-反馈\"闭环模型，融合肌电、弯曲度、IMU等多源信号，适配国产XR生态。",
+    "imageHint": "技术框架图",
+    "imageIndex": 1,
+    "refChunks": [
+      6
+    ],
+    "speakerNotes": "系统实现意图精准解析与实时反馈，破解模态割裂难题。"
+  },
+  {
+    "index": 14,
+    "title": "创新成果与产业验证",
+    "subtitle": "知识产权与学术贡献",
+    "layout": "section-header",
+    "contentHint": "展示学术论文、专利成果及产业应用验证",
+    "refChunks": [
+      7
+    ],
+    "speakerNotes": "团队在柔性传感、手势识别等领域形成系统性创新成果。"
+  },
+  {
+    "index": 15,
+    "title": "学术论文与专利成果",
+    "subtitle": "",
+    "layout": "metrics-rings",
+    "contentHint": "累计发表论文9篇（SCI/EI收录8篇），构建理论-专利-软硬协同知识产权体系。",
+    "imageHint": "论文发表图表或专利证书",
+    "imageIndex": 0,
+    "refChunks": [
+      7
+    ],
+    "speakerNotes": "成果发表于国内外权威期刊，支撑产品高精度与鲁棒性。"
+  },
+  {
+    "index": 16,
+    "title": "中航光电产业验证历程",
+    "subtitle": "",
+    "layout": "timeline",
+    "contentHint": "2024年第三季度开展试点，学员在虚拟环境中完成装配任务，培训周期缩短40%。",
+    "imageHint": "验证场景截图或时间线图",
+    "imageIndex": 0,
+    "refChunks": [
+      8
+    ],
+    "speakerNotes": "试点验证了手套在航空装配培训中的实用性与价值。"
+  },
+  {
+    "index": 17,
+    "title": "专家评价与认可",
+    "subtitle": "",
+    "layout": "quote",
+    "contentHint": "陈建国院士、李明霞教授等专家高度肯定项目的创新性与战略价值。",
+    "imageHint": "专家头像或引用标识",
+    "imageIndex": 0,
+    "refChunks": [
+      9
+    ],
+    "speakerNotes": "权威专家认为项目突破人机交互\\\"卡脖子\\\"技术，达国际先进水平。"
+  },
+  {
+    "index": 18,
+    "title": "市场分析与商业模式",
+    "subtitle": "行业前景与竞争格局",
+    "layout": "section-header",
+    "contentHint": "分析市场潜力、竞争环境与商业模式设计",
+    "refChunks": [
+      10
+    ],
+    "speakerNotes": "虚拟现实市场潜力巨大，但需精准定位与差异化竞争。"
+  },
+  {
+    "index": 19,
+    "title": "虚拟现实市场增长趋势",
+    "subtitle": "",
+    "layout": "chart-line",
+    "contentHint": "政策驱动下，产业规模持续增长，预计2026年突破3500亿元。",
+    "imageHint": "市场增长趋势线图",
+    "imageIndex": 0,
+    "refChunks": [
+      10
+    ],
+    "speakerNotes": "市场随XR生态完善与数字化转型快速释放潜力。"
+  },
+  {
+    "index": 20,
+    "title": "虚拟现实市场细分与潜力",
+    "subtitle": "",
+    "layout": "chart-pie",
+    "contentHint": "B端场景如工业仿真、远程协作占据高价值份额，国产化替代窗口期已至。",
+    "imageHint": "市场细分饼图",
+    "imageIndex": 0,
+    "refChunks": [
+      10
+    ],
+    "speakerNotes": "高端装备制造、国防科研等领域需求迫切。"
+  },
+  {
+    "index": 21,
+    "title": "目标行业与产品核心优势",
+    "subtitle": "",
+    "layout": "cards-4",
+    "contentHint": "聚焦高端制造、国防科研、高校实训，依托四大创新技术构建硬核壁垒。",
+    "imageHint": "目标行业图标或优势示意图",
+    "imageIndex": 0,
+    "refChunks": [
+      11
+    ],
+    "speakerNotes": "产品解决实操培训耗材成本高、安全风险大等痛点。"
+  },
+  {
+    "index": 22,
+    "title": "灯塔验证与生态筑基推广模式",
+    "subtitle": "",
+    "layout": "milestone-list",
+    "contentHint": "分阶段构建可复用销售闭环，通过标杆客户验证推动规模化复制。",
+    "imageHint": "推广路径图",
+    "imageIndex": 0,
+    "refChunks": [
+      12
+    ],
+    "speakerNotes": "推广模式注重价值量化与案例转化，降低复制成本。"
+  },
+  {
+    "index": 23,
+    "title": "三元网络组成部分对比",
+    "subtitle": "",
+    "layout": "comparison",
+    "contentHint": "对比高校技术源、行业客户群、生态伙伴网的角色与价值。",
+    "imageHint": "网络对比图",
+    "imageIndex": 0,
+    "refChunks": [
+      13
+    ],
+    "speakerNotes": "商业模式实现技术、客户与生态的协同闭环。"
+  },
+  {
+    "index": 24,
+    "title": "里程碑驱动预算规划",
+    "subtitle": "",
+    "layout": "metrics",
+    "contentHint": "按关键节点分配预算，第3个月完成灯塔验证，第6个月实现首轮转化。",
+    "imageHint": "预算分配条形图",
+    "imageIndex": 0,
+    "refChunks": [
+      14
+    ],
+    "speakerNotes": "预算严格匹配里程碑，确保资源高效利用。"
+  },
+  {
+    "index": 25,
+    "title": "盈利结构与财务推演",
+    "subtitle": "",
+    "layout": "chart-pie",
+    "contentHint": "硬件销售占比60%，软件授权与数据服务构成高毛利利润核心。",
+    "imageHint": "盈利结构饼图",
+    "imageIndex": 0,
+    "refChunks": [
+      15
+    ],
+    "speakerNotes": "盈利模式实现硬件入口与软件服务的平衡。"
+  },
+  {
+    "index": 26,
+    "title": "盈利增长趋势推演",
+    "subtitle": "",
+    "layout": "chart-line",
+    "contentHint": "基于硬件销售与软件服务，预测未来三年盈利增长曲线。",
+    "imageHint": "盈利增长线图",
+    "imageIndex": 0,
+    "refChunks": [
+      15
+    ],
+    "speakerNotes": "财务模型显示随着规模扩大，盈利能力持续增强。"
+  },
+  {
+    "index": 27,
+    "title": "产业转化三步走路径",
+    "subtitle": "",
+    "layout": "timeline",
+    "contentHint": "从灯塔验证到生态筑基，分阶段推广，目标签约头部客户并共建示范点。",
+    "imageHint": "落地前景时间线",
+    "imageIndex": 0,
+    "refChunks": [
+      16
+    ],
+    "speakerNotes": "路径清晰，确保技术落地与市场拓展协同。"
+  },
+  {
+    "index": 28,
+    "title": "社会影响与团队精神",
+    "subtitle": "民生改善与科技报国",
+    "layout": "section-header",
+    "contentHint": "概述项目社会价值与团队使命担当",
+    "refChunks": [
+      17
+    ],
+    "speakerNotes": "项目不仅创造经济价值，更带来显著社会效益。"
+  },
+  {
+    "index": 29,
+    "title": "社会价值与就业创造",
+    "subtitle": "",
+    "layout": "list-featured",
+    "contentHint": "项目直接创造约1000个高质量岗位，间接带动2000个技术型岗位，赋能产业升级。",
+    "imageHint": "就业影响示意图",
+    "imageIndex": 0,
+    "refChunks": [
+      17
+    ],
+    "speakerNotes": "通过就业与产业链带动，提升区域人才吸附力。"
+  },
+  {
+    "index": 30,
+    "title": "团队精神与使命担当",
+    "subtitle": "",
+    "layout": "text-center",
+    "contentHint": "扎根哈工大校训，以突破自然交互\"卡脖子\"技术为使命，彰显青年科技报国赤诚。",
+    "imageHint": "团队精神象征图",
+    "imageIndex": 0,
+    "refChunks": [
+      18
+    ],
+    "speakerNotes": "团队秉持创新锐气，矢志赋能元宇宙产业安全落地。"
+  },
+  {
+    "index": 31,
+    "title": "团队结构与指导支持",
+    "subtitle": "人力资源配置与专家顾问",
+    "layout": "section-header",
+    "contentHint": "介绍团队架构、指导教师与外部专家",
+    "refChunks": [
+      19
+    ],
+    "speakerNotes": "团队结构科学，获得多维度专家支持。"
+  },
+  {
+    "index": 32,
+    "title": "三大职能模块协同",
+    "subtitle": "",
+    "layout": "cards-3",
+    "contentHint": "技术研发组、产品运营组、质量供应链组扁平化架构，各司其职。",
+    "imageHint": "团队结构图",
+    "imageIndex": 0,
+    "refChunks": [
+      19
+    ],
+    "speakerNotes": "模块化分工确保研发、运营与供应链高效协同。"
+  },
+  {
+    "index": 33,
+    "title": "指导教师专业背景",
+    "subtitle": "",
+    "layout": "cards-2",
+    "contentHint": "张展教授提供传感融合算法指导，娄久教授强化产业化落地与资源对接。",
+    "imageHint": "指导教师照片",
+    "imageIndex": 0,
+    "refChunks": [
+      20
+    ],
+    "speakerNotes": "指导教师深耕可穿戴计算与产业化领域，提供核心支撑。"
+  },
+  {
+    "index": 34,
+    "title": "外部专家资历与支持",
+    "subtitle": "",
+    "layout": "quote-no-avatar",
+    "contentHint": "赵建国教授、周敏总经理等专家在技术标准与投资领域提供指导。",
+    "imageHint": "专家简介或logo",
+    "imageIndex": 0,
+    "refChunks": [
+      21
+    ],
+    "speakerNotes": "外部专家增强项目公信力与资源链接能力。"
+  },
+  {
+    "index": 35,
+    "title": "教育支持与产教协同",
+    "subtitle": "四新建设与创新创业",
+    "layout": "section-header",
+    "contentHint": "展示哈工大教育体系对项目的支撑",
+    "refChunks": [
+      22
+    ],
+    "speakerNotes": "学校四新建设与双创教育为项目提供人才与平台基础。"
+  },
+  {
+    "index": 36,
+    "title": "哈工大四新建设育人体系",
+    "subtitle": "",
+    "layout": "text-bullets",
+    "contentHint": "以新工科为内核，构建基础融通—前沿聚焦—产教协同的培养模式。",
+    "imageHint": "四新建设示意图",
+    "imageIndex": 0,
+    "refChunks": [
+      22
+    ],
+    "speakerNotes": "交叉课程与项目制训练提升学生跨学科创新能力。"
+  },
+  {
+    "index": 37,
+    "title": "跨学科双创教育支撑",
+    "subtitle": "",
+    "layout": "features-list-image",
+    "contentHint": "开设交叉课程，依托赛事平台，系统训练技术商业化能力。",
+    "imageHint": "双创教育场景图",
+    "imageIndex": 0,
+    "refChunks": [
+      23
+    ],
+    "speakerNotes": "实战淬炼将专业知识转化为市场价值。"
+  },
+  {
+    "index": 38,
+    "title": "产教科教产学研协同生态",
+    "subtitle": "",
+    "layout": "image-text",
+    "contentHint": "学校与企业共建联合实验室，推行\"真问题、真场景、真产品\"项目制实训。",
+    "imageHint": "产教融合基地照片",
+    "imageIndex": 0,
+    "refChunks": [
+      24
+    ],
+    "speakerNotes": "协同生态确保技术研发与产业需求紧密对接。"
+  },
+  {
+    "index": 39,
+    "title": "图片信息",
+    "subtitle": "关键视觉素材展示",
+    "layout": "section-header",
+    "contentHint": "展示项目相关图片，包括技术框架与产业现状",
+    "refChunks": [
+      25
+    ],
+    "speakerNotes": "以下图片直观呈现技术细节与产业背景。"
+  },
+  {
+    "index": 40,
+    "title": "技术框架与创新图片",
+    "subtitle": "",
+    "layout": "image-center",
+    "contentHint": "展示龙影数据手套的技术框架和关键组件图片。",
+    "imageHint": "技术框架图",
+    "imageIndex": 1,
+    "refChunks": [
+      25
+    ],
+    "speakerNotes": "图片清晰展示系统架构与传感器设计。"
+  },
+  {
+    "index": 41,
+    "title": "VR产业发展现状",
+    "subtitle": "",
+    "layout": "image-full",
+    "contentHint": "展示虚拟现实产业现状相关图片。",
+    "imageHint": "VR发展现状图",
+    "imageIndex": 0,
+    "refChunks": [
+      25
+    ],
+    "speakerNotes": "图片反映VR技术向B端场景渗透的趋势。"
+  },
+  {
+    "index": 42,
+    "title": "感谢聆听",
+    "subtitle": "敬请指导与支持",
+    "layout": "ending",
+    "contentHint": "总结项目价值，展望未来合作。",
+    "imageHint": "项目logo或团队致谢图",
+    "imageIndex": 0,
+    "refChunks": [],
+    "speakerNotes": "感谢各位专家领导，我们期待与您携手共创元宇宙交互新未来。"
+  }
+]

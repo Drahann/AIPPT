@@ -1,0 +1,16 @@
+[Universal Export Engine starting...]
+=> Found 44 unique snapshot slides (merged latest timestamps).
+Processing PPT Slide 1 (Index: 0)
+Processing PPT Slide 2 (Index: 1)
+Processing PPT Slide 3 (Index: 2)
+Export Failed: TypeError: e.className.includes is not a function
+    at W:\3spring\AIPPT\scripts\universal-export.js:164:76
+    at Array.some (<anonymous>)
+    at W:\3spring\AIPPT\scripts\universal-export.js:164:39
+    at Array.forEach (<anonymous>)
+    at W:\3spring\AIPPT\scripts\universal-export.js:139:16
+    at Array.forEach (<anonymous>)
+    at runUniversalExport (W:\3spring\AIPPT\scripts\universal-export.js:117:15)
+    at Object.<anonymous> (W:\3spring\AIPPT\scripts\universal-export.js:306:1)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)

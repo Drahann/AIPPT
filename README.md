@@ -1,4 +1,25 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AIPPT — 智能演示文稿生成
+
+上传 Word 文档，AI 自动生成大纲、布局和配图。
+
+## API 密钥配置
+
+1. 在项目根目录找到 **`.env.local`**（没有则复制 `.env.example` 并重命名为 `.env.local`）。
+
+2. 填写以下变量：
+
+| 变量 | 说明 | 示例 |
+|------|------|------|
+| **LLM_API_KEY** | 大模型 API Key（用于大纲 + 内容生成） | DeepSeek / OpenAI / 通义 / 智谱 等 |
+| **LLM_BASE_URL** | 大模型 API 地址（OpenAI 兼容格式） | `https://api.deepseek.com` |
+| **LLM_MODEL** | 模型名称 | `deepseek-chat`、`gpt-4o` 等 |
+| **IMAGE_API_KEY** | 图片生成 API Key | OpenAI 或兼容 DALL-E 的服务 |
+| **IMAGE_BASE_URL** | 图片 API 地址 | `https://api.openai.com/v1` |
+| **IMAGE_MODEL** | 图片模型 | `dall-e-3` |
+
+3. 保存后**重启开发服务器**（`npm run dev`），配置才会生效。
+
+**注意**：`.env.local` 已在 `.gitignore` 中，不会被提交到 Git，可放心填写密钥。
 
 ## Getting Started
 

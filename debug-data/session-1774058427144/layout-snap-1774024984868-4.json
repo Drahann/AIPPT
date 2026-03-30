@@ -1,0 +1,62 @@
+{
+  "timestamp": "2026-03-20T16:43:04.292Z",
+  "slideIndex": 4,
+  "slideWidth": 960,
+  "slideHeight": 540,
+  "elements": [
+    {
+      "tag": "SPAN",
+      "className": "slide-number",
+      "text": "5",
+      "x": "95.42%",
+      "y": "2.96%",
+      "width": "2.92%",
+      "height": "5.19%",
+      "fontSize": "12px",
+      "fontWeight": "600",
+      "fontFamily": "\"Instrument Sans\", system-ui, -apple-system, sans-serif",
+      "lineHeight": "18px",
+      "color": "rgb(108, 108, 108)",
+      "padding": "0px",
+      "margin": "0px",
+      "borderRadius": "8px",
+      "backgroundColor": "rgb(246, 248, 251)"
+    },
+    {
+      "tag": "P",
+      "className": "corporate-insights-topbar-item corporate-insights-topbar-item--center",
+      "text": "创新基础",
+      "x": "47.98%",
+      "y": "2.31%",
+      "width": "4.03%",
+      "height": "1.66%",
+      "fontSize": "8.96px",
+      "fontWeight": "700",
+      "fontFamily": "\"Radio Canada Big\", \"Noto Sans SC\", sans-serif",
+      "lineHeight": "8.96px",
+      "color": "color(srgb 0.423529 0.423529 0.423529 / 0.92)",
+      "padding": "0px",
+      "margin": "0px",
+      "borderRadius": "0px",
+      "backgroundColor": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "H2",
+      "className": "corporate-insights-title",
+      "text": "跨学科创新团队与技术基础",
+      "x": "3.00%",
+      "y": "44.52%",
+      "width": "26.53%",
+      "height": "14.40%",
+      "fontSize": "39.68px",
+      "fontWeight": "500",
+      "fontFamily": "\"Radio Canada Big\", \"Noto Sans SC\", sans-serif",
+      "lineHeight": "38.8864px",
+      "color": "color(srgb 0 0 0 / 0.96)",
+      "padding": "0px",
+      "margin": "0px",
+      "borderRadius": "0px",
+      "backgroundColor": "rgba(0, 0, 0, 0)"
+    }
+  ]
+}

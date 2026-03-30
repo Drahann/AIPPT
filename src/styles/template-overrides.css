@@ -1,0 +1,581 @@
+/* ============================================================
+   Template Pack Content-Page CSS Overrides
+   Each pack has its own CSS class prefix to override card styles,
+   fonts, spacing, and decorative details for content pages.
+   ============================================================ */
+
+/* ===================== Group 01 — EN ===================== */
+.tpl-group01 .slide-card-inner {
+  font-family: 'Source Serif Pro', 'Noto Sans SC', serif;
+}
+
+.tpl-group01 .slide-title {
+  font-family: 'Radio Canada Big', 'Noto Sans SC', sans-serif;
+  letter-spacing: -0.03em;
+}
+
+.tpl-group01 .slide-card-item {
+  background: #f6f8fb;
+  border: none;
+  border-radius: 8px;
+}
+
+.tpl-group01 .slide-card-item .card-heading {
+  font-family: 'Radio Canada Big', 'Noto Sans SC', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.tpl-group01 .slide-card-item .card-body {
+  font-family: 'Source Serif Pro', 'Noto Sans SC', serif;
+  font-size: 0.9375rem;
+  line-height: 1.7;
+}
+
+.tpl-group01 .metric-item {
+  background: #f6f8fb;
+  border: none;
+}
+
+.tpl-group01 .metric-item .metric-value {
+  font-family: 'Radio Canada Big', 'Noto Sans SC', sans-serif;
+  font-size: 2.75rem;
+  color: #000000;
+}
+
+.tpl-group01 .timeline-event::before {
+  background: #2683eb;
+}
+
+.tpl-group01 .comparison-column {
+  background: #f6f8fb;
+  border-color: #e8eaed;
+}
+
+
+/* ===================== Group 03 — UI/UX EN ===================== */
+.tpl-group03 .slide-card-inner {
+  font-family: 'Manrope', 'Noto Sans SC', sans-serif;
+}
+
+.tpl-group03 .slide-title {
+  font-family: 'Manrope', 'Noto Sans SC', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.tpl-group03 .slide-card-item {
+  background: #ffffff;
+  border: 1px solid #e0e6f0;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(37, 105, 237, 0.06);
+}
+
+.tpl-group03 .slide-card-item .card-heading {
+  font-family: 'Manrope', 'Noto Sans SC', sans-serif;
+  font-weight: 700;
+}
+
+.tpl-group03 .metric-item {
+  background: #eef3ff;
+  border-color: #d0ddf8;
+}
+
+.tpl-group03 .metric-item .metric-value {
+  color: #2569ed;
+}
+
+/* Footer bar for content pages */
+.tpl-group03 .slide-card-inner::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: #2569ed;
+  border-radius: 0 0 16px 16px;
+}
+
+
+/* ===================== Group 05 — EN ===================== */
+.tpl-group05 .slide-card-inner {
+  font-family: 'Plus Jakarta Sans', 'Noto Sans SC', sans-serif;
+  background: #f5f1e9;
+  color: #000000;
+  position: relative;
+}
+
+.tpl-group05 .slide-card {
+  background: #000000;
+  padding: 4px;
+}
+
+.tpl-group05 .slide-title {
+  font-family: 'Plus Jakarta Sans', 'Noto Sans SC', sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+}
+
+.tpl-group05 .slide-card-item {
+  background: #000000;
+  color: #f5f1e9;
+  border: none;
+  border-radius: 15px;
+}
+
+.tpl-group05 .slide-card-item .card-heading {
+  font-family: 'Plus Jakarta Sans', 'Noto Sans SC', sans-serif;
+  color: #f5f1e9;
+  font-weight: 600;
+}
+
+.tpl-group05 .slide-card-item .card-body {
+  color: #d4cfc3;
+}
+
+.tpl-group05 .metric-item {
+  background: #000000;
+  border: none;
+  color: #f5f1e9;
+}
+
+.tpl-group05 .metric-item .metric-value {
+  color: #f5f1e9;
+  font-weight: 600;
+}
+
+.tpl-group05 .metric-item .metric-label {
+  color: #d4cfc3;
+}
+
+.tpl-group05 .metric-item .metric-icon {
+  background: #222222;
+  color: #e8c840;
+}
+
+.tpl-group05 .comparison-column {
+  background: #ede8dc;
+  border-color: #d4cfc3;
+}
+
+.tpl-group05 .timeline-event::before {
+  background: #000000;
+  border-color: #f5f1e9;
+}
+
+
+/* ===================== Group 08 — EN ===================== */
+.tpl-group08 .slide-card-inner {
+  font-family: 'Playfair Display', 'Noto Sans SC', serif;
+}
+
+.tpl-group08 .slide-title {
+  font-family: 'Shippori Mincho', 'Noto Sans SC', serif;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+.tpl-group08 .slide-card-item {
+  background: #faf8f5;
+  border: none;
+  border-radius: 16px;
+  border-left: 4px solid #8B6DB5;
+  position: relative;
+}
+
+.tpl-group08 .slide-card-item:nth-child(2) {
+  border-left-color: #4a9b7f;
+}
+
+.tpl-group08 .slide-card-item:nth-child(3) {
+  border-left-color: #e8c840;
+}
+
+.tpl-group08 .slide-card-item .card-heading {
+  font-family: 'Shippori Mincho', 'Noto Sans SC', serif;
+  font-weight: 400;
+}
+
+.tpl-group08 .slide-card-item .card-body {
+  font-family: 'Playfair Display', 'Noto Sans SC', serif;
+  font-style: italic;
+  font-size: 0.875rem;
+}
+
+.tpl-group08 .metric-item {
+  background: #faf8f5;
+  border: none;
+  border-radius: 16px;
+}
+
+.tpl-group08 .metric-item .metric-value {
+  font-family: 'Shippori Mincho', 'Noto Sans SC', serif;
+  color: #8B6DB5;
+}
+
+.tpl-group08 .timeline-event::before {
+  background: #8B6DB5;
+}
+
+.tpl-group08 .comparison-column {
+  background: #faf8f5;
+  border: none;
+  border-radius: 16px;
+  border-top: 4px solid #8B6DB5;
+}
+
+.tpl-group08 .comparison-column:last-child {
+  border-top-color: #4a9b7f;
+}
+
+
+/* ===================== Group 10 — EN ===================== */
+.tpl-group10 .slide-card-inner {
+  font-family: 'Geist', 'Noto Sans SC', sans-serif;
+  background: #000000;
+  color: #ffffff;
+}
+
+.tpl-group10 .slide-card {
+  background: #000000;
+  box-shadow: none;
+}
+
+.tpl-group10 .slide-title {
+  font-family: 'Unbounded', 'Noto Sans SC', sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: -0.02em;
+}
+
+.tpl-group10 .slide-subtitle {
+  color: #b8bec5;
+}
+
+.tpl-group10 .slide-body {
+  color: #b8bec5;
+}
+
+.tpl-group10 .slide-card-item {
+  background: #111111;
+  border: 1px solid #2a2a2a;
+  border-radius: 0;
+}
+
+.tpl-group10 .slide-card-item:hover {
+  border-color: #6c7aff;
+}
+
+.tpl-group10 .slide-card-item .card-heading {
+  font-family: 'Unbounded', 'Noto Sans SC', sans-serif;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.tpl-group10 .slide-card-item .card-body {
+  color: #b8bec5;
+}
+
+.tpl-group10 .slide-card-item .card-icon {
+  background: #1a1a1a;
+  color: #6c7aff;
+}
+
+.tpl-group10 .metric-item {
+  background: #111111;
+  border: 1px solid #2a2a2a;
+  border-radius: 0;
+}
+
+.tpl-group10 .metric-item .metric-value {
+  color: #ffffff;
+  font-family: 'Unbounded', 'Noto Sans SC', sans-serif;
+}
+
+.tpl-group10 .metric-item .metric-label {
+  color: #b8bec5;
+}
+
+.tpl-group10 .metric-item .metric-icon {
+  background: #1a1a1a;
+  color: #6c7aff;
+}
+
+.tpl-group10 .timeline-event::before {
+  background: #6c7aff;
+  border-color: #000000;
+  box-shadow: 0 0 0 2px #6c7aff;
+}
+
+.tpl-group10 .timeline-track::before {
+  background: #2a2a2a;
+}
+
+.tpl-group10 .timeline-event .event-date {
+  color: #6c7aff;
+}
+
+.tpl-group10 .timeline-event .event-title {
+  color: #ffffff;
+}
+
+.tpl-group10 .timeline-event .event-description {
+  color: #b8bec5;
+}
+
+.tpl-group10 .comparison-column {
+  background: #111111;
+  border: 1px solid #2a2a2a;
+  border-radius: 0;
+}
+
+.tpl-group10 .comparison-column .comparison-heading {
+  color: #ffffff;
+}
+
+.tpl-group10 .comparison-column ul li {
+  color: #b8bec5;
+}
+
+.tpl-group10 .slide-body ul li::before {
+  background: #6c7aff;
+}
+
+.tpl-group10 .slide-number {
+  background: #1a1a1a;
+  color: #b8bec5;
+}
+
+
+/* ===================== Group 02 — EN ===================== */
+.tpl-group02 .slide-card-inner {
+  font-family: 'Inter', 'Noto Sans SC', sans-serif;
+}
+
+.tpl-group02 .slide-title {
+  font-family: 'Inter', 'Noto Sans SC', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.tpl-group02 .slide-card-item {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #e0e0e0;
+  border-radius: 0;
+}
+
+.tpl-group02 .slide-card-item:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.tpl-group02 .slide-card-item .card-icon {
+  background: #f0f0f0;
+  color: #000000;
+}
+
+.tpl-group02 .metric-item {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #e0e0e0;
+  border-radius: 0;
+}
+
+.tpl-group02 .metric-item .metric-value {
+  color: #000000;
+  font-weight: 700;
+}
+
+.tpl-group02 .comparison-column {
+  border: 1px solid #e0e0e0;
+  border-radius: 0;
+}
+
+.tpl-group02 .timeline-event::before {
+  background: #000000;
+}
+
+
+/* ===================== Group 04 — EN ===================== */
+.tpl-group04 .slide-card-inner {
+  font-family: 'Rethink Sans', 'Noto Sans SC', sans-serif;
+  background: #e7e3d9;
+  color: #1c0033;
+}
+
+.tpl-group04 .slide-title {
+  font-family: 'Crimson Pro', 'Noto Sans SC', serif;
+  font-weight: 200;
+  letter-spacing: -0.03em;
+}
+
+.tpl-group04 .slide-card-item {
+  background: #1c0033;
+  color: #ffbde8;
+  border: none;
+  border-radius: 0;
+}
+
+.tpl-group04 .slide-card-item .card-heading {
+  font-family: 'Crimson Pro', 'Noto Sans SC', serif;
+  color: #ffbde8;
+}
+
+.tpl-group04 .slide-card-item .card-body {
+  color: #e7e3d9;
+  opacity: 0.8;
+}
+
+.tpl-group04 .slide-card-item .card-icon {
+  background: rgba(255, 189, 232, 0.15);
+  color: #ffbde8;
+}
+
+.tpl-group04 .metric-item {
+  background: #1c0033;
+  border: none;
+  border-radius: 0;
+}
+
+.tpl-group04 .metric-item .metric-value {
+  color: #ffbde8;
+  font-family: 'Crimson Pro', 'Noto Sans SC', serif;
+  font-weight: 200;
+}
+
+.tpl-group04 .metric-item .metric-label {
+  color: #e7e3d9;
+  opacity: 0.7;
+}
+
+.tpl-group04 .timeline-event::before {
+  background: #ffbde8;
+  border-color: #e7e3d9;
+}
+
+.tpl-group04 .comparison-column {
+  background: #f0ece4;
+  border: none;
+  border-radius: 0;
+  border-top: 3px solid #1c0033;
+}
+
+
+/* ===================== Group 06 — EN ===================== */
+.tpl-group06 .slide-card-inner {
+  font-family: 'Inter', 'Noto Sans SC', sans-serif;
+}
+
+.tpl-group06 .slide-title {
+  font-family: 'Inter', 'Noto Sans SC', sans-serif;
+  font-weight: 500;
+}
+
+.tpl-group06 .slide-card-item {
+  background: #ffffff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.tpl-group06 .metric-item {
+  background: #f8f8f8;
+  border: 1px solid #eee;
+}
+
+.tpl-group06 .timeline-event::before {
+  background: linear-gradient(135deg, #9bbcc3, #cba5d1);
+}
+
+
+/* ===================== Group 07 — EN ===================== */
+.tpl-group07 .slide-card-inner {
+  font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
+}
+
+.tpl-group07 .slide-title {
+  font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
+  font-weight: 600;
+}
+
+.tpl-group07 .slide-card-item {
+  background: #f5f0e6;
+  border: none;
+  border-radius: 8px;
+}
+
+.tpl-group07 .slide-card-item .card-heading {
+  font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
+  font-weight: 600;
+}
+
+.tpl-group07 .metric-item {
+  background: #f5f0e6;
+  border: none;
+  border-radius: 8px;
+}
+
+.tpl-group07 .metric-item .metric-value {
+  color: #000000;
+  font-weight: 500;
+}
+
+.tpl-group07 .timeline-event .event-date {
+  font-family: 'Cutive Mono', monospace;
+  letter-spacing: 0.1em;
+}
+
+.tpl-group07 .timeline-event::before {
+  background: #000000;
+}
+
+.tpl-group07 .comparison-column {
+  background: #f5f0e6;
+  border: none;
+  border-radius: 8px;
+}
+
+
+/* ===================== Group 09 — EN ===================== */
+.tpl-group09 .slide-card-inner {
+  font-family: 'Inter', 'Noto Sans SC', sans-serif;
+}
+
+.tpl-group09 .slide-title {
+  font-family: 'Bricolage Grotesque', 'Noto Sans SC', sans-serif;
+  font-weight: 300;
+  letter-spacing: -0.03em;
+}
+
+.tpl-group09 .slide-card-item {
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+}
+
+.tpl-group09 .metric-item {
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+}
+
+.tpl-group09 .metric-item .metric-value {
+  color: #1a4a5a;
+  font-family: 'Bricolage Grotesque', 'Noto Sans SC', sans-serif;
+  font-weight: 300;
+}
+
+.tpl-group09 .timeline-event::before {
+  background: #f77f00;
+  box-shadow: 0 0 0 2px #f77f00;
+}
+
+.tpl-group09 .timeline-event .event-date {
+  color: #f77f00;
+}
+
+.tpl-group09 .comparison-column {
+  border-radius: 12px;
+}
