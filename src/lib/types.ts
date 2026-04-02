@@ -34,9 +34,12 @@ export type LayoutType =
   | 'staggered-cards'
   | 'features-list-image'
   | 'metrics-rings'
-  | 'metrics-split'
   | 'milestone-list'
   | 'team-members'
+  | 'cards-4-featured'
+  | 'grid-2x2-featured'
+  | 'cards-3-featured'
+  | 'cards-3-stack'
 
 export interface SlideOutline {
   index: number
@@ -61,6 +64,7 @@ export interface CardContent {
   image?: { url: string; prompt?: string }
   heading: string
   body: string
+  secondary?: string   // Optional second paragraph for featured/stack layouts
 }
 
 export interface TimelineEvent {
@@ -87,6 +91,7 @@ export interface ChartData {
 
 export interface SlideContent {
   id?: string
+  index?: number
   layout: LayoutType
   title: string
   subtitle?: string
@@ -108,6 +113,11 @@ export interface SlideContent {
   chart?: ChartData
   quote?: { text: string; attribution?: string }
   speakerNotes?: string
+  typographyParams?: {
+    headingLevel?: 'H1' | 'H2' | 'H3'
+    subheadingLevel?: 'S1' | 'S2'
+    bodyLevel?: 'B1' | 'B2' | 'B3' | 'B4' | 'B5' | 'B6'
+  }
 }
 
 export interface Presentation {

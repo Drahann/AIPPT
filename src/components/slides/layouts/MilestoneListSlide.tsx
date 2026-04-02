@@ -36,6 +36,13 @@ export function MilestoneListSlide({ slide, editable, onUpdate }: Props) {
             onChange={(v) => onUpdate?.({ ...slide, subtitle: v })}
           />
         ) : null}
+        <EditableText
+          value={slide.title}
+          tag="h2"
+          className="milestone-list-title"
+          editable={editable}
+          onChange={(v) => onUpdate?.({ ...slide, title: v })}
+        />
       </div>
 
       <div className="milestone-list-content">

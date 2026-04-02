@@ -38,7 +38,10 @@ export function FeaturesListImageSlide({ slide, editable, onUpdate }: Props) {
             </div>
             <div className="feature-text-box">
               <div className="feature-heading">{card.heading}</div>
-              <div className="feature-description">{card.body}</div>
+              <div className="feature-description">{(card.body || '').split('\n').map((line, li) => {
+                    const formatted = line.replace(/^- /, '• ')
+                    return <span key={li}>{li > 0 && <br/>}{formatted}</span>
+                  })}</div>
             </div>
           </div>
         ))}

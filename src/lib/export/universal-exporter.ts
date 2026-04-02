@@ -1,5 +1,23 @@
 import PptxGenJS from 'pptxgenjs'
 
+let polyfillInstalledForExporter = false;
+function ensureCanvasPolyfillForExporter() {
+  if (polyfillInstalledForExporter) return;
+  if (typeof globalThis.OffscreenCanvas === 'undefined') {
+    const { createCanvas } = require('canvas');
+    ;(globalThis as any).OffscreenCanvas = class NodeOffscreenCanvas {
+      private _canvas: any;
+      constructor(w: number, h: number) {
+        this._canvas = createCanvas(w, h);
+      }
+      getContext(type: string) {
+        return this._canvas.getContext(type as '2d');
+      }
+    };
+  }
+  polyfillInstalledForExporter = true;
+}
+
 function parseGradient(gradientStr: string | null, w: number, h: number): string | null {
   if (!gradientStr || !gradientStr.includes('gradient')) return null;
   
@@ -111,12 +129,24 @@ function mapDashType(styleStr: string | null): "solid" | "dash" | "dashDot" | "l
   return 'solid';
 }
 
-function mapFontFamily(fontStr: string | null): string {
-  // Unify all fonts to Microsoft YaHei as requested
-  return 'Microsoft YaHei';
+function mapFontFamily(fontStr: string | null, role: 'heading' | 'body' = 'body'): string {
+  // 标题/副标题: 华文宋体 (STSong), 正文: 黑体 (SimHei)
+  return role === 'heading' ? 'STSong' : 'SimHei'
+}
+
+/** Determine font role from element tag and class names */
+function getFontRole(el: any): 'heading' | 'body' {
+  const tag = (el.tag || '').toLowerCase()
+  if (/^h[1-6]$/.test(tag)) return 'heading'
+  const cls = (el.className || '').toLowerCase()
+  if (cls.includes('title') || cls.includes('heading') || cls.includes('subtitle') || cls.includes('logo')) return 'heading'
+  return 'body'
 }
 
 export async function generateUniversalPptx(snapshots: any[], title?: string): Promise<Buffer> {
+  ensureCanvasPolyfillForExporter();
+  const { prepareWithSegments, layoutWithLines } = await import('@chenglou/pretext');
+
   const pptx = new PptxGenJS();
   pptx.layout = 'LAYOUT_WIDE'; // 16:9 960x540
   pptx.title = title || 'Presentation';
@@ -147,7 +177,7 @@ export async function generateUniversalPptx(snapshots: any[], title?: string): P
       baseLogicalWidth = 1920;
     }
     const FONT_SCALE = 960 / baseLogicalWidth;
-    const WEIGHT_COEFF = 1.2; // Global font-weight boost as requested
+    const WEIGHT_COEFF = 1.0; // Relaxed: only truly bold (font-weight >= 750) will be exported as bold
 
     sorted.forEach((el) => {
       if (el.opacity === "0" || el.display === "none") return;
@@ -155,11 +185,6 @@ export async function generateUniversalPptx(snapshots: any[], title?: string): P
       const x = parseFloat(el.x) + '%';
       const y = parseFloat(el.y) + '%';
       let parsedW = parseFloat(el.width);
-      if (el.text && el.text.trim() !== '') {
-        if (parsedW < 10) parsedW *= 1.15;
-        else if (parsedW < 25) parsedW *= 1.10;
-        else if (parsedW <= 50) parsedW *= 1.05;
-      }
       const w = parsedW + '%';
       const h = parseFloat(el.height) + '%';
 
@@ -186,7 +211,8 @@ export async function generateUniversalPptx(snapshots: any[], title?: string): P
 
       const fontSize = (parseFloat(el.fontSize) || 16) * FONT_SCALE;
       const weightRaw = parseInt(el.fontWeight, 10) || 400;
-      const isBold = (weightRaw * WEIGHT_COEFF) >= 600;
+      const isBold = (weightRaw * WEIGHT_COEFF) >= 750; // Relaxed: only truly bold (weight>=750) triggers export bold
+      const isItalic = el.fontStyle === 'italic' || el.fontStyle === 'oblique';
 
       if (el.tag && el.tag.toLowerCase() === 'svg') {
          if (el.svgHtml) {
@@ -259,7 +285,12 @@ export async function generateUniversalPptx(snapshots: any[], title?: string): P
         }
 
         const radiusRaw = parseFloat(el.borderRadius);
-        if (el.borderRadius === "50%" || (radiusRaw && radiusRaw > 100)) {
+        // wVal and hVal are percentages of different dimensions (slide width vs height)
+        // True pixel aspect = (wVal * slideW) / (hVal * slideH)
+        const slideH = snapData.slideHeight || 540;
+        const trueAspect = wVal > 0 && hVal > 0 ? (wVal * slideW) / (hVal * slideH) : 1;
+        const isNearlySquare = trueAspect > 0.5 && trueAspect < 2.0;
+        if ((el.borderRadius === "50%" || (radiusRaw && radiusRaw > 100)) && isNearlySquare) {
           slide.addShape(pptx.ShapeType.ellipse, shapeProps);
         } else {
           if (radiusRaw > 0) {
@@ -306,24 +337,65 @@ export async function generateUniversalPptx(snapshots: any[], title?: string): P
         if (el.textAlign === 'right' || el.justifyContent === 'flex-end' || el.justifyContent === 'end') align = 'right';
 
         let valign = 'top';
-        if (el.display === 'flex') {
-          if (el.alignItems === 'center') valign = 'middle';
-          if (el.alignItems === 'flex-end') valign = 'bottom';
-        } else if (el.verticalAlign === 'middle') {
-          valign = 'middle';
+        if (el.alignItems === 'center') valign = 'middle';
+        if (el.alignItems === 'flex-end' || el.alignItems === 'end') valign = 'bottom';
+
+        // Convert line-start dashed bullets to round bullets. Mid-sentence dashes are left intact.
+        let cleanText = el.text.replace(/^- /gm, '• ').trim();
+
+        let finalLinesStr = cleanText;
+        if (cleanText.length > 0) {
+          const fontWeightObj = isBold ? 'bold' : 'normal';
+          const fontStr = `${fontWeightObj} ${fontSize}px ${mapFontFamily(el.fontFamily, getFontRole(el))}`;
+          // Add tolerance to pxWidth. DOM elements with tight text bounds (like display: inline-block headers) 
+          // are often measured by Server Canvas a few pixels wider due to font-engine micro-differences.
+          // A 0.8em tolerance prevents a single character from artificially wrapping to the next line.
+          let pxWidth = (parsedW / 100) * baseLogicalWidth;
+          pxWidth += fontSize * 0.8;
+          const lineHeight = parseFloat(el.lineHeight) || (fontSize * 1.5);
+          try {
+            const rawLines = cleanText.split('\n');
+            const allResultLines: string[] = [];
+            
+            for (const manualLine of rawLines) {
+               if (!manualLine.trim()) {
+                 allResultLines.push('');
+                 continue;
+               }
+               // zero-width space injection for strict CJK line breaking control
+               const cjkText = manualLine.replace(/([\u4e00-\u9fa5])/g, '$1\u200B');
+               const prepared = prepareWithSegments(cjkText, fontStr);
+               const result = layoutWithLines(prepared, pxWidth, lineHeight);
+               if (result.lines && result.lines.length > 0) {
+                 allResultLines.push(...result.lines.map((l: any) => l.text.replace(/\u200B/g, '')));
+               } else {
+                 allResultLines.push(manualLine);
+               }
+            }
+            if (allResultLines.length > 0) {
+              finalLinesStr = allResultLines.join('\n');
+            }
+          } catch (e) {
+            console.error('Pretext layout failed:', e);
+          }
         }
 
-        slide.addText(el.text, {
+        // Use 1.0 correction factor for 960px CSS px to 960pt PPT pt conversion
+        // (LAYOUT_WIDE is 13.33" -> approx 960pt)
+        const pptFontSize = fontSize;
+
+        slide.addText(finalLinesStr, {
           x: x as any, y: y as any, w: w as any, h: h as any,
-          fontSize,
+          fontSize: pptFontSize,
           color: fontColor || '000000',
           bold: isBold,
-          fontFace: mapFontFamily(el.fontFamily),
+          italic: isItalic,
+          fontFace: mapFontFamily(el.fontFamily, getFontRole(el)),
           align: align as any,
           valign: valign as any,
           transparency: fgTransparency,
           margin: 0,
-          wrap: true 
+          wrap: false 
         });
       }
     });

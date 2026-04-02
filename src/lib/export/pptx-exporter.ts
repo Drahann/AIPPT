@@ -1,3 +1,5 @@
+//目前弃用，项目现在使用universal-exporter.ts导出
+
 import PptxGenJS from 'pptxgenjs'
 import { Presentation, SlideContent } from '../types'
 import { getTemplatePack } from '../templates/registry'
@@ -64,9 +66,9 @@ function hexToRgb(hex: string): string {
   return hex.replace('#', '')
 }
 
-function extractFont(cssFontFamily: string): string {
-  // Always return Microsoft YaHei as requested by user
-  return 'Microsoft YaHei'
+function extractFont(cssFontFamily: string, role: 'heading' | 'body' = 'body'): string {
+  // 标题/副标题: 华文宋体, 正文: 黑体
+  return role === 'heading' ? 'STSong' : 'SimHei'
 }
 
 type Colors = TemplatePack['colors']
@@ -154,7 +156,7 @@ function renderCardsThreeCentered(s: Slide, slide: SlideContent, c: Colors, fH: 
   cards.forEach((card, i) => {
     const x = paddingX + i * (cardW + gap)
     const iconName = card.icon || inferIcon(card.heading)
-    
+
     s.addShape('roundRect' as PptxGenJS.ShapeType, {
       x, y: cardY, w: cardW, h: cardH,
       fill: { color: toPptxHex(sem.onSurface), transparency: 94 },
@@ -164,12 +166,12 @@ function renderCardsThreeCentered(s: Slide, slide: SlideContent, c: Colors, fH: 
 
     if (iconName) {
       s.addShape('ellipse' as PptxGenJS.ShapeType, {
-          x: x + 0.34, y: cardY + 0.3, w: 0.74, h: 0.74,
-          fill: { color: toPptxHex(sem.onSurface), transparency: 94 },
-          line: { color: toPptxHex(c.primary), width: 1 }
-        })
-        s.addImage({
-          data: getIconBase64(iconName, `#${toPptxHex(c.primary)}`),
+        x: x + 0.34, y: cardY + 0.3, w: 0.74, h: 0.74,
+        fill: { color: toPptxHex(sem.onSurface), transparency: 94 },
+        line: { color: toPptxHex(c.primary), width: 1 }
+      })
+      s.addImage({
+        data: getIconBase64(iconName, `#${toPptxHex(c.primary)}`),
         x: x + 0.52, y: cardY + 0.48, w: 0.38, h: 0.38
       })
     }
@@ -191,8 +193,8 @@ function renderCardsThreeCentered(s: Slide, slide: SlideContent, c: Colors, fH: 
 function renderSlide(pptx: PptxGenJS, slide: SlideContent, pack: TemplatePack) {
   const pptSlide = pptx.addSlide()
   const c = pack.colors
-  const fH = extractFont(pack.fonts.heading)
-  const fB = extractFont(pack.fonts.body)
+  const fH = extractFont(pack.fonts.heading, 'heading')
+  const fB = extractFont(pack.fonts.body, 'body')
   const density = getDensityClass(slide)
   const scale = getDensityScale(density)
   // vOffset for vertical centering logic (density-low gets more boost)
@@ -281,7 +283,6 @@ function renderSlide(pptx: PptxGenJS, slide: SlideContent, pack: TemplatePack) {
       renderFeaturesListImage(pptSlide, slide, c, fH, fB, scale, vOffset)
       break
     case 'metrics-rings':
-    case 'metrics-split':
       renderMetricsRings(pptSlide, slide, c, fH, fB, scale, vOffset)
       break
     case 'team-members':
@@ -295,7 +296,7 @@ function renderSlide(pptx: PptxGenJS, slide: SlideContent, pack: TemplatePack) {
 function renderCover(s: Slide, slide: SlideContent, c: Colors, fH: string, fB: string) {
   const sem = getSemanticColors(c)
   s.background = { fill: toPptxHex(c.primary) }
-  
+
   s.addText(slide.title, {
     x: 0.8, y: 1.5, w: 11.5, h: 2,
     fontSize: 40, fontFace: fH, color: toPptxHex(sem.onPrimary), bold: true,
@@ -312,7 +313,7 @@ function renderCover(s: Slide, slide: SlideContent, c: Colors, fH: string, fB: s
 function renderEnding(s: Slide, slide: SlideContent, c: Colors, fH: string, fB: string) {
   const sem = getSemanticColors(c)
   s.background = { fill: toPptxHex(c.primary) }
-  
+
   s.addText(slide.title, {
     x: 0.8, y: 2, w: 11.5, h: 2,
     fontSize: 44, fontFace: fH, color: toPptxHex(sem.onPrimary), bold: true,
@@ -329,12 +330,12 @@ function renderEnding(s: Slide, slide: SlideContent, c: Colors, fH: string, fB: 
 function renderSectionHeader(s: Slide, slide: SlideContent, c: Colors, fH: string, fB: string) {
   s.background = { fill: toPptxHex(c.surface) }
   const sem = getSemanticColors(c)
-  
+
   // Left primary accent bar
   s.addShape('rect' as PptxGenJS.ShapeType, {
     x: 0, y: 0, w: 0.08, h: 7.5, fill: { color: toPptxHex(c.primary) }
   })
-  
+
   // Subtitle (Kicker) - Above Title
   if (slide.subtitle) {
     s.addText(slide.subtitle, {
@@ -343,7 +344,7 @@ function renderSectionHeader(s: Slide, slide: SlideContent, c: Colors, fH: strin
       align: 'left', valign: 'bottom'
     })
   }
-  
+
   // Title
   s.addText(slide.title, {
     x: 0.8, y: 2.65, w: 11.5, h: 1.0,
@@ -398,13 +399,13 @@ function renderTextBullets(s: Slide, slide: SlideContent, c: Colors, fH: string,
   const sem = getSemanticColors(c)
   const spec = layoutSpecs.textLayout
   s.background = { fill: toPptxHex(sem.canvas) }
-  
+
   s.addText(slide.title, {
     x: spec.paddingX, y: spec.headingY + vOffset, w: SLIDE_W - spec.paddingX * 2, h: 0.8,
     fontSize: F.textBulletsTitle * scale, fontFace: fH, color: toPptxHex(c.primary), bold: false,
     align: 'center', fit: 'shrink'
   })
-  
+
   const bullets = extractBullets(slide)
   if (bullets.length > 0) {
     const startY = spec.bodyY + vOffset
@@ -429,12 +430,12 @@ function renderTextCenter(s: Slide, slide: SlideContent, c: Colors, fH: string, 
   const sem = getSemanticColors(c)
   const spec = layoutSpecs.textLayout
   s.background = { fill: toPptxHex(sem.canvas) }
-  
+
   s.addText(slide.title, {
     x: spec.paddingX, y: 2.5 + vOffset, w: SLIDE_W - spec.paddingX * 2, h: 1.0,
     fontSize: F.textCenterTitle * scale, fontFace: fH, color: toPptxHex(sem.onCanvas), bold: true, align: 'center', valign: 'middle', fit: 'shrink'
   })
-  
+
   const bodyText = extractParagraphText(slide).trim()
   if (bodyText) {
     s.addText(bodyText, {
@@ -449,17 +450,17 @@ function renderImageText(s: Slide, slide: SlideContent, c: Colors, fH: string, f
   const sem = getSemanticColors(c)
   const spec = layoutSpecs.imageText
   s.background = { fill: toPptxHex(sem.canvas) }
-  
+
   const isImageLeft = slide.layout === 'image-text'
   const paddingX = spec.paddingX
   const gap = spec.gap
-  
+
   const imageW = (SLIDE_W - paddingX * 2 - gap) * (spec.imageRatio / (spec.imageRatio + spec.textRatio))
   const textW = SLIDE_W - paddingX * 2 - gap - imageW
-  
+
   const imageX = isImageLeft ? paddingX : paddingX + textW + gap
   const textX = isImageLeft ? paddingX + imageW + gap : paddingX
-  
+
   if (slide.image?.url) {
     s.addImage({
       path: slide.image.url,
@@ -467,12 +468,12 @@ function renderImageText(s: Slide, slide: SlideContent, c: Colors, fH: string, f
       sizing: { type: 'cover', w: imageW, h: SLIDE_H - spec.paddingY * 2 }
     })
   }
-  
+
   s.addText(slide.title, {
     x: textX, y: 1.2 + vOffset, w: textW, h: 0.8,
     fontSize: F.imageTextTitle * scale, fontFace: fH, color: toPptxHex(sem.onCanvas), bold: true, fit: 'shrink'
   })
-  
+
   const bullets = extractBullets(slide).slice(0, 6)
   if (bullets.length > 0) {
     const startY = 2.2 + vOffset
@@ -519,7 +520,7 @@ function renderCards(s: Slide, slide: SlideContent, c: Colors, fH: string, fB: s
         line: { color: toPptxHex(c.primary), width: 1 },
         rectRadius: 0.12
       })
-      
+
       const headerBoxH = 1.0
       s.addShape('roundRect' as PptxGenJS.ShapeType, {
         x: x + 0.1, y: cardY + 0.1, w: cardW - 0.2, h: headerBoxH,
@@ -561,13 +562,13 @@ function renderCards(s: Slide, slide: SlideContent, c: Colors, fH: string, fB: s
     const col = i % cols
     const row = Math.floor(i / cols)
     const x = spec.paddingX + col * (cardW + gap)
-    
+
     // Calculate row height based on total rows to prevent overflow
     const rows = Math.ceil(cards.length / cols)
     const availableH = SLIDE_H - 1.8 - vOffset
     const rowStep = rows > 1 ? availableH / rows : 2.8 * scale
     const y = 1.6 + vOffset + row * rowStep
-    const h = rows > 1 ? (rowStep - 0.4) : Math.min(cols <= 2 ? 5 * scale : 2.4 * scale, SLIDE_H - 0.3 - y) 
+    const h = rows > 1 ? (rowStep - 0.4) : Math.min(cols <= 2 ? 5 * scale : 2.4 * scale, SLIDE_H - 0.3 - y)
 
     s.addShape('roundRect' as PptxGenJS.ShapeType, {
       x, y, w: cardW, h,
@@ -575,7 +576,7 @@ function renderCards(s: Slide, slide: SlideContent, c: Colors, fH: string, fB: s
       line: { color: hexToRgb(c.border), width: 1 },
       rectRadius: 0.1
     })
-    
+
     s.addShape('rect' as PptxGenJS.ShapeType, {
       x: x + 0.1, y: y + h - 0.04, w: cardW - 0.2, h: 0.04,
       fill: { color: toPptxHex(c.primary) }
@@ -706,7 +707,7 @@ function renderTimeline(s: Slide, slide: SlideContent, c: Colors, fH: string, fB
   const sem = getSemanticColors(c)
   const spec = layoutSpecs.cardsGeneric
   s.background = { fill: toPptxHex(sem.canvas) }
-  
+
   s.addText(slide.title, {
     x: spec.paddingX, y: 0.45 + vOffset, w: SLIDE_W - spec.paddingX * 2, h: 0.8,
     fontSize: F.timelineTitle * scale, fontFace: fH, color: toPptxHex(sem.onCanvas), bold: true, align: 'left', fit: 'shrink'
@@ -809,7 +810,7 @@ function renderMetrics(s: Slide, slide: SlideContent, c: Colors, fH: string, fB:
   const sem = getSemanticColors(c)
   const spec = layoutSpecs.metrics
   s.background = { fill: toPptxHex(sem.canvas) }
-  
+
   const leftW = spec.leftW
   const items = (slide.metrics || []).slice(0, 6)
   const count = items.length
@@ -817,20 +818,20 @@ function renderMetrics(s: Slide, slide: SlideContent, c: Colors, fH: string, fB:
   const summary = slide.subtitle?.trim() || extractParagraphText(slide)
 
   s.addShape('rect' as PptxGenJS.ShapeType, {
-      x: 0, y: 0, w: leftW, h: SLIDE_H,
-      fill: { color: toPptxHex(sem.onSurface), transparency: 92 },
-      line: { color: hexToRgb(c.border), width: 0 }
-    })
+    x: 0, y: 0, w: leftW, h: SLIDE_H,
+    fill: { color: toPptxHex(sem.onSurface), transparency: 92 },
+    line: { color: hexToRgb(c.border), width: 0 }
+  })
 
   s.addText(slide.title, {
-      x: 0.72, y: 2.05 + vOffset, w: leftW - 1.35, h: 1.25,
-      fontSize: 34 * scale, fontFace: fH, color: toPptxHex(sem.onCanvas), bold: true, align: 'left', fit: 'shrink'
+    x: 0.72, y: 2.05 + vOffset, w: leftW - 1.35, h: 1.25,
+    fontSize: 34 * scale, fontFace: fH, color: toPptxHex(sem.onCanvas), bold: true, align: 'left', fit: 'shrink'
   })
 
   if (summary) {
     s.addText(summary, {
-        x: 0.72, y: 3.38 + vOffset, w: leftW - 1.35, h: 2.15,
-        fontSize: 16 * scale, fontFace: fB, color: toPptxHex(sem.onCanvas),
+      x: 0.72, y: 3.38 + vOffset, w: leftW - 1.35, h: 2.15,
+      fontSize: 16 * scale, fontFace: fB, color: toPptxHex(sem.onCanvas),
       align: 'left', valign: 'top', lineSpacingMultiple: 1.22, fit: 'shrink'
     })
   }
@@ -856,14 +857,14 @@ function renderMetrics(s: Slide, slide: SlideContent, c: Colors, fH: string, fB:
     const y = gridY + row * (cellH + rowGap)
 
     s.addText(metric.value, {
-        x, y: y + 0.02, w: cellW, h: 0.88,
-        fontSize: F.metricsValue * scale, fontFace: fH, color: toPptxHex(sem.onCanvas),
+      x, y: y + 0.02, w: cellW, h: 0.88,
+      fontSize: F.metricsValue * scale, fontFace: fH, color: toPptxHex(sem.onCanvas),
       bold: false, align: 'left', fit: 'shrink'
     })
 
     s.addText(metric.label, {
-        x, y: y + 0.98, w: cellW, h: Math.max(0.5, cellH - 1),
-        fontSize: F.metricsLabel * scale, fontFace: fB, color: toPptxHex(sem.subtleOnCanvas),
+      x, y: y + 0.98, w: cellW, h: Math.max(0.5, cellH - 1),
+      fontSize: F.metricsLabel * scale, fontFace: fB, color: toPptxHex(sem.subtleOnCanvas),
       align: 'left', valign: 'top', lineSpacingMultiple: 1.2, fit: 'shrink'
     })
   })
@@ -871,7 +872,7 @@ function renderMetrics(s: Slide, slide: SlideContent, c: Colors, fH: string, fB:
 
 function renderFeaturesListImage(s: Slide, slide: SlideContent, c: Colors, fH: string, fB: string, scale = 1, vOffset = 0) {
   s.background = { fill: hexToRgb(c.background) }
-  
+
   // Left side header
   s.addText(slide.title, {
     x: PAD_X, y: 3.0 + vOffset, w: 3.5, h: 1,
@@ -891,7 +892,7 @@ function renderFeaturesListImage(s: Slide, slide: SlideContent, c: Colors, fH: s
 
   items.forEach((item, i) => {
     const y = 1.2 + vOffset + i * (itemH + gapY)
-    
+
     // Image
     if (item.image?.url) {
       s.addImage({
@@ -988,10 +989,10 @@ function renderQuote(s: Slide, slide: SlideContent, c: Colors, fH: string, fB: s
   const items = cardItems.length > 0
     ? cardItems
     : [{
-        text: slide.quote?.text || slide.title,
-        attribution: slide.quote?.attribution || '',
-        imageUrl: slide.image?.url,
-      }]
+      text: slide.quote?.text || slide.title,
+      attribution: slide.quote?.attribution || '',
+      imageUrl: slide.image?.url,
+    }]
   const count = Math.min(5, Math.max(1, items.length))
 
   const layoutByCount: Record<number, { cols: number; avatar: number; textSize: number; attrSize: number; startY: number; gapX: number }> = {
@@ -1059,9 +1060,9 @@ function renderQuoteNoAvatar(s: Slide, slide: SlideContent, c: Colors, fH: strin
   const items = cardItems.length > 0
     ? cardItems
     : [{
-        text: slide.quote?.text || slide.title,
-        attribution: slide.quote?.attribution || '',
-      }]
+      text: slide.quote?.text || slide.title,
+      attribution: slide.quote?.attribution || '',
+    }]
   const count = Math.min(5, Math.max(1, items.length))
 
   const layoutByCount: Record<number, { cols: number; textSize: number; attrSize: number; startY: number; gapX: number; quoteH: number }> = {
@@ -1124,18 +1125,18 @@ function renderChart(pptx: PptxGenJS, s: Slide, slide: SlideContent, c: Colors, 
     const sem = getSemanticColors(c)
     const spec = layoutSpecs.chartPie
     s.background = { fill: toPptxHex(sem.canvas) }
-    
+
     // Title
     s.addText(slide.title, {
       x: 0.72, y: 0.56 + vOffset, w: 10, h: 1.2,
       fontSize: 48 * scale, fontFace: fH, color: toPptxHex(sem.onCanvas), bold: false, fit: 'shrink'
     })
-    
+
     if (slide.subtitle) {
-       s.addText(slide.subtitle, {
-         x: 0.72, y: 1.6 + vOffset, w: 10, h: 0.5,
-         fontSize: 16 * scale, fontFace: fB, color: toPptxHex(sem.subtleOnCanvas), fit: 'shrink'
-       })
+      s.addText(slide.subtitle, {
+        x: 0.72, y: 1.6 + vOffset, w: 10, h: 0.5,
+        fontSize: 16 * scale, fontFace: fB, color: toPptxHex(sem.subtleOnCanvas), fit: 'shrink'
+      })
     }
 
     const rawValues = slide.chart.series[0]?.values || []
@@ -1146,9 +1147,9 @@ function renderChart(pptx: PptxGenJS, s: Slide, slide: SlideContent, c: Colors, 
       labels: slide.chart.categories,
       values: chartValues
     }]
-    
+
     const colors = getSeriesColorPalette(c, slide.chart.categories.length, [c.surface, c.surfaceAlt]).map(toPptxHex);
-    
+
     // Left-aligned Pie Chart
     s.addChart((pptx as any).ChartType?.pie || 'pie', pieData, {
       x: spec.paddingX, y: 2.2 + vOffset, w: spec.chartW, h: 4.8,
@@ -1181,7 +1182,7 @@ function renderChart(pptx: PptxGenJS, s: Slide, slide: SlideContent, c: Colors, 
         x: legendX + 0.35, y, w: 2.5, h: 0.35,
         fontSize: 16 * scale, fontFace: fH, color: toPptxHex(sem.onCanvas), bold: true
       })
-      
+
       s.addText(`Represents ${percent}% of the total distribution. (${percent}%)`, {
         x: legendX + 0.35, y: y + 0.36, w: 4.5, h: 0.3,
         fontSize: 12 * scale, fontFace: fB, color: toPptxHex(sem.subtleOnCanvas)
@@ -1191,8 +1192,8 @@ function renderChart(pptx: PptxGenJS, s: Slide, slide: SlideContent, c: Colors, 
   }
 
   const chartData = slide.chart.series.map(series => ({
-    name: series.name, 
-    labels: slide.chart!.categories, 
+    name: series.name,
+    labels: slide.chart!.categories,
     values: series.values.map(v => (typeof v === 'number' && !isNaN(v)) ? v : 0)
   }))
 
@@ -1323,8 +1324,8 @@ function renderChart(pptx: PptxGenJS, s: Slide, slide: SlideContent, c: Colors, 
   })
   if (slide.chart.title) {
     s.addText(slide.chart.title, {
-       x: 0.8, y: 1.2 + vOffset, w: 11.5, h: 0.4,
-       fontSize: 14 * scale, fontFace: fB, color: hexToRgb(c.textSecondary), align: 'center'
+      x: 0.8, y: 1.2 + vOffset, w: 11.5, h: 0.4,
+      fontSize: 14 * scale, fontFace: fB, color: hexToRgb(c.textSecondary), align: 'center'
     })
   }
 
@@ -1332,10 +1333,10 @@ function renderChart(pptx: PptxGenJS, s: Slide, slide: SlideContent, c: Colors, 
   const colors = getSeriesColorPalette(c, colorCount, [c.surface, c.surfaceAlt]).map(toPptxHex);
 
   const chartOpts: PptxGenJS.IChartOpts = {
-     x: 1.5, y: 1.8 + vOffset, w: 10.33, h: 5.2,
-     chartColors: colors, showLegend: true, legendPos: 'b',
-     dataLabelColor: hexToRgb(c.text), valAxisLabelColor: hexToRgb(c.textSecondary), catAxisLabelColor: hexToRgb(c.textSecondary),
-     valGridLine: { style: 'dash', color: hexToRgb(c.border) }
+    x: 1.5, y: 1.8 + vOffset, w: 10.33, h: 5.2,
+    chartColors: colors, showLegend: true, legendPos: 'b',
+    dataLabelColor: hexToRgb(c.text), valAxisLabelColor: hexToRgb(c.textSecondary), catAxisLabelColor: hexToRgb(c.textSecondary),
+    valGridLine: { style: 'dash', color: hexToRgb(c.border) }
   }
   s.addChart(chartType, chartData, chartOpts)
 }
@@ -1515,12 +1516,12 @@ function renderStaggeredCards(s: Slide, slide: SlideContent, c: Colors, fH: stri
   const sem = getSemanticColors(c)
   const spec = layoutSpecs.staggeredCards
   s.background = { fill: toPptxHex(sem.canvas) }
-  
+
   s.addText(slide.title, {
     x: spec.paddingX, y: 0.5 + vOffset, w: SLIDE_W - spec.paddingX * 2, h: 1,
     fontSize: 28 * scale, fontFace: fH, bold: true, color: toPptxHex(c.primary), align: 'center'
   })
-  
+
   const cards = slide.cards || []
   const count = cards.length
   const cardW = spec.cardW
@@ -1541,23 +1542,23 @@ function renderStaggeredCards(s: Slide, slide: SlideContent, c: Colors, fH: stri
     const iconName = card.icon || inferIcon(card.heading)
     if (iconName) {
       s.addShape('ellipse' as PptxGenJS.ShapeType, {
-          x: x + 0.25, y: y + 0.25, w: 0.6, h: 0.6,
-          fill: { color: toPptxHex(sem.onSurface), transparency: 94 },
-          line: { color: toPptxHex(c.primary), width: 1 }
-        })
-        s.addImage({
-          data: getIconBase64(iconName, `#${toPptxHex(c.primary)}`),
+        x: x + 0.25, y: y + 0.25, w: 0.6, h: 0.6,
+        fill: { color: toPptxHex(sem.onSurface), transparency: 94 },
+        line: { color: toPptxHex(c.primary), width: 1 }
+      })
+      s.addImage({
+        data: getIconBase64(iconName, `#${toPptxHex(c.primary)}`),
         x: x + 0.36, y: y + 0.36, w: 0.38, h: 0.38
       })
     }
 
     s.addText(card.heading, {
-      x: x + 0.3, y: y + (iconName ? 0.9 : 0.4), w: cardW - 0.6, h: 0.5, 
+      x: x + 0.3, y: y + (iconName ? 0.9 : 0.4), w: cardW - 0.6, h: 0.5,
       fontSize: 18 * scale, fontFace: fH, color: toPptxHex(c.primary), bold: true, fit: 'shrink'
     })
 
     s.addText(card.body, {
-      x: x + 0.3, y: y + (iconName ? 1.4 : 0.9), w: cardW - 0.6, h: 1.5, 
+      x: x + 0.3, y: y + (iconName ? 1.4 : 0.9), w: cardW - 0.6, h: 1.5,
       fontSize: 14 * scale, fontFace: fB, color: toPptxHex(sem.onCanvas), valign: 'top',
       lineSpacingMultiple: 1.1, fit: 'shrink'
     })
@@ -1583,7 +1584,7 @@ function renderTeamMembers(s: Slide, slide: SlideContent, c: Colors, fH: string,
     x: 7.5, y: headerY, w: 5, h: 0.4,
     fontSize: 14 * scale, fontFace: fB, color: secondaryColor, bold: true
   })
-  
+
   s.addShape('line' as PptxGenJS.ShapeType, {
     x: 1.0, y: headerY + 0.45, w: 11.33, h: 0,
     line: { color: toPptxHex(c.border), width: 1 }
@@ -1597,13 +1598,13 @@ function renderTeamMembers(s: Slide, slide: SlideContent, c: Colors, fH: string,
   members.forEach((member, i) => {
     const y = startY + i * rowH
     const iconName = member.icon || 'user'
-    
+
     s.addShape('ellipse' as PptxGenJS.ShapeType, {
       x: 1.05, y: y + 0.08, w: 0.44, h: 0.44,
       fill: { color: toPptxHex(sem.onSurface), transparency: 92 },
       line: { color: toPptxHex(c.border), width: 0.5 }
     })
-    
+
     s.addImage({
       data: getIconBase64(iconName, '#' + textColor),
       x: 1.15, y: y + 0.18, w: 0.24, h: 0.24

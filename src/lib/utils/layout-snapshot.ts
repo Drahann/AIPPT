@@ -59,6 +59,11 @@ export function captureSlideLayout(slideElement: HTMLElement, slideIndex: number
         if (style.color) {
             svgString = svgString.replace(/currentColor/gi, style.color);
         }
+        // Resolve CSS variables (e.g. var(--color-primary) or var(--color-primary, #3b82f6))
+        svgString = svgString.replace(/var\(--([^,)]+)(?:,\s*([^)]+))?\)/g, (match, varName, fallback) => {
+          const resolved = style.getPropertyValue('--' + varName.trim()).trim();
+          return resolved || (fallback ? fallback.trim() : match);
+        });
         srcData = 'data:image/svg+xml;base64,' + btoa(unescape(encodeURIComponent(svgString)));
         outputTag = 'IMG';
       } catch (e) {
@@ -83,6 +88,7 @@ export function captureSlideLayout(slideElement: HTMLElement, slideIndex: number
       fontSize: style.fontSize,
       fontWeight: style.fontWeight,
       fontFamily: style.fontFamily,
+      fontStyle: style.fontStyle,
       lineHeight: style.lineHeight,
       textAlign: style.textAlign,
       opacity: style.opacity,

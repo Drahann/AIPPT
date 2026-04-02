@@ -10,54 +10,64 @@ interface Props {
 }
 
 export function TimelineSlide({ slide, editable, onUpdate }: Props) {
-  // Aetherfield style recommends 4 nodes for balance
-  const events = slide.events?.slice(0, 4) || []
+  const events = slide.events || []
+  // Use N+1 slots to ensure exactly one slot of whitespace on the right (Figma style)
+  const totalSlots = events.length + 1
+  const slots = Array.from({ length: totalSlots }).map((_, i) => events[i])
 
   return (
-    <div className="slide-card-inner timeline-shell is-aether">
-      <EditableText
-        value={slide.title}
-        tag="h2"
-        className="slide-title"
-        editable={editable}
-        onChange={(v) => onUpdate?.({ ...slide, title: v })}
-      />
+    <div 
+      className="slide-card-inner timeline-shell is-aether"
+      style={{ '--interval-count': events.length } as any}
+    >
+      <div className="timeline-header-group">
+        <EditableText
+          value={slide.title || 'CAPTION'}
+          tag="div"
+          className="timeline-caption"
+          editable={editable}
+          onChange={(v) => onUpdate?.({ ...slide, title: v })}
+        />
+      </div>
       
       <div className="timeline-horizontal">
-        {/* Main horizontal axis */}
-        <div className="timeline-horizontal-line" />
+        <div className="timeline-horizontal-line">
+          <svg className="timeline-arrow" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="0,0 14,7 0,14" fill="var(--color-primary, #3b82f6)" opacity="0.4" />
+          </svg>
+        </div>
         
         <div className="timeline-milestones">
-          {events.map((event, i) => {
-            const isTop = i % 2 === 0 // 0, 2 are top; 1, 3 are bottom
+          {slots.map((item, i) => {
+            const isTop = i % 2 === 0
+            if (!item) {
+              return <div key={`slot-${i}`} className="timeline-milestone is-empty" />
+            }
             
             return (
               <div key={i} className={`timeline-milestone ${isTop ? 'is-top' : 'is-bottom'}`}>
-                {/* Main node dot on the axis - now the anchor */}
                 <div className="timeline-tick" />
-                
-                {/* Vertical group: connector + content */}
                 <div className="timeline-info-group">
                   <div className="timeline-connector" />
                   <div className="timeline-content">
                     <EditableText
-                      value={event.date || event.title || (isTop ? 'Moment' : 'Occurrence')}
+                      value={item.date || item.title || `0${i + 1}`}
                       tag="div"
                       className="timeline-heading"
                       editable={editable}
                       onChange={(v) => {
-                        const next = [...events]
+                        const next = [...(slide.events || [])]
                         next[i] = { ...next[i], title: v, date: v }
                         onUpdate?.({ ...slide, events: next })
                       }}
                     />
                     <EditableText
-                      value={event.description || 'Bright and descriptive words, followed by an additional phrase of note.'}
+                      value={item.description || ''}
                       tag="div"
                       className="timeline-description"
                       editable={editable}
                       onChange={(v) => {
-                        const next = [...events]
+                        const next = [...(slide.events || [])]
                         next[i] = { ...next[i], description: v }
                         onUpdate?.({ ...slide, events: next })
                       }}
@@ -67,10 +77,6 @@ export function TimelineSlide({ slide, editable, onUpdate }: Props) {
               </div>
             )
           })}
-          
-          {events.length === 0 && (
-            <div className="timeline-empty">Add timeline events to render milestones.</div>
-          )}
         </div>
       </div>
     </div>

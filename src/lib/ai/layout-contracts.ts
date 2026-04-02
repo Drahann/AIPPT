@@ -12,12 +12,17 @@ const CARD_LAYOUTS: LayoutType[] = [
   'cards-2',
   'cards-3',
   'cards-4',
+  'cards-4-featured',
+  'grid-2x2-featured',
+  'cards-3-featured',
+  'cards-3-stack',
   'list-featured',
   'quote',
   'quote-no-avatar',
   'staggered-cards',
   'features-list-image',
   'cards-split',
+  'team-members',
 ]
 
 const GENERIC_TITLES = new Set([
@@ -296,7 +301,7 @@ export function validateAndNormalizeSlideShape(slide: SlideContent, outline: Sli
     }
   }
 
-  if (['metrics', 'metrics-rings', 'metrics-split'].includes(next.layout) && (!next.metrics || next.metrics.length === 0)) {
+  if (['metrics', 'metrics-rings'].includes(next.layout) && (!next.metrics || next.metrics.length === 0)) {
     const mappedMetrics = toMetricsFromCards(next) || toMetricsFromBody(next)
     if (mappedMetrics) {
       next = { ...next, metrics: mappedMetrics }
@@ -330,7 +335,7 @@ export function validateAndNormalizeSlideShape(slide: SlideContent, outline: Sli
   if (['timeline', 'milestone-list'].includes(next.layout) && !hasEvents(next)) {
     errors.push('missing events')
   }
-  if (['metrics', 'metrics-rings', 'metrics-split'].includes(next.layout) && !hasMetrics(next)) {
+  if (['metrics', 'metrics-rings'].includes(next.layout) && !hasMetrics(next)) {
     errors.push('missing metrics')
   }
   if (['image-text', 'text-image', 'image-center', 'text-bullets', 'text-center'].includes(next.layout) && !hasVisibleBody(next)) {
@@ -377,6 +382,13 @@ export function chooseLayoutForNormalizedContent(slide: SlideContent, outline: S
       return { ...slide, layout: outline.layout }
     }
     if (outline.layout === 'list-featured' || outline.layout === 'features-list-image' || outline.layout === 'cards-split') {
+      return { ...slide, layout: outline.layout }
+    }
+    // Preserve advanced featured layouts when card count matches
+    if (count === 4 && (outline.layout === 'cards-4-featured' || outline.layout === 'grid-2x2-featured')) {
+      return { ...slide, layout: outline.layout }
+    }
+    if (count === 3 && (outline.layout === 'cards-3-featured' || outline.layout === 'cards-3-stack' || outline.layout === 'staggered-cards')) {
       return { ...slide, layout: outline.layout }
     }
     if (count <= 2) return { ...slide, layout: 'cards-2' }

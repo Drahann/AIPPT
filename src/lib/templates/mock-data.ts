@@ -47,12 +47,11 @@ export const MOCK_SLIDES: SlideContent[] = [
     ],
     tone: 'negative'
   } },
-  { layout: 'timeline', title: 'Timeline', events: [
-    { date: 'H2 2024', title: 'Kickoff', description: 'Map milestones and checkpoints in sequence.' },
-    { date: 'H1 2025', title: 'Build', description: 'Define objectives and execution scope.' },
-    { date: 'H2 2025', title: 'Scale', description: 'Expand coverage and stabilize process.' },
-    { date: 'H1 2026', title: 'Refine', description: 'Optimize quality and speed.' },
-    { date: 'June 2026', title: 'Release', description: 'Ship and monitor adoption.' }
+  { layout: 'timeline', title: 'Roadmap & Milestones', events: [
+    { date: '0-12个月', title: '推广模式', description: '聚焦航空、国防领域已验证标杆客户，深度匹配其高危工序实训成本高、专家经验难沉淀等核心痛点，定制硬件+虚拟场景+量化评估最小可行方案。' },
+    { date: '12-24个月', title: '规模增长', description: '深度绑定哈尔滨工业大学智能人机交互研究中心等校企合作平台，将灯塔案例转化为联合品牌资产。策划产教对接会，定向邀请东北地区重点企业。' },
+    { date: '24个月后', title: '行业领先', description: '提炼标准化推广包，依托前期建立的区域实训示范点，以技术展示+本地化服务模式实现区域市场渗透。' },
+    { date: '2026+', title: '全球扩张', description: '通过全球性峰会实现跨域复制，构建标杆引领-区域扎根-生态辐射的可持续增长体系。' }
   ] },
   { layout: 'milestone-list', title: 'Annual Achievement List', subtitle: 'Program Timeline', events: [
     { date: '2022', title: 'Foundation', description: 'Completed core architecture and delivered first enterprise pilot with measurable baseline gains.' },
@@ -125,4 +124,38 @@ export const MOCK_SLIDES: SlideContent[] = [
     { heading: 'Ben', body: 'Fullstack engineer building the layout engine.', icon: 'code' },
     { heading: 'Sarah', body: 'UX Researcher validating customer feedback.', icon: 'search' }
   ] },
+  { layout: 'cards-4-featured', title: 'Next Steps', cards: [
+    { heading: 'Market Pilot', body: 'Deploy the beta version to the initial group of 500 users to gather quantitative feedback.' },
+    { heading: 'Feature Expansion', body: 'Integrate advanced analytics and real-time collaboration tools into the core platform.' },
+    { heading: 'Brand Alignment', body: 'Refresh all visual assets to match the new organic branding guidelines.' },
+    { heading: 'Seed Round', body: 'Close the current funding round with institutional partners by the end of Q3.' }
+  ] },
+  { 
+    layout: 'grid-2x2-featured', 
+    title: 'Readings & course text', 
+    cards: [
+      { heading: 'Muriel Cooper (MIT Press)', body: 'March 14, 2023 by David Reinfurt, Robert Wiesenberger.' },
+      { heading: 'Architectural Digest at 100', body: 'March 14, 2023 by Amy Astley, et al.' },
+      { heading: 'Design, Second Edition', body: 'The Definitive Visual Guide by Judith Miller, et al.' },
+      { heading: 'Arranging Things', body: 'Hardcover by Colin King, Sam Cochran.' }
+    ] 
+  },
+  {
+    layout: 'cards-3-featured',
+    title: 'Course outline',
+    cards: [
+      { heading: 'Week 1', body: 'A paragraph is a structural unit in writing that focuses on a central idea.\n\nParagraphs help organize thoughts and information, guiding readers through the text.' },
+      { heading: 'Week 2', body: 'A paragraph is a structural unit in writing that focuses on a central idea.\n\nParagraphs help organize thoughts and information, guiding readers through the text.' },
+      { heading: 'Week 3', body: 'A paragraph is a structural unit in writing that focuses on a central idea.\n\nParagraphs help organize thoughts and information, guiding readers through the text.' }
+    ]
+  },
+  {
+    layout: 'cards-3-stack',
+    title: 'EXECUTIVE SUMMARY',
+    cards: [
+      { heading: 'Market Analysis', body: 'Our research indicates a 25% increase in demand for sustainable energy solutions.\n\nWe recommend doubling the R&D budget for our solar panel initiative.' },
+      { heading: 'Operational Efficiency', body: 'Supply chain optimization has reduced logistical costs by 12% this quarter.\n\nImplement automated inventory tracking across all regional warehouses.' },
+      { heading: 'Future Growth', body: 'Expansion into emerging markets is expected to yield 15% revenue growth by 2026.\n\nPrioritize strategic partnerships with local distributors in SE Asia.' }
+    ]
+  },
 ]

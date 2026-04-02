@@ -14,6 +14,10 @@ export const layoutItemRules = {
   quote: { min: 1, max: 5 },
   quoteNoAvatar: { min: 1, max: 5 },
   teamMembers: { min: 2, max: 8 },
+  cards4Featured: { min: 4, max: 4 },
+  grid2x2Featured: { min: 4, max: 4 },
+  cards3Featured: { min: 3, max: 3 },
+  cards3Stack: { min: 3, max: 3 },
 } as const
 
 export function getItemCountConstraintLines(): string[] {
@@ -35,6 +39,10 @@ export function getItemCountConstraintLines(): string[] {
     `quote: ${layoutItemRules.quote.min}-${layoutItemRules.quote.max} quotes`,
     `quote-no-avatar: ${layoutItemRules.quoteNoAvatar.min}-${layoutItemRules.quoteNoAvatar.max} quotes`,
     `team-members: ${layoutItemRules.teamMembers.min}-${layoutItemRules.teamMembers.max} team/stakeholder members`,
+    `cards-4-featured: EXACTLY 4 cards`,
+    `grid-2x2-featured: EXACTLY 4 cards`,
+    `cards-3-featured: EXACTLY 3 cards`,
+    `cards-3-stack: EXACTLY 3 cards`,
   ]
 }
 
@@ -53,7 +61,6 @@ export function getSplitLimitForLayout(layout: LayoutType): number | undefined {
     case 'metrics':
       return layoutItemRules.metrics.max
     case 'metrics-rings':
-    case 'metrics-split':
       return layoutItemRules.metricsRings.max
     case 'features-list-image':
       return layoutItemRules.featuresListImage.max
@@ -63,12 +70,17 @@ export function getSplitLimitForLayout(layout: LayoutType): number | undefined {
       return layoutItemRules.quoteNoAvatar.max
     case 'team-members':
       return layoutItemRules.teamMembers.max
+    case 'cards-4':
+    case 'cards-4-featured':
+    case 'grid-2x2-featured':
+      return 4
+    case 'cards-3':
+    case 'cards-3-featured':
+    case 'cards-3-stack':
+    case 'staggered-cards':
+      return 3
     case 'cards-2':
       return 2
-    case 'cards-3':
-      return 3
-    case 'cards-4':
-      return 4
     default:
       return undefined
   }

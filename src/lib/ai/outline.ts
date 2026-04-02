@@ -1,4 +1,4 @@
-import { DocumentChunk, OutlineResult, SlideOutline } from '../types'
+import { DocumentChunk, LayoutType, OutlineResult, SlideOutline } from '../types'
 import { callLLM, cleanJsonResponse, repairJsonWithLLM, tryParseJson } from './llm'
 import { enforceSlideLayoutByCandidates, getSlideLayoutCandidates } from './layout-router'
 import { buildOutlinePrompt } from './prompts/outline'
@@ -6,13 +6,18 @@ import { normalizeMojibake } from './text-normalizer'
 
 const SPECIAL_SECTION_ITEM_PREFIXES = [
   '核心技术 - ',
+  '创新技术 - ',
   '应用企业 - ',
-  '应用公司 - ',
-  '应用部门 - ',
-  '应用案例 - ',
-  '应用场景 - ',
+  '产业验证 - ',
   '核心优势 - ',
   '主要产品 - ',
+  '应用案例 - ',
+  '应用展示 - ',
+  '应用场景 - ',
+  '与应用企业 - ',
+  '与产业验证 - ',
+  '应用公司 - ',
+  '应用部门 - ',
   'Core Technology - ',
   'Key Technology - ',
   'Application Enterprise - ',
@@ -124,6 +129,11 @@ function enforceSpecialItemSlides(result: OutlineResult, chunks: DocumentChunk[]
 
   for (const slide of result.slides) {
     const refs = normalizeRefChunks(slide.refChunks)
+    // Preserve slides with no refChunks (cover, ending, section-header, etc.)
+    if (refs.length === 0) {
+      filteredSlides.push(slide)
+      continue
+    }
     const isDedicatedSpecial = refs.length === 1 && specialOrders.has(refs[0])
     if (isDedicatedSpecial) {
       dedicatedOrders.add(refs[0])
@@ -197,13 +207,72 @@ function normalizeOutline(
       normalized.layout = 'ending'
       return normalized
     }
+    // --- Hard guard: ban quote layouts for case-study / validation content ---
+    // LLM frequently misclassifies "产业验证" as quote-worthy, causing fabricated speaker quotes.
+    const CASE_STUDY_KEYWORDS = [
+      '产业验证', '应用情况', '取得成效', '应用案例', '案例分析',
+      '企业简介', '应用展示', '验证总结', '成效分析',
+    ]
+    const isQuoteLayout = normalized.layout === 'quote' || normalized.layout === 'quote-no-avatar'
+    const titleLower = normalized.title
+    const isCaseStudy = CASE_STUDY_KEYWORDS.some(kw => titleLower.includes(kw))
+    if (isQuoteLayout && isCaseStudy) {
+      debugLog?.('outline.quoteGuard.remapped', {
+        index: normalized.index,
+        title: normalized.title,
+        from: normalized.layout,
+        to: 'cards-3',
+        reason: 'case-study content must not use quote layout',
+      })
+      normalized.layout = 'cards-3' as LayoutType
+    }
+
     return enforceSlideLayoutByCandidates(normalized, chunks)
+  })
+
+  // Build recentLayouts tracker for diversity (same-category only)
+  const LAYOUT_CATEGORY: Record<string, string> = {
+    'cards-2': 'card', 'cards-3': 'card', 'cards-4': 'card',
+    'cards-split': 'card', 'staggered-cards': 'card',
+    'cards-3-featured': 'card', 'cards-3-stack': 'card',
+    'cards-4-featured': 'card', 'grid-2x2-featured': 'card',
+    'list-featured': 'card', 'features-list-image': 'card',
+    'text-center': 'text', 'text-bullets': 'text',
+    'image-text': 'image', 'text-image': 'image',
+    'image-center': 'image', 'image-full': 'image',
+    'chart-bar': 'chart', 'chart-line': 'chart',
+    'chart-pie': 'chart', 'chart-bar-compare': 'chart',
+    'timeline': 'timeline', 'milestone-list': 'timeline',
+    'quote': 'quote', 'quote-no-avatar': 'quote',
+    'metrics': 'metric', 'metrics-rings': 'metric',
+    'comparison': 'comparison', 'team-members': 'team',
+  }
+  const getCat = (l: LayoutType) => LAYOUT_CATEGORY[l] || 'other'
+
+  const recentLayouts: LayoutType[] = []
+  const diverseSlides = slides.map(s => {
+    if (s.layout === 'cover' || s.layout === 'ending' || s.layout === 'section-header') {
+      return s
+    }
+    // If this layout was used in the last 2 slides, try to pick a same-category alternative
+    if (recentLayouts.slice(-2).includes(s.layout)) {
+      const myCat = getCat(s.layout)
+      const candidates = getSlideLayoutCandidates(s, chunks)
+      const alt = candidates.find(c =>
+        !recentLayouts.slice(-2).includes(c) && getCat(c) === myCat
+      )
+      if (alt) {
+        s = { ...s, layout: alt }
+      }
+    }
+    recentLayouts.push(s.layout)
+    return s
   })
 
   return {
     ...result,
     title: normalizeMojibake(result.title || ''),
-    slideCount: slides.length,
-    slides,
+    slideCount: diverseSlides.length,
+    slides: diverseSlides,
   }
 }

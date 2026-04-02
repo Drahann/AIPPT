@@ -9,7 +9,7 @@ interface Props {
   onUpdate?: (slide: SlideContent) => void
 }
 
-export function MetricsSplitSlide({ slide, editable, onUpdate }: Props) {
+export function MetricsRingsSlide({ slide, editable, onUpdate }: Props) {
   const items = (slide.metrics || []).slice(0, 3)
   const overline = slide.subtitle?.trim() || 'The PainPoint'
 
@@ -43,10 +43,22 @@ export function MetricsSplitSlide({ slide, editable, onUpdate }: Props) {
             </div>
           ))}
         </div>
+
+        {/* Bottom descriptive body */}
+        {slide.body && Array.isArray(slide.body) && slide.body.length > 0 && (
+          <div className="metrics-rings-body">
+            <EditableText
+              value={slide.body.map((p: any) => p.text || '').join('\n')}
+              tag="p"
+              className="metrics-rings-body-text"
+              editable={editable}
+              onChange={(v) => onUpdate?.({ ...slide, body: [{ type: 'paragraph', text: v }] })}
+            />
+          </div>
+        )}
       </div>
       <SlideFooter />
     </div>
   )
 }
 
-export { MetricsSplitSlide as MetricsRingsSlide }

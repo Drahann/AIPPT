@@ -7,7 +7,7 @@ const getClients = () => {
     .split(',')
     .map((key) => key.trim())
     .filter(Boolean)
-  const baseUrl = process.env.LLM_BASE_URL || 'https://api.deepseek.com'
+  const baseUrl = process.env.LLM_BASE_URL || 'https://dashscope.aliyuncs.com/compatible-mode/v1'
 
   if (keys.length === 0) {
     return [
@@ -41,8 +41,8 @@ function getNextClient() {
   return { client, index }
 }
 
-export const DEEPSEEK_REASONER = 'deepseek-reasoner'
-export const DEEPSEEK_CHAT = 'deepseek-chat'
+export const DEEPSEEK_REASONER = 'qwen3-max'
+export const DEEPSEEK_CHAT = 'qwen3-max'
 
 const defaultModel = process.env.LLM_MODEL || DEEPSEEK_REASONER
 
@@ -234,7 +234,7 @@ export async function callLLMStream(
       { role: 'user', content: user },
     ],
     temperature: 0.3,
-    max_tokens: isChat ? 8192 : 32768,
+    max_tokens: isChat ? 8192 : 16384,
     stream: true,
   })
 
@@ -249,25 +249,25 @@ export async function callLLMStream(
 }
 
 function normalizeJsonText(text: string): string {
-  // 以前是全局替换，会导致内容里的“，”变成“,”。
-  // 现在我们采用更保守的逻辑：只替换可能影响 JSON 结构的符号，或者在非引号范围内替换。
-  // 但为了绝对安全且保持代码简洁，我们采用分段处理：
-  // 1. 替换外层的全角引号。
-  // 2. 针对常见的、模型容易输出错的全角逗号/冒号进行处理，但尽可能避开内容区。
-  
+  // IMPORTANT: Do NOT globally replace Chinese double quotes \u201C\u201D with ASCII ".
+  // CJK content frequently contains them inside string values (e.g. "感知-意图-反馈"),
+  // and converting them to ASCII " breaks the JSON structure.
+
   let result = text
-    .replace(/[\u201C\u201D]/g, '"')
     .replace(/[\u2018\u2019]/g, "'")
     .replace(/\u00a0/g, ' ')
     .replace(/,(\s*[}\]])/g, '$1')
     .replace(/[\u0000-\u001f]/g, (ch) => (ch === '\n' || ch === '\r' || ch === '\t' ? ch : ''))
 
-  // 改进：只在结构性位置替换全角逗号和冒号
-  // 简单的正则很难完全区分，这里我们采用一个折中方案：
-  // 如果紧跟在双引号后面或者是双引号前面的符号，很有可能是结构符号
+  // Smart Chinese double-quote replacement: only at structural JSON positions.
+  // e.g. {<lq>  ,<lq>  [<lq>  :<lq>  <rq>}  <rq>,  <rq>]  <rq>:
+  result = result.replace(/([\[{,:])\s*\u201C/g, '$1"')
+  result = result.replace(/\u201D\s*([\]},:])/g, '"$1')
+
+  // Fullwidth colon/comma only at structural positions (adjacent to ASCII ")
   result = result.replace(/"\uff1a/g, '":').replace(/\uff1a"/g, ':"')
   result = result.replace(/"\uff0c/g, '",').replace(/\uff0c"/g, ',"')
-  
+
   return result
 }
 

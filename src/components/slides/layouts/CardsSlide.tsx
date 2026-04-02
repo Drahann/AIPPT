@@ -58,6 +58,13 @@ export function CardsSlide({ slide, columns, editable, onUpdate }: Props) {
                 onChange={(v) => onUpdate?.({ ...slide, subtitle: v })}
               />
             ) : null}
+            <EditableText
+              value={slide.title}
+              tag="h2"
+              className="cards-dual-metric-title"
+              editable={editable}
+              onChange={(v) => onUpdate?.({ ...slide, title: v })}
+            />
           </div>
         ) : (
           <EditableText
@@ -105,7 +112,10 @@ export function CardsSlide({ slide, columns, editable, onUpdate }: Props) {
                     <div className="card-icon">{getIconSvg(card.icon)}</div>
                   )}
                   <div className="card-heading">{card.heading}</div>
-                  <div className="card-body">{card.body}</div>
+                  <div className="card-body">{(card.body || '').split('\n').map((line, li) => {
+                    const formatted = line.replace(/^- /, '• ')
+                    return <span key={li}>{li > 0 && <br/>}{formatted}</span>
+                  })}</div>
                 </>
               )}
             </div>

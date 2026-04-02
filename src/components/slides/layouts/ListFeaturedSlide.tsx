@@ -58,7 +58,10 @@ export function ListFeaturedSlide({ slide, editable, onUpdate }: Props) {
                 <div className="corporate-insight-dot" />
                 <div className="corporate-insight-content">
                   <div className="corporate-insight-heading">{card.heading}</div>
-                  <div className="corporate-insight-body">{card.body}</div>
+                  <div className="corporate-insight-body">{(card.body || '').split('\n').map((line, li) => {
+                    const formatted = line.replace(/^- /, '• ')
+                    return <span key={li}>{li > 0 && <br/>}{formatted}</span>
+                  })}</div>
                 </div>
               </div>
             ))}

@@ -22,13 +22,18 @@ import { ListFeaturedSlide } from './layouts/ListFeaturedSlide'
 import { CardsSplitSlide } from './layouts/CardsSplitSlide'
 import { StaggeredCardsSlide } from './layouts/StaggeredCardsSlide'
 import { FeaturesListImageSlide } from './layouts/FeaturesListImageSlide'
-import { MetricsRingsSlide } from './layouts/MetricsSplitSlide'
+import { MetricsRingsSlide } from './layouts/MetricsRingsSlide'
 import { MilestoneListSlide } from './layouts/MilestoneListSlide'
 import { TeamMembersSlide } from './layouts/TeamMembersSlide'
+import { CardsFeaturedSlide } from './layouts/CardsFeaturedSlide'
+import { GridFeaturedSlide } from './layouts/GridFeaturedSlide'
+import { Cards3FeaturedSlide } from './layouts/Cards3FeaturedSlide'
+import { Cards3StackSlide } from './layouts/Cards3StackSlide'
 
 import { getDensityClass } from '@/lib/utils/density-utils'
+import { getTypographyVars } from '@/lib/utils/typography-utils'
 import { useAppStore } from '@/lib/store'
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useMemo } from 'react'
 import { useSearchParams } from 'next/navigation'
 import { captureSlideLayout, saveLayoutSnapshot } from '@/lib/utils/layout-snapshot'
 
@@ -50,8 +55,8 @@ export function SlideRenderer({ slide, index, pack, isEditable = false, onUpdate
   const slideRef = useRef<HTMLDivElement>(null)
 
   const densityClass = getDensityClass(slide)
-  const normalizedLayout = slide.layout === 'metrics-split' ? 'metrics-rings' : slide.layout
-  const layoutClass = `layout-${normalizedLayout}`
+  const typographyStyle = useMemo(() => getTypographyVars(slide.typographyParams), [slide.typographyParams])
+  const layoutClass = `layout-${slide.layout}`
 
   const debugSessionId = (useAppStore.getState().presentation as any)?.metadata?.debugSessionId
   
@@ -156,21 +161,29 @@ export function SlideRenderer({ slide, index, pack, isEditable = false, onUpdate
       case 'features-list-image':
         return <FeaturesListImageSlide slide={slide} editable={isEditable} onUpdate={onUpdate} />
       case 'metrics-rings':
-      case 'metrics-split':
         return <MetricsRingsSlide slide={slide} editable={isEditable} onUpdate={onUpdate} />
       case 'milestone-list':
         return <MilestoneListSlide slide={slide} editable={isEditable} onUpdate={onUpdate} />
       case 'team-members':
         return <TeamMembersSlide slide={slide} editable={isEditable} onUpdate={onUpdate} />
+      case 'cards-4-featured':
+        return <CardsFeaturedSlide slide={slide} editable={isEditable} onUpdate={onUpdate} />
+      case 'grid-2x2-featured':
+        return <GridFeaturedSlide slide={slide} editable={isEditable} onUpdate={onUpdate} />
+      case 'cards-3-featured':
+        return <Cards3FeaturedSlide slide={slide} editable={isEditable} onUpdate={onUpdate} />
+      case 'cards-3-stack':
+        return <Cards3StackSlide slide={slide} editable={isEditable} onUpdate={onUpdate} />
       default:
         return <TextBulletsSlide slide={slide} editable={isEditable} onUpdate={onUpdate} />
     }
-  }
+}
 
   return (
     <div 
       ref={slideRef}
       className={`slide-card ${layoutClass} ${densityClass} ${pack?.cssClass || ''}`} 
+      style={typographyStyle}
       data-slide-index={index}
     >
       <span className="slide-number">{index + 1}</span>

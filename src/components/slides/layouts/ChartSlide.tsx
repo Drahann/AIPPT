@@ -198,49 +198,72 @@ export function ChartSlide({ slide, editable, onUpdate }: Props) {
         />
 
         <div className="chart-compare-main">
-          <div className="chart-compare-plot">
-            <div className="chart-compare-grid">
-              {yTicks.map((tick, index) => (
-                <div key={`${tick.formatted}-${index}`} className="chart-compare-grid-row">
-                  <span className="chart-compare-y-label">{tick.formatted}</span>
-                  <span className="chart-compare-grid-line" />
-                </div>
-              ))}
-            </div>
-
-            <div className="chart-compare-groups">
-              {points.map((point, index) => {
-                const heightA = Math.max(4, (point.valueA / niceMax) * 100)
-                const heightB = Math.max(4, (point.valueB / niceMax) * 100)
-                return (
-                  <div key={`${point.category}-${index}`} className="chart-compare-group">
-                    <div className="chart-compare-bars">
-                      <div
-                        className="chart-compare-bar chart-compare-bar--before"
-                        style={{ height: `${heightA}%` }}
-                        title={`${seriesLabelA}: ${point.valueA}`}
-                      />
-                      <div
-                        className="chart-compare-bar chart-compare-bar--after"
-                        style={{ height: `${heightB}%` }}
-                        title={`${seriesLabelB}: ${point.valueB}`}
-                      />
-                    </div>
-                    <span className="chart-compare-x-label">{point.category}</span>
-                  </div>
-                )
-              })}
-            </div>
+          {/* Left text description column */}
+          <div className="chart-compare-text">
+            {displayParagraphs.length > 0 ? (
+              displayParagraphs.map((text, idx) => (
+                <EditableText
+                  key={idx}
+                  value={text}
+                  tag="p"
+                  className="chart-compare-paragraph"
+                  editable={editable}
+                  onChange={(v) => updateParagraphAt(idx, v)}
+                />
+              ))
+            ) : (
+              <p className="chart-compare-paragraph" style={{ opacity: 0.4 }}>
+                图表描述文字
+              </p>
+            )}
           </div>
 
-          <div className="chart-compare-legend">
-            <div className="chart-compare-legend-item">
-              <span className="chart-compare-legend-swatch chart-compare-legend-swatch--before" />
-              <span className="chart-compare-legend-text">{seriesLabelA}</span>
+          {/* Right chart area */}
+          <div className="chart-compare-chart-area">
+            <div className="chart-compare-plot">
+              <div className="chart-compare-grid">
+                {yTicks.map((tick, index) => (
+                  <div key={`${tick.formatted}-${index}`} className="chart-compare-grid-row">
+                    <span className="chart-compare-y-label">{tick.formatted}</span>
+                    <span className="chart-compare-grid-line" />
+                  </div>
+                ))}
+              </div>
+
+              <div className="chart-compare-groups">
+                {points.map((point, index) => {
+                  const heightA = Math.max(4, (point.valueA / niceMax) * 100)
+                  const heightB = Math.max(4, (point.valueB / niceMax) * 100)
+                  return (
+                    <div key={`${point.category}-${index}`} className="chart-compare-group">
+                      <div className="chart-compare-bars">
+                        <div
+                          className="chart-compare-bar chart-compare-bar--before"
+                          style={{ height: `${heightA}%` }}
+                          title={`${seriesLabelA}: ${point.valueA}`}
+                        />
+                        <div
+                          className="chart-compare-bar chart-compare-bar--after"
+                          style={{ height: `${heightB}%` }}
+                          title={`${seriesLabelB}: ${point.valueB}`}
+                        />
+                      </div>
+                      <span className="chart-compare-x-label">{point.category}</span>
+                    </div>
+                  )
+                })}
+              </div>
             </div>
-            <div className="chart-compare-legend-item">
-              <span className="chart-compare-legend-swatch chart-compare-legend-swatch--after" />
-              <span className="chart-compare-legend-text">{seriesLabelB}</span>
+
+            <div className="chart-compare-legend">
+              <div className="chart-compare-legend-item">
+                <span className="chart-compare-legend-swatch chart-compare-legend-swatch--before" />
+                <span className="chart-compare-legend-text">{seriesLabelA}</span>
+              </div>
+              <div className="chart-compare-legend-item">
+                <span className="chart-compare-legend-swatch chart-compare-legend-swatch--after" />
+                <span className="chart-compare-legend-text">{seriesLabelB}</span>
+              </div>
             </div>
           </div>
         </div>
@@ -332,7 +355,7 @@ export function ChartSlide({ slide, editable, onUpdate }: Props) {
         angle,
         color: seriesColors[index % seriesColors.length] || '#888',
         label: chart.categories[index] || `Data Point ${index + 1}`,
-        description: descriptionLines[index] || `Represents ${percentage.toFixed(1)}% of the total distribution.`,
+        description: descriptionLines[index] || `该项数据约占总体的 ${percentage.toFixed(1)}%。`,
       }
     })
 

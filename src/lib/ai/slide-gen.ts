@@ -4,6 +4,8 @@ import { buildSlideContentPrompt } from './prompts/slide-content'
 import { getSplitLimitForLayout } from '../layout-rules'
 import { normalizeSlideContentText } from './text-normalizer'
 import { chooseLayoutForNormalizedContent, validateAndNormalizeSlideShape } from './layout-contracts'
+import { calculateOptimalTypo, TYPO_SCALE } from '../utils/pretext-engine'
+import { templateBounds } from '../layout-specs'
 
 export async function generateSlideContent(
   outline: SlideOutline,
@@ -74,23 +76,25 @@ export async function generateSlideContent(
         })
         if (!validated.contentMissing) {
           const normalizedSlide = chooseLayoutForNormalizedContent(validated.slide, outline)
+          const typoSlide = await applyTypographyFitting(normalizedSlide, options?.debugLog)
           options?.debugLog?.(`slide.${outline.index}.shape.normalized`, {
             attempt,
             fromLayout: validated.slide.layout,
-            toLayout: normalizedSlide.layout,
+            toLayout: typoSlide.layout,
             errors: validated.errors,
-            keys: Object.keys(normalizedSlide),
+            keys: Object.keys(typoSlide),
           })
-          return normalizeSlideContentText(normalizedSlide, language)
+          return normalizeSlideContentText(typoSlide, language)
         }
         lastFailure = new Error(validated.errors.join(', '))
       } else {
+        const typoSlide = await applyTypographyFitting(validated.slide, options?.debugLog)
         options?.debugLog?.(`slide.${outline.index}.finalShape`, {
           attempt,
-          layout: validated.slide.layout,
-          keys: Object.keys(validated.slide),
+          layout: typoSlide.layout,
+          keys: Object.keys(typoSlide),
         })
-        return normalizeSlideContentText(validated.slide, language)
+        return normalizeSlideContentText(typoSlide, language)
       }
     } catch (e) {
       lastFailure = e
@@ -130,6 +134,7 @@ export async function generateSlideContent(
           })
           if (!validated.contentMissing) {
             const normalizedSlide = chooseLayoutForNormalizedContent(validated.slide, outline)
+            const typoSlide = await applyTypographyFitting(normalizedSlide, options?.debugLog)
             options?.debugLog?.(`slide.${outline.index}.shape.normalized`, {
               attempt,
               fromLayout: validated.slide.layout,
@@ -137,16 +142,17 @@ export async function generateSlideContent(
               errors: validated.errors,
               keys: Object.keys(normalizedSlide),
             })
-            return normalizeSlideContentText(normalizedSlide, language)
+            return normalizeSlideContentText(typoSlide, language)
           }
           lastFailure = new Error(validated.errors.join(', '))
         } else {
+          const typoSlide = await applyTypographyFitting(validated.slide, options?.debugLog)
           options?.debugLog?.(`slide.${outline.index}.finalShape`, {
             attempt,
-            layout: validated.slide.layout,
-            keys: Object.keys(validated.slide),
+            layout: typoSlide.layout,
+            keys: Object.keys(typoSlide),
           })
-          return normalizeSlideContentText(validated.slide, language)
+          return normalizeSlideContentText(typoSlide, language)
         }
       } catch (repairError) {
         lastFailure = repairError
@@ -418,7 +424,7 @@ function splitOverflowingSlide(slide: SlideContent): SlideContent[] {
 
   // 4.1 Handle metrics-rings
   if (
-    (slide.layout === 'metrics-rings' || slide.layout === 'metrics-split') &&
+    (slide.layout === 'metrics-rings') &&
     slide.metrics &&
     slide.metrics.length > (getSplitLimitForLayout('metrics-rings') || 3)
   ) {
@@ -436,3 +442,186 @@ function splitOverflowingSlide(slide: SlideContent): SlideContent[] {
 
   return [slide];
 }
+
+// ---------------------------------------------------------------------------
+// Typography Fitting — post-LLM validation via Pretext Engine
+// ---------------------------------------------------------------------------
+
+
+/**
+ * Run Pretext measurement on a slide's text fields (validation-only mode).
+ * 
+ * With the new architecture, LLM already receives precise char limits from
+ * buildCharConstraintBlock(), so content should fit at the design baseline tier.
+ * This function only does a single measurement pass and injects typographyParams.
+ * If text slightly overflows, it records the measured tier (which may be ±1 level
+ * from baseline) but does NOT trigger LLM compression.
+ */
+/**
+ * Run Pretext measurement on all text fields with a "global minimum" strategy.
+ * This ensures that for multi-card layouts (cards-*), all cards use the same
+ * (smallest necessary) font size, maintaining visual alignment.
+ */
+async function applyTypographyFitting(
+  slide: SlideContent,
+  debugLog?: (stage: string, payload: unknown) => void,
+): Promise<SlideContent> {
+  const bounds = templateBounds[slide.layout]
+  if (!bounds) return slide
+
+  const TIERS: ('B1' | 'B2' | 'B3' | 'B4' | 'B5' | 'B6')[] = ['B1', 'B2', 'B3', 'B4', 'B5', 'B6']
+
+  // Collect per-field measurement details for debug
+  const fieldMeasurements: Array<{
+    field: string
+    text: string
+    bounds: { w: number; h: number }
+    result: { level: string; fontSize: number; lineHeight: number; overflow: boolean }
+  }> = []
+
+  try {
+    // 1. Measure Title (Independent from body sync)
+    const titleResult = await calculateOptimalTypo(
+      slide.title || '',
+      'heading',
+      bounds.title.w,
+      bounds.title.h,
+    )
+    fieldMeasurements.push({
+      field: 'title',
+      text: (slide.title || '').slice(0, 60),
+      bounds: { w: bounds.title.w, h: bounds.title.h },
+      result: titleResult,
+    })
+
+    // 2. Measure all Body-like containers to find the "Smallest Common Fit"
+    let maxBodyTierIdx = 0 // Index in TIERS (0='B1', higher = smaller font)
+
+    const updateMaxTier = (level: string) => {
+      const idx = TIERS.indexOf(level as any)
+      if (idx > maxBodyTierIdx) maxBodyTierIdx = idx
+    }
+
+    // A. Global Body (Lead/Description)
+    if (bounds.body) {
+      const bodyText = (slide.body || []).map(b => (b as any).text || (b as any).items?.join('\n') || '').filter(Boolean).join('\n')
+      const res = await calculateOptimalTypo(bodyText, 'body', bounds.body.w, bounds.body.h)
+      updateMaxTier(res.level)
+      fieldMeasurements.push({
+        field: 'body',
+        text: bodyText.slice(0, 80),
+        bounds: { w: bounds.body.w, h: bounds.body.h },
+        result: res,
+      })
+    }
+
+    // B. Cards Body (body+secondary only — heading is measured separately in section E)
+    if (bounds.cardBody && slide.cards) {
+      for (let ci = 0; ci < slide.cards.length; ci++) {
+        const card = slide.cards[ci]
+        const cardText = [card.body, (card as any).secondary].filter(Boolean).join('\n')
+        const res = await calculateOptimalTypo(cardText, 'body', bounds.cardBody.w, bounds.cardBody.h)
+        updateMaxTier(res.level)
+        fieldMeasurements.push({
+          field: `card[${ci}]`,
+          text: cardText.slice(0, 120),
+          bounds: { w: bounds.cardBody.w, h: bounds.cardBody.h },
+          result: res,
+        })
+      }
+    }
+
+    // C. Events (Timeline/Milestone)
+    if (bounds.eventDesc && slide.events) {
+      for (let ei = 0; ei < slide.events.length; ei++) {
+        const ev = slide.events[ei]
+        const evText = [ev.title, ev.description].filter(Boolean).join('\n')
+        const res = await calculateOptimalTypo(evText, 'body', bounds.eventDesc.w, bounds.eventDesc.h)
+        updateMaxTier(res.level)
+        fieldMeasurements.push({
+          field: `event[${ei}]`,
+          text: evText.slice(0, 60),
+          bounds: { w: bounds.eventDesc.w, h: bounds.eventDesc.h },
+          result: res,
+        })
+      }
+    }
+
+    // D. Metrics
+    if (bounds.metricValue && slide.metrics) {
+       for (let mi = 0; mi < slide.metrics.length; mi++) {
+         const m = slide.metrics[mi]
+         const mText = [m.value, m.label].filter(Boolean).join('\n')
+         const mH = (bounds.metricValue.h || 100) + (bounds.metricLabel?.h || 0)
+         const res = await calculateOptimalTypo(mText, 'body', bounds.metricValue.w, mH)
+         updateMaxTier(res.level)
+         fieldMeasurements.push({
+           field: `metric[${mi}]`,
+           text: mText.slice(0, 40),
+           bounds: { w: bounds.metricValue.w, h: mH },
+           result: res,
+         })
+       }
+    }
+
+    // E. Card Headings (independent subheading tier)
+    let maxSubheadingTierIdx = 0
+    const SUBHEADING_TIERS: ('S1' | 'S2')[] = ['S1', 'S2']
+    if (bounds.cardHeading && slide.cards) {
+      for (let ci = 0; ci < slide.cards.length; ci++) {
+        const card = slide.cards[ci]
+        const headingText = card.heading || ''
+        const res = await calculateOptimalTypo(headingText, 'heading', bounds.cardHeading.w, bounds.cardHeading.h)
+        const sIdx = SUBHEADING_TIERS.indexOf(res.level as any)
+        if (sIdx > maxSubheadingTierIdx) maxSubheadingTierIdx = sIdx
+        fieldMeasurements.push({
+          field: `cardHeading[${ci}]`,
+          text: headingText.slice(0, 40),
+          bounds: { w: bounds.cardHeading.w, h: bounds.cardHeading.h },
+          result: res,
+        })
+      }
+    }
+
+    const finalBodyLevel = TIERS[maxBodyTierIdx]
+
+    // Enhanced debug output with full pretext details
+    debugLog?.('typography.fitting', {
+      layout: slide.layout,
+      title: (slide.title || '').slice(0, 50),
+      result: {
+        headingLevel: titleResult.level,
+        headingFontSize: titleResult.fontSize,
+        headingLineHeight: titleResult.lineHeight,
+        headingOverflow: titleResult.overflow,
+        bodyLevel: finalBodyLevel,
+        bodyFontSize: TYPO_SCALE.body[finalBodyLevel]?.fontSize,
+        bodyLineHeight: TYPO_SCALE.body[finalBodyLevel]?.lineHeight,
+        bodyFontWeight: TYPO_SCALE.body[finalBodyLevel]?.fontWeight,
+      },
+      bounds: {
+        title: { w: bounds.title.w, h: bounds.title.h, defaultTier: bounds.title.defaultTier },
+        body: bounds.body ? { w: bounds.body.w, h: bounds.body.h, defaultTier: bounds.body.defaultTier } : null,
+        cardBody: bounds.cardBody ? { w: bounds.cardBody.w, h: bounds.cardBody.h, defaultTier: bounds.cardBody.defaultTier } : null,
+        eventDesc: bounds.eventDesc ? { w: bounds.eventDesc.w, h: bounds.eventDesc.h, defaultTier: bounds.eventDesc.defaultTier } : null,
+        metricValue: bounds.metricValue ? { w: bounds.metricValue.w, h: bounds.metricValue.h } : null,
+      },
+      fieldMeasurements,
+      overflowFields: fieldMeasurements.filter(fm => fm.result.overflow).map(fm => fm.field),
+    })
+
+    // 3. Inject typography params
+    const result = { ...slide }
+    result.typographyParams = {
+      headingLevel: titleResult.level as 'H1' | 'H2' | 'H3',
+      subheadingLevel: SUBHEADING_TIERS[maxSubheadingTierIdx],
+      bodyLevel: finalBodyLevel,
+    }
+
+    return result
+  } catch (err) {
+    debugLog?.('typography.error', { layout: slide.layout, error: String(err) })
+    return slide
+  }
+}
+

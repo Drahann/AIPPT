@@ -18,7 +18,13 @@ export function TeamMembersSlide({ slide, editable, onUpdate }: Props) {
       <div className="team-members-container">
         {/* 表头 */}
         <div className="team-members-header">
-          <div className="team-members-header-label">Working group</div>
+          <EditableText
+            value={slide.title || 'Working group'}
+            tag="div"
+            className="team-members-header-label"
+            editable={editable}
+            onChange={(v) => onUpdate?.({ ...slide, title: v })}
+          />
           <div className="team-members-header-label">Role</div>
         </div>
 
@@ -65,15 +71,6 @@ export function TeamMembersSlide({ slide, editable, onUpdate }: Props) {
             </div>
           ))}
         </div>
-      </div>
-
-      {/* 底部状态栏 */}
-      <div className="team-members-footer">
-        <div className="team-members-footer-brand">
-          <div className="team-members-footer-brand-rect"></div>
-          <span className="capitalize">{slide.title || "Project Name"}</span>
-        </div>
-        <span className="capitalize">by {slide.subtitle || "Author Name"}</span>
       </div>
     </div>
   )
