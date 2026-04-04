@@ -21,7 +21,7 @@ export default function GeneratePage() {
     if (startedRef.current) return
     startedRef.current = true
 
-    if (!generateConfig) {
+    if (!generateConfig || !generateConfig.file) {
       router.push('/')
       return
     }
