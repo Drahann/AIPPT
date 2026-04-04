@@ -165,7 +165,7 @@ export default function GeneratePage() {
               />
             </div>
 
-            {generateConfig && !done && !error && (
+            {generateConfig && generateConfig.file && !done && !error && (
               <p style={{ fontSize: '14px', color: '#767676', letterSpacing: '-0.03em', marginTop: '8px' }}>
                 {generateConfig.file.name} · {(generateConfig.file.size / 1024 / 1024).toFixed(1)} MB
               </p>
