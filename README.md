@@ -94,6 +94,52 @@ npm run dev
 
 ---
 
+## 🐳 Docker 部署（API 版推荐）
+
+### 方式一：Docker Compose（推荐）
+
+```bash
+# 1. 切到 api-integration 分支
+git checkout api-integration
+
+# 2. 创建 .env.local（填入密钥配置）
+cp .env.example .env.local
+# 编辑 .env.local 填入 LLM_API_KEY、COS_SECRET_ID 等
+
+# 3. 一键构建并启动
+docker compose up -d --build
+
+# 4. 查看日志
+docker compose logs -f
+```
+
+### 方式二：手动 Docker 构建
+
+```bash
+# 构建镜像（约 5-10 分钟）
+docker build -t aippt-api .
+
+# 运行容器
+docker run -d \
+  --name aippt-api \
+  -p 3000:3000 \
+  --env-file .env.local \
+  --memory=4g \
+  aippt-api
+```
+
+### 测试接口
+
+```bash
+curl -X POST http://localhost:3000/api/report-to-ppt \
+  -H "Content-Type: application/json" \
+  -d '{"reportId":"test-001","content":"# 测试\n\n## 概述\n\n测试内容"}'
+```
+
+> **注意**：首次构建需下载 Playwright Chromium（~200MB），镜像总大小约 **1.5GB**。服务器需至少 **2GB RAM**。
+
+---
+
 ## 🔀 分支说明
 
 | 分支 | 说明 |

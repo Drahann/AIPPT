@@ -1,0 +1,23 @@
+services:
+  aippt:
+    build: .
+    container_name: aippt-api
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env.local
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+    volumes:
+      # 持久化 debug 数据和临时文件（可选）
+      - ./debug-data:/app/debug-data
+      - ./tmp:/app/tmp
+    restart: unless-stopped
+    # PPT 生成 + Playwright 需要较多内存
+    deploy:
+      resources:
+        limits:
+          memory: 4G
+        reservations:
+          memory: 1G
