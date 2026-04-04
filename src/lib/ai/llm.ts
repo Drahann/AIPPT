@@ -41,8 +41,8 @@ function getNextClient() {
   return { client, index }
 }
 
-export const DEEPSEEK_REASONER = 'qwen3-max'
-export const DEEPSEEK_CHAT = 'qwen3-max'
+export const DEEPSEEK_REASONER = 'qwen3.6-plus'
+export const DEEPSEEK_CHAT = 'qwen3.6-plus'
 
 const defaultModel = process.env.LLM_MODEL || DEEPSEEK_REASONER
 
@@ -84,6 +84,7 @@ function isRetryableError(error: any): boolean {
 type LLMCallOptions = {
   debugLog?: (stage: string, payload: unknown) => void
   label?: string
+  enableThinking?: boolean
 }
 
 function serializeLLMError(error: unknown) {
@@ -126,7 +127,7 @@ function serializeLLMError(error: unknown) {
 export async function callLLM(
   system: string,
   user: string,
-  options?: LLMCallOptions & { model?: string }
+  options?: LLMCallOptions & { model?: string; enableThinking?: boolean }
 ): Promise<string> {
   const model = getEffectiveModel(options?.model)
   const label = options?.label || 'llm.call'
@@ -155,24 +156,26 @@ export async function callLLM(
     }
 
     try {
-      const isChat = model === DEEPSEEK_CHAT
-      const stream = await client.chat.completions.create({
+      const thinking = options?.enableThinking ?? false
+      const params = {
         model,
         messages: [
-          { role: 'system', content: system },
-          { role: 'user', content: user },
+          { role: 'system' as const, content: system },
+          { role: 'user' as const, content: user },
         ],
         temperature: 0.3,
-        max_tokens: isChat ? 8192 : 32768,
-        stream: true,
-      })
+        max_tokens: 32768,
+        stream: true as const,
+        enable_thinking: thinking,
+      }
+      const stream = await client.chat.completions.create(params as any) as unknown as AsyncIterable<OpenAI.Chat.Completions.ChatCompletionChunk>
 
       let fullContent = ''
       for await (const chunk of stream) {
-        const delta = chunk.choices[0]?.delta
+        const delta = chunk.choices[0]?.delta as any
+        // Skip reasoning_content (thinking process), only collect final content
         const content = delta?.content || ''
         fullContent += content
-        // Even if content is empty (e.g. reasoning tokens), receiving the chunk prevents idle timeout.
       }
 
       if (!fullContent) {
@@ -227,20 +230,24 @@ export async function callLLMStream(
   const model = getEffectiveModel(options?.model)
   const { client } = getNextClient()
   const isChat = model === DEEPSEEK_CHAT
-  const stream = await client.chat.completions.create({
+  const params = {
     model,
     messages: [
-      { role: 'system', content: system },
-      { role: 'user', content: user },
+      { role: 'system' as const, content: system },
+      { role: 'user' as const, content: user },
     ],
     temperature: 0.3,
     max_tokens: isChat ? 8192 : 16384,
-    stream: true,
-  })
+    stream: true as const,
+    enable_thinking: true,
+  }
+  const stream = await client.chat.completions.create(params as any) as unknown as AsyncIterable<OpenAI.Chat.Completions.ChatCompletionChunk>
 
   let full = ''
   for await (const chunk of stream) {
-    const content = chunk.choices[0]?.delta?.content || ''
+    const delta = chunk.choices[0]?.delta as any
+    // Skip reasoning_content (thinking process), only collect final content
+    const content = delta?.content || ''
     full += content
     onChunk(content)
   }

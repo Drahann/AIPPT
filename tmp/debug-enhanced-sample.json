@@ -1,0 +1,64 @@
+{
+  "ts": "2026-03-31T04:54:39.101Z",
+  "stage": "test-all.slide.5.typography.fitting",
+  "payload": {
+    "layout": "text-image",
+    "title": "Problem Statement",
+    "result": {
+      "headingLevel": "H1",
+      "headingFontSize": 88,
+      "headingLineHeight": 100,
+      "headingOverflow": false,
+      "bodyLevel": "B1",
+      "bodyFontSize": 32,
+      "bodyLineHeight": 48,
+      "bodyFontWeight": 400
+    },
+    "bounds": {
+      "title": {
+        "w": 820,
+        "h": 100,
+        "defaultTier": "H2"
+      },
+      "body": {
+        "w": 820,
+        "h": 680,
+        "defaultTier": "B1"
+      },
+      "cardBody": null,
+      "eventDesc": null,
+      "metricValue": null
+    },
+    "fieldMeasurements": [
+      {
+        "field": "title",
+        "text": "Problem Statement",
+        "bounds": {
+          "w": 820,
+          "h": 100
+        },
+        "result": {
+          "level": "H1",
+          "fontSize": 88,
+          "lineHeight": 100,
+          "overflow": false
+        }
+      },
+      {
+        "field": "body",
+        "text": "Most teams still rely on manual handoff and disconnected reports, which causes s",
+        "bounds": {
+          "w": 820,
+          "h": 680
+        },
+        "result": {
+          "level": "B1",
+          "fontSize": 32,
+          "lineHeight": 48,
+          "overflow": false
+        }
+      }
+    ],
+    "overflowFields": []
+  }
+}

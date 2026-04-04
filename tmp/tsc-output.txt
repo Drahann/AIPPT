@@ -1,0 +1,14 @@
+﻿src/app/generate/page.tsx(30,29): error TS2769: No overload matches this call.
+  Overload 1 of 3, '(name: string, value: string | Blob): void', gave the following error.
+    Argument of type 'File | undefined' is not assignable to parameter of type 'string | Blob'.
+      Type 'undefined' is not assignable to type 'string | Blob'.
+  Overload 2 of 3, '(name: string, value: string): void', gave the following error.
+    Argument of type 'File | undefined' is not assignable to parameter of type 'string'.
+      Type 'undefined' is not assignable to type 'string'.
+  Overload 3 of 3, '(name: string, blobValue: Blob, filename?: string | undefined): void', gave the following error.
+    Argument of type 'File | undefined' is not assignable to parameter of type 'Blob'.
+      Type 'undefined' is not assignable to type 'Blob'.
+src/app/generate/page.tsx(170,18): error TS18048: 'generateConfig.file' is possibly 'undefined'.
+src/app/generate/page.tsx(170,48): error TS18048: 'generateConfig.file' is possibly 'undefined'.
+test-layout.ts(1,42): error TS5097: An import path can only end with a '.ts' extension when 'allowImportingTsExtensions' is enabled.
+test-layout.ts(2,45): error TS2307: Cannot find module './src/types.d.ts' or its corresponding type declarations.

@@ -1,0 +1,3 @@
+﻿Session: dbg-1774932503216-goawr7
+Typography entries: 32
+Sample saved to tmp/debug-typo-sample.json

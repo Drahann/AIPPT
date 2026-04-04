@@ -11,7 +11,7 @@ interface Props {
 
 export function MetricsRingsSlide({ slide, editable, onUpdate }: Props) {
   const items = (slide.metrics || []).slice(0, 3)
-  const overline = slide.subtitle?.trim() || 'The PainPoint'
+  const overline = slide.subtitle?.trim() || '数据支撑'
 
   return (
     <div className="slide-card-inner metrics-rings-shell" style={{ padding: 0, display: 'flex', flexDirection: 'column' }}>

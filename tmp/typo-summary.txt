@@ -1,0 +1,37 @@
+﻿Saved presentation-all32.json
+Debug session: dbg-1774931795020-00hu1i
+Debug path: W:\3spring\AIPPT\debug-data\dbg-1774931795020-00hu1i\manifest.json
+\nSlides: 32
+---
+00 cover                  H:H1  B:B1
+01 section-header         H:H1  B:B1
+02 text-center            H:H1  B:B1
+03 text-bullets           H:H1  B:B1
+04 image-text             H:H1  B:B1
+05 text-image             H:H1  B:B1
+06 image-center           H:H2  B:B1
+07 image-full             H:H1  B:B1
+08 cards-2                H:H2  B:B1
+09 cards-3                H:H2  B:B1
+10 cards-4                H:H3  B:B1
+11 comparison             H:H1  B:B1
+12 timeline               H:H2  B:B2
+13 milestone-list         H:H1  B:B2
+14 metrics                H:H3  B:B1
+15 quote                  H:H1  B:B1
+16 quote-no-avatar        H:H1  B:B1
+17 ending                 H:H1  B:B1
+18 chart-bar              H:H1  B:B1
+19 chart-bar-compare      H:H1  B:B1
+20 chart-line             H:H1  B:B1
+21 chart-pie              H:H1  B:B1
+22 cards-split            H:H2  B:B1
+23 staggered-cards        H:H2  B:B1
+24 features-list-image    H:H2  B:B1
+25 metrics-rings          H:H3  B:B4
+26 list-featured          H:H2  B:B3
+27 team-members           H:H3  B:B1
+28 cards-4-featured       H:H1  B:B1
+29 grid-2x2-featured      H:H1  B:B1
+30 cards-3-featured       H:H1  B:B1
+31 cards-3-stack          H:H3  B:B1

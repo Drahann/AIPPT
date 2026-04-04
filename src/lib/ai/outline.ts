@@ -43,6 +43,7 @@ export async function generateOutline(
     imagePoolCount: preferences?.imagePool?.length || 0,
   })
   const raw = await callLLM(system, user, {
+    enableThinking: false,
     debugLog,
     label: 'outline.llm',
   })

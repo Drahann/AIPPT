@@ -24,7 +24,7 @@ export async function generateSlideContent(
 
     try {
       raw = await callLLM(system, user, {
-        model: getFastModel(),
+        enableThinking: false,
         debugLog: options?.debugLog,
         label: `slide.${outline.index}.llm`,
       })

@@ -101,7 +101,7 @@ export const MOCK_SLIDES: SlideContent[] = [
     { heading: 'One-click PPTX', body: 'Export directly to Microsoft Office', image: { url: 'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=2070', prompt: 'export workflow' } },
     { heading: 'Online presenting', body: 'Presenter view and notes supported', image: { url: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=2070', prompt: 'online presentation' } }
   ] },
-  { layout: 'metrics-rings', title: 'Problem Statistics', subtitle: 'The PainPoint', metrics: [
+  { layout: 'metrics-rings', title: 'Problem Statistics', subtitle: '数据支撑', metrics: [
     { value: '75%', label: 'Users lack confidence in reporting workflows', icon: 'trending-up' },
     { value: '62%', label: 'Teams report repeated manual handoff issues', icon: 'star' },
     { value: '81%', label: 'Leaders need faster KPI visibility', icon: 'target' }

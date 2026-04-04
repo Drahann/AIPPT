@@ -1,0 +1,277 @@
+{
+  "id": "dbg-1775010913263-tuzn01",
+  "createdAt": "2026-04-01T02:37:10.675Z",
+  "presentationId": "7da821d6-4139-4bf7-91a3-dbd15e211ccd",
+  "error": "Outline generation failed: SyntaxError: JSON5: invalid character 'i' at 1:4113",
+  "entries": [
+    {
+      "ts": "2026-04-01T02:35:13.265Z",
+      "stage": "pipeline.parse.result",
+      "payload": {
+        "chunkCount": 31,
+        "imageCount": 0,
+        "headings": [
+          {
+            "order": 0,
+            "heading": "项目背景",
+            "level": 2
+          },
+          {
+            "order": 1,
+            "heading": "产业现状",
+            "level": 2
+          },
+          {
+            "order": 2,
+            "heading": "深入调研",
+            "level": 2
+          },
+          {
+            "order": 3,
+            "heading": "创新基础",
+            "level": 2
+          },
+          {
+            "order": 4,
+            "heading": "创新领域现状",
+            "level": 2
+          },
+          {
+            "order": 5,
+            "heading": "创新设计",
+            "level": 2
+          },
+          {
+            "order": 6,
+            "heading": "创新技术：基于智能数据手套的多模态人机交互系统",
+            "level": 3
+          },
+          {
+            "order": 7,
+            "heading": "创新技术：自研高精度柔性传感器",
+            "level": 3
+          },
+          {
+            "order": 8,
+            "heading": "创新技术：首创高鲁棒性手势识别框架",
+            "level": 3
+          },
+          {
+            "order": 9,
+            "heading": "创新技术：复杂极端场景适配技术",
+            "level": 3
+          },
+          {
+            "order": 10,
+            "heading": "创新成果",
+            "level": 2
+          },
+          {
+            "order": 11,
+            "heading": "产业验证：中航光电科技股份有限公司",
+            "level": 3
+          },
+          {
+            "order": 12,
+            "heading": "产业验证：北方兵器研究所",
+            "level": 3
+          },
+          {
+            "order": 13,
+            "heading": "产业验证：产业验证总结",
+            "level": 3
+          },
+          {
+            "order": 14,
+            "heading": "专家评价",
+            "level": 2
+          },
+          {
+            "order": 15,
+            "heading": "市场分析",
+            "level": 2
+          },
+          {
+            "order": 16,
+            "heading": "市场定位",
+            "level": 2
+          },
+          {
+            "order": 17,
+            "heading": "推广模式",
+            "level": 2
+          },
+          {
+            "order": 18,
+            "heading": "商业模式",
+            "level": 2
+          },
+          {
+            "order": 19,
+            "heading": "财务规划",
+            "level": 2
+          },
+          {
+            "order": 20,
+            "heading": "盈利分析",
+            "level": 2
+          },
+          {
+            "order": 21,
+            "heading": "落地前景",
+            "level": 2
+          },
+          {
+            "order": 22,
+            "heading": "社会影响",
+            "level": 2
+          },
+          {
+            "order": 23,
+            "heading": "团队精神",
+            "level": 2
+          },
+          {
+            "order": 24,
+            "heading": "团队结构",
+            "level": 2
+          },
+          {
+            "order": 25,
+            "heading": "指导教师",
+            "level": 2
+          },
+          {
+            "order": 26,
+            "heading": "外部专家",
+            "level": 2
+          },
+          {
+            "order": 27,
+            "heading": "四新建设",
+            "level": 2
+          },
+          {
+            "order": 28,
+            "heading": "创新创业支持",
+            "level": 2
+          },
+          {
+            "order": 29,
+            "heading": "产教科教产学研协同",
+            "level": 2
+          },
+          {
+            "order": 30,
+            "heading": "相关图片信息",
+            "level": 2
+          }
+        ]
+      }
+    },
+    {
+      "ts": "2026-04-01T02:35:13.265Z",
+      "stage": "pipeline.imagePool",
+      "payload": {
+        "count": 0,
+        "sources": []
+      }
+    },
+    {
+      "ts": "2026-04-01T02:35:13.265Z",
+      "stage": "pipeline.outline.start",
+      "payload": {
+        "chunkCount": 31,
+        "imagePoolCount": 0,
+        "language": "zh-CN",
+        "requestedSlideCount": null
+      }
+    },
+    {
+      "ts": "2026-04-01T02:35:13.267Z",
+      "stage": "outline.start",
+      "payload": {
+        "chunkCount": 31,
+        "language": "zh-CN",
+        "targetSlides": null,
+        "imagePoolCount": 0
+      }
+    },
+    {
+      "ts": "2026-04-01T02:35:13.267Z",
+      "stage": "outline.llm.start",
+      "payload": {
+        "model": "qwen3-max",
+        "clientIndex": 0,
+        "systemLength": 4400,
+        "userLength": 20828
+      }
+    },
+    {
+      "ts": "2026-04-01T02:35:58.578Z",
+      "stage": "outline.llm.success",
+      "payload": {
+        "model": "qwen3-max",
+        "clientIndex": 0,
+        "durationMs": 45311,
+        "attemptDurationMs": 45311,
+        "attempts": 1,
+        "contentLength": 9331
+      }
+    },
+    {
+      "ts": "2026-04-01T02:35:58.578Z",
+      "stage": "outline.raw",
+      "payload": "{\n  \"title\": \"龙影元宇宙多模态智能数据手套项目汇报\",\n  \"slideCount\": 33,\n  \"slides\": [\n    {\n      \"index\": 1,\n      \"title\": \"龙影元宇宙多模态智能数据手套项目汇报\",\n      \"subtitle\": \"——高精度、低成本、全自主的国产交互装备解决方案\",\n      \"layout\": \"cover\",\n      \"contentHint\": \"项目总览封面，突出主题与核心价值主张。\",\n      \"imageHint\": \"\",\n      \"imageIndex\": -1,\n      \"refChunks\": [],\n      \"speakerNotes\": \"开场介绍项目名称与定位。\"\n    },\n    {\n      \"index\": 2,\n      \"title\": \"项目背景\",\n      \"subtitle\": \"\",\n      \"layout\": \"text-bullets\",\n      \"contentHint\": \"元宇宙加速演进但交互瓶颈突出，国家政策明确支持高精度感知交互技术攻关。\",\n      \"imageHint\": \"\",\n      \"imageIndex\": -1,\n      \"refChunks\": [0],\n      \"speakerNotes\": \"强调政策导向与市场需求双重驱动。\"\n    },\n    {\n      \"index\": 3,\n      \"title\": \"产业现状\",\n      \"subtitle\": \"\",\n      \"layout\": \"metrics\",\n      \"contentHint\": \"VR产业规模目标超3500亿元，但交互依赖传统手柄，自然交互能力薄弱成核心短板。\",\n      \"imageHint\": \"VR发展现状\",\n      \"imageIndex\": 0,\n      \"refChunks\": [1],\n      \"speakerNotes\": \"结合政策目标与现实痛点，引出升级必要性。\"\n    },\n    {\n      \"index\": 4,\n      \"title\": \"深入调研\",\n      \"subtitle\": \"\",\n      \"layout\": \"text-bullets\",\n      \"contentHint\": \"调研揭示三重瓶颈：传感器成本高、算法封闭、国产平台适配不足；明确创新目标。\",\n      \"imageHint\": \"\",\n      \"imageIndex\": -1,\n      \"refChunks\": [2],\n      \"speakerNotes\": \"强调实证调研支撑项目定位。\"\n    },\n    {\n      \"index\": 5,\n      \"title\": \"创新基础\",\n      \"subtitle\": \"\",\n      \"layout\": \"team-members\",\n      \"contentHint\": \"哈工大跨学科团队具备全链条研发能力，科研积淀深厚，专利论文成果丰硕。\",\n      \"imageHint\": \"\",\n      \"imageIndex\": -1,\n      \"refChunks\": [3],\n      \"speakerNotes\": \"突出团队技术实力与工程化能力。\"\n    },\n    {\n      \"index\": 6,\n      \"title\": \"创新领域现状\",\n      \"subtitle\": \"\",\n      \"layout\": \"text-bullets\",\n      \"contentHint\": \"现有柔性传感、手势识别、多模态系统存在精度、鲁棒性、生态适配等多重缺陷。\",\n      \"imageHint\": \"\",\n      \"imageIndex\": -1,\n      \"refChunks\": [4],\n      \"speakerNotes\": \"对比分析行业技术缺口，凸显本项目突破点。\"\n    },\n    {\n      \"index\": 7,\n      \"title\": \"创新设计\",\n      \"subtitle\": \"\",\n      \"layout\": \"text-bullets\",\n      \"contentHint\": \"涵盖材料-硬件-算法-系统-验证五阶闭环路径，四大关键技术体系支撑工程落地。\",\n      \"imageHint\": \"\",\n      \"imageIndex\": -1,\n      \"refChunks\": [5],\n      \"speakerNotes\": \"概述整体技术路线与实施计划。\"\n    },\n    {\n      \"index\": 8,\n      \"title\": \"创新技术：基于智能数据手套的多模态人机交互系统\",\n      \"subtitle\": \"\",\n      \"layout\": \"cards-3-featured\",\n      \"contentHint\": \"构建“感知-意图-反馈”闭环模型，自研轻量化协议深度适配国产XR生态。\",\n      \"imageHint\": \"技术框架\",\n      \"imageIndex\": 1,\n      \"refChunks\": [6],\n      \"speakerNotes\": \"强调系统级创新与生态兼容性。\"\n    },\n    {\n      \"index\": 9,\n      \"title\": \"创新技术：自研高精度柔性传感器\",\n      \"subtitle\": \"\",\n      \"layout\": \"cards-3-stack\",\n      \"contentHint\": \"仿生“水膜-鱼网”结构液态金属薄膜+光纤-IMU混合架构，实现0.1mm精度与低成本。\",\n      \"imageHint\": \"\",\n      \"imageIndex\": -1,\n      \"refChunks\": [7],\n      \"speakerNotes\": \"突出材料与架构双重创新。\"\n    },\n    {\n      \"index\": 10,\n      \"title\": \"创新技术：首创高鲁棒性手势识别框架\",\n      \"subtitle\": \"\",\n      \"layout\": \"staggered-cards\",\n      \"contentHint\": \"分层架构+自适应滤波+时序分割，复杂场景识别准确率＞95%，显著优于开源方案。\",\n      \"imageHint\": \"\",\n      \"imageIndex\": -1,\n      \"refChunks\": [8],\n      \"speakerNotes\": \"强调算法在真实环境中的稳定性。\"\n    },\n    {\n      \"index\": 11,\n      \"title\": \"创新技术：复杂极端场景适配技术\",\n      \"subtitle\": \"\",\n      \"layout\": \"cards-3\",\n      \"contentHint\": \"IP67防护+宽温域设计+自适应补偿算法，满足工业级高可靠性要求。\",\n      \"imageHint\": \"\",\n      \"imageIndex\": -1,\n      \"refChunks\": [9],\n      \"speakerNotes\": \"说明产品在严苛环境下的适用性。\"\n    },\n    {\n      \"index\": 12,\n      \"title\": \"创新成果\",\n      \"subtitle\": \"\",\n      \"layout\": \"list-featured\",\n      \"contentHint\": \"形成论文9篇、发明专利4项、软著5项的三位一体知识产权体系。\",\n      \"imageHint\": \"\",\n      \"imageIndex\": -1,\n      \"refChunks\": [10],\n      \"speakerNotes\": \"系统展示学术、专利与软件成果。\"\n    },\n    {\n      \"index\": 13,\n      \"title\": \"产业验证：中航光电科技股份有限公司\",\n      \"subtitle\": \"\",\n      \"layout\": \"quote-no-avatar\",\n      \"contentHint\": \"航空装配培训周期缩短40%，耗材损耗下降90%，实现技能考核标准化。\",\n      \"imageHint\": \"\",\n      \"imageIndex\": -1,\n      \"refChunks\": [11],\n      \"speakerNotes\": \"用具体数据说明产业价值。\"\n    },\n    {\n      \"index\": 14,\n      \"title\": \"产业验证：北方兵器研究所\",\n      \"subtitle\": \"\",\n      \"layout\": \"quote-no-avatar\",\n      \"contentHint\": \"野战环境下识别准确率＞95%，维修训练频次提升300%，加速专家经验传承。\",\n      \"imageHint\": \"\",\n      \"imageIndex\": -1,\n      \"refChunks\": [12],\n      \"speakerNotes\": \"突出国防场景的高可靠性验证。\"\n    },\n    {\n      \"index\": 15,\n      \"title\": \"产业验证：产业验证总结\",\n      \"subtitle\": \"\",\n      \"layout\": \"text-center\",\n      \"contentHint\": \"两大国家级单位验证表明产品具备工业级成熟度与战略价值。\",\n      \"imageHint\": \"\",\n      \"imageIndex\": -1,\n      \"refChunks\": [13],\n      \"speakerNotes\": \"总结验证成果，强化可信度。\"\n    },\n    {\n      \"index\": 16,\n      \"title\": \"专家评价\",\n      \"subtitle\": \"\",\n      \"layout\": \"quote\",\n      \"contentHint\": \"陈建国院士、李明霞教授、王振华专家高度认可项目理论创新、技术原创与产业实效。\",\n      \"imageHint\": \"\",\n      \"imageIndex\": -1,\n      \"refChunks\": [14],\n      \"speakerNotes\": \"引用权威背书增强说服力。\"\n    },\n    {\n      \"index\": 17,\n      \"title\": \"市场分析\",\n      \"subtitle\": \"\",\n      \"layout\": \"chart-bar\",\n      \"contentHint\": \"2026年VR产业规模目标3500亿元，国产替代处于蓝海阶段，需求旺盛供给不足。\",\n      \"imageHint\": \"\",\n      \"imageIndex\": -1,\n      \"refChunks\": [15],\n      \"speakerNotes\": \"结合政策与竞争格局分析市场机会。\"\n    },\n    {\n      \"index\": 18,\n      \"title\": \"市场定位\",\n      \"subtitle\": \"\",\n      \"layout\": \"cards-3\",\n      \"contentHint\": \"聚焦高端制造、国防科研、高校实训三大赛道，以高性价比+全栈自主破局。\",\n      \"imageHint\": \"\",\n      \"imageIndex\": -1,\n      \"refChunks\": [16],\n      \"speakerNotes\": \"明确目标客户与差异化优势。\"\n    },\n    {\n      \"index\": 19,\n      \"title\": \"推广模式\",\n      \"subtitle\": \"\",\n      \"layout\": \"timeline\",\n      \"contentHint\": \"三步走策略：灯塔验证→生态筑基→全国复制，构建可持续增长体系。\",\n      \"imageHint\": \"\",\n      \"imageIndex\": -1,\n      \"refChunks\": [17],\n      \"speakerNotes\": \"说明从试点到规模化的发展路径。\"\n    },\n    {\n      \"index\": 20,\n      \"title\": \"商业模式\",\n      \"subtitle\": \"\",\n      \"layout\": \"image-text\",\n      \"contentHint\": \"构建“高校-客户-伙伴”三角闭环，资金流反哺研发，数据流驱动迭代。\",\n      \"imageHint\": \"业务流程\",\n      \"imageIndex\": 2,\n      \"refChunks\": [18],\n      \"speakerNotes\": \"解释价值创造与循环机制。\"\n    },\n    {\n      \"index\": 21,\n      \"title\": \"财务规划\",\n      \"subtitle\": \"\",\n      \"layout\": \"metrics\",\n      \"contentHint\": \"6个月总预算85万元，分两阶段投入，优先申请政策性资金避免股权稀释。\",\n      \"imageHint\": \"\",\n      \"imageIndex\": -1,\n      \"refChunks\": [19],\n      \"speakerNotes\": \"强调资金使用效率与风险管控。\"\n    },\n    {\n      \"index\": 22,\n      \"title\": \"盈利分析\",\n      \"subtitle\": \"\",\n      \"layout\": \"chart-pie\",\n      \"contentHint\": \"硬件占60%、软件服务占40%，综合毛利率向55%以上攀升，构建盈利飞轮。\",\n      \"imageHint\": \"\",\n      \"imageIndex\": -1,\n      \"refChunks\": [20],\n      \"speakerNotes\": \"说明盈利结构优化路径。\"\n    },\n    {\n      \"index\": 23,\n      \"title\": \"落地前景\",\n      \"subtitle\": \"\",\n      \"layout\": \"milestone-list\",\n      \"contentHint\": \"三阶段推进，第5年预计总产值5亿元，带动区域产业集群发展。\",\n      \"imageHint\": \"\",\n      \"imageIndex\": -1,\n      \"refChunks\": [21],\n      \"speakerNotes\": \"展望经济与产业带动效应。\"\n    },\n    {\n      \"index\": 24,\n      \"title\": \"社会影响\",\n      \"subtitle\": \"\",\n      \"layout\": \"cards-split\",\n      \"contentHint\": \"创造高质量就业岗位、促进知识共享、降低碳排放，践行科技向善。\",\n      \"imageHint\": \"\",\n      \"imageIndex\": -1,\n      \"refChunks\": [22],\n      \"speakerNotes\": \"强调项目的综合社会效益。\"\n    },\n    {\n      \"index\": 25,\n      \"title\": \"团队精神\",\n      \"subtitle\": \"\",\n      \"layout\": \"text-center\",\n      \"contentHint\": \"秉承哈工大校训，以突破“卡脖子”技术为使命，彰显青年科技报国担当。\",\n      \"imageHint\": \"\",\n      \"imageIndex\": -1,\n      \"refChunks\": [23],\n      \"speakerNotes\": \"传递团队价值观与使命感。\"\n    },\n    {\n      \"index\": 26,\n      \"title\": \"团队结构\",\n      \"subtitle\": \"\",\n      \"layout\": \"team-members\",\n      \"contentHint\": \"7人核心团队覆盖算法-硬件-产品-市场全链条，采用Scrum敏捷协同模式。\",\n      \"imageHint\": \"\",\n      \"imageIndex\": -1,\n      \"refChunks\": [24],\n      \"speakerNotes\": \"介绍组织架构与协作机制。\"\n    },\n    {\n      \"index\": 27,\n      \"title\": \"指导教师\",\n      \"subtitle\": \"\",\n      \"layout\": \"cards-3\",\n      \"contentHint\": \"张展、娄久教授提供技术指导，彭维斌先生提供战略与资本支持。\",\n      \"imageHint\": \"\",\n      \"imageIndex\": -1,\n      \"refChunks\": [25],\n      \"speakerNotes\": \"说明导师团队的多维赋能。\"\n    },\n    {\n      \"index\": 28,\n      \"title\": \"外部专家\",\n      \"subtitle\": \"\",\n      \"layout\": \"cards-2\",\n      \"contentHint\": \"赵建国教授指导技术标准，周敏总经理助力商业模式与资源整合。\",\n      \"imageHint\": \"\",\n      \"imageIndex\": -1,\n      \"refChunks\": [26],\n      \"speakerNotes\": \"展示外部资源对项目的支撑。\"\n    },\n    {\n      \"index\": 29,\n      \"title\": \"四新建设\",\n      \"subtitle\": \"\",\n      \"layout\": \"text-bullets\",\n      \"contentHint\": \"哈工大“四新”育人体系培养复合型人才，支撑项目跨学科创新实践。\",\n      \"imageHint\": \"\",\n      \"imageIndex\": -1,\n      \"refChunks\": [27],\n      \"speakerNotes\": \"关联教育改革与项目能力基础。\"\n    },\n    {\n      \"index\": 30,\n      \"title\": \"创新创业支持\",\n      \"subtitle\": \"\",\n      \"layout\": \"list-featured\",\n      \"contentHint\": \"学校提供课程、赛事、孵化全链条支持，推动技术向商业价值转化。\",\n      \"imageHint\": \"\",\n      \"imageIndex\": -1,\n      \"refChunks\": [28],\n      \"speakerNotes\": \"说明双创生态对项目的培育作用。\"\n    },\n    {\n      \"index\": 31,\n      \"title\": \"产教科教产学研协同\",\n      \"subtitle\": \"\",\n      \"layout\": \"text-bullets\",\n      \"contentHint\": \"国家级平台与校企合作机制，将产业思维嵌入创新起点，加速成果转化。\",\n      \"imageHint\": \"\",\n      \"imageIndex\": -1,\n      \"refChunks\": [29],\n      \"speakerNotes\": \"强调协同育人对项目全周期的驱动。\"\n    },\n    {\n      \"index\": 32,\n      \"title\": \"相关图片信息\",\n      \"subtitle\": \"\",\n      \"layout\": \"image-center\",\n      \"contentHint\": \"展示VR现状、技术框架与业务流程三张关键图片。\",\n      \"imageHint\": \"包含VR发展现状、技术框架、业务流程三图\",\n      \"imageIndex\": -1,\n      \"refChunks\": [30],\n      \"speakerNotes\": \"用于视觉辅助说明。\"\n    },\n    {\n      \"index\": 33,\n      \"title\": \"感谢观看\",\n      \"subtitle\": \"携手共赢，共筑国产元宇宙交互新生态\",\n      \"layout\": \"ending\",\n      \"contentHint\": \"结束页，表达合作愿景。\",\n      \"imageHint\": \"\",\n      \"imageIndex\": -1,\n      \"refChunks\": [],\n      \"speakerNotes\": \"致谢并开放交流。\"\n    }\n  ]\n}"
+    },
+    {
+      "ts": "2026-04-01T02:35:58.579Z",
+      "stage": "outline.cleaned",
+      "payload": "{\n  \"title\": \"龙影元宇宙多模态智能数据手套项目汇报\",\n  \"slideCount\": 33,\n  \"slides\": [\n    {\n      \"index\": 1,\n      \"title\": \"龙影元宇宙多模态智能数据手套项目汇报\",\n      \"subtitle\": \"——高精度、低成本、全自主的国产交互装备解决方案\",\n      \"layout\": \"cover\",\n      \"contentHint\": \"项目总览封面，突出主题与核心价值主张。\",\n      \"imageHint\": \"\",\n      \"imageIndex\": -1,\n      \"refChunks\": [],\n      \"speakerNotes\": \"开场介绍项目名称与定位。\"\n    },\n    {\n      \"index\": 2,\n      \"title\": \"项目背景\",\n      \"subtitle\": \"\",\n      \"layout\": \"text-bullets\",\n      \"contentHint\": \"元宇宙加速演进但交互瓶颈突出，国家政策明确支持高精度感知交互技术攻关。\",\n      \"imageHint\": \"\",\n      \"imageIndex\": -1,\n      \"refChunks\": [0],\n      \"speakerNotes\": \"强调政策导向与市场需求双重驱动。\"\n    },\n    {\n      \"index\": 3,\n      \"title\": \"产业现状\",\n      \"subtitle\": \"\",\n      \"layout\": \"metrics\",\n      \"contentHint\": \"VR产业规模目标超3500亿元，但交互依赖传统手柄，自然交互能力薄弱成核心短板。\",\n      \"imageHint\": \"VR发展现状\",\n      \"imageIndex\": 0,\n      \"refChunks\": [1],\n      \"speakerNotes\": \"结合政策目标与现实痛点，引出升级必要性。\"\n    },\n    {\n      \"index\": 4,\n      \"title\": \"深入调研\",\n      \"subtitle\": \"\",\n      \"layout\": \"text-bullets\",\n      \"contentHint\": \"调研揭示三重瓶颈：传感器成本高、算法封闭、国产平台适配不足；明确创新目标。\",\n      \"imageHint\": \"\",\n      \"imageIndex\": -1,\n      \"refChunks\": [2],\n      \"speakerNotes\": \"强调实证调研支撑项目定位。\"\n    },\n    {\n      \"index\": 5,\n      \"title\": \"创新基础\",\n      \"subtitle\": \"\",\n      \"layout\": \"team-members\",\n      \"contentHint\": \"哈工大跨学科团队具备全链条研发能力，科研积淀深厚，专利论文成果丰硕。\",\n      \"imageHint\": \"\",\n      \"imageIndex\": -1,\n      \"refChunks\": [3],\n      \"speakerNotes\": \"突出团队技术实力与工程化能力。\"\n    },\n    {\n      \"index\": 6,\n      \"title\": \"创新领域现状\",\n      \"subtitle\": \"\",\n      \"layout\": \"text-bullets\",\n      \"contentHint\": \"现有柔性传感、手势识别、多模态系统存在精度、鲁棒性、生态适配等多重缺陷。\",\n      \"imageHint\": \"\",\n      \"imageIndex\": -1,\n      \"refChunks\": [4],\n      \"speakerNotes\": \"对比分析行业技术缺口，凸显本项目突破点。\"\n    },\n    {\n      \"index\": 7,\n      \"title\": \"创新设计\",\n      \"subtitle\": \"\",\n      \"layout\": \"text-bullets\",\n      \"contentHint\": \"涵盖材料-硬件-算法-系统-验证五阶闭环路径，四大关键技术体系支撑工程落地。\",\n      \"imageHint\": \"\",\n      \"imageIndex\": -1,\n      \"refChunks\": [5],\n      \"speakerNotes\": \"概述整体技术路线与实施计划。\"\n    },\n    {\n      \"index\": 8,\n      \"title\": \"创新技术：基于智能数据手套的多模态人机交互系统\",\n      \"subtitle\": \"\",\n      \"layout\": \"cards-3-featured\",\n      \"contentHint\": \"构建\"感知-意图-反馈\"闭环模型，自研轻量化协议深度适配国产XR生态。\",\n      \"imageHint\": \"技术框架\",\n      \"imageIndex\": 1,\n      \"refChunks\": [6],\n      \"speakerNotes\": \"强调系统级创新与生态兼容性。\"\n    },\n    {\n      \"index\": 9,\n      \"title\": \"创新技术：自研高精度柔性传感器\",\n      \"subtitle\": \"\",\n      \"layout\": \"cards-3-stack\",\n      \"contentHint\": \"仿生\"水膜-鱼网\"结构液态金属薄膜+光纤-IMU混合架构，实现0.1mm精度与低成本。\",\n      \"imageHint\": \"\",\n      \"imageIndex\": -1,\n      \"refChunks\": [7],\n      \"speakerNotes\": \"突出材料与架构双重创新。\"\n    },\n    {\n      \"index\": 10,\n      \"title\": \"创新技术：首创高鲁棒性手势识别框架\",\n      \"subtitle\": \"\",\n      \"layout\": \"staggered-cards\",\n      \"contentHint\": \"分层架构+自适应滤波+时序分割，复杂场景识别准确率＞95%，显著优于开源方案。\",\n      \"imageHint\": \"\",\n      \"imageIndex\": -1,\n      \"refChunks\": [8],\n      \"speakerNotes\": \"强调算法在真实环境中的稳定性。\"\n    },\n    {\n      \"index\": 11,\n      \"title\": \"创新技术：复杂极端场景适配技术\",\n      \"subtitle\": \"\",\n      \"layout\": \"cards-3\",\n      \"contentHint\": \"IP67防护+宽温域设计+自适应补偿算法，满足工业级高可靠性要求。\",\n      \"imageHint\": \"\",\n      \"imageIndex\": -1,\n      \"refChunks\": [9],\n      \"speakerNotes\": \"说明产品在严苛环境下的适用性。\"\n    },\n    {\n      \"index\": 12,\n      \"title\": \"创新成果\",\n      \"subtitle\": \"\",\n      \"layout\": \"list-featured\",\n      \"contentHint\": \"形成论文9篇、发明专利4项、软著5项的三位一体知识产权体系。\",\n      \"imageHint\": \"\",\n      \"imageIndex\": -1,\n      \"refChunks\": [10],\n      \"speakerNotes\": \"系统展示学术、专利与软件成果。\"\n    },\n    {\n      \"index\": 13,\n      \"title\": \"产业验证：中航光电科技股份有限公司\",\n      \"subtitle\": \"\",\n      \"layout\": \"quote-no-avatar\",\n      \"contentHint\": \"航空装配培训周期缩短40%，耗材损耗下降90%，实现技能考核标准化。\",\n      \"imageHint\": \"\",\n      \"imageIndex\": -1,\n      \"refChunks\": [11],\n      \"speakerNotes\": \"用具体数据说明产业价值。\"\n    },\n    {\n      \"index\": 14,\n      \"title\": \"产业验证：北方兵器研究所\",\n      \"subtitle\": \"\",\n      \"layout\": \"quote-no-avatar\",\n      \"contentHint\": \"野战环境下识别准确率＞95%，维修训练频次提升300%，加速专家经验传承。\",\n      \"imageHint\": \"\",\n      \"imageIndex\": -1,\n      \"refChunks\": [12],\n      \"speakerNotes\": \"突出国防场景的高可靠性验证。\"\n    },\n    {\n      \"index\": 15,\n      \"title\": \"产业验证：产业验证总结\",\n      \"subtitle\": \"\",\n      \"layout\": \"text-center\",\n      \"contentHint\": \"两大国家级单位验证表明产品具备工业级成熟度与战略价值。\",\n      \"imageHint\": \"\",\n      \"imageIndex\": -1,\n      \"refChunks\": [13],\n      \"speakerNotes\": \"总结验证成果，强化可信度。\"\n    },\n    {\n      \"index\": 16,\n      \"title\": \"专家评价\",\n      \"subtitle\": \"\",\n      \"layout\": \"quote\",\n      \"contentHint\": \"陈建国院士、李明霞教授、王振华专家高度认可项目理论创新、技术原创与产业实效。\",\n      \"imageHint\": \"\",\n      \"imageIndex\": -1,\n      \"refChunks\": [14],\n      \"speakerNotes\": \"引用权威背书增强说服力。\"\n    },\n    {\n      \"index\": 17,\n      \"title\": \"市场分析\",\n      \"subtitle\": \"\",\n      \"layout\": \"chart-bar\",\n      \"contentHint\": \"2026年VR产业规模目标3500亿元，国产替代处于蓝海阶段，需求旺盛供给不足。\",\n      \"imageHint\": \"\",\n      \"imageIndex\": -1,\n      \"refChunks\": [15],\n      \"speakerNotes\": \"结合政策与竞争格局分析市场机会。\"\n    },\n    {\n      \"index\": 18,\n      \"title\": \"市场定位\",\n      \"subtitle\": \"\",\n      \"layout\": \"cards-3\",\n      \"contentHint\": \"聚焦高端制造、国防科研、高校实训三大赛道，以高性价比+全栈自主破局。\",\n      \"imageHint\": \"\",\n      \"imageIndex\": -1,\n      \"refChunks\": [16],\n      \"speakerNotes\": \"明确目标客户与差异化优势。\"\n    },\n    {\n      \"index\": 19,\n      \"title\": \"推广模式\",\n      \"subtitle\": \"\",\n      \"layout\": \"timeline\",\n      \"contentHint\": \"三步走策略：灯塔验证→生态筑基→全国复制，构建可持续增长体系。\",\n      \"imageHint\": \"\",\n      \"imageIndex\": -1,\n      \"refChunks\": [17],\n      \"speakerNotes\": \"说明从试点到规模化的发展路径。\"\n    },\n    {\n      \"index\": 20,\n      \"title\": \"商业模式\",\n      \"subtitle\": \"\",\n      \"layout\": \"image-text\",\n      \"contentHint\": \"构建\"高校-客户-伙伴\"三角闭环，资金流反哺研发，数据流驱动迭代。\",\n      \"imageHint\": \"业务流程\",\n      \"imageIndex\": 2,\n      \"refChunks\": [18],\n      \"speakerNotes\": \"解释价值创造与循环机制。\"\n    },\n    {\n      \"index\": 21,\n      \"title\": \"财务规划\",\n      \"subtitle\": \"\",\n      \"layout\": \"metrics\",\n      \"contentHint\": \"6个月总预算85万元，分两阶段投入，优先申请政策性资金避免股权稀释。\",\n      \"imageHint\": \"\",\n      \"imageIndex\": -1,\n      \"refChunks\": [19],\n      \"speakerNotes\": \"强调资金使用效率与风险管控。\"\n    },\n    {\n      \"index\": 22,\n      \"title\": \"盈利分析\",\n      \"subtitle\": \"\",\n      \"layout\": \"chart-pie\",\n      \"contentHint\": \"硬件占60%、软件服务占40%，综合毛利率向55%以上攀升，构建盈利飞轮。\",\n      \"imageHint\": \"\",\n      \"imageIndex\": -1,\n      \"refChunks\": [20],\n      \"speakerNotes\": \"说明盈利结构优化路径。\"\n    },\n    {\n      \"index\": 23,\n      \"title\": \"落地前景\",\n      \"subtitle\": \"\",\n      \"layout\": \"milestone-list\",\n      \"contentHint\": \"三阶段推进，第5年预计总产值5亿元，带动区域产业集群发展。\",\n      \"imageHint\": \"\",\n      \"imageIndex\": -1,\n      \"refChunks\": [21],\n      \"speakerNotes\": \"展望经济与产业带动效应。\"\n    },\n    {\n      \"index\": 24,\n      \"title\": \"社会影响\",\n      \"subtitle\": \"\",\n      \"layout\": \"cards-split\",\n      \"contentHint\": \"创造高质量就业岗位、促进知识共享、降低碳排放，践行科技向善。\",\n      \"imageHint\": \"\",\n      \"imageIndex\": -1,\n      \"refChunks\": [22],\n      \"speakerNotes\": \"强调项目的综合社会效益。\"\n    },\n    {\n      \"index\": 25,\n      \"title\": \"团队精神\",\n      \"subtitle\": \"\",\n      \"layout\": \"text-center\",\n      \"contentHint\": \"秉承哈工大校训，以突破\"卡脖子\"技术为使命，彰显青年科技报国担当。\",\n      \"imageHint\": \"\",\n      \"imageIndex\": -1,\n      \"refChunks\": [23],\n      \"speakerNotes\": \"传递团队价值观与使命感。\"\n    },\n    {\n      \"index\": 26,\n      \"title\": \"团队结构\",\n      \"subtitle\": \"\",\n      \"layout\": \"team-members\",\n      \"contentHint\": \"7人核心团队覆盖算法-硬件-产品-市场全链条，采用Scrum敏捷协同模式。\",\n      \"imageHint\": \"\",\n      \"imageIndex\": -1,\n      \"refChunks\": [24],\n      \"speakerNotes\": \"介绍组织架构与协作机制。\"\n    },\n    {\n      \"index\": 27,\n      \"title\": \"指导教师\",\n      \"subtitle\": \"\",\n      \"layout\": \"cards-3\",\n      \"contentHint\": \"张展、娄久教授提供技术指导，彭维斌先生提供战略与资本支持。\",\n      \"imageHint\": \"\",\n      \"imageIndex\": -1,\n      \"refChunks\": [25],\n      \"speakerNotes\": \"说明导师团队的多维赋能。\"\n    },\n    {\n      \"index\": 28,\n      \"title\": \"外部专家\",\n      \"subtitle\": \"\",\n      \"layout\": \"cards-2\",\n      \"contentHint\": \"赵建国教授指导技术标准，周敏总经理助力商业模式与资源整合。\",\n      \"imageHint\": \"\",\n      \"imageIndex\": -1,\n      \"refChunks\": [26],\n      \"speakerNotes\": \"展示外部资源对项目的支撑。\"\n    },\n    {\n      \"index\": 29,\n      \"title\": \"四新建设\",\n      \"subtitle\": \"\",\n      \"layout\": \"text-bullets\",\n      \"contentHint\": \"哈工大\"四新\"育人体系培养复合型人才，支撑项目跨学科创新实践。\",\n      \"imageHint\": \"\",\n      \"imageIndex\": -1,\n      \"refChunks\": [27],\n      \"speakerNotes\": \"关联教育改革与项目能力基础。\"\n    },\n    {\n      \"index\": 30,\n      \"title\": \"创新创业支持\",\n      \"subtitle\": \"\",\n      \"layout\": \"list-featured\",\n      \"contentHint\": \"学校提供课程、赛事、孵化全链条支持，推动技术向商业价值转化。\",\n      \"imageHint\": \"\",\n      \"imageIndex\": -1,\n      \"refChunks\": [28],\n      \"speakerNotes\": \"说明双创生态对项目的培育作用。\"\n    },\n    {\n      \"index\": 31,\n      \"title\": \"产教科教产学研协同\",\n      \"subtitle\": \"\",\n      \"layout\": \"text-bullets\",\n      \"contentHint\": \"国家级平台与校企合作机制，将产业思维嵌入创新起点，加速成果转化。\",\n      \"imageHint\": \"\",\n      \"imageIndex\": -1,\n      \"refChunks\": [29],\n      \"speakerNotes\": \"强调协同育人对项目全周期的驱动。\"\n    },\n    {\n      \"index\": 32,\n      \"title\": \"相关图片信息\",\n      \"subtitle\": \"\",\n      \"layout\": \"image-center\",\n      \"contentHint\": \"展示VR现状、技术框架与业务流程三张关键图片。\",\n      \"imageHint\": \"包含VR发展现状、技术框架、业务流程三图\",\n      \"imageIndex\": -1,\n      \"refChunks\": [30],\n      \"speakerNotes\": \"用于视觉辅助说明。\"\n    },\n    {\n      \"index\": 33,\n      \"title\": \"感谢观看\",\n      \"subtitle\": \"携手共赢，共筑国产元宇宙交互新生态\",\n      \"layout\": \"ending\",\n      \"contentHint\": \"结束页，表达合作愿景。\",\n      \"imageHint\": \"\",\n      \"imageIndex\": -1,\n      \"refChunks\": [],\n      \"speakerNotes\": \"致谢并开放交流。\"\n    }\n  ]\n}"
+    },
+    {
+      "ts": "2026-04-01T02:35:58.583Z",
+      "stage": "outline.parse.error",
+      "payload": "SyntaxError: JSON5: invalid character '感' at 87:26"
+    },
+    {
+      "ts": "2026-04-01T02:35:58.583Z",
+      "stage": "outline.repair.start",
+      "payload": {
+        "model": "qwen3-max",
+        "clientIndex": 0,
+        "systemLength": 42,
+        "userLength": 9578
+      }
+    },
+    {
+      "ts": "2026-04-01T02:37:10.666Z",
+      "stage": "outline.repair.success",
+      "payload": {
+        "model": "qwen3-max",
+        "clientIndex": 0,
+        "durationMs": 72083,
+        "attemptDurationMs": 72083,
+        "attempts": 1,
+        "contentLength": 6605
+      }
+    },
+    {
+      "ts": "2026-04-01T02:37:10.666Z",
+      "stage": "outline.repaired",
+      "payload": "{\"title\":\"龙影元宇宙多模态智能数据手套项目汇报\",\"slideCount\":33,\"slides\":[{\"index\":1,\"title\":\"龙影元宇宙多模态智能数据手套项目汇报\",\"subtitle\":\"——高精度、低成本、全自主的国产交互装备解决方案\",\"layout\":\"cover\",\"contentHint\":\"项目总览封面，突出主题与核心价值主张。\",\"imageHint\":\"\",\"imageIndex\":-1,\"refChunks\":[],\"speakerNotes\":\"开场介绍项目名称与定位。\"},{\"index\":2,\"title\":\"项目背景\",\"subtitle\":\"\",\"layout\":\"text-bullets\",\"contentHint\":\"元宇宙加速演进但交互瓶颈突出，国家政策明确支持高精度感知交互技术攻关。\",\"imageHint\":\"\",\"imageIndex\":-1,\"refChunks\":[0],\"speakerNotes\":\"强调政策导向与市场需求双重驱动。\"},{\"index\":3,\"title\":\"产业现状\",\"subtitle\":\"\",\"layout\":\"metrics\",\"contentHint\":\"VR产业规模目标超3500亿元，但交互依赖传统手柄，自然交互能力薄弱成核心短板。\",\"imageHint\":\"VR发展现状\",\"imageIndex\":0,\"refChunks\":[1],\"speakerNotes\":\"结合政策目标与现实痛点，引出升级必要性。\"},{\"index\":4,\"title\":\"深入调研\",\"subtitle\":\"\",\"layout\":\"text-bullets\",\"contentHint\":\"调研揭示三重瓶颈：传感器成本高、算法封闭、国产平台适配不足；明确创新目标。\",\"imageHint\":\"\",\"imageIndex\":-1,\"refChunks\":[2],\"speakerNotes\":\"强调实证调研支撑项目定位。\"},{\"index\":5,\"title\":\"创新基础\",\"subtitle\":\"\",\"layout\":\"team-members\",\"contentHint\":\"哈工大跨学科团队具备全链条研发能力，科研积淀深厚，专利论文成果丰硕。\",\"imageHint\":\"\",\"imageIndex\":-1,\"refChunks\":[3],\"speakerNotes\":\"突出团队技术实力与工程化能力。\"},{\"index\":6,\"title\":\"创新领域现状\",\"subtitle\":\"\",\"layout\":\"text-bullets\",\"contentHint\":\"现有柔性传感、手势识别、多模态系统存在精度、鲁棒性、生态适配等多重缺陷。\",\"imageHint\":\"\",\"imageIndex\":-1,\"refChunks\":[4],\"speakerNotes\":\"对比分析行业技术缺口，凸显本项目突破点。\"},{\"index\":7,\"title\":\"创新设计\",\"subtitle\":\"\",\"layout\":\"text-bullets\",\"contentHint\":\"涵盖材料-硬件-算法-系统-验证五阶闭环路径，四大关键技术体系支撑工程落地。\",\"imageHint\":\"\",\"imageIndex\":-1,\"refChunks\":[5],\"speakerNotes\":\"概述整体技术路线与实施计划。\"},{\"index\":8,\"title\":\"创新技术：基于智能数据手套的多模态人机交互系统\",\"subtitle\":\"\",\"layout\":\"cards-3-featured\",\"contentHint\":\"构建\\\"感知-意图-反馈\\\"闭环模型，自研轻量化协议深度适配国产XR生态。\",\"imageHint\":\"技术框架\",\"imageIndex\":1,\"refChunks\":[6],\"speakerNotes\":\"强调系统级创新与生态兼容性。\"},{\"index\":9,\"title\":\"创新技术：自研高精度柔性传感器\",\"subtitle\":\"\",\"layout\":\"cards-3-stack\",\"contentHint\":\"仿生\\\"水膜-鱼网\\\"结构液态金属薄膜+光纤-IMU混合架构，实现0.1mm精度与低成本。\",\"imageHint\":\"\",\"imageIndex\":-1,\"refChunks\":[7],\"speakerNotes\":\"突出材料与架构双重创新。\"},{\"index\":10,\"title\":\"创新技术：首创高鲁棒性手势识别框架\",\"subtitle\":\"\",\"layout\":\"staggered-cards\",\"contentHint\":\"分层架构+自适应滤波+时序分割，复杂场景识别准确率＞95%，显著优于开源方案。\",\"imageHint\":\"\",\"imageIndex\":-1,\"refChunks\":[8],\"speakerNotes\":\"强调算法在真实环境中的稳定性。\"},{\"index\":11,\"title\":\"创新技术：复杂极端场景适配技术\",\"subtitle\":\"\",\"layout\":\"cards-3\",\"contentHint\":\"IP67防护+宽温域设计+自适应补偿算法，满足工业级高可靠性要求。\",\"imageHint\":\"\",\"imageIndex\":-1,\"refChunks\":[9],\"speakerNotes\":\"说明产品在严苛环境下的适用性。\"},{\"index\":12,\"title\":\"创新成果\",\"subtitle\":\"\",\"layout\":\"list-featured\",\"contentHint\":\"形成论文9篇、发明专利4项、软著5项的三位一体知识产权体系。\",\"imageHint\":\"\",\"imageIndex\":-1,\"refChunks\":[10],\"speakerNotes\":\"系统展示学术、专利与软件成果。\"},{\"index\":13,\"title\":\"产业验证：中航光电科技股份有限公司\",\"subtitle\":\"\",\"layout\":\"quote-no-avatar\",\"contentHint\":\"航空装配培训周期缩短40%，耗材损耗下降90%，实现技能考核标准化。\",\"imageHint\":\"\",\"imageIndex\":-1,\"refChunks\":[11],\"speakerNotes\":\"用具体数据说明产业价值。\"},{\"index\":14,\"title\":\"产业验证：北方兵器研究所\",\"subtitle\":\"\",\"layout\":\"quote-no-avatar\",\"contentHint\":\"野战环境下识别准确率＞95%，维修训练频次提升300%，加速专家经验传承。\",\"imageHint\":\"\",\"imageIndex\":-1,\"refChunks\":[12],\"speakerNotes\":\"突出国防场景的高可靠性验证。\"},{\"index\":15,\"title\":\"产业验证：产业验证总结\",\"subtitle\":\"\",\"layout\":\"text-center\",\"contentHint\":\"两大国家级单位验证表明产品具备工业级成熟度与战略价值。\",\"imageHint\":\"\",\"imageIndex\":-1,\"refChunks\":[13],\"speakerNotes\":\"总结验证成果，强化可信度。\"},{\"index\":16,\"title\":\"专家评价\",\"subtitle\":\"\",\"layout\":\"quote\",\"contentHint\":\"陈建国院士、李明霞教授、王振华专家高度认可项目理论创新、技术原创与产业实效。\",\"imageHint\":\"\",\"imageIndex\":-1,\"refChunks\":[14],\"speakerNotes\":\"引用权威背书增强说服力。\"},{\"index\":17,\"title\":\"市场分析\",\"subtitle\":\"\",\"layout\":\"chart-bar\",\"contentHint\":\"2026年VR产业规模目标3500亿元，国产替代处于蓝海阶段，需求旺盛供给不足。\",\"imageHint\":\"\",\"imageIndex\":-1,\"refChunks\":[15],\"speakerNotes\":\"结合政策与竞争格局分析市场机会。\"},{\"index\":18,\"title\":\"市场定位\",\"subtitle\":\"\",\"layout\":\"cards-3\",\"contentHint\":\"聚焦高端制造、国防科研、高校实训三大赛道，以高性价比+全栈自主破局。\",\"imageHint\":\"\",\"imageIndex\":-1,\"refChunks\":[16],\"speakerNotes\":\"明确目标客户与差异化优势。\"},{\"index\":19,\"title\":\"推广模式\",\"subtitle\":\"\",\"layout\":\"timeline\",\"contentHint\":\"三步走策略：灯塔验证→生态筑基→全国复制，构建可持续增长体系。\",\"imageHint\":\"\",\"imageIndex\":-1,\"refChunks\":[17],\"speakerNotes\":\"说明从试点到规模化的发展路径。\"},{\"index\":20,\"title\":\"商业模式\",\"subtitle\":\"\",\"layout\":\"image-text\",\"contentHint\":\"构建\\\"高校-客户-伙伴\\\"三角闭环，资金流反哺研发，数据流驱动迭代。\",\"imageHint\":\"业务流程\",\"imageIndex\":2,\"refChunks\":[18],\"speakerNotes\":\"解释价值创造与循环机制。},{\"index\":21,\"title\":\"财务规划\",\"subtitle\":\"\",\"layout\":\"metrics\",\"contentHint\":\"6个月总预算85万元，分两阶段投入，优先申请政策性资金避免股权稀释。\",\"imageHint\":\"\",\"imageIndex\":-1,\"refChunks\":[19],\"speakerNotes\":\"强调资金使用效率与风险管控。},{\"index\":22,\"title\":\"盈利分析\",\"subtitle\":\"\",\"layout\":\"chart-pie\",\"contentHint\":\"硬件占60%、软件服务占40%，综合毛利率向55%以上攀升，构建盈利飞轮。\",\"imageHint\":\"\",\"imageIndex\":-1,\"refChunks\":[20],\"speakerNotes\":\"说明盈利结构优化路径。},{\"index\":23,\"title\":\"落地前景\",\"subtitle\":\"\",\"layout\":\"milestone-list\",\"contentHint\":\"三阶段推进，第5年预计总产值5亿元，带动区域产业集群发展。\",\"imageHint\":\"\",\"imageIndex\":-1,\"refChunks\":[21],\"speakerNotes\":\"展望经济与产业带动效应。},{\"index\":24,\"title\":\"社会影响\",\"subtitle\":\"\",\"layout\":\"cards-split\",\"contentHint\":\"创造高质量就业岗位、促进知识共享、降低碳排放，践行科技向善。\",\"imageHint\":\"\",\"imageIndex\":-1,\"refChunks\":[22],\"speakerNotes\":\"强调项目的综合社会效益。},{\"index\":25,\"title\":\"团队精神\",\"subtitle\":\"\",\"layout\":\"text-center\",\"contentHint\":\"秉承哈工大校训，以突破\\\"卡脖子\\\"技术为使命，彰显青年科技报国担当。\",\"imageHint\":\"\",\"imageIndex\":-1,\"refChunks\":[23],\"speakerNotes\":\"传递团队价值观与使命感。},{\"index\":26,\"title\":\"团队结构\",\"subtitle\":\"\",\"layout\":\"team-members\",\"contentHint\":\"7人核心团队覆盖算法-硬件-产品-市场全链条，采用Scrum敏捷协同模式。\",\"imageHint\":\"\",\"imageIndex\":-1,\"refChunks\":[24],\"speakerNotes\":\"介绍组织架构与协作机制。},{\"index\":27,\"title\":\"指导教师\",\"subtitle\":\"\",\"layout\":\"cards-3\",\"contentHint\":\"张展、娄久教授提供技术指导，彭维斌先生提供战略与资本支持。\",\"imageHint\":\"\",\"imageIndex\":-1,\"refChunks\":[25],\"speakerNotes\":\"说明导师团队的多维赋能。},{\"index\":28,\"title\":\"外部专家\",\"subtitle\":\"\",\"layout\":\"cards-2\",\"contentHint\":\"赵建国教授指导技术标准，周敏总经理助力商业模式与资源整合。\",\"imageHint\":\"\",\"imageIndex\":-1,\"refChunks\":[26],\"speakerNotes\":\"展示外部资源对项目的支撑。},{\"index\":29,\"title\":\"四新建设\",\"subtitle\":\"\",\"layout\":\"text-bullets\",\"contentHint\":\"哈工大\\\"四新\\\"育人体系培养复合型人才，支撑项目跨学科创新实践。\",\"imageHint\":\"\",\"imageIndex\":-1,\"refChunks\":[27],\"speakerNotes\":\"关联教育改革与项目能力基础。},{\"index\":30,\"title\":\"创新创业支持\",\"subtitle\":\"\",\"layout\":\"list-featured\",\"contentHint\":\"学校提供课程、赛事、孵化全链条支持，推动技术向商业价值转化。\",\"imageHint\":\"\",\"imageIndex\":-1,\"refChunks\":[28],\"speakerNotes\":\"说明双创生态对项目的培育作用。},{\"index\":31,\"title\":\"产教科教产学研协同\",\"subtitle\":\"\",\"layout\":\"text-bullets\",\"contentHint\":\"国家级平台与校企合作机制，将产业思维嵌入创新起点，加速成果转化。\",\"imageHint\":\"\",\"imageIndex\":-1,\"refChunks\":[29],\"speakerNotes\":\"强调协同育人对项目全周期的驱动。},{\"index\":32,\"title\":\"相关图片信息\",\"subtitle\":\"\",\"layout\":\"image-center\",\"contentHint\":\"展示VR现状、技术框架与业务流程三张关键图片。\",\"imageHint\":\"包含VR发展现状、技术框架、业务流程三图\",\"imageIndex\":-1,\"refChunks\":[30],\"speakerNotes\":\"用于视觉辅助说明。},{\"index\":33,\"title\":\"感谢观看\",\"subtitle\":\"携手共赢，共筑国产元宇宙交互新生态\",\"layout\":\"ending\",\"contentHint\":\"结束页，表达合作愿景。\",\"imageHint\":\"\",\"imageIndex\":-1,\"refChunks\":[],\"speakerNotes\":\"致谢并开放交流。}]}"
+    },
+    {
+      "ts": "2026-04-01T02:37:10.670Z",
+      "stage": "outline.repair.error",
+      "payload": "SyntaxError: JSON5: invalid character 'i' at 1:4113"
+    },
+    {
+      "ts": "2026-04-01T02:37:10.674Z",
+      "stage": "pipeline.outline.error",
+      "payload": {
+        "error": "Outline generation failed: SyntaxError: JSON5: invalid character 'i' at 1:4113"
+      }
+    }
+  ]
+}

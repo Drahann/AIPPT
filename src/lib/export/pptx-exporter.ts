@@ -933,7 +933,7 @@ function renderFeaturesListImage(s: Slide, slide: SlideContent, c: Colors, fH: s
 function renderMetricsRings(s: Slide, slide: SlideContent, c: Colors, fH: string, fB: string, scale = 1, vOffset = 0) {
   s.background = { fill: hexToRgb(c.background) }
 
-  const overline = slide.subtitle?.trim() || 'The PainPoint'
+  const overline = slide.subtitle?.trim() || '数据支撑'
   const items = (slide.metrics || []).slice(0, 3)
 
   s.addText(overline, {
