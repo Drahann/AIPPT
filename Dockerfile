@@ -80,17 +80,17 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     fonts-wqy-microhei \
     && rm -rf /var/lib/apt/lists/*
 
-# 复制构建产物
-COPY --from=builder /app/.next ./.next
+# 先安装 Playwright Chromium（放在 COPY 之前以利用缓存）
 COPY --from=builder /app/node_modules ./node_modules
 COPY --from=builder /app/package.json ./package.json
-COPY --from=builder /app/public ./public
-
-# 安装 Playwright Chromium
 RUN npx playwright install chromium
 
 # 创建 tmp 目录
 RUN mkdir -p tmp/render-data
+
+# 再复制构建产物（代码变动只影响这里之后的层）
+COPY --from=builder /app/.next ./.next
+COPY --from=builder /app/public ./public
 
 EXPOSE 3000
 
