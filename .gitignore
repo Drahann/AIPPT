@@ -30,7 +30,7 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
+# env files
 .env*
 
 # vercel
@@ -40,4 +40,21 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-/debugdata
+# ---- 项目特定 ----
+# 调试数据（AI 生成的中间文件，可达数千个）
+/debug-data/
+
+# 临时文件
+/temp_slides/
+/tmp/
+
+# 测试脚本和临时输出
+/results/
+test-parser.ts
+test-layout.ts
+ppt_to_png.py
+*.pptx
+
+# 中文文档（不应在仓库中）
+组件库与排版库参考手册.md
+REQUIREMENTS.md
