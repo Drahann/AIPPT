@@ -1,5 +1,6 @@
 'use client'
 
+import { Suspense } from 'react'
 import { useSearchParams } from 'next/navigation'
 import { getTemplatePack, templatePackToCSS } from '@/lib/templates/registry'
 import { SlideRenderer } from '@/components/slides/SlideRenderer'
@@ -8,7 +9,7 @@ import { type CSSProperties } from 'react'
 
 type CSSVarStyle = CSSProperties & Record<`--${string}`, string>
 
-export default function GalleryExportPage() {
+function GalleryExportContent() {
   const searchParams = useSearchParams()
   const packId = searchParams.get('packId') || 'group-04'
   const pack = getTemplatePack(packId)
@@ -53,10 +54,6 @@ export default function GalleryExportPage() {
       <div style={cssVars} className={pack.cssClass}>
         {MOCK_SLIDES.map((slide, idx) => (
           <div key={idx} className="slide-container">
-            {/* We render at 1920x1080, but SlideRenderer expects components to be scaled from 1920 to 960 (0.5x) or similar? 
-                Actually, SlideRenderer has a 0.5x scale for Figma components. 
-                We might need to adjust the container to handle the scaling correctly.
-            */}
             <div className="w-full h-full relative">
                <SlideRenderer slide={slide} index={idx} pack={pack} />
             </div>
@@ -64,5 +61,13 @@ export default function GalleryExportPage() {
         ))}
       </div>
     </div>
+  )
+}
+
+export default function GalleryExportPage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <GalleryExportContent />
+    </Suspense>
   )
 }
