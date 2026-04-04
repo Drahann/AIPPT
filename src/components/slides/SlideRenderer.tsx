@@ -33,8 +33,7 @@ import { Cards3StackSlide } from './layouts/Cards3StackSlide'
 import { getDensityClass } from '@/lib/utils/density-utils'
 import { getTypographyVars } from '@/lib/utils/typography-utils'
 import { useAppStore } from '@/lib/store'
-import { useEffect, useRef, useMemo } from 'react'
-import { useSearchParams } from 'next/navigation'
+import { useEffect, useRef, useMemo, useState } from 'react'
 import { captureSlideLayout, saveLayoutSnapshot } from '@/lib/utils/layout-snapshot'
 
 interface SlideRendererProps {
@@ -46,12 +45,18 @@ interface SlideRendererProps {
 }
 
 export function SlideRenderer({ slide, index, pack, isEditable = false, onUpdate }: SlideRendererProps) {
-  const searchParams = useSearchParams()
+  const [urlDebug, setUrlDebug] = useState(false)
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search)
+      setUrlDebug(params.get('debug') === 'true')
+    }
+  }, [])
   const storeDebugMode = useAppStore(state => 
     state.generateConfig?.debugMode || 
     (state.presentation as any)?.metadata?.debugMode
   )
-  const debugMode = storeDebugMode === true || searchParams.get('debug') === 'true'
+  const debugMode = storeDebugMode === true || urlDebug
   const slideRef = useRef<HTMLDivElement>(null)
 
   const densityClass = getDensityClass(slide)
