@@ -28,7 +28,7 @@ interface GeneratePptRequest {
   report_id: string
   fileUrl?: string        // PDF 报告 COS 路径
   wordUrl?: string        // Word 文档 COS 路径
-  title?: string          // 项目标题 (project_idea)
+  title?: unknown          // 项目标题 (project_idea)，可能是字符串或数组
   content: string         // Markdown 计划书全文 (final_planbook)
   themeId?: string        // 可选主题，默认 group-01
 }
@@ -81,9 +81,19 @@ export async function POST(request: NextRequest) {
       }
     )
 
-    // 如果 Python 传了 title，优先用它
+    // 如果 Python 传了 title，优先用它（确保是字符串）
     if (body.title) {
-      presentation.title = body.title
+      const rawTitle = body.title
+      if (typeof rawTitle === 'string') {
+        presentation.title = rawTitle
+      } else if (Array.isArray(rawTitle)) {
+        // Python 可能传了数组，取第一个元素的文本
+        presentation.title = rawTitle.map((t: unknown) =>
+          typeof t === 'string' ? t : (t as Record<string, unknown>)?.text || (t as Record<string, unknown>)?.name || String(t)
+        ).join(' - ')
+      } else {
+        presentation.title = String(rawTitle)
+      }
     }
 
     // ---- 3. Playwright 无头渲染 + DOM 快照 ----
