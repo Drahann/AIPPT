@@ -78,8 +78,8 @@ const layoutSchemas: Record<string, string> = {
   "title": "与页面主题一致的标题",
   "subtitle": "可选副标题",
   "cards": [
-    { "heading": "维度一（如技术层面/理论贡献）", "body": "- 核心方法或架构创新点\\n- 核心要点B\\n- 相关补充详述" },
-    { "heading": "维度二（如应用层面/产业价值）", "body": "- 落地场景与部署实践\\n- 核心要点D\\n- 相关补充详述" }
+    { "heading": "维度一（如技术层面/理论贡献）", "body": "• 核心方法或架构创新点\\n• 核心要点B\\n• 相关补充详述" },
+    { "heading": "维度二（如应用层面/产业价值）", "body": "• 落地场景与部署实践\\n• 核心要点D\\n• 相关补充详述" }
   ]
 }`,
   'cards-3': `{
@@ -87,9 +87,9 @@ const layoutSchemas: Record<string, string> = {
   "title": "与当前页面语义一致的标题",
   "subtitle": "可选副标题",
   "cards": [
-    { "icon": "bar-chart", "heading": "研究方向或模块名称", "body": "- 核心技术原理与创新点\\n- 衍生影响或价值论述" },
-    { "icon": "globe", "heading": "应用场景或验证领域", "body": "- 实际部署环境与测试条件\\n- 相关环境或合规说明" },
-    { "icon": "code", "heading": "系统架构或算法框架", "body": "- 技术方案与实现路径\\n- 提升的性能或吞吐量等参数" }
+    { "icon": "bar-chart", "heading": "研究方向或模块名称", "body": "• 核心技术原理与创新点\\n• 衍生影响或价值论述" },
+    { "icon": "globe", "heading": "应用场景或验证领域", "body": "• 实际部署环境与测试条件\\n• 相关环境或合规说明" },
+    { "icon": "code", "heading": "系统架构或算法框架", "body": "• 技术方案与实现路径\\n• 提升的性能或吞吐量等参数" }
   ]
 }`,
   'cards-4': `{
@@ -97,10 +97,10 @@ const layoutSchemas: Record<string, string> = {
   "title": "与当前页面语义一致的标题",
   "subtitle": "可选副标题",
   "cards": [
-    { "icon": "terminal", "heading": "技术能力或产品特性", "body": "- 核心功能与技术实现\\n- 补充说明文本段落" },
-    { "icon": "settings", "heading": "工程实践或质量保障", "body": "- 方法论或流程创新\\n- 补充说明文本段落" },
-    { "icon": "search", "heading": "市场调研或需求洞察", "body": "- 用户痛点与需求分析\\n- 补充说明文本段落" },
-    { "icon": "money", "heading": "商业价值或社会效益", "body": "- 经济效益预测或成本分析\\n- 补充说明文本段落" }
+    { "icon": "terminal", "heading": "技术能力或产品特性", "body": "• 核心功能与技术实现\\n• 补充说明文本段落" },
+    { "icon": "settings", "heading": "工程实践或质量保障", "body": "• 方法论或流程创新\\n• 补充说明文本段落" },
+    { "icon": "search", "heading": "市场调研或需求洞察", "body": "• 用户痛点与需求分析\\n• 补充说明文本段落" },
+    { "icon": "money", "heading": "商业价值或社会效益", "body": "• 经济效益预测或成本分析\\n• 补充说明文本段落" }
   ]
 }`,
   comparison: `{
@@ -256,10 +256,10 @@ const layoutSchemas: Record<string, string> = {
   "title": "与当前页面语义一致的标题",
   "subtitle": "可选副标题",
   "cards": [
-    { "heading": "亮点1", "body": "- 核心技术或产品特性解析\\n- 该特性带来的直接用户价值或业务收益指标", "image": { "url": "https://images.unsplash.com/photo-1618477462146-050d2767eac4?auto=format&fit=crop&q=80&w=1400" } },
-    { "heading": "亮点2", "body": "- 核心技术或产品特性解析\\n- 该特性带来的直接用户价值或业务收益指标", "image": { "url": "https://images.unsplash.com/photo-1557682250-33bd709cbe85?auto=format&fit=crop&q=80&w=1400" } },
-    { "heading": "亮点3", "body": "- 核心技术或产品特性解析\\n- 该特性带来的直接用户价值或业务收益指标", "image": { "url": "https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?auto=format&fit=crop&q=80&w=1400" } },
-    { "heading": "亮点4", "body": "- 核心技术或产品特性解析\\n- 该特性带来的直接用户价值或业务收益指标", "image": { "url": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1400" } }
+    { "heading": "亮点1", "body": "• 核心技术或产品特性解析\\n• 该特性带来的直接用户价值或业务收益指标", "image": { "url": "https://images.unsplash.com/photo-1618477462146-050d2767eac4?auto=format&fit=crop&q=80&w=1400" } },
+    { "heading": "亮点2", "body": "• 核心技术或产品特性解析\\n• 该特性带来的直接用户价值或业务收益指标", "image": { "url": "https://images.unsplash.com/photo-1557682250-33bd709cbe85?auto=format&fit=crop&q=80&w=1400" } },
+    { "heading": "亮点3", "body": "• 核心技术或产品特性解析\\n• 该特性带来的直接用户价值或业务收益指标", "image": { "url": "https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?auto=format&fit=crop&q=80&w=1400" } },
+    { "heading": "亮点4", "body": "• 核心技术或产品特性解析\\n• 该特性带来的直接用户价值或业务收益指标", "image": { "url": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1400" } }
   ]
 }`,
   'features-list-image': `{
@@ -276,9 +276,9 @@ const layoutSchemas: Record<string, string> = {
   "layout": "staggered-cards",
   "title": "与当前页面语义一致的标题",
   "cards": [
-    { "icon": "target", "heading": "目标定位或研究问题", "body": "- 问题定义与行业痛点分析\\n- 进一步的深度解析" },
-    { "icon": "users", "heading": "团队能力或协作模式", "body": "- 核心成员专业背景与分工\\n- 进一步的深度解析" },
-    { "icon": "settings", "heading": "实施方案或技术路线", "body": "- 关键技术路径与里程碑\\n- 进一步的深度解析" }
+    { "icon": "target", "heading": "目标定位或研究问题", "body": "• 问题定义与行业痛点分析\\n• 进一步的深度解析" },
+    { "icon": "users", "heading": "团队能力或协作模式", "body": "• 核心成员专业背景与分工\\n• 进一步的深度解析" },
+    { "icon": "settings", "heading": "实施方案或技术路线", "body": "• 关键技术路径与里程碑\\n• 进一步的深度解析" }
   ]
 }`,
   'team-members': `{
@@ -299,10 +299,10 @@ const layoutSchemas: Record<string, string> = {
     { "type": "paragraph", "text": "对核心模块的全局引导或重点背景说明" }
   ],
   "cards": [
-    { "icon": "target", "heading": "卡片标题1", "body": "总结性描述或简短分点均可，控制在排版字数预算内。- 核心要点A\\n- 核心要点B" },
-    { "icon": "globe", "heading": "卡片标题2", "body": "总结性描述或简短分点均可，控制在排版字数预算内。- 核心要点C\\n- 核心要点D" },
-    { "icon": "shield", "heading": "卡片标题3", "body": "总结性描述或简短分点均可，控制在排版字数预算内。- 核心要点E\\n- 核心要点F" },
-    { "icon": "zap", "heading": "卡片标题4", "body": "总结性描述或简短分点均可，控制在排版字数预算内。- 核心要点G\\n- 核心要点H" }
+    { "icon": "target", "heading": "卡片标题1", "body": "总结性描述或简短分点均可，控制在排版字数预算内。• 核心要点A\\n• 核心要点B" },
+    { "icon": "globe", "heading": "卡片标题2", "body": "总结性描述或简短分点均可，控制在排版字数预算内。• 核心要点C\\n• 核心要点D" },
+    { "icon": "shield", "heading": "卡片标题3", "body": "总结性描述或简短分点均可，控制在排版字数预算内。• 核心要点E\\n• 核心要点F" },
+    { "icon": "zap", "heading": "卡片标题4", "body": "总结性描述或简短分点均可，控制在排版字数预算内。• 核心要点G\\n• 核心要点H" }
   ]
 }`,
   'grid-2x2-featured': `{
@@ -313,10 +313,10 @@ const layoutSchemas: Record<string, string> = {
     { "type": "paragraph", "text": "对 2x2 矩阵的全局逻辑定义或趋势总结" }
   ],
   "cards": [
-    { "icon": "bar-chart", "heading": "卡片标题1", "body": "总结性描述或简短分点均可，控制在排版字数预算内。- 要点A\\n- 要点B" },
-    { "icon": "code", "heading": "卡片标题2", "body": "总结性描述或简短分点均可，控制在排版字数预算内。- 要点C\\n- 要点D" },
-    { "icon": "settings", "heading": "卡片标题3", "body": "总结性描述或简短分点均可，控制在排版字数预算内。- 要点E\\n- 要点F" },
-    { "icon": "trending-up", "heading": "卡片标题4", "body": "总结性描述或简短分点均可，控制在排版字数预算内。- 要点G\\n- 要点H" }
+    { "icon": "bar-chart", "heading": "卡片标题1", "body": "总结性描述或简短分点均可，控制在排版字数预算内。• 要点A\\n• 要点B" },
+    { "icon": "code", "heading": "卡片标题2", "body": "总结性描述或简短分点均可，控制在排版字数预算内。• 要点C\\n• 要点D" },
+    { "icon": "settings", "heading": "卡片标题3", "body": "总结性描述或简短分点均可，控制在排版字数预算内。• 要点E\\n• 要点F" },
+    { "icon": "trending-up", "heading": "卡片标题4", "body": "总结性描述或简短分点均可，控制在排版字数预算内。• 要点G\\n• 要点H" }
   ]
 }`,
   'cards-3-featured': `{
@@ -439,7 +439,10 @@ export function buildSlideContentPrompt(
 6. 重型半页图文 (image-text / text-image): 在字数预算内提供最大信息深度，分段落分层次拆解。
 7. comparison 布局中关键差异项前缀 "!"。
 8. image-center 必须提供 body，不要留空。
-9. metrics / metrics-rings: "value" 字段严禁出现纯中文字词，必须包含数字（如 "100+", "1.2亿"）或特殊符号。
+9. **metrics vs chart 语义区分**：
+   - **metrics / metrics-rings** 用于展示“成就橡窗”——每个指标是独立的 KPI 绝对值（如"97.3%识别率""120+专利""3.2x效率提升"），**各指标之间无须内在关联**。value 字段严禁出现纯中文字词，必须包含数字。
+   - **chart-bar / chart-line / chart-pie** 用于展示“数据变化”——多个数据点之间有**趋势/对比/构成**关系（如“2022-2025年营收增长”“三家竞品性能对比”“成本结构占比”）。
+   - 决策规则：如果原文是“列举多个独立指标”→ metrics；如果原文是“比较不同类别/时期的数据”→ chart。
 
 10. **严禁捏造人物**：quote / quote-no-avatar 布局中 cards.heading 的引用人姓名和身份必须完全来自 refChunks 原文，绝不允许凭空编造人名、头衔或引用内容。如原文无明确人物引语，应改用 cards-3 / text-bullets 等布局。
 
