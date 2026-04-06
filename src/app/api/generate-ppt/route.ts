@@ -87,10 +87,16 @@ export async function POST(request: NextRequest) {
       if (typeof rawTitle === 'string') {
         presentation.title = rawTitle
       } else if (Array.isArray(rawTitle)) {
-        // Python 可能传了数组，取第一个元素的文本
-        presentation.title = rawTitle.map((t: unknown) =>
-          typeof t === 'string' ? t : (t as Record<string, unknown>)?.text || (t as Record<string, unknown>)?.name || String(t)
-        ).join(' - ')
+        // Python 的 projectIdea 格式: [{sub_questionText:'项目名称', sub_answer:'xxx'}, ...]
+        // 优先取第一个元素的 sub_answer 作为标题
+        const first = rawTitle[0]
+        if (typeof first === 'object' && first !== null && 'sub_answer' in (first as Record<string, unknown>)) {
+          presentation.title = String((first as Record<string, unknown>).sub_answer || 'presentation')
+        } else {
+          presentation.title = rawTitle.map((t: unknown) =>
+            typeof t === 'string' ? t : String(t)
+          ).join(' - ')
+        }
       } else {
         presentation.title = String(rawTitle)
       }
