@@ -441,11 +441,17 @@ export function buildSlideContentPrompt(
 8. image-center 必须提供 body，不要留空。
 9. metrics / metrics-rings: "value" 字段严禁出现纯中文字词，必须包含数字（如 "100+", "1.2亿"）或特殊符号。
 
-10. **严禁捏造人物**：quote / quote-no-avatar 布局中 cards.heading 的引用人姓名和身份必须完全来自 refChunks 原文，绝不允许凭空编造人名、头衔或引用内容。如原文无明确人物引语，应改用 cards-3 / text-bullets 等布局。\r
-\r
+10. **严禁捏造人物**：quote / quote-no-avatar 布局中 cards.heading 的引用人姓名和身份必须完全来自 refChunks 原文，绝不允许凭空编造人名、头衔或引用内容。如原文无明确人物引语，应改用 cards-3 / text-bullets 等布局。
+
 11. **分点符号规范**：当 cards.body 或其他文本字段需要分点列举时，必须使用 "• "（Unicode 圆点 U+2022 + 空格）作为前缀，严禁使用 "- "（短横线）。短横线会与正文中的连接符混淆，导致导出格式错误。
 
 12. **忠实原文关键信息**：refChunks 中的具体数据（如百分比、金额、指标）、专有名词（如机构名、产品名、技术名）、量化成果（如"缩短40%""提升300%"）必须原样保留在文案中，严禁用"显著提升""大幅改善"等模糊表述替代。每页文案应覆盖 refChunks 对应段落的全部核心论点，不得丢弃次要但有价值的信息。
+
+13. **专家引用提取**：当 refChunks 中包含"【xxx领域专家 姓名（身份/单位）】"格式的专家评价段落时，务必将每位专家的姓名、身份、完整观点原文逐一对应填入 cards.heading（格式："姓名 - 身份"）和 cards.body（原文观点），不得合并或省略任何一位专家。
+
+14. **量化数据优先提取**：当 refChunks 中包含多组"XX率/XX%/XX万元/XX倍/XX天/XX处"等量化成果时，应优先提取最有代表性的 4-6 项作为 metrics value，确保每个 value 包含原文的精确数字，不得四舍五入或模糊化。
+
+15. **表格数据结构化**：若 refChunks 包含 Markdown 表格（含 | 分隔符），应将表格的关键列数据提取为 cards 或 chart 的结构化数据，不要将表格原样输出为纯文本段落。
 
 [字段形状规则]
 1. cards-* / list-featured / quote / quote-no-avatar / staggered-cards / features-list-image / team-members 必须输出 "cards"。

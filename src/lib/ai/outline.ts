@@ -213,6 +213,10 @@ function normalizeOutline(
     const CASE_STUDY_KEYWORDS = [
       '产业验证', '应用情况', '取得成效', '应用案例', '案例分析',
       '企业简介', '应用展示', '验证总结', '成效分析',
+      // Server-side planbook modules that must not use quote layout
+      '创新成效', '推广成效', '试点应用', '社会贡献', '社会影响',
+      '创新成果', '创新基础', '产品定型', '公益成效', '营销效果',
+      '经济效益', '社会效益', '企业验证', '需求匹配',
     ]
     const isQuoteLayout = normalized.layout === 'quote' || normalized.layout === 'quote-no-avatar'
     const titleLower = normalized.title

@@ -20,6 +20,14 @@ const ITEM_PER_SLIDE_SECTION_PATTERNS = [
   /应用场景/i,
   /应用公司/i,
   /应用部门/i,
+  // Server-side planbook modules that contain H3 sub-items
+  /创新成果/i,
+  /核心成果/i,
+  /试点应用/i,
+  /企业验证/i,
+  /技术交付/i,
+  /核心产品/i,
+  /公司核心产品/i,
   /core\s*technolog/i,
   /key\s*technolog/i,
   /application\s*(enterprise|company|case)/i,
@@ -61,7 +69,12 @@ export async function parseDocx(
 }
 
 function markdownToHtml(markdown: string): string {
-  return markdown
+  // Clean server-side Mermaid remnants (BeginMermaid...EndMermaid blocks)
+  const cleaned = markdown
+    .replace(/BeginMermaid[\s\S]*?EndMermaid/g, '')
+    .replace(/```mermaid[\s\S]*?```/g, '')
+
+  return cleaned
     .replace(/^##### (.+)$/gm, '<h5>$1</h5>')
     .replace(/^#### (.+)$/gm, '<h4>$1</h4>')
     .replace(/^### (.+)$/gm, '<h3>$1</h3>')
@@ -269,7 +282,7 @@ function splitSectionItems(content: string): Array<{ title: string; content: str
     .filter((line) => line.length > 0)
   if (lines.length === 0) return []
 
-  const bulletRegex = /^([-*•]|#{1,3}|[0-9]+[.)、]|[A-Za-z][.)])\s*(.+)$/
+  const bulletRegex = /^([-*•]|#{1,3}|[0-9]+[.)、]|[A-Za-z][.)]|[（(][0-9]+[)）])\s*(.+)$/
   const items: Array<{ title: string; content: string }> = []
   let current: string[] = []
 

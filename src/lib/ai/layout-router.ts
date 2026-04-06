@@ -2,19 +2,19 @@ import { DocumentChunk, LayoutType, SlideOutline } from '../types'
 import { getTemplateCharLimits } from '../utils/pretext-engine'
 
 const CHART_KEYWORDS = ['增长', '同比', '环比', '占比', '比例', '趋势', '数据', '%', '亿元', '万元', '数量', '预算', '营收', '收入', '成本', '利润', '盈利', '毛利率', '融资', '总产值', '渗透率', '份额']
-const TIMELINE_KEYWORDS = ['阶段', '里程碑', '时间', '计划', '节点', '路线图', '季度', '年份', '历程', '规划', '三步走']
-const COMPARISON_KEYWORDS = ['before-after', '对比分析', '优劣势对比', '差异对照', '传统方案', '现行方案', '新方案优势']
-const QUOTE_KEYWORDS = ['名言', '客户心声', '客户声音', '客户反馈', '用户原话', 'testimonial', '指出：', '表示：', '说道：']
-const METRIC_KEYWORDS = ['指标', 'kpi', '达成率', '效率', '转化率', '留存率', '预算', '营收', '收入', '成本', '利润', '盈利', '毛利率', '融资', '规模', '就业', '专利', '论文', '软著', '著作权', '成果', '准确率', '损耗', '周期']
+const TIMELINE_KEYWORDS = ['阶段', '里程碑', '时间', '计划', '节点', '路线图', '季度', '年份', '历程', '规划', '三步走', '第一阶段', '第二阶段', '第三阶段', '灯塔', '梯度', '深耕', '分步', '实施方案']
+const COMPARISON_KEYWORDS = ['before-after', '对比分析', '优劣势对比', '差异对照', '传统方案', '现行方案', '新方案优势', '竞品分析', '竞品对比', '竞争优势', '核心指标对比', '产品对比']
+const QUOTE_KEYWORDS = ['名言', '客户心声', '客户声音', '客户反馈', '用户原话', 'testimonial', '指出：', '表示：', '说道：', '专家评价', '指导评价', '教授评价', '领域专家', '高级工程师', '研究员', '博士生导师']
+const METRIC_KEYWORDS = ['指标', 'kpi', '达成率', '效率', '转化率', '留存率', '预算', '营收', '收入', '成本', '利润', '盈利', '毛利率', '融资', '规模', '就业', '专利', '论文', '软著', '著作权', '成果', '准确率', '损耗', '周期', '合格率', '满意度', '覆盖率', '节约', '降幅', '提升', '增收', '响应时间', '误差率', '采纳率', '发明专利', '实用新型', '经济效益', '社会效益']
 const IMAGE_KEYWORDS = ['架构', '流程图', '示意图', '场景', '图片', '视觉', '装置', '展示', '系统图']
-const TEAM_MEMBERS_KEYWORDS = ['团队', '成员', '主创', '负责人', '专家', '顾问', '合伙人', '创始人', '技术团队', '核心人员']
+const TEAM_MEMBERS_KEYWORDS = ['团队', '成员', '主创', '负责人', '专家', '顾问', '合伙人', '创始人', '技术团队', '核心人员', '团队成员', '团队结构', '人力资源', '组织架构']
 
 function countPotentialItems(text: string): number {
   const lines = (text || '')
     .split('\n')
     .map((line) => line.trim())
     .filter(Boolean)
-  const bulletLike = lines.filter((line) => /^([-*•]|[0-9]+[.)、]|[A-Za-z][.)])\s+/.test(line))
+  const bulletLike = lines.filter((line) => /^([-*•]|[0-9]+[.)、]|[A-Za-z][.)]|[（(][0-9]+[)）])\s+/.test(line))
   if (bulletLike.length > 0) return bulletLike.length
 
   const content = lines.join(' ')
@@ -47,13 +47,16 @@ function hasStrongNumericSignal(text: string): boolean {
 function hasTimelineSignal(text: string, title?: string, subtitle?: string): boolean {
   const combined = [title, subtitle, text].filter(Boolean).join('\n')
   const keywordHits = countKeywordHits(combined, TIMELINE_KEYWORDS)
-  const strongTitle = hasAny(`${title || ''}\n${subtitle || ''}`, ['推广模式', '里程碑', '发展历程', '路线图', '阶段目标', '时间轴'])
+  const strongTitle = hasAny(`${title || ''}\n${subtitle || ''}`, ['推广模式', '里程碑', '发展历程', '路线图', '阶段目标', '时间轴', '实施方案', '落地前景'])
   const yearHits = (combined.match(/\b(19|20)\d{2}\b/g) || []).length
   return strongTitle || keywordHits >= 2 || yearHits >= 2
 }
 
 function hasQuoteSignal(text: string, title?: string, subtitle?: string): boolean {
   const combined = [title, subtitle, text].filter(Boolean).join('\n')
+  // Definitive: if the title itself IS "专家评价" or "指导评价", the signal is definitive
+  const isTitleExactQuote = /专家评价|指导评价/.test(title || '')
+  if (isTitleExactQuote) return true
   // Must have BOTH a quote keyword AND actual direct-speech punctuation
   // (Chinese quotation marks, or colon followed by substantial quoted text)
   const hasKeyword = hasAny(combined, QUOTE_KEYWORDS)
