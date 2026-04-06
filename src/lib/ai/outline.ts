@@ -159,14 +159,25 @@ function enforceSpecialItemSlides(result: OutlineResult, chunks: DocumentChunk[]
       }
     })
 
-  const mergedSlides = [...filteredSlides, ...additionalSlides].sort((a, b) => {
+  // Separate cover/ending from content slides before sorting
+  const coverSlide = filteredSlides.find(s => s.layout === 'cover' || (s.index === 1 && normalizeRefChunks(s.refChunks).length === 0))
+  const endingSlide = filteredSlides.find(s => s.layout === 'ending' || (s.index === result.slides.length && normalizeRefChunks(s.refChunks).length === 0))
+  const contentSlides = filteredSlides.filter(s => s !== coverSlide && s !== endingSlide)
+
+  const mergedContent = [...contentSlides, ...additionalSlides].sort((a, b) => {
     const aOrder = normalizeRefChunks(a.refChunks)[0] ?? Number.MAX_SAFE_INTEGER
     const bOrder = normalizeRefChunks(b.refChunks)[0] ?? Number.MAX_SAFE_INTEGER
     if (aOrder !== bOrder) return aOrder - bOrder
     return a.index - b.index
   })
 
-  const slides = mergedSlides.map((slide, idx) => ({
+  // Re-assemble: cover first, content in order, ending last
+  const assembledSlides: SlideOutline[] = []
+  if (coverSlide) assembledSlides.push(coverSlide)
+  assembledSlides.push(...mergedContent)
+  if (endingSlide) assembledSlides.push(endingSlide)
+
+  const slides = assembledSlides.map((slide, idx) => ({
     ...slide,
     index: idx + 1,
     refChunks: normalizeRefChunks(slide.refChunks),
@@ -207,6 +218,17 @@ function normalizeOutline(
     if (index === result.slides.length - 1) {
       normalized.layout = 'ending'
       return normalized
+    }
+
+    // --- Hard guard: ban section-header (deprecated layout) ---
+    if (normalized.layout === 'section-header') {
+      debugLog?.('outline.sectionHeaderGuard.remapped', {
+        index: normalized.index,
+        title: normalized.title,
+        from: 'section-header',
+        to: 'text-center',
+      })
+      normalized.layout = 'text-center' as LayoutType
     }
     // --- Hard guard: ban quote layouts for case-study / validation content ---
     // LLM frequently misclassifies "产业验证" as quote-worthy, causing fabricated speaker quotes.
