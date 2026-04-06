@@ -3,7 +3,7 @@ import { getItemCountConstraintLines } from '../../layout-rules'
 import { getTemplateCharLimitsRange } from '../../utils/pretext-engine'
 
 const layoutSchemas: Record<string, string> = {
-  cover: `{
+  'cover': `{
   "layout": "cover",
   "title": "与页面主题一致的封面标题",
   "subtitle": "封面副标题"
@@ -103,7 +103,7 @@ const layoutSchemas: Record<string, string> = {
     { "icon": "money", "heading": "商业价值或社会效益", "body": "• 经济效益预测或成本分析\\n• 补充说明文本段落" }
   ]
 }`,
-  comparison: `{
+  'comparison': `{
   "layout": "comparison",
   "title": "与当前页面语义一致的标题",
   "subtitle": "两种方案或阶段的核心差异分析",
@@ -118,7 +118,7 @@ const layoutSchemas: Record<string, string> = {
     "tone": "negative"
   }
 }`,
-  timeline: `{
+  'timeline': `{
   "layout": "timeline",
   "title": "与当前页面语义一致的标题",
   "events": [
@@ -138,7 +138,7 @@ const layoutSchemas: Record<string, string> = {
     { "date": "2025", "title": "成果转化与推广", "description": "获得授权专利，启动商业化批量交付" }
   ]
 }`,
-  metrics: `{
+  'metrics': `{
   "layout": "metrics",
   "title": "与当前页面语义一致的标题",
   "subtitle": "对该组核心量化成果的背景说明与价值综述",
@@ -161,7 +161,7 @@ const layoutSchemas: Record<string, string> = {
     { "type": "paragraph", "text": "基于原文对以上指标的综合描述分析，字数需至少20字以上" }
   ]
 }`,
-  quote: `{
+  'quote': `{
   "layout": "quote",
   "title": "与当前页面语义一致的标题",
   "cards": [
@@ -179,7 +179,7 @@ const layoutSchemas: Record<string, string> = {
     { "heading": "引用人3 - 身份", "body": "引用内容3" }
   ]
 }`,
-  ending: `{
+  'ending': `{
   "layout": "ending",
   "title": "结束页标题",
   "subtitle": "结束页副标题"
