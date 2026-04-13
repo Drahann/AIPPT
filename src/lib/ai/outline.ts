@@ -191,16 +191,50 @@ function normalizeOutline(
   chunks: DocumentChunk[],
   debugLog?: (stage: string, payload: unknown) => void
 ): OutlineResult {
+  const MAX_TITLE_LENGTH = 30
+
   const slides = result.slides.map((slide, index) => {
+    const refs = normalizeRefChunks(slide.refChunks)
+    let title = normalizeMojibake(slide.title || '')
+
+    // --- Hard guard: force title to match chunk heading when 1:1 mapping ---
+    // LLM often ignores the "use chunk heading verbatim" rule and appends
+    // preamble content to the title, producing absurdly long strings.
+    if (refs.length === 1) {
+      const sourceChunk = chunks.find(c => c.order === refs[0])
+      if (sourceChunk) {
+        const chunkHeading = normalizeMojibake(sourceChunk.heading)
+        if (title.length > chunkHeading.length + 5 && title.startsWith(chunkHeading)) {
+          debugLog?.('outline.titleOverride', {
+            index: index + 1,
+            from: title,
+            to: chunkHeading,
+            reason: 'LLM appended content to chunk heading',
+          })
+          title = chunkHeading
+        }
+      }
+    }
+
+    // --- Fallback: truncate excessively long titles ---
+    if (title.length > MAX_TITLE_LENGTH) {
+      debugLog?.('outline.titleTruncate', {
+        index: index + 1,
+        original: title,
+        truncatedTo: MAX_TITLE_LENGTH,
+      })
+      title = title.slice(0, MAX_TITLE_LENGTH) + '…'
+    }
+
     const normalized: SlideOutline = {
       ...slide,
       index: index + 1,
-      title: normalizeMojibake(slide.title || ''),
+      title,
       subtitle: slide.subtitle ? normalizeMojibake(slide.subtitle) : undefined,
       contentHint: normalizeMojibake(slide.contentHint || ''),
       imageHint: slide.imageHint ? normalizeMojibake(slide.imageHint) : undefined,
       speakerNotes: slide.speakerNotes ? normalizeMojibake(slide.speakerNotes) : undefined,
-      refChunks: normalizeRefChunks(slide.refChunks),
+      refChunks: refs,
     }
 
     const candidates = getSlideLayoutCandidates(normalized, chunks)

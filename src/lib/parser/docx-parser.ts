@@ -239,13 +239,47 @@ function extractH3SubSections(h2Heading: string, contentHtml: string): ParsedSec
 
   const results: ParsedSection[] = []
 
-  // Content before the first H3 (preamble of the H2 section)
+  // Content before the first H3 (preamble / intro of the H2 section)
   const preambleHtml = contentHtml.substring(0, h3Matches[0].index)
-  const preambleText = htmlToText(preambleHtml)
+  let preambleText = htmlToText(preambleHtml)
+
+  // Content after the last H3 (trailing summary of the H2 section)
+  // Merge it into the preamble so front intro + back summary = 1 overview page
+  const lastH3 = h3Matches[h3Matches.length - 1]
+  const lastH3ContentStart = lastH3.index + lastH3.fullLength
+  const lastH3FullHtml = contentHtml.substring(lastH3ContentStart)
+  const lastH3FullText = htmlToText(lastH3FullHtml)
+
+  // Detect trailing summary: check if there's a paragraph break after the H3 content
+  // that looks like a standalone summary (not part of the H3's structured content)
+  const trailingSplit = lastH3FullText.split(/\n{2,}/)
+  let lastH3CleanText = lastH3FullText
+  let trailingSummary = ''
+  if (trailingSplit.length >= 2) {
+    const lastParagraph = trailingSplit[trailingSplit.length - 1].trim()
+    // If the last paragraph doesn't start with a structured marker (bold key, bullet, etc.)
+    // and is reasonably long, treat it as a trailing summary
+    if (
+      lastParagraph.length > 30 &&
+      !/^(\*\*|[-*•]|[0-9]+[.)、])/.test(lastParagraph)
+    ) {
+      trailingSummary = lastParagraph
+      lastH3CleanText = trailingSplit.slice(0, -1).join('\n\n')
+    }
+  }
+
+  if (trailingSummary) {
+    preambleText = preambleText.trim()
+      ? `${preambleText.trim()}\n\n${trailingSummary}`
+      : trailingSummary
+  }
+
   if (preambleText.trim().length > 10) {
     results.push({
       heading: h2Heading,
-      headingLevel: 2,
+      // Use headingLevel 1 to prevent buildChunks from re-splitting via
+      // shouldSplitSectionByItems (which only triggers on headingLevel === 2).
+      headingLevel: 1,
       content: preambleText,
       tables: extractTables(preambleHtml),
     })
@@ -255,14 +289,16 @@ function extractH3SubSections(h2Heading: string, contentHtml: string): ParsedSec
   for (let j = 0; j < h3Matches.length; j++) {
     const h3 = h3Matches[j]
     const h3ContentStart = h3.index + h3.fullLength
-    const h3ContentEnd = j + 1 < h3Matches.length ? h3Matches[j + 1].index : contentHtml.length
+    const isLast = j === h3Matches.length - 1
+    const h3ContentEnd = isLast ? contentHtml.length : h3Matches[j + 1].index
     const h3ContentHtml = contentHtml.substring(h3ContentStart, h3ContentEnd)
 
     const cleanText = h3.text.replace(/^[0-9]+[、.，\s]+/, '')
     results.push({
-      heading: `${h2Heading}：${cleanText}`,
+      heading: `${h2Heading} - ${cleanText}`,
       headingLevel: 3,
-      content: htmlToText(h3ContentHtml),
+      // For the last H3, use the cleaned text without trailing summary
+      content: isLast && trailingSummary ? lastH3CleanText : htmlToText(h3ContentHtml),
       tables: extractTables(h3ContentHtml),
     })
   }
