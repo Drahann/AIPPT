@@ -94,28 +94,60 @@ export function BodyContent({ body, className = '' }: BodyContentProps) {
   )
 }
 
-export function getIconSvg(iconName?: string) {
-  return <DynamicIcon name={iconName} />
+// Curated safe icon list — all verified to exist in public/remixicons/
+const SAFE_ICONS: string[] = [
+  'star',          // System/star-fill.svg
+  'bar-chart',     // Business/bar-chart-fill.svg
+  'lightbulb',     // Others/lightbulb-fill.svg
+  'shield',        // System/shield-fill.svg
+  'rocket',        // Finance/rocket-fill.svg (actually Map/rocket-fill.svg)
+  'flask',         // Others/flask-fill.svg
+  'award',         // Business/award-fill.svg
+  'compass-3',     // Map/compass-3-fill.svg
+  'focus',         // Design/focus-fill.svg
+  'puzzle',        // Development/puzzle-fill.svg
+]
+const PERSON_ICON = 'user'  // User/user-fill.svg — for team-members
+
+// Simple deterministic hash to ensure same name always maps to same icon
+function hashStr(s: string): number {
+  let h = 0
+  for (let i = 0; i < s.length; i++) {
+    h = ((h << 5) - h + s.charCodeAt(i)) | 0
+  }
+  return Math.abs(h)
 }
 
-export function DynamicIcon({ name }: { name?: string }) {
+export function getIconSvg(iconName?: string, forceUser?: boolean) {
+  return <DynamicIcon name={iconName} forceUser={forceUser} />
+}
+
+export function DynamicIcon({ name, forceUser }: { name?: string; forceUser?: boolean }) {
   const [svgStr, setSvgStr] = useState<string | null>(null)
 
   useEffect(() => {
     let active = true
-    const target = (name || 'star').replace('-line', '').replace('-fill', '').toLowerCase()
+    // If forceUser (team-members), always use person icon
+    // Otherwise pick from safe list deterministically based on name
+    const target = forceUser
+      ? PERSON_ICON
+      : SAFE_ICONS[hashStr(name || 'default') % SAFE_ICONS.length]
+
     const map = iconMap as Record<string, string>
     const path = map[target] || map['star']
     if (path) {
       fetch(`/remixicons/${path}`)
-        .then(r => r.text())
-        .then(txt => {
-          if (active) setSvgStr(txt)
+        .then(r => {
+          if (!r.ok) return null
+          return r.text()
         })
-        .catch(console.error)
+        .then(txt => {
+          if (active && txt) setSvgStr(txt)
+        })
+        .catch(() => {})
     }
     return () => { active = false }
-  }, [name])
+  }, [name, forceUser])
 
   if (!svgStr) return <span style={{ display: 'inline-block', width: '24px', height: '24px', opacity: 0 }} />
   

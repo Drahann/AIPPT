@@ -362,8 +362,9 @@ export const templateBounds: Record<LayoutType, TemplateBoundsEntry> = {
     body:  { w: 740,  h: 880, defaultTier: 'B2' },
   },
   'chart-line': {
-    title: { w: 1600, h: 100, defaultTier: 'H2' },
-    body:  { w: 1600, h: 800, defaultTier: 'B1' },     // old B2 → new B1
+    // Bottom 30% area: 42% title | 58% description, padding 1rem 1.35rem
+    title: { w: 760,  h: 90,  defaultTier: 'H2' },   // 42% of 1920 ≈ 806, minus padding
+    body:  { w: 1040, h: 240, defaultTier: 'B1' },    // 58% of 1920 ≈ 1114, minus padding
   },
   'chart-pie': {
     title: { w: 1600, h: 100, defaultTier: 'H2' },

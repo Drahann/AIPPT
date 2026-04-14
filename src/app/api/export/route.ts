@@ -21,6 +21,7 @@ export async function POST(request: NextRequest) {
       },
     })
   } catch (e) {
+    console.error('[Export API] Error:', e instanceof Error ? e.stack : e);
     const msg = e instanceof Error ? e.message : 'Export failed'
     return NextResponse.json({ error: msg }, { status: 500 })
   }

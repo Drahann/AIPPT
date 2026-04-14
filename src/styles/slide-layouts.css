@@ -609,6 +609,140 @@
   color: color-mix(in srgb, var(--color-text) 88%, transparent 12%);
 }
 
+/* --- 7B. Chart Line (image-center style) ---
+   Top 70% = line chart visual, bottom 30% = title + description
+*/
+.layout-chart-line .slide-card-inner.chart-line-shell {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0;
+  background: var(--color-canvas);
+}
+
+.layout-chart-line .chart-line-visual {
+  flex: 0 0 70%;
+  min-height: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1.2rem 0;
+  background: color-mix(in srgb, var(--color-surface-alt) 85%, #ffffff 15%);
+}
+
+.layout-chart-line .chart-line-chart-wrap {
+  flex: 1;
+  min-height: 0;
+  position: relative;
+}
+
+.layout-chart-line .chart-line-svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: visible;
+}
+
+/* X-axis labels rendered as HTML to avoid SVG text extraction issues */
+.layout-chart-line .chart-line-x-labels {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1.8rem;
+  pointer-events: none;
+}
+
+.layout-chart-line .chart-line-x-label {
+  position: absolute;
+  transform: translateX(-50%);
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  white-space: nowrap;
+}
+
+/* Legend */
+.layout-chart-line .chart-line-legend {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 0.4rem 0 0.6rem;
+  flex-shrink: 0;
+}
+
+.layout-chart-line .chart-line-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.layout-chart-line .chart-line-legend-dot {
+  width: 0.65rem;
+  height: 0.65rem;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.layout-chart-line .chart-line-legend-text {
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--color-text);
+  max-width: 12rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Bottom text area — mirrors image-center-aether-text */
+.layout-chart-line .chart-line-text {
+  flex: 1;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 42%) minmax(0, 58%);
+  align-items: start;
+  gap: 1.2rem;
+  padding: 1rem 1.35rem 0.95rem;
+  color: var(--color-text);
+}
+
+.layout-chart-line .chart-line-title {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 0.95;
+  letter-spacing: -0.035em;
+  color: color-mix(in srgb, var(--color-text) 96%, transparent 4%);
+  text-wrap: balance;
+}
+
+.layout-chart-line .chart-line-description-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.layout-chart-line .chart-line-subtitle {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: 0.92rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--color-primary);
+}
+
+.layout-chart-line .chart-line-desc {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  line-height: 1.35;
+  color: color-mix(in srgb, var(--color-text) 85%, transparent 15%);
+}
+
 /* --- 8. Image Full (background image + overlay text) --- */
 .layout-image-full .slide-card-inner {
   display: flex;

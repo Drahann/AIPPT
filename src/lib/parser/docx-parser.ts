@@ -173,16 +173,21 @@ function extractSections(html: string): ParsedSection[] {
   const h2Matches = matches.filter((item) => item.level === 2)
   if (h2Matches.length > 0) {
     const preamble = html.substring(0, h2Matches[0].index)
-    const { images: preambleImages, cleanHtml: preambleClean } = extractImagesFromHtml(preamble)
-    const preambleText = htmlToText(preambleClean)
-    if (preambleText.trim().length > 20) {
-      sections.push({
-        heading: '引言',
-        headingLevel: 1,
-        content: preambleText,
-        tables: extractTables(preambleClean),
-        images: preambleImages,
-      })
+    // Skip cover page: if preamble contains an H1 tag, it's a cover/title page
+    // (the title is already extracted separately from body.title)
+    const isCoverPage = /<h1[^>]*>/i.test(preamble)
+    if (!isCoverPage) {
+      const { images: preambleImages, cleanHtml: preambleClean } = extractImagesFromHtml(preamble)
+      const preambleText = htmlToText(preambleClean)
+      if (preambleText.trim().length > 20) {
+        sections.push({
+          heading: '引言',
+          headingLevel: 1,
+          content: preambleText,
+          tables: extractTables(preambleClean),
+          images: preambleImages,
+        })
+      }
     }
 
     for (let i = 0; i < h2Matches.length; i += 1) {

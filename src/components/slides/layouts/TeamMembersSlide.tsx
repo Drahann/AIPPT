@@ -35,7 +35,7 @@ export function TeamMembersSlide({ slide, editable, onUpdate }: Props) {
               <div className="team-member-info">
                 <div className="team-member-avatar">
                   {member.icon ? (
-                    <DynamicIcon name={member.icon} />
+                    <DynamicIcon name={member.icon} forceUser />
                   ) : (
                     <div className="w-full h-full flex items-center justify-center opacity-30">
                       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">

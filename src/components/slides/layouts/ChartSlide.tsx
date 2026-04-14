@@ -24,15 +24,17 @@ export function ChartSlide({ slide, editable, onUpdate }: Props) {
     )
   }
 
-  // Pre-calculate max value for scaling bar/line charts
+  // Pre-calculate min/max values for scaling bar/line charts
   let maxVal = 0;
+  let minVal = 0;
   chart.series.forEach(s => {
     (s.values || []).forEach(v => {
       const numV = Number(v) || 0;
       if (numV > maxVal) maxVal = numV;
+      if (numV < minVal) minVal = numV;
     })
   });
-  if (maxVal === 0) maxVal = 100;
+  if (maxVal === 0 && minVal === 0) maxVal = 100;
 
   // Shared colors from our utility
   const colorCount = chart.type === 'pie' ? chart.categories.length : chart.series.length;
@@ -271,60 +273,156 @@ export function ChartSlide({ slide, editable, onUpdate }: Props) {
     )
   }
 
-  // Render Line Chart
+  // Render Line Chart — image-center style: top 70% chart, bottom 30% title + description
   const renderLineChart = () => {
     const w = 800
-    const h = 400
-    const padding = 40
-    
+    const h = 340
+    const padL = 60, padR = 30, padT = 20, padB = 50
+
+    const plotW = w - padL - padR
+    const plotH = h - padT - padB
+
+    // Calculate nice Y-axis bounds (supports negative values)
+    const niceRound = (val: number, up: boolean) => {
+      if (val === 0) return 0
+      const absVal = Math.abs(val)
+      if (absVal <= 5) return up ? Math.ceil(val) : Math.floor(val)
+      const magnitude = Math.pow(10, Math.floor(Math.log10(absVal)))
+      return up ? Math.ceil(val / magnitude) * magnitude : Math.floor(val / magnitude) * magnitude
+    }
+    const niceMax = niceRound(maxVal, true) || 100
+    const niceMin = niceRound(minVal, false)
+    const range = niceMax - niceMin || 1
+
+    const tickCount = 5
+    const yTicks = Array.from({ length: tickCount }, (_, i) => {
+      const ratio = i / (tickCount - 1)
+      const value = niceMax - ratio * range
+      const formatted = Math.abs(range) <= 10 ? value.toFixed(1) : Math.round(value).toString()
+      return { value, formatted, y: padT + ratio * plotH }
+    })
+
+    // Helper: map data value to SVG Y coordinate
+    const valToY = (v: number) => padT + plotH * (1 - (v - niceMin) / range)
+
+    const description = displayParagraphs.join(' ')
+
     return (
-      <div className="relative w-full h-full flex items-center justify-center pb-8 pt-4 overflow-hidden">
-        {/* Force aspect ratio to prevent "doubling" effect on wide screens */}
-        <div style={{ width: '100%', maxWidth: '800px', aspectRatio: '2 / 1', position: 'relative' }}>
-          <svg viewBox={`0 0 ${w} ${h}`} className="w-full h-full overflow-hidden">
-            <line x1={padding} y1={h - padding} x2={w - padding} y2={h - padding} stroke="var(--color-border)" strokeWidth="2" />
-            <line x1={padding} y1={padding} x2={padding} y2={h - padding} stroke="var(--color-border)" strokeWidth="2" />
-            
-            {chart.series.map((series, sIdx) => {
-               const pointsData = (series.values || [])
-                 .map((v, i) => {
-                   if (v === null || v === undefined) return null;
-                   const x = padding + (i * ((w - 2 * padding) / Math.max(1, chart.categories.length - 1)))
-                   const y = (h - padding) - (((Number(v) || 0) / maxVal) * (h - 2 * padding))
-                   return { x, y, v }
-                 })
-                 .filter(p => p !== null) as {x: number, y: number, v: any}[]
-               
-               const pointsString = pointsData.map(p => `${p.x},${p.y}`).join(' ')
-               const color = seriesColors[sIdx % seriesColors.length]
-               
-               return (
+      <div className="slide-card-inner chart-line-shell">
+        {/* Top: Chart visual area (70%) */}
+        <div className="chart-line-visual">
+          <div className="chart-line-chart-wrap">
+            <svg viewBox={`0 0 ${w} ${h}`} className="chart-line-svg">
+              {/* Grid lines */}
+              {yTicks.map((tick, i) => (
+                <g key={`grid-${i}`}>
+                  <line x1={padL} y1={tick.y} x2={w - padR} y2={tick.y}
+                    stroke="var(--color-border)" strokeWidth="1" strokeDasharray={i === tickCount - 1 ? 'none' : '4,3'} opacity={i === tickCount - 1 ? 1 : 0.5} />
+                  <text x={padL - 8} y={tick.y + 4} textAnchor="end"
+                    fill="var(--color-text-secondary)" fontSize="11" fontFamily="var(--font-body)">
+                    {tick.formatted}
+                  </text>
+                </g>
+              ))}
+
+              {/* Zero line if range spans negative */}
+              {niceMin < 0 && niceMax > 0 && (
+                <line x1={padL} y1={valToY(0)} x2={w - padR} y2={valToY(0)}
+                  stroke="var(--color-text-secondary)" strokeWidth="1.5" opacity={0.6} />
+              )}
+
+              {/* Data lines + points */}
+              {chart.series.map((series, sIdx) => {
+                const pointsData = (series.values || [])
+                  .map((v, i) => {
+                    if (v === null || v === undefined) return null
+                    const numV = Number(v) || 0
+                    const x = padL + (i * (plotW / Math.max(1, chart.categories.length - 1)))
+                    const y = valToY(numV)
+                    return { x, y, v: numV }
+                  })
+                  .filter(p => p !== null) as { x: number; y: number; v: number }[]
+
+                const color = seriesColors[sIdx % seriesColors.length]
+                const pointsString = pointsData.map(p => `${p.x},${p.y}`).join(' ')
+
+                return (
                   <g key={sIdx}>
                     {pointsData.length > 1 && (
-                      <polyline points={pointsString} fill="none" stroke={color} strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
+                      <polyline points={pointsString} fill="none" stroke={color}
+                        strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
                     )}
                     {pointsData.map((p, i) => (
-                      <circle key={i} cx={p.x} cy={p.y} r="8" fill={color} className="cursor-pointer">
+                      <circle key={i} cx={p.x} cy={p.y} r="6" fill={color}>
                         <title>{series.name}: {p.v}</title>
                       </circle>
                     ))}
                   </g>
-               )
-            })}
-            
-            {chart.categories.map((cat, i) => {
-              const x = padding + (i * ((w - 2 * padding) / Math.max(1, chart.categories.length - 1)))
-              return (
-                <text key={i} x={x} y={h - 15} textAnchor="middle" fill="var(--color-text-secondary)" fontSize="14" fontWeight="500">
-                  {cat}
-                </text>
-              )
-            })}
-          </svg>
+                )
+              })}
+            </svg>
+
+            {/* X-axis labels as HTML (avoids SVG text extraction issue in exporter) */}
+            <div className="chart-line-x-labels">
+              {chart.categories.map((cat, i) => {
+                const leftPct = ((padL + i * (plotW / Math.max(1, chart.categories.length - 1))) / w) * 100
+                return (
+                  <span key={i} className="chart-line-x-label" style={{ left: `${leftPct}%` }}>
+                    {cat}
+                  </span>
+                )
+              })}
+            </div>
+          </div>
+
+          {/* Legend */}
+          <div className="chart-line-legend">
+            {chart.series.map((series, sIdx) => (
+              <div key={sIdx} className="chart-line-legend-item">
+                <span className="chart-line-legend-dot" style={{ backgroundColor: seriesColors[sIdx % seriesColors.length] }} />
+                <span className="chart-line-legend-text">{series.name}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Bottom: Title + Description (30%) */}
+        <div className="chart-line-text">
+          <EditableText
+            value={slide.title}
+            tag="h2"
+            className="chart-line-title"
+            editable={editable}
+            onChange={(v) => onUpdate?.({ ...slide, title: v })}
+          />
+          <div className="chart-line-description-wrap">
+            {chart.title && (
+              <EditableText
+                value={chart.title}
+                tag="p"
+                className="chart-line-subtitle"
+                editable={editable}
+                onChange={(v) => {
+                  const newChart = { ...chart, title: v }
+                  onUpdate?.({ ...slide, chart: newChart })
+                }}
+              />
+            )}
+            {description && (
+              <EditableText
+                value={description}
+                tag="p"
+                className="chart-line-desc"
+                editable={editable}
+                onChange={(v) => onUpdate?.({ ...slide, body: [{ type: 'paragraph', text: v }] })}
+              />
+            )}
+          </div>
         </div>
       </div>
     )
   }
+
 
   // Render Pie Chart
   const renderPieChart = () => {
@@ -480,6 +578,11 @@ export function ChartSlide({ slide, editable, onUpdate }: Props) {
     )
   }
 
+  if (chart.type === 'line') {
+    return renderLineChart()
+  }
+
+  // Generic fallback for unknown chart types
   return (
     <div className="slide-card-inner flex flex-col h-full overflow-hidden">
       <EditableText
@@ -489,36 +592,8 @@ export function ChartSlide({ slide, editable, onUpdate }: Props) {
         editable={editable}
         onChange={(v) => onUpdate?.({ ...slide, title: v })}
       />
-      
-      {chart.title && (
-        <EditableText
-          value={chart.title}
-          tag="h3"
-          className="slide-subtitle !text-center !opacity-80 -mt-2 mb-6"
-          editable={editable}
-          onChange={(v) => {
-             const newChart = { ...chart, title: v };
-             onUpdate?.({ ...slide, chart: newChart });
-          }}
-        />
-      )}
-      
-      <div className="flex-1 w-full bg-[var(--color-surface-alt)] rounded-xl mt-4 p-8 flex flex-col overflow-hidden">
-        {chart.type === 'line' && renderLineChart()}
-        
-        {/* Simple Legend for Bar and Line */}
-        {(chart.type === 'line') && (
-           <div className="flex w-full items-center justify-center gap-6 mt-4 pt-4 border-t border-[var(--color-border)]">
-              {chart.series.map((series, sIdx) => {
-                return (
-                  <div key={sIdx} className="flex items-center gap-2">
-                    <div className="w-4 h-4 rounded-sm" style={{ backgroundColor: seriesColors[sIdx % seriesColors.length] }}></div>
-                    <span className="text-sm font-medium text-[var(--color-text)] truncate max-w-[200px]">{series.name}</span>
-                  </div>
-                )
-              })}
-           </div>
-        )}
+      <div className="flex-1 flex items-center justify-center text-gray-500">
+        不支持的图表类型
       </div>
     </div>
   )

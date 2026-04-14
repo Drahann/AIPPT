@@ -1,6 +1,47 @@
 import PptxGenJS from 'pptxgenjs'
 import * as fs from 'fs'
 import * as path from 'path'
+import * as http from 'http'
+import * as https from 'https'
+
+/** Download a remote image (http or https) and return as data URI. Returns null on failure. */
+async function fetchImageAsBase64(url: string): Promise<string | null> {
+  return new Promise((resolve) => {
+    const timeout = 8000
+    const getter = url.startsWith('https') ? https.get : http.get
+    const req = getter(url, { timeout }, (res) => {
+      if (res.statusCode && res.statusCode >= 300 && res.statusCode < 400 && res.headers.location) {
+        // Follow redirect
+        fetchImageAsBase64(res.headers.location).then(resolve)
+        return
+      }
+      if (res.statusCode !== 200) {
+        console.warn(`[PPTX Export] Image fetch ${res.statusCode}: ${url}`)
+        res.resume()
+        resolve(null)
+        return
+      }
+      const chunks: Buffer[] = []
+      res.on('data', (chunk: Buffer) => chunks.push(chunk))
+      res.on('end', () => {
+        const buf = Buffer.concat(chunks)
+        const contentType = res.headers['content-type'] || 'image/png'
+        const mime = contentType.split(';')[0].trim()
+        resolve(`data:${mime};base64,${buf.toString('base64')}`)
+      })
+      res.on('error', () => resolve(null))
+    })
+    req.on('error', (err) => {
+      console.warn(`[PPTX Export] Image fetch error: ${url}`, err.message)
+      resolve(null)
+    })
+    req.on('timeout', () => {
+      req.destroy()
+      console.warn(`[PPTX Export] Image fetch timeout: ${url}`)
+      resolve(null)
+    })
+  })
+}
 
 // Load paper texture background as base64 once at module level
 let paperBgBase64: string | null = null
@@ -9,7 +50,7 @@ function getPaperBgBase64(): string | null {
   try {
     const bgPath = path.join(process.cwd(), 'public', 'assets', 'paper-bg-1920x1080.png')
     const buf = fs.readFileSync(bgPath)
-    paperBgBase64 = `image/png;base64,${buf.toString('base64')}`
+    paperBgBase64 = `data:image/png;base64,${buf.toString('base64')}`
     return paperBgBase64
   } catch {
     console.warn('[PPTX] Paper background not found, skipping')
@@ -162,6 +203,32 @@ function getFontRole(el: any): 'heading' | 'body' {
 }
 
 export async function generateUniversalPptx(snapshots: any[], title?: string): Promise<Buffer> {
+  console.log(`[PPTX Export] Starting: ${snapshots.length} snapshots, title="${title}"`);
+
+  // Pre-download all remote images to avoid PptxGenJS http/https issues
+  const imageCache = new Map<string, string>();
+  const remoteUrls = new Set<string>();
+  for (const snap of snapshots) {
+    for (const el of (snap.elements || [])) {
+      const src = el.src || null;
+      let bgUrl: string | null = null;
+      if (!src && el.backgroundImage && el.backgroundImage !== 'none') {
+        const m = el.backgroundImage.match(/url\(["']?([^"']+)["']?\)/);
+        if (m) bgUrl = m[1];
+      }
+      const url = src || bgUrl;
+      if (url && url.startsWith('http')) remoteUrls.add(url);
+    }
+  }
+  if (remoteUrls.size > 0) {
+    console.log(`[PPTX Export] Pre-downloading ${remoteUrls.size} remote images...`);
+    const downloads = Array.from(remoteUrls).map(async (url) => {
+      const data = await fetchImageAsBase64(url);
+      if (data) imageCache.set(url, data);
+    });
+    await Promise.all(downloads);
+    console.log(`[PPTX Export] Downloaded ${imageCache.size}/${remoteUrls.size} images`);
+  }
   ensureCanvasPolyfillForExporter();
   const { prepareWithSegments, layoutWithLines } = await import('@chenglou/pretext');
 
@@ -171,7 +238,9 @@ export async function generateUniversalPptx(snapshots: any[], title?: string): P
 
   snapshots.sort((a, b) => a.slideIndex - b.slideIndex);
 
-  snapshots.forEach((snapData) => {
+  snapshots.forEach((snapData, snapIdx) => {
+    try {
+    console.log(`[PPTX Export] Slide ${snapIdx + 1}/${snapshots.length}: ${(snapData.elements || []).length} elements`);
     const slide = pptx.addSlide();
 
     // Apply paper texture as background (lowest layer)
@@ -203,8 +272,20 @@ export async function generateUniversalPptx(snapshots: any[], title?: string): P
     const FONT_SCALE = 960 / baseLogicalWidth;
     const WEIGHT_COEFF = 1.0; // Relaxed: only truly bold (font-weight >= 750) will be exported as bold
 
-    sorted.forEach((el) => {
+    sorted.forEach((el, elIdx) => {
+      try {
       if (el.opacity === "0" || el.display === "none") return;
+
+      // Skip full-slide white/near-white background elements that would cover the paper texture
+      const elW = parseFloat(el.width) || 0;
+      const elH = parseFloat(el.height) || 0;
+      if (elW >= 95 && elH >= 95) {
+        const rawBg = (el.backgroundColor || '').toLowerCase().replace(/\s/g, '');
+        // Detect white-ish backgrounds: #fff, #ffffff, rgb(255,255,255), rgba(255,255,255,1), etc.
+        const isWhiteBg = /^(#fff(fff)?|rgb\(255,255,255\)|rgba\(255,255,255,[01]\))$/.test(rawBg) ||
+                          rawBg === 'white';
+        if (isWhiteBg) return; // skip — paper texture is the background
+      }
 
       const x = parseFloat(el.x) + '%';
       const y = parseFloat(el.y) + '%';
@@ -254,14 +335,20 @@ export async function generateUniversalPptx(snapshots: any[], title?: string): P
       }
 
       if (imageUrl || gradientData) {
-        const finalImg = imageUrl || gradientData;
-        if (finalImg && (finalImg.startsWith('http') || finalImg.startsWith('data:'))) {
+        let finalImg = imageUrl || gradientData;
+        // Use pre-downloaded cache for remote images
+        if (finalImg && finalImg.startsWith('http') && imageCache.has(finalImg)) {
+          finalImg = imageCache.get(finalImg)!;
+        }
+        // Only add images that are data URIs (remote images have been pre-downloaded)
+        if (finalImg && finalImg.startsWith('data:')) {
           slide.addImage({
-            path: finalImg.startsWith('http') ? finalImg : undefined,
-            data: finalImg.startsWith('data:') ? finalImg : undefined,
+            data: finalImg,
             x: x as any, y: y as any, w: w as any, h: h as any,
             sizing: { type: (el.objectFit === 'contain' ? 'contain' : 'cover') as any, w: w as any, h: h as any }
           });
+        } else if (finalImg && finalImg.startsWith('http')) {
+          console.warn(`[PPTX Export] Skipping uncached remote image: ${finalImg.slice(0, 80)}`);
         }
       } else if (fill || borderWidth > 0 || bwTop > 0 || bwRight > 0 || bwBottom > 0 || bwLeft > 0) {
         let effectiveBorderWidth = borderWidth;
@@ -422,9 +509,23 @@ export async function generateUniversalPptx(snapshots: any[], title?: string): P
           wrap: false 
         });
       }
+      } catch (elErr) {
+        console.error(`[PPTX Export] Error on element ${elIdx} (tag=${el.tag}, class=${(el.className || '').slice(0, 60)}):`, elErr);
+      }
     });
 
+    } catch (slideErr) {
+      console.error(`[PPTX Export] Error on slide ${snapIdx + 1}:`, slideErr);
+    }
   });
 
-  return pptx.write({ outputType: 'nodebuffer' }) as Promise<Buffer>;
+  try {
+    console.log('[PPTX Export] Writing PPTX buffer...');
+    const buf = await (pptx.write({ outputType: 'nodebuffer' }) as Promise<Buffer>);
+    console.log(`[PPTX Export] Done, ${buf.length} bytes`);
+    return buf;
+  } catch (writeErr) {
+    console.error('[PPTX Export] Failed to write PPTX:', writeErr);
+    throw writeErr;
+  }
 }

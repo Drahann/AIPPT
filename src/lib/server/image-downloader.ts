@@ -37,9 +37,9 @@ export async function processMarkdownImages(
         images.push({ url: localBase64, description: alt, nearestHeading })
         console.log(`[ImageDL] Read local file: ${url}`)
       } else {
-        // File not found — keep original, still track position
-        images.push({ url, description: alt, nearestHeading })
-        console.warn(`[ImageDL] Local file not found: ${url}`)
+        // File not found — remove broken image from markdown to prevent 404 in renderer
+        replacements.push({ original: match[0], replacement: '' })
+        console.warn(`[ImageDL] Local file not found, removed: ${url}`)
       }
       continue
     }

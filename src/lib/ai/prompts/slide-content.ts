@@ -216,9 +216,12 @@ const layoutSchemas: Record<string, string> = {
   'chart-line': `{
   "layout": "chart-line",
   "title": "与当前页面语义一致的标题",
+  "body": [
+    { "type": "paragraph", "text": "对折线图数据趋势的深入分析与解读，包含具体数据引用和变化趋势判断，以及基于数据得出的核心结论或行动建议，2-3句话" }
+  ],
   "chart": {
     "type": "line",
-    "title": "趋势图标题",
+    "title": "趋势图标题（简短描述图表含义）",
     "categories": ["Q1", "Q2", "Q3", "Q4"],
     "series": [{ "name": "数据系列", "values": [10, 20, 30, 40] }]
   }
