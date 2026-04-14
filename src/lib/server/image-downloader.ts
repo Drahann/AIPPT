@@ -30,8 +30,17 @@ export async function processMarkdownImages(
 
     // Only download external HTTP(S) URLs
     if (!url.startsWith('http://') && !url.startsWith('https://')) {
-      // Non-HTTP images (mermaid local paths, etc.) — keep in markdown, track position
-      images.push({ url, description: alt, nearestHeading })
+      // Non-HTTP images (mermaid local paths, etc.) — try reading from local filesystem
+      const localBase64 = readLocalImageAsBase64(url)
+      if (localBase64) {
+        replacements.push({ original: match[0], replacement: `![${alt}](${localBase64})` })
+        images.push({ url: localBase64, description: alt, nearestHeading })
+        console.log(`[ImageDL] Read local file: ${url}`)
+      } else {
+        // File not found — keep original, still track position
+        images.push({ url, description: alt, nearestHeading })
+        console.warn(`[ImageDL] Local file not found: ${url}`)
+      }
       continue
     }
 
@@ -67,6 +76,33 @@ async function downloadImageAsBase64(url: string): Promise<string | null> {
     const contentType = response.headers.get('content-type') || 'image/png'
     const buffer = Buffer.from(await response.arrayBuffer())
     return `data:${contentType};base64,${buffer.toString('base64')}`
+  } catch {
+    return null
+  }
+}
+
+/**
+ * Read a local image file (e.g. mermaid diagram PNG) and convert to base64 data URL.
+ * Paths like /root/rag-agent/media/mermaid/xxx.png come from the rag-agent container
+ * and are accessible via shared volume mount.
+ */
+function readLocalImageAsBase64(filePath: string): string | null {
+  try {
+    const fs = require('fs')
+    const path = require('path')
+    if (!fs.existsSync(filePath)) return null
+    const ext = path.extname(filePath).toLowerCase()
+    const mimeMap: Record<string, string> = {
+      '.png': 'image/png',
+      '.jpg': 'image/jpeg',
+      '.jpeg': 'image/jpeg',
+      '.gif': 'image/gif',
+      '.svg': 'image/svg+xml',
+      '.webp': 'image/webp',
+    }
+    const mime = mimeMap[ext] || 'image/png'
+    const buf = fs.readFileSync(filePath)
+    return `data:${mime};base64,${buf.toString('base64')}`
   } catch {
     return null
   }

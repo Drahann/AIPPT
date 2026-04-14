@@ -13,6 +13,8 @@ services:
       # 持久化 debug 数据和临时文件（可选）
       - ./debug-data:/app/debug-data
       - ./tmp:/app/tmp
+      # rag-agent 共享数据（mermaid 图片等）
+      - /home/dell/docker_dir/rag-agent:/root/rag-agent:ro
     restart: unless-stopped
     # PPT 生成 + Playwright 需要较多内存
     deploy:
