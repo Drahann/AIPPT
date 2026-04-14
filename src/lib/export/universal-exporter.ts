@@ -1,4 +1,22 @@
 import PptxGenJS from 'pptxgenjs'
+import * as fs from 'fs'
+import * as path from 'path'
+
+// Load paper texture background as base64 once at module level
+let paperBgBase64: string | null = null
+function getPaperBgBase64(): string | null {
+  if (paperBgBase64 !== null) return paperBgBase64 || null
+  try {
+    const bgPath = path.join(process.cwd(), 'public', 'assets', 'paper-bg-1920x1080.png')
+    const buf = fs.readFileSync(bgPath)
+    paperBgBase64 = `image/png;base64,${buf.toString('base64')}`
+    return paperBgBase64
+  } catch {
+    console.warn('[PPTX] Paper background not found, skipping')
+    paperBgBase64 = ''
+    return null
+  }
+}
 
 let polyfillInstalledForExporter = false;
 function ensureCanvasPolyfillForExporter() {
@@ -155,6 +173,12 @@ export async function generateUniversalPptx(snapshots: any[], title?: string): P
 
   snapshots.forEach((snapData) => {
     const slide = pptx.addSlide();
+
+    // Apply paper texture as background (lowest layer)
+    const bgData = getPaperBgBase64()
+    if (bgData) {
+      slide.background = { data: bgData } as any
+    }
     const elements = snapData.elements || [];
     const slideW = snapData.slideWidth || 960;
     

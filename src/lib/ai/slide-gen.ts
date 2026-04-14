@@ -10,7 +10,7 @@ import { templateBounds } from '../layout-specs'
 export async function generateSlideContent(
   outline: SlideOutline,
   chunks: DocumentChunk[],
-  imagePool?: { url: string; description: string; source: 'user' | 'docx' }[],
+  imagePool?: { url: string; description: string; source: 'user' | 'docx' | 'mermaid' }[],
   options?: { language?: string; debugLog?: (stage: string, payload: unknown) => void }
 ): Promise<SlideContent> {
   const maxAttempts = 3
@@ -185,7 +185,7 @@ export async function generateSlideContent(
 function hydrateSlideContent(
   content: SlideContent,
   outline: SlideOutline,
-  imagePool?: { url: string; description: string; source: 'user' | 'docx' }[]
+  imagePool?: { url: string; description: string; source: 'user' | 'docx' | 'mermaid' }[]
 ): SlideContent {
   const next: SlideContent = {
     ...content,
@@ -226,7 +226,7 @@ function hydrateSlideContent(
 export async function generateAllSlides(
   outlines: SlideOutline[],
   chunks: DocumentChunk[],
-  imagePool?: { url: string; description: string; source: 'user' | 'docx' }[],
+  imagePool?: { url: string; description: string; source: 'user' | 'docx' | 'mermaid' }[],
   onProgress?: (completed: number, total: number) => void,
   options?: { language?: string; debugLog?: (stage: string, payload: unknown) => void }
 ): Promise<SlideContent[]> {

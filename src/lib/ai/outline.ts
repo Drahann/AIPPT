@@ -30,7 +30,7 @@ export async function generateOutline(
   preferences?: {
     slideCount?: number
     language?: string
-    imagePool?: { url: string; description: string; source: 'user' | 'docx' }[]
+    imagePool?: { url: string; description: string; source: 'user' | 'docx' | 'mermaid' }[]
   },
   debugLog?: (stage: string, payload: unknown) => void
 ): Promise<OutlineResult> {
@@ -286,6 +286,58 @@ function normalizeOutline(
         reason: 'case-study content must not use quote layout',
       })
       normalized.layout = 'cards-3' as LayoutType
+    }
+
+    // --- Auto-bind images from refChunks ---
+    // If chunks referenced by this slide carry images, automatically set imageIndex
+    // and ensure the layout supports images.
+    if (refs.length > 0 && normalized.imageIndex == null) {
+      const IMAGE_LAYOUTS: LayoutType[] = [
+        'image-text', 'text-image', 'image-center', 'image-full',
+        'cards-split', 'features-list-image',
+      ]
+      const chunkImages: { url: string; description: string; poolIndex: number }[] = []
+      for (const ref of refs) {
+        const chunk = chunks.find(c => c.order === ref)
+        if (chunk?.images) {
+          for (const ci of chunk.images) {
+            // Find this image's index in the global imagePool (built from all chunk images)
+            // We search all chunks' images in order to find the global offset
+            let globalIdx = 0
+            let found = false
+            for (const c2 of chunks) {
+              if (c2.images) {
+                for (const ci2 of c2.images) {
+                  if (ci2.url === ci.url) { found = true; break }
+                  globalIdx++
+                }
+              }
+              if (found) break
+            }
+            if (found) {
+              chunkImages.push({ url: ci.url, description: ci.description, poolIndex: globalIdx })
+            }
+          }
+        }
+      }
+
+      if (chunkImages.length > 0) {
+        normalized.imageIndex = chunkImages[0].poolIndex
+        normalized.imageHint = chunkImages[0].description
+
+        // If current layout doesn't support images, switch to image-text
+        const isImageLayout = IMAGE_LAYOUTS.includes(normalized.layout)
+        if (!isImageLayout) {
+          debugLog?.('outline.autoImageBind', {
+            index: normalized.index,
+            title: normalized.title,
+            from: normalized.layout,
+            to: 'image-text',
+            imageDescription: chunkImages[0].description,
+          })
+          normalized.layout = 'image-text' as LayoutType
+        }
+      }
     }
 
     return enforceSlideLayoutByCandidates(normalized, chunks)

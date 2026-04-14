@@ -45,9 +45,11 @@ export async function POST(request: NextRequest) {
     const stream = new ReadableStream({
       async start(controller) {
         try {
-          await runPipeline(buffer, { slideCount, themeId, userImages, debugMode }, (event: PipelineEvent) => {
+          const { presentation } = await runPipeline(buffer, { slideCount, themeId, userImages, debugMode }, (event: PipelineEvent) => {
             controller.enqueue(encoder.encode(JSON.stringify(event) + '\n'))
           })
+          // Script text is available in presentation result but not streamed in SSE mode
+          void presentation
         } catch {
           controller.enqueue(encoder.encode(JSON.stringify({ type: 'error', message: '生成失败' }) + '\n'))
         } finally {

@@ -1,5 +1,5 @@
 import mammoth from 'mammoth'
-import { DocumentChunk } from '../types'
+import { DocumentChunk, ChunkImage } from '../types'
 import { normalizeMojibake } from '../ai/text-normalizer'
 
 interface ParsedSection {
@@ -7,37 +7,29 @@ interface ParsedSection {
   headingLevel: number
   content: string
   tables: string[]
+  images: ChunkImage[]
 }
 
+/** Headings that indicate a metadata-only section to be skipped */
+const METADATA_SECTION_PATTERNS = [
+  /相关图片信息/,
+  /图片信息$/,
+  /^附录.*图片/,
+]
+
+// Only these H2 sections should be split by H3 sub-headings into individual slides.
+// Other sections (创新成果, 核心成果, etc.) should keep their natural structure.
 const ITEM_PER_SLIDE_SECTION_PATTERNS = [
-  /核心技术/i,
   /创新技术/i,
-  /主要产品/i,
-  /核心优势/i,
-  /应用企业/i,
+  /核心技术/i,
   /产业验证/i,
-  /应用案例/i,
-  /应用场景/i,
-  /应用公司/i,
-  /应用部门/i,
-  // Server-side planbook modules that contain H3 sub-items
-  /创新成果/i,
-  /核心成果/i,
-  /试点应用/i,
-  /企业验证/i,
-  /技术交付/i,
-  /核心产品/i,
-  /公司核心产品/i,
   /core\s*technolog/i,
   /key\s*technolog/i,
-  /application\s*(enterprise|company|case)/i,
-  /鏍稿績鎶€鏈?/i,
-  /搴旂敤浼佷笟/i,
 ]
 
 export async function parseDocx(
   buffer: Buffer
-): Promise<{ chunks: DocumentChunk[]; docxImages: { url: string; description: string }[] }> {
+): Promise<{ chunks: DocumentChunk[]; docxImages: { url: string; description: string }[]; detectedLanguage: string }> {
   let html: string
 
   const isZip = buffer.length > 4 && buffer[0] === 0x50 && buffer[1] === 0x4b
@@ -48,13 +40,13 @@ export async function parseDocx(
     html = markdownToHtml(buffer.toString('utf-8'))
   }
 
+  // Extract DOCX-embedded base64 images (legacy path for .docx files)
   const docxImages: { url: string; description: string }[] = []
   const imgRegex = /<img[^>]*src="([^"]+)"[^>]*>/gi
   let match: RegExpExecArray | null
   while ((match = imgRegex.exec(html)) !== null) {
     const url = match[1]
     if (!url.startsWith('data:image/')) continue
-
     const start = Math.max(0, match.index - 150)
     const end = Math.min(html.length, match.index + match[0].length + 150)
     const contextHtml = html.substring(start, end)
@@ -62,10 +54,33 @@ export async function parseDocx(
     docxImages.push({ url, description })
   }
 
-  const cleanHtml = html.replace(/<img[^>]*>/gi, '')
-  const sections = extractSections(cleanHtml)
+  // Extract sections — images will be bound per-section
+  const sections = extractSections(html)
   const chunks = buildChunks(sections)
-  return { chunks, docxImages }
+
+  // Auto-detect language from content
+  const detectedLanguage = detectLanguage(chunks)
+
+  return { chunks, docxImages, detectedLanguage }
+}
+
+/**
+ * Detect document language based on CJK character ratio.
+ * Returns 'zh-CN' if Chinese characters make up >15% of text, otherwise 'en'.
+ */
+function detectLanguage(chunks: DocumentChunk[]): string {
+  const sampleText = chunks
+    .slice(0, 5)
+    .map((c) => c.heading + ' ' + c.content.slice(0, 300))
+    .join(' ')
+
+  if (sampleText.length === 0) return 'zh-CN'
+
+  // Count CJK characters (Chinese/Japanese/Korean)
+  const cjkChars = sampleText.match(/[\u4e00-\u9fff\u3400-\u4dbf]/g)
+  const cjkRatio = (cjkChars?.length || 0) / sampleText.length
+
+  return cjkRatio > 0.15 ? 'zh-CN' : 'en'
 }
 
 function markdownToHtml(markdown: string): string {
@@ -80,10 +95,49 @@ function markdownToHtml(markdown: string): string {
     .replace(/^### (.+)$/gm, '<h3>$1</h3>')
     .replace(/^## (.+)$/gm, '<h2>$1</h2>')
     .replace(/^# (.+)$/gm, '<h1>$1</h1>')
-    .replace(/!\[.*?\]\(.*?\)/g, '')
+    // Preserve images as <img> tags for per-section binding (instead of deleting)
+    .replace(/!\[([^\]]*)\]\(([^)]+?)(?:\s+"[^"]*")?\)/g, '<img src="$2" alt="$1" />')
     .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
-    .replace(/^(?!<h[1-5]>)(.+)$/gm, '<p>$1</p>')
+    .replace(/^(?!<h[1-5]>|<img )(.+)$/gm, '<p>$1</p>')
     .replace(/<p>\s*<\/p>/g, '')
+    .replace(/<p>(<img [^>]+>)<\/p>/g, '$1')
+}
+
+/** Check if a heading indicates a metadata-only section that should be skipped */
+function isMetadataSection(heading: string): boolean {
+  const normalized = normalizeMojibake((heading || '').trim())
+  return METADATA_SECTION_PATTERNS.some((pattern) => pattern.test(normalized))
+}
+
+/** Extract <img> tags from HTML, returning ChunkImage[] and cleaned HTML */
+function extractImagesFromHtml(contentHtml: string): { images: ChunkImage[]; cleanHtml: string } {
+  const images: ChunkImage[] = []
+  const imgTagRegex = /<img[^>]*src="([^"]+)"[^>]*alt="([^"]*)"[^>]*>/gi
+  // Also match alt before src
+  const imgTagRegex2 = /<img[^>]*alt="([^"]*)"[^>]*src="([^"]+)"[^>]*>/gi
+  let m: RegExpExecArray | null
+
+  const seen = new Set<string>()
+  for (const regex of [imgTagRegex, imgTagRegex2]) {
+    regex.lastIndex = 0
+    while ((m = regex.exec(contentHtml)) !== null) {
+      const url = regex === imgTagRegex ? m[1] : m[2]
+      const alt = regex === imgTagRegex ? m[2] : m[1]
+      if (seen.has(url)) continue
+      seen.add(url)
+
+      let source: ChunkImage['source'] = 'user'
+      if (url.startsWith('data:image/')) {
+        source = 'docx'
+      } else if (/mermaid/i.test(url)) {
+        source = 'mermaid'
+      }
+      images.push({ url, description: normalizeMojibake(alt || '图片'), source })
+    }
+  }
+
+  const cleanHtml = contentHtml.replace(/<img[^>]*>/gi, '')
+  return { images, cleanHtml }
 }
 
 function extractSections(html: string): ParsedSection[] {
@@ -102,13 +156,15 @@ function extractSections(html: string): ParsedSection[] {
   }
 
   if (matches.length === 0) {
-    const cleaned = htmlToText(html)
+    const { images, cleanHtml } = extractImagesFromHtml(html)
+    const cleaned = htmlToText(cleanHtml)
     if (cleaned.trim()) {
       sections.push({
         heading: '未命名章节',
         headingLevel: 1,
         content: cleaned,
-        tables: extractTables(html),
+        tables: extractTables(cleanHtml),
+        images,
       })
     }
     return sections
@@ -117,26 +173,42 @@ function extractSections(html: string): ParsedSection[] {
   const h2Matches = matches.filter((item) => item.level === 2)
   if (h2Matches.length > 0) {
     const preamble = html.substring(0, h2Matches[0].index)
-    const preambleText = htmlToText(preamble)
+    const { images: preambleImages, cleanHtml: preambleClean } = extractImagesFromHtml(preamble)
+    const preambleText = htmlToText(preambleClean)
     if (preambleText.trim().length > 20) {
       sections.push({
         heading: '引言',
         headingLevel: 1,
         content: preambleText,
-        tables: extractTables(preamble),
+        tables: extractTables(preambleClean),
+        images: preambleImages,
       })
     }
 
     for (let i = 0; i < h2Matches.length; i += 1) {
       const current = h2Matches[i]
+
+      // Skip metadata-only sections (e.g. "相关图片信息")
+      if (isMetadataSection(current.text)) continue
+
       const contentStart = current.index + current.fullLength
       const contentEnd = i + 1 < h2Matches.length ? h2Matches[i + 1].index : html.length
       const contentHtml = html.substring(contentStart, contentEnd)
+      const { images: sectionImages, cleanHtml: sectionClean } = extractImagesFromHtml(contentHtml)
 
       // For special sections (产业验证, 创新技术, etc.), split by H3 sub-headings
       if (shouldSplitSectionByItems(current.text)) {
-        const h3Subs = extractH3SubSections(current.text, contentHtml)
+        const h3Subs = extractH3SubSections(current.text, sectionClean)
         if (h3Subs.length > 0) {
+          // Distribute images to the preamble sub-section (first one with parent heading)
+          if (sectionImages.length > 0 && h3Subs.length > 0) {
+            const preambleSub = h3Subs.find(s => s.heading === current.text)
+            if (preambleSub) {
+              preambleSub.images = [...(preambleSub.images || []), ...sectionImages]
+            } else {
+              h3Subs[0].images = [...(h3Subs[0].images || []), ...sectionImages]
+            }
+          }
           sections.push(...h3Subs)
           continue
         }
@@ -145,36 +217,43 @@ function extractSections(html: string): ParsedSection[] {
       sections.push({
         heading: current.text || `章节 ${i + 1}`,
         headingLevel: 2,
-        content: htmlToText(contentHtml),
-        tables: extractTables(contentHtml),
+        content: htmlToText(sectionClean),
+        tables: extractTables(sectionClean),
+        images: sectionImages,
       })
     }
     return sections
   }
 
   const preamble = html.substring(0, matches[0].index)
-  const preambleText = htmlToText(preamble)
+  const { images: preambleImages, cleanHtml: preambleClean } = extractImagesFromHtml(preamble)
+  const preambleText = htmlToText(preambleClean)
   if (preambleText.trim().length > 20) {
     sections.push({
       heading: '引言',
       headingLevel: 1,
       content: preambleText,
-      tables: extractTables(preamble),
+      tables: extractTables(preambleClean),
+      images: preambleImages,
     })
   }
 
   for (let i = 0; i < matches.length; i += 1) {
     const current = matches[i]
+    if (isMetadataSection(current.text)) continue
+
     const contentStart = current.index + current.fullLength
     const contentEnd = i + 1 < matches.length ? matches[i + 1].index : html.length
     const contentHtml = html.substring(contentStart, contentEnd)
-    const contentText = htmlToText(contentHtml)
+    const { images: secImages, cleanHtml: secClean } = extractImagesFromHtml(contentHtml)
+    const contentText = htmlToText(secClean)
     if (contentText.trim().length > 0 || current.text.trim().length > 0) {
       sections.push({
         heading: current.text,
         headingLevel: current.level,
         content: contentText,
-        tables: extractTables(contentHtml),
+        tables: extractTables(secClean),
+        images: secImages,
       })
     }
   }
@@ -191,11 +270,16 @@ function buildChunks(sections: ParsedSection[]): DocumentChunk[] {
       const items = splitSectionItems(section.content)
       if (items.length > 0) {
         for (const item of items) {
+          // Preamble items have empty title → use section heading directly
+          const heading = item.title
+            ? `${section.heading} - ${item.title}`
+            : section.heading
           chunks.push({
             id: `chunk-${order}`,
-            heading: `${section.heading} - ${item.title}`,
+            heading,
             headingLevel: section.headingLevel,
             content: item.content,
+            images: section.images?.length > 0 ? section.images : undefined,
             order: order++,
           })
         }
@@ -209,6 +293,7 @@ function buildChunks(sections: ParsedSection[]): DocumentChunk[] {
       headingLevel: section.headingLevel,
       content: section.content,
       tables: section.tables.length > 0 ? section.tables : undefined,
+      images: section.images?.length > 0 ? section.images : undefined,
       order: order++,
     })
   }
@@ -282,6 +367,7 @@ function extractH3SubSections(h2Heading: string, contentHtml: string): ParsedSec
       headingLevel: 1,
       content: preambleText,
       tables: extractTables(preambleHtml),
+      images: [],
     })
   }
 
@@ -300,6 +386,7 @@ function extractH3SubSections(h2Heading: string, contentHtml: string): ParsedSec
       // For the last H3, use the cleaned text without trailing summary
       content: isLast && trailingSummary ? lastH3CleanText : htmlToText(h3ContentHtml),
       tables: extractTables(h3ContentHtml),
+      images: [],
     })
   }
 
@@ -321,8 +408,9 @@ function splitSectionItems(content: string): Array<{ title: string; content: str
   const bulletRegex = /^([-*•]|#{1,3}|[0-9]+[.)、]|[A-Za-z][.)]|[（(][0-9]+[)）])\s*(.+)$/
   const items: Array<{ title: string; content: string }> = []
   let current: string[] = []
+  let firstBulletSeen = false
 
-  const flushCurrent = () => {
+  const flushBulletItem = () => {
     if (current.length === 0) return
     const first = current[0]
     const rest = current.slice(1).join(' ')
@@ -336,24 +424,34 @@ function splitSectionItems(content: string): Array<{ title: string; content: str
   for (const line of lines) {
     const bulletMatch = line.match(bulletRegex)
     if (bulletMatch) {
-      flushCurrent()
+      if (!firstBulletSeen) {
+        // Text accumulated before the first bullet is preamble (intro paragraph).
+        // Save it as a special item with empty title so buildChunks uses
+        // just the H2 heading, avoiding absurdly long titles.
+        if (current.length > 0) {
+          const preambleText = current.join('\n')
+          if (preambleText.length > 20) {
+            items.push({ title: '', content: preambleText })
+          }
+        }
+        current = []
+        firstBulletSeen = true
+      } else {
+        flushBulletItem()
+      }
       current.push(bulletMatch[2].trim())
       continue
     }
     current.push(line)
   }
-  flushCurrent()
+  flushBulletItem()
 
-  if (items.length <= 1) {
-    const fallback = content
-      .split(/\n{2,}/)
-      .map((block) => normalizeMojibake(block.trim()))
-      .filter(Boolean)
-      .map((block) => ({
-        title: block.split('\n')[0].trim().slice(0, 50) || '条目',
-        content: block,
-      }))
-    if (fallback.length > 1) return fallback
+  // Count real bullet items (excluding preamble with empty title)
+  const bulletItemCount = items.filter((item) => item.title !== '').length
+  if (bulletItemCount < 2) {
+    // Not enough structured items to warrant splitting.
+    // Let the section stay as one chunk.
+    return []
   }
 
   return items

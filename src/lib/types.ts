@@ -1,9 +1,16 @@
+export interface ChunkImage {
+  url: string
+  description: string
+  source: 'user' | 'docx' | 'mermaid'
+}
+
 export interface DocumentChunk {
   id: string
   heading: string
   headingLevel: number
   content: string
   tables?: string[]
+  images?: ChunkImage[]
   order: number
 }
 

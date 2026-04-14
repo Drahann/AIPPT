@@ -37,7 +37,7 @@ export function buildOutlinePrompt(
   preferences?: {
     slideCount?: number
     language?: string
-    imagePool?: { url: string; description: string; source: 'user' | 'docx' }[]
+    imagePool?: { url: string; description: string; source: 'user' | 'docx' | 'mermaid' }[]
   }
 ) {
   const language = preferences?.language || 'zh-CN'
@@ -58,7 +58,10 @@ export function buildOutlinePrompt(
       let text =
         `[Chunk ${chunk.order}] 标题: ${chunk.heading} (H${chunk.headingLevel})\n` +
         `原文: ${content}\n` +
-        `结构信号: 数值=${numberCount}, 年份=${yearCount}, 列表项≈${bulletCount}, 表格=${chunk.tables?.length || 0}`
+        `结构信号: 数值=${numberCount}, 年份=${yearCount}, 列表项≈${bulletCount}, 表格=${chunk.tables?.length || 0}` +
+        (chunk.images && chunk.images.length > 0
+          ? `, 📷关联图片=${chunk.images.length}张 (${chunk.images.map(i => i.description).join(', ')})`
+          : '')
 
       if (chunk.tables && chunk.tables.length > 0) {
         text += `\n[表格数据]\n${chunk.tables.join('\n\n')}`
@@ -68,18 +71,18 @@ export function buildOutlinePrompt(
     .join('\n\n---\n\n')
 
   const hasImages = preferences?.imagePool && preferences.imagePool.length > 0
+  const chunksWithImages = chunks.filter(c => c.images && c.images.length > 0)
   const imagesMeta = hasImages
-    ? `\n[图片池 | 共 ${preferences!.imagePool!.length} 张可用图片]\n` +
-    preferences!.imagePool!
-      .map((img, idx) => `[Image ${idx}] (${img.source === 'user' ? '用户上传' : '文档提取'}): ${img.description || '无描述'}`)
-      .join('\n') +
-    `\n\n[图片规则 (及其重要)]
-1. 可以为任意页设置 imageIndex。
-2. 【强制要求】用户上传的图片（user-uploaded images）必须 100% 全部用上，严禁遗漏任何一张。
-3. 必须在大纲中通过为各页面分配对应的 imageIndex，确保每一张“用户上传”图片都被合理引用。
-4. 优先分配用户上传图片，分配完后若仍有缺图，才可使用文档提取图片。
-5. ⚠️注意：图片必须分配给支持显示的布局。严禁将图片分配给纯文、数据（chart-*, metrics*）、时间线（timeline, milestone-*）或引用类布局。
-6. 建议承载图片的布局：image-text, text-image, image-center, image-full, cards-split, features-list-image。`
+    ? `\n[图片信息 | 共 ${preferences!.imagePool!.length} 张图片已自动绑定到对应章节]\n` +
+    `系统已根据文档结构自动将图片绑定到对应的 Chunk，并会自动设置 imageIndex。你不需要手动分配 imageIndex。\n` +
+    (chunksWithImages.length > 0
+      ? `以下 Chunk 携带图片：\n` +
+        chunksWithImages.map(c => `- Chunk ${c.order} "${c.heading}": ${c.images!.length}张图`).join('\n') + '\n'
+      : '') +
+    `\n[图片布局规则]\n` +
+    `1. 对于携带图片的 Chunk 对应的页面，请选择支持图片的布局：image-text, text-image, image-center, image-full, cards-split, features-list-image。\n` +
+    `2. 系统会自动为这些页面设置 imageIndex，你无需手动指定。\n` +
+    `3. 不要将含图片的 Chunk 分配给纯文字布局（text-bullets, text-center）或数据布局（chart-*, metrics*）。`
     : ''
 
   const routerGuidance = buildRouterGuidance(chunks)
@@ -156,7 +159,7 @@ ${buildCapacityHint()}
 ${itemCountConstraints}
 
 [图表偏好]
-若来源内容包含明确数值趋势、占比、对比，请优先考虑图表布局。${routerGuidance}${hasImages ? '\n\n[重要指令]：检测到图片池，用户上传的图片必须全量引用在大纲中并设置 imageIndex，严禁漏掉。\n' : ''}${imagesMeta}`,
+若来源内容包含明确数值趋势、占比、对比，请优先考虑图表布局。${routerGuidance}${hasImages ? '\n\n[提示]：检测到文档包含图片，已自动绑定到对应章节。请为含图 Chunk 选择 image-text 等图片布局。\n' : ''}${imagesMeta}`,
 
     user: `请根据下列内容规划 PPT 大纲。
 ${preferences?.slideCount ? `页数目标约 ${preferences.slideCount} 页，可按内容质量微调。` : `【严格目标】：因为共有 ${chunks.length} 个 Chunk 数据，加上首尾的 Cover 和 Ending，你必须生成刚好 ${inferredSlideTarget} 页的幻灯片大纲，切勿压缩！`}

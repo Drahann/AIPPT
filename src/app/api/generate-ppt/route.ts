@@ -4,6 +4,7 @@ import { uploadToCOS } from '@/lib/server/cos-upload'
 import { processMarkdownImages } from '@/lib/server/image-downloader'
 import { captureSnapshots } from '@/lib/server/snapshot-renderer'
 import { generateUniversalPptx } from '@/lib/export/universal-exporter'
+import JSZip from 'jszip'
 
 export const maxDuration = 900
 
@@ -67,12 +68,12 @@ export async function POST(request: NextRequest) {
     console.log(`[GeneratePPT] ${reportId}: Running AI pipeline...`)
     const buffer = Buffer.from(processedMarkdown, 'utf-8')
 
-    const presentation = await runPipeline(
+    const { presentation, scriptText } = await runPipeline(
       buffer,
       {
         themeId,
-        language: 'zh-CN',
-        userImages: images.map(img => ({ url: img.url, description: img.description })),
+        // Language auto-detected from document content
+        userImages: images.map(img => ({ url: img.url, description: img.description, nearestHeading: img.nearestHeading })),
       },
       (event) => {
         if (event.message) {
@@ -108,21 +109,29 @@ export async function POST(request: NextRequest) {
     const snapshots = await captureSnapshots(presentation, port)
     console.log(`[GeneratePPT] ${reportId}: Got ${snapshots.length} snapshots`)
 
-    // ---- 4. 生成 PPTX ----
+    // ---- 4. Generate PPTX ----
     console.log(`[GeneratePPT] ${reportId}: Generating PPTX...`)
     const pptxBuffer = await generateUniversalPptx(snapshots, presentation.title)
     console.log(`[GeneratePPT] ${reportId}: PPTX size=${pptxBuffer.length} bytes`)
 
-    // ---- 5. 上传 PPTX 到 COS ----
+    // ---- 5. Package PPTX + narration script into ZIP ----
     const safeTitle = (presentation.title || 'presentation')
       .replace(/[^\u4e00-\u9fa5a-zA-Z0-9_-]/g, '_')
       .slice(0, 50)
-    const cosPath = `ppt/${reportId}/${safeTitle}.pptx`
+
+    const zip = new JSZip()
+    zip.file(`${safeTitle}.pptx`, pptxBuffer)
+    zip.file(`${safeTitle}_讲解文稿.txt`, '\uFEFF' + scriptText, { binary: false })
+    const zipBuffer = Buffer.from(await zip.generateAsync({ type: 'nodebuffer' }))
+    console.log(`[GeneratePPT] ${reportId}: ZIP size=${zipBuffer.length} bytes (PPTX + script)`)
+
+    // ---- 6. Upload ZIP to COS ----
+    const cosPath = `ppt/${reportId}/${safeTitle}.zip`
     console.log(`[GeneratePPT] ${reportId}: Uploading to COS: ${cosPath}`)
-    const pptUrl = await uploadToCOS(pptxBuffer, cosPath)
+    const pptUrl = await uploadToCOS(zipBuffer, cosPath)
     console.log(`[GeneratePPT] ${reportId}: Upload done: ${pptUrl}`)
 
-    // ---- 6. 回调通知: 所有数据全部完成 ----
+    // ---- 7. Callback: notify all complete ----
     const callbackResult = await notifyAllComplete({
       reportId,
       fileUrl: body.fileUrl || '',
