@@ -1,6 +1,7 @@
 import { SlideOutline, DocumentChunk, LayoutType } from '../../types'
 import { getItemCountConstraintLines } from '../../layout-rules'
 import { getTemplateCharLimitsRange } from '../../utils/pretext-engine'
+import { getAllThemeSpecs } from '../../spec-engine/theme-registry'
 
 const layoutSchemas: Record<string, string> = {
   'cover': `{
@@ -407,7 +408,7 @@ export function buildSlideContentPrompt(
     })
     .join('\n\n')
 
-  const schema = layoutSchemas[outline.layout] || layoutSchemas['text-bullets']
+  const schema = layoutSchemas[outline.layout] || buildSpecLayoutSchema(outline.layout) || layoutSchemas['text-bullets']
   const charConstraints = buildCharConstraintBlock(outline.layout)
 
   return {
@@ -456,6 +457,13 @@ export function buildSlideContentPrompt(
 
 15. **表格数据结构化**：若 refChunks 包含 Markdown 表格（含 | 分隔符），应将表格的关键列数据提取为 cards 或 chart 的结构化数据，不要将表格原样输出为纯文本段落。
 
+16. **内容长度硬限制**（防止排版溢出）：
+    - body 全文（包括所有 bullet 项合计）不超过 200 字
+    - 每个 bullet point 不超过 60 字
+    - 每页幻灯片总文字（title + subtitle + body + cards 合计）不超过 400 字
+    - text-bullets 的每条 bullet 建议 20-40 字，精简为核心信息
+    - 如果原文信息量大，优先提取关键数据和结论，其余信息放入 speakerNotes
+
 [字段形状规则]
 1. cards-* / list-featured / quote / quote-no-avatar / staggered-cards / features-list-image / team-members 必须输出 "cards"。
 2. timeline / milestone-list 必须输出 "events"。
@@ -463,6 +471,7 @@ export function buildSlideContentPrompt(
 4. image-text / text-image / image-center / text-bullets / text-center 必须输出 "body"。
 5. comparison 必须输出 "left" 和 "right"，且 "subtitle" 为必填项（不得为空字符串），用于概括对比的核心维度或结论。
 6. chart-* 必须输出 "chart"。
+7. **spec 主题布局（pp-/cp-/cs- 前缀）**：严格按照下方 JSON schema 中的字段输出。如果 schema 包含 "cards" 则必须输出 cards 数组，包含 "events" 则输出 events，包含 "metrics" 则输出 metrics。绝不允许用 body 替代 cards。
 
 [项数约束]
 ${itemCountConstraints}
@@ -487,4 +496,57 @@ ${refContent || '（无参考内容，请根据标题和 requirement 生成，�
 请按以下 JSON schema 输出：
 ${schema}`,
   }
+}
+
+/**
+ * 为 spec 主题布局动态构建 JSON schema。
+ * 基于 LayoutSpec.contentFields 推导 AI 应输出的数据结构。
+ */
+function buildSpecLayoutSchema(layout: string): string | undefined {
+  let contentFields: string[] | undefined
+  for (const theme of getAllThemeSpecs()) {
+    const spec = theme.layouts[layout]
+    if (spec) {
+      contentFields = spec.contentFields
+      break
+    }
+  }
+  if (!contentFields) return undefined
+
+  const obj: Record<string, unknown> = { layout }
+  obj.title = '与当前页面语义一致的标题'
+  if (contentFields.includes('subtitle')) obj.subtitle = '可选副标题'
+
+  if (contentFields.includes('body')) {
+    obj.body = [{ type: 'bullet', items: ['核心要点1', '核心要点2', '核心要点3', '核心要点4', '核心要点5', '核心要点6'] }]
+  }
+
+  const cardsMatch = contentFields.find(f => f.startsWith('cards:'))
+  if (cardsMatch) {
+    const count = parseInt(cardsMatch.split(':')[1], 10) || 3
+    obj.cards = Array.from({ length: count }, (_, i) => ({ heading: `卡片标题${i + 1}`, body: `• 核心要点A\\n• 核心要点B` }))
+  }
+
+  const metricsMatch = contentFields.find(f => f.startsWith('metrics:'))
+  if (metricsMatch) {
+    const count = parseInt(metricsMatch.split(':')[1], 10) || 4
+    obj.metrics = Array.from({ length: count }, (_, i) => ({ value: `${(i + 1) * 25}%`, label: `指标名称${i + 1}` }))
+  }
+
+  const eventsMatch = contentFields.find(f => f.startsWith('events:'))
+  if (eventsMatch) {
+    const count = parseInt(eventsMatch.split(':')[1], 10) || 4
+    obj.events = Array.from({ length: count }, (_, i) => ({ date: `202${4 + i}`, title: `阶段${i + 1}标题`, description: `阶段${i + 1}的详细描述` }))
+  }
+
+  if (contentFields.includes('left') && contentFields.includes('right')) {
+    obj.left = { heading: '方案A', items: ['优势1', '优势2', '优势3'], tone: 'positive' }
+    obj.right = { heading: '方案B', items: ['劣势1', '劣势2', '劣势3'], tone: 'negative' }
+  }
+
+  if (contentFields.includes('image')) {
+    obj.image = { prompt: 'English image prompt', alt: '图片中文说明' }
+  }
+
+  return JSON.stringify(obj, null, 2)
 }

@@ -1,5 +1,11 @@
 /**
  * Utility to capture the computed layout of a slide for PPTX calibration.
+ *
+ * 增强版快照采集：
+ * - 跳过 [data-slot-container]（只捕获叶子文字元素）
+ * - 保留 [data-decoration] 元素的负坐标（不过滤）
+ * - SVG 序列化时预替换 var() CSS 变量
+ * - 通过 data-slot-id 精确识别内容元素
  */
 export function captureSlideLayout(slideElement: HTMLElement, slideIndex: number) {
   const rect = slideElement.getBoundingClientRect();
@@ -9,7 +15,9 @@ export function captureSlideLayout(slideElement: HTMLElement, slideIndex: number
   const selectors = [
     'h1', 'h2', 'h3', 'p', 'img', 'li', 'span', 'div',
     'svg', 'circle', 'rect', 'path',
-    '.card', '.metric-value', '.metric-label', '.quote-text', '.quote-attribution'
+    '.card', '.metric-value', '.metric-label', '.quote-text', '.quote-attribution',
+    // Spec engine selectors
+    '[data-slot-id]', '[data-decoration]',
   ];
   
   const allNodes = Array.from(slideElement.querySelectorAll(selectors.join(',')));
@@ -25,6 +33,14 @@ export function captureSlideLayout(slideElement: HTMLElement, slideIndex: number
         if (el.closest('svg') && tagName !== 'SVG') return;
     }
 
+    // Skip slot containers — only capture leaf text elements
+    if (el.getAttribute('data-slot-container') === 'true') return;
+
+    // Check if this element is inside a slot container and has siblings that are slot items
+    // (avoid double-capturing container div text)
+    const isDecoration = el.hasAttribute('data-decoration');
+    const slotId = el.getAttribute('data-slot-id');
+
     const hasBg = style.backgroundColor !== 'rgba(0, 0, 0, 0)' && style.backgroundColor !== 'transparent';
     const hasBgImage = style.backgroundImage !== 'none' && style.backgroundImage !== '';
     const bwTop = parseFloat(style.borderTopWidth) || 0;
@@ -38,13 +54,16 @@ export function captureSlideLayout(slideElement: HTMLElement, slideIndex: number
     const hasText = el.innerText?.trim().length > 0;
     
     // Check if any child of this element is ALSO in our allNodes list and has text
-    const hasTextChild = Array.from(el.children).some((child: any) => 
-      allNodes.includes(child) && child.innerText?.trim().length > 0
-    );
+    // For slot-id elements, trust the data attribute — they are leaf text nodes
+    const hasTextChild = slotId
+      ? false  // slot-id elements are already leaf nodes
+      : Array.from(el.children).some((child: any) => 
+          allNodes.includes(child) && child.innerText?.trim().length > 0
+        );
 
     const shouldCaptureText = hasText && !hasTextChild && !isGraphic;
 
-    if (!shouldCaptureText && !isGraphic && !hasBg && !hasBgImage && !hasBorder) return;
+    if (!shouldCaptureText && !isGraphic && !hasBg && !hasBgImage && !hasBorder && !isDecoration) return;
 
     let srcData = tagName === 'IMG' ? el.src : undefined;
     let outputTag = tagName;
@@ -59,9 +78,13 @@ export function captureSlideLayout(slideElement: HTMLElement, slideIndex: number
         if (style.color) {
             svgString = svgString.replace(/currentColor/gi, style.color);
         }
-        // Resolve CSS variables (e.g. var(--color-primary) or var(--color-primary, #3b82f6))
-        svgString = svgString.replace(/var\(--([^,)]+)(?:,\s*([^)]+))?\)/g, (match, varName, fallback) => {
-          const resolved = style.getPropertyValue('--' + varName.trim()).trim();
+        // Resolve CSS variables — walk up to find the spec container for variable values
+        const specContainer = el.closest('[data-spec-id]') || slideElement;
+        const containerStyle = window.getComputedStyle(specContainer);
+        svgString = svgString.replace(/var\(--([^,)]+)(?:,\s*([^)]+))?\)/g, (match: string, varName: string, fallback: string) => {
+          // Try the element's own computed style first, then the spec container
+          const resolved = style.getPropertyValue('--' + varName.trim()).trim() ||
+                          containerStyle.getPropertyValue('--' + varName.trim()).trim();
           return resolved || (fallback ? fallback.trim() : match);
         });
         srcData = 'data:image/svg+xml;base64,' + btoa(unescape(encodeURIComponent(svgString)));
@@ -106,9 +129,45 @@ export function captureSlideLayout(slideElement: HTMLElement, slideIndex: number
       alignItems: style.alignItems,
       justifyContent: style.justifyContent,
       verticalAlign: style.verticalAlign,
-      boxShadow: style.boxShadow
+      boxShadow: style.boxShadow,
+      // Spec engine metadata
+      slotId: slotId || undefined,
+      isDecoration: isDecoration || undefined,
+      // CSS transform — extract rotate for PPTX export
+      rotate: (() => {
+        const tf = style.transform;
+        if (!tf || tf === 'none') return undefined;
+        // matrix(a,b,c,d,e,f) → angle = atan2(b,a)
+        const matrixMatch = tf.match(/matrix\(([^)]+)\)/);
+        if (matrixMatch) {
+          const parts = matrixMatch[1].split(',').map(Number);
+          if (parts.length >= 2) {
+            const angle = Math.round(Math.atan2(parts[1], parts[0]) * 180 / Math.PI);
+            return angle !== 0 ? angle : undefined;
+          }
+        }
+        // rotate(Ndeg)
+        const rotateMatch = tf.match(/rotate\(([-\d.]+)deg\)/);
+        if (rotateMatch) {
+          const angle = Math.round(parseFloat(rotateMatch[1]));
+          return angle !== 0 ? angle : undefined;
+        }
+        return undefined;
+      })(),
     });
   });
+  // Spec themes render at 1920×1080 with CSS scale(0.5).
+  // getBoundingClientRect returns the scaled pixel size (960×540),
+  // but the actual CSS coordinate space is 1920×1080.
+  // We need logicalWidth=1920 so the pptx exporter applies FONT_SCALE=0.5.
+  const rootClasses = slideElement.className || '';
+  const hasSpecId = !!slideElement.querySelector('[data-spec-id]');
+  const isSpec = hasSpecId ||
+                 rootClasses.includes('tpl-pastel-papercut') ||
+                 rootClasses.includes('tpl-casual-pro') ||
+                 rootClasses.includes('tpl-curve-study');
+  const logicalWidth = isSpec ? 1920 : slideElement.offsetWidth;
+  const logicalHeight = isSpec ? 1080 : slideElement.offsetHeight;
 
   return {
     timestamp: new Date().toISOString(),
@@ -116,9 +175,9 @@ export function captureSlideLayout(slideElement: HTMLElement, slideIndex: number
     slideIndex,
     slideWidth: rect.width,
     slideHeight: rect.height,
-    logicalWidth: slideElement.offsetWidth,
-    logicalHeight: slideElement.offsetHeight,
-    rootClasses: slideElement.className,
+    logicalWidth,
+    logicalHeight,
+    rootClasses,
     elements
   };
 }

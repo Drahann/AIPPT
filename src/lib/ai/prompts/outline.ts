@@ -2,6 +2,8 @@ import { DocumentChunk, LayoutType } from '../../types'
 import { getItemCountConstraintLines } from '../../layout-rules'
 import { buildRouterGuidance } from '../layout-router'
 import { getTemplateCharLimitsRange } from '../../utils/pretext-engine'
+import { isSpecTheme, getThemeLayoutDescriptions } from '../../spec-engine/theme-registry'
+import '../../spec-engine/themes' // 确保主题已注册
 
 /**
  * Build a compact capacity reference for the outline planner.
@@ -37,6 +39,7 @@ export function buildOutlinePrompt(
   preferences?: {
     slideCount?: number
     language?: string
+    themeId?: string
     imagePool?: { url: string; description: string; source: 'user' | 'docx' }[]
   }
 ) {
@@ -98,57 +101,47 @@ export function buildOutlinePrompt(
 
 [规划规则]
 1. 结构规范与页数（极其核心）：
-   - 演示文稿的第一页必须是 "cover"，最后一页必须是 "ending"。
-   - 【无敌原则】：封面（cover）和封底（ending）是独立的纯仪式感展示页面，其 \`refChunks\` 数组必须为空 \`[]\`。绝对不允许它们消耗任何输入给你的 Chunk 也就是 \`refChunks\`，绝对**不可**把真实的文档段落硬塞在封面或封底！
+   - 演示文稿的第一页必须使用 cover 类布局，最后一页必须使用 ending/cta 类布局。
+   - 【无敌原则】：封面和封底是独立的纯仪式感展示页面，其 \`refChunks\` 数组必须为空 \`[]\`。绝对不允许它们消耗任何输入给你的 Chunk，绝对**不可**把真实的文档段落硬塞在封面或封底！
    - 原文档所有的 Chunk 内容必须从第 2 页开始分配。意味着如果你把 31 个 Chunk 按 1:1 分配为 31 页，那最终出来的幻灯片肯定是 **33 页**！
 2. 页面标题忠实度（核心要求）：
     - **必须 100% 直接使用原文 Chunk 标题作为该页的 title**。严禁对正文标题进行任何概括。如果 Chunk 标题为 "核心技术 - XXX"，则该页标题即为 "核心技术 - XXX"。
-    - 示例：Chunk 标题为"推广模式"，则 title 必须是"推广模式"，不允许改为"市场推广策略"或"商业化路径"。
-    - 示例：Chunk 标题为"创新技术：地域自适应AI拖拽设计技术"，则 title 原样保留。
-    - 示例：Chunk 标题为"政策导向与保障机制"，则 title 原样保留，不允许缩写为"政策导向"。
-    - **唯一的例外**：第一页 (cover) 的 title 必须是整个演示文稿的全局总标题；最后一页 (ending) 的 title 必须是结束语（如“感谢观看”、“携手共赢”等）。
+    - **唯一的例外**：第一页 (cover) 的 title 必须是整个演示文稿的全局总标题；最后一页 (ending) 的 title 必须是结束语（如"感谢观看"、"携手共赢"等）。
 3. 页面拆分与合并规则（强制契约）：
-   - **H3 级 Chunk 绝对独立**：所有 headingLevel=3 的 Chunk（已由解析器从"创新技术"、"产业验证"等特殊章节按三级标题预拆分），**必须且只能**独立做成一页（1:1 映射），**严禁合并**。
-   - **H2 级 Chunk 绝对独立**：所有 headingLevel=2 的 Chunk **必须独立成页**，不允许合并多个 H2 Chunk。
-   - **禁用细碎分页**：禁止将 H4 或更深层级的内容独立成页，需合并入其所属页面。
-   - **普通项容量控制**：非特殊项的普通内容，默认"一个核心观点=一页"。仅在属于同一 H2 层级下、内容极少且强相关时最多合并 2 个 chunk，合并时标题需用 "标题1 / 标题2" 形式拼接。
-4. 语义驱动模板匹配（核心原则）：
-   - 【数据与指标】：若内容核心在于展现多组连贯的具体数值、对比趋势或业绩占比时，可酌情选用 \`metrics\` (四到八项), \`metrics-rings\` (少量), \`chart-bar\`, \`chart-pie\`。如果只是正文中含有零星数字，请依旧使用常规的文字卡片（cards类）以保证排版稳定性。
-   - 【特性与并列】：内容包含多个特性、优势、产品点或模块拆解时，请务必以**最高的多样性**在以下所有平级的卡片模板中随机混用，不要偏好任何一种：
-     - **3 项时**: 均匀穿插使用 \`cards-3\`, \`cards-3-stack\`, \`cards-3-featured\`, \`staggered-cards\`。
-     - **4 项时**: 均匀穿插使用 \`cards-4\`, \`cards-4-featured\`, \`grid-2x2-featured\`。
-     - **多项时 (灵活)**: 选用 \`cards-split\` (4-8项), \`list-featured\`, \`features-list-image\`。
-   - 【时间与流程】：内容涉及发展历程、时间里程碑、项目分期、操作步骤时，必须选用 \`timeline\` 或 \`milestone-list\`。
-   - 【对比与解说】：内容涉及两物对比、优劣势分析、或长段抽象概念图解时，优先选用 \`comparison\`, \`image-text\`, \`text-image\` 等。
-    - 【人物与名言】：**只有当原文中存在明确署名的人物发言或评价时**（如"张三指出……"、"李教授评价……"），才可使用 \`quote\` / \`quote-no-avatar\`。严禁对产业验证、案例分析、应用成效等客观叙述内容使用 quote 布局——这类内容应使用 \`cards-3\` / \`text-bullets\` / \`cards-split\` 等常规布局。
-    - 【专家评价/权威推荐】：若 Chunk 标题含"专家评价""指导评价"且内容有多位专家的署名段落（如"【xxx领域专家 姓名（身份）】"），优先选用 \`quote\` / \`quote-no-avatar\`，每位专家对应一个 card。
-    - 【推广/落地阶段规划】：若内容包含"灯塔引航""梯度深耕""第一阶段/第二阶段/第三阶段""分步推进"等明确的阶段性策略，优先选用 \`timeline\` 或 \`milestone-list\`。
-    - 【团队成员/组织架构】：若内容包含多人姓名+职务+分工的结构化信息，优先使用 \`team-members\`。
-    - 【竞品/方案对比】：若标题含"竞品分析""竞争优势"且内容涉及双方指标对比，优先使用 \`comparison\`。
-    - 【社会贡献/影响】：若内容按民生福祉/社会文明/生态文明三段组织，或包含就业增收/社会结构/环境生态等并列维度，优先使用 \`cards-3\` / \`staggered-cards\`。
-    - 【量化成效汇总】：若标题含"创新成效""推广成效""经济效益""公益成效"且内容有密集量化数据（百分比、金额、倍数），优先选用 \`metrics\` / \`metrics-rings\`。
-    - 【财务/盈利】：若标题含"财务规划""盈利分析""财务管理"且有财务指标或图表数据，优先选用 \`chart-bar\` / \`metrics\`。
-    - 【含架构图/框架图的模块】：若内容含 Mermaid 转换后的架构图、技术路线图、组织结构图等图片，优先使用 \`image-text\` / \`text-image\`。常见模块：创新设计（技术路线图）、商业模式（生态框架图）、团队结构（组织架构图）、经营管理（四维框架图）。
-    - 【育人思政/四新建设】：若标题含"四新建设""思政引领""创新创业""产教融合""校企合作"等，需根据实际内容灵活匹配：单段论述→ \`text-center\`；含并列分点→ \`text-bullets\` / \`cards-3\`；含架构图→ \`image-text\`、\`text-image\`。
- 5. 视觉多样性与适宜性的极致平衡：
-   - **重视觉、轻纯文**：彻底摒弃全篇 "text-bullets" 轰炸的低级排版，"text-bullets" 仅在纯零散要点且真的无法归类于上述模式时作为最后兜底使用。
-   - **动态平衡**：严禁连续 3 页使用同一种布局，必须通过切换（如：卡片页 -> 图表页 -> 流程页 -> 引用页）来维持观众注意力。
+   - **H3 级 Chunk 绝对独立**：所有 headingLevel=3 的 Chunk **必须且只能**独立做成一页（1:1 映射），**严禁合并**。
+   - **H2 级 Chunk 绝对独立**：所有 headingLevel=2 的 Chunk **必须独立成页**。
+   - **禁用细碎分页**：禁止将 H4 或更深层级的内容独立成页。
+   - **普通项容量控制**：默认"一个核心观点=一页"。仅在同一 H2 下、内容极少且强相关时最多合并 2 个 chunk。
+4. 语义驱动布局选择（核心原则）：
+   **所有布局名称必须且只能从下方 [可用布局清单] 中选择，严禁使用清单中不存在的名称。**
+   匹配策略：先阅读清单中每个布局的 description 和 contentFields，再根据以下语义场景选择最匹配的布局：
+   - 【数据指标】：多组量化数值/KPI → 选择描述中含 stats/metrics 的布局；趋势对比 → 图表类布局。
+   - 【特性并列】：多个并列要点/特性/模块 → 选择含 cols/columns/cards 的多列布局。**同类不超过连续2页**。
+   - 【时间流程】：发展历程、里程碑 → 选择描述中含 timeline 的布局。
+   - 【对比分析】：两方对比、优劣分析 → 选择双栏类布局。
+   - 【人物名言】：**仅当原文有明确署名人物发言时** → 选择 quote 类布局。产业验证等客观叙述**禁用** quote。
+   - 【专家评价】：若 Chunk 含多位专家署名段落 → 选择 quote 类布局，每位专家对应一个 card。
+   - 【团队成员】：多人姓名+职务+分工 → 选择 team 类布局。
+   - 【图文混排】：内容搭配图片/架构图 → 选择 image 类布局。
+   - 【章节过渡】：只有标题和简短概述 → 选择 chapter/section 类布局。
+   - 【纯文字正文】：单段论述 → 选择含 text/bottom-text/blurb 的布局。含多条分点 → 选择含 bullets/list 的布局。
+5. 视觉多样性：
+   - 严禁连续 3 页使用同一种布局，通过切换维持观众注意力。
+   - 优先使用丰富的多列/图表/图文布局，纯文字布局作为最后兜底。
 6. 项数与组件强绑定（必须遵守）：
-   - 每种带有具体数字或特定逻辑的模板都有严格的子项数量要求。请务必核对下方 [项数路由约束]。
-   - 比如 \`staggered-cards\`, \`cards-3-stack\`, \`cards-3-featured\` 必须恰好生成 3 个子项。
-   - \`cards-4-featured\`, \`grid-2x2-featured\` 必须恰好生成 4 个子项。
-   - 如果原文包含 5 个要点，但你想用上述 3 项或 4 项布局，你**必须**在提炼内容时将其归纳合并为对应点数；否则请更换为 \`cards-split\` 等支持多项的模板。绝对不要生成与模板限制冲突的内容数量。
+   - 阅读布局的 contentFields 描述：\`cards:3\` 表示必须恰好 3 张卡片，\`cards:4\` 表示恰好 4 张。
+   - 如果原文有 5 个要点但选了 \`cards:3\` 的布局，必须归纳合并为 3 项。
+   - 如果无法归纳，改选支持更多项的布局。
 
-[可用布局清单 - 32 种模板（section-header 已禁用）]
-- 基础及通用: cover, ending, text-bullets, text-center
-- 视觉与图片: image-text, text-image, image-center, image-full
-- 结构化卡片: cards-2, cards-3, cards-4, cards-4-featured, grid-2x2-featured, cards-3-featured, cards-3-stack, cards-split, staggered-cards
-- 逻辑与时间: comparison, timeline, milestone-list
-- 意见与引用: quote, quote-no-avatar
-- 团队与成员: team-members
-- 数据与指标: metrics, metrics-rings
-- 图表分析: chart-bar, chart-bar-compare, chart-line, chart-pie
-- 增强列表: list-featured, features-list-image
+${(() => {
+  const tid = preferences?.themeId || 'pastel-papercut'
+  // 所有主题统一走 Spec 引擎的布局词汇表
+  return `[可用布局清单 — 当前主题: ${tid}]
+每个布局有语义名称和适用场景描述。请严格在以下列表中选择 layout 值：
+${getThemeLayoutDescriptions(tid)}
+
+[重要] 第一页必须使用含 cover 的布局，最后一页必须使用含 ending 的布局。中间页面从其余布局中根据内容语义选择。`
+})()}
 
 ${buildCapacityHint()}
 

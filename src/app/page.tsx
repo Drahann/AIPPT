@@ -2,7 +2,8 @@
 
 import { useState, useCallback } from 'react'
 import { useRouter } from 'next/navigation'
-import { templatePacks } from '@/lib/templates/registry'
+import { getAllThemeSpecs } from '@/lib/spec-engine/theme-registry'
+import '@/lib/spec-engine/themes' // side-effect: registers all themes
 import { useAppStore } from '@/lib/store'
 
 export default function HomePage() {
@@ -10,7 +11,7 @@ export default function HomePage() {
   const { setGenerateConfig } = useAppStore()
   const [file, setFile] = useState<File | null>(null)
   const [dragActive, setDragActive] = useState(false)
-  const [selectedPack, setSelectedPack] = useState('group-01')
+  const [selectedPack, setSelectedPack] = useState('pastel-papercut')
   const [isGenerating, setIsGenerating] = useState(false)
   const [debugMode, setDebugMode] = useState(false)
   const [userImages, setUserImages] = useState<{ id: string; file: File; description: string; preview: string }[]>([])
@@ -184,20 +185,20 @@ export default function HomePage() {
             </div>
 
             <div className="ff-themes">
-              {templatePacks.map((pack) => (
+              {getAllThemeSpecs().map((theme) => (
                 <button
-                  key={pack.id}
-                  onClick={() => setSelectedPack(pack.id)}
-                  className={`ff-theme-btn ${selectedPack === pack.id ? 'ff-theme-btn--active' : ''}`}
-                  title={pack.name}
+                  key={theme.id}
+                  onClick={() => setSelectedPack(theme.id)}
+                  className={`ff-theme-btn ${selectedPack === theme.id ? 'ff-theme-btn--active' : ''}`}
+                  title={theme.name}
                 >
                   <div
                     className="ff-theme-btn__swatch"
                     style={{
-                      background: `linear-gradient(135deg, ${pack.colors.primary} 50%, ${pack.colors.secondary || pack.colors.accent} 50%)`,
+                      background: `linear-gradient(135deg, ${theme.defaults.colorPrimary} 50%, ${theme.defaults.colorAccent} 50%)`,
                     }}
                   />
-                  <span className="ff-theme-btn__name">{pack.name}</span>
+                  <span className="ff-theme-btn__name">{theme.name}</span>
                 </button>
               ))}
             </div>

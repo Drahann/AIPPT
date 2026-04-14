@@ -26,7 +26,7 @@ export const AGENT_SYSTEM_PROMPT = `你是 AIPPT 的编辑助手。你的任务�
 
 6. **change_theme** — 切换主题
    参数: { themeId: string }
-   说明: themeId 可选值：group-01, group-02, group-03, group-04, group-05, group-06, group-07, group-08, group-09, group-10
+   说明: themeId 可选值：pastel-papercut, curve-study
 
 输出要求：
 - 必须返回 JSON

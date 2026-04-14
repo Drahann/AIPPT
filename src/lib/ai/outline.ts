@@ -30,6 +30,7 @@ export async function generateOutline(
   preferences?: {
     slideCount?: number
     language?: string
+    themeId?: string
     imagePool?: { url: string; description: string; source: 'user' | 'docx' }[]
   },
   debugLog?: (stage: string, payload: unknown) => void
@@ -160,8 +161,8 @@ function enforceSpecialItemSlides(result: OutlineResult, chunks: DocumentChunk[]
     })
 
   // Separate cover/ending from content slides before sorting
-  const coverSlide = filteredSlides.find(s => s.layout === 'cover' || (s.index === 1 && normalizeRefChunks(s.refChunks).length === 0))
-  const endingSlide = filteredSlides.find(s => s.layout === 'ending' || (s.index === result.slides.length && normalizeRefChunks(s.refChunks).length === 0))
+  const coverSlide = filteredSlides.find(s => s.layout === 'cover' || s.layout.includes('cover') || (s.index === 1 && normalizeRefChunks(s.refChunks).length === 0))
+  const endingSlide = filteredSlides.find(s => s.layout === 'ending' || s.layout.includes('ending') || (s.index === result.slides.length && normalizeRefChunks(s.refChunks).length === 0))
   const contentSlides = filteredSlides.filter(s => s !== coverSlide && s !== endingSlide)
 
   const mergedContent = [...contentSlides, ...additionalSlides].sort((a, b) => {
@@ -246,11 +247,12 @@ function normalizeOutline(
     })
 
     if (index === 0) {
-      normalized.layout = 'cover'
+      // Spec themes already set the right cover layout; only override for legacy
+      if (!normalized.layout.includes('cover')) normalized.layout = 'cover'
       return normalized
     }
     if (index === result.slides.length - 1) {
-      normalized.layout = 'ending'
+      if (!normalized.layout.includes('ending')) normalized.layout = 'ending'
       return normalized
     }
 
@@ -288,6 +290,37 @@ function normalizeOutline(
       normalized.layout = 'cards-3' as LayoutType
     }
 
+    // --- Spec layout alias mapping ---
+    // AI sometimes invents layout names by adding pp- prefix to legacy names
+    // or using non-existent variants. Map them to actual spec layouts.
+    const SPEC_LAYOUT_ALIASES: Record<string, string> = {
+      'pp-cards-3': 'pp-cards-stack',
+      'pp-cards-3-stack': 'pp-cards-stack',
+      'pp-cards-4': 'pp-cards-grid',
+      'pp-cards-4-featured': 'pp-content-four-col',
+      'pp-list-featured': 'pp-detail-list',
+      'pp-staggered-cards': 'pp-cards-grid',
+      'pp-features-list-image': 'pp-image-split-left',
+      'pp-grid-2x2-featured': 'pp-cards-grid',
+      'pp-text-bullets': 'pp-content-bullets',
+      'pp-milestone-list': 'pp-timeline-compact',
+      'pp-timeline': 'pp-timeline-large',
+      'pp-quote-no-avatar': 'pp-quote',
+      'pp-metrics-rings': 'pp-metrics',
+      'pp-cards-3-featured': 'pp-cards-stack',
+      'pp-image-center': 'pp-image-full',
+      'pp-text-image': 'pp-image-right',
+    }
+    if (SPEC_LAYOUT_ALIASES[normalized.layout]) {
+      debugLog?.('outline.specAlias.remapped', {
+        index: normalized.index,
+        title: normalized.title,
+        from: normalized.layout,
+        to: SPEC_LAYOUT_ALIASES[normalized.layout],
+      })
+      normalized.layout = SPEC_LAYOUT_ALIASES[normalized.layout] as LayoutType
+    }
+
     return enforceSlideLayoutByCandidates(normalized, chunks)
   })
 
@@ -312,7 +345,8 @@ function normalizeOutline(
 
   const recentLayouts: LayoutType[] = []
   const diverseSlides = slides.map(s => {
-    if (s.layout === 'cover' || s.layout === 'ending' || s.layout === 'section-header') {
+    if (s.layout === 'cover' || s.layout === 'ending' || s.layout === 'section-header' ||
+        s.layout.includes('cover') || s.layout.includes('ending')) {
       return s
     }
     // If this layout was used in the last 2 slides, try to pick a same-category alternative

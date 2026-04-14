@@ -7,39 +7,21 @@ export interface DocumentChunk {
   order: number
 }
 
-export type LayoutType =
-  | 'cover'
-  | 'section-header'
-  | 'text-bullets'
-  | 'text-center'
-  | 'image-text'
-  | 'text-image'
-  | 'image-center'
-  | 'image-full'
-  | 'cards-2'
-  | 'cards-3'
-  | 'cards-4'
-  | 'comparison'
-  | 'timeline'
-  | 'metrics'
-  | 'quote'
-  | 'quote-no-avatar'
-  | 'ending'
-  | 'chart-bar'
-  | 'chart-bar-compare'
-  | 'chart-line'
-  | 'chart-pie'
-  | 'list-featured'
-  | 'cards-split'
-  | 'staggered-cards'
-  | 'features-list-image'
-  | 'metrics-rings'
-  | 'milestone-list'
-  | 'team-members'
-  | 'cards-4-featured'
-  | 'grid-2x2-featured'
-  | 'cards-3-featured'
-  | 'cards-3-stack'
+/**
+ * LayoutType — 布局标识符
+ *
+ * 方案C 架构：每个主题定义自己的布局词汇表。
+ * 旧主题 (group-01 ~ group-10) 仍使用如下名称：
+ *   cover, section-header, text-bullets, text-center, image-text, text-image,
+ *   image-center, image-full, cards-2, cards-3, cards-4, comparison, timeline,
+ *   metrics, quote, quote-no-avatar, ending, chart-bar, chart-bar-compare,
+ *   chart-line, chart-pie, list-featured, cards-split, staggered-cards,
+ *   features-list-image, metrics-rings, milestone-list, team-members,
+ *   cards-4-featured, grid-2x2-featured, cards-3-featured, cards-3-stack
+ *
+ * Spec 引擎主题使用自定义名称 (如 'cp-cover', 'cp-toc-green', 'pp-hero')。
+ */
+export type LayoutType = string
 
 export interface SlideOutline {
   index: number

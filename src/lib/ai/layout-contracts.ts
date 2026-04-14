@@ -1,4 +1,5 @@
 import { LayoutType, SlideContent, SlideOutline } from '../types'
+import { getAllThemeSpecs } from '../spec-engine/theme-registry'
 
 type ValidationResult = {
   valid: boolean
@@ -275,6 +276,44 @@ export function validateAndNormalizeSlideShape(slide: SlideContent, outline: Sli
     }
   }
 
+  // --- Spec layout auto-conversion: use contentFields to determine needed data ---
+  const specFields = getSpecContentFields(next.layout)
+  if (specFields) {
+    const needsCards = specFields.some(f => f.startsWith('cards:'))
+    const needsEvents = specFields.some(f => f.startsWith('events:'))
+    const needsMetrics = specFields.some(f => f.startsWith('metrics:'))
+    const needsComparison = specFields.includes('left') && specFields.includes('right')
+
+    if (needsCards && !hasCards(next) && hasVisibleBody(next)) {
+      const mappedCards = toCardsFromBody(next)
+      if (mappedCards && mappedCards.length > 0) {
+        next = { ...next, cards: mappedCards, body: undefined }
+        remapped = true
+      }
+    }
+    if (needsEvents && !hasEvents(next)) {
+      const mappedEvents = toEventsFromCards(next) || toEventsFromBody(next)
+      if (mappedEvents) {
+        next = { ...next, events: mappedEvents }
+        remapped = true
+      }
+    }
+    if (needsMetrics && !hasMetrics(next)) {
+      const mappedMetrics = toMetricsFromCards(next) || toMetricsFromBody(next)
+      if (mappedMetrics) {
+        next = { ...next, metrics: mappedMetrics }
+        remapped = true
+      }
+    }
+    if (needsComparison && !hasComparison(next)) {
+      const mappedComparison = toComparisonFromCards(next) || toComparisonFromBody(next)
+      if (mappedComparison) {
+        next = { ...next, ...mappedComparison }
+        remapped = true
+      }
+    }
+  }
+
   if (['image-text', 'text-image', 'image-center', 'text-bullets', 'text-center'].includes(next.layout)) {
     if ((!next.body || next.body.length === 0) && next.cards?.length) {
       const mappedBody = toBodyFromCards(next)
@@ -360,7 +399,9 @@ export function validateAndNormalizeSlideShape(slide: SlideContent, outline: Sli
 }
 
 export function chooseLayoutForNormalizedContent(slide: SlideContent, outline: SlideOutline): SlideContent {
-  if (slide.layout === 'cover' || slide.layout === 'ending' || slide.layout === 'section-header') {
+  // Spec themes use prefixed names (cp-cover, pp-ending, etc.)
+  const l = slide.layout
+  if (l === 'cover' || l === 'ending' || l === 'section-header' || l.includes('cover') || l.includes('ending')) {
     return slide
   }
 
@@ -399,4 +440,16 @@ export function chooseLayoutForNormalizedContent(slide: SlideContent, outline: S
     return { ...slide, layout: slide.image ? (outline.layout === 'text-image' ? 'text-image' : 'image-text') : 'text-bullets' }
   }
   return slide
+}
+
+/**
+ * 从所有已注册 spec 主题中查找布局的 contentFields。
+ * 用于驱动 body→cards/events/metrics 的自动转换。
+ */
+function getSpecContentFields(layout: string): string[] | undefined {
+  for (const theme of getAllThemeSpecs()) {
+    const spec = theme.layouts[layout]
+    if (spec?.contentFields) return spec.contentFields
+  }
+  return undefined
 }

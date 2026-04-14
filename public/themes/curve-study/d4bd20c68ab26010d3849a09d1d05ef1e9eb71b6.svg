@@ -1,0 +1,16 @@
+<svg preserveAspectRatio="none" width="100%" height="100%" overflow="visible" style="display: block;" viewBox="0 0 405 406" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Pie chart">
+<g id="Pie slice">
+<path d="M100 203C100 260.195 145.976 306 202 306V406C90.1299 406 0 314.804 0 203H100Z" fill="#5FA0FB"/>
+</g>
+<g id="Pie slice_2">
+<path d="M305 203C305 146.115 258.885 100 202 100L202 1.77468e-05C314.114 7.94552e-06 405 90.8862 405 203L305 203Z" fill="#237267"/>
+</g>
+<g id="Pie slice_3">
+<path d="M202 306C258.885 306 305 259.885 305 203L405 203C405 315.114 314.114 406 202 406L202 306Z" fill="#D2B7E9"/>
+</g>
+<g id="Pie slice_4">
+<path d="M202 100C145.976 100 100 145.805 100 203L2.66202e-05 203C1.19589e-05 91.1958 90.1299 1.467e-05 202 0L202 100Z" fill="#FF542D"/>
+</g>
+</g>
+</svg>

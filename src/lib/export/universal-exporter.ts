@@ -1,4 +1,48 @@
 import PptxGenJS from 'pptxgenjs'
+import * as fs from 'fs'
+import * as nodePath from 'path'
+
+/**
+ * Resolve an image URL for pptxgenjs.
+ * - data: URLs pass through directly
+ * - http:// / localhost URLs are read from local public/ dir and converted to base64
+ * - https:// URLs use pptxgenjs's built-in download (path)
+ * Returns null if the image cannot be resolved (skip it).
+ */
+function resolveImageForPptx(url: string): { data?: string; path?: string } | null {
+  if (url.startsWith('data:')) {
+    return { data: url }
+  }
+
+  // http:// or localhost → pptxgenjs does NOT support http, must resolve locally
+  if (url.startsWith('http://') || url.includes('localhost')) {
+    // Try to find in public/ directory
+    // Match patterns like /themes/xxx/file.png or /_next/static/...
+    const publicMatch = url.match(/(?:\/themes\/.+|\/images\/.+|\/assets\/.+|\/[\w.-]+\.(?:png|jpg|jpeg|svg|webp|gif))$/)
+    if (publicMatch) {
+      try {
+        const localPath = nodePath.join(process.cwd(), 'public', publicMatch[0])
+        if (fs.existsSync(localPath)) {
+          const buf = fs.readFileSync(localPath)
+          const ext = localPath.endsWith('.svg') ? 'svg+xml' : localPath.endsWith('.png') ? 'png' : 'jpeg'
+          return { data: `data:image/${ext};base64,${buf.toString('base64')}` }
+        }
+      } catch (e) {
+        console.warn('[Export] Failed to read local image:', publicMatch[0], e)
+      }
+    }
+    // Cannot resolve http URL → skip (do not pass to pptxgenjs)
+    console.warn('[Export] Skipping http image (unsupported by pptxgenjs):', url.substring(0, 80))
+    return null
+  }
+
+  // https:// → pptxgenjs can download these directly
+  if (url.startsWith('https://')) {
+    return { path: url }
+  }
+
+  return null
+}
 
 let polyfillInstalledForExporter = false;
 function ensureCanvasPolyfillForExporter() {
@@ -130,7 +174,10 @@ function mapDashType(styleStr: string | null): "solid" | "dash" | "dashDot" | "l
 }
 
 function mapFontFamily(fontStr: string | null, role: 'heading' | 'body' = 'body'): string {
-  // 标题/副标题: 华文宋体 (STSong), 正文: 黑体 (SimHei)
+  // 透传原始字体，仅在无法识别时 fallback
+  if (!fontStr) return role === 'heading' ? 'STSong' : 'SimHei'
+  const cleaned = fontStr.split(',')[0].replace(/['"]*/g, '').trim()
+  if (cleaned && cleaned !== 'sans-serif' && cleaned !== 'serif' && cleaned !== 'monospace') return cleaned
   return role === 'heading' ? 'STSong' : 'SimHei'
 }
 
@@ -182,6 +229,15 @@ export async function generateUniversalPptx(snapshots: any[], title?: string): P
     sorted.forEach((el) => {
       if (el.opacity === "0" || el.display === "none") return;
 
+      // Skip elements that are far outside the visible slide area
+      // Decoration elements (data-decoration) are allowed negative coords
+      const rawX = parseFloat(el.x);
+      const rawY = parseFloat(el.y);
+      const isDecoEl = el.isDecoration === true;
+      if (!isDecoEl && (rawX < -5 || rawY < -5 || rawX > 100 || rawY > 100)) return;
+      // Even decorations too far out should be skipped — allow generous bleed for SVG/paper textures
+      if (isDecoEl && (rawX < -50 || rawY < -50 || rawX > 150 || rawY > 150)) return;
+
       const x = parseFloat(el.x) + '%';
       const y = parseFloat(el.y) + '%';
       let parsedW = parseFloat(el.width);
@@ -232,12 +288,16 @@ export async function generateUniversalPptx(snapshots: any[], title?: string): P
       if (imageUrl || gradientData) {
         const finalImg = imageUrl || gradientData;
         if (finalImg && (finalImg.startsWith('http') || finalImg.startsWith('data:'))) {
-          slide.addImage({
-            path: finalImg.startsWith('http') ? finalImg : undefined,
-            data: finalImg.startsWith('data:') ? finalImg : undefined,
-            x: x as any, y: y as any, w: w as any, h: h as any,
-            sizing: { type: (el.objectFit === 'contain' ? 'contain' : 'cover') as any, w: w as any, h: h as any }
-          });
+          const resolved = resolveImageForPptx(finalImg);
+          if (resolved) {
+            slide.addImage({
+              path: resolved.path,
+              data: resolved.data,
+              x: x as any, y: y as any, w: w as any, h: h as any,
+              rotate: el.rotate || 0,
+              sizing: { type: (el.objectFit === 'contain' ? 'contain' : 'cover') as any, w: w as any, h: h as any }
+            });
+          }
         }
       } else if (fill || borderWidth > 0 || bwTop > 0 || bwRight > 0 || bwBottom > 0 || bwLeft > 0) {
         let effectiveBorderWidth = borderWidth;
@@ -380,9 +440,9 @@ export async function generateUniversalPptx(snapshots: any[], title?: string): P
           }
         }
 
-        // Use 1.0 correction factor for 960px CSS px to 960pt PPT pt conversion
-        // (LAYOUT_WIDE is 13.33" -> approx 960pt)
-        const pptFontSize = fontSize;
+        // Clamp font size: PPT titles above ~44pt look absurd & overflow
+        const MAX_FONT = 54;
+        const pptFontSize = Math.min(fontSize, MAX_FONT);
 
         slide.addText(finalLinesStr, {
           x: x as any, y: y as any, w: w as any, h: h as any,
@@ -395,7 +455,7 @@ export async function generateUniversalPptx(snapshots: any[], title?: string): P
           valign: valign as any,
           transparency: fgTransparency,
           margin: 0,
-          wrap: false 
+          wrap: true 
         });
       }
     });

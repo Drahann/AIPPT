@@ -1,34 +1,8 @@
 'use client'
 
 import { SlideContent } from '@/lib/types'
-import { TemplatePack } from '@/lib/templates/index'
-import { getFigmaComponent } from '@/lib/templates/shared/component-map'
-import { CoverSlide } from './layouts/CoverSlide'
-import { SectionHeaderSlide } from './layouts/SectionHeaderSlide'
-import { TextBulletsSlide } from './layouts/TextBulletsSlide'
-import { TextCenterSlide } from './layouts/TextCenterSlide'
-import { ImageTextSlide } from './layouts/ImageTextSlide'
-import { ImageCenterSlide } from './layouts/ImageCenterSlide'
-import { ImageFullSlide } from './layouts/ImageFullSlide'
-import { CardsSlide } from './layouts/CardsSlide'
-import { ComparisonSlide } from './layouts/ComparisonSlide'
-import { TimelineSlide } from './layouts/TimelineSlide'
-import { MetricsSlide } from './layouts/MetricsSlide'
-import { QuoteSlide } from './layouts/QuoteSlide'
-import { QuoteNoAvatarSlide } from './layouts/QuoteNoAvatarSlide'
-import { EndingSlide } from './layouts/EndingSlide'
-import { ChartSlide } from './layouts/ChartSlide'
-import { ListFeaturedSlide } from './layouts/ListFeaturedSlide'
-import { CardsSplitSlide } from './layouts/CardsSplitSlide'
-import { StaggeredCardsSlide } from './layouts/StaggeredCardsSlide'
-import { FeaturesListImageSlide } from './layouts/FeaturesListImageSlide'
-import { MetricsRingsSlide } from './layouts/MetricsRingsSlide'
-import { MilestoneListSlide } from './layouts/MilestoneListSlide'
-import { TeamMembersSlide } from './layouts/TeamMembersSlide'
-import { CardsFeaturedSlide } from './layouts/CardsFeaturedSlide'
-import { GridFeaturedSlide } from './layouts/GridFeaturedSlide'
-import { Cards3FeaturedSlide } from './layouts/Cards3FeaturedSlide'
-import { Cards3StackSlide } from './layouts/Cards3StackSlide'
+import { SpecRenderer, resolveLayout, getThemeSpec } from '@/lib/spec-engine'
+import '@/lib/spec-engine/themes' // side-effect: registers all themes
 
 import { getDensityClass } from '@/lib/utils/density-utils'
 import { getTypographyVars } from '@/lib/utils/typography-utils'
@@ -39,11 +13,21 @@ import { captureSlideLayout, saveLayoutSnapshot } from '@/lib/utils/layout-snaps
 interface SlideRendererProps {
   slide: SlideContent
   index: number
-  pack?: TemplatePack
+  /** @deprecated pack 参数仅为向后兼容保留 */
+  pack?: { id: string; cssClass?: string }
   isEditable?: boolean
   onUpdate?: (slide: SlideContent) => void
 }
 
+/**
+ * 统一的幻灯片渲染器 — 仅通过 SpecRenderer 渲染。
+ *
+ * 使用 resolveLayout() 4 级 fallback 机制：
+ * ① 主题精确匹配
+ * ② 主题语义匹配
+ * ③ 公共库精确匹配（注入当前主题配色）
+ * ④ 公共库语义匹配（注入当前主题配色）
+ */
 export function SlideRenderer({ slide, index, pack, isEditable = false, onUpdate }: SlideRendererProps) {
   const [urlDebug, setUrlDebug] = useState(false)
   useEffect(() => {
@@ -59,8 +43,6 @@ export function SlideRenderer({ slide, index, pack, isEditable = false, onUpdate
   const debugMode = storeDebugMode === true || urlDebug
   const slideRef = useRef<HTMLDivElement>(null)
 
-  const densityClass = getDensityClass(slide)
-  const typographyStyle = useMemo(() => getTypographyVars(slide.typographyParams), [slide.typographyParams])
   const layoutClass = `layout-${slide.layout}`
 
   const debugSessionId = (useAppStore.getState().presentation as any)?.metadata?.debugSessionId
@@ -71,7 +53,6 @@ export function SlideRenderer({ slide, index, pack, isEditable = false, onUpdate
       const timer = setTimeout(async () => {
         if (slideRef.current) {
           const snapshot = captureSlideLayout(slideRef.current, index);
-          // Pass the session ID to the server to ensure snapshots go to the right folder
           const success = await saveLayoutSnapshot({
             ...snapshot,
             sessionId: debugSessionId
@@ -83,116 +64,31 @@ export function SlideRenderer({ slide, index, pack, isEditable = false, onUpdate
     }
   }, [debugMode, slide, index, debugSessionId]);
 
-  // --- Figma original-code rendering path ---
-  if (pack && pack.figmaLayouts.includes(slide.layout) && slide.layout !== 'quote') {
-    const FigmaComponent = getFigmaComponent(pack.id, slide.layout)
-    if (FigmaComponent) {
-      return (
-        <div 
-          ref={slideRef}
-          className={`slide-card ${layoutClass} ${pack.cssClass || ''}`}
-          data-slide-index={index}
-        >
-          <span className="slide-number">{index + 1}</span>
-          {/* We wrap Figma components in a scaled container to match 1920x1080 design */}
-          <div style={{ position: 'absolute', inset: 0, overflow: 'hidden' }}>
-            <div style={{
-              width: 1920,
-              height: 1080,
-              transform: `scale(0.5)`,
-              transformOrigin: 'top left',
-            }}>
-              <FigmaComponent 
-                title={slide.title}
-                subtitle={slide.subtitle}
-                quote={slide.quote}
-                colors={pack.colors}
-              />
-            </div>
-          </div>
-        </div>
-      )
-    }
-  }
+  // 通过 resolveLayout 获取布局（含 4 级 fallback）
+  const themeId = pack?.id || 'pastel-papercut'
+  const layoutSpec = resolveLayout(themeId, slide.layout)
+  const themeSpec = getThemeSpec(themeId)
 
-  // --- Semantic layout rendering path ---
-  const renderLayout = () => {
-    switch (slide.layout) {
-      case 'cover':
-        return <CoverSlide slide={slide} editable={isEditable} onUpdate={onUpdate} />
-      case 'section-header':
-        return <SectionHeaderSlide slide={slide} editable={isEditable} onUpdate={onUpdate} />
-      case 'text-bullets':
-        return <TextBulletsSlide slide={slide} editable={isEditable} onUpdate={onUpdate} />
-      case 'text-center':
-        return <TextCenterSlide slide={slide} editable={isEditable} onUpdate={onUpdate} />
-      case 'image-text':
-        return <ImageTextSlide slide={slide} editable={isEditable} onUpdate={onUpdate} imagePosition="left" />
-      case 'text-image':
-        return <ImageTextSlide slide={slide} editable={isEditable} onUpdate={onUpdate} imagePosition="right" />
-      case 'image-center':
-        return <ImageCenterSlide slide={slide} editable={isEditable} onUpdate={onUpdate} />
-      case 'image-full':
-        return <ImageFullSlide slide={slide} editable={isEditable} onUpdate={onUpdate} />
-      case 'cards-2':
-        return <CardsSlide slide={slide} columns={2} editable={isEditable} onUpdate={onUpdate} />
-      case 'cards-3':
-        return <CardsSlide slide={slide} columns={3} editable={isEditable} onUpdate={onUpdate} />
-      case 'cards-4':
-        return <CardsSlide slide={slide} columns={4} editable={isEditable} onUpdate={onUpdate} />
-      case 'comparison':
-        return <ComparisonSlide slide={slide} editable={isEditable} onUpdate={onUpdate} />
-      case 'timeline':
-        return <TimelineSlide slide={slide} editable={isEditable} onUpdate={onUpdate} />
-      case 'metrics':
-        return <MetricsSlide slide={slide} editable={isEditable} onUpdate={onUpdate} />
-      case 'quote':
-        return <QuoteSlide slide={slide} editable={isEditable} onUpdate={onUpdate} />
-      case 'quote-no-avatar':
-        return <QuoteNoAvatarSlide slide={slide} editable={isEditable} onUpdate={onUpdate} />
-      case 'ending':
-        return <EndingSlide slide={slide} editable={isEditable} onUpdate={onUpdate} />
-      case 'chart-bar':
-      case 'chart-bar-compare':
-      case 'chart-line':
-      case 'chart-pie':
-        return <ChartSlide slide={slide} editable={isEditable} onUpdate={onUpdate} />
-      case 'list-featured':
-        return <ListFeaturedSlide slide={slide} editable={isEditable} onUpdate={onUpdate} />
-      case 'cards-split':
-        return <CardsSplitSlide slide={slide} editable={isEditable} onUpdate={onUpdate} />
-      case 'staggered-cards':
-        return <StaggeredCardsSlide slide={slide} editable={isEditable} onUpdate={onUpdate} />
-      case 'features-list-image':
-        return <FeaturesListImageSlide slide={slide} editable={isEditable} onUpdate={onUpdate} />
-      case 'metrics-rings':
-        return <MetricsRingsSlide slide={slide} editable={isEditable} onUpdate={onUpdate} />
-      case 'milestone-list':
-        return <MilestoneListSlide slide={slide} editable={isEditable} onUpdate={onUpdate} />
-      case 'team-members':
-        return <TeamMembersSlide slide={slide} editable={isEditable} onUpdate={onUpdate} />
-      case 'cards-4-featured':
-        return <CardsFeaturedSlide slide={slide} editable={isEditable} onUpdate={onUpdate} />
-      case 'grid-2x2-featured':
-        return <GridFeaturedSlide slide={slide} editable={isEditable} onUpdate={onUpdate} />
-      case 'cards-3-featured':
-        return <Cards3FeaturedSlide slide={slide} editable={isEditable} onUpdate={onUpdate} />
-      case 'cards-3-stack':
-        return <Cards3StackSlide slide={slide} editable={isEditable} onUpdate={onUpdate} />
-      default:
-        return <TextBulletsSlide slide={slide} editable={isEditable} onUpdate={onUpdate} />
-    }
-}
+  // 使用实际解析到的主题（可能是 common fallback，但配色已注入）
+  const effectiveTheme = themeSpec || getThemeSpec('common')!
 
   return (
-    <div 
+    <div
       ref={slideRef}
-      className={`slide-card ${layoutClass} ${densityClass} ${pack?.cssClass || ''}`} 
-      style={typographyStyle}
+      className={`slide-card ${layoutClass} ${pack?.cssClass || ''}`}
       data-slide-index={index}
     >
       <span className="slide-number">{index + 1}</span>
-      {renderLayout()}
+      <div style={{ position: 'absolute', inset: 0, overflow: 'hidden' }}>
+        <div style={{
+          width: 1920,
+          height: 1080,
+          transform: 'scale(0.5)',
+          transformOrigin: 'top left',
+        }}>
+          <SpecRenderer spec={layoutSpec} theme={effectiveTheme} slide={slide} />
+        </div>
+      </div>
     </div>
   )
 }
