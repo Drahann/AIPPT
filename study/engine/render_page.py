@@ -332,7 +332,7 @@ for sh in REC['shapes']:
     if vertical:
         cx = x + w / 2
         body.append(
-            f'<text x="{cx:.0f}" y="{y+fpx*0.95:.0f}" text-anchor="middle" '
+            f'<text class="ct" x="{cx:.0f}" y="{y+fpx*0.95:.0f}" text-anchor="middle" '
             f'writing-mode="vertical-rl" style="text-orientation:upright" '
             f'font-family="{fam}" font-size="{fpx:.1f}"{bold} fill="{fill}">{esc(content)}</text>')
         continue
@@ -369,7 +369,7 @@ for sh in REC['shapes']:
         f'<tspan x="{ax:.0f}" dy="{0 if i == 0 else fpx*lh:.1f}">{esc(ln)}</tspan>'
         for i, ln in enumerate(lines))
     body.append(
-        f'<text x="{ax:.0f}" y="{y0:.0f}" text-anchor="{al}" '
+        f'<text class="ct" x="{ax:.0f}" y="{y0:.0f}" text-anchor="{al}" '
         f'font-family="{fam}" font-size="{fpx:.1f}"{bold} fill="{fill}">{spans}</text>')
 
 W, Hc = REC.get('canvas', [1280, 720])
