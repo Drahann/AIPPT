@@ -1,0 +1,23 @@
+{
+ "function": "title_flank",
+ "family": "blue_tech",
+ "theme": "通用",
+ "palette": "#19E0FF,#04102B",
+ "prompt": "a small deep-blue sci-tech HUD corner ornament: angular bracket frame with thin glowing cyan circuit lines and a faceted hexagon node, navy blue and electric cyan, crisp futuristic interface motif, the whole graphic FILLS THE ENTIRE IMAGE edge to edge, zero margin, full-bleed, on a solid pure black #000000 background, matte, no white background, clean, no text, no words, no letters, IMPORTANT: enlarge the subject to completely fill the frame, no empty black border",
+ "size": "1280*800",
+ "box": "130x82",
+ "composite": "normal",
+ "alpha": true,
+ "preserveAspectRatio": "none",
+ "final_size": [
+  1280,
+  800
+ ],
+ "fill_frac": 0.414,
+ "opaque_frac": 0.135,
+ "stretch_vs_box": 1.009,
+ "warnings": [
+  "LOW-FILL 41% — subject did not fill the frame"
+ ],
+ "render_hint": "place at box with preserveAspectRatio=\"none\", NORMAL blend (alpha is real)"
+}

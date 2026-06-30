@@ -1,0 +1,375 @@
+{
+ "slots": {},
+ "extras": [
+  {
+   "type": "rect",
+   "box": [
+    0,
+    0,
+    1280,
+    720
+   ],
+   "rx": 0,
+   "fill": "rgba(3,14,40,0.30)"
+  },
+  {
+   "type": "image",
+   "box": [
+    0.0,
+    430.0,
+    1280.0,
+    290.0
+   ],
+   "href": "_assets/bottom_glow.png",
+   "preserve": "none",
+   "blend": "screen",
+   "opacity": 0.85,
+   "function": "glow"
+  },
+  {
+   "type": "polygon",
+   "points": "328,22 479,22 465,72 314,72",
+   "fill": "rgba(20,70,140,0.30)",
+   "stroke": "rgba(120,180,255,0.45)",
+   "sw": 1.4
+  },
+  {
+   "type": "polygon",
+   "points": "502,22 653,22 639,72 488,72",
+   "fill": "rgba(20,70,140,0.30)",
+   "stroke": "rgba(120,180,255,0.45)",
+   "sw": 1.4
+  },
+  {
+   "type": "polygon",
+   "points": "676,22 827,22 813,72 662,72",
+   "fill": "rgba(20,70,140,0.30)",
+   "stroke": "rgba(120,180,255,0.45)",
+   "sw": 1.4
+  },
+  {
+   "type": "polygon",
+   "points": "850,22 1001,22 987,72 836,72",
+   "fill": "rgba(3,162,255,0.55)",
+   "stroke": "#66FFFF",
+   "sw": 1.4
+  },
+  {
+   "type": "polygon",
+   "points": "1024,22 1175,22 1161,72 1010,72",
+   "fill": "rgba(20,70,140,0.30)",
+   "stroke": "rgba(120,180,255,0.45)",
+   "sw": 1.4
+  },
+  {
+   "type": "image",
+   "box": [
+    30.0,
+    8.0,
+    300.0,
+    56.0
+   ],
+   "href": "_assets/title_tab.png",
+   "preserve": "none",
+   "blend": "screen",
+   "opacity": 0.9,
+   "function": "title_flank"
+  },
+  {
+   "type": "image",
+   "box": [
+    0.0,
+    100.0,
+    1280.0,
+    72.0
+   ],
+   "href": "_assets/title_band.png",
+   "preserve": "none",
+   "blend": "screen",
+   "opacity": 0.9,
+   "function": "title_flank"
+  },
+  {
+   "type": "image",
+   "box": [
+    46.0,
+    190.0,
+    576.0,
+    490.0
+   ],
+   "href": "_assets/card_left.png",
+   "preserve": "none",
+   "blend": "screen",
+   "function": "card_frame"
+  },
+  {
+   "type": "pill",
+   "box": [
+    76.0,
+    250.0,
+    16.0,
+    16.0
+   ],
+   "rx": 4,
+   "fill": "#016DFF"
+  },
+  {
+   "type": "line",
+   "p": [
+    92,
+    550,
+    576,
+    550
+   ],
+   "color": "rgba(120,180,255,0.5)",
+   "w": 1.6
+  },
+  {
+   "type": "rect",
+   "box": [
+    135.56,
+    357.6923076923077,
+    74.21333333333334,
+    192.30769230769232
+   ],
+   "rx": 5,
+   "fill": "#016DFF",
+   "opacity": 0.92
+  },
+  {
+   "type": "rect",
+   "box": [
+    135.56,
+    357.6923076923077,
+    74.21333333333334,
+    5
+   ],
+   "rx": 2,
+   "fill": "#F2C14E",
+   "opacity": 0.9
+  },
+  {
+   "type": "rect",
+   "box": [
+    296.8933333333333,
+    357.6923076923077,
+    74.21333333333334,
+    192.30769230769232
+   ],
+   "rx": 5,
+   "fill": "#0AADEE",
+   "opacity": 0.92
+  },
+  {
+   "type": "rect",
+   "box": [
+    296.8933333333333,
+    357.6923076923077,
+    74.21333333333334,
+    5
+   ],
+   "rx": 2,
+   "fill": "#F2C14E",
+   "opacity": 0.9
+  },
+  {
+   "type": "rect",
+   "box": [
+    458.2266666666667,
+    453.8461538461538,
+    74.21333333333334,
+    96.15384615384616
+   ],
+   "rx": 5,
+   "fill": "#08D089",
+   "opacity": 0.92
+  },
+  {
+   "type": "rect",
+   "box": [
+    458.2266666666667,
+    453.8461538461538,
+    74.21333333333334,
+    5
+   ],
+   "rx": 2,
+   "fill": "#F2C14E",
+   "opacity": 0.9
+  },
+  {
+   "type": "image",
+   "box": [
+    663.0,
+    190.0,
+    576.0,
+    490.0
+   ],
+   "href": "_assets/card_right.png",
+   "preserve": "none",
+   "blend": "screen",
+   "function": "card_frame"
+  },
+  {
+   "type": "pie",
+   "cx": 863,
+   "cy": 385,
+   "r": 96,
+   "inner": 0.56,
+   "data": [
+    {
+     "label": "研发投入",
+     "value": 50,
+     "color": "#016DFF"
+    },
+    {
+     "label": "运营支出",
+     "value": 30,
+     "color": "#0AADEE"
+    },
+    {
+     "label": "市场推广",
+     "value": 10,
+     "color": "#08D089"
+    },
+    {
+     "label": "团队建设",
+     "value": 10,
+     "color": "#F2C14E"
+    }
+   ],
+   "colors": [
+    "#016DFF",
+    "#0AADEE",
+    "#08D089",
+    "#F2C14E"
+   ],
+   "label_font": "BODY_M",
+   "value_font": "DISP_NUM",
+   "label_px": 15,
+   "label_color": "#FFFFFF"
+  },
+  {
+   "type": "image",
+   "box": [
+    807.0,
+    329.0,
+    112.0,
+    112.0
+   ],
+   "href": "_assets/molecule.png",
+   "preserve": "none",
+   "blend": "screen",
+   "opacity": 0.95,
+   "function": "motif"
+  },
+  {
+   "type": "image",
+   "box": [
+    685.0,
+    480.0,
+    262.0,
+    96.0
+   ],
+   "href": "_assets/panel_cat.png",
+   "preserve": "none",
+   "blend": "screen",
+   "opacity": 0.95,
+   "function": "bg_panel"
+  },
+  {
+   "type": "image",
+   "box": [
+    699.0,
+    494.0,
+    34.0,
+    34.0
+   ],
+   "href": "_assets/dot.png",
+   "preserve": "none",
+   "blend": "screen",
+   "function": "bullet_marker"
+  },
+  {
+   "type": "image",
+   "box": [
+    963.0,
+    480.0,
+    262.0,
+    96.0
+   ],
+   "href": "_assets/panel_cat.png",
+   "preserve": "none",
+   "blend": "screen",
+   "opacity": 0.95,
+   "function": "bg_panel"
+  },
+  {
+   "type": "image",
+   "box": [
+    977.0,
+    494.0,
+    34.0,
+    34.0
+   ],
+   "href": "_assets/dot.png",
+   "preserve": "none",
+   "blend": "screen",
+   "function": "bullet_marker"
+  },
+  {
+   "type": "image",
+   "box": [
+    685.0,
+    590.0,
+    262.0,
+    96.0
+   ],
+   "href": "_assets/panel_cat.png",
+   "preserve": "none",
+   "blend": "screen",
+   "opacity": 0.95,
+   "function": "bg_panel"
+  },
+  {
+   "type": "image",
+   "box": [
+    699.0,
+    604.0,
+    34.0,
+    34.0
+   ],
+   "href": "_assets/dot.png",
+   "preserve": "none",
+   "blend": "screen",
+   "function": "bullet_marker"
+  },
+  {
+   "type": "image",
+   "box": [
+    963.0,
+    590.0,
+    262.0,
+    96.0
+   ],
+   "href": "_assets/panel_cat.png",
+   "preserve": "none",
+   "blend": "screen",
+   "opacity": 0.95,
+   "function": "bg_panel"
+  },
+  {
+   "type": "image",
+   "box": [
+    977.0,
+    604.0,
+    34.0,
+    34.0
+   ],
+   "href": "_assets/dot.png",
+   "preserve": "none",
+   "blend": "screen",
+   "function": "bullet_marker"
+  }
+ ],
+ "drop_unbound_placeholders": false
+}

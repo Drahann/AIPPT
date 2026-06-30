@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 720" width="1280" height="720">
+<defs><linearGradient id="g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#15F7F9"/><stop offset="100%" stop-color="#FFFFFF"/></linearGradient></defs>
+<image href="file:///W:/ppt/study/runs/gen5/financing/plate.png" x="0" y="0" width="1280" height="720"/>
+<rect x="40.0" y="360.0" width="360.0" height="222.0" rx="10" fill="#0B254F" stroke="#1E6FC0" stroke-width="1" opacity="0.42"/>
+<rect x="392.0" y="360.0" width="366.0" height="222.0" rx="10" fill="#0B254F" stroke="#1E6FC0" stroke-width="1" opacity="0.42"/>
+<rect x="786.0" y="360.0" width="430.0" height="222.0" rx="10" fill="#0B254F" stroke="#FFC000" stroke-width="1.2" opacity="0.42"/>
+<path d="M232.0,166.0 A64.0,64.0 0 1 1 168.0,230.0 L200.0,230.0 A32.0,32.0 0 1 0 232.0,198.0 Z" fill="#15F7F9" stroke="#0A1A3A" stroke-width="1.5"/>
+<polyline points="281.5,279.5 309.8,307.8 317.8,307.8" fill="none" stroke="#15F7F9" stroke-width="1.5"/>
+<text x="321.8" y="304.8" text-anchor="start" font-family="'Alibaba PuHuiTi H','OPPOSans B','Source Han Sans CN Heavy','Arial',sans-serif" font-size="15" fill="#15F7F9" font-weight="700">75%</text>
+<text x="321.8" y="320.8" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="12" fill="#FFFFFF">王炯桦</text>
+<path d="M168.0,230.0 A64.0,64.0 0 0 1 172.9,205.5 L202.4,217.8 A32.0,32.0 0 0 0 200.0,230.0 Z" fill="#FFC000" stroke="#0A1A3A" stroke-width="1.5"/>
+<polyline points="163.3,216.3 124.1,208.5 116.1,208.5" fill="none" stroke="#FFC000" stroke-width="1.5"/>
+<text x="112.1" y="205.5" text-anchor="end" font-family="'Alibaba PuHuiTi H','OPPOSans B','Source Han Sans CN Heavy','Arial',sans-serif" font-size="15" fill="#FFC000" font-weight="700">6%</text>
+<text x="112.1" y="221.5" text-anchor="end" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="12" fill="#FFFFFF">任一帆</text>
+<path d="M172.9,205.5 A64.0,64.0 0 0 1 186.7,184.7 L209.4,207.4 A32.0,32.0 0 0 0 202.4,217.8 Z" fill="#0070C0" stroke="#0A1A3A" stroke-width="1.5"/>
+<polyline points="173.8,191.1 140.5,168.9 132.5,168.9" fill="none" stroke="#0070C0" stroke-width="1.5"/>
+<text x="128.5" y="165.9" text-anchor="end" font-family="'Alibaba PuHuiTi H','OPPOSans B','Source Han Sans CN Heavy','Arial',sans-serif" font-size="15" fill="#0070C0" font-weight="700">6%</text>
+<text x="128.5" y="181.9" text-anchor="end" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="12" fill="#FFFFFF">邓煜婕</text>
+<path d="M186.7,184.7 A64.0,64.0 0 0 1 202.9,173.0 L217.5,201.5 A32.0,32.0 0 0 0 209.4,207.4 Z" fill="#F972A9" stroke="#0A1A3A" stroke-width="1.5"/>
+<polyline points="190.9,173.4 167.3,141.0 159.3,141.0" fill="none" stroke="#F972A9" stroke-width="1.5"/>
+<text x="155.3" y="138.0" text-anchor="end" font-family="'Alibaba PuHuiTi H','OPPOSans B','Source Han Sans CN Heavy','Arial',sans-serif" font-size="15" fill="#F972A9" font-weight="700">5%</text>
+<text x="155.3" y="154.0" text-anchor="end" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="12" fill="#FFFFFF">张瑜瑜</text>
+<path d="M202.9,173.0 A64.0,64.0 0 0 1 232.0,166.0 L232.0,198.0 A32.0,32.0 0 0 0 217.5,201.5 Z" fill="#68F0FE" stroke="#0A1A3A" stroke-width="1.5"/>
+<polyline points="215.7,161.9 206.3,123.0 198.3,123.0" fill="none" stroke="#68F0FE" stroke-width="1.5"/>
+<text x="194.3" y="120.0" text-anchor="end" font-family="'Alibaba PuHuiTi H','OPPOSans B','Source Han Sans CN Heavy','Arial',sans-serif" font-size="15" fill="#68F0FE" font-weight="700">8%</text>
+<text x="194.3" y="136.0" text-anchor="end" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="12" fill="#FFFFFF">其他核心成员</text>
+<text x="232.0" y="230.0" text-anchor="middle" dominant-baseline="middle" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="18" fill="#FFFFFF">股权</text>
+<path d="M1000.0,166.0 A64.0,64.0 0 0 1 1037.6,281.8 L1018.8,255.9 A32.0,32.0 0 0 0 1000.0,198.0 Z" fill="#15F7F9" stroke="#0A1A3A" stroke-width="1.5"/>
+<polyline points="1066.6,208.4 1104.6,196.0 1112.6,196.0" fill="none" stroke="#15F7F9" stroke-width="1.5"/>
+<text x="1116.6" y="193.0" text-anchor="start" font-family="'Alibaba PuHuiTi H','OPPOSans B','Source Han Sans CN Heavy','Arial',sans-serif" font-size="15" fill="#15F7F9" font-weight="700">40%</text>
+<text x="1116.6" y="209.0" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="12" fill="#FFFFFF">中试与纯化</text>
+<path d="M1037.6,281.8 A64.0,64.0 0 0 1 948.2,267.6 L974.1,248.8 A32.0,32.0 0 0 0 1018.8,255.9 Z" fill="#0070C0" stroke="#0A1A3A" stroke-width="1.5"/>
+<polyline points="989.0,299.1 982.8,338.6 974.8,338.6" fill="none" stroke="#0070C0" stroke-width="1.5"/>
+<text x="970.8" y="335.6" text-anchor="end" font-family="'Alibaba PuHuiTi H','OPPOSans B','Source Han Sans CN Heavy','Arial',sans-serif" font-size="15" fill="#0070C0" font-weight="700">25%</text>
+<text x="970.8" y="351.6" text-anchor="end" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="12" fill="#FFFFFF">质量与检测</text>
+<path d="M948.2,267.6 A64.0,64.0 0 0 1 948.2,192.4 L974.1,211.2 A32.0,32.0 0 0 0 974.1,248.8 Z" fill="#FFC000" stroke="#0A1A3A" stroke-width="1.5"/>
+<polyline points="930.0,230.0 890.0,230.0 882.0,230.0" fill="none" stroke="#FFC000" stroke-width="1.5"/>
+<text x="878.0" y="227.0" text-anchor="end" font-family="'Alibaba PuHuiTi H','OPPOSans B','Source Han Sans CN Heavy','Arial',sans-serif" font-size="15" fill="#FFC000" font-weight="700">20%</text>
+<text x="878.0" y="243.0" text-anchor="end" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="12" fill="#FFFFFF">研发与人力</text>
+<path d="M948.2,192.4 A64.0,64.0 0 0 1 1000.0,166.0 L1000.0,198.0 A32.0,32.0 0 0 0 974.1,211.2 Z" fill="#68F0FE" stroke="#0A1A3A" stroke-width="1.5"/>
+<polyline points="968.2,167.6 950.1,132.0 942.1,132.0" fill="none" stroke="#68F0FE" stroke-width="1.5"/>
+<text x="938.1" y="129.0" text-anchor="end" font-family="'Alibaba PuHuiTi H','OPPOSans B','Source Han Sans CN Heavy','Arial',sans-serif" font-size="15" fill="#68F0FE" font-weight="700">15%</text>
+<text x="938.1" y="145.0" text-anchor="end" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="12" fill="#FFFFFF">市场与验证</text>
+<text x="1000.0" y="230.0" text-anchor="middle" dominant-baseline="middle" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="18" fill="#FFFFFF">资金</text>
+<line x1="820" y1="442" x2="1120" y2="442" stroke="#1E6FC0" stroke-width="1"/>
+<line x1="960" y1="408" x2="960" y2="442" stroke="#1E6FC0" stroke-width="1"/>
+<text x="70" y="142" text-anchor="start" font-family="'字体圈欣意冠黑体','Fontquan-XinYiGuanHeiTi','Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="22.0" font-weight="800" fill="#FFFFFF"><tspan x="70" dy="0.0">公司股权结构</tspan></text>
+<text x="700" y="142" text-anchor="start" font-family="'字体圈欣意冠黑体','Fontquan-XinYiGuanHeiTi','Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="22.0" font-weight="800" fill="#FFFFFF"><tspan x="700" dy="0.0">资金用途规划</tspan></text>
+<text x="650" y="206" text-anchor="middle" font-family="'字体圈欣意冠黑体','Fontquan-XinYiGuanHeiTi','Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="30.0" font-weight="800" fill="#FFFFFF"><tspan x="650" dy="0.0">天使轮融资 200 万元</tspan></text>
+<text x="650" y="242" text-anchor="middle" font-family="'OPPOSans M','Source Han Sans CN Medium','Microsoft YaHei',sans-serif" font-size="16.0" fill="#15F7F9"><tspan x="650" dy="0.0">出让股权 10% · 部分资金已到账</tspan></text>
+<text x="650" y="272" text-anchor="middle" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="13.0" fill="#CFE0F2"><tspan x="650" dy="0.0">资金分阶段拨付，专款专用，第三方审计监督</tspan></text>
+<text x="70" y="389" text-anchor="start" font-family="'OPPOSans B','Source Han Sans CN Bold','Microsoft YaHei',sans-serif" font-size="16.0" fill="#FFC000"><tspan x="70" dy="0.0">资金用途规划</tspan></text>
+<text x="70" y="420" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="12.5" fill="#DCE8F6"><tspan x="70" dy="0.0">中试与纯化 40%｜医用级纯化工艺与 GMP </tspan><tspan x="70" dy="16.5">中试线建设</tspan></text>
+<text x="70" y="464" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="12.5" fill="#DCE8F6"><tspan x="70" dy="0.0">质量与检测 25%｜第三方权威检测、器械注册送</tspan><tspan x="70" dy="16.5">审及质量体系</tspan></text>
+<text x="70" y="508" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="12.5" fill="#DCE8F6"><tspan x="70" dy="0.0">研发与人力 20%｜核心研发人才引进与团队薪酬</tspan><tspan x="70" dy="16.5">保障</tspan></text>
+<text x="70" y="552" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="12.5" fill="#DCE8F6"><tspan x="70" dy="0.0">市场与验证 15%｜首批商业化交付与区域市场拓</tspan><tspan x="70" dy="16.5">展</tspan></text>
+<text x="400" y="389" text-anchor="start" font-family="'OPPOSans B','Source Han Sans CN Bold','Microsoft YaHei',sans-serif" font-size="16.0" fill="#FFC000"><tspan x="400" dy="0.0">融资目标 · 里程碑</tspan></text>
+<text x="400" y="419" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="12.5" fill="#DCE8F6"><tspan x="400" dy="0.0">1. 建成符合 GMP 的医械级原料中试生产线，具备稳定</tspan><tspan x="400" dy="16.5">量产能力；</tspan></text>
+<text x="400" y="459" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="12.5" fill="#DCE8F6"><tspan x="400" dy="0.0">2. 完成权威机构全项检测认证，同步启动医疗器械注册申报</tspan><tspan x="400" dy="16.5">；</tspan></text>
+<text x="400" y="499" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="12.5" fill="#DCE8F6"><tspan x="400" dy="0.0">3. 基于海生医疗、先健科技验证成果，实现首批产品商业化</tspan><tspan x="400" dy="16.5">交付；</tspan></text>
+<text x="400" y="540" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="12.5" fill="#DCE8F6"><tspan x="400" dy="0.0">4. 加速国产高端涂层原料替代，填补国内技术与供应链空白</tspan><tspan x="400" dy="16.5">，奠定全国市场与多场景（神经介入、结构性心脏病）拓展基础</tspan><tspan x="400" dy="16.5">。</tspan></text>
+<text x="790" y="383" text-anchor="start" font-family="'OPPOSans B','Source Han Sans CN Bold','Microsoft YaHei',sans-serif" font-size="16.0" fill="#FFC000"><tspan x="790" dy="0.0">成本优势 · 商业化支撑</tspan></text>
+<text x="880" y="442" text-anchor="middle" font-family="'Alibaba PuHuiTi H','OPPOSans B','Source Han Sans CN Heavy','Arial',sans-serif" font-size="36.0" fill="url(#g1)"><tspan x="880" dy="0.0">6 元</tspan></text>
+<text x="880" y="469" text-anchor="middle" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="13.0" fill="#CFE0F2"><tspan x="880" dy="0.0">谷原焕生 单支涂层成本</tspan></text>
+<text x="1060" y="442" text-anchor="middle" font-family="'Alibaba PuHuiTi H','OPPOSans B','Source Han Sans CN Heavy','Arial',sans-serif" font-size="36.0" fill="#8AA9CE"><tspan x="1060" dy="0.0">15 元</tspan></text>
+<text x="1060" y="469" text-anchor="middle" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="13.0" fill="#9FB6D4"><tspan x="1060" dy="0.0">进口肝素 单支涂层成本</tspan></text>
+<text x="970" y="530" text-anchor="middle" font-family="'Alibaba PuHuiTi H','OPPOSans B','Source Han Sans CN Heavy','Arial',sans-serif" font-size="30.0" fill="#FFC000"><tspan x="970" dy="0.0">↓ 60%</tspan></text>
+<text x="970" y="558" text-anchor="middle" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="12.0" fill="#CFE0F2"><tspan x="970" dy="0.0">成本降幅 · 植物源安全 + 多功能集成，量产毛利率持续</tspan><tspan x="970" dy="15.8">提升</tspan></text>
+</svg>

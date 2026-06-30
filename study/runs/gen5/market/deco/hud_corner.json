@@ -1,0 +1,13 @@
+{
+ "function": "corner_hud",
+ "family": "med_blue_white",
+ "theme": "blue cyan sci-fi bracket",
+ "palette": "#00FFFF,#0070C0",
+ "prompt": "sci-fi blue cyan sci-fi bracket corner HUD bracket decoration, angular glowing lines, #00FFFF,#0070C0, on pure solid black background, centered, high detail, no text, no words, no letters",
+ "size": "1280*1280",
+ "box": "120x120",
+ "composite": "screen",
+ "preserveAspectRatio": "none",
+ "aspect_matched": true,
+ "render_hint": "place at box with preserveAspectRatio=\"none\", style=\"mix-blend-mode:screen\""
+}

@@ -1,0 +1,63 @@
+{
+ "deck_id": "【科技风】挑战杯及互联网+通用模板",
+ "canvas": [
+  1280,
+  720
+ ],
+ "theme": {
+  "palette": {
+   "dk1": "#000000",
+   "lt1": "#FFFFFF",
+   "dk2": "#2D3847",
+   "lt2": "#E7E6E6",
+   "accent1": "#00FFFF",
+   "accent2": "#016DFF",
+   "accent3": "#03A2FF",
+   "accent4": "#BFBFBF",
+   "accent5": "#FFCD37",
+   "accent6": "#7F7F7F",
+   "hlink": "#0563C1",
+   "folHlink": "#954F72"
+  },
+  "font_scheme": {
+   "major": [
+    "字体圈欣意冠黑体",
+    "字体圈欣意冠黑体"
+   ],
+   "minor": [
+    "字体圈欣意冠黑体",
+    "OPPOSans R"
+   ]
+  }
+ },
+ "typography": {
+  "title_family": "字体圈欣意冠黑体",
+  "subtitle_family": "OPPOSans H",
+  "body_family": "OPPOSans R",
+  "families_seen": [
+   "OPPOSans R",
+   "字体圈欣意冠黑体",
+   "OPPOSans H",
+   "云峰飞云体"
+  ],
+  "size_ramp": [
+   19,
+   21,
+   24,
+   32,
+   27,
+   43,
+   15,
+   13,
+   16,
+   53
+  ]
+ },
+ "skin": {
+  "primary": "#016DFF",
+  "accent_cyan": "#03A2FF",
+  "bg_deep": "#000000",
+  "text": "#FFFFFF",
+  "text_dim": "#E7E6E6"
+ }
+}

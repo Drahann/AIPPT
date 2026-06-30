@@ -1,0 +1,13 @@
+{
+ "archetype": "financing",
+ "slot_signature": "pie_chart+spend_cards+doc_icon",
+ "content_shape": "股权结构饼图+资金用途卡片+协议文件",
+ "page_desc": "展示融资计划、股权分配与资金使用方案",
+ "tags": [
+  "融资分析",
+  "股权架构",
+  "资金用途",
+  "投资协议",
+  "财务规划"
+ ]
+}

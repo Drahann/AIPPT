@@ -1,0 +1,23 @@
+{
+ "function": "card_frame",
+ "family": "blue_tech",
+ "theme": "科技HUD",
+ "palette": "青色 钴蓝 发光",
+ "prompt": "a 科技HUD rectangular card frame border, glowing 青色 钴蓝 发光 edges, hollow dark center, ONLY a thin glowing cyan-blue angular tech border running along the four outer edges, the ENTIRE large interior is PURE SOLID BLACK #000000 empty void, see-through transparent middle, hollow, no fill, no glass, no white, no gray, just a glowing rectangular outline on black, the design FILLS THE ENTIRE IMAGE edge to edge, touching all four borders, zero margin, full-bleed composition, on pure solid #000000 black background, high detail, no text, no words, no letters, IMPORTANT: enlarge the subject to completely fill the frame, no empty black border",
+ "size": "944*1280",
+ "box": "370x500",
+ "composite": "normal",
+ "alpha": true,
+ "preserveAspectRatio": "none",
+ "final_size": [
+  919,
+  1246
+ ],
+ "fill_frac": 0.535,
+ "opaque_frac": 0.106,
+ "stretch_vs_box": 1.003,
+ "warnings": [
+  "LOW-FILL 54% — subject did not fill the frame"
+ ],
+ "render_hint": "place at box with preserveAspectRatio=\"none\", NORMAL blend (alpha is real)"
+}

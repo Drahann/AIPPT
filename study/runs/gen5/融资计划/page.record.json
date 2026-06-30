@@ -1,0 +1,833 @@
+{
+ "canvas": [
+  1280,
+  720
+ ],
+ "shapes": [
+  {
+   "id": "t1",
+   "kind": "text",
+   "box": [
+    108.0,
+    40.0,
+    760.0,
+    62.0
+   ],
+   "font": "DISP_KAI",
+   "font_px": 50,
+   "align": "LEFT",
+   "text": "融资计划",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t2",
+   "kind": "text",
+   "box": [
+    112.0,
+    108.0,
+    820.0,
+    26.0
+   ],
+   "font": "BODY_M",
+   "font_px": 16,
+   "align": "LEFT",
+   "text": "天使轮 · 200万元（部分资金已到账）· 资金分阶段拨付、专款专用",
+   "color": "#C3D6F2"
+  },
+  {
+   "id": "t3",
+   "kind": "text",
+   "box": [
+    980.0,
+    69.5,
+    150.0,
+    19.0
+   ],
+   "font": "BODY_M",
+   "font_px": 13,
+   "align": "CENTER",
+   "text": "ANGEL ROUND 天使轮",
+   "color": "#F2D290"
+  },
+  {
+   "id": "t4",
+   "kind": "text",
+   "box": [
+    84.0,
+    150.0,
+    380.0,
+    30.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 23,
+   "align": "LEFT",
+   "text": "资金用途规划",
+   "color": "#FFFFFF"
+  },
+  {
+   "id": "t5",
+   "kind": "text",
+   "box": [
+    104.0,
+    428.0,
+    200.0,
+    22.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 16,
+   "align": "LEFT",
+   "text": "① 中试与纯化",
+   "color": "#FFFFFF"
+  },
+  {
+   "id": "t6",
+   "kind": "text",
+   "box": [
+    0.0,
+    427.0,
+    452.0,
+    22.0
+   ],
+   "font": "DISP_NUM",
+   "font_px": 18,
+   "align": "RIGHT",
+   "text": "40%",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t7",
+   "kind": "text",
+   "box": [
+    104.0,
+    452.0,
+    350.0,
+    30.0
+   ],
+   "font": "BODY",
+   "font_px": 14,
+   "align": "LEFT",
+   "text": "医用级蛋白纯化工艺开发 · GMP标准中试生产线建设",
+   "color": "#8FB0DA"
+  },
+  {
+   "id": "t8",
+   "kind": "text",
+   "box": [
+    104.0,
+    484.0,
+    200.0,
+    22.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 16,
+   "align": "LEFT",
+   "text": "② 质量与检测",
+   "color": "#FFFFFF"
+  },
+  {
+   "id": "t9",
+   "kind": "text",
+   "box": [
+    0.0,
+    483.0,
+    452.0,
+    22.0
+   ],
+   "font": "DISP_NUM",
+   "font_px": 18,
+   "align": "RIGHT",
+   "text": "25%",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t10",
+   "kind": "text",
+   "box": [
+    104.0,
+    508.0,
+    350.0,
+    30.0
+   ],
+   "font": "BODY",
+   "font_px": 14,
+   "align": "LEFT",
+   "text": "第三方权威检测 · 医疗器械注册送审 · 质量体系建设",
+   "color": "#8FB0DA"
+  },
+  {
+   "id": "t11",
+   "kind": "text",
+   "box": [
+    104.0,
+    540.0,
+    200.0,
+    22.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 16,
+   "align": "LEFT",
+   "text": "③ 研发与人力",
+   "color": "#FFFFFF"
+  },
+  {
+   "id": "t12",
+   "kind": "text",
+   "box": [
+    0.0,
+    539.0,
+    452.0,
+    22.0
+   ],
+   "font": "DISP_NUM",
+   "font_px": 18,
+   "align": "RIGHT",
+   "text": "20%",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t13",
+   "kind": "text",
+   "box": [
+    104.0,
+    564.0,
+    350.0,
+    30.0
+   ],
+   "font": "BODY",
+   "font_px": 14,
+   "align": "LEFT",
+   "text": "核心研发人才引进 · 团队薪酬保障 · 工艺迭代优化",
+   "color": "#8FB0DA"
+  },
+  {
+   "id": "t14",
+   "kind": "text",
+   "box": [
+    104.0,
+    596.0,
+    200.0,
+    22.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 16,
+   "align": "LEFT",
+   "text": "④ 市场与验证",
+   "color": "#FFFFFF"
+  },
+  {
+   "id": "t15",
+   "kind": "text",
+   "box": [
+    0.0,
+    595.0,
+    452.0,
+    22.0
+   ],
+   "font": "DISP_NUM",
+   "font_px": 18,
+   "align": "RIGHT",
+   "text": "15%",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t16",
+   "kind": "text",
+   "box": [
+    104.0,
+    620.0,
+    350.0,
+    30.0
+   ],
+   "font": "BODY",
+   "font_px": 14,
+   "align": "LEFT",
+   "text": "已验证客户首批商业化交付 · 区域市场拓展",
+   "color": "#8FB0DA"
+  },
+  {
+   "id": "t17",
+   "kind": "text",
+   "box": [
+    522.0,
+    150.0,
+    320.0,
+    28.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 20,
+   "align": "LEFT",
+   "text": "公司股权结构（融资前）",
+   "color": "#FFFFFF"
+  },
+  {
+   "id": "t18",
+   "kind": "text",
+   "box": [
+    522.0,
+    210.0,
+    231.0,
+    22.0
+   ],
+   "font": "DISP_NUM",
+   "font_px": 18,
+   "align": "CENTER",
+   "text": "75%",
+   "color": "#0E0023"
+  },
+  {
+   "id": "t19",
+   "kind": "text",
+   "box": [
+    540.0,
+    256.0,
+    60.0,
+    20.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 15,
+   "align": "LEFT",
+   "text": "王炯桦",
+   "color": "#FFFFFF"
+  },
+  {
+   "id": "t20",
+   "kind": "text",
+   "box": [
+    540.0,
+    273.0,
+    156.0,
+    16.0
+   ],
+   "font": "BODY",
+   "font_px": 12.5,
+   "align": "LEFT",
+   "text": "创始人/法人 · 绝对控股",
+   "color": "#8FB0DA"
+  },
+  {
+   "id": "t21",
+   "kind": "text",
+   "box": [
+    614.0,
+    255.0,
+    70.0,
+    20.0
+   ],
+   "font": "DISP_NUM",
+   "font_px": 15,
+   "align": "LEFT",
+   "text": "75%",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t22",
+   "kind": "text",
+   "box": [
+    540.0,
+    290.0,
+    60.0,
+    20.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 15,
+   "align": "LEFT",
+   "text": "任一帆",
+   "color": "#FFFFFF"
+  },
+  {
+   "id": "t23",
+   "kind": "text",
+   "box": [
+    540.0,
+    307.0,
+    156.0,
+    16.0
+   ],
+   "font": "BODY",
+   "font_px": 12.5,
+   "align": "LEFT",
+   "text": "市场总监",
+   "color": "#8FB0DA"
+  },
+  {
+   "id": "t24",
+   "kind": "text",
+   "box": [
+    614.0,
+    289.0,
+    70.0,
+    20.0
+   ],
+   "font": "DISP_NUM",
+   "font_px": 15,
+   "align": "LEFT",
+   "text": "6.25%",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t25",
+   "kind": "text",
+   "box": [
+    540.0,
+    324.0,
+    60.0,
+    20.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 15,
+   "align": "LEFT",
+   "text": "邓煜婕",
+   "color": "#FFFFFF"
+  },
+  {
+   "id": "t26",
+   "kind": "text",
+   "box": [
+    540.0,
+    341.0,
+    156.0,
+    16.0
+   ],
+   "font": "BODY",
+   "font_px": 12.5,
+   "align": "LEFT",
+   "text": "财务总监",
+   "color": "#8FB0DA"
+  },
+  {
+   "id": "t27",
+   "kind": "text",
+   "box": [
+    614.0,
+    323.0,
+    70.0,
+    20.0
+   ],
+   "font": "DISP_NUM",
+   "font_px": 15,
+   "align": "LEFT",
+   "text": "6.25%",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t28",
+   "kind": "text",
+   "box": [
+    710.0,
+    256.0,
+    60.0,
+    20.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 15,
+   "align": "LEFT",
+   "text": "张瑜瑜",
+   "color": "#FFFFFF"
+  },
+  {
+   "id": "t29",
+   "kind": "text",
+   "box": [
+    710.0,
+    273.0,
+    156.0,
+    16.0
+   ],
+   "font": "BODY",
+   "font_px": 12.5,
+   "align": "LEFT",
+   "text": "核心成员",
+   "color": "#8FB0DA"
+  },
+  {
+   "id": "t30",
+   "kind": "text",
+   "box": [
+    784.0,
+    255.0,
+    70.0,
+    20.0
+   ],
+   "font": "DISP_NUM",
+   "font_px": 15,
+   "align": "LEFT",
+   "text": "5%",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t31",
+   "kind": "text",
+   "box": [
+    710.0,
+    290.0,
+    60.0,
+    20.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 15,
+   "align": "LEFT",
+   "text": "其他成员",
+   "color": "#FFFFFF"
+  },
+  {
+   "id": "t32",
+   "kind": "text",
+   "box": [
+    710.0,
+    307.0,
+    156.0,
+    16.0
+   ],
+   "font": "BODY",
+   "font_px": 12.5,
+   "align": "LEFT",
+   "text": "张凯文 · 龚则达 · 王艺蒙",
+   "color": "#8FB0DA"
+  },
+  {
+   "id": "t33",
+   "kind": "text",
+   "box": [
+    784.0,
+    289.0,
+    70.0,
+    20.0
+   ],
+   "font": "DISP_NUM",
+   "font_px": 15,
+   "align": "LEFT",
+   "text": "7.5%",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t34",
+   "kind": "text",
+   "box": [
+    522.0,
+    466.0,
+    320.0,
+    24.0
+   ],
+   "font": "BODY_M",
+   "font_px": 17,
+   "align": "LEFT",
+   "text": "天使轮融资额度",
+   "color": "#C3D6F2"
+  },
+  {
+   "id": "t35",
+   "kind": "text",
+   "box": [
+    520.0,
+    516.0,
+    170.0,
+    78.0
+   ],
+   "font": "DISP_NUM",
+   "font_px": 74,
+   "align": "CENTER",
+   "text": "200",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t36",
+   "kind": "text",
+   "box": [
+    690.0,
+    540.0,
+    80.0,
+    40.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 28,
+   "align": "LEFT",
+   "text": "万元",
+   "color": "#FFFFFF"
+  },
+  {
+   "id": "t37",
+   "kind": "text",
+   "box": [
+    690.0,
+    591.5,
+    150.0,
+    19.0
+   ],
+   "font": "BODY_M",
+   "font_px": 13,
+   "align": "CENTER",
+   "text": "部分资金已到账",
+   "color": "#7FE9CF"
+  },
+  {
+   "id": "t38",
+   "kind": "text",
+   "box": [
+    522.0,
+    626.0,
+    320.0,
+    22.0
+   ],
+   "font": "BODY",
+   "font_px": 13,
+   "align": "LEFT",
+   "text": "拟出让股权约 10% · 投后规范化信息披露",
+   "color": "#8FB0DA"
+  },
+  {
+   "id": "t39",
+   "kind": "text",
+   "box": [
+    902.0,
+    150.0,
+    320.0,
+    28.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 20,
+   "align": "LEFT",
+   "text": "融资目标 · 关键里程碑",
+   "color": "#FFFFFF"
+  },
+  {
+   "id": "t40",
+   "kind": "text",
+   "box": [
+    902.0,
+    218.0,
+    44.0,
+    26.0
+   ],
+   "font": "DISP_NUM",
+   "font_px": 22,
+   "align": "CENTER",
+   "text": "01",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t41",
+   "kind": "text",
+   "box": [
+    958.0,
+    210.0,
+    252.0,
+    24.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 18,
+   "align": "LEFT",
+   "text": "GMP 医械级中试线",
+   "color": "#FFFFFF"
+  },
+  {
+   "id": "t42",
+   "kind": "text",
+   "box": [
+    958.0,
+    238.0,
+    256.0,
+    82.0
+   ],
+   "font": "BODY",
+   "font_px": 14,
+   "align": "LEFT",
+   "text": "建成符合医疗器械生产质量管理规范（GMP）的医械级原料中试生产线，具备稳定量产能力。",
+   "color": "#C3D6F2"
+  },
+  {
+   "id": "t43",
+   "kind": "text",
+   "box": [
+    902.0,
+    334.0,
+    44.0,
+    26.0
+   ],
+   "font": "DISP_NUM",
+   "font_px": 22,
+   "align": "CENTER",
+   "text": "02",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t44",
+   "kind": "text",
+   "box": [
+    958.0,
+    326.0,
+    252.0,
+    24.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 18,
+   "align": "LEFT",
+   "text": "全项检测 · 注册申报",
+   "color": "#FFFFFF"
+  },
+  {
+   "id": "t45",
+   "kind": "text",
+   "box": [
+    958.0,
+    354.0,
+    256.0,
+    82.0
+   ],
+   "font": "BODY",
+   "font_px": 14,
+   "align": "LEFT",
+   "text": "完成产品在权威机构的全项检测认证，同步启动医疗器械注册申报流程。",
+   "color": "#C3D6F2"
+  },
+  {
+   "id": "t46",
+   "kind": "text",
+   "box": [
+    902.0,
+    450.0,
+    44.0,
+    26.0
+   ],
+   "font": "DISP_NUM",
+   "font_px": 22,
+   "align": "CENTER",
+   "text": "03",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t47",
+   "kind": "text",
+   "box": [
+    958.0,
+    442.0,
+    252.0,
+    24.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 18,
+   "align": "LEFT",
+   "text": "首批商业化交付",
+   "color": "#FFFFFF"
+  },
+  {
+   "id": "t48",
+   "kind": "text",
+   "box": [
+    958.0,
+    470.0,
+    256.0,
+    82.0
+   ],
+   "font": "BODY",
+   "font_px": 14,
+   "align": "LEFT",
+   "text": "基于海生医疗（冠脉造影导管）、先健科技（外周血管造影导管）验证成果，实现首批产品商业化交付。",
+   "color": "#C3D6F2"
+  },
+  {
+   "id": "t49",
+   "kind": "text",
+   "box": [
+    902.0,
+    566.0,
+    44.0,
+    26.0
+   ],
+   "font": "DISP_NUM",
+   "font_px": 22,
+   "align": "CENTER",
+   "text": "04",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t50",
+   "kind": "text",
+   "box": [
+    958.0,
+    558.0,
+    252.0,
+    24.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 18,
+   "align": "LEFT",
+   "text": "国产替代 · 填补空白",
+   "color": "#FFFFFF"
+  },
+  {
+   "id": "t51",
+   "kind": "text",
+   "box": [
+    958.0,
+    586.0,
+    256.0,
+    82.0
+   ],
+   "font": "BODY",
+   "font_px": 14,
+   "align": "LEFT",
+   "text": "加速国产高端医疗器械涂层原料替代进程，填补国内技术与供应链空白，奠定全国拓展基础。",
+   "color": "#C3D6F2"
+  }
+ ]
+}

@@ -1,0 +1,23 @@
+{
+ "function": "corner_hud",
+ "family": "blue_tech",
+ "theme": "科技HUD",
+ "palette": "青色 钴蓝 发光",
+ "prompt": "a sci-fi 科技HUD corner HUD bracket, angular glowing 青色 钴蓝 发光 lines, single angular L-shaped corner bracket of glowing cyan tech lines, on pure black, hollow, the design FILLS THE ENTIRE IMAGE edge to edge, touching all four borders, zero margin, full-bleed composition, on pure solid #000000 black background, high detail, no text, no words, no letters, IMPORTANT: enlarge the subject to completely fill the frame, no empty black border",
+ "size": "1280*1280",
+ "box": "150x150",
+ "composite": "normal",
+ "alpha": true,
+ "preserveAspectRatio": "none",
+ "final_size": [
+  1252,
+  1254
+ ],
+ "fill_frac": 0.509,
+ "opaque_frac": 0.294,
+ "stretch_vs_box": 1.002,
+ "warnings": [
+  "LOW-FILL 51% — subject did not fill the frame"
+ ],
+ "render_hint": "place at box with preserveAspectRatio=\"none\", NORMAL blend (alpha is real)"
+}

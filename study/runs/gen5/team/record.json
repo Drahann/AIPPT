@@ -1,0 +1,53 @@
+{
+  "canvas": [1280, 720],
+  "shapes": [
+    {"id": "title", "kind": "text", "box": [290, 104, 700, 44], "font": "DISP_TITLE", "font_px": 28, "color": "#FFFFFF", "align": "CENTER"},
+
+    {"id": "s1n", "kind": "text", "box": [150, 168, 90, 30], "font": "DISP_NUM", "font_px": 26, "grad": ["#15F7F9", "#FFFFFF"], "align": "CENTER"},
+    {"id": "s1l", "kind": "text", "box": [240, 172, 160, 22], "font": "BODY_M", "font_px": 13, "color": "#CFE0F2", "align": "LEFT"},
+    {"id": "s2n", "kind": "text", "box": [430, 168, 70, 30], "font": "DISP_NUM", "font_px": 26, "grad": ["#15F7F9", "#FFFFFF"], "align": "CENTER"},
+    {"id": "s2l", "kind": "text", "box": [500, 172, 160, 22], "font": "BODY_M", "font_px": 13, "color": "#CFE0F2", "align": "LEFT"},
+    {"id": "s3n", "kind": "text", "box": [690, 168, 70, 30], "font": "DISP_NUM", "font_px": 26, "grad": ["#15F7F9", "#FFFFFF"], "align": "CENTER"},
+    {"id": "s3l", "kind": "text", "box": [760, 172, 160, 22], "font": "BODY_M", "font_px": 13, "color": "#CFE0F2", "align": "LEFT"},
+    {"id": "s4n", "kind": "text", "box": [950, 168, 70, 30], "font": "DISP_NUM", "font_px": 26, "grad": ["#15F7F9", "#FFFFFF"], "align": "CENTER"},
+    {"id": "s4l", "kind": "text", "box": [1020, 172, 160, 22], "font": "BODY_M", "font_px": 13, "color": "#CFE0F2", "align": "LEFT"},
+
+    {"id": "c1_nm", "kind": "text", "box": [40, 360, 130, 24], "font": "BODY_B", "font_px": 18, "color": "#FFFFFF", "align": "CENTER"},
+    {"id": "c1_rl", "kind": "text", "box": [25, 384, 160, 18], "font": "BODY_B", "font_px": 12, "color": "#15F7F9", "align": "CENTER"},
+    {"id": "c1_dr", "kind": "text", "box": [22, 404, 166, 18], "font": "BODY", "font_px": 10, "color": "#BFD6EE", "align": "CENTER"},
+    {"id": "c1_ac", "kind": "text", "box": [22, 422, 166, 30], "font": "BODY", "font_px": 10, "color": "#9FC2E4", "align": "CENTER"},
+
+    {"id": "c2_nm", "kind": "text", "box": [330, 360, 130, 24], "font": "BODY_B", "font_px": 18, "color": "#FFFFFF", "align": "CENTER"},
+    {"id": "c2_rl", "kind": "text", "box": [315, 384, 160, 18], "font": "BODY_B", "font_px": 12, "color": "#15F7F9", "align": "CENTER"},
+    {"id": "c2_dr", "kind": "text", "box": [312, 404, 166, 18], "font": "BODY", "font_px": 10, "color": "#BFD6EE", "align": "CENTER"},
+    {"id": "c2_ac", "kind": "text", "box": [312, 422, 166, 30], "font": "BODY", "font_px": 10, "color": "#9FC2E4", "align": "CENTER"},
+
+    {"id": "c3_nm", "kind": "text", "box": [620, 360, 130, 24], "font": "BODY_B", "font_px": 18, "color": "#FFFFFF", "align": "CENTER"},
+    {"id": "c3_rl", "kind": "text", "box": [605, 384, 160, 18], "font": "BODY_B", "font_px": 12, "color": "#15F7F9", "align": "CENTER"},
+    {"id": "c3_dr", "kind": "text", "box": [602, 404, 166, 18], "font": "BODY", "font_px": 10, "color": "#BFD6EE", "align": "CENTER"},
+    {"id": "c3_ac", "kind": "text", "box": [602, 422, 166, 30], "font": "BODY", "font_px": 10, "color": "#9FC2E4", "align": "CENTER"},
+
+    {"id": "c4_nm", "kind": "text", "box": [910, 360, 130, 24], "font": "BODY_B", "font_px": 18, "color": "#FFFFFF", "align": "CENTER"},
+    {"id": "c4_rl", "kind": "text", "box": [895, 384, 160, 18], "font": "BODY_B", "font_px": 12, "color": "#15F7F9", "align": "CENTER"},
+    {"id": "c4_dr", "kind": "text", "box": [892, 404, 166, 18], "font": "BODY", "font_px": 10, "color": "#BFD6EE", "align": "CENTER"},
+    {"id": "c4_ac", "kind": "text", "box": [892, 422, 166, 30], "font": "BODY", "font_px": 10, "color": "#9FC2E4", "align": "CENTER"},
+
+    {"id": "c5_nm", "kind": "text", "box": [40, 588, 130, 24], "font": "BODY_B", "font_px": 18, "color": "#FFFFFF", "align": "CENTER"},
+    {"id": "c5_rl", "kind": "text", "box": [25, 612, 160, 18], "font": "BODY_B", "font_px": 12, "color": "#15F7F9", "align": "CENTER"},
+    {"id": "c5_dr", "kind": "text", "box": [22, 632, 166, 16], "font": "BODY", "font_px": 10, "color": "#BFD6EE", "align": "CENTER"},
+    {"id": "c5_ac", "kind": "text", "box": [22, 648, 166, 16], "font": "BODY", "font_px": 9, "color": "#9FC2E4", "align": "CENTER"},
+
+    {"id": "c6_nm", "kind": "text", "box": [330, 588, 130, 24], "font": "BODY_B", "font_px": 18, "color": "#FFFFFF", "align": "CENTER"},
+    {"id": "c6_rl", "kind": "text", "box": [315, 612, 160, 18], "font": "BODY_B", "font_px": 12, "color": "#15F7F9", "align": "CENTER"},
+    {"id": "c6_dr", "kind": "text", "box": [312, 632, 166, 16], "font": "BODY", "font_px": 10, "color": "#BFD6EE", "align": "CENTER"},
+    {"id": "c6_ac", "kind": "text", "box": [312, 648, 166, 16], "font": "BODY", "font_px": 9, "color": "#9FC2E4", "align": "CENTER"},
+
+    {"id": "c7_nm", "kind": "text", "box": [620, 588, 130, 24], "font": "BODY_B", "font_px": 18, "color": "#FFFFFF", "align": "CENTER"},
+    {"id": "c7_rl", "kind": "text", "box": [605, 612, 160, 18], "font": "BODY_B", "font_px": 12, "color": "#15F7F9", "align": "CENTER"},
+    {"id": "c7_dr", "kind": "text", "box": [602, 632, 166, 16], "font": "BODY", "font_px": 10, "color": "#BFD6EE", "align": "CENTER"},
+    {"id": "c7_ac", "kind": "text", "box": [602, 648, 166, 16], "font": "BODY", "font_px": 9, "color": "#9FC2E4", "align": "CENTER"},
+
+    {"id": "rat_h", "kind": "text", "box": [905, 498, 166, 22], "font": "BODY_B", "font_px": 16, "color": "#FFC000", "align": "CENTER"},
+    {"id": "rationale", "kind": "text", "box": [905, 524, 176, 138], "font": "BODY", "font_px": 11, "color": "#D5E5F6", "align": "LEFT"}
+  ]
+}

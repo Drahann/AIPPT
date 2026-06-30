@@ -1,0 +1,21 @@
+{
+ "function": "motif",
+ "family": "blue_tech",
+ "theme": "科技图标",
+ "palette": "青色 翠绿 钴蓝 发光",
+ "prompt": "a 科技图标 central motif illustration, 青色 翠绿 钴蓝 发光, clean, a glowing line-art icon of a leaf and a water droplet with a recycling circular arrow, green ecology and clean environment, on pure black, single centered emblem, no text, centered, generous size, on pure solid #000000 black background, high detail, no text, no words, no letters",
+ "size": "1280*1280",
+ "box": "140x140",
+ "composite": "normal",
+ "alpha": true,
+ "preserveAspectRatio": "none",
+ "final_size": [
+  863,
+  887
+ ],
+ "fill_frac": 0.797,
+ "opaque_frac": 0.334,
+ "stretch_vs_box": 1.028,
+ "warnings": [],
+ "render_hint": "place at box with preserveAspectRatio=\"none\", NORMAL blend (alpha is real)"
+}

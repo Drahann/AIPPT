@@ -1,0 +1,231 @@
+{
+ "deck_id": "深蓝深邃基因安全(1)",
+ "canvas": [
+  1280,
+  720
+ ],
+ "theme": {
+  "palette": {
+   "dk1": "#000000",
+   "lt1": "#FFFFFF",
+   "dk2": "#0E2841",
+   "lt2": "#E8E8E8",
+   "accent1": "#156082",
+   "accent2": "#E97132",
+   "accent3": "#196B24",
+   "accent4": "#0F9ED5",
+   "accent5": "#A02B93",
+   "accent6": "#4EA72E",
+   "hlink": "#467886",
+   "folHlink": "#96607D"
+  },
+  "font_scheme": {
+   "major": [
+    "等线 Light",
+    ""
+   ],
+   "minor": [
+    "等线",
+    ""
+   ]
+  }
+ },
+ "typography": {
+  "title_family": "演示流云楷",
+  "subtitle_family": "阿里妈妈数黑体",
+  "body_family": "微软雅黑",
+  "families_seen": [
+   "阿里妈妈数黑体",
+   "微软雅黑",
+   "梦源黑体 CN W23",
+   "阿里巴巴普惠体 R",
+   "演示流云楷",
+   "江城斜宋体 900W",
+   "思源黑体 CN Bold",
+   "Times New Roman"
+  ],
+  "size_ramp": [
+   32,
+   37,
+   19,
+   14,
+   24,
+   80,
+   29,
+   53,
+   27,
+   48
+  ]
+ },
+ "skin": {
+  "primary": "#0755BF",
+  "accent_cyan": "#196B24",
+  "bg_deep": "#0E0023",
+  "text": "#FFFFFF",
+  "text_dim": "#E8E8E8",
+  "accents": [
+   "#0755BF",
+   "#1B1BC3",
+   "#1923AC",
+   "#160E08"
+  ],
+  "palette_measured": [
+   "#EEE1AC",
+   "#FFFFFF",
+   "#FEE7BA",
+   "#000000",
+   "#FAE89C",
+   "#160E08",
+   "#1B1BC3",
+   "#FEE6A4",
+   "#0755BF",
+   "#F8E396",
+   "#FFFFCC",
+   "#1923AC"
+  ],
+  "bg_samples": [
+   "#0E0023",
+   "#0D041C",
+   "#092245",
+   "#0A2448",
+   "#11257F"
+  ],
+  "backgrounds": [
+   "chrome_bg_5fc8fb7a2483.png"
+  ]
+ },
+ "style_desc": "深蓝科技风背景，融合DNA与数据面板元素，搭配发光质感与端庄艺术字，凸显智慧医疗主题。",
+ "render_tags": [
+  "Tech",
+  "Futuristic",
+  "Blue",
+  "Medical",
+  "Holographic",
+  "Data"
+ ],
+ "design_system": {
+  "type_ramp": [
+   {
+    "px": 265,
+    "count": 2
+   },
+   {
+    "px": 260,
+    "count": 1
+   },
+   {
+    "px": 240,
+    "count": 1
+   },
+   {
+    "px": 80,
+    "count": 11
+   },
+   {
+    "px": 72,
+    "count": 2
+   },
+   {
+    "px": 64,
+    "count": 2
+   },
+   {
+    "px": 53,
+    "count": 10
+   },
+   {
+    "px": 48,
+    "count": 8
+   }
+  ],
+  "content_margins": {
+   "left": -1.5,
+   "top": 6.6,
+   "right": 2.6,
+   "bottom": -40.3
+  },
+  "common_colors": [
+   "#EEE1AC",
+   "#FFFFFF",
+   "#FEE7BA",
+   "#000000",
+   "#FAE89C",
+   "#160E08",
+   "#1B1BC3",
+   "#FEE6A4",
+   "#0755BF",
+   "#F8E396",
+   "#FFFFCC",
+   "#1923AC"
+  ],
+  "decos_per_page": 10.8,
+  "common_box_sizes": [
+   {
+    "w": 10,
+    "h": 10,
+    "n": 223
+   },
+   {
+    "w": 100,
+    "h": 40,
+    "n": 109
+   },
+   {
+    "w": 20,
+    "h": 10,
+    "n": 66
+   },
+   {
+    "w": 110,
+    "h": 20,
+    "n": 32
+   },
+   {
+    "w": 20,
+    "h": 20,
+    "n": 31
+   },
+   {
+    "w": 160,
+    "h": 10,
+    "n": 30
+   },
+   {
+    "w": 0,
+    "h": 10,
+    "n": 30
+   },
+   {
+    "w": 120,
+    "h": 210,
+    "n": 26
+   }
+  ]
+ },
+ "chrome_decorations": [],
+ "source_pptx": "W:\\ppt\\挑战杯 互联网+三创赛 创青春 国赛金奖级PPT 模板\\创赛PPT\\科技蓝色-智慧医疗-智联基因--gzh：xx的百宝箱\\科技医疗\\深蓝深邃基因安全(1).pptx",
+ "family": "med_blue_white",
+ "track": "general_chuangsai",
+ "pages": [
+  "med_blue_white_2e33d129_p01",
+  "med_blue_white_2e33d129_p02",
+  "med_blue_white_2e33d129_p03",
+  "med_blue_white_2e33d129_p04",
+  "med_blue_white_2e33d129_p05",
+  "med_blue_white_2e33d129_p06",
+  "med_blue_white_2e33d129_p07",
+  "med_blue_white_2e33d129_p08",
+  "med_blue_white_2e33d129_p09",
+  "med_blue_white_2e33d129_p10",
+  "med_blue_white_2e33d129_p11",
+  "med_blue_white_2e33d129_p12",
+  "med_blue_white_2e33d129_p13",
+  "med_blue_white_2e33d129_p14",
+  "med_blue_white_2e33d129_p15",
+  "med_blue_white_2e33d129_p16",
+  "med_blue_white_2e33d129_p17",
+  "med_blue_white_2e33d129_p18",
+  "med_blue_white_2e33d129_p19",
+  "med_blue_white_2e33d129_p20"
+ ]
+}

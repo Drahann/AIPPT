@@ -1,0 +1,216 @@
+{
+ "canvas": [
+  1280,
+  720
+ ],
+ "shapes": [
+  {
+   "id": "t1",
+   "kind": "text",
+   "box": [
+    224.0,
+    22.0,
+    840.0,
+    50.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 46,
+   "align": "LEFT",
+   "text": "落地前景 · 市场推广策略",
+   "grad": [
+    "#9BFCFF",
+    "#0BF9FE",
+    "#16A8E0"
+   ]
+  },
+  {
+   "id": "t2",
+   "kind": "text",
+   "box": [
+    226.0,
+    78.0,
+    900.0,
+    26.0
+   ],
+   "font": "BODY_M",
+   "font_px": 20,
+   "align": "LEFT",
+   "text": "构建“点验证—线链接—面扩散”闭环推广体系  ·  三大推进路径",
+   "color": "#BFE0F2"
+  },
+  {
+   "id": "t3",
+   "kind": "text",
+   "box": [
+    90.0,
+    132.0,
+    270.0,
+    30.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 24,
+   "align": "LEFT",
+   "text": "二 · 市场推广策略",
+   "grad": [
+    "#FFFFFF",
+    "#D8ECFB"
+   ]
+  },
+  {
+   "id": "t4",
+   "kind": "text",
+   "box": [
+    124.0,
+    262.0,
+    90.0,
+    50.0
+   ],
+   "font": "DISP_NUM",
+   "font_px": 42,
+   "align": "LEFT",
+   "text": "01",
+   "grad": [
+    "#9BFCFF",
+    "#0BF9FE",
+    "#16A8E0"
+   ]
+  },
+  {
+   "id": "t5",
+   "kind": "text",
+   "box": [
+    206.0,
+    272.0,
+    188.0,
+    34.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 20,
+   "align": "LEFT",
+   "text": "精准锚定标杆合作",
+   "grad": [
+    "#FFFFFF",
+    "#D8ECFB"
+   ]
+  },
+  {
+   "id": "t6",
+   "kind": "text",
+   "box": [
+    114.0,
+    374.0,
+    284.0,
+    199.0
+   ],
+   "font": "BODY",
+   "font_px": 19,
+   "align": "LEFT",
+   "text": "精准锚定标杆合作：聚焦稀土回收企业及萃取剂生产商，针对单级萃取效率低、溶剂损耗高等痛点，以小批量试用快速验证TIE331产品在回收率提升与成本控制方面的实效，形成可量化合作案例。",
+   "color": "#BFE0F2"
+  },
+  {
+   "id": "t7",
+   "kind": "text",
+   "box": [
+    526.0,
+    262.0,
+    90.0,
+    50.0
+   ],
+   "font": "DISP_NUM",
+   "font_px": 42,
+   "align": "LEFT",
+   "text": "02",
+   "grad": [
+    "#9BFCFF",
+    "#0BF9FE",
+    "#16A8E0"
+   ]
+  },
+  {
+   "id": "t8",
+   "kind": "text",
+   "box": [
+    608.0,
+    272.0,
+    188.0,
+    34.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 20,
+   "align": "LEFT",
+   "text": "校企资源协同赋能",
+   "grad": [
+    "#FFFFFF",
+    "#D8ECFB"
+   ]
+  },
+  {
+   "id": "t9",
+   "kind": "text",
+   "box": [
+    516.0,
+    374.0,
+    284.0,
+    199.0
+   ],
+   "font": "BODY",
+   "font_px": 19,
+   "align": "LEFT",
+   "text": "校企资源协同赋能：联动新西伯利亚国立大学科研平台，举办稀土绿色回收技术研讨会，以实证案例吸引产业链企业参与，建立高意向客户清单，实现技术背书与资源网络双驱动。",
+   "color": "#BFE0F2"
+  },
+  {
+   "id": "t10",
+   "kind": "text",
+   "box": [
+    928.0,
+    262.0,
+    90.0,
+    50.0
+   ],
+   "font": "DISP_NUM",
+   "font_px": 42,
+   "align": "LEFT",
+   "text": "03",
+   "grad": [
+    "#9BFCFF",
+    "#0BF9FE",
+    "#16A8E0"
+   ]
+  },
+  {
+   "id": "t11",
+   "kind": "text",
+   "box": [
+    1010.0,
+    272.0,
+    188.0,
+    34.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 20,
+   "align": "LEFT",
+   "text": "梯度渗透市场覆盖",
+   "grad": [
+    "#FFFFFF",
+    "#D8ECFB"
+   ]
+  },
+  {
+   "id": "t12",
+   "kind": "text",
+   "box": [
+    918.0,
+    374.0,
+    284.0,
+    199.0
+   ],
+   "font": "BODY",
+   "font_px": 19,
+   "align": "LEFT",
+   "text": "梯度渗透市场覆盖：立足标杆客户细分领域，通过定向技术分享、行业白皮书、线上直播与专业会议组合策略，推动成功模式向区域及跨应用场景有序复制，稳步扩大市场影响力与品牌认知度。",
+   "color": "#BFE0F2"
+  }
+ ]
+}

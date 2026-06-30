@@ -1,0 +1,13 @@
+{
+ "function": "bullet_marker",
+ "family": "blue_tech",
+ "theme": "深蓝科技HUD",
+ "palette": "cyan, electric blue, white glow",
+ "prompt": "a small 深蓝科技HUD icon badge marker, cyan, electric blue, white glow glowing, small circular glowing node with concentric ring, on pure solid black background, centered, high detail, no text, no words, no letters",
+ "size": "1280*1280",
+ "box": "40x40",
+ "composite": "screen",
+ "preserveAspectRatio": "none",
+ "aspect_matched": true,
+ "render_hint": "place at box with preserveAspectRatio=\"none\", style=\"mix-blend-mode:screen\""
+}

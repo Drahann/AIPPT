@@ -1,0 +1,44 @@
+{
+  "canvas": [1280, 720],
+  "shapes": [
+    {"id": "title", "kind": "text", "box": [40, 20, 700, 40], "font": "DISP_KAI", "font_px": 32, "color": "#0A2A8E", "align": "LEFT"},
+    {"id": "subtitle", "kind": "text", "box": [42, 60, 1000, 22], "font": "BODY_M", "font_px": 14, "color": "#3A5C9E", "align": "LEFT"},
+
+    {"id": "h1", "kind": "text", "box": [96, 142, 307, 34], "font": "BODY_B", "font_px": 17, "color": "#FFFFFF", "align": "CENTER"},
+    {"id": "h2", "kind": "text", "box": [486, 142, 308, 34], "font": "BODY_B", "font_px": 17, "color": "#FFFFFF", "align": "CENTER"},
+    {"id": "h3", "kind": "text", "box": [877, 142, 308, 34], "font": "BODY_B", "font_px": 15, "color": "#FFFFFF", "align": "CENTER"},
+
+    {"id": "b1", "kind": "text", "box": [104, 352, 292, 78], "font": "BODY", "font_px": 12.5, "color": "#23427E", "align": "LEFT"},
+    {"id": "b2", "kind": "text", "box": [494, 352, 292, 78], "font": "BODY", "font_px": 12.5, "color": "#23427E", "align": "LEFT"},
+    {"id": "b3", "kind": "text", "box": [885, 352, 292, 78], "font": "BODY", "font_px": 12.5, "color": "#23427E", "align": "LEFT"},
+
+    {"id": "ah1", "kind": "text", "box": [104, 436, 292, 18], "font": "BODY_B", "font_px": 12, "color": "#024BDC", "align": "LEFT"},
+    {"id": "ah2", "kind": "text", "box": [494, 436, 292, 18], "font": "BODY_B", "font_px": 12, "color": "#024BDC", "align": "LEFT"},
+    {"id": "ah3", "kind": "text", "box": [885, 436, 292, 18], "font": "BODY_B", "font_px": 12, "color": "#024BDC", "align": "LEFT"},
+
+    {"id": "a1", "kind": "text", "box": [104, 456, 292, 66], "font": "BODY", "font_px": 10.5, "color": "#3A5896", "align": "LEFT"},
+    {"id": "a2", "kind": "text", "box": [494, 456, 292, 66], "font": "BODY", "font_px": 10.5, "color": "#3A5896", "align": "LEFT"},
+    {"id": "a3", "kind": "text", "box": [885, 456, 292, 66], "font": "BODY", "font_px": 10.5, "color": "#3A5896", "align": "LEFT"},
+
+    {"id": "m1a", "kind": "text", "box": [100, 528, 81, 24], "font": "BODY_B", "font_px": 11, "color": "#FFFFFF", "align": "CENTER"},
+    {"id": "m1b", "kind": "text", "box": [209, 528, 81, 24], "font": "BODY_B", "font_px": 11, "color": "#FFFFFF", "align": "CENTER"},
+    {"id": "m1c", "kind": "text", "box": [318, 528, 81, 24], "font": "BODY_B", "font_px": 11, "color": "#FFFFFF", "align": "CENTER"},
+    {"id": "m1d", "kind": "text", "box": [100, 566, 81, 24], "font": "BODY_B", "font_px": 11, "color": "#FFFFFF", "align": "CENTER"},
+    {"id": "m1e", "kind": "text", "box": [209, 566, 81, 24], "font": "BODY_B", "font_px": 11, "color": "#FFFFFF", "align": "CENTER"},
+    {"id": "m1f", "kind": "text", "box": [318, 566, 81, 24], "font": "BODY_B", "font_px": 11, "color": "#FFFFFF", "align": "CENTER"},
+
+    {"id": "m2a", "kind": "text", "box": [491, 528, 81, 24], "font": "BODY_B", "font_px": 11, "color": "#FFFFFF", "align": "CENTER"},
+    {"id": "m2b", "kind": "text", "box": [600, 528, 81, 24], "font": "BODY_B", "font_px": 11, "color": "#FFFFFF", "align": "CENTER"},
+    {"id": "m2c", "kind": "text", "box": [709, 528, 81, 24], "font": "BODY_B", "font_px": 11, "color": "#FFFFFF", "align": "CENTER"},
+    {"id": "m2d", "kind": "text", "box": [491, 566, 81, 24], "font": "BODY_B", "font_px": 11, "color": "#FFFFFF", "align": "CENTER"},
+    {"id": "m2e", "kind": "text", "box": [600, 566, 81, 24], "font": "BODY_B", "font_px": 11, "color": "#FFFFFF", "align": "CENTER"},
+    {"id": "m2f", "kind": "text", "box": [709, 566, 81, 24], "font": "BODY_B", "font_px": 11, "color": "#FFFFFF", "align": "CENTER"},
+
+    {"id": "m3a", "kind": "text", "box": [882, 528, 81, 24], "font": "BODY_B", "font_px": 11, "color": "#FFFFFF", "align": "CENTER"},
+    {"id": "m3b", "kind": "text", "box": [991, 528, 81, 24], "font": "BODY_B", "font_px": 11, "color": "#FFFFFF", "align": "CENTER"},
+    {"id": "m3c", "kind": "text", "box": [1100, 528, 81, 24], "font": "BODY_B", "font_px": 11, "color": "#FFFFFF", "align": "CENTER"},
+    {"id": "m3d", "kind": "text", "box": [882, 566, 81, 24], "font": "BODY_B", "font_px": 11, "color": "#FFFFFF", "align": "CENTER"},
+    {"id": "m3e", "kind": "text", "box": [991, 566, 81, 24], "font": "BODY_B", "font_px": 11, "color": "#FFFFFF", "align": "CENTER"},
+    {"id": "m3f", "kind": "text", "box": [1100, 566, 81, 24], "font": "BODY_B", "font_px": 11, "color": "#FFFFFF", "align": "CENTER"}
+  ]
+}

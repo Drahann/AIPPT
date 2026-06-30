@@ -1,0 +1,97 @@
+slide 3/6 | EMU 12192000x6858000 -> 1280x720 | shapes:95 imgs:15
+==============================================================================================================
+sh00 shp[   463, 170   265x 265]
+sh01 TXT[   472, 213   234x  55]  {汉仪雅酷黑简 37.3px #FFFFFF CENTER}  <<请输入标题>>
+sh02 TXT[   474, 303   110x  32]  {汉仪粗宋简 18.7px #FFFFFF CENTER}  <<关键词>>
+sh03 TXT[   606, 303   110x  32]  {汉仪粗宋简 18.7px #FFFFFF CENTER}  <<关键词>>
+sh04 TXT[   480, 263   228x  27]  {汉仪粗宋简 14.7px #FFFFFF LEFT}  <<请输入文字内容，进行补充解释>>
+sh05 shp[   592, 315     8x   8] rot90.0 fill=#FFFFFF
+sh06 shp[   494, 311   204x  69]
+sh07 TXT[   567, 381   100x  32]  {汉仪粗宋简 18.7px #FFFFFF LEFT}  <<关键词>>
+sh08 PIC[   556, 387    19x  19] pic01.png(800x800)
+sh09 shp[    93, 317   370x 195] rot270.0
+sh10 shp[    31, 150   228x  93]
+sh11 shp[    31, 175   228x 490]
+sh12 PIC[    66, 259    30x  30] pic02.png(800x800)
+sh13 PIC[    66, 325    30x  30] pic03.png(800x800)
+sh14 PIC[    66, 392    30x  30] pic04.png(800x800)
+sh15 PIC[    66, 458    30x  30] pic05.png(800x800)
+sh16 PIC[    66, 525    30x  30] pic06.png(800x800)
+sh17 PIC[    66, 591    30x  30] pic07.png(800x800)
+sh18 TXT[    96, 221   117x 417]  {汉仪粗宋简 18.7px #FFFFFF CENTER}  <<输入关键词 / 输入关键词 / 输入关键词 / 输入关键词 / 输入关键词 / 输入关键词>>
+sh19 TXT[    40, 155   209x  55]  {汉仪雅酷黑简 37.3px #FFFFFF}  <<请输入标题>>
+sh20 TXT[    44, 206   177x  32]  {汉仪粗宋简 18.7px #FFFFFF LEFT}  <<输入内容补充解释>>
+sh21 shp[   380, 150   436x 523]
+sh22 shp[   920, 151   326x 522]
+sh23 shp[   634, 317   370x 195] rot270.0
+sh24 TXT[  1016, 320   125x 125] fill=#FFFFFF  {汉仪雅酷黑简 32.0px #34D5F1 CENTER}  <<输入 / 标题>>
+sh25 shp[   998, 425    30x  47] flipV
+sh26 TXT[   417, 440   110x  32]  {汉仪粗宋简 18.7px #FFFFFF CENTER}  <<关键词>>
+sh27 shp[  1138, 424    29x  48]
+sh28 TXT[  1110, 477   110x  32]  {汉仪粗宋简 18.7px #FFFFFF CENTER}  <<关键词>>
+sh29 PIC[  1110, 525    22x  23] pic08.png(1024x1024)
+sh30 PIC[   944, 525    23x  23] pic09.png(1024x1024)
+sh31 PIC[  1110, 576    22x  23] pic10.png(1024x1024)
+sh32 PIC[   944, 576    23x  23] pic11.png(1024x1024)
+sh33 PIC[  1110, 623    22x  23] pic12.png(1024x1024)
+sh34 PIC[   944, 623    23x  23] pic13.png(1024x1024)
+sh35 TXT[   971, 499    93x 155]  {汉仪粗宋简 16.0px #FFFFFF LEFT}  <<文字内容 / 文字内容 / 文字内容>>
+sh36 TXT[  1136, 500    93x 155]  {汉仪粗宋简 16.0px #FFFFFF LEFT}  <<文字内容 / 文字内容 / 文字内容>>
+sh37 TXT[   934, 226   295x  68]  {汉仪粗宋简 16.0px #FFFFFF LEFT}  <<请在此处输入文字内容，注意要言简意骇。请在此处输入文字内容，注意要言简意骇，突出重点。>>
+sh38 TXT[   961, 162   234x  55]  {汉仪雅酷黑简 37.3px #FFFFFF CENTER}  <<请输入标题>>
+sh39 TXT[    31,  62   218x  68]  {汉仪雅酷黑W 48.0px #FFFFFF LEFT}  <<解决方案>>
+sh40 shp[   496, 534     1x 102] flipH flipV
+sh41 shp[   543, 580     1x  45] flipH flipV
+sh42 shp[   600, 521     1x 102] flipH flipV
+sh43 shp[   657, 594     1x  34] flipH flipV
+sh44 shp[   704, 540     1x 102] flipH flipV
+sh45 shp[   519, 611   162x  23]
+sh46 shp[   500, 608   200x  29]
+sh47 shp[   453, 603   295x  43]
+sh48 TXT[   655, 500    96x  29]  {汉仪粗宋简 16.0px #FFFFFF CENTER}  <<文字内容>>
+sh49 TXT[   552, 483    96x  29]  {汉仪粗宋简 16.0px #FFFFFF CENTER}  <<文字内容>>
+sh50 TXT[   449, 494    96x  29]  {汉仪粗宋简 16.0px #FFFFFF CENTER}  <<文字内容>>
+sh51 TXT[   496, 544    96x  29]  {汉仪粗宋简 16.0px #FFFFFF CENTER}  <<文字内容>>
+sh52 shp[   436, 585    89x  14] rot90.0
+sh53 shp[   596, 557    89x   8] rot90.0
+sh54 TXT[   609, 559    96x  29]  {汉仪粗宋简 16.0px #FFFFFF CENTER}  <<文字内容>>
+sh55 shp[   702, 579    43x  32] rot90.0
+sh56 shp[   544, 594    89x   8] rot90.0
+sh57 PIC[  1118, 263   123x  82] pic14.png(1700x1133)
+sh58 shp[    66, 642   295x  16]
+sh59 shp[    66, 643   295x  17]
+sh60 shp[    66, 644   295x  17]
+sh61 shp[    66, 646   295x  18]
+sh62 shp[    66, 646   295x  20]
+sh63 shp[    66, 645   294x  22]
+sh64 shp[    66, 644   294x  24]
+sh65 shp[    66, 644   294x  27]
+sh66 shp[    66, 643   294x  30]
+sh67 shp[    66, 642   294x  33]
+sh68 shp[    66, 641   294x  35]
+sh69 shp[    66, 640   294x  38]
+sh70 shp[    66, 640   294x  41]
+sh71 shp[    66, 639   294x  44]
+sh72 shp[    66, 638   294x  46]
+sh73 shp[    66, 637   294x  49]
+sh74 shp[    66, 636   294x  52]
+sh75 shp[    66, 639   294x  49]
+sh76 shp[    66, 641   294x  46]
+sh77 shp[    66, 644   294x  42]
+sh78 shp[    66, 647   294x  39]
+sh79 shp[    66, 649   294x  36]
+sh80 shp[    66, 652   294x  32]
+sh81 shp[    66, 654   294x  29]
+sh82 shp[    66, 657   294x  26]
+sh83 shp[    66, 658   294x  24]
+sh84 shp[    66, 658   294x  24]
+sh85 shp[    66, 657   294x  24]
+sh86 shp[    66, 657   294x  24]
+sh87 shp[    66, 656   294x  24]
+sh88 shp[    66, 655   294x  24]
+sh89 shp[    66, 654   294x  25]
+sh90 shp[    66, 654   294x  28]
+sh91 TXT[     0,  21  1280x  32]  {汉仪粗宋简 18.7px #91ABDF RIGHT}  <<命题分析    解决方案    实现成果    核心优势    运营模式    财务分析    团队>>
+sh92 PIC[   342,  12   217x 109] pic15.png(1418x709)
+sh93 TXT[   547, 440   110x  32]  {汉仪粗宋简 18.7px #FFFFFF CENTER}  <<关键词>>
+sh94 TXT[   675, 440   110x  32]  {汉仪粗宋简 18.7px #FFFFFF CENTER}  <<关键词>>

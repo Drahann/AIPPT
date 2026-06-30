@@ -1,0 +1,21 @@
+{
+ "function": "bullet_marker",
+ "family": "blue_tech",
+ "theme": "通用",
+ "palette": "gold, cyan",
+ "prompt": "A small bullet marker icon filling the entire square frame. A golden hexagonal diamond shape with cyan inner glow, tiny tech grid pattern. Minimalist, clean. Full-bleed to all edges, pure black background for alpha keyout., centered, generous size, drawn in light luminous strokes on a solid pure black #000000 background, no white background, clean, no text, no words, no letters",
+ "size": "1280*1280",
+ "box": "28x28",
+ "composite": "normal",
+ "alpha": true,
+ "preserveAspectRatio": "none",
+ "final_size": [
+  1280,
+  1280
+ ],
+ "fill_frac": 1.0,
+ "opaque_frac": 0.015,
+ "stretch_vs_box": 1.0,
+ "warnings": [],
+ "render_hint": "place at box with preserveAspectRatio=\"none\", NORMAL blend (alpha is real)"
+}

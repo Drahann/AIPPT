@@ -1,0 +1,261 @@
+{
+ "deck_id": "【科技风】挑战杯及互联网+通用模板",
+ "canvas": [
+  1280,
+  720
+ ],
+ "theme": {
+  "palette": {
+   "dk1": "#000000",
+   "lt1": "#FFFFFF",
+   "dk2": "#2D3847",
+   "lt2": "#E7E6E6",
+   "accent1": "#00FFFF",
+   "accent2": "#016DFF",
+   "accent3": "#03A2FF",
+   "accent4": "#BFBFBF",
+   "accent5": "#FFCD37",
+   "accent6": "#7F7F7F",
+   "hlink": "#0563C1",
+   "folHlink": "#954F72"
+  },
+  "font_scheme": {
+   "major": [
+    "字体圈欣意冠黑体",
+    "字体圈欣意冠黑体"
+   ],
+   "minor": [
+    "字体圈欣意冠黑体",
+    "OPPOSans R"
+   ]
+  }
+ },
+ "typography": {
+  "title_family": "字体圈欣意冠黑体",
+  "subtitle_family": "OPPOSans H",
+  "body_family": "OPPOSans R",
+  "families_seen": [
+   "OPPOSans R",
+   "字体圈欣意冠黑体",
+   "OPPOSans H",
+   "云峰飞云体"
+  ],
+  "size_ramp": [
+   19,
+   21,
+   24,
+   32,
+   27,
+   43,
+   15,
+   13,
+   16,
+   53
+  ]
+ },
+ "skin": {
+  "primary": "#00FFFF",
+  "accent_cyan": "#03A2FF",
+  "bg_deep": "#04256C",
+  "text": "#FFFFFF",
+  "text_dim": "#E7E6E6",
+  "accents": [
+   "#00FFFF",
+   "#007F7F",
+   "#016DFF",
+   "#03A2FF"
+  ],
+  "palette_measured": [
+   "#FFFFFF",
+   "#00FFFF",
+   "#ADACAC",
+   "#03A2FF",
+   "#016DFF",
+   "#66A7FF",
+   "#FFCD37",
+   "#202244",
+   "#818790",
+   "#D8D8D8",
+   "#000000",
+   "#007F7F"
+  ],
+  "bg_samples": [
+   "#042B7F",
+   "#032A6F",
+   "#062A7F",
+   "#04256C",
+   "#074087"
+  ],
+  "backgrounds": [
+   "chrome_bg_c8fdc854e748.png"
+  ]
+ },
+ "style_desc": "深蓝背景搭配发光线条人头剪影，字体锐利现代，整体呈现强烈的科技与未来感。",
+ "render_tags": [
+  "Tech",
+  "Futuristic",
+  "Glowing",
+  "Digital",
+  "Modern",
+  "Blue"
+ ],
+ "design_system": {
+  "type_ramp": [
+   {
+    "px": 184,
+    "count": 1
+   },
+   {
+    "px": 153,
+    "count": 1
+   },
+   {
+    "px": 128,
+    "count": 1
+   },
+   {
+    "px": 107,
+    "count": 6
+   },
+   {
+    "px": 96,
+    "count": 2
+   },
+   {
+    "px": 64,
+    "count": 7
+   },
+   {
+    "px": 59,
+    "count": 2
+   },
+   {
+    "px": 53,
+    "count": 4
+   }
+  ],
+  "content_margins": {
+   "left": 26.7,
+   "top": 23.5,
+   "right": 25.8,
+   "bottom": 48.7
+  },
+  "common_colors": [
+   "#FFFFFF",
+   "#00FFFF",
+   "#ADACAC",
+   "#03A2FF",
+   "#016DFF",
+   "#66A7FF",
+   "#FFCD37",
+   "#202244",
+   "#818790",
+   "#D8D8D8",
+   "#000000",
+   "#007F7F"
+  ],
+  "decos_per_page": 7.0,
+  "common_box_sizes": [
+   {
+    "w": 100,
+    "h": 30,
+    "n": 120
+   },
+   {
+    "w": 0,
+    "h": 40,
+    "n": 101
+   },
+   {
+    "w": 10,
+    "h": 0,
+    "n": 99
+   },
+   {
+    "w": 20,
+    "h": 20,
+    "n": 70
+   },
+   {
+    "w": 0,
+    "h": 0,
+    "n": 57
+   },
+   {
+    "w": 0,
+    "h": 270,
+    "n": 48
+   },
+   {
+    "w": 20,
+    "h": 0,
+    "n": 34
+   },
+   {
+    "w": 80,
+    "h": 30,
+    "n": 28
+   }
+  ]
+ },
+ "chrome_decorations": [
+  {
+   "asset": "chrome_e3a135e13647.png",
+   "box": [
+    416.9,
+    0.0,
+    863.2,
+    720.0
+   ],
+   "role": "decoration",
+   "function": "bg_panel",
+   "desc": "蓝色流线光点背景",
+   "theme_meaning": "科技",
+   "treatment": "reuse",
+   "reusable": true,
+   "source": "chrome"
+  },
+  {
+   "asset": "chrome_f1bedb86bd61.png",
+   "box": [
+    -5.5,
+    0.0,
+    782.0,
+    720.0
+   ],
+   "role": "decoration",
+   "function": "bg_panel",
+   "desc": "蓝色流线光点背景",
+   "theme_meaning": "科技HUD",
+   "treatment": "reuse",
+   "reusable": true,
+   "source": "chrome"
+  }
+ ],
+ "source_pptx": "W:\\ppt\\挑战杯 互联网+三创赛 创青春 国赛金奖级PPT 模板\\创赛PPT\\蓝色科技-医疗（导航栏）--gzh：xx的百宝箱\\蓝色科技风医疗、卫生、大数据\\【科技风】挑战杯及互联网+通用模板.pptx",
+ "family": "med_blue_white",
+ "track": "internet_plus",
+ "pages": [
+  "med_blue_white_5d47632c_p01",
+  "med_blue_white_5d47632c_p02",
+  "med_blue_white_5d47632c_p03",
+  "med_blue_white_5d47632c_p04",
+  "med_blue_white_5d47632c_p05",
+  "med_blue_white_5d47632c_p06",
+  "med_blue_white_5d47632c_p07",
+  "med_blue_white_5d47632c_p08",
+  "med_blue_white_5d47632c_p09",
+  "med_blue_white_5d47632c_p10",
+  "med_blue_white_5d47632c_p11",
+  "med_blue_white_5d47632c_p12",
+  "med_blue_white_5d47632c_p13",
+  "med_blue_white_5d47632c_p14",
+  "med_blue_white_5d47632c_p15",
+  "med_blue_white_5d47632c_p16",
+  "med_blue_white_5d47632c_p17",
+  "med_blue_white_5d47632c_p18",
+  "med_blue_white_5d47632c_p19",
+  "med_blue_white_5d47632c_p20",
+  "med_blue_white_5d47632c_p21"
+ ]
+}

@@ -1,0 +1,13 @@
+{
+ "function": "card_frame",
+ "family": "med_blue_white",
+ "theme": "blue HUD tech panel",
+ "palette": "#15F7F9,#0A3B86",
+ "prompt": "decorative blue HUD tech panel card frame border with a hollow transparent center, ornate glowing edges, #15F7F9,#0A3B86 colors, rounded rectangle hollow center, glowing corner accents, on pure solid black background, centered, high detail, no text, no words, no letters",
+ "size": "1280*768",
+ "box": "250x150",
+ "composite": "screen",
+ "preserveAspectRatio": "none",
+ "aspect_matched": true,
+ "render_hint": "place at box with preserveAspectRatio=\"none\", style=\"mix-blend-mode:screen\""
+}

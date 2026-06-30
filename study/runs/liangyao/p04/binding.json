@@ -1,0 +1,36 @@
+{
+ "_archetype": "financing",
+ "_h2": "融资计划",
+ "_note": "Pie redrawn from plan's REAL equity split (5-way, not template's 4). Spend row count-adapted 3->4 cards from plan's 资金用途. Template example numbers/labels suppressed. Contract scans reused from plate.",
+ "drop_unbound_placeholders": true,
+ "slots": {
+  "sh35": "融资计划",
+  "sh70": "天使轮融资200万元 · 释放10%股权",
+
+  "sh44": "", "sh45": "", "sh46": "", "sh47": "", "sh48": "", "sh49": "", "sh50": "", "sh51": "",
+  "sh67": "", "sh68": "", "sh69": "", "sh74": "", "sh75": "", "sh76": "",
+
+  "sh80": "已签订天使投资意向协议 · 200万",
+  "sh83": "2025年 · 近期完成工商注册",
+  "sh81": "* 运营主体：宁波谷泽新生生物科技有限公司"
+ },
+ "extras": [
+  {"type": "pie", "cx": 250, "cy": 455, "r": 140, "inner": 0.0,
+   "label_font": "汉仪粗宋简", "value_font": "汉仪雅酷黑简", "label_px": 16, "label_color": "#FFFFFF",
+   "data": [
+    {"label": "王炯桦(创始人)", "value": 75, "color": "#30C0B4"},
+    {"label": "任一帆", "value": 6.25, "color": "#4874CB"},
+    {"label": "邓煜婕", "value": 6.25, "color": "#F2BA02"},
+    {"label": "张瑜瑜", "value": 5, "color": "#75BD42"},
+    {"label": "其他核心成员", "value": 7.5, "color": "#EE822F"}
+   ]},
+  {"type": "cards", "area": [583, 252, 662, 172], "gap": 18, "accent": "#30C0B4",
+   "title_font": "汉仪雅酷黑简", "body_font": "汉仪粗宋简",
+   "items": [
+    {"title": "中试与纯化", "value": "40", "unit": "%", "badge": "¥", "sub": "GMP中试线 · 纯化工艺"},
+    {"title": "质量与检测", "value": "25", "unit": "%", "badge": "¥", "sub": "权威检测 · 注册送审"},
+    {"title": "研发与人力", "value": "20", "unit": "%", "badge": "¥", "sub": "人才引进 · 工艺优化"},
+    {"title": "市场与验证", "value": "15", "unit": "%", "badge": "¥", "sub": "客户交付 · 区域拓展"}
+   ]}
+ ]
+}

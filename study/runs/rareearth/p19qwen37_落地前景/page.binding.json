@@ -1,0 +1,401 @@
+{
+ "slots": {},
+ "extras": [
+  {
+   "type": "rect",
+   "box": [
+    0,
+    0,
+    1280,
+    720
+   ],
+   "rx": 0,
+   "fill": "rgba(8,12,30,0.35)"
+  },
+  {
+   "type": "image",
+   "box": [
+    0.0,
+    0.0,
+    1280.0,
+    244.0
+   ],
+   "href": "W:\\ppt\\study\\runs\\rareearth\\p19qwen37_落地前景\\_assets\\ref_glow_band.png",
+   "preserve": "none",
+   "function": "glow"
+  },
+  {
+   "type": "image",
+   "box": [
+    15.0,
+    0.0,
+    1250.0,
+    149.0
+   ],
+   "href": "W:\\ppt\\study\\runs\\rareearth\\p19qwen37_落地前景\\_assets\\ref_ribbon_bot.png",
+   "preserve": "none",
+   "function": "bg_panel"
+  },
+  {
+   "type": "image",
+   "box": [
+    0.0,
+    0.0,
+    200.0,
+    90.0
+   ],
+   "href": "W:\\ppt\\study\\runs\\rareearth\\p19qwen37_落地前景\\_assets\\title_flank_l.png",
+   "preserve": "none",
+   "function": "title_flank"
+  },
+  {
+   "type": "image",
+   "box": [
+    1202.0,
+    0.0,
+    78.0,
+    40.0
+   ],
+   "href": "W:\\ppt\\study\\runs\\rareearth\\p19qwen37_落地前景\\_assets\\ref_title_flank_r.png",
+   "preserve": "none",
+   "function": "title_flank"
+  },
+  {
+   "type": "image",
+   "box": [
+    620.0,
+    0.0,
+    40.0,
+    40.0
+   ],
+   "href": "W:\\ppt\\study\\runs\\rareearth\\p19qwen37_落地前景\\_assets\\ref_icon_pedestal.png",
+   "preserve": "none",
+   "function": "icon_pedestal"
+  },
+  {
+   "type": "image",
+   "box": [
+    573.0,
+    0.0,
+    135.0,
+    44.0
+   ],
+   "href": "W:\\ppt\\study\\runs\\rareearth\\p19qwen37_落地前景\\_assets\\ref_title_deco.png",
+   "preserve": "none",
+   "function": "connector"
+  },
+  {
+   "type": "line",
+   "p": [
+    340.0,
+    38.0,
+    940.0,
+    38.0
+   ],
+   "color": "rgba(255,192,0,0.55)",
+   "w": 2
+  },
+  {
+   "type": "image",
+   "box": [
+    10.0,
+    40.0,
+    615.0,
+    340.0
+   ],
+   "href": "W:\\ppt\\study\\runs\\rareearth\\p19qwen37_落地前景\\_assets\\card_frame_wide.png",
+   "preserve": "none",
+   "function": "card_frame"
+  },
+  {
+   "type": "image",
+   "box": [
+    571.0,
+    44.0,
+    48.0,
+    48.0
+   ],
+   "href": "W:\\ppt\\study\\runs\\rareearth\\p19qwen37_落地前景\\_assets\\corner_hud.png",
+   "preserve": "none",
+   "function": "corner_hud"
+  },
+  {
+   "type": "image",
+   "box": [
+    24.0,
+    52.0,
+    90.0,
+    36.0
+   ],
+   "href": "W:\\ppt\\study\\runs\\rareearth\\p19qwen37_落地前景\\_assets\\section_badge.png",
+   "preserve": "none",
+   "function": "ribbon"
+  },
+  {
+   "type": "image",
+   "box": [
+    24.0,
+    94.0,
+    20.0,
+    20.0
+   ],
+   "href": "W:\\ppt\\study\\runs\\rareearth\\p19qwen37_落地前景\\_assets\\bullet_marker.png",
+   "preserve": "none",
+   "function": "bullet_marker"
+  },
+  {
+   "type": "image",
+   "box": [
+    222.33333333333334,
+    94.0,
+    20.0,
+    20.0
+   ],
+   "href": "W:\\ppt\\study\\runs\\rareearth\\p19qwen37_落地前景\\_assets\\bullet_marker.png",
+   "preserve": "none",
+   "function": "bullet_marker"
+  },
+  {
+   "type": "image",
+   "box": [
+    420.6666666666667,
+    94.0,
+    20.0,
+    20.0
+   ],
+   "href": "W:\\ppt\\study\\runs\\rareearth\\p19qwen37_落地前景\\_assets\\bullet_marker.png",
+   "preserve": "none",
+   "function": "bullet_marker"
+  },
+  {
+   "type": "image",
+   "box": [
+    655.0,
+    40.0,
+    615.0,
+    340.0
+   ],
+   "href": "W:\\ppt\\study\\runs\\rareearth\\p19qwen37_落地前景\\_assets\\card_frame_wide.png",
+   "preserve": "none",
+   "function": "card_frame"
+  },
+  {
+   "type": "image",
+   "box": [
+    1216.0,
+    44.0,
+    48.0,
+    48.0
+   ],
+   "href": "W:\\ppt\\study\\runs\\rareearth\\p19qwen37_落地前景\\_assets\\corner_hud.png",
+   "preserve": "none",
+   "function": "corner_hud"
+  },
+  {
+   "type": "image",
+   "box": [
+    669.0,
+    52.0,
+    90.0,
+    36.0
+   ],
+   "href": "W:\\ppt\\study\\runs\\rareearth\\p19qwen37_落地前景\\_assets\\section_badge.png",
+   "preserve": "none",
+   "function": "ribbon"
+  },
+  {
+   "type": "image",
+   "box": [
+    669.0,
+    94.0,
+    20.0,
+    20.0
+   ],
+   "href": "W:\\ppt\\study\\runs\\rareearth\\p19qwen37_落地前景\\_assets\\bullet_marker.png",
+   "preserve": "none",
+   "function": "bullet_marker"
+  },
+  {
+   "type": "image",
+   "box": [
+    867.3333333333334,
+    94.0,
+    20.0,
+    20.0
+   ],
+   "href": "W:\\ppt\\study\\runs\\rareearth\\p19qwen37_落地前景\\_assets\\bullet_marker.png",
+   "preserve": "none",
+   "function": "bullet_marker"
+  },
+  {
+   "type": "image",
+   "box": [
+    1065.6666666666667,
+    94.0,
+    20.0,
+    20.0
+   ],
+   "href": "W:\\ppt\\study\\runs\\rareearth\\p19qwen37_落地前景\\_assets\\bullet_marker.png",
+   "preserve": "none",
+   "function": "bullet_marker"
+  },
+  {
+   "type": "image",
+   "box": [
+    10.0,
+    380.0,
+    615.0,
+    340.0
+   ],
+   "href": "W:\\ppt\\study\\runs\\rareearth\\p19qwen37_落地前景\\_assets\\card_frame_wide.png",
+   "preserve": "none",
+   "function": "card_frame"
+  },
+  {
+   "type": "image",
+   "box": [
+    571.0,
+    384.0,
+    48.0,
+    48.0
+   ],
+   "href": "W:\\ppt\\study\\runs\\rareearth\\p19qwen37_落地前景\\_assets\\corner_hud.png",
+   "preserve": "none",
+   "function": "corner_hud"
+  },
+  {
+   "type": "image",
+   "box": [
+    24.0,
+    392.0,
+    90.0,
+    36.0
+   ],
+   "href": "W:\\ppt\\study\\runs\\rareearth\\p19qwen37_落地前景\\_assets\\section_badge.png",
+   "preserve": "none",
+   "function": "ribbon"
+  },
+  {
+   "type": "image",
+   "box": [
+    24.0,
+    434.0,
+    20.0,
+    20.0
+   ],
+   "href": "W:\\ppt\\study\\runs\\rareearth\\p19qwen37_落地前景\\_assets\\bullet_marker.png",
+   "preserve": "none",
+   "function": "bullet_marker"
+  },
+  {
+   "type": "image",
+   "box": [
+    321.5,
+    434.0,
+    20.0,
+    20.0
+   ],
+   "href": "W:\\ppt\\study\\runs\\rareearth\\p19qwen37_落地前景\\_assets\\bullet_marker.png",
+   "preserve": "none",
+   "function": "bullet_marker"
+  },
+  {
+   "type": "image",
+   "box": [
+    655.0,
+    380.0,
+    615.0,
+    340.0
+   ],
+   "href": "W:\\ppt\\study\\runs\\rareearth\\p19qwen37_落地前景\\_assets\\card_frame_wide.png",
+   "preserve": "none",
+   "function": "card_frame"
+  },
+  {
+   "type": "image",
+   "box": [
+    1216.0,
+    384.0,
+    48.0,
+    48.0
+   ],
+   "href": "W:\\ppt\\study\\runs\\rareearth\\p19qwen37_落地前景\\_assets\\corner_hud.png",
+   "preserve": "none",
+   "function": "corner_hud"
+  },
+  {
+   "type": "image",
+   "box": [
+    669.0,
+    392.0,
+    90.0,
+    36.0
+   ],
+   "href": "W:\\ppt\\study\\runs\\rareearth\\p19qwen37_落地前景\\_assets\\section_badge.png",
+   "preserve": "none",
+   "function": "ribbon"
+  },
+  {
+   "type": "image",
+   "box": [
+    669.0,
+    434.0,
+    20.0,
+    20.0
+   ],
+   "href": "W:\\ppt\\study\\runs\\rareearth\\p19qwen37_落地前景\\_assets\\bullet_marker.png",
+   "preserve": "none",
+   "function": "bullet_marker"
+  },
+  {
+   "type": "image",
+   "box": [
+    867.3333333333334,
+    434.0,
+    20.0,
+    20.0
+   ],
+   "href": "W:\\ppt\\study\\runs\\rareearth\\p19qwen37_落地前景\\_assets\\bullet_marker.png",
+   "preserve": "none",
+   "function": "bullet_marker"
+  },
+  {
+   "type": "image",
+   "box": [
+    1065.6666666666667,
+    434.0,
+    20.0,
+    20.0
+   ],
+   "href": "W:\\ppt\\study\\runs\\rareearth\\p19qwen37_落地前景\\_assets\\bullet_marker.png",
+   "preserve": "none",
+   "function": "bullet_marker"
+  },
+  {
+   "type": "image",
+   "box": [
+    0.0,
+    0.0,
+    50.0,
+    50.0
+   ],
+   "href": "W:\\ppt\\study\\runs\\rareearth\\p19qwen37_落地前景\\_assets\\corner_hud.png",
+   "preserve": "none",
+   "function": "corner_hud"
+  },
+  {
+   "type": "image",
+   "box": [
+    1230.0,
+    0.0,
+    50.0,
+    50.0
+   ],
+   "href": "W:\\ppt\\study\\runs\\rareearth\\p19qwen37_落地前景\\_assets\\corner_hud.png",
+   "preserve": "none",
+   "flipH": true,
+   "function": "corner_hud"
+  }
+ ],
+ "drop_unbound_placeholders": false
+}

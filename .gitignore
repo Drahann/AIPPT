@@ -2,16 +2,24 @@
 **/keys.local.json
 *.key
 
-# ============ huge / external / regenerable (NOT versioned) ============
-# template library (many GB of .pptx) — external input
-挑战杯*/
-# ppt-master is its own git repo (reference project, not part of this project)
-ppt-master/
-# built corpus + decoration library + test outputs (regenerable artifacts; large image sets)
+# ============ giant image libraries (regenerable; uploaded separately) ============
+# Reference corpus (~800 parsed templates, ~12 GB) and the function-decoration library
+# (~11 GB). Too large for a plain Git repo — provided out-of-band.
 study/corpus/
 study/assets_lib/
-study/runs/
-# earlier exploration scratch dirs
+
+# ============ external / not part of this project ============
+# raw .pptx template library (input)
+挑战杯*/
+# upstream reference project (its own repo)
+ppt-master/
+# qwen-code local config (skill mirror lives in .claude/skills)
+.qwen/
+# standalone archive of study/ (large, regenerable)
+study.zip
+
+# ============ internal scratch / regenerable ============
+study/runs/_transcripts/
 study/loop/
 study/build_loop/
 study/contact_sheets/
@@ -29,6 +37,6 @@ study/assets/
 .vscode/
 .idea/
 
-# ============ .claude: keep only the skills, ignore local settings/logs ============
+# ============ .claude: keep skills, ignore local settings/logs ============
 .claude/*
 !.claude/skills

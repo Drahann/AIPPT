@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 720" width="1280" height="720">
+<defs><linearGradient id="g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#BBBBBB"/><stop offset="25%" stop-color="#F2F2F2"/><stop offset="50%" stop-color="#FFFFFF"/><stop offset="75%" stop-color="#BFBFBF"/><stop offset="100%" stop-color="#D8D8D8"/></linearGradient><linearGradient id="g2" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FCE9B8"/><stop offset="50%" stop-color="#F2C14E"/><stop offset="100%" stop-color="#E0A93B"/></linearGradient></defs>
+<image href="file:///W:/ppt/study/runs/rareearth/p19_落地前景/_assets/base.png" x="0" y="0" width="1280" height="720"/>
+<rect x="0.0" y="0.0" width="1280.0" height="720.0" rx="0" fill="rgba(3,14,40,0.32)"/>
+<image href="file:///W:/ppt/study/runs/rareearth/p19_落地前景/_assets/bottom_glow.png" x="0.0" y="430.0" width="1280.0" height="290.0" preserveAspectRatio="none" style="opacity:0.85;mix-blend-mode:screen"/>
+<polygon points="328,22 479,22 465,72 314,72" fill="rgba(20,70,140,0.30)" stroke="rgba(120,180,255,0.45)" stroke-width="1.4"/>
+<polygon points="502,22 653,22 639,72 488,72" fill="rgba(20,70,140,0.30)" stroke="rgba(120,180,255,0.45)" stroke-width="1.4"/>
+<polygon points="676,22 827,22 813,72 662,72" fill="rgba(20,70,140,0.30)" stroke="rgba(120,180,255,0.45)" stroke-width="1.4"/>
+<polygon points="850,22 1001,22 987,72 836,72" fill="rgba(20,70,140,0.30)" stroke="rgba(120,180,255,0.45)" stroke-width="1.4"/>
+<polygon points="1024,22 1175,22 1161,72 1010,72" fill="rgba(3,162,255,0.55)" stroke="#66FFFF" stroke-width="1.4"/>
+<image href="file:///W:/ppt/study/runs/rareearth/p19_落地前景/_assets/title_tab.png" x="30.0" y="8.0" width="300.0" height="56.0" preserveAspectRatio="none" style="opacity:0.9;mix-blend-mode:screen"/>
+<image href="file:///W:/ppt/study/runs/rareearth/p19_落地前景/_assets/title_band.png" x="0.0" y="100.0" width="1280.0" height="72.0" preserveAspectRatio="none" style="opacity:0.9;mix-blend-mode:screen"/>
+<image href="file:///W:/ppt/study/runs/rareearth/p19_落地前景/_assets/molecule.png" x="1176.0" y="116.0" width="56.0" height="56.0" preserveAspectRatio="none" style="opacity:0.95;mix-blend-mode:screen"/>
+<image href="file:///W:/ppt/study/runs/rareearth/p19_落地前景/_assets/card_A.png" x="54.0" y="212.0" width="372.0" height="208.0" preserveAspectRatio="none" style="mix-blend-mode:screen"/>
+<image href="file:///W:/ppt/study/runs/rareearth/p19_落地前景/_assets/ribbon.png" x="72.0" y="220.0" width="336.0" height="44.0" preserveAspectRatio="none" style="mix-blend-mode:screen"/>
+<rect x="68.0" y="198.0" width="80.0" height="30.0" rx="999" fill="rgba(12,46,104,0.92)" stroke="rgba(242,193,78,0.9)" stroke-width="1.1"/>
+<image href="file:///W:/ppt/study/runs/rareearth/p19_落地前景/_assets/dot.png" x="70.0" y="279.0" width="22.0" height="22.0" preserveAspectRatio="none" style="mix-blend-mode:screen"/>
+<image href="file:///W:/ppt/study/runs/rareearth/p19_落地前景/_assets/dot.png" x="70.0" y="307.0" width="22.0" height="22.0" preserveAspectRatio="none" style="mix-blend-mode:screen"/>
+<image href="file:///W:/ppt/study/runs/rareearth/p19_落地前景/_assets/dot.png" x="70.0" y="335.0" width="22.0" height="22.0" preserveAspectRatio="none" style="mix-blend-mode:screen"/>
+<image href="file:///W:/ppt/study/runs/rareearth/p19_落地前景/_assets/card_A.png" x="454.0" y="212.0" width="372.0" height="208.0" preserveAspectRatio="none" style="mix-blend-mode:screen"/>
+<image href="file:///W:/ppt/study/runs/rareearth/p19_落地前景/_assets/ribbon.png" x="472.0" y="220.0" width="336.0" height="44.0" preserveAspectRatio="none" style="mix-blend-mode:screen"/>
+<rect x="468.0" y="198.0" width="80.0" height="30.0" rx="999" fill="rgba(12,46,104,0.92)" stroke="rgba(242,193,78,0.9)" stroke-width="1.1"/>
+<image href="file:///W:/ppt/study/runs/rareearth/p19_落地前景/_assets/dot.png" x="470.0" y="279.0" width="22.0" height="22.0" preserveAspectRatio="none" style="mix-blend-mode:screen"/>
+<image href="file:///W:/ppt/study/runs/rareearth/p19_落地前景/_assets/dot.png" x="470.0" y="329.0" width="22.0" height="22.0" preserveAspectRatio="none" style="mix-blend-mode:screen"/>
+<image href="file:///W:/ppt/study/runs/rareearth/p19_落地前景/_assets/dot.png" x="470.0" y="357.0" width="22.0" height="22.0" preserveAspectRatio="none" style="mix-blend-mode:screen"/>
+<image href="file:///W:/ppt/study/runs/rareearth/p19_落地前景/_assets/card_A.png" x="854.0" y="212.0" width="372.0" height="208.0" preserveAspectRatio="none" style="mix-blend-mode:screen"/>
+<image href="file:///W:/ppt/study/runs/rareearth/p19_落地前景/_assets/ribbon.png" x="872.0" y="220.0" width="336.0" height="44.0" preserveAspectRatio="none" style="mix-blend-mode:screen"/>
+<rect x="868.0" y="198.0" width="80.0" height="30.0" rx="999" fill="rgba(12,46,104,0.92)" stroke="rgba(242,193,78,0.9)" stroke-width="1.1"/>
+<image href="file:///W:/ppt/study/runs/rareearth/p19_落地前景/_assets/dot.png" x="870.0" y="279.0" width="22.0" height="22.0" preserveAspectRatio="none" style="mix-blend-mode:screen"/>
+<image href="file:///W:/ppt/study/runs/rareearth/p19_落地前景/_assets/dot.png" x="870.0" y="307.0" width="22.0" height="22.0" preserveAspectRatio="none" style="mix-blend-mode:screen"/>
+<image href="file:///W:/ppt/study/runs/rareearth/p19_落地前景/_assets/dot.png" x="870.0" y="335.0" width="22.0" height="22.0" preserveAspectRatio="none" style="mix-blend-mode:screen"/>
+<line x1="428" y1="316.0" x2="452" y2="316.0" stroke="#F2C14E" stroke-width="3"/>
+<line x1="452" y1="316.0" x2="444.20577136594005" y2="320.5" stroke="#F2C14E" stroke-width="3"/>
+<line x1="452" y1="316.0" x2="444.20577136594005" y2="311.5" stroke="#F2C14E" stroke-width="3"/>
+<line x1="828" y1="316.0" x2="852" y2="316.0" stroke="#F2C14E" stroke-width="3"/>
+<line x1="852" y1="316.0" x2="844.2057713659401" y2="320.5" stroke="#F2C14E" stroke-width="3"/>
+<line x1="852" y1="316.0" x2="844.2057713659401" y2="311.5" stroke="#F2C14E" stroke-width="3"/>
+<image href="file:///W:/ppt/study/runs/rareearth/p19_落地前景/_assets/card_B.png" x="40.0" y="428.0" width="390.0" height="288.0" preserveAspectRatio="none" style="mix-blend-mode:screen"/>
+<rect x="61.0" y="446.0" width="26.0" height="26.0" rx="13" fill="rgba(12,46,104,0.85)" stroke="#F2C14E" stroke-width="2"/>
+<line x1="64" y1="478" x2="406" y2="478" stroke="rgba(242,210,144,0.55)" stroke-width="1.6"/>
+<rect x="230.0" y="473.0" width="10.0" height="10.0" rx="1" fill="#F2C14E" opacity="0.95"/>
+<image href="file:///W:/ppt/study/runs/rareearth/p19_落地前景/_assets/bg_panel.png" x="54.0" y="484.0" width="362.0" height="70.0" preserveAspectRatio="none" style="opacity:0.95;mix-blend-mode:screen"/>
+<image href="file:///W:/ppt/study/runs/rareearth/p19_落地前景/_assets/dot.png" x="67.0" y="497.0" width="28.0" height="28.0" preserveAspectRatio="none" style="mix-blend-mode:screen"/>
+<image href="file:///W:/ppt/study/runs/rareearth/p19_落地前景/_assets/bg_panel.png" x="54.0" y="562.0" width="362.0" height="70.0" preserveAspectRatio="none" style="opacity:0.95;mix-blend-mode:screen"/>
+<image href="file:///W:/ppt/study/runs/rareearth/p19_落地前景/_assets/dot.png" x="67.0" y="575.0" width="28.0" height="28.0" preserveAspectRatio="none" style="mix-blend-mode:screen"/>
+<image href="file:///W:/ppt/study/runs/rareearth/p19_落地前景/_assets/bg_panel.png" x="54.0" y="640.0" width="362.0" height="70.0" preserveAspectRatio="none" style="opacity:0.95;mix-blend-mode:screen"/>
+<image href="file:///W:/ppt/study/runs/rareearth/p19_落地前景/_assets/dot.png" x="67.0" y="653.0" width="28.0" height="28.0" preserveAspectRatio="none" style="mix-blend-mode:screen"/>
+<image href="file:///W:/ppt/study/runs/rareearth/p19_落地前景/_assets/card_B.png" x="445.0" y="428.0" width="390.0" height="288.0" preserveAspectRatio="none" style="mix-blend-mode:screen"/>
+<rect x="466.0" y="446.0" width="26.0" height="26.0" rx="13" fill="rgba(12,46,104,0.85)" stroke="#F2C14E" stroke-width="2"/>
+<line x1="469" y1="478" x2="811" y2="478" stroke="rgba(242,210,144,0.55)" stroke-width="1.6"/>
+<rect x="635.0" y="473.0" width="10.0" height="10.0" rx="1" fill="#F2C14E" opacity="0.95"/>
+<image href="file:///W:/ppt/study/runs/rareearth/p19_落地前景/_assets/bg_panel_tall.png" x="459.0" y="484.0" width="362.0" height="106.0" preserveAspectRatio="none" style="opacity:0.95;mix-blend-mode:screen"/>
+<image href="file:///W:/ppt/study/runs/rareearth/p19_落地前景/_assets/dot.png" x="472.0" y="497.0" width="28.0" height="28.0" preserveAspectRatio="none" style="mix-blend-mode:screen"/>
+<image href="file:///W:/ppt/study/runs/rareearth/p19_落地前景/_assets/bg_panel_tall.png" x="459.0" y="606.0" width="362.0" height="106.0" preserveAspectRatio="none" style="opacity:0.95;mix-blend-mode:screen"/>
+<image href="file:///W:/ppt/study/runs/rareearth/p19_落地前景/_assets/dot.png" x="472.0" y="619.0" width="28.0" height="28.0" preserveAspectRatio="none" style="mix-blend-mode:screen"/>
+<image href="file:///W:/ppt/study/runs/rareearth/p19_落地前景/_assets/card_B.png" x="850.0" y="428.0" width="390.0" height="288.0" preserveAspectRatio="none" style="mix-blend-mode:screen"/>
+<rect x="871.0" y="446.0" width="26.0" height="26.0" rx="13" fill="rgba(12,46,104,0.85)" stroke="#F2C14E" stroke-width="2"/>
+<line x1="874" y1="478" x2="1216" y2="478" stroke="rgba(242,210,144,0.55)" stroke-width="1.6"/>
+<rect x="1040.0" y="473.0" width="10.0" height="10.0" rx="1" fill="#F2C14E" opacity="0.95"/>
+<image href="file:///W:/ppt/study/runs/rareearth/p19_落地前景/_assets/bg_panel.png" x="864.0" y="484.0" width="362.0" height="70.0" preserveAspectRatio="none" style="opacity:0.95;mix-blend-mode:screen"/>
+<image href="file:///W:/ppt/study/runs/rareearth/p19_落地前景/_assets/dot.png" x="877.0" y="497.0" width="28.0" height="28.0" preserveAspectRatio="none" style="mix-blend-mode:screen"/>
+<image href="file:///W:/ppt/study/runs/rareearth/p19_落地前景/_assets/bg_panel.png" x="864.0" y="562.0" width="362.0" height="70.0" preserveAspectRatio="none" style="opacity:0.95;mix-blend-mode:screen"/>
+<image href="file:///W:/ppt/study/runs/rareearth/p19_落地前景/_assets/dot.png" x="877.0" y="575.0" width="28.0" height="28.0" preserveAspectRatio="none" style="mix-blend-mode:screen"/>
+<image href="file:///W:/ppt/study/runs/rareearth/p19_落地前景/_assets/bg_panel.png" x="864.0" y="640.0" width="362.0" height="70.0" preserveAspectRatio="none" style="opacity:0.95;mix-blend-mode:screen"/>
+<image href="file:///W:/ppt/study/runs/rareearth/p19_落地前景/_assets/dot.png" x="877.0" y="653.0" width="28.0" height="28.0" preserveAspectRatio="none" style="mix-blend-mode:screen"/>
+<text class="ct" x="396" y="58" text-anchor="middle" font-family="'OPPOSans B','Source Han Sans CN Bold','Microsoft YaHei',sans-serif" font-size="21.0" fill="#CFE0F5"><tspan x="396" dy="0.0">项目背景</tspan></text>
+<text class="ct" x="570" y="58" text-anchor="middle" font-family="'OPPOSans B','Source Han Sans CN Bold','Microsoft YaHei',sans-serif" font-size="21.0" fill="#CFE0F5"><tspan x="570" dy="0.0">技术方案</tspan></text>
+<text class="ct" x="744" y="58" text-anchor="middle" font-family="'OPPOSans B','Source Han Sans CN Bold','Microsoft YaHei',sans-serif" font-size="21.0" fill="#CFE0F5"><tspan x="744" dy="0.0">市场分析</tspan></text>
+<text class="ct" x="918" y="58" text-anchor="middle" font-family="'OPPOSans B','Source Han Sans CN Bold','Microsoft YaHei',sans-serif" font-size="21.0" fill="#CFE0F5"><tspan x="918" dy="0.0">财务规划</tspan></text>
+<text class="ct" x="1092" y="58" text-anchor="middle" font-family="'OPPOSans B','Source Han Sans CN Bold','Microsoft YaHei',sans-serif" font-size="21.0" fill="#FFFFFF"><tspan x="1092" dy="0.0">落地前景</tspan></text>
+<text class="ct" x="48" y="53" text-anchor="start" font-family="'字体圈欣意冠黑体','Fontquan-XinYiGuanHeiTi','Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="50.0" font-weight="800" fill="url(#g1)"><tspan x="48" dy="0.0">落地前景</tspan></text>
+<text class="ct" x="600" y="142" text-anchor="middle" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="18.0" fill="url(#g2)"><tspan x="600" dy="0.0">产业验证阶段 · 三年三阶段推进 · 累计销售收入 20 万元</tspan></text>
+<text class="ct" x="54" y="197" text-anchor="start" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="20.0" fill="#F2C14E"><tspan x="54" dy="0.0">产业化实施路径</tspan></text>
+<text class="ct" x="232" y="196" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="14.0" fill="#9DBDE6"><tspan x="232" dy="0.0">实验室系统验证已完成，高酸度含氟硫复杂废液中铈离子选择性萃取、两相分离与溶剂循环稳定，具备中试放大条件</tspan></text>
+<text class="ct" x="240" y="252" text-anchor="middle" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="20.0" fill="#FFFFFF"><tspan x="240" dy="0.0">中试验证 · 标杆突破</tspan></text>
+<text class="ct" x="108" y="221" text-anchor="middle" font-family="'OPPOSans B','Source Han Sans CN Bold','Microsoft YaHei',sans-serif" font-size="17.0" fill="#F2C14E"><tspan x="108" dy="0.0">第一年</tspan></text>
+<text class="ct" x="98" y="301" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="14.0" fill="#CFE0F5"><tspan x="98" dy="0.0">TIE331 工艺参数固化 + 中试放大</tspan></text>
+<text class="ct" x="98" y="329" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="14.0" fill="#CFE0F5"><tspan x="98" dy="0.0">对接 2 家稀土回收标杆企业小批量试用</tspan></text>
+<text class="ct" x="98" y="348" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="14.0" fill="#CFE0F5"><tspan x="98" dy="0.0">验证单级萃取效率（回收率≥85%），形成可复</tspan><tspan x="98" dy="18.5">制实施方案</tspan></text>
+<text class="ct" x="640" y="252" text-anchor="middle" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="20.0" fill="#FFFFFF"><tspan x="640" dy="0.0">产品拓展 · 网络构建</tspan></text>
+<text class="ct" x="508" y="221" text-anchor="middle" font-family="'OPPOSans B','Source Han Sans CN Bold','Microsoft YaHei',sans-serif" font-size="17.0" fill="#F2C14E"><tspan x="508" dy="0.0">第二年</tspan></text>
+<text class="ct" x="498" y="292" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="14.0" fill="#CFE0F5"><tspan x="498" dy="0.0">推进 TIE332–350 系列开发，拓展 </tspan><tspan x="498" dy="18.5">3 家标杆客户</tspan></text>
+<text class="ct" x="498" y="351" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="14.0" fill="#CFE0F5"><tspan x="498" dy="0.0">深化校企协同，积累跨场景应用数据</tspan></text>
+<text class="ct" x="498" y="379" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="14.0" fill="#CFE0F5"><tspan x="498" dy="0.0">完善“技术方案+定制服务”轻资产服务模式</tspan></text>
+<text class="ct" x="1040" y="252" text-anchor="middle" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="20.0" fill="#FFFFFF"><tspan x="1040" dy="0.0">模式固化 · 规模预备</tspan></text>
+<text class="ct" x="908" y="221" text-anchor="middle" font-family="'OPPOSans B','Source Han Sans CN Bold','Microsoft YaHei',sans-serif" font-size="17.0" fill="#F2C14E"><tspan x="908" dy="0.0">第三年</tspan></text>
+<text class="ct" x="898" y="301" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="14.0" fill="#CFE0F5"><tspan x="898" dy="0.0">TIE331–381 全系产品矩阵优化</tspan></text>
+<text class="ct" x="898" y="329" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="14.0" fill="#CFE0F5"><tspan x="898" dy="0.0">依托客户反馈闭环迭代技术</tspan></text>
+<text class="ct" x="898" y="357" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="14.0" fill="#CFE0F5"><tspan x="898" dy="0.0">累计销售收入 20 万元，验证商业模式可行性</tspan></text>
+<text class="ct" x="80" y="464" text-anchor="middle" font-family="'Alibaba PuHuiTi H','OPPOSans B','Source Han Sans CN Heavy','Arial',sans-serif" font-size="12.0" fill="#F2C14E"><tspan x="80" dy="0.0">◆</tspan></text>
+<text class="ct" x="96" y="466" text-anchor="start" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="23.0" fill="#FFFFFF"><tspan x="96" dy="0.0">市场推广策略</tspan></text>
+<text class="ct" x="104" y="509" text-anchor="start" font-family="'OPPOSans B','Source Han Sans CN Bold','Microsoft YaHei',sans-serif" font-size="16.0" fill="#66FFFF"><tspan x="104" dy="0.0">精准锚定标杆合作</tspan></text>
+<text class="ct" x="104" y="514" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="18.0" fill="#CFE0F5"><tspan x="104" dy="0.0">聚焦稀土回收 / 萃取剂厂商，小</tspan><tspan x="104" dy="23.8">批量试用验证 TIE331 回收</tspan><tspan x="104" dy="23.8">率与成本实效，形成可量化合作案例</tspan></text>
+<text class="ct" x="104" y="587" text-anchor="start" font-family="'OPPOSans B','Source Han Sans CN Bold','Microsoft YaHei',sans-serif" font-size="16.0" fill="#66FFFF"><tspan x="104" dy="0.0">校企资源协同赋能</tspan></text>
+<text class="ct" x="104" y="592" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="18.0" fill="#CFE0F5"><tspan x="104" dy="0.0">联动新西伯利亚国立大学，举办绿色</tspan><tspan x="104" dy="23.8">回收技术研讨会，建立高意向客户清</tspan><tspan x="104" dy="23.8">单</tspan></text>
+<text class="ct" x="104" y="665" text-anchor="start" font-family="'OPPOSans B','Source Han Sans CN Bold','Microsoft YaHei',sans-serif" font-size="16.0" fill="#66FFFF"><tspan x="104" dy="0.0">梯度渗透市场覆盖</tspan></text>
+<text class="ct" x="104" y="670" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="18.0" fill="#CFE0F5"><tspan x="104" dy="0.0">定向技术分享 + 行业白皮书 +</tspan><tspan x="104" dy="23.8"> 直播会议，推动成功模式向区域及</tspan><tspan x="104" dy="23.8">跨场景复制</tspan></text>
+<text class="ct" x="485" y="464" text-anchor="middle" font-family="'Alibaba PuHuiTi H','OPPOSans B','Source Han Sans CN Heavy','Arial',sans-serif" font-size="12.0" fill="#F2C14E"><tspan x="485" dy="0.0">◆</tspan></text>
+<text class="ct" x="501" y="466" text-anchor="start" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="23.0" fill="#FFFFFF"><tspan x="501" dy="0.0">综合效益展望</tspan></text>
+<text class="ct" x="509" y="509" text-anchor="start" font-family="'OPPOSans B','Source Han Sans CN Bold','Microsoft YaHei',sans-serif" font-size="16.0" fill="#7CF0C0"><tspan x="509" dy="0.0">经济效益</tspan></text>
+<text class="ct" x="509" y="509" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="18.0" fill="#CFE0F5"><tspan x="509" dy="0.0">轻资产运营降低初期投入，溶剂可循</tspan><tspan x="509" dy="23.8">环压缩长期成本；后续通过技术授权</tspan><tspan x="509" dy="23.8">、定制服务等高附加值路径提升盈利</tspan><tspan x="509" dy="23.8">，形成“销售-反馈-优化”现金流</tspan><tspan x="509" dy="23.8">循环</tspan></text>
+<text class="ct" x="509" y="631" text-anchor="start" font-family="'OPPOSans B','Source Han Sans CN Bold','Microsoft YaHei',sans-serif" font-size="16.0" fill="#7CF0C0"><tspan x="509" dy="0.0">社会效益</tspan></text>
+<text class="ct" x="509" y="658" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="14.0" fill="#CFE0F5"><tspan x="509" dy="0.0">推动工业废弃物中稀土高效绿色回收，减污惠民</tspan><tspan x="509" dy="18.5">；为行业提供可推广资源化方案，助力工艺升级</tspan><tspan x="509" dy="18.5">与国家循环经济战略</tspan></text>
+<text class="ct" x="890" y="464" text-anchor="middle" font-family="'Alibaba PuHuiTi H','OPPOSans B','Source Han Sans CN Heavy','Arial',sans-serif" font-size="12.0" fill="#F2C14E"><tspan x="890" dy="0.0">◆</tspan></text>
+<text class="ct" x="906" y="466" text-anchor="start" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="23.0" fill="#FFFFFF"><tspan x="906" dy="0.0">风险应对机制</tspan></text>
+<text class="ct" x="914" y="509" text-anchor="start" font-family="'OPPOSans B','Source Han Sans CN Bold','Microsoft YaHei',sans-serif" font-size="16.0" fill="#F2C14E"><tspan x="914" dy="0.0">市场风险</tspan></text>
+<text class="ct" x="914" y="514" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="18.0" fill="#CFE0F5"><tspan x="914" dy="0.0">精准锚定 + 梯度扩张，优先验证</tspan><tspan x="914" dy="23.8">高匹配度客户，预留运营资金应对需</tspan><tspan x="914" dy="23.8">求波动</tspan></text>
+<text class="ct" x="914" y="587" text-anchor="start" font-family="'OPPOSans B','Source Han Sans CN Bold','Microsoft YaHei',sans-serif" font-size="16.0" fill="#F2C14E"><tspan x="914" dy="0.0">技术风险</tspan></text>
+<text class="ct" x="914" y="592" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="18.0" fill="#CFE0F5"><tspan x="914" dy="0.0">高校科研平台 + 中试验证闭环持</tspan><tspan x="914" dy="23.8">续优化工艺参数，建立客户反馈实时</tspan><tspan x="914" dy="23.8">迭代机制</tspan></text>
+<text class="ct" x="914" y="665" text-anchor="start" font-family="'OPPOSans B','Source Han Sans CN Bold','Microsoft YaHei',sans-serif" font-size="16.0" fill="#F2C14E"><tspan x="914" dy="0.0">运营风险</tspan></text>
+<text class="ct" x="914" y="670" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="18.0" fill="#CFE0F5"><tspan x="914" dy="0.0">核心团队持股 34.3% 绑定，</tspan><tspan x="914" dy="23.8">专项账户分阶段拨付，轻资产结构降</tspan><tspan x="914" dy="23.8">低固定成本</tspan></text>
+</svg>

@@ -1,0 +1,21 @@
+{
+ "function": "bullet_marker",
+ "family": "blue_tech",
+ "theme": "科技",
+ "palette": "青色 金 发光",
+ "prompt": "a small round 科技 glowing icon marker, 青色 金 发光, a small glowing diamond rhombus tech marker, on pure black, centered, generous size, on pure solid #000000 black background, high detail, no text, no words, no letters",
+ "size": "1280*1280",
+ "box": "48x48",
+ "composite": "normal",
+ "alpha": true,
+ "preserveAspectRatio": "none",
+ "final_size": [
+  1278,
+  1280
+ ],
+ "fill_frac": 1.0,
+ "opaque_frac": 0.035,
+ "stretch_vs_box": 1.002,
+ "warnings": [],
+ "render_hint": "place at box with preserveAspectRatio=\"none\", NORMAL blend (alpha is real)"
+}

@@ -1,0 +1,10 @@
+{
+ "canvas": [
+  1280,
+  720
+ ],
+ "bg": {
+  "SLIDE": "bg_Slide.jpeg"
+ },
+ "shapes": []
+}

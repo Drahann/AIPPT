@@ -1,0 +1,13 @@
+{
+ "function": "title_flank",
+ "family": "blue_tech",
+ "theme": "深蓝科技HUD",
+ "palette": "electric blue, cyan glow",
+ "prompt": "a symmetric pair of 深蓝科技HUD decorative ornaments flanking a title, left and right mirrored, electric blue, cyan glow glowing, a small left-aligned angular tech nameplate underlay bar with a bright left bracket and faint horizontal lines, the interior is dark, glowing edges only, on pure solid black background, centered, high detail, no text, no words, no letters",
+ "size": "1440*512",
+ "box": "300x56",
+ "composite": "screen",
+ "preserveAspectRatio": "none",
+ "aspect_matched": false,
+ "render_hint": "place at box with preserveAspectRatio=\"none\", style=\"mix-blend-mode:screen\""
+}

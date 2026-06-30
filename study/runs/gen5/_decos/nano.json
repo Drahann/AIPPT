@@ -1,0 +1,13 @@
+{
+ "function": "motif",
+ "family": "med_blue_white",
+ "theme": "纳米涂层 蛋白分子",
+ "palette": "luminous cyan blue and warm gold",
+ "prompt": "a 纳米涂层 蛋白分子 central motif illustration, luminous cyan blue and warm gold, clean, abstract nanoparticle coating sphere cluster, glowing molecular network, medical biotech, on pure solid black background, centered, high detail, no text, no words, no letters",
+ "size": "1280*1280",
+ "box": "520x520",
+ "composite": "screen",
+ "preserveAspectRatio": "none",
+ "aspect_matched": true,
+ "render_hint": "place at box with preserveAspectRatio=\"none\", style=\"mix-blend-mode:screen\""
+}

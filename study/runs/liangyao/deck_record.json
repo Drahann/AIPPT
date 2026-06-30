@@ -1,0 +1,63 @@
+{
+ "deck_id": "良药智纪--gzh：xx的百宝箱",
+ "canvas": [
+  1280,
+  720
+ ],
+ "theme": {
+  "palette": {
+   "dk1": "#000000",
+   "lt1": "#FFFFFF",
+   "dk2": "#0F1423",
+   "lt2": "#FFFFFF",
+   "accent1": "#4874CB",
+   "accent2": "#EE822F",
+   "accent3": "#F2BA02",
+   "accent4": "#75BD42",
+   "accent5": "#30C0B4",
+   "accent6": "#E54C5E",
+   "hlink": "#0026E5",
+   "folHlink": "#7E1FAD"
+  },
+  "font_scheme": {
+   "major": [
+    "Calibri",
+    "宋体"
+   ],
+   "minor": [
+    "Calibri",
+    "宋体"
+   ]
+  }
+ },
+ "typography": {
+  "title_family": "汉仪雅酷黑W",
+  "subtitle_family": "汉仪雅酷黑简",
+  "body_family": "汉仪粗宋简",
+  "families_seen": [
+   "汉仪粗宋简",
+   "汉仪雅酷黑简",
+   "汉仪雅酷黑W",
+   "潮字社曾玉波手书简"
+  ],
+  "size_ramp": [
+   19,
+   32,
+   27,
+   16,
+   21,
+   48,
+   43,
+   64,
+   37,
+   264
+  ]
+ },
+ "skin": {
+  "primary": "#EE822F",
+  "accent_cyan": "#F2BA02",
+  "bg_deep": "#000000",
+  "text": "#FFFFFF",
+  "text_dim": "#FFFFFF"
+ }
+}

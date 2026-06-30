@@ -1,0 +1,181 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 720" width="1280" height="720">
+<defs><linearGradient id="g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FBF1C6"/><stop offset="50%" stop-color="#F2D290"/><stop offset="100%" stop-color="#E2B25E"/></linearGradient><linearGradient id="g2" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FBF1C6"/><stop offset="50%" stop-color="#F2D290"/><stop offset="100%" stop-color="#E2B25E"/></linearGradient><linearGradient id="g3" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FBF1C6"/><stop offset="50%" stop-color="#F2D290"/><stop offset="100%" stop-color="#E2B25E"/></linearGradient><linearGradient id="g4" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FBF1C6"/><stop offset="50%" stop-color="#F2D290"/><stop offset="100%" stop-color="#E2B25E"/></linearGradient><linearGradient id="g5" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FBF1C6"/><stop offset="50%" stop-color="#F2D290"/><stop offset="100%" stop-color="#E2B25E"/></linearGradient><linearGradient id="g6" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FBF1C6"/><stop offset="50%" stop-color="#F2D290"/><stop offset="100%" stop-color="#E2B25E"/></linearGradient><linearGradient id="g7" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FBF1C6"/><stop offset="50%" stop-color="#F2D290"/><stop offset="100%" stop-color="#E2B25E"/></linearGradient><linearGradient id="g8" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FBF1C6"/><stop offset="50%" stop-color="#F2D290"/><stop offset="100%" stop-color="#E2B25E"/></linearGradient><linearGradient id="g9" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FBF1C6"/><stop offset="50%" stop-color="#F2D290"/><stop offset="100%" stop-color="#E2B25E"/></linearGradient><linearGradient id="g10" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FBF1C6"/><stop offset="50%" stop-color="#F2D290"/><stop offset="100%" stop-color="#E2B25E"/></linearGradient><linearGradient id="g11" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FBF1C6"/><stop offset="50%" stop-color="#F2D290"/><stop offset="100%" stop-color="#E2B25E"/></linearGradient><linearGradient id="g12" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FBF1C6"/><stop offset="50%" stop-color="#F2D290"/><stop offset="100%" stop-color="#E2B25E"/></linearGradient><linearGradient id="g13" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FBF1C6"/><stop offset="50%" stop-color="#F2D290"/><stop offset="100%" stop-color="#E2B25E"/></linearGradient><linearGradient id="g14" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FBF1C6"/><stop offset="50%" stop-color="#F2D290"/><stop offset="100%" stop-color="#E2B25E"/></linearGradient><linearGradient id="g15" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FBF1C6"/><stop offset="50%" stop-color="#F2D290"/><stop offset="100%" stop-color="#E2B25E"/></linearGradient><linearGradient id="g16" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FBF1C6"/><stop offset="50%" stop-color="#F2D290"/><stop offset="100%" stop-color="#E2B25E"/></linearGradient><linearGradient id="g17" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FBF1C6"/><stop offset="50%" stop-color="#F2D290"/><stop offset="100%" stop-color="#E2B25E"/></linearGradient><linearGradient id="g18" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FBF1C6"/><stop offset="50%" stop-color="#F2D290"/><stop offset="100%" stop-color="#E2B25E"/></linearGradient></defs>
+<image href="file:///W:/ppt/study/runs/gen5/_decos/base.png" x="0" y="0" width="1280" height="720"/>
+<rect x="0.0" y="0.0" width="1280.0" height="720.0" rx="0" fill="rgba(6,14,40,0.50)"/>
+<image href="file:///W:/ppt/study/runs/gen5/_decos/glow.png" x="330.0" y="8.0" width="640.0" height="140.0" preserveAspectRatio="none" style="opacity:0.4;mix-blend-mode:screen"/>
+<image href="file:///W:/ppt/study/runs/gen5/_decos/nano.png" x="1118.0" y="14.0" width="150.0" height="150.0" preserveAspectRatio="none" style="opacity:0.75;mix-blend-mode:screen"/>
+<line x1="64" y1="56" x2="76" y2="69.0" stroke="#F2D290" stroke-width="4"/>
+<line x1="64" y1="88" x2="76" y2="69.0" stroke="#F2D290" stroke-width="4"/>
+<line x1="77" y1="56" x2="89" y2="69.0" stroke="#F2D290" stroke-width="4"/>
+<line x1="77" y1="88" x2="89" y2="69.0" stroke="#F2D290" stroke-width="4"/>
+<line x1="110" y1="102" x2="234.0" y2="102" stroke="rgba(242,210,144,0.6)" stroke-width="2"/>
+<rect x="56.0" y="150.0" width="300.0" height="458.0" rx="14" fill="rgba(8,22,55,0.70)" stroke="rgba(120,180,255,0.42)" stroke-width="1.4"/>
+<line x1="60" y1="176" x2="60" y2="154" stroke="#F2D290" stroke-width="3"/>
+<line x1="60" y1="154" x2="82" y2="154" stroke="#F2D290" stroke-width="3"/>
+<line x1="330" y1="154" x2="352" y2="154" stroke="#F2D290" stroke-width="3"/>
+<line x1="352" y1="154" x2="352" y2="176" stroke="#F2D290" stroke-width="3"/>
+<line x1="60" y1="582" x2="60" y2="604" stroke="#F2D290" stroke-width="3"/>
+<line x1="60" y1="604" x2="82" y2="604" stroke="#F2D290" stroke-width="3"/>
+<line x1="330" y1="604" x2="352" y2="604" stroke="#F2D290" stroke-width="3"/>
+<line x1="352" y1="604" x2="352" y2="582" stroke="#F2D290" stroke-width="3"/>
+<rect x="146.0" y="168.0" width="120.0" height="26.0" rx="999" fill="rgba(242,210,144,0.18)" stroke="rgba(242,210,144,0.85)" stroke-width="1.1"/>
+<rect x="150.0" y="204.0" width="112.0" height="112.0" rx="56" fill="rgba(15,45,105,0.85)" stroke="#F2D290" stroke-width="2.2"/>
+<rect x="162.3" y="216.3" width="87.4" height="87.4" rx="43.68" fill="none" stroke="rgba(120,180,255,0.5)" stroke-width="1.2"/>
+<line x1="86" y1="406" x2="326" y2="406" stroke="rgba(242,210,144,0.55)" stroke-width="1.6"/>
+<rect x="201.0" y="401.0" width="10.0" height="10.0" rx="1" fill="#F2D290" opacity="0.95"/>
+<rect x="380.0" y="150.0" width="270.0" height="220.0" rx="14" fill="rgba(8,22,55,0.70)" stroke="rgba(120,180,255,0.42)" stroke-width="1.4"/>
+<line x1="384" y1="170" x2="384" y2="154" stroke="#F2D290" stroke-width="2"/>
+<line x1="384" y1="154" x2="400" y2="154" stroke="#F2D290" stroke-width="2"/>
+<line x1="630" y1="154" x2="646" y2="154" stroke="#F2D290" stroke-width="2"/>
+<line x1="646" y1="154" x2="646" y2="170" stroke="#F2D290" stroke-width="2"/>
+<line x1="384" y1="350" x2="384" y2="366" stroke="#F2D290" stroke-width="2"/>
+<line x1="384" y1="366" x2="400" y2="366" stroke="#F2D290" stroke-width="2"/>
+<line x1="630" y1="366" x2="646" y2="366" stroke="#F2D290" stroke-width="2"/>
+<line x1="646" y1="366" x2="646" y2="350" stroke="#F2D290" stroke-width="2"/>
+<rect x="391.0" y="163.0" width="54.0" height="54.0" rx="27" fill="rgba(15,45,105,0.85)" stroke="#F2D290" stroke-width="2.2"/>
+<rect x="396.9" y="168.9" width="42.1" height="42.1" rx="21.060000000000002" fill="none" stroke="rgba(120,180,255,0.5)" stroke-width="1.2"/>
+<rect x="454.0" y="194.0" width="67.0" height="23.0" rx="999" fill="rgba(20,70,150,0.7)" stroke="rgba(242,210,144,0.85)" stroke-width="1.1"/>
+<line x1="396" y1="228" x2="634" y2="228" stroke="rgba(242,210,144,0.35)" stroke-width="1.2"/>
+<rect x="666.0" y="150.0" width="270.0" height="220.0" rx="14" fill="rgba(8,22,55,0.70)" stroke="rgba(120,180,255,0.42)" stroke-width="1.4"/>
+<line x1="670" y1="170" x2="670" y2="154" stroke="#F2D290" stroke-width="2"/>
+<line x1="670" y1="154" x2="686" y2="154" stroke="#F2D290" stroke-width="2"/>
+<line x1="916" y1="154" x2="932" y2="154" stroke="#F2D290" stroke-width="2"/>
+<line x1="932" y1="154" x2="932" y2="170" stroke="#F2D290" stroke-width="2"/>
+<line x1="670" y1="350" x2="670" y2="366" stroke="#F2D290" stroke-width="2"/>
+<line x1="670" y1="366" x2="686" y2="366" stroke="#F2D290" stroke-width="2"/>
+<line x1="916" y1="366" x2="932" y2="366" stroke="#F2D290" stroke-width="2"/>
+<line x1="932" y1="366" x2="932" y2="350" stroke="#F2D290" stroke-width="2"/>
+<rect x="677.0" y="163.0" width="54.0" height="54.0" rx="27" fill="rgba(15,45,105,0.85)" stroke="#F2D290" stroke-width="2.2"/>
+<rect x="682.9" y="168.9" width="42.1" height="42.1" rx="21.060000000000002" fill="none" stroke="rgba(120,180,255,0.5)" stroke-width="1.2"/>
+<rect x="740.0" y="194.0" width="82.0" height="23.0" rx="999" fill="rgba(20,70,150,0.7)" stroke="rgba(242,210,144,0.85)" stroke-width="1.1"/>
+<line x1="682" y1="228" x2="920" y2="228" stroke="rgba(242,210,144,0.35)" stroke-width="1.2"/>
+<rect x="952.0" y="150.0" width="270.0" height="220.0" rx="14" fill="rgba(8,22,55,0.70)" stroke="rgba(120,180,255,0.42)" stroke-width="1.4"/>
+<line x1="956" y1="170" x2="956" y2="154" stroke="#F2D290" stroke-width="2"/>
+<line x1="956" y1="154" x2="972" y2="154" stroke="#F2D290" stroke-width="2"/>
+<line x1="1202" y1="154" x2="1218" y2="154" stroke="#F2D290" stroke-width="2"/>
+<line x1="1218" y1="154" x2="1218" y2="170" stroke="#F2D290" stroke-width="2"/>
+<line x1="956" y1="350" x2="956" y2="366" stroke="#F2D290" stroke-width="2"/>
+<line x1="956" y1="366" x2="972" y2="366" stroke="#F2D290" stroke-width="2"/>
+<line x1="1202" y1="366" x2="1218" y2="366" stroke="#F2D290" stroke-width="2"/>
+<line x1="1218" y1="366" x2="1218" y2="350" stroke="#F2D290" stroke-width="2"/>
+<rect x="963.0" y="163.0" width="54.0" height="54.0" rx="27" fill="rgba(15,45,105,0.85)" stroke="#F2D290" stroke-width="2.2"/>
+<rect x="968.9" y="168.9" width="42.1" height="42.1" rx="21.060000000000002" fill="none" stroke="rgba(120,180,255,0.5)" stroke-width="1.2"/>
+<rect x="1026.0" y="194.0" width="82.0" height="23.0" rx="999" fill="rgba(20,70,150,0.7)" stroke="rgba(242,210,144,0.85)" stroke-width="1.1"/>
+<line x1="968" y1="228" x2="1206" y2="228" stroke="rgba(242,210,144,0.35)" stroke-width="1.2"/>
+<rect x="380.0" y="390.0" width="270.0" height="220.0" rx="14" fill="rgba(8,22,55,0.70)" stroke="rgba(120,180,255,0.42)" stroke-width="1.4"/>
+<line x1="384" y1="410" x2="384" y2="394" stroke="#F2D290" stroke-width="2"/>
+<line x1="384" y1="394" x2="400" y2="394" stroke="#F2D290" stroke-width="2"/>
+<line x1="630" y1="394" x2="646" y2="394" stroke="#F2D290" stroke-width="2"/>
+<line x1="646" y1="394" x2="646" y2="410" stroke="#F2D290" stroke-width="2"/>
+<line x1="384" y1="590" x2="384" y2="606" stroke="#F2D290" stroke-width="2"/>
+<line x1="384" y1="606" x2="400" y2="606" stroke="#F2D290" stroke-width="2"/>
+<line x1="630" y1="606" x2="646" y2="606" stroke="#F2D290" stroke-width="2"/>
+<line x1="646" y1="606" x2="646" y2="590" stroke="#F2D290" stroke-width="2"/>
+<rect x="391.0" y="403.0" width="54.0" height="54.0" rx="27" fill="rgba(15,45,105,0.85)" stroke="#F2D290" stroke-width="2.2"/>
+<rect x="396.9" y="408.9" width="42.1" height="42.1" rx="21.060000000000002" fill="none" stroke="rgba(120,180,255,0.5)" stroke-width="1.2"/>
+<rect x="454.0" y="434.0" width="82.0" height="23.0" rx="999" fill="rgba(20,70,150,0.7)" stroke="rgba(242,210,144,0.85)" stroke-width="1.1"/>
+<line x1="396" y1="468" x2="634" y2="468" stroke="rgba(242,210,144,0.35)" stroke-width="1.2"/>
+<rect x="666.0" y="390.0" width="270.0" height="220.0" rx="14" fill="rgba(8,22,55,0.70)" stroke="rgba(120,180,255,0.42)" stroke-width="1.4"/>
+<line x1="670" y1="410" x2="670" y2="394" stroke="#F2D290" stroke-width="2"/>
+<line x1="670" y1="394" x2="686" y2="394" stroke="#F2D290" stroke-width="2"/>
+<line x1="916" y1="394" x2="932" y2="394" stroke="#F2D290" stroke-width="2"/>
+<line x1="932" y1="394" x2="932" y2="410" stroke="#F2D290" stroke-width="2"/>
+<line x1="670" y1="590" x2="670" y2="606" stroke="#F2D290" stroke-width="2"/>
+<line x1="670" y1="606" x2="686" y2="606" stroke="#F2D290" stroke-width="2"/>
+<line x1="916" y1="606" x2="932" y2="606" stroke="#F2D290" stroke-width="2"/>
+<line x1="932" y1="606" x2="932" y2="590" stroke="#F2D290" stroke-width="2"/>
+<rect x="677.0" y="403.0" width="54.0" height="54.0" rx="27" fill="rgba(15,45,105,0.85)" stroke="#F2D290" stroke-width="2.2"/>
+<rect x="682.9" y="408.9" width="42.1" height="42.1" rx="21.060000000000002" fill="none" stroke="rgba(120,180,255,0.5)" stroke-width="1.2"/>
+<rect x="740.0" y="434.0" width="82.0" height="23.0" rx="999" fill="rgba(20,70,150,0.7)" stroke="rgba(242,210,144,0.85)" stroke-width="1.1"/>
+<line x1="682" y1="468" x2="920" y2="468" stroke="rgba(242,210,144,0.35)" stroke-width="1.2"/>
+<rect x="952.0" y="390.0" width="270.0" height="220.0" rx="14" fill="rgba(8,22,55,0.70)" stroke="rgba(120,180,255,0.42)" stroke-width="1.4"/>
+<line x1="956" y1="410" x2="956" y2="394" stroke="#F2D290" stroke-width="2"/>
+<line x1="956" y1="394" x2="972" y2="394" stroke="#F2D290" stroke-width="2"/>
+<line x1="1202" y1="394" x2="1218" y2="394" stroke="#F2D290" stroke-width="2"/>
+<line x1="1218" y1="394" x2="1218" y2="410" stroke="#F2D290" stroke-width="2"/>
+<line x1="956" y1="590" x2="956" y2="606" stroke="#F2D290" stroke-width="2"/>
+<line x1="956" y1="606" x2="972" y2="606" stroke="#F2D290" stroke-width="2"/>
+<line x1="1202" y1="606" x2="1218" y2="606" stroke="#F2D290" stroke-width="2"/>
+<line x1="1218" y1="606" x2="1218" y2="590" stroke="#F2D290" stroke-width="2"/>
+<rect x="963.0" y="403.0" width="54.0" height="54.0" rx="27" fill="rgba(15,45,105,0.85)" stroke="#F2D290" stroke-width="2.2"/>
+<rect x="968.9" y="408.9" width="42.1" height="42.1" rx="21.060000000000002" fill="none" stroke="rgba(120,180,255,0.5)" stroke-width="1.2"/>
+<rect x="1026.0" y="434.0" width="82.0" height="23.0" rx="999" fill="rgba(20,70,150,0.7)" stroke="rgba(242,210,144,0.85)" stroke-width="1.1"/>
+<line x1="968" y1="468" x2="1206" y2="468" stroke="rgba(242,210,144,0.35)" stroke-width="1.2"/>
+<rect x="380.0" y="614.0" width="844.0" height="52.0" rx="10" fill="rgba(20,55,120,0.6)" stroke="rgba(242,210,144,0.85)" stroke-width="1.2"/>
+<text x="108" y="88" text-anchor="start" font-family="'华文行楷','STXingkai','Source Han Serif CN Heavy','KaiTi',serif" font-size="50.0" fill="url(#g1)"><tspan x="108" dy="0.0">团队结构</tspan></text>
+<text x="112" y="126" text-anchor="start" font-family="'OPPOSans M','Source Han Sans CN Medium','Microsoft YaHei',sans-serif" font-size="16.0" fill="#C3D6F2"><tspan x="112" dy="0.0">六大领域全链条复合型协作 · 技术研发—产品验证—生产质控—市场转化—财务融资</tspan></text>
+<text x="206" y="187" text-anchor="middle" font-family="'OPPOSans M','Source Han Sans CN Medium','Microsoft YaHei',sans-serif" font-size="13.0" fill="#F2D290"><tspan x="206" dy="0.0">团队负责人</tspan></text>
+<text x="206" y="281" text-anchor="middle" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="58.0" fill="url(#g2)"><tspan x="206" dy="0.0">王</tspan></text>
+<text x="206" y="356" text-anchor="middle" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="32.0" fill="url(#g3)"><tspan x="206" dy="0.0">王炯桦</tspan></text>
+<text x="206" y="387" text-anchor="middle" font-family="'OPPOSans M','Source Han Sans CN Medium','Microsoft YaHei',sans-serif" font-size="16.0" fill="#16C7F0"><tspan x="206" dy="0.0">团队负责人 / 拟任法人</tspan></text>
+<text x="80" y="433" text-anchor="start" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="14.0" fill="#16C7F0"><tspan x="80" dy="0.0">研究方向</tspan></text>
+<text x="80" y="455" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="15.0" fill="#C3D6F2"><tspan x="80" dy="0.0">医用功能蛋白、生物材料与器械应用</tspan><tspan x="80" dy="19.8">研究</tspan></text>
+<text x="80" y="491" text-anchor="start" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="14.0" fill="#16C7F0"><tspan x="80" dy="0.0">核心职责</tspan></text>
+<text x="80" y="513" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="15.0" fill="#C3D6F2"><tspan x="80" dy="0.0">项目统筹、技术路线把控、资源协调</tspan><tspan x="80" dy="19.8">与产业化推进</tspan></text>
+<text x="80" y="549" text-anchor="start" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="14.0" fill="#16C7F0"><tspan x="80" dy="0.0">关键成果</tspan></text>
+<text x="80" y="571" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="15.0" fill="#F2D290"><tspan x="80" dy="0.0">SCI论文3篇 · 全国大学生生</tspan><tspan x="80" dy="19.8">命科学竞赛一等奖</tspan></text>
+<text x="418" y="200" text-anchor="middle" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="28.0" fill="url(#g4)"><tspan x="418" dy="0.0">陈</tspan></text>
+<text x="454" y="185" text-anchor="start" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="20.0" fill="url(#g5)"><tspan x="454" dy="0.0">陈远幸</tspan></text>
+<text x="488" y="212" text-anchor="middle" font-family="'OPPOSans M','Source Han Sans CN Medium','Microsoft YaHei',sans-serif" font-size="13.0" fill="#F2D290"><tspan x="488" dy="0.0">董事长</tspan></text>
+<text x="394" y="250" text-anchor="start" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="12.0" fill="#16C7F0"><tspan x="394" dy="0.0">方向</tspan></text>
+<text x="428" y="252" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="13.0" fill="#C3D6F2"><tspan x="428" dy="0.0">临床医学体系建设与诊疗技术创新</tspan></text>
+<text x="394" y="276" text-anchor="start" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="12.0" fill="#5B9BFF"><tspan x="394" dy="0.0">职责</tspan></text>
+<text x="428" y="278" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="13.0" fill="#C3D6F2"><tspan x="428" dy="0.0">战略规划、外部资源协同、临床需求</tspan><tspan x="428" dy="17.2">转化</tspan></text>
+<text x="394" y="319" text-anchor="start" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="12.0" fill="#F2D290"><tspan x="394" dy="0.0">成果</tspan></text>
+<text x="428" y="321" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="13.0" fill="#F2D290"><tspan x="428" dy="0.0">全国大学生医学创新大赛二等奖 ·</tspan><tspan x="428" dy="17.2"> SCI论文1篇（一作）</tspan></text>
+<text x="704" y="200" text-anchor="middle" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="28.0" fill="url(#g6)"><tspan x="704" dy="0.0">盛</tspan></text>
+<text x="740" y="185" text-anchor="start" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="20.0" fill="url(#g7)"><tspan x="740" dy="0.0">盛宇菲</tspan></text>
+<text x="781" y="212" text-anchor="middle" font-family="'OPPOSans M','Source Han Sans CN Medium','Microsoft YaHei',sans-serif" font-size="13.0" fill="#F2D290"><tspan x="781" dy="0.0">研发总监</tspan></text>
+<text x="680" y="250" text-anchor="start" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="12.0" fill="#16C7F0"><tspan x="680" dy="0.0">方向</tspan></text>
+<text x="714" y="252" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="13.0" fill="#C3D6F2"><tspan x="714" dy="0.0">血浆非编码分子检定研究</tspan></text>
+<text x="680" y="276" text-anchor="start" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="12.0" fill="#5B9BFF"><tspan x="680" dy="0.0">职责</tspan></text>
+<text x="714" y="278" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="13.0" fill="#C3D6F2"><tspan x="714" dy="0.0">核心技术研发、实验设计与检测验证</tspan></text>
+<text x="680" y="302" text-anchor="start" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="12.0" fill="#F2D290"><tspan x="680" dy="0.0">成果</tspan></text>
+<text x="714" y="304" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="13.0" fill="#F2D290"><tspan x="714" dy="0.0">全国大学生生命科学竞赛三等奖 ·</tspan><tspan x="714" dy="17.2"> SCI论文3篇（一作）</tspan></text>
+<text x="990" y="200" text-anchor="middle" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="28.0" fill="url(#g8)"><tspan x="990" dy="0.0">张</tspan></text>
+<text x="1026" y="185" text-anchor="start" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="20.0" fill="url(#g9)"><tspan x="1026" dy="0.0">张津叶</tspan></text>
+<text x="1067" y="212" text-anchor="middle" font-family="'OPPOSans M','Source Han Sans CN Medium','Microsoft YaHei',sans-serif" font-size="13.0" fill="#F2D290"><tspan x="1067" dy="0.0">产品总监</tspan></text>
+<text x="966" y="250" text-anchor="start" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="12.0" fill="#16C7F0"><tspan x="966" dy="0.0">方向</tspan></text>
+<text x="1000" y="252" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="13.0" fill="#C3D6F2"><tspan x="1000" dy="0.0">蛋白质超分子结构构建及性能验证</tspan></text>
+<text x="966" y="276" text-anchor="start" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="12.0" fill="#5B9BFF"><tspan x="966" dy="0.0">职责</tspan></text>
+<text x="1000" y="278" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="13.0" fill="#C3D6F2"><tspan x="1000" dy="0.0">产品性能验证与结构优化</tspan></text>
+<text x="966" y="302" text-anchor="start" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="12.0" fill="#F2D290"><tspan x="966" dy="0.0">成果</tspan></text>
+<text x="1000" y="304" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="13.0" fill="#F2D290"><tspan x="1000" dy="0.0">国家奖学金 · 授权发明专利4项</tspan><tspan x="1000" dy="17.2"> · SCI论文3篇</tspan></text>
+<text x="418" y="440" text-anchor="middle" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="28.0" fill="url(#g10)"><tspan x="418" dy="0.0">徐</tspan></text>
+<text x="454" y="425" text-anchor="start" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="20.0" fill="url(#g11)"><tspan x="454" dy="0.0">徐悦可</tspan></text>
+<text x="495" y="452" text-anchor="middle" font-family="'OPPOSans M','Source Han Sans CN Medium','Microsoft YaHei',sans-serif" font-size="13.0" fill="#F2D290"><tspan x="495" dy="0.0">生产经理</tspan></text>
+<text x="394" y="490" text-anchor="start" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="12.0" fill="#16C7F0"><tspan x="394" dy="0.0">方向</tspan></text>
+<text x="428" y="492" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="13.0" fill="#C3D6F2"><tspan x="428" dy="0.0">医学全链条质量安全管控体系</tspan></text>
+<text x="394" y="516" text-anchor="start" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="12.0" fill="#5B9BFF"><tspan x="394" dy="0.0">职责</tspan></text>
+<text x="428" y="518" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="13.0" fill="#C3D6F2"><tspan x="428" dy="0.0">中试生产、质量控制与生产协同</tspan></text>
+<text x="394" y="542" text-anchor="start" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="12.0" fill="#F2D290"><tspan x="394" dy="0.0">成果</tspan></text>
+<text x="428" y="544" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="13.0" fill="#F2D290"><tspan x="428" dy="0.0">省政府奖学金 · SCI论文2篇</tspan><tspan x="428" dy="17.2">（一作/二作）</tspan></text>
+<text x="704" y="440" text-anchor="middle" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="28.0" fill="url(#g12)"><tspan x="704" dy="0.0">任</tspan></text>
+<text x="740" y="425" text-anchor="start" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="20.0" fill="url(#g13)"><tspan x="740" dy="0.0">任一帆</tspan></text>
+<text x="781" y="452" text-anchor="middle" font-family="'OPPOSans M','Source Han Sans CN Medium','Microsoft YaHei',sans-serif" font-size="13.0" fill="#F2D290"><tspan x="781" dy="0.0">市场总监</tspan></text>
+<text x="680" y="490" text-anchor="start" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="12.0" fill="#16C7F0"><tspan x="680" dy="0.0">方向</tspan></text>
+<text x="714" y="492" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="13.0" fill="#C3D6F2"><tspan x="714" dy="0.0">市场调研与供应链管理</tspan></text>
+<text x="680" y="516" text-anchor="start" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="12.0" fill="#5B9BFF"><tspan x="680" dy="0.0">职责</tspan></text>
+<text x="714" y="518" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="13.0" fill="#C3D6F2"><tspan x="714" dy="0.0">市场调研、客户沟通、渠道拓展</tspan></text>
+<text x="680" y="542" text-anchor="start" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="12.0" fill="#F2D290"><tspan x="680" dy="0.0">成果</tspan></text>
+<text x="714" y="544" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="13.0" fill="#F2D290"><tspan x="714" dy="0.0">全国市场调查与分析大赛一等奖 ·</tspan><tspan x="714" dy="17.2"> SCI论文1篇（一作）</tspan></text>
+<text x="990" y="440" text-anchor="middle" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="28.0" fill="url(#g14)"><tspan x="990" dy="0.0">邓</tspan></text>
+<text x="1026" y="425" text-anchor="start" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="20.0" fill="url(#g15)"><tspan x="1026" dy="0.0">邓煜婕</tspan></text>
+<text x="1067" y="452" text-anchor="middle" font-family="'OPPOSans M','Source Han Sans CN Medium','Microsoft YaHei',sans-serif" font-size="13.0" fill="#F2D290"><tspan x="1067" dy="0.0">财务总监</tspan></text>
+<text x="966" y="490" text-anchor="start" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="12.0" fill="#16C7F0"><tspan x="966" dy="0.0">方向</tspan></text>
+<text x="1000" y="492" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="13.0" fill="#C3D6F2"><tspan x="1000" dy="0.0">技术经济与管理</tspan></text>
+<text x="966" y="516" text-anchor="start" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="12.0" fill="#5B9BFF"><tspan x="966" dy="0.0">职责</tspan></text>
+<text x="1000" y="518" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="13.0" fill="#C3D6F2"><tspan x="1000" dy="0.0">融资测算、财务模型与资本运作体系</tspan><tspan x="1000" dy="17.2">搭建</tspan></text>
+<text x="966" y="559" text-anchor="start" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="12.0" fill="#F2D290"><tspan x="966" dy="0.0">成果</tspan></text>
+<text x="1000" y="561" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="13.0" fill="#F2D290"><tspan x="1000" dy="0.0">参与省重点项目 · SCI论文1</tspan><tspan x="1000" dy="17.2">篇</tspan></text>
+<text x="470" y="652" text-anchor="end" font-family="'Alibaba PuHuiTi H','OPPOSans B','Source Han Sans CN Heavy','Arial',sans-serif" font-size="32.0" fill="url(#g16)"><tspan x="470" dy="0.0">14</tspan></text>
+<text x="474" y="643" text-anchor="start" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="15.0" fill="#FFFFFF"><tspan x="474" dy="0.0">篇</tspan></text>
+<text x="500" y="646" text-anchor="start" font-family="'OPPOSans M','Source Han Sans CN Medium','Microsoft YaHei',sans-serif" font-size="14.5" fill="#C3D6F2"><tspan x="500" dy="0.0">累计 SCI 论文</tspan></text>
+<text x="720" y="652" text-anchor="end" font-family="'Alibaba PuHuiTi H','OPPOSans B','Source Han Sans CN Heavy','Arial',sans-serif" font-size="32.0" fill="url(#g17)"><tspan x="720" dy="0.0">4</tspan></text>
+<text x="724" y="643" text-anchor="start" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="15.0" fill="#FFFFFF"><tspan x="724" dy="0.0">项</tspan></text>
+<text x="750" y="646" text-anchor="start" font-family="'OPPOSans M','Source Han Sans CN Medium','Microsoft YaHei',sans-serif" font-size="14.5" fill="#C3D6F2"><tspan x="750" dy="0.0">授权发明专利</tspan></text>
+<text x="970" y="652" text-anchor="end" font-family="'Alibaba PuHuiTi H','OPPOSans B','Source Han Sans CN Heavy','Arial',sans-serif" font-size="32.0" fill="url(#g18)"><tspan x="970" dy="0.0">7</tspan></text>
+<text x="974" y="643" text-anchor="start" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="15.0" fill="#FFFFFF"><tspan x="974" dy="0.0">项</tspan></text>
+<text x="1000" y="646" text-anchor="start" font-family="'OPPOSans M','Source Han Sans CN Medium','Microsoft YaHei',sans-serif" font-size="14.5" fill="#C3D6F2"><tspan x="1000" dy="0.0">国家级竞赛奖项</tspan></text>
+<text x="1156" y="644" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="8.1" fill="#8FB0DA"><tspan x="1156" dy="0.0">六领域能力互补 · 院士团队支撑</tspan></text>
+</svg>

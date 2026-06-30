@@ -1,0 +1,23 @@
+{
+ "function": "title_flank",
+ "family": "blue_tech",
+ "theme": "科技HUD",
+ "palette": "青色 钴蓝 金 发光",
+ "prompt": "a 科技HUD horizontal title bar ornament, 青色 钴蓝 金 发光 glowing, hollow center, a symmetric horizontal title banner ornament, glowing cyan and gold angular tech wings spreading left and right from a hollow dark center, on pure black, the design FILLS THE ENTIRE IMAGE edge to edge, touching all four borders, zero margin, full-bleed composition, on pure solid #000000 black background, high detail, no text, no words, no letters",
+ "size": "1280*544",
+ "box": "460x196",
+ "composite": "normal",
+ "alpha": true,
+ "preserveAspectRatio": "none",
+ "final_size": [
+  1280,
+  403
+ ],
+ "fill_frac": 0.967,
+ "opaque_frac": 0.254,
+ "stretch_vs_box": 1.353,
+ "warnings": [
+  "STRETCH x1.35 (asset 3.18 vs box 2.35) — placement will distort"
+ ],
+ "render_hint": "place at box with preserveAspectRatio=\"none\", NORMAL blend (alpha is real)"
+}

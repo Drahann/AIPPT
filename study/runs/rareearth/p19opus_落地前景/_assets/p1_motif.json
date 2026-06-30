@@ -1,0 +1,21 @@
+{
+ "function": "motif",
+ "family": "blue_tech",
+ "theme": "通用",
+ "palette": "#19E0FF,#04102B",
+ "prompt": "a glowing deep-blue sci-tech central processor chip seen from above, square microchip with radiating circuit traces and a luminous cyan core, thin light lines on pure black background, futuristic technology emblem, electric cyan and blue, centered, centered, generous size, drawn in light luminous strokes on a solid pure black #000000 background, no white background, clean, no text, no words, no letters",
+ "size": "1280*1280",
+ "box": "160x160",
+ "composite": "normal",
+ "alpha": true,
+ "preserveAspectRatio": "none",
+ "final_size": [
+  852,
+  785
+ ],
+ "fill_frac": 0.651,
+ "opaque_frac": 0.279,
+ "stretch_vs_box": 1.085,
+ "warnings": [],
+ "render_hint": "place at box with preserveAspectRatio=\"none\", NORMAL blend (alpha is real)"
+}

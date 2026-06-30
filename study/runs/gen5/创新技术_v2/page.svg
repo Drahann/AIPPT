@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 720" width="1280" height="720">
+<defs><linearGradient id="g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FBF1C6"/><stop offset="50%" stop-color="#F2D290"/><stop offset="100%" stop-color="#E2B25E"/></linearGradient><linearGradient id="g2" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FBF1C6"/><stop offset="50%" stop-color="#F2D290"/><stop offset="100%" stop-color="#E2B25E"/></linearGradient><linearGradient id="g3" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FBF1C6"/><stop offset="50%" stop-color="#F2D290"/><stop offset="100%" stop-color="#E2B25E"/></linearGradient><linearGradient id="g4" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FBF1C6"/><stop offset="50%" stop-color="#F2D290"/><stop offset="100%" stop-color="#E2B25E"/></linearGradient><linearGradient id="g5" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FBF1C6"/><stop offset="50%" stop-color="#F2D290"/><stop offset="100%" stop-color="#E2B25E"/></linearGradient><linearGradient id="g6" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FBF1C6"/><stop offset="50%" stop-color="#F2D290"/><stop offset="100%" stop-color="#E2B25E"/></linearGradient><linearGradient id="g7" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FBF1C6"/><stop offset="50%" stop-color="#F2D290"/><stop offset="100%" stop-color="#E2B25E"/></linearGradient><linearGradient id="g8" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FBF1C6"/><stop offset="50%" stop-color="#F2D290"/><stop offset="100%" stop-color="#E2B25E"/></linearGradient><linearGradient id="g9" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FBF1C6"/><stop offset="50%" stop-color="#F2D290"/><stop offset="100%" stop-color="#E2B25E"/></linearGradient><linearGradient id="g10" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FBF1C6"/><stop offset="50%" stop-color="#F2D290"/><stop offset="100%" stop-color="#E2B25E"/></linearGradient></defs>
+<image href="file:///W:/ppt/study/runs/gen5/_decos/base.png" x="0" y="0" width="1280" height="720"/>
+<rect x="0.0" y="0.0" width="1280.0" height="720.0" rx="0" fill="rgba(6,14,40,0.52)"/>
+<image href="file:///W:/ppt/study/runs/gen5/_decos/nano2.png" x="1108.0" y="8.0" width="160.0" height="160.0" preserveAspectRatio="none" style="opacity:0.92;mix-blend-mode:screen"/>
+<line x1="64" y1="56" x2="76" y2="70.0" stroke="#F2D290" stroke-width="4"/>
+<line x1="64" y1="90" x2="76" y2="70.0" stroke="#F2D290" stroke-width="4"/>
+<line x1="77" y1="56" x2="89" y2="70.0" stroke="#F2D290" stroke-width="4"/>
+<line x1="77" y1="90" x2="89" y2="70.0" stroke="#F2D290" stroke-width="4"/>
+<line x1="110" y1="104" x2="238.96" y2="104" stroke="rgba(242,210,144,0.6)" stroke-width="2"/>
+<image href="file:///W:/ppt/study/runs/gen5/_decos/glow.png" x="300.0" y="40.0" width="660.0" height="92.0" preserveAspectRatio="none" style="opacity:0.4;mix-blend-mode:screen"/>
+<image href="file:///W:/ppt/study/runs/gen5/_decos/flank_ekg.png" x="470.0" y="52.0" width="150.0" height="50.0" preserveAspectRatio="none" style="opacity:0.9;mix-blend-mode:screen"/>
+<image href="file:///W:/ppt/study/runs/gen5/_decos/flank_ekg.png" x="198.0" y="52.0" width="150.0" height="50.0" preserveAspectRatio="none" style="opacity:0.9;mix-blend-mode:screen" transform="translate(546.0 0) scale(-1 1)"/>
+<rect x="56.0" y="130.0" width="1168.0" height="40.0" rx="10" fill="rgba(10,28,68,0.5)" stroke="rgba(120,180,255,0.3)" stroke-width="1.4"/>
+<rect x="56.0" y="176.0" width="373.0" height="484.0" rx="10" fill="rgba(5,12,32,0.92)"/>
+<image href="file:///W:/ppt/study/runs/gen5/_decos/cardframe_L.png" x="56.0" y="176.0" width="373.0" height="484.0" preserveAspectRatio="none" style="opacity:0.86"/>
+<image href="file:///W:/ppt/study/runs/gen5/_decos/glow.png" x="137.5" y="292.0" width="210.0" height="96.0" preserveAspectRatio="none" style="opacity:0.75;mix-blend-mode:screen"/>
+<rect x="90.0" y="423.0" width="8.0" height="8.0" rx="2" fill="#F2D290"/>
+<rect x="90.0" y="451.0" width="8.0" height="8.0" rx="2" fill="#F2D290"/>
+<rect x="90.0" y="479.0" width="8.0" height="8.0" rx="2" fill="#F2D290"/>
+<rect x="90.0" y="507.0" width="8.0" height="8.0" rx="2" fill="#F2D290"/>
+<rect x="453.0" y="176.0" width="373.0" height="484.0" rx="10" fill="rgba(5,12,32,0.92)"/>
+<image href="file:///W:/ppt/study/runs/gen5/_decos/cardframe_M.png" x="453.0" y="176.0" width="373.0" height="484.0" preserveAspectRatio="none" style="opacity:0.86"/>
+<image href="file:///W:/ppt/study/runs/gen5/_decos/glow.png" x="534.5" y="292.0" width="210.0" height="96.0" preserveAspectRatio="none" style="opacity:0.75;mix-blend-mode:screen"/>
+<rect x="487.0" y="423.0" width="8.0" height="8.0" rx="2" fill="#F2D290"/>
+<rect x="487.0" y="451.0" width="8.0" height="8.0" rx="2" fill="#F2D290"/>
+<rect x="487.0" y="479.0" width="8.0" height="8.0" rx="2" fill="#F2D290"/>
+<rect x="487.0" y="507.0" width="8.0" height="8.0" rx="2" fill="#F2D290"/>
+<rect x="850.0" y="176.0" width="373.0" height="484.0" rx="10" fill="rgba(5,12,32,0.92)"/>
+<image href="file:///W:/ppt/study/runs/gen5/_decos/cardframe_R.png" x="850.0" y="176.0" width="373.0" height="484.0" preserveAspectRatio="none" style="opacity:0.86"/>
+<image href="file:///W:/ppt/study/runs/gen5/_decos/glow.png" x="931.5" y="292.0" width="210.0" height="96.0" preserveAspectRatio="none" style="opacity:0.75;mix-blend-mode:screen"/>
+<rect x="884.0" y="423.0" width="8.0" height="8.0" rx="2" fill="#F2D290"/>
+<rect x="884.0" y="451.0" width="8.0" height="8.0" rx="2" fill="#F2D290"/>
+<rect x="884.0" y="479.0" width="8.0" height="8.0" rx="2" fill="#F2D290"/>
+<rect x="884.0" y="507.0" width="8.0" height="8.0" rx="2" fill="#F2D290"/>
+<text x="108" y="90" text-anchor="start" font-family="'华文行楷','STXingkai','Source Han Serif CN Heavy','KaiTi',serif" font-size="52.0" fill="url(#g1)"><tspan x="108" dy="0.0">创新技术</tspan></text>
+<text x="112" y="128" text-anchor="start" font-family="'OPPOSans M','Source Han Sans CN Medium','Microsoft YaHei',sans-serif" font-size="16.0" fill="#C3D6F2"><tspan x="112" dy="0.0">三项核心技术体系 · 高纯制备 / 疏水定向调控 / 纳米涂层稳定 · 全链条创新突破</tspan></text>
+<text x="78" y="155" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="9.0" fill="#C3D6F2"><tspan x="78" dy="0.0">针对导管涂层原料成本高（单支超15元）、批次稳定性弱、功能单一等瓶颈，系统构建三项核心技术，聚焦高纯蛋白制备、疏水定向调控与纳米涂层稳定，实现从原料纯化到功能涂层的全链条创新突破。</tspan></text>
+<text x="76" y="214" text-anchor="start" font-family="'Alibaba PuHuiTi H','OPPOSans B','Source Han Sans CN Heavy','Arial',sans-serif" font-size="26.0" fill="url(#g2)"><tspan x="76" dy="0.0">01</tspan></text>
+<text x="242" y="215" text-anchor="middle" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="23.0" fill="url(#g3)"><tspan x="242" dy="0.0">组合排杂纯化</tspan></text>
+<text x="242" y="260" text-anchor="middle" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="18.0" fill="#FFFFFF"><tspan x="242" dy="0.0">大米蛋白组合排杂纯化技术</tspan></text>
+<text x="242" y="360" text-anchor="middle" font-family="'Alibaba PuHuiTi H','OPPOSans B','Source Han Sans CN Heavy','Arial',sans-serif" font-size="62.0" fill="url(#g4)"><tspan x="242" dy="0.0">99.99</tspan></text>
+<text x="328" y="350" text-anchor="start" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="26.0" fill="#F2D290"><tspan x="328" dy="0.0">%</tspan></text>
+<text x="242" y="393" text-anchor="middle" font-family="'OPPOSans M','Source Han Sans CN Medium','Microsoft YaHei',sans-serif" font-size="16.0" fill="#BFE8FF"><tspan x="242" dy="0.0">蛋白纯度（传统工艺 ≤85%）</tspan></text>
+<text x="108" y="433" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="15.5" fill="#EAF3FF"><tspan x="108" dy="0.0">内毒素降至 0.005 EU/mg</tspan></text>
+<text x="108" y="461" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="15.5" fill="#EAF3FF"><tspan x="108" dy="0.0">回收率稳定 60%</tspan></text>
+<text x="108" y="489" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="15.5" fill="#EAF3FF"><tspan x="108" dy="0.0">批次误差 RSD ＜ 3%</tspan></text>
+<text x="108" y="517" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="15.5" fill="#EAF3FF"><tspan x="108" dy="0.0">满足医用辅料级标准</tspan></text>
+<text x="80" y="611" text-anchor="start" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="14.0" fill="#F2D290"><tspan x="80" dy="0.0">代表性成果</tspan></text>
+<text x="80" y="631" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="8.1" fill="#CFE0F2"><tspan x="80" dy="0.0">发明专利 CN202510262436.6 · Foods / J.Food E</tspan><tspan x="80" dy="10.7">ng（SCI Q1）2篇</tspan></text>
+<text x="473" y="214" text-anchor="start" font-family="'Alibaba PuHuiTi H','OPPOSans B','Source Han Sans CN Heavy','Arial',sans-serif" font-size="26.0" fill="url(#g5)"><tspan x="473" dy="0.0">02</tspan></text>
+<text x="640" y="215" text-anchor="middle" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="23.0" fill="url(#g6)"><tspan x="640" dy="0.0">pH共架改性</tspan></text>
+<text x="640" y="260" text-anchor="middle" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="18.0" fill="#FFFFFF"><tspan x="640" dy="0.0">大米蛋白 pH 共架改性增溶技术</tspan></text>
+<text x="640" y="360" text-anchor="middle" font-family="'Alibaba PuHuiTi H','OPPOSans B','Source Han Sans CN Heavy','Arial',sans-serif" font-size="62.0" fill="url(#g7)"><tspan x="640" dy="0.0">96.8</tspan></text>
+<text x="708" y="350" text-anchor="start" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="26.0" fill="#F2D290"><tspan x="708" dy="0.0">%</tspan></text>
+<text x="640" y="393" text-anchor="middle" font-family="'OPPOSans M','Source Han Sans CN Medium','Microsoft YaHei',sans-serif" font-size="16.0" fill="#BFE8FF"><tspan x="640" dy="0.0">蛋白溶解度（传统 ＜10%）</tspan></text>
+<text x="505" y="433" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="15.5" fill="#EAF3FF"><tspan x="505" dy="0.0">摩擦系数低至 0.001（优于肝素）</tspan></text>
+<text x="505" y="461" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="15.5" fill="#EAF3FF"><tspan x="505" dy="0.0">抗凝活性亚组分 ＞30%</tspan></text>
+<text x="505" y="489" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="15.5" fill="#EAF3FF"><tspan x="505" dy="0.0">分子分散性显著提升</tspan></text>
+<text x="505" y="517" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="15.5" fill="#EAF3FF"><tspan x="505" dy="0.0">破解水相功能协同壁垒</tspan></text>
+<text x="477" y="611" text-anchor="start" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="14.0" fill="#F2D290"><tspan x="477" dy="0.0">代表性成果</tspan></text>
+<text x="477" y="631" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="8.1" fill="#CFE0F2"><tspan x="477" dy="0.0">发明专利 CN202610489470.1 · Food&amp;Bioprocess </tspan><tspan x="477" dy="10.7">Tech（SCI Q1）</tspan></text>
+<text x="870" y="214" text-anchor="start" font-family="'Alibaba PuHuiTi H','OPPOSans B','Source Han Sans CN Heavy','Arial',sans-serif" font-size="26.0" fill="url(#g8)"><tspan x="870" dy="0.0">03</tspan></text>
+<text x="1036" y="215" text-anchor="middle" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="23.0" fill="url(#g9)"><tspan x="1036" dy="0.0">纳米共组装</tspan></text>
+<text x="1036" y="260" text-anchor="middle" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="18.0" fill="#FFFFFF"><tspan x="1036" dy="0.0">谷-清蛋白纳米共组装涂层稳定技术</tspan></text>
+<text x="1036" y="360" text-anchor="middle" font-family="'Alibaba PuHuiTi H','OPPOSans B','Source Han Sans CN Heavy','Arial',sans-serif" font-size="62.0" fill="url(#g10)"><tspan x="1036" dy="0.0">98.2</tspan></text>
+<text x="1104" y="350" text-anchor="start" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="26.0" fill="#F2D290"><tspan x="1104" dy="0.0">%</tspan></text>
+<text x="1036" y="393" text-anchor="middle" font-family="'OPPOSans M','Source Han Sans CN Medium','Microsoft YaHei',sans-serif" font-size="16.0" fill="#BFE8FF"><tspan x="1036" dy="0.0">血栓抑制率</tspan></text>
+<text x="902" y="433" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="15.5" fill="#EAF3FF"><tspan x="902" dy="0.0">涂层划痕脱落面积 ＜2%</tspan></text>
+<text x="902" y="461" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="15.5" fill="#EAF3FF"><tspan x="902" dy="0.0">血小板黏附率降至 17.9%</tspan></text>
+<text x="902" y="489" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="15.5" fill="#EAF3FF"><tspan x="902" dy="0.0">单支涂层成本降低 60%</tspan></text>
+<text x="902" y="517" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="15.5" fill="#EAF3FF"><tspan x="902" dy="0.0">全面优于进口肝素</tspan></text>
+<text x="874" y="611" text-anchor="start" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="14.0" fill="#F2D290"><tspan x="874" dy="0.0">代表性成果</tspan></text>
+<text x="874" y="631" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="8.1" fill="#CFE0F2"><tspan x="874" dy="0.0">发明专利 CN202510600358.6 · J.Cereal Sci / C</tspan><tspan x="874" dy="10.7">CA（SCI Q2）3篇</tspan></text>
+</svg>

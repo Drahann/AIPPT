@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 720" width="1280" height="720">
+<defs><linearGradient id="g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#0C7BD6"/><stop offset="100%" stop-color="#0A3B86"/></linearGradient><linearGradient id="g2" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#1B4E9A"/><stop offset="100%" stop-color="#0E2C66"/></linearGradient></defs>
+<image href="file:///W:/ppt/study/runs/gen5/market/plate.png" x="0" y="0" width="1280" height="720"/>
+<image href="file:///W:/ppt/study/runs/gen5/market/deco/glow_mol.png" x="560.0" y="90.0" width="420.0" height="420.0" preserveAspectRatio="xMidYMid meet" style="opacity:0.3;mix-blend-mode:screen"/>
+<rect x="714.0" y="144.0" width="188.0" height="332.0" rx="8" fill="url(#g1)" stroke="#15F7F9" stroke-width="2" opacity="0.92"/>
+<rect x="74.0" y="144.0" width="828.0" height="40.0" rx="6" fill="url(#g2)" opacity="0.85"/>
+<rect x="74.0" y="192.0" width="828.0" height="56.0" rx="4" fill="#0E2A5C" opacity="0.34"/>
+<rect x="74.0" y="336.0" width="828.0" height="56.0" rx="4" fill="#0E2A5C" opacity="0.34"/>
+<rect x="714.0" y="144.0" width="188.0" height="40.0" rx="6" fill="#15F7F9" opacity="0.95"/>
+<line x1="228" y1="150" x2="228" y2="468" stroke="#1E5BB0" stroke-width="1"/>
+<line x1="714" y1="146" x2="714" y2="474" stroke="#15F7F9" stroke-width="2"/>
+<image href="file:///W:/ppt/study/runs/gen5/market/deco/medallion.png" x="392.0" y="18.0" width="46.0" height="60.0" preserveAspectRatio="xMidYMid meet" style="opacity:0.95;mix-blend-mode:screen"/>
+<image href="file:///W:/ppt/study/runs/gen5/market/deco/medallion.png" x="842.0" y="18.0" width="46.0" height="60.0" preserveAspectRatio="xMidYMid meet" style="opacity:0.95;mix-blend-mode:screen" transform="translate(1730.0 0) scale(-1 1)"/>
+<rect x="930.0" y="92.0" width="22.0" height="22.0" rx="999" fill="#15F7F9" opacity="0.9"/>
+<rect x="930.0" y="192.0" width="22.0" height="22.0" rx="999" fill="#15F7F9" opacity="0.9"/>
+<rect x="930.0" y="292.0" width="22.0" height="22.0" rx="999" fill="#15F7F9" opacity="0.9"/>
+<rect x="930.0" y="392.0" width="22.0" height="22.0" rx="999" fill="#15F7F9" opacity="0.9"/>
+<text x="640" y="54" text-anchor="middle" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="30.0" fill="#FFFFFF"><tspan x="640" dy="0.0">市场定位 · 差异化竞争优势</tspan></text>
+<text x="640" y="77" text-anchor="middle" font-family="'OPPOSans M','Source Han Sans CN Medium','Microsoft YaHei',sans-serif" font-size="8.4" fill="#15F7F9"><tspan x="640" dy="0.0">MARKET POSITIONING — 植物源非药物抗凝涂层 · 全维度领先</tspan></text>
+<text x="153" y="169" text-anchor="middle" font-family="'OPPOSans B','Source Han Sans CN Bold','Microsoft YaHei',sans-serif" font-size="15.0" fill="#BEF6F9"><tspan x="153" dy="0.0">对比维度</tspan></text>
+<text x="309" y="169" text-anchor="middle" font-family="'OPPOSans B','Source Han Sans CN Bold','Microsoft YaHei',sans-serif" font-size="15.0" fill="#FFFFFF"><tspan x="309" dy="0.0">进口肝素涂层</tspan></text>
+<text x="471" y="169" text-anchor="middle" font-family="'OPPOSans B','Source Han Sans CN Bold','Microsoft YaHei',sans-serif" font-size="15.0" fill="#FFFFFF"><tspan x="471" dy="0.0">亲水润滑涂层</tspan></text>
+<text x="633" y="169" text-anchor="middle" font-family="'OPPOSans B','Source Han Sans CN Bold','Microsoft YaHei',sans-serif" font-size="15.0" fill="#FFFFFF"><tspan x="633" dy="0.0">PC/两性离子涂层</tspan></text>
+<text x="808" y="169" text-anchor="middle" font-family="'OPPOSans B','Source Han Sans CN Bold','Microsoft YaHei',sans-serif" font-size="15.0" fill="#0A1F3C"><tspan x="808" dy="0.0">谷原焕生（本项目）</tspan></text>
+<text x="153" y="229" text-anchor="middle" font-family="'OPPOSans B','Source Han Sans CN Bold','Microsoft YaHei',sans-serif" font-size="14.0" fill="#15F7F9"><tspan x="153" dy="0.0">原料特性</tspan></text>
+<text x="309" y="228" text-anchor="middle" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="13.0" fill="#D8E6F5"><tspan x="309" dy="0.0">动物源，血源依赖性强</tspan></text>
+<text x="471" y="228" text-anchor="middle" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="13.0" fill="#D8E6F5"><tspan x="471" dy="0.0">合成材料</tspan></text>
+<text x="633" y="228" text-anchor="middle" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="13.0" fill="#D8E6F5"><tspan x="633" dy="0.0">合成材料</tspan></text>
+<text x="808" y="228" text-anchor="middle" font-family="'OPPOSans B','Source Han Sans CN Bold','Microsoft YaHei',sans-serif" font-size="13.0" fill="#FFFFFF"><tspan x="808" dy="0.0">植物源大米蛋白，无动物源风险</tspan></text>
+<text x="153" y="301" text-anchor="middle" font-family="'OPPOSans B','Source Han Sans CN Bold','Microsoft YaHei',sans-serif" font-size="14.0" fill="#15F7F9"><tspan x="153" dy="0.0">功能表现</tspan></text>
+<text x="309" y="300" text-anchor="middle" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="13.0" fill="#D8E6F5"><tspan x="309" dy="0.0">侧重抗凝，功能单一</tspan></text>
+<text x="471" y="300" text-anchor="middle" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="13.0" fill="#D8E6F5"><tspan x="471" dy="0.0">侧重润滑，抗凝能力有限</tspan></text>
+<text x="633" y="300" text-anchor="middle" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="13.0" fill="#D8E6F5"><tspan x="633" dy="0.0">生物相容性一般</tspan></text>
+<text x="808" y="300" text-anchor="middle" font-family="'OPPOSans B','Source Han Sans CN Bold','Microsoft YaHei',sans-serif" font-size="13.0" fill="#FFFFFF"><tspan x="808" dy="0.0">抗凝、润滑、成膜稳定三重协同</tspan></text>
+<text x="153" y="373" text-anchor="middle" font-family="'OPPOSans B','Source Han Sans CN Bold','Microsoft YaHei',sans-serif" font-size="14.0" fill="#15F7F9"><tspan x="153" dy="0.0">安全与经济性</tspan></text>
+<text x="309" y="372" text-anchor="middle" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="13.0" fill="#D8E6F5"><tspan x="309" dy="0.0">免疫与病毒风险高，成本高</tspan></text>
+<text x="471" y="372" text-anchor="middle" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="13.0" fill="#D8E6F5"><tspan x="471" dy="0.0">成本较高，工艺浪费明显</tspan></text>
+<text x="633" y="372" text-anchor="middle" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="13.0" fill="#D8E6F5"><tspan x="633" dy="0.0">综合性能与成本不匹配</tspan></text>
+<text x="808" y="372" text-anchor="middle" font-family="'OPPOSans B','Source Han Sans CN Bold','Microsoft YaHei',sans-serif" font-size="13.0" fill="#FFFFFF"><tspan x="808" dy="0.0">安全性高，成本显著优化</tspan></text>
+<text x="153" y="445" text-anchor="middle" font-family="'OPPOSans B','Source Han Sans CN Bold','Microsoft YaHei',sans-serif" font-size="14.0" fill="#15F7F9"><tspan x="153" dy="0.0">市场现状</tspan></text>
+<text x="309" y="444" text-anchor="middle" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="13.0" fill="#D8E6F5"><tspan x="309" dy="0.0">高端市场主导，国产化率低</tspan></text>
+<text x="471" y="444" text-anchor="middle" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="13.0" fill="#D8E6F5"><tspan x="471" dy="0.0">应用较广但功能局限</tspan></text>
+<text x="633" y="444" text-anchor="middle" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="13.0" fill="#D8E6F5"><tspan x="633" dy="0.0">占比小，竞争力弱</tspan></text>
+<text x="808" y="444" text-anchor="middle" font-family="'OPPOSans B','Source Han Sans CN Bold','Microsoft YaHei',sans-serif" font-size="13.0" fill="#FFFFFF"><tspan x="808" dy="0.0">国产高性能替代新兴方案</tspan></text>
+<text x="78" y="544" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="14.0" fill="#CFE0F2"><tspan x="78" dy="0.0">谷原焕生以植物源创新路径突破行业瓶颈，在规避生物安全风险的同时实现多功能集成与成本结构优化，综合性能全面领先现有方案</tspan><tspan x="78" dy="18.5">；精准服务冠脉及外周血管造影导管等高端耗材涂层制备环节，已与海生医疗、先健科技等头部客户完成技术验证。</tspan></text>
+<text x="960" y="109" text-anchor="start" font-family="'OPPOSans B','Source Han Sans CN Bold','Microsoft YaHei',sans-serif" font-size="16.0" fill="#15F7F9"><tspan x="960" dy="0.0">国产替代窗口</tspan></text>
+<text x="960" y="132" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="12.0" fill="#CFE0F2"><tspan x="960" dy="0.0">高端涂层国产化率不足20%，进口肝素长期占据80%</tspan><tspan x="960" dy="15.8">以上份额。</tspan></text>
+<text x="960" y="209" text-anchor="start" font-family="'OPPOSans B','Source Han Sans CN Bold','Microsoft YaHei',sans-serif" font-size="16.0" fill="#15F7F9"><tspan x="960" dy="0.0">降本刚性诉求</tspan></text>
+<text x="960" y="232" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="12.0" fill="#CFE0F2"><tspan x="960" dy="0.0">集采深化下，单支导管涂层成本须从15元级压降，谷原</tspan><tspan x="960" dy="15.8">焕生6元。</tspan></text>
+<text x="960" y="309" text-anchor="start" font-family="'OPPOSans B','Source Han Sans CN Bold','Microsoft YaHei',sans-serif" font-size="16.0" fill="#15F7F9"><tspan x="960" dy="0.0">功能复合需求</tspan></text>
+<text x="960" y="332" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="12.0" fill="#CFE0F2"><tspan x="960" dy="0.0">现有方案功能割裂，临床亟需抗凝+润滑+成膜稳定一体</tspan><tspan x="960" dy="15.8">化集成。</tspan></text>
+<text x="960" y="409" text-anchor="start" font-family="'OPPOSans B','Source Han Sans CN Bold','Microsoft YaHei',sans-serif" font-size="16.0" fill="#15F7F9"><tspan x="960" dy="0.0">供应链安全</tspan></text>
+<text x="960" y="432" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="12.0" fill="#CFE0F2"><tspan x="960" dy="0.0">血源监管趋严、供应波动，自主可控成为器械厂商核心战</tspan><tspan x="960" dy="15.8">略。</tspan></text>
+<text x="930" y="73" text-anchor="start" font-family="'OPPOSans B','Source Han Sans CN Bold','Microsoft YaHei',sans-serif" font-size="14.0" fill="#FFC000"><tspan x="930" dy="0.0">市场需求四大锚点</tspan></text>
+<text x="941" y="108" text-anchor="middle" font-family="'Alibaba PuHuiTi H','OPPOSans B','Source Han Sans CN Heavy','Arial',sans-serif" font-size="14.0" fill="#04256C"><tspan x="941" dy="0.0">1</tspan></text>
+<text x="941" y="208" text-anchor="middle" font-family="'Alibaba PuHuiTi H','OPPOSans B','Source Han Sans CN Heavy','Arial',sans-serif" font-size="14.0" fill="#04256C"><tspan x="941" dy="0.0">2</tspan></text>
+<text x="941" y="308" text-anchor="middle" font-family="'Alibaba PuHuiTi H','OPPOSans B','Source Han Sans CN Heavy','Arial',sans-serif" font-size="14.0" fill="#04256C"><tspan x="941" dy="0.0">3</tspan></text>
+<text x="941" y="408" text-anchor="middle" font-family="'Alibaba PuHuiTi H','OPPOSans B','Source Han Sans CN Heavy','Arial',sans-serif" font-size="14.0" fill="#04256C"><tspan x="941" dy="0.0">4</tspan></text>
+</svg>

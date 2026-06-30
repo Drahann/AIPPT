@@ -1,0 +1,65 @@
+slide 5/6 | EMU 12192000x6858000 -> 1280x720 | shapes:63 imgs:14
+==============================================================================================================
+sh00 shp[    42, 124  1350x  99]
+sh01 shp[   558, 356   184x 122]
+sh02 shp[   159, 310   221x 175]
+sh03 TXT[    31,  62   218x  68]  {汉仪雅酷黑W 48.0px #FFFFFF LEFT}  <<商业模式>>
+sh04 TXT[     0,  21  1280x  32]  {汉仪粗宋简 18.7px #91ABDF RIGHT}  <<命题分析    解决方案    实现成果    核心优势    运营模式    财务分析    团队>>
+sh05 PIC[   683,  12   217x 109] pic01.png(1418x709)
+sh06 TXT[   156, 148   252x  56]  {汉仪雅酷黑简 32.0px #FFFFFF CENTER}  <<上游>>
+sh07 TXT[   539, 148   252x  56]  {汉仪雅酷黑简 32.0px #FFFFFF CENTER}  <<上游>>
+sh08 TXT[   911, 148   252x  56]  {汉仪雅酷黑简 32.0px #FFFFFF CENTER}  <<上游>>
+sh09 TXT[   217, 253   113x 113] fill=#FFFFFF  {汉仪雅酷黑简 26.7px #34D5F1 CENTER}  <<文字内容>>
+sh10 TXT[   106, 428   113x 113] fill=#FFFFFF  {汉仪雅酷黑简 26.7px #34D5F1 CENTER}  <<文字内容>>
+sh11 TXT[   334, 428   113x 113] fill=#FFFFFF  {汉仪雅酷黑简 26.7px #34D5F1 CENTER}  <<文字内容>>
+sh12 shp[   330, 366    32x  49]
+sh13 shp[   175, 366    32x  48] flipH
+sh14 shp[   229, 504    86x   0]
+sh15 shp[   760, 358   162x   0] flipH flipV
+sh16 shp[   760, 358    27x  11]
+sh17 shp[   758, 340   162x   0]
+sh18 shp[   893, 328    27x  11] flipH flipV
+sh19 shp[   560, 297   184x  99] flipH
+sh20 shp[   567, 393    45x   4] fill=#03FCFE
+sh21 shp[   697, 304     9x   8]
+sh22 shp[   705, 304     9x   8]
+sh23 shp[   713, 304     9x   8]
+sh24 shp[   721, 304     9x   8]
+sh25 shp[   729, 304     9x   8]
+sh26 TXT[   572, 304   162x  76]  {汉仪粗宋简 32.0px #FFFFFF CENTER}  <<文字内容>>
+sh27 TXT[   753, 268   204x  76]  {汉仪粗宋简 32.0px #FFFFFF CENTER}  <<关键词>>
+sh28 TXT[   773, 351   162x  76]  {汉仪粗宋简 32.0px #FFFFFF CENTER}  <<关键词>>
+sh29 shp[   956, 240   184x 203] flipH
+sh30 shp[   963, 438    45x   9]
+sh31 shp[   988, 441    45x   9] flipV
+sh32 shp[  1093, 255     9x  17]
+sh33 shp[  1101, 255     9x  17]
+sh34 shp[  1109, 255     9x  17]
+sh35 shp[  1117, 255     9x  17]
+sh36 shp[  1125, 255     9x  17]
+sh37 TXT[   971, 326   162x 106]  {汉仪粗宋简 26.7px #FFFFFF}  <<文字 / 文字内容 / 文字内容>>
+sh38 TXT[   954, 484   191x  56]  {汉仪粗宋简 18.7px #FFFFFF CENTER}  <<请在此处 / 输入文字内容>>
+sh39 TXT[   556, 482   191x  56]  {汉仪粗宋简 18.7px #FFFFFF CENTER}  <<请在此处 / 输入文字内容>>
+sh40 PIC[   965, 274    38x  38] pic02.png(800x800)
+sh41 TXT[   987, 275   162x  42]  {汉仪雅酷黑简 26.7px #FFFFFF CENTER}  <<输入标题>>
+sh42 TXT[    64, 592   124x 126]  {汉仪雅酷黑W 48.0px #FFFFFF LEFT}  <<目标 / 用户>>
+sh43 PIC[   182, 675   290x  42] pic03.png(1134x944)
+sh44 shp[   229, 582   194x 113] flipV
+sh45 PIC[   181, 667   290x  42] pic04.png(1134x944)
+sh46 TXT[   258, 643   140x  42]  {汉仪雅酷黑简 26.7px #FFFFFF CENTER}  <<社区医院>>
+sh47 PIC[   429, 675   290x  42] pic05.png(1134x944)
+sh48 shp[   475, 582   194x 113] flipV
+sh49 PIC[   429, 667   290x  42] pic06.png(1134x944)
+sh50 TXT[   504, 643   140x  42]  {汉仪雅酷黑简 26.7px #FFFFFF CENTER}  <<社区医院>>
+sh51 PIC[   673, 675   290x  42] pic07.png(1134x944)
+sh52 shp[   720, 582   194x 113] flipV
+sh53 PIC[   673, 667   290x  42] pic08.png(1134x944)
+sh54 TXT[   748, 643   140x  42]  {汉仪雅酷黑简 26.7px #FFFFFF CENTER}  <<社区医院>>
+sh55 PIC[   931, 675   290x  42] pic09.png(1134x944)
+sh56 shp[   978, 582   194x 113] flipV
+sh57 PIC[   931, 667   290x  42] pic10.png(1134x944)
+sh58 TXT[  1007, 643   140x  42]  {汉仪雅酷黑简 26.7px #FFFFFF CENTER}  <<社区医院>>
+sh59 PIC[   298, 579    57x  57] pic11.png(800x800)
+sh60 PIC[   546, 579    57x  57] pic12.png(800x800)
+sh61 PIC[   793, 579    57x  57] pic13.png(800x800)
+sh62 PIC[  1049, 578    57x  57] pic14.png(800x800)

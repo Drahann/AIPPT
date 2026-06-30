@@ -1,0 +1,13 @@
+{
+ "function": "title_flank",
+ "family": "blue_tech",
+ "theme": "深蓝科技HUD",
+ "palette": "electric blue, cyan, faint gold",
+ "prompt": "a symmetric pair of 深蓝科技HUD decorative ornaments flanking a title, left and right mirrored, electric blue, cyan, faint gold glowing, wide thin horizontal glowing energy bar with central brightening, symmetric, on pure solid black background, centered, high detail, no text, no words, no letters",
+ "size": "1440*512",
+ "box": "1280x71",
+ "composite": "screen",
+ "preserveAspectRatio": "none",
+ "aspect_matched": false,
+ "render_hint": "place at box with preserveAspectRatio=\"none\", style=\"mix-blend-mode:screen\""
+}

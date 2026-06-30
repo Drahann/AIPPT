@@ -1,0 +1,222 @@
+{
+ "deck_id": "智慧医疗2",
+ "canvas": [
+  1280,
+  720
+ ],
+ "theme": {
+  "palette": {
+   "dk1": "#000000",
+   "lt1": "#FFFFFF",
+   "dk2": "#44546A",
+   "lt2": "#E7E6E6",
+   "accent1": "#4472C4",
+   "accent2": "#ED7D31",
+   "accent3": "#A5A5A5",
+   "accent4": "#FFC000",
+   "accent5": "#5B9BD5",
+   "accent6": "#70AD47",
+   "hlink": "#0563C1",
+   "folHlink": "#954F72"
+  },
+  "font_scheme": {
+   "major": [
+    "等线 Light",
+    ""
+   ],
+   "minor": [
+    "等线",
+    ""
+   ]
+  }
+ },
+ "typography": {
+  "title_family": "优设标题黑",
+  "subtitle_family": "微软雅黑",
+  "body_family": "微软雅黑",
+  "families_seen": [
+   "微软雅黑",
+   "优设标题黑",
+   "Arial"
+  ],
+  "size_ramp": [
+   19,
+   21,
+   24,
+   32,
+   27,
+   15,
+   64,
+   37,
+   72,
+   13
+  ]
+ },
+ "skin": {
+  "primary": "#00FFFF",
+  "accent_cyan": "#A5A5A5",
+  "bg_deep": "#000F3C",
+  "text": "#FFFFFF",
+  "text_dim": "#E7E6E6",
+  "accents": [
+   "#00FFFF",
+   "#FFC000",
+   "#0070C0",
+   "#016DFF"
+  ],
+  "palette_measured": [
+   "#4472C4",
+   "#FFFFFF",
+   "#15F7F9",
+   "#BEF6F9",
+   "#016DFF",
+   "#00FFFF",
+   "#F972A9",
+   "#68F0FE",
+   "#16FFF7",
+   "#CCFFFF",
+   "#FFC000",
+   "#0070C0"
+  ],
+  "bg_samples": [
+   "#00164D",
+   "#002767",
+   "#001949",
+   "#000F3C",
+   "#0B7AB3"
+  ],
+  "backgrounds": [
+   "chrome_bg_17a32bc52d04.png"
+  ]
+ },
+ "style_desc": "深蓝科技风配色，融合医疗实景与发光图标，字体现代大气，尽显专业严谨。",
+ "render_tags": [
+  "Medical",
+  "Technology",
+  "Professional",
+  "Modern",
+  "Blue",
+  "Scientific"
+ ],
+ "design_system": {
+  "type_ramp": [
+   {
+    "px": 221,
+    "count": 2
+   },
+   {
+    "px": 153,
+    "count": 2
+   },
+   {
+    "px": 72,
+    "count": 3
+   },
+   {
+    "px": 64,
+    "count": 9
+   },
+   {
+    "px": 59,
+    "count": 1
+   },
+   {
+    "px": 53,
+    "count": 1
+   },
+   {
+    "px": 43,
+    "count": 4
+   },
+   {
+    "px": 37,
+    "count": 8
+   }
+  ],
+  "content_margins": {
+   "left": 0.0,
+   "top": 9.9,
+   "right": 0.0,
+   "bottom": -2.9
+  },
+  "common_colors": [
+   "#4472C4",
+   "#FFFFFF",
+   "#15F7F9",
+   "#BEF6F9",
+   "#016DFF",
+   "#00FFFF",
+   "#F972A9",
+   "#68F0FE",
+   "#16FFF7",
+   "#CCFFFF",
+   "#FFC000",
+   "#0070C0"
+  ],
+  "decos_per_page": 5.4,
+  "common_box_sizes": [
+   {
+    "w": 0,
+    "h": 0,
+    "n": 216
+   },
+   {
+    "w": 10,
+    "h": 10,
+    "n": 164
+   },
+   {
+    "w": 20,
+    "h": 20,
+    "n": 102
+   },
+   {
+    "w": 140,
+    "h": 0,
+    "n": 20
+   },
+   {
+    "w": 10,
+    "h": 20,
+    "n": 20
+   },
+   {
+    "w": 110,
+    "h": 30,
+    "n": 17
+   },
+   {
+    "w": 170,
+    "h": 30,
+    "n": 13
+   },
+   {
+    "w": 160,
+    "h": 110,
+    "n": 13
+   }
+  ]
+ },
+ "chrome_decorations": [],
+ "source_pptx": "W:\\ppt\\挑战杯 互联网+三创赛 创青春 国赛金奖级PPT 模板\\创赛PPT\\蓝色科技-智慧医疗模板--gzh：xx的百宝箱\\科技风医疗PPT模板，蓝色PPT模板（15页）\\智慧医疗2.pptx",
+ "family": "med_blue_white",
+ "track": "general_chuangsai",
+ "pages": [
+  "med_blue_white_1161a81d_p01",
+  "med_blue_white_1161a81d_p02",
+  "med_blue_white_1161a81d_p03",
+  "med_blue_white_1161a81d_p04",
+  "med_blue_white_1161a81d_p05",
+  "med_blue_white_1161a81d_p06",
+  "med_blue_white_1161a81d_p07",
+  "med_blue_white_1161a81d_p08",
+  "med_blue_white_1161a81d_p09",
+  "med_blue_white_1161a81d_p10",
+  "med_blue_white_1161a81d_p11",
+  "med_blue_white_1161a81d_p12",
+  "med_blue_white_1161a81d_p13",
+  "med_blue_white_1161a81d_p14",
+  "med_blue_white_1161a81d_p15",
+  "med_blue_white_1161a81d_p16"
+ ]
+}

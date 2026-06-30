@@ -1,0 +1,21 @@
+{
+ "function": "bg_panel",
+ "family": "blue_tech",
+ "theme": "科技玻璃",
+ "palette": "深蓝 钴蓝 暗",
+ "prompt": "a 科技玻璃 rounded translucent glass panel surface filling the frame, 深蓝 钴蓝 暗, soft glowing edge, flat dark navy blue translucent rectangular glass panel filling the whole frame, very subtle thin glowing cyan edge, mostly DARK and uniform, flat surface, NOT a ring, NO hole, NO bright white, empty dark interior for text, the design FILLS THE ENTIRE IMAGE edge to edge, touching all four borders, zero margin, full-bleed composition, on pure solid #000000 black background, high detail, no text, no words, no letters",
+ "size": "1280*1200",
+ "box": "320x300",
+ "composite": "normal",
+ "alpha": true,
+ "preserveAspectRatio": "none",
+ "final_size": [
+  1185,
+  1106
+ ],
+ "fill_frac": 0.853,
+ "opaque_frac": 0.109,
+ "stretch_vs_box": 1.004,
+ "warnings": [],
+ "render_hint": "place at box with preserveAspectRatio=\"none\", NORMAL blend (alpha is real)"
+}

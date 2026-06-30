@@ -1,0 +1,22 @@
+{
+ "items": [
+  {"type": "trapezoid", "box": [60, 280, 376, 372], "inset": 30, "fill": [11, 80, 110, 95], "line": [3, 252, 254, 170]},
+  {"type": "trapezoid", "box": [450, 280, 376, 372], "inset": 30, "fill": [11, 90, 120, 110], "line": [3, 252, 254, 190]},
+  {"type": "trapezoid", "box": [840, 280, 380, 372], "inset": 30, "fill": [11, 100, 130, 125], "line": [3, 252, 254, 210]},
+
+  {"type": "panel", "box": [70, 186, 356, 84], "radius": 12, "fill": [8, 40, 88, 150], "line": [242, 186, 2, 150], "glow": [242, 186, 2, 45]},
+  {"type": "panel", "box": [460, 186, 356, 84], "radius": 12, "fill": [8, 40, 88, 150], "line": [242, 186, 2, 150], "glow": [242, 186, 2, 45]},
+  {"type": "panel", "box": [850, 186, 360, 84], "radius": 12, "fill": [8, 40, 88, 150], "line": [242, 186, 2, 150], "glow": [242, 186, 2, 45]},
+
+  {"type": "number_backplate", "xy": [120, 360], "text": "01", "size": 150, "color": [52, 213, 241, 28]},
+  {"type": "number_backplate", "xy": [510, 360], "text": "02", "size": 150, "color": [52, 213, 241, 28]},
+  {"type": "number_backplate", "xy": [905, 360], "text": "03", "size": 150, "color": [52, 213, 241, 28]},
+
+  {"type": "arrow_up", "box": [240, 642, 36, 44], "color": [255, 255, 255, 220]},
+  {"type": "arrow_up", "box": [628, 642, 36, 44], "color": [255, 255, 255, 220]},
+  {"type": "arrow_up", "box": [1020, 642, 36, 44], "color": [255, 255, 255, 220]},
+
+  {"type": "connector", "asset": "s06_pic02.png", "box": [428, 360, 40, 30]},
+  {"type": "connector", "asset": "s06_pic02.png", "box": [818, 360, 40, 30]}
+ ]
+}

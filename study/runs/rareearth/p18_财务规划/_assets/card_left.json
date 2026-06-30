@@ -1,0 +1,13 @@
+{
+ "function": "corner_hud",
+ "family": "blue_tech",
+ "theme": "深蓝科技HUD",
+ "palette": "cyan, electric blue, faint gold",
+ "prompt": "sci-fi 深蓝科技HUD corner HUD bracket decoration, angular glowing lines, cyan, electric blue, faint gold, ONLY a thin glowing rectangular tech border outline with angular corner brackets along the edges, the ENTIRE interior is pure solid black empty, border lines only, no fill, no panel surface, on pure solid black background, centered, high detail, no text, no words, no letters",
+ "size": "1280*1088",
+ "box": "576x490",
+ "composite": "screen",
+ "preserveAspectRatio": "none",
+ "aspect_matched": true,
+ "render_hint": "place at box with preserveAspectRatio=\"none\", style=\"mix-blend-mode:screen\""
+}

@@ -1,0 +1,23 @@
+{
+ "function": "bg_panel",
+ "family": "blue_tech",
+ "theme": "通用",
+ "palette": "#19E0FF,#04102B",
+ "prompt": "a deep-blue sci-tech content panel filling the entire image edge to edge: dark translucent navy glass with a thin glowing cyan border and a faint hexagon circuit grid in the corners, calm dark center for body text, soft electric-cyan corner ticks, deep navy, full-bleed no margin, the whole graphic FILLS THE ENTIRE IMAGE edge to edge, zero margin, full-bleed, on a solid pure black #000000 background, matte, no white background, clean, no text, no words, no letters, IMPORTANT: enlarge the subject to completely fill the frame, no empty black border",
+ "size": "1280*528",
+ "box": "548x229",
+ "composite": "normal",
+ "alpha": true,
+ "preserveAspectRatio": "none",
+ "final_size": [
+  1206,
+  463
+ ],
+ "fill_frac": 0.837,
+ "opaque_frac": 0.04,
+ "stretch_vs_box": 1.088,
+ "warnings": [
+  "LOW-FILL 84% — subject did not fill the frame"
+ ],
+ "render_hint": "place at box with preserveAspectRatio=\"none\", NORMAL blend (alpha is real)"
+}

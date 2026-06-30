@@ -1,0 +1,21 @@
+{
+ "function": "title_flank",
+ "family": "blue_tech",
+ "theme": "通用",
+ "palette": "deep blue, gold",
+ "prompt": "A decorative title flank ornament for a rare-earth recovery tech slide. Horizontal tech decoration filling the entire frame edge-to-edge. Golden geometric double-chevron pattern on the left third, transitioning to deep blue with small molecular hexagon accents on the right. Clean, academic, professional. Full-bleed to all edges, pure black background for alpha keyout., the whole graphic FILLS THE ENTIRE IMAGE edge to edge, zero margin, full-bleed, on a solid pure black #000000 background, matte, no white background, clean, no text, no words, no letters",
+ "size": "1280*576",
+ "box": "200x90",
+ "composite": "normal",
+ "alpha": true,
+ "preserveAspectRatio": "none",
+ "final_size": [
+  1280,
+  576
+ ],
+ "fill_frac": 1.0,
+ "opaque_frac": 0.071,
+ "stretch_vs_box": 1.0,
+ "warnings": [],
+ "render_hint": "place at box with preserveAspectRatio=\"none\", NORMAL blend (alpha is real)"
+}

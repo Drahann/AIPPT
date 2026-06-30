@@ -1,0 +1,58 @@
+[
+ {
+  "id": "t7",
+  "text": "融资 1000 万元 · 出让 30",
+  "from_px": 36,
+  "to_px": 18.0,
+  "overflow": false
+ },
+ {
+  "id": "t12",
+  "text": "第一年\n工艺优化·2家客户",
+  "from_px": 15,
+  "to_px": 18.0,
+  "overflow": true
+ },
+ {
+  "id": "t14",
+  "text": "第二年\nTIE332-350·3家客",
+  "from_px": 15,
+  "to_px": 18.0,
+  "overflow": true
+ },
+ {
+  "id": "t16",
+  "text": "第三年\n矩阵完善·规模复制",
+  "from_px": 15,
+  "to_px": 18.0,
+  "overflow": true
+ },
+ {
+  "id": "t22",
+  "text": "50%",
+  "from_px": 32,
+  "to_px": 18.0,
+  "overflow": false
+ },
+ {
+  "id": "t25",
+  "text": "30%",
+  "from_px": 32,
+  "to_px": 18.0,
+  "overflow": false
+ },
+ {
+  "id": "t28",
+  "text": "10%",
+  "from_px": 32,
+  "to_px": 18.0,
+  "overflow": false
+ },
+ {
+  "id": "t31",
+  "text": "10%",
+  "from_px": 32,
+  "to_px": 18.0,
+  "overflow": false
+ }
+]

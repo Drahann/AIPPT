@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 720" width="1280" height="720">
+<defs><linearGradient id="g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FBF1C6"/><stop offset="50%" stop-color="#F2D290"/><stop offset="100%" stop-color="#E2B25E"/></linearGradient><linearGradient id="g2" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FBF1C6"/><stop offset="50%" stop-color="#F2D290"/><stop offset="100%" stop-color="#E2B25E"/></linearGradient><linearGradient id="g3" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FBF1C6"/><stop offset="50%" stop-color="#F2D290"/><stop offset="100%" stop-color="#E2B25E"/></linearGradient><linearGradient id="g4" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FBF1C6"/><stop offset="50%" stop-color="#F2D290"/><stop offset="100%" stop-color="#E2B25E"/></linearGradient><linearGradient id="g5" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FBF1C6"/><stop offset="50%" stop-color="#F2D290"/><stop offset="100%" stop-color="#E2B25E"/></linearGradient><linearGradient id="g6" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FBF1C6"/><stop offset="50%" stop-color="#F2D290"/><stop offset="100%" stop-color="#E2B25E"/></linearGradient><linearGradient id="g7" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FBF1C6"/><stop offset="50%" stop-color="#F2D290"/><stop offset="100%" stop-color="#E2B25E"/></linearGradient><linearGradient id="g8" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FBF1C6"/><stop offset="50%" stop-color="#F2D290"/><stop offset="100%" stop-color="#E2B25E"/></linearGradient><linearGradient id="g9" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FBF1C6"/><stop offset="50%" stop-color="#F2D290"/><stop offset="100%" stop-color="#E2B25E"/></linearGradient><linearGradient id="g10" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FBF1C6"/><stop offset="50%" stop-color="#F2D290"/><stop offset="100%" stop-color="#E2B25E"/></linearGradient><linearGradient id="g11" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FBF1C6"/><stop offset="50%" stop-color="#F2D290"/><stop offset="100%" stop-color="#E2B25E"/></linearGradient><linearGradient id="g12" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FBF1C6"/><stop offset="50%" stop-color="#F2D290"/><stop offset="100%" stop-color="#E2B25E"/></linearGradient><linearGradient id="g13" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FBF1C6"/><stop offset="50%" stop-color="#F2D290"/><stop offset="100%" stop-color="#E2B25E"/></linearGradient><linearGradient id="g14" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FBF1C6"/><stop offset="50%" stop-color="#F2D290"/><stop offset="100%" stop-color="#E2B25E"/></linearGradient><linearGradient id="g15" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FBF1C6"/><stop offset="50%" stop-color="#F2D290"/><stop offset="100%" stop-color="#E2B25E"/></linearGradient></defs>
+<image href="file:///W:/ppt/study/runs/gen5/_decos/base.png" x="0" y="0" width="1280" height="720"/>
+<rect x="0.0" y="0.0" width="1280.0" height="720.0" rx="0" fill="rgba(6,14,40,0.50)"/>
+<image href="file:///W:/ppt/study/runs/gen5/_decos/glow.png" x="300.0" y="18.0" width="760.0" height="120.0" preserveAspectRatio="none" style="opacity:0.5;mix-blend-mode:screen"/>
+<image href="file:///W:/ppt/study/runs/gen5/_decos/nano.png" x="1120.0" y="16.0" width="150.0" height="150.0" preserveAspectRatio="none" style="opacity:0.85;mix-blend-mode:screen"/>
+<line x1="64" y1="56" x2="76" y2="69.0" stroke="#F2D290" stroke-width="4"/>
+<line x1="64" y1="88" x2="76" y2="69.0" stroke="#F2D290" stroke-width="4"/>
+<line x1="77" y1="56" x2="89" y2="69.0" stroke="#F2D290" stroke-width="4"/>
+<line x1="77" y1="88" x2="89" y2="69.0" stroke="#F2D290" stroke-width="4"/>
+<line x1="110" y1="102" x2="234.0" y2="102" stroke="rgba(242,210,144,0.6)" stroke-width="2"/>
+<rect x="980.0" y="60.0" width="150.0" height="34.0" rx="999" fill="rgba(20,70,150,0.7)" stroke="rgba(242,210,144,0.85)" stroke-width="1.1"/>
+<rect x="56.0" y="132.0" width="420.0" height="532.0" rx="14" fill="rgba(8,22,55,0.70)" stroke="rgba(120,180,255,0.42)" stroke-width="1.4"/>
+<line x1="60" y1="160" x2="60" y2="136" stroke="#F2D290" stroke-width="3"/>
+<line x1="60" y1="136" x2="84" y2="136" stroke="#F2D290" stroke-width="3"/>
+<line x1="448" y1="136" x2="472" y2="136" stroke="#F2D290" stroke-width="3"/>
+<line x1="472" y1="136" x2="472" y2="160" stroke="#F2D290" stroke-width="3"/>
+<line x1="60" y1="636" x2="60" y2="660" stroke="#F2D290" stroke-width="3"/>
+<line x1="60" y1="660" x2="84" y2="660" stroke="#F2D290" stroke-width="3"/>
+<line x1="448" y1="660" x2="472" y2="660" stroke="#F2D290" stroke-width="3"/>
+<line x1="472" y1="660" x2="472" y2="636" stroke="#F2D290" stroke-width="3"/>
+<line x1="84" y1="188" x2="444" y2="188" stroke="rgba(242,210,144,0.55)" stroke-width="1.6"/>
+<rect x="259.0" y="183.0" width="10.0" height="10.0" rx="1" fill="#F2D290" opacity="0.95"/>
+<path d="M266.0,192.0 A104.0,104.0 0 0 1 327.1,380.1 L300.2,343.1 A58.2,58.2 0 0 0 266.0,237.8 Z" fill="#F2D290" stroke="#0A1A3A" stroke-width="1.5"/>
+<polyline points="370.6,262.0 408.7,249.6 416.7,249.6" fill="none" stroke="#F2D290" stroke-width="1.5"/>
+<text x="420.7" y="246.6" text-anchor="start" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="17" fill="#F2D290" font-weight="700">40%</text>
+<text x="420.7" y="264.6" text-anchor="start" font-family="'OPPOSans M','Source Han Sans CN Medium','Microsoft YaHei',sans-serif" font-size="14" fill="#FFFFFF">中试纯化</text>
+<path d="M327.1,380.1 A104.0,104.0 0 0 1 181.9,357.1 L218.9,330.2 A58.2,58.2 0 0 0 300.2,343.1 Z" fill="#2C7BE5" stroke="#0A1A3A" stroke-width="1.5"/>
+<polyline points="248.8,404.6 242.5,444.2 234.5,444.2" fill="none" stroke="#2C7BE5" stroke-width="1.5"/>
+<text x="230.5" y="441.2" text-anchor="end" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="17" fill="#2C7BE5" font-weight="700">25%</text>
+<text x="230.5" y="459.2" text-anchor="end" font-family="'OPPOSans M','Source Han Sans CN Medium','Microsoft YaHei',sans-serif" font-size="14" fill="#FFFFFF">质量检测</text>
+<path d="M181.9,357.1 A104.0,104.0 0 0 1 181.9,234.9 L218.9,261.8 A58.2,58.2 0 0 0 218.9,330.2 Z" fill="#16C7F0" stroke="#0A1A3A" stroke-width="1.5"/>
+<polyline points="156.0,296.0 116.0,296.0 108.0,296.0" fill="none" stroke="#16C7F0" stroke-width="1.5"/>
+<text x="104.0" y="293.0" text-anchor="end" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="17" fill="#16C7F0" font-weight="700">20%</text>
+<text x="104.0" y="311.0" text-anchor="end" font-family="'OPPOSans M','Source Han Sans CN Medium','Microsoft YaHei',sans-serif" font-size="14" fill="#FFFFFF">研发人力</text>
+<path d="M181.9,234.9 A104.0,104.0 0 0 1 266.0,192.0 L266.0,237.8 A58.2,58.2 0 0 0 218.9,261.8 Z" fill="#0DC59F" stroke="#0A1A3A" stroke-width="1.5"/>
+<polyline points="216.1,198.0 197.9,162.3 189.9,162.3" fill="none" stroke="#0DC59F" stroke-width="1.5"/>
+<text x="185.9" y="159.3" text-anchor="end" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="17" fill="#0DC59F" font-weight="700">15%</text>
+<text x="185.9" y="177.3" text-anchor="end" font-family="'OPPOSans M','Source Han Sans CN Medium','Microsoft YaHei',sans-serif" font-size="14" fill="#FFFFFF">市场验证</text>
+<text x="266.0" y="296.0" text-anchor="middle" dominant-baseline="middle" font-family="'OPPOSans M','Source Han Sans CN Medium','Microsoft YaHei',sans-serif" font-size="30" fill="#FFFFFF">200万</text>
+<rect x="84.0" y="434.0" width="12.0" height="12.0" rx="3" fill="#F2D290"/>
+<rect x="84.0" y="490.0" width="12.0" height="12.0" rx="3" fill="#2C7BE5"/>
+<rect x="84.0" y="546.0" width="12.0" height="12.0" rx="3" fill="#16C7F0"/>
+<rect x="84.0" y="602.0" width="12.0" height="12.0" rx="3" fill="#0DC59F"/>
+<rect x="496.0" y="132.0" width="360.0" height="300.0" rx="14" fill="rgba(8,22,55,0.70)" stroke="rgba(120,180,255,0.42)" stroke-width="1.4"/>
+<line x1="522" y1="186" x2="830" y2="186" stroke="rgba(242,210,144,0.55)" stroke-width="1.6"/>
+<rect x="671.0" y="181.0" width="10.0" height="10.0" rx="1" fill="#F2D290" opacity="0.95"/>
+<rect x="522.0" y="204.0" width="231.0" height="34.0" rx="0" fill="#F2D290" opacity="0.95"/>
+<rect x="753.0" y="204.0" width="19.2" height="34.0" rx="0" fill="#2C7BE5" opacity="0.95"/>
+<rect x="772.2" y="204.0" width="19.2" height="34.0" rx="0" fill="#16C7F0" opacity="0.95"/>
+<rect x="791.5" y="204.0" width="15.4" height="34.0" rx="0" fill="#0DC59F" opacity="0.95"/>
+<rect x="806.9" y="204.0" width="23.1" height="34.0" rx="0" fill="#6E8AC0" opacity="0.95"/>
+<rect x="522.0" y="204.0" width="308.0" height="34.0" rx="0" fill="none" stroke="rgba(242,210,144,0.85)" stroke-width="1.2"/>
+<rect x="522.0" y="260.0" width="12.0" height="12.0" rx="3" fill="#F2D290"/>
+<rect x="522.0" y="294.0" width="12.0" height="12.0" rx="3" fill="#2C7BE5"/>
+<rect x="522.0" y="328.0" width="12.0" height="12.0" rx="3" fill="#16C7F0"/>
+<rect x="692.0" y="260.0" width="12.0" height="12.0" rx="3" fill="#0DC59F"/>
+<rect x="692.0" y="294.0" width="12.0" height="12.0" rx="3" fill="#6E8AC0"/>
+<rect x="496.0" y="448.0" width="360.0" height="216.0" rx="14" fill="rgba(8,22,55,0.70)" stroke="rgba(120,180,255,0.42)" stroke-width="1.4"/>
+<line x1="500" y1="472" x2="500" y2="452" stroke="#16C7F0" stroke-width="3"/>
+<line x1="500" y1="452" x2="520" y2="452" stroke="#16C7F0" stroke-width="3"/>
+<line x1="832" y1="452" x2="852" y2="452" stroke="#16C7F0" stroke-width="3"/>
+<line x1="852" y1="452" x2="852" y2="472" stroke="#16C7F0" stroke-width="3"/>
+<line x1="500" y1="640" x2="500" y2="660" stroke="#16C7F0" stroke-width="3"/>
+<line x1="500" y1="660" x2="520" y2="660" stroke="#16C7F0" stroke-width="3"/>
+<line x1="832" y1="660" x2="852" y2="660" stroke="#16C7F0" stroke-width="3"/>
+<line x1="852" y1="660" x2="852" y2="640" stroke="#16C7F0" stroke-width="3"/>
+<rect x="540.0" y="500.0" width="120.0" height="120.0" rx="60" fill="rgba(20,55,120,0.45)" stroke="#F2D290" stroke-width="2"/>
+<rect x="555.6" y="515.6" width="88.8" height="88.8" rx="44.4" fill="none" stroke="rgba(120,180,255,0.55)" stroke-width="1.4"/>
+<line x1="663.0" y1="560.0" x2="671.0" y2="560.0" stroke="#F2D290" stroke-width="1.6"/>
+<line x1="654.5596004384197" y1="591.5" x2="661.4878036686952" y2="595.5" stroke="#F2D290" stroke-width="1.6"/>
+<line x1="631.5" y1="614.5596004384196" x2="635.5" y2="621.4878036686952" stroke="#F2D290" stroke-width="1.6"/>
+<line x1="600.0" y1="623.0" x2="600.0" y2="631.0" stroke="#F2D290" stroke-width="1.6"/>
+<line x1="568.5" y1="614.5596004384197" x2="564.5" y2="621.4878036686952" stroke="#F2D290" stroke-width="1.6"/>
+<line x1="545.4403995615803" y1="591.5" x2="538.5121963313048" y2="595.5" stroke="#F2D290" stroke-width="1.6"/>
+<line x1="537.0" y1="560.0" x2="529.0" y2="560.0" stroke="#F2D290" stroke-width="1.6"/>
+<line x1="545.4403995615803" y1="528.5" x2="538.5121963313048" y2="524.5" stroke="#F2D290" stroke-width="1.6"/>
+<line x1="568.5" y1="505.44039956158036" x2="564.5" y2="498.5121963313049" stroke="#F2D290" stroke-width="1.6"/>
+<line x1="600.0" y1="497.0" x2="600.0" y2="489.0" stroke="#F2D290" stroke-width="1.6"/>
+<line x1="631.5" y1="505.44039956158036" x2="635.5" y2="498.51219633130484" stroke="#F2D290" stroke-width="1.6"/>
+<line x1="654.5596004384196" y1="528.5" x2="661.4878036686952" y2="524.5" stroke="#F2D290" stroke-width="1.6"/>
+<rect x="690.0" y="584.0" width="150.0" height="30.0" rx="999" fill="rgba(13,197,159,0.22)" stroke="rgba(13,197,159,0.8)" stroke-width="1.1"/>
+<rect x="876.0" y="132.0" width="348.0" height="532.0" rx="14" fill="rgba(8,22,55,0.70)" stroke="rgba(120,180,255,0.42)" stroke-width="1.4"/>
+<line x1="902" y1="188" x2="1198" y2="188" stroke="rgba(242,210,144,0.55)" stroke-width="1.6"/>
+<rect x="1045.0" y="183.0" width="10.0" height="10.0" rx="1" fill="#F2D290" opacity="0.95"/>
+<rect x="902.0" y="208.0" width="44.0" height="44.0" rx="22" fill="rgba(15,45,105,0.78)" stroke="#F2D290" stroke-width="2"/>
+<line x1="924" y1="256" x2="924" y2="314" stroke="rgba(242,210,144,0.4)" stroke-width="1.4"/>
+<rect x="902.0" y="324.0" width="44.0" height="44.0" rx="22" fill="rgba(15,45,105,0.78)" stroke="#F2D290" stroke-width="2"/>
+<line x1="924" y1="372" x2="924" y2="430" stroke="rgba(242,210,144,0.4)" stroke-width="1.4"/>
+<rect x="902.0" y="440.0" width="44.0" height="44.0" rx="22" fill="rgba(15,45,105,0.78)" stroke="#F2D290" stroke-width="2"/>
+<line x1="924" y1="488" x2="924" y2="546" stroke="rgba(242,210,144,0.4)" stroke-width="1.4"/>
+<rect x="902.0" y="556.0" width="44.0" height="44.0" rx="22" fill="rgba(15,45,105,0.78)" stroke="#F2D290" stroke-width="2"/>
+<text x="108" y="88" text-anchor="start" font-family="'华文行楷','STXingkai','Source Han Serif CN Heavy','KaiTi',serif" font-size="50.0" fill="url(#g1)"><tspan x="108" dy="0.0">融资计划</tspan></text>
+<text x="112" y="126" text-anchor="start" font-family="'OPPOSans M','Source Han Sans CN Medium','Microsoft YaHei',sans-serif" font-size="16.0" fill="#C3D6F2"><tspan x="112" dy="0.0">天使轮 · 200万元（部分资金已到账）· 资金分阶段拨付、专款专用</tspan></text>
+<text x="1055" y="82" text-anchor="middle" font-family="'OPPOSans M','Source Han Sans CN Medium','Microsoft YaHei',sans-serif" font-size="7.8" fill="#F2D290"><tspan x="1055" dy="0.0">ANGEL ROUND 天使轮</tspan></text>
+<text x="84" y="173" text-anchor="start" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="23.0" fill="#FFFFFF"><tspan x="84" dy="0.0">资金用途规划</tspan></text>
+<text x="104" y="444" text-anchor="start" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="16.0" fill="#FFFFFF"><tspan x="104" dy="0.0">① 中试与纯化</tspan></text>
+<text x="452" y="444" text-anchor="end" font-family="'Alibaba PuHuiTi H','OPPOSans B','Source Han Sans CN Heavy','Arial',sans-serif" font-size="18.0" fill="url(#g2)"><tspan x="452" dy="0.0">40%</tspan></text>
+<text x="104" y="470" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="8.4" fill="#8FB0DA"><tspan x="104" dy="0.0">医用级蛋白纯化工艺开发 · GMP标准中试生产线建设</tspan></text>
+<text x="104" y="500" text-anchor="start" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="16.0" fill="#FFFFFF"><tspan x="104" dy="0.0">② 质量与检测</tspan></text>
+<text x="452" y="500" text-anchor="end" font-family="'Alibaba PuHuiTi H','OPPOSans B','Source Han Sans CN Heavy','Arial',sans-serif" font-size="18.0" fill="url(#g3)"><tspan x="452" dy="0.0">25%</tspan></text>
+<text x="104" y="526" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="8.4" fill="#8FB0DA"><tspan x="104" dy="0.0">第三方权威检测 · 医疗器械注册送审 · 质量体系建设</tspan></text>
+<text x="104" y="556" text-anchor="start" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="16.0" fill="#FFFFFF"><tspan x="104" dy="0.0">③ 研发与人力</tspan></text>
+<text x="452" y="556" text-anchor="end" font-family="'Alibaba PuHuiTi H','OPPOSans B','Source Han Sans CN Heavy','Arial',sans-serif" font-size="18.0" fill="url(#g4)"><tspan x="452" dy="0.0">20%</tspan></text>
+<text x="104" y="582" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="8.4" fill="#8FB0DA"><tspan x="104" dy="0.0">核心研发人才引进 · 团队薪酬保障 · 工艺迭代优化</tspan></text>
+<text x="104" y="612" text-anchor="start" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="16.0" fill="#FFFFFF"><tspan x="104" dy="0.0">④ 市场与验证</tspan></text>
+<text x="452" y="612" text-anchor="end" font-family="'Alibaba PuHuiTi H','OPPOSans B','Source Han Sans CN Heavy','Arial',sans-serif" font-size="18.0" fill="url(#g5)"><tspan x="452" dy="0.0">15%</tspan></text>
+<text x="104" y="640" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="14.0" fill="#8FB0DA"><tspan x="104" dy="0.0">已验证客户首批商业化交付 · 区域市场拓展</tspan></text>
+<text x="522" y="171" text-anchor="start" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="20.0" fill="#FFFFFF"><tspan x="522" dy="0.0">公司股权结构（融资前）</tspan></text>
+<text x="638" y="227" text-anchor="middle" font-family="'Alibaba PuHuiTi H','OPPOSans B','Source Han Sans CN Heavy','Arial',sans-serif" font-size="18.0" fill="#0E0023"><tspan x="638" dy="0.0">75%</tspan></text>
+<text x="540" y="271" text-anchor="start" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="15.0" fill="#FFFFFF"><tspan x="540" dy="0.0">王炯桦</tspan></text>
+<text x="540" y="284" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="7.5" fill="#8FB0DA"><tspan x="540" dy="0.0">创始人/法人 · 绝对控股</tspan></text>
+<text x="614" y="270" text-anchor="start" font-family="'Alibaba PuHuiTi H','OPPOSans B','Source Han Sans CN Heavy','Arial',sans-serif" font-size="15.0" fill="url(#g6)"><tspan x="614" dy="0.0">75%</tspan></text>
+<text x="540" y="305" text-anchor="start" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="15.0" fill="#FFFFFF"><tspan x="540" dy="0.0">任一帆</tspan></text>
+<text x="540" y="319" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="12.5" fill="#8FB0DA"><tspan x="540" dy="0.0">市场总监</tspan></text>
+<text x="614" y="302" text-anchor="start" font-family="'Alibaba PuHuiTi H','OPPOSans B','Source Han Sans CN Heavy','Arial',sans-serif" font-size="9.0" fill="url(#g7)"><tspan x="614" dy="0.0">6.25%</tspan></text>
+<text x="540" y="339" text-anchor="start" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="15.0" fill="#FFFFFF"><tspan x="540" dy="0.0">邓煜婕</tspan></text>
+<text x="540" y="353" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="12.5" fill="#8FB0DA"><tspan x="540" dy="0.0">财务总监</tspan></text>
+<text x="614" y="336" text-anchor="start" font-family="'Alibaba PuHuiTi H','OPPOSans B','Source Han Sans CN Heavy','Arial',sans-serif" font-size="9.0" fill="url(#g8)"><tspan x="614" dy="0.0">6.25%</tspan></text>
+<text x="710" y="271" text-anchor="start" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="15.0" fill="#FFFFFF"><tspan x="710" dy="0.0">张瑜瑜</tspan></text>
+<text x="710" y="285" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="12.5" fill="#8FB0DA"><tspan x="710" dy="0.0">核心成员</tspan></text>
+<text x="784" y="270" text-anchor="start" font-family="'Alibaba PuHuiTi H','OPPOSans B','Source Han Sans CN Heavy','Arial',sans-serif" font-size="15.0" fill="url(#g9)"><tspan x="784" dy="0.0">5%</tspan></text>
+<text x="710" y="305" text-anchor="start" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="15.0" fill="#FFFFFF"><tspan x="710" dy="0.0">其他成员</tspan></text>
+<text x="710" y="318" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="7.5" fill="#8FB0DA"><tspan x="710" dy="0.0">张凯文 · 龚则达 · 王艺蒙</tspan></text>
+<text x="784" y="304" text-anchor="start" font-family="'Alibaba PuHuiTi H','OPPOSans B','Source Han Sans CN Heavy','Arial',sans-serif" font-size="15.0" fill="url(#g10)"><tspan x="784" dy="0.0">7.5%</tspan></text>
+<text x="522" y="484" text-anchor="start" font-family="'OPPOSans M','Source Han Sans CN Medium','Microsoft YaHei',sans-serif" font-size="17.0" fill="#C3D6F2"><tspan x="522" dy="0.0">天使轮融资额度</tspan></text>
+<text x="605" y="570" text-anchor="middle" font-family="'Alibaba PuHuiTi H','OPPOSans B','Source Han Sans CN Heavy','Arial',sans-serif" font-size="44.4" fill="url(#g11)"><tspan x="605" dy="0.0">200</tspan></text>
+<text x="690" y="570" text-anchor="start" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="28.0" fill="#FFFFFF"><tspan x="690" dy="0.0">万元</tspan></text>
+<text x="765" y="605" text-anchor="middle" font-family="'OPPOSans M','Source Han Sans CN Medium','Microsoft YaHei',sans-serif" font-size="13.0" fill="#7FE9CF"><tspan x="765" dy="0.0">部分资金已到账</tspan></text>
+<text x="522" y="641" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="13.0" fill="#8FB0DA"><tspan x="522" dy="0.0">拟出让股权约 10% · 投后规范化信息披露</tspan></text>
+<text x="902" y="171" text-anchor="start" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="20.0" fill="#FFFFFF"><tspan x="902" dy="0.0">融资目标 · 关键里程碑</tspan></text>
+<text x="924" y="238" text-anchor="middle" font-family="'Alibaba PuHuiTi H','OPPOSans B','Source Han Sans CN Heavy','Arial',sans-serif" font-size="22.0" fill="url(#g12)"><tspan x="924" dy="0.0">01</tspan></text>
+<text x="958" y="228" text-anchor="start" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="18.0" fill="#FFFFFF"><tspan x="958" dy="0.0">GMP 医械级中试线</tspan></text>
+<text x="958" y="265" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="14.0" fill="#C3D6F2"><tspan x="958" dy="0.0">建成符合医疗器械生产质量管理规范（G</tspan><tspan x="958" dy="18.5">MP）的医械级原料中试生产线，具备稳</tspan><tspan x="958" dy="18.5">定量产能力。</tspan></text>
+<text x="924" y="354" text-anchor="middle" font-family="'Alibaba PuHuiTi H','OPPOSans B','Source Han Sans CN Heavy','Arial',sans-serif" font-size="22.0" fill="url(#g13)"><tspan x="924" dy="0.0">02</tspan></text>
+<text x="958" y="344" text-anchor="start" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="18.0" fill="#FFFFFF"><tspan x="958" dy="0.0">全项检测 · 注册申报</tspan></text>
+<text x="958" y="391" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="14.0" fill="#C3D6F2"><tspan x="958" dy="0.0">完成产品在权威机构的全项检测认证，同</tspan><tspan x="958" dy="18.5">步启动医疗器械注册申报流程。</tspan></text>
+<text x="924" y="470" text-anchor="middle" font-family="'Alibaba PuHuiTi H','OPPOSans B','Source Han Sans CN Heavy','Arial',sans-serif" font-size="22.0" fill="url(#g14)"><tspan x="924" dy="0.0">03</tspan></text>
+<text x="958" y="460" text-anchor="start" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="18.0" fill="#FFFFFF"><tspan x="958" dy="0.0">首批商业化交付</tspan></text>
+<text x="958" y="497" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="14.0" fill="#C3D6F2"><tspan x="958" dy="0.0">基于海生医疗（冠脉造影导管）、先健科</tspan><tspan x="958" dy="18.5">技（外周血管造影导管）验证成果，实现</tspan><tspan x="958" dy="18.5">首批产品商业化交付。</tspan></text>
+<text x="924" y="586" text-anchor="middle" font-family="'Alibaba PuHuiTi H','OPPOSans B','Source Han Sans CN Heavy','Arial',sans-serif" font-size="22.0" fill="url(#g15)"><tspan x="924" dy="0.0">04</tspan></text>
+<text x="958" y="576" text-anchor="start" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="18.0" fill="#FFFFFF"><tspan x="958" dy="0.0">国产替代 · 填补空白</tspan></text>
+<text x="958" y="613" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="14.0" fill="#C3D6F2"><tspan x="958" dy="0.0">加速国产高端医疗器械涂层原料替代进程</tspan><tspan x="958" dy="18.5">，填补国内技术与供应链空白，奠定全国</tspan><tspan x="958" dy="18.5">拓展基础。</tspan></text>
+</svg>

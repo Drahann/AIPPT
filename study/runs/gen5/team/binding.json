@@ -1,0 +1,74 @@
+{
+  "drop_unbound_placeholders": true,
+  "extras": [
+    {"type": "rect", "box": [120, 162, 290, 44], "grad": ["#103A7E", "#0A2150"], "stroke": "#15F7F9", "sw": 1, "rx": 22, "opacity": 0.45},
+    {"type": "rect", "box": [410, 162, 270, 44], "grad": ["#103A7E", "#0A2150"], "stroke": "#15F7F9", "sw": 1, "rx": 22, "opacity": 0.45},
+    {"type": "rect", "box": [670, 162, 280, 44], "grad": ["#103A7E", "#0A2150"], "stroke": "#15F7F9", "sw": 1, "rx": 22, "opacity": 0.45},
+    {"type": "rect", "box": [940, 162, 250, 44], "grad": ["#103A7E", "#0A2150"], "stroke": "#15F7F9", "sw": 1, "rx": 22, "opacity": 0.45},
+
+    {"type": "rect", "box": [18, 318, 174, 144], "grad": ["#10336F", "#0A1C44"], "stroke": "#1E6FC0", "sw": 1.2, "rx": 12, "opacity": 0.62},
+    {"type": "rect", "box": [308, 318, 174, 144], "grad": ["#10336F", "#0A1C44"], "stroke": "#1E6FC0", "sw": 1.2, "rx": 12, "opacity": 0.62},
+    {"type": "rect", "box": [598, 318, 174, 144], "grad": ["#10336F", "#0A1C44"], "stroke": "#1E6FC0", "sw": 1.2, "rx": 12, "opacity": 0.62},
+    {"type": "rect", "box": [888, 318, 174, 144], "grad": ["#10336F", "#0A1C44"], "stroke": "#1E6FC0", "sw": 1.2, "rx": 12, "opacity": 0.62},
+    {"type": "rect", "box": [18, 546, 174, 122], "grad": ["#10336F", "#0A1C44"], "stroke": "#1E6FC0", "sw": 1.2, "rx": 12, "opacity": 0.62},
+    {"type": "rect", "box": [308, 546, 174, 122], "grad": ["#10336F", "#0A1C44"], "stroke": "#1E6FC0", "sw": 1.2, "rx": 12, "opacity": 0.62},
+    {"type": "rect", "box": [598, 546, 174, 122], "grad": ["#10336F", "#0A1C44"], "stroke": "#1E6FC0", "sw": 1.2, "rx": 12, "opacity": 0.62},
+
+    {"type": "rect", "box": [884, 488, 192, 184], "grad": ["#123E84", "#0A2356"], "stroke": "#FFC000", "sw": 1.5, "rx": 12, "opacity": 0.6},
+
+    {"type": "image", "href": "deco/avatar_ring.png", "box": [38, 224, 134, 134], "blend": "screen"},
+    {"type": "image", "href": "deco/silhouette.png", "box": [70, 240, 70, 86], "preserve": "xMidYMid meet", "blend": "screen", "opacity": 0.92},
+    {"type": "image", "href": "deco/avatar_ring.png", "box": [328, 224, 134, 134], "blend": "screen"},
+    {"type": "image", "href": "deco/silhouette.png", "box": [360, 240, 70, 86], "preserve": "xMidYMid meet", "blend": "screen", "opacity": 0.92},
+    {"type": "image", "href": "deco/avatar_ring.png", "box": [618, 224, 134, 134], "blend": "screen"},
+    {"type": "image", "href": "deco/silhouette.png", "box": [650, 240, 70, 86], "preserve": "xMidYMid meet", "blend": "screen", "opacity": 0.92},
+    {"type": "image", "href": "deco/avatar_ring.png", "box": [908, 224, 134, 134], "blend": "screen"},
+    {"type": "image", "href": "deco/silhouette.png", "box": [940, 240, 70, 86], "preserve": "xMidYMid meet", "blend": "screen", "opacity": 0.92},
+
+    {"type": "image", "href": "deco/avatar_ring.png", "box": [50, 452, 110, 110], "blend": "screen"},
+    {"type": "image", "href": "deco/silhouette.png", "box": [76, 464, 58, 72], "preserve": "xMidYMid meet", "blend": "screen", "opacity": 0.92},
+    {"type": "image", "href": "deco/avatar_ring.png", "box": [340, 452, 110, 110], "blend": "screen"},
+    {"type": "image", "href": "deco/silhouette.png", "box": [366, 464, 58, 72], "preserve": "xMidYMid meet", "blend": "screen", "opacity": 0.92},
+    {"type": "image", "href": "deco/avatar_ring.png", "box": [630, 452, 110, 110], "blend": "screen"},
+    {"type": "image", "href": "deco/silhouette.png", "box": [656, 464, 58, 72], "preserve": "xMidYMid meet", "blend": "screen", "opacity": 0.92}
+  ],
+  "slots": {
+    "title": "团队结构 · 全链条复合型协作体系",
+
+    "s1n": "14", "s1l": "SCI 论文（篇）",
+    "s2n": "4", "s2l": "授权发明专利（项）",
+    "s3n": "7", "s3l": "国家级竞赛奖项",
+    "s4n": "6", "s4l": "核心专业领域",
+
+    "c1_nm": "王炯桦", "c1_rl": "团队负责人 / 拟任法人",
+    "c1_dr": "医用功能蛋白与器械应用",
+    "c1_ac": "项目统筹与技术路线把控；SCI 3篇，生命科学竞赛一等奖",
+
+    "c2_nm": "陈远幸", "c2_rl": "董事长",
+    "c2_dr": "临床医学体系与诊疗创新",
+    "c2_ac": "战略规划与临床需求转化；医学创新大赛二等奖，SCI 1篇（一作）",
+
+    "c3_nm": "盛宇菲", "c3_rl": "研发总监",
+    "c3_dr": "血浆非编码分子检定研究",
+    "c3_ac": "核心技术研发与检测验证；生命科学竞赛三等奖，SCI 3篇（一作）",
+
+    "c4_nm": "张津叶", "c4_rl": "产品总监",
+    "c4_dr": "蛋白超分子结构与性能验证",
+    "c4_ac": "产品性能验证与结构优化；国家奖学金，发明专利4项，SCI 3篇",
+
+    "c5_nm": "徐悦可", "c5_rl": "生产经理",
+    "c5_dr": "医学全链条质量安全管控",
+    "c5_ac": "中试生产与质控；省政府奖学金，SCI 2篇",
+
+    "c6_nm": "任一帆", "c6_rl": "市场总监",
+    "c6_dr": "市场调研与供应链管理",
+    "c6_ac": "市场调研与渠道拓展；全国大学生市场调查与分析大赛一等奖，SCI 1篇",
+
+    "c7_nm": "邓煜婕", "c7_rl": "财务总监",
+    "c7_dr": "技术经济与管理",
+    "c7_ac": "融资测算与资本运作；参与省重点项目，SCI 1篇",
+
+    "rat_h": "结构合理性",
+    "rationale": "专业精准覆盖医学功能蛋白、生物材料与器械应用、临床医学、质量安全、市场供应链及财务管理六大领域，构建技术研发—产品验证—生产质控—市场转化—财务融资全链条协作体系；累计 SCI 14篇、发明专利4项、国家级奖项7项，依托宁波大学科研平台与院士团队形成高效产学研闭环。"
+  }
+}

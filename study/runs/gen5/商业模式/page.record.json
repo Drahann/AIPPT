@@ -1,0 +1,486 @@
+{
+ "canvas": [
+  1280,
+  720
+ ],
+ "shapes": [
+  {
+   "id": "t1",
+   "kind": "text",
+   "box": [
+    108.0,
+    40.0,
+    760.0,
+    62.0
+   ],
+   "font": "DISP_KAI",
+   "font_px": 50,
+   "align": "LEFT",
+   "text": "商业模式",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t2",
+   "kind": "text",
+   "box": [
+    112.0,
+    108.0,
+    820.0,
+    26.0
+   ],
+   "font": "BODY_M",
+   "font_px": 16,
+   "align": "LEFT",
+   "text": "全链路整合驱动医用涂层国产化替代 · 上游原料—中游加工—下游应用闭环生态",
+   "color": "#C3D6F2"
+  },
+  {
+   "id": "t3",
+   "kind": "text",
+   "box": [
+    74.0,
+    144.0,
+    700.0,
+    24.0
+   ],
+   "font": "BODY_M",
+   "font_px": 15,
+   "align": "LEFT",
+   "text": "核心枢纽：宁波谷泽新生生物科技有限公司 · 整合上下游资源并主导运营",
+   "color": "#FFFFFF"
+  },
+  {
+   "id": "t4",
+   "kind": "text",
+   "box": [
+    854.0,
+    147.0,
+    354.0,
+    20.0
+   ],
+   "font": "BODY_M",
+   "font_px": 14,
+   "align": "CENTER",
+   "text": "宁波大学科研平台 / 院士团队 · 技术策源",
+   "color": "#F2D290"
+  },
+  {
+   "id": "t5",
+   "kind": "text",
+   "box": [
+    72.0,
+    215.25,
+    92.0,
+    19.5
+   ],
+   "font": "BODY_M",
+   "font_px": 13.5,
+   "align": "CENTER",
+   "text": "上游",
+   "color": "#F2D290"
+  },
+  {
+   "id": "t6",
+   "kind": "text",
+   "box": [
+    174.0,
+    208.0,
+    218.0,
+    30.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 21,
+   "align": "LEFT",
+   "text": "原料供给",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t7",
+   "kind": "text",
+   "box": [
+    74.0,
+    248.0,
+    312.0,
+    24.0
+   ],
+   "font": "BODY_M",
+   "font_px": 15,
+   "align": "LEFT",
+   "text": "中粮集团 · 安徽顺鑫 · 金润米业 · 水龙米业",
+   "color": "#FFFFFF"
+  },
+  {
+   "id": "t8",
+   "kind": "text",
+   "box": [
+    74.0,
+    278.0,
+    312.0,
+    46.0
+   ],
+   "font": "BODY",
+   "font_px": 14,
+   "align": "LEFT",
+   "text": "联动优质粮企保障大米蛋白原料稳定供给，夯实国产化成本基础。",
+   "color": "#C3D6F2"
+  },
+  {
+   "id": "t9",
+   "kind": "text",
+   "box": [
+    482.0,
+    215.25,
+    92.0,
+    19.5
+   ],
+   "font": "BODY_M",
+   "font_px": 13.5,
+   "align": "CENTER",
+   "text": "中游",
+   "color": "#F2D290"
+  },
+  {
+   "id": "t10",
+   "kind": "text",
+   "box": [
+    584.0,
+    208.0,
+    218.0,
+    30.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 21,
+   "align": "LEFT",
+   "text": "合规加工",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t11",
+   "kind": "text",
+   "box": [
+    484.0,
+    248.0,
+    312.0,
+    24.0
+   ],
+   "font": "BODY_M",
+   "font_px": 15,
+   "align": "LEFT",
+   "text": "江西盖比欧科技",
+   "color": "#FFFFFF"
+  },
+  {
+   "id": "t12",
+   "kind": "text",
+   "box": [
+    484.0,
+    278.0,
+    312.0,
+    46.0
+   ],
+   "font": "BODY",
+   "font_px": 14,
+   "align": "LEFT",
+   "text": "委托规范化加工，严控医疗器械级生产标准与批次一致性（RSD＜3%）。",
+   "color": "#C3D6F2"
+  },
+  {
+   "id": "t13",
+   "kind": "text",
+   "box": [
+    892.0,
+    215.25,
+    92.0,
+    19.5
+   ],
+   "font": "BODY_M",
+   "font_px": 13.5,
+   "align": "CENTER",
+   "text": "下游",
+   "color": "#F2D290"
+  },
+  {
+   "id": "t14",
+   "kind": "text",
+   "box": [
+    994.0,
+    208.0,
+    218.0,
+    30.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 21,
+   "align": "LEFT",
+   "text": "临床应用",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t15",
+   "kind": "text",
+   "box": [
+    894.0,
+    248.0,
+    312.0,
+    24.0
+   ],
+   "font": "BODY_M",
+   "font_px": 15,
+   "align": "LEFT",
+   "text": "海生医疗 · 先健科技",
+   "color": "#FFFFFF"
+  },
+  {
+   "id": "t16",
+   "kind": "text",
+   "box": [
+    894.0,
+    278.0,
+    312.0,
+    46.0
+   ],
+   "font": "BODY",
+   "font_px": 14,
+   "align": "LEFT",
+   "text": "服务造影导管制造企业，直击进口肝素成本高、批次波动、润滑不足痛点。",
+   "color": "#C3D6F2"
+  },
+  {
+   "id": "t17",
+   "kind": "text",
+   "box": [
+    74.0,
+    373.75,
+    360.0,
+    20.5
+   ],
+   "font": "BODY_M",
+   "font_px": 14.5,
+   "align": "CENTER",
+   "text": "谷原焕生 · 单支涂层成本6元（较进口降低60%）",
+   "color": "#F2D290"
+  },
+  {
+   "id": "t18",
+   "kind": "text",
+   "box": [
+    470.0,
+    372.0,
+    740.0,
+    24.0
+   ],
+   "font": "BODY",
+   "font_px": 14,
+   "align": "LEFT",
+   "text": "价值流高效触达客户 → 资金流反哺研发迭代与产能 → 客户数据实时优化体系，技术流·资金流·数据流双向循环。",
+   "color": "#C3D6F2"
+  },
+  {
+   "id": "t19",
+   "kind": "text",
+   "box": [
+    70.0,
+    442.0,
+    40.0,
+    26.0
+   ],
+   "font": "DISP_NUM",
+   "font_px": 20,
+   "align": "CENTER",
+   "text": "①",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t20",
+   "kind": "text",
+   "box": [
+    122.0,
+    442.0,
+    292.0,
+    28.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 20,
+   "align": "LEFT",
+   "text": "价值传递",
+   "color": "#FFFFFF"
+  },
+  {
+   "id": "t21",
+   "kind": "text",
+   "box": [
+    74.0,
+    482.0,
+    336.0,
+    96.0
+   ],
+   "font": "BODY",
+   "font_px": 14,
+   "align": "LEFT",
+   "text": "以项目公司为枢纽构建“上游原料—中游加工—下游应用”闭环生态，客户试用数据实时输入，形成“市场反馈—技术升级—价值强化”动态循环。",
+   "color": "#C3D6F2"
+  },
+  {
+   "id": "t22",
+   "kind": "text",
+   "box": [
+    467.0,
+    442.0,
+    40.0,
+    26.0
+   ],
+   "font": "DISP_NUM",
+   "font_px": 20,
+   "align": "CENTER",
+   "text": "②",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t23",
+   "kind": "text",
+   "box": [
+    519.0,
+    442.0,
+    292.0,
+    28.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 20,
+   "align": "LEFT",
+   "text": "校企赋能",
+   "color": "#FFFFFF"
+  },
+  {
+   "id": "t24",
+   "kind": "text",
+   "box": [
+    471.0,
+    482.0,
+    336.0,
+    96.0
+   ],
+   "font": "BODY",
+   "font_px": 14,
+   "align": "LEFT",
+   "text": "深度依托宁波大学与院士团队，建立“技术共研—验证共担—人才共育”机制；借高校公信力快速建立市场信任，共享实验与检测资源显著降本。",
+   "color": "#C3D6F2"
+  },
+  {
+   "id": "t25",
+   "kind": "text",
+   "box": [
+    864.0,
+    442.0,
+    40.0,
+    26.0
+   ],
+   "font": "DISP_NUM",
+   "font_px": 20,
+   "align": "CENTER",
+   "text": "③",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t26",
+   "kind": "text",
+   "box": [
+    916.0,
+    442.0,
+    292.0,
+    28.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 20,
+   "align": "LEFT",
+   "text": "生态共赢",
+   "color": "#FFFFFF"
+  },
+  {
+   "id": "t27",
+   "kind": "text",
+   "box": [
+    868.0,
+    482.0,
+    336.0,
+    96.0
+   ],
+   "font": "BODY",
+   "font_px": 14,
+   "align": "LEFT",
+   "text": "权责清晰、利益共享，形成抗风险强、迭代快的产业共同体，构筑可持续护城河：",
+   "color": "#C3D6F2"
+  },
+  {
+   "id": "t28",
+   "kind": "text",
+   "box": [
+    868.0,
+    631.75,
+    112.0,
+    18.5
+   ],
+   "font": "BODY_M",
+   "font_px": 12.5,
+   "align": "CENTER",
+   "text": "成本·降本60%",
+   "color": "#7FE9CF"
+  },
+  {
+   "id": "t29",
+   "kind": "text",
+   "box": [
+    988.0,
+    631.75,
+    88.0,
+    18.5
+   ],
+   "font": "BODY_M",
+   "font_px": 12.5,
+   "align": "CENTER",
+   "text": "技术·超进口",
+   "color": "#7FE9CF"
+  },
+  {
+   "id": "t30",
+   "kind": "text",
+   "box": [
+    1084.0,
+    631.75,
+    100.0,
+    18.5
+   ],
+   "font": "BODY_M",
+   "font_px": 12.5,
+   "align": "CENTER",
+   "text": "生态·校企协同",
+   "color": "#7FE9CF"
+  }
+ ]
+}

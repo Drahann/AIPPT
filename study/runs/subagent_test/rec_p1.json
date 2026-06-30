@@ -1,0 +1,47 @@
+{
+ "canvas": [1280, 720],
+ "source": {"design": "reference-driven from liangyao design language (archetype content/market)"},
+ "shapes": [
+  {"id": "title", "kind": "text", "box": [40, 64, 520, 60],
+   "text": "落地前景", "align": "LEFT", "font_px": 48.0, "font": "汉仪雅酷黑W", "color": "#FFFFFF", "bold": true},
+  {"id": "subt", "kind": "text", "box": [42, 122, 700, 28],
+   "text": "产业化基础 · 技术验证与市场认可  (1/3)", "align": "LEFT", "font_px": 19.0, "font": "汉仪粗宋简", "color": "#34D5F1"},
+
+  {"id": "secA_h", "kind": "text", "box": [78, 182, 520, 34],
+   "text": "一、产业化基础与实施条件", "align": "LEFT", "font_px": 27.0, "font": "汉仪雅酷黑简", "color": "#FFFFFF", "bold": true},
+  {"id": "secA_lead", "kind": "text", "box": [78, 220, 540, 28],
+   "text": "项目当前处于小试完成与产业验证筹备关键阶段，产业化基础扎实、路径清晰：", "align": "LEFT", "font_px": 16.0, "font": "汉仪粗宋简", "color": "#CFE0F2"},
+
+  {"id": "A1_h", "kind": "text", "box": [104, 268, 470, 26],
+   "text": "主体与资本筹备", "align": "LEFT", "font_px": 19.0, "font": "汉仪雅酷黑简", "color": "#F2BA02", "bold": true},
+  {"id": "A1_b", "kind": "text", "box": [104, 296, 480, 96],
+   "text": "已完成“宁波谷泽新生生物科技有限公司”主体规划及股权架构设计（创始人持股75%，核心团队合计持股25%），并签署天使投资意向协议，为后续工商注册与运营提供制度与资金保障。", "align": "LEFT", "font_px": 15.0, "font": "汉仪粗宋简", "color": "#FFFFFF"},
+
+  {"id": "A2_h", "kind": "text", "box": [104, 398, 470, 26],
+   "text": "产业链协同布局", "align": "LEFT", "font_px": 19.0, "font": "汉仪雅酷黑简", "color": "#F2BA02", "bold": true},
+  {"id": "A2_b", "kind": "text", "box": [104, 426, 480, 96],
+   "text": "上游锁定中粮集团、安徽顺鑫等优质原料供应商；中游与江西盖比欧科技达成规范代加工合作意向；下游与海生医疗、先健科技等头部企业签订产品试用协议，构建“原料供应—规范加工—临床应用”全链条闭环生态。", "align": "LEFT", "font_px": 15.0, "font": "汉仪粗宋简", "color": "#FFFFFF"},
+
+  {"id": "A3_h", "kind": "text", "box": [104, 528, 470, 26],
+   "text": "近期行动规划", "align": "LEFT", "font_px": 19.0, "font": "汉仪雅酷黑简", "color": "#F2BA02", "bold": true},
+  {"id": "A3_b", "kind": "text", "box": [104, 556, 480, 96],
+   "text": "计划于近期完成工商注册，同步启动GMP标准中试生产线建设，加速推进医用级蛋白涂层的第三方权威检测与首单商业化试产，确保技术成果高效转化为市场产品。", "align": "LEFT", "font_px": 15.0, "font": "汉仪粗宋简", "color": "#FFFFFF"},
+
+  {"id": "secB_h", "kind": "text", "box": [686, 182, 540, 34],
+   "text": "二、技术验证与市场认可度", "align": "LEFT", "font_px": 27.0, "font": "汉仪雅酷黑简", "color": "#FFFFFF", "bold": true},
+  {"id": "secB_lead", "kind": "text", "box": [686, 216, 562, 44],
+   "text": "产品“谷原焕生”大米蛋白医用涂层原料已通过多维度实证验证，获得行业与权威机构高度认可：", "align": "LEFT", "font_px": 15.0, "font": "汉仪粗宋简", "color": "#CFE0F2"},
+
+  {"id": "B1_h", "kind": "text", "box": [712, 266, 500, 26],
+   "text": "头部企业实测反馈", "align": "LEFT", "font_px": 19.0, "font": "汉仪雅酷黑简", "color": "#30C0B4", "bold": true},
+  {"id": "B1a_b", "kind": "text", "box": [712, 296, 506, 78],
+   "text": "（1）海生医疗科技（宁波）针对冠脉造影导管开展系统验证，结果显示产品在湿态摩擦性能、血液相容性、涂层稳定性及抗凝效能等核心指标上全面优于进口肝素涂层，润滑顺滑度与血小板黏附抑制效果显著提升；", "align": "LEFT", "font_px": 14.0, "font": "汉仪粗宋简", "color": "#FFFFFF"},
+  {"id": "B1b_b", "kind": "text", "box": [712, 380, 506, 64],
+   "text": "（2）先健科技（深圳）在外周血管造影导管试用中确认，产品成功实现抗凝与润滑功能协同，单支导管涂层成本优化至6元（较进口肝素涂层15元降低60%），并出具试用合格证明。", "align": "LEFT", "font_px": 14.0, "font": "汉仪粗宋简", "color": "#FFFFFF"},
+
+  {"id": "B2_h", "kind": "text", "box": [712, 470, 500, 26],
+   "text": "权威检测背书", "align": "LEFT", "font_px": 19.0, "font": "汉仪雅酷黑简", "color": "#30C0B4", "bold": true},
+  {"id": "B2_b", "kind": "text", "box": [712, 500, 506, 150],
+   "text": "产品经中国质量检验检测科学研究院、SGS、谱尼测试等具备CNAS与MA资质的机构联合检测，理化指标达行业领先水平，生物安全性卓越，无致病微生物、病毒污染及高致敏原风险，严格符合《医疗器械生物学评价》系列规范与国家医用植入耗材标准，为注册准入与临床推广奠定坚实基础。", "align": "LEFT", "font_px": 14.0, "font": "汉仪粗宋简", "color": "#FFFFFF"}
+ ]
+}

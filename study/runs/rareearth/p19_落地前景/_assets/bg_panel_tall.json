@@ -1,0 +1,17 @@
+{
+ "function": "bg_panel",
+ "family": "blue_tech",
+ "theme": "tech",
+ "palette": "deep navy blue, soft blue glow",
+ "prompt": "a tech translucent tech panel surface, deep navy blue, soft blue glow, subtle, soft edges, horizontal rounded translucent panel, subtle inner glow, thin cyan edge, empty, no text, on dark background, centered, high detail, no text, no words, no letters",
+ "size": "1440*512",
+ "box": "362x96",
+ "composite": "normal",
+ "preserveAspectRatio": "none",
+ "aspect_matched": false,
+ "cropped_to_content": [
+  1440,
+  512
+ ],
+ "render_hint": "place at box with preserveAspectRatio=\"none\", style=\"mix-blend-mode:normal\""
+}

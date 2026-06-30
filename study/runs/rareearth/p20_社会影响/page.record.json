@@ -1,0 +1,606 @@
+{
+ "canvas": [
+  1280,
+  720
+ ],
+ "shapes": [
+  {
+   "id": "t1",
+   "kind": "text",
+   "box": [
+    405.0,
+    48.0,
+    470.0,
+    64.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 52,
+   "align": "CENTER",
+   "text": "社会影响",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t2",
+   "kind": "text",
+   "box": [
+    340.0,
+    112.0,
+    600.0,
+    26.0
+   ],
+   "font": "BODY_M",
+   "font_px": 24,
+   "align": "CENTER",
+   "text": "SOCIAL  IMPACT · 三维社会价值",
+   "color": "#CFE6FF"
+  },
+  {
+   "id": "t3",
+   "kind": "text",
+   "box": [
+    195.0,
+    220.0,
+    92.0,
+    44.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 34,
+   "align": "CENTER",
+   "text": "一",
+   "grad": [
+    "#9DF6FF",
+    "#0BF9FE",
+    "#5EB0FC"
+   ]
+  },
+  {
+   "id": "t4",
+   "kind": "text",
+   "box": [
+    150.0,
+    292.0,
+    260.0,
+    40.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 30,
+   "align": "LEFT",
+   "text": "民生福祉",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t5",
+   "kind": "text",
+   "box": [
+    152.0,
+    326.0,
+    260.0,
+    20.0
+   ],
+   "font": "BODY_M",
+   "font_px": 18,
+   "align": "LEFT",
+   "text": "LIVELIHOOD",
+   "color": "#5EB0FC"
+  },
+  {
+   "id": "t6",
+   "kind": "text",
+   "box": [
+    106.0,
+    350.0,
+    300.0,
+    24.0
+   ],
+   "font": "BODY_B",
+   "font_px": 18,
+   "align": "LEFT",
+   "text": "就业拉动 · 人才提质 · 获得感增强",
+   "color": "#F2D290"
+  },
+  {
+   "id": "t7",
+   "kind": "text",
+   "box": [
+    80.0,
+    390.0,
+    16.0,
+    22.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 18,
+   "align": "LEFT",
+   "text": "▸",
+   "color": "#0BF9FE"
+  },
+  {
+   "id": "t8",
+   "kind": "text",
+   "box": [
+    98.0,
+    390.0,
+    306.0,
+    70.0
+   ],
+   "font": "BODY",
+   "font_px": 18,
+   "align": "LEFT",
+   "text": "直接或间接带动相关行业新增就业约50人，就业拉动效应显著",
+   "color": "#CFE6FF"
+  },
+  {
+   "id": "t9",
+   "kind": "text",
+   "box": [
+    80.0,
+    458.0,
+    16.0,
+    22.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 18,
+   "align": "LEFT",
+   "text": "▸",
+   "color": "#0BF9FE"
+  },
+  {
+   "id": "t10",
+   "kind": "text",
+   "box": [
+    98.0,
+    458.0,
+    306.0,
+    70.0
+   ],
+   "font": "BODY",
+   "font_px": 18,
+   "align": "LEFT",
+   "text": "以萃取剂技术创新弥补工业废弃物资源化人才结构性缺口，系统提升技术能力与职业素养",
+   "color": "#CFE6FF"
+  },
+  {
+   "id": "t11",
+   "kind": "text",
+   "box": [
+    80.0,
+    526.0,
+    16.0,
+    22.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 18,
+   "align": "LEFT",
+   "text": "▸",
+   "color": "#0BF9FE"
+  },
+  {
+   "id": "t12",
+   "kind": "text",
+   "box": [
+    98.0,
+    526.0,
+    306.0,
+    70.0
+   ],
+   "font": "BODY",
+   "font_px": 18,
+   "align": "LEFT",
+   "text": "依托萜类化合物产业链协同，提供技术含量高、成长清晰的岗位，增强职业稳定性与社会认同",
+   "color": "#CFE6FF"
+  },
+  {
+   "id": "t13",
+   "kind": "text",
+   "box": [
+    80.0,
+    594.0,
+    16.0,
+    22.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 18,
+   "align": "LEFT",
+   "text": "▸",
+   "color": "#0BF9FE"
+  },
+  {
+   "id": "t14",
+   "kind": "text",
+   "box": [
+    98.0,
+    594.0,
+    306.0,
+    70.0
+   ],
+   "font": "BODY",
+   "font_px": 18,
+   "align": "LEFT",
+   "text": "产业链价值提升间接优化薪酬结构与社保覆盖，增强劳动者获得感与就业可持续性",
+   "color": "#CFE6FF"
+  },
+  {
+   "id": "t15",
+   "kind": "text",
+   "box": [
+    594.0,
+    220.0,
+    92.0,
+    44.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 34,
+   "align": "CENTER",
+   "text": "二",
+   "grad": [
+    "#9DF6FF",
+    "#0BF9FE",
+    "#5EB0FC"
+   ]
+  },
+  {
+   "id": "t16",
+   "kind": "text",
+   "box": [
+    549.0,
+    292.0,
+    260.0,
+    40.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 30,
+   "align": "LEFT",
+   "text": "社会文明",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t17",
+   "kind": "text",
+   "box": [
+    551.0,
+    326.0,
+    260.0,
+    20.0
+   ],
+   "font": "BODY_M",
+   "font_px": 18,
+   "align": "LEFT",
+   "text": "CIVILIZATION",
+   "color": "#5EB0FC"
+  },
+  {
+   "id": "t18",
+   "kind": "text",
+   "box": [
+    505.0,
+    350.0,
+    300.0,
+    24.0
+   ],
+   "font": "BODY_B",
+   "font_px": 18,
+   "align": "LEFT",
+   "text": "平台协作 · 知识共享 · 包容韧性",
+   "color": "#F2D290"
+  },
+  {
+   "id": "t19",
+   "kind": "text",
+   "box": [
+    479.0,
+    390.0,
+    16.0,
+    22.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 18,
+   "align": "LEFT",
+   "text": "▸",
+   "color": "#0BF9FE"
+  },
+  {
+   "id": "t20",
+   "kind": "text",
+   "box": [
+    497.0,
+    390.0,
+    306.0,
+    70.0
+   ],
+   "font": "BODY",
+   "font_px": 18,
+   "align": "LEFT",
+   "text": "构建\"校—企—产\"多元协作平台，联动新西伯利亚国立大学等开展技术研讨与案例分享",
+   "color": "#CFE6FF"
+  },
+  {
+   "id": "t21",
+   "kind": "text",
+   "box": [
+    479.0,
+    458.0,
+    16.0,
+    22.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 18,
+   "align": "LEFT",
+   "text": "▸",
+   "color": "#0BF9FE"
+  },
+  {
+   "id": "t22",
+   "kind": "text",
+   "box": [
+    497.0,
+    458.0,
+    306.0,
+    70.0
+   ],
+   "font": "BODY",
+   "font_px": 18,
+   "align": "LEFT",
+   "text": "促进科研人员、企业技术骨干、产业工人等不同群体深度交流与知识共享",
+   "color": "#CFE6FF"
+  },
+  {
+   "id": "t23",
+   "kind": "text",
+   "box": [
+    479.0,
+    526.0,
+    16.0,
+    22.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 18,
+   "align": "LEFT",
+   "text": "▸",
+   "color": "#0BF9FE"
+  },
+  {
+   "id": "t24",
+   "kind": "text",
+   "box": [
+    497.0,
+    526.0,
+    306.0,
+    70.0
+   ],
+   "font": "BODY",
+   "font_px": 18,
+   "align": "LEFT",
+   "text": "打破行业壁垒与信息孤岛，推动社会资源优化配置与群体间理解互信",
+   "color": "#CFE6FF"
+  },
+  {
+   "id": "t25",
+   "kind": "text",
+   "box": [
+    479.0,
+    594.0,
+    16.0,
+    22.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 18,
+   "align": "LEFT",
+   "text": "▸",
+   "color": "#0BF9FE"
+  },
+  {
+   "id": "t26",
+   "kind": "text",
+   "box": [
+    497.0,
+    594.0,
+    306.0,
+    70.0
+   ],
+   "font": "BODY",
+   "font_px": 18,
+   "align": "LEFT",
+   "text": "培育开放协作、创新驱动的社会文化，助力社会向包容、协同、韧性方向演进",
+   "color": "#CFE6FF"
+  },
+  {
+   "id": "t27",
+   "kind": "text",
+   "box": [
+    993.0,
+    220.0,
+    92.0,
+    44.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 34,
+   "align": "CENTER",
+   "text": "三",
+   "grad": [
+    "#9DF6FF",
+    "#0BF9FE",
+    "#5EB0FC"
+   ]
+  },
+  {
+   "id": "t28",
+   "kind": "text",
+   "box": [
+    948.0,
+    292.0,
+    260.0,
+    40.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 30,
+   "align": "LEFT",
+   "text": "生态文明",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t29",
+   "kind": "text",
+   "box": [
+    950.0,
+    326.0,
+    260.0,
+    20.0
+   ],
+   "font": "BODY_M",
+   "font_px": 18,
+   "align": "LEFT",
+   "text": "ECOLOGY",
+   "color": "#5EB0FC"
+  },
+  {
+   "id": "t30",
+   "kind": "text",
+   "box": [
+    904.0,
+    350.0,
+    300.0,
+    24.0
+   ],
+   "font": "BODY_B",
+   "font_px": 18,
+   "align": "LEFT",
+   "text": "生产—生活—自然 · 和谐共生",
+   "color": "#F2D290"
+  },
+  {
+   "id": "t31",
+   "kind": "text",
+   "box": [
+    878.0,
+    390.0,
+    16.0,
+    22.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 18,
+   "align": "LEFT",
+   "text": "▸",
+   "color": "#0BF9FE"
+  },
+  {
+   "id": "t32",
+   "kind": "text",
+   "box": [
+    896.0,
+    390.0,
+    306.0,
+    70.0
+   ],
+   "font": "BODY",
+   "font_px": 18,
+   "align": "LEFT",
+   "text": "生产端：高选择性萃取实现废液稀土绿色回收，降排放降消耗，引领清洁化循环化升级",
+   "color": "#CFE6FF"
+  },
+  {
+   "id": "t33",
+   "kind": "text",
+   "box": [
+    878.0,
+    458.0,
+    16.0,
+    22.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 18,
+   "align": "LEFT",
+   "text": "▸",
+   "color": "#0BF9FE"
+  },
+  {
+   "id": "t34",
+   "kind": "text",
+   "box": [
+    896.0,
+    458.0,
+    306.0,
+    70.0
+   ],
+   "font": "BODY",
+   "font_px": 18,
+   "align": "LEFT",
+   "text": "生活端：示范应用强化资源节约与环保认知，引导绿色消费与低碳生活方式",
+   "color": "#CFE6FF"
+  },
+  {
+   "id": "t35",
+   "kind": "text",
+   "box": [
+    878.0,
+    526.0,
+    16.0,
+    22.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 18,
+   "align": "LEFT",
+   "text": "▸",
+   "color": "#0BF9FE"
+  },
+  {
+   "id": "t36",
+   "kind": "text",
+   "box": [
+    896.0,
+    526.0,
+    306.0,
+    70.0
+   ],
+   "font": "BODY",
+   "font_px": 18,
+   "align": "LEFT",
+   "text": "自然端：减少废弃物对土壤、水体危害，助力区域生态修复与生物多样性保护",
+   "color": "#CFE6FF"
+  },
+  {
+   "id": "t37",
+   "kind": "text",
+   "box": [
+    878.0,
+    594.0,
+    16.0,
+    22.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 18,
+   "align": "LEFT",
+   "text": "▸",
+   "color": "#0BF9FE"
+  },
+  {
+   "id": "t38",
+   "kind": "text",
+   "box": [
+    896.0,
+    594.0,
+    306.0,
+    70.0
+   ],
+   "font": "BODY",
+   "font_px": 18,
+   "align": "LEFT",
+   "text": "三端联动构建资源高效、环境友好的可持续闭环，提供可复制的产业实践路径",
+   "color": "#CFE6FF"
+  }
+ ]
+}

@@ -1,0 +1,13 @@
+{
+ "function": "bg_panel",
+ "family": "blue_tech",
+ "theme": "深蓝科技HUD",
+ "palette": "deep navy blue, cyan edge glow, electric blue",
+ "prompt": "a 深蓝科技HUD translucent tech panel surface, deep navy blue, cyan edge glow, electric blue, subtle, soft edges, translucent rounded panel with a brighter top edge and small corner notch, smooth, on dark background, centered, high detail, no text, no words, no letters",
+ "size": "1440*512",
+ "box": "271x82",
+ "composite": "normal",
+ "preserveAspectRatio": "none",
+ "aspect_matched": false,
+ "render_hint": "place at box with preserveAspectRatio=\"none\", style=\"mix-blend-mode:normal\""
+}

@@ -1,0 +1,231 @@
+{
+ "deck_id": "【深蓝版】编号0012科技风互联网加挑战杯通用PPT模板",
+ "canvas": [
+  1280,
+  720
+ ],
+ "theme": {
+  "palette": {
+   "dk1": "#000000",
+   "lt1": "#FFFFFF",
+   "dk2": "#335B74",
+   "lt2": "#DFE3E5",
+   "accent1": "#1CADE4",
+   "accent2": "#2683C6",
+   "accent3": "#27CED7",
+   "accent4": "#FFC000",
+   "accent5": "#FFFF00",
+   "accent6": "#62A39F",
+   "hlink": "#6EAC1C",
+   "folHlink": "#B26B02"
+  },
+  "font_scheme": {
+   "major": [
+    "思源黑体 CN Regular",
+    "思源黑体 CN Bold"
+   ],
+   "minor": [
+    "思源黑体 CN Regular",
+    "思源黑体 CN Regular"
+   ]
+  }
+ },
+ "typography": {
+  "title_family": "思源黑体 CN Bold",
+  "subtitle_family": "思源黑体 CN Bold",
+  "body_family": "思源黑体 CN Bold",
+  "families_seen": [
+   "思源黑体 CN Bold",
+   "思源黑体 CN Regular",
+   "优设标题黑"
+  ],
+  "size_ramp": [
+   19,
+   15,
+   27,
+   32,
+   37,
+   24,
+   21,
+   9,
+   16,
+   13
+  ]
+ },
+ "skin": {
+  "primary": "#FFC000",
+  "accent_cyan": "#27CED7",
+  "bg_deep": "#031252",
+  "text": "#FFFFFF",
+  "text_dim": "#DFE3E5",
+  "accents": [
+   "#FFC000",
+   "#00E5FF",
+   "#061C32",
+   "#1CADE4"
+  ],
+  "palette_measured": [
+   "#FFFFFF",
+   "#27CED7",
+   "#1CADE4",
+   "#FFC000",
+   "#000000",
+   "#62C9FF",
+   "#2683C6",
+   "#DFE3E5",
+   "#00E5FF",
+   "#335B74",
+   "#F2F2F2",
+   "#061C32"
+  ],
+  "bg_samples": [
+   "#061454",
+   "#031252",
+   "#041546",
+   "#041546",
+   "#1F5FAB"
+  ],
+  "backgrounds": [
+   "chrome_bg_7e205983e932.png"
+  ]
+ },
+ "style_desc": "深蓝渐变背景搭配亮黄强调色，极简几何排版，现代商务黑体字，整体风格专业干练。",
+ "render_tags": [
+  "Minimalist",
+  "Corporate",
+  "Modern",
+  "Blue Gradient",
+  "Clean",
+  "Professional"
+ ],
+ "design_system": {
+  "type_ramp": [
+   {
+    "px": 117,
+    "count": 16
+   },
+   {
+    "px": 107,
+    "count": 2
+   },
+   {
+    "px": 59,
+    "count": 2
+   },
+   {
+    "px": 53,
+    "count": 4
+   },
+   {
+    "px": 48,
+    "count": 2
+   },
+   {
+    "px": 43,
+    "count": 27
+   },
+   {
+    "px": 37,
+    "count": 14
+   },
+   {
+    "px": 35,
+    "count": 8
+   }
+  ],
+  "content_margins": {
+   "left": -4.4,
+   "top": 47.5,
+   "right": 12.5,
+   "bottom": -46.5
+  },
+  "common_colors": [
+   "#FFFFFF",
+   "#27CED7",
+   "#1CADE4",
+   "#FFC000",
+   "#000000",
+   "#62C9FF",
+   "#2683C6",
+   "#DFE3E5",
+   "#00E5FF",
+   "#335B74",
+   "#F2F2F2",
+   "#061C32"
+  ],
+  "decos_per_page": 4.3,
+  "common_box_sizes": [
+   {
+    "w": 0,
+    "h": 0,
+    "n": 142
+   },
+   {
+    "w": 0,
+    "h": 20,
+    "n": 100
+   },
+   {
+    "w": 10,
+    "h": 10,
+    "n": 90
+   },
+   {
+    "w": 30,
+    "h": 10,
+    "n": 86
+   },
+   {
+    "w": 50,
+    "h": 60,
+    "n": 76
+   },
+   {
+    "w": 320,
+    "h": 0,
+    "n": 72
+   },
+   {
+    "w": 20,
+    "h": 10,
+    "n": 67
+   },
+   {
+    "w": 50,
+    "h": 50,
+    "n": 56
+   }
+  ]
+ },
+ "chrome_decorations": [],
+ "source_pptx": "W:\\ppt\\挑战杯 互联网+三创赛 创青春 国赛金奖级PPT 模板\\创赛PPT【26年整理】\\黑金深蓝-创赛通用模板AI\\【深蓝版】编号0012科技风互联网加挑战杯通用PPT模板.pptx",
+ "family": "dark_tech",
+ "track": "challenge_cup",
+ "pages": [
+  "dark_tech_9a16b272_p01",
+  "dark_tech_9a16b272_p02",
+  "dark_tech_9a16b272_p03",
+  "dark_tech_9a16b272_p04",
+  "dark_tech_9a16b272_p05",
+  "dark_tech_9a16b272_p06",
+  "dark_tech_9a16b272_p07",
+  "dark_tech_9a16b272_p08",
+  "dark_tech_9a16b272_p09",
+  "dark_tech_9a16b272_p10",
+  "dark_tech_9a16b272_p11",
+  "dark_tech_9a16b272_p12",
+  "dark_tech_9a16b272_p13",
+  "dark_tech_9a16b272_p14",
+  "dark_tech_9a16b272_p15",
+  "dark_tech_9a16b272_p16",
+  "dark_tech_9a16b272_p17",
+  "dark_tech_9a16b272_p18",
+  "dark_tech_9a16b272_p19",
+  "dark_tech_9a16b272_p20",
+  "dark_tech_9a16b272_p21",
+  "dark_tech_9a16b272_p22",
+  "dark_tech_9a16b272_p23",
+  "dark_tech_9a16b272_p24",
+  "dark_tech_9a16b272_p25"
+ ]
+}

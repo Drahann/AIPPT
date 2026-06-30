@@ -1,0 +1,21 @@
+{
+ "function": "motif",
+ "family": "blue_tech",
+ "theme": "科技图标",
+ "palette": "青色 钴蓝 金 发光",
+ "prompt": "a 科技图标 central motif illustration, 青色 钴蓝 金 发光, clean, a glowing line-art icon of people and protective hands, employment and livelihood, community wellbeing, on pure black, single centered emblem, no text, centered, generous size, on pure solid #000000 black background, high detail, no text, no words, no letters",
+ "size": "1280*1280",
+ "box": "140x140",
+ "composite": "normal",
+ "alpha": true,
+ "preserveAspectRatio": "none",
+ "final_size": [
+  1280,
+  1280
+ ],
+ "fill_frac": 1.0,
+ "opaque_frac": 0.051,
+ "stretch_vs_box": 1.0,
+ "warnings": [],
+ "render_hint": "place at box with preserveAspectRatio=\"none\", NORMAL blend (alpha is real)"
+}

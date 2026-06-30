@@ -1,0 +1,1220 @@
+{
+ "canvas": [
+  1280,
+  720
+ ],
+ "shapes": [
+  {
+   "id": "t1",
+   "kind": "text",
+   "box": [
+    108.0,
+    40.0,
+    760.0,
+    62.0
+   ],
+   "font": "DISP_KAI",
+   "font_px": 50,
+   "align": "LEFT",
+   "text": "团队结构",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t2",
+   "kind": "text",
+   "box": [
+    112.0,
+    108.0,
+    820.0,
+    26.0
+   ],
+   "font": "BODY_M",
+   "font_px": 16,
+   "align": "LEFT",
+   "text": "六大领域全链条复合型协作 · 技术研发—产品验证—生产质控—市场转化—财务融资",
+   "color": "#C3D6F2"
+  },
+  {
+   "id": "t3",
+   "kind": "text",
+   "box": [
+    146.0,
+    173.5,
+    120.0,
+    19.0
+   ],
+   "font": "BODY_M",
+   "font_px": 13,
+   "align": "CENTER",
+   "text": "团队负责人",
+   "color": "#F2D290"
+  },
+  {
+   "id": "t4",
+   "kind": "text",
+   "box": [
+    150.0,
+    225.28,
+    112.0,
+    72.8
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 58,
+   "align": "CENTER",
+   "text": "王",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t5",
+   "kind": "text",
+   "box": [
+    56.0,
+    326.0,
+    300.0,
+    38.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 32,
+   "align": "CENTER",
+   "text": "王炯桦",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t6",
+   "kind": "text",
+   "box": [
+    56.0,
+    370.0,
+    300.0,
+    24.0
+   ],
+   "font": "BODY_M",
+   "font_px": 16,
+   "align": "CENTER",
+   "text": "团队负责人 / 拟任法人",
+   "color": "#16C7F0"
+  },
+  {
+   "id": "t7",
+   "kind": "text",
+   "box": [
+    80.0,
+    418.0,
+    80.0,
+    20.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 14,
+   "align": "LEFT",
+   "text": "研究方向",
+   "color": "#16C7F0"
+  },
+  {
+   "id": "t8",
+   "kind": "text",
+   "box": [
+    80.0,
+    439.0,
+    252.0,
+    42.0
+   ],
+   "font": "BODY",
+   "font_px": 15,
+   "align": "LEFT",
+   "text": "医用功能蛋白、生物材料与器械应用研究",
+   "color": "#C3D6F2"
+  },
+  {
+   "id": "t9",
+   "kind": "text",
+   "box": [
+    80.0,
+    476.0,
+    80.0,
+    20.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 14,
+   "align": "LEFT",
+   "text": "核心职责",
+   "color": "#16C7F0"
+  },
+  {
+   "id": "t10",
+   "kind": "text",
+   "box": [
+    80.0,
+    497.0,
+    252.0,
+    42.0
+   ],
+   "font": "BODY",
+   "font_px": 15,
+   "align": "LEFT",
+   "text": "项目统筹、技术路线把控、资源协调与产业化推进",
+   "color": "#C3D6F2"
+  },
+  {
+   "id": "t11",
+   "kind": "text",
+   "box": [
+    80.0,
+    534.0,
+    80.0,
+    20.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 14,
+   "align": "LEFT",
+   "text": "关键成果",
+   "color": "#16C7F0"
+  },
+  {
+   "id": "t12",
+   "kind": "text",
+   "box": [
+    80.0,
+    555.0,
+    252.0,
+    42.0
+   ],
+   "font": "BODY",
+   "font_px": 15,
+   "align": "LEFT",
+   "text": "SCI论文3篇 · 全国大学生生命科学竞赛一等奖",
+   "color": "#F2D290"
+  },
+  {
+   "id": "t13",
+   "kind": "text",
+   "box": [
+    391.0,
+    173.26,
+    54.0,
+    35.1
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 28,
+   "align": "CENTER",
+   "text": "陈",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t14",
+   "kind": "text",
+   "box": [
+    454.0,
+    164.0,
+    184.0,
+    28.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 20,
+   "align": "LEFT",
+   "text": "陈远幸",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t15",
+   "kind": "text",
+   "box": [
+    454.0,
+    198.0,
+    67.0,
+    19.0
+   ],
+   "font": "BODY_M",
+   "font_px": 13,
+   "align": "CENTER",
+   "text": "董事长",
+   "color": "#F2D290"
+  },
+  {
+   "id": "t16",
+   "kind": "text",
+   "box": [
+    394.0,
+    237.0,
+    30.0,
+    18.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 12,
+   "align": "LEFT",
+   "text": "方向",
+   "color": "#16C7F0"
+  },
+  {
+   "id": "t17",
+   "kind": "text",
+   "box": [
+    428.0,
+    236.0,
+    208.0,
+    23.0
+   ],
+   "font": "BODY",
+   "font_px": 13,
+   "align": "LEFT",
+   "text": "临床医学体系建设与诊疗技术创新",
+   "color": "#C3D6F2"
+  },
+  {
+   "id": "t18",
+   "kind": "text",
+   "box": [
+    394.0,
+    263.0,
+    30.0,
+    18.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 12,
+   "align": "LEFT",
+   "text": "职责",
+   "color": "#5B9BFF"
+  },
+  {
+   "id": "t19",
+   "kind": "text",
+   "box": [
+    428.0,
+    262.0,
+    208.0,
+    40.0
+   ],
+   "font": "BODY",
+   "font_px": 13,
+   "align": "LEFT",
+   "text": "战略规划、外部资源协同、临床需求转化",
+   "color": "#C3D6F2"
+  },
+  {
+   "id": "t20",
+   "kind": "text",
+   "box": [
+    394.0,
+    306.0,
+    30.0,
+    18.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 12,
+   "align": "LEFT",
+   "text": "成果",
+   "color": "#F2D290"
+  },
+  {
+   "id": "t21",
+   "kind": "text",
+   "box": [
+    428.0,
+    305.0,
+    208.0,
+    40.0
+   ],
+   "font": "BODY",
+   "font_px": 13,
+   "align": "LEFT",
+   "text": "全国大学生医学创新大赛二等奖 · SCI论文1篇（一作）",
+   "color": "#F2D290"
+  },
+  {
+   "id": "t22",
+   "kind": "text",
+   "box": [
+    677.0,
+    173.26,
+    54.0,
+    35.1
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 28,
+   "align": "CENTER",
+   "text": "盛",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t23",
+   "kind": "text",
+   "box": [
+    740.0,
+    164.0,
+    184.0,
+    28.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 20,
+   "align": "LEFT",
+   "text": "盛宇菲",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t24",
+   "kind": "text",
+   "box": [
+    740.0,
+    198.0,
+    82.0,
+    19.0
+   ],
+   "font": "BODY_M",
+   "font_px": 13,
+   "align": "CENTER",
+   "text": "研发总监",
+   "color": "#F2D290"
+  },
+  {
+   "id": "t25",
+   "kind": "text",
+   "box": [
+    680.0,
+    237.0,
+    30.0,
+    18.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 12,
+   "align": "LEFT",
+   "text": "方向",
+   "color": "#16C7F0"
+  },
+  {
+   "id": "t26",
+   "kind": "text",
+   "box": [
+    714.0,
+    236.0,
+    208.0,
+    23.0
+   ],
+   "font": "BODY",
+   "font_px": 13,
+   "align": "LEFT",
+   "text": "血浆非编码分子检定研究",
+   "color": "#C3D6F2"
+  },
+  {
+   "id": "t27",
+   "kind": "text",
+   "box": [
+    680.0,
+    263.0,
+    30.0,
+    18.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 12,
+   "align": "LEFT",
+   "text": "职责",
+   "color": "#5B9BFF"
+  },
+  {
+   "id": "t28",
+   "kind": "text",
+   "box": [
+    714.0,
+    262.0,
+    208.0,
+    23.0
+   ],
+   "font": "BODY",
+   "font_px": 13,
+   "align": "LEFT",
+   "text": "核心技术研发、实验设计与检测验证",
+   "color": "#C3D6F2"
+  },
+  {
+   "id": "t29",
+   "kind": "text",
+   "box": [
+    680.0,
+    289.0,
+    30.0,
+    18.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 12,
+   "align": "LEFT",
+   "text": "成果",
+   "color": "#F2D290"
+  },
+  {
+   "id": "t30",
+   "kind": "text",
+   "box": [
+    714.0,
+    288.0,
+    208.0,
+    40.0
+   ],
+   "font": "BODY",
+   "font_px": 13,
+   "align": "LEFT",
+   "text": "全国大学生生命科学竞赛三等奖 · SCI论文3篇（一作）",
+   "color": "#F2D290"
+  },
+  {
+   "id": "t31",
+   "kind": "text",
+   "box": [
+    963.0,
+    173.26,
+    54.0,
+    35.1
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 28,
+   "align": "CENTER",
+   "text": "张",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t32",
+   "kind": "text",
+   "box": [
+    1026.0,
+    164.0,
+    184.0,
+    28.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 20,
+   "align": "LEFT",
+   "text": "张津叶",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t33",
+   "kind": "text",
+   "box": [
+    1026.0,
+    198.0,
+    82.0,
+    19.0
+   ],
+   "font": "BODY_M",
+   "font_px": 13,
+   "align": "CENTER",
+   "text": "产品总监",
+   "color": "#F2D290"
+  },
+  {
+   "id": "t34",
+   "kind": "text",
+   "box": [
+    966.0,
+    237.0,
+    30.0,
+    18.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 12,
+   "align": "LEFT",
+   "text": "方向",
+   "color": "#16C7F0"
+  },
+  {
+   "id": "t35",
+   "kind": "text",
+   "box": [
+    1000.0,
+    236.0,
+    208.0,
+    23.0
+   ],
+   "font": "BODY",
+   "font_px": 13,
+   "align": "LEFT",
+   "text": "蛋白质超分子结构构建及性能验证",
+   "color": "#C3D6F2"
+  },
+  {
+   "id": "t36",
+   "kind": "text",
+   "box": [
+    966.0,
+    263.0,
+    30.0,
+    18.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 12,
+   "align": "LEFT",
+   "text": "职责",
+   "color": "#5B9BFF"
+  },
+  {
+   "id": "t37",
+   "kind": "text",
+   "box": [
+    1000.0,
+    262.0,
+    208.0,
+    23.0
+   ],
+   "font": "BODY",
+   "font_px": 13,
+   "align": "LEFT",
+   "text": "产品性能验证与结构优化",
+   "color": "#C3D6F2"
+  },
+  {
+   "id": "t38",
+   "kind": "text",
+   "box": [
+    966.0,
+    289.0,
+    30.0,
+    18.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 12,
+   "align": "LEFT",
+   "text": "成果",
+   "color": "#F2D290"
+  },
+  {
+   "id": "t39",
+   "kind": "text",
+   "box": [
+    1000.0,
+    288.0,
+    208.0,
+    40.0
+   ],
+   "font": "BODY",
+   "font_px": 13,
+   "align": "LEFT",
+   "text": "国家奖学金 · 授权发明专利4项 · SCI论文3篇",
+   "color": "#F2D290"
+  },
+  {
+   "id": "t40",
+   "kind": "text",
+   "box": [
+    391.0,
+    413.26,
+    54.0,
+    35.1
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 28,
+   "align": "CENTER",
+   "text": "徐",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t41",
+   "kind": "text",
+   "box": [
+    454.0,
+    404.0,
+    184.0,
+    28.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 20,
+   "align": "LEFT",
+   "text": "徐悦可",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t42",
+   "kind": "text",
+   "box": [
+    454.0,
+    438.0,
+    82.0,
+    19.0
+   ],
+   "font": "BODY_M",
+   "font_px": 13,
+   "align": "CENTER",
+   "text": "生产经理",
+   "color": "#F2D290"
+  },
+  {
+   "id": "t43",
+   "kind": "text",
+   "box": [
+    394.0,
+    477.0,
+    30.0,
+    18.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 12,
+   "align": "LEFT",
+   "text": "方向",
+   "color": "#16C7F0"
+  },
+  {
+   "id": "t44",
+   "kind": "text",
+   "box": [
+    428.0,
+    476.0,
+    208.0,
+    23.0
+   ],
+   "font": "BODY",
+   "font_px": 13,
+   "align": "LEFT",
+   "text": "医学全链条质量安全管控体系",
+   "color": "#C3D6F2"
+  },
+  {
+   "id": "t45",
+   "kind": "text",
+   "box": [
+    394.0,
+    503.0,
+    30.0,
+    18.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 12,
+   "align": "LEFT",
+   "text": "职责",
+   "color": "#5B9BFF"
+  },
+  {
+   "id": "t46",
+   "kind": "text",
+   "box": [
+    428.0,
+    502.0,
+    208.0,
+    23.0
+   ],
+   "font": "BODY",
+   "font_px": 13,
+   "align": "LEFT",
+   "text": "中试生产、质量控制与生产协同",
+   "color": "#C3D6F2"
+  },
+  {
+   "id": "t47",
+   "kind": "text",
+   "box": [
+    394.0,
+    529.0,
+    30.0,
+    18.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 12,
+   "align": "LEFT",
+   "text": "成果",
+   "color": "#F2D290"
+  },
+  {
+   "id": "t48",
+   "kind": "text",
+   "box": [
+    428.0,
+    528.0,
+    208.0,
+    40.0
+   ],
+   "font": "BODY",
+   "font_px": 13,
+   "align": "LEFT",
+   "text": "省政府奖学金 · SCI论文2篇（一作/二作）",
+   "color": "#F2D290"
+  },
+  {
+   "id": "t49",
+   "kind": "text",
+   "box": [
+    677.0,
+    413.26,
+    54.0,
+    35.1
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 28,
+   "align": "CENTER",
+   "text": "任",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t50",
+   "kind": "text",
+   "box": [
+    740.0,
+    404.0,
+    184.0,
+    28.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 20,
+   "align": "LEFT",
+   "text": "任一帆",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t51",
+   "kind": "text",
+   "box": [
+    740.0,
+    438.0,
+    82.0,
+    19.0
+   ],
+   "font": "BODY_M",
+   "font_px": 13,
+   "align": "CENTER",
+   "text": "市场总监",
+   "color": "#F2D290"
+  },
+  {
+   "id": "t52",
+   "kind": "text",
+   "box": [
+    680.0,
+    477.0,
+    30.0,
+    18.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 12,
+   "align": "LEFT",
+   "text": "方向",
+   "color": "#16C7F0"
+  },
+  {
+   "id": "t53",
+   "kind": "text",
+   "box": [
+    714.0,
+    476.0,
+    208.0,
+    23.0
+   ],
+   "font": "BODY",
+   "font_px": 13,
+   "align": "LEFT",
+   "text": "市场调研与供应链管理",
+   "color": "#C3D6F2"
+  },
+  {
+   "id": "t54",
+   "kind": "text",
+   "box": [
+    680.0,
+    503.0,
+    30.0,
+    18.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 12,
+   "align": "LEFT",
+   "text": "职责",
+   "color": "#5B9BFF"
+  },
+  {
+   "id": "t55",
+   "kind": "text",
+   "box": [
+    714.0,
+    502.0,
+    208.0,
+    23.0
+   ],
+   "font": "BODY",
+   "font_px": 13,
+   "align": "LEFT",
+   "text": "市场调研、客户沟通、渠道拓展",
+   "color": "#C3D6F2"
+  },
+  {
+   "id": "t56",
+   "kind": "text",
+   "box": [
+    680.0,
+    529.0,
+    30.0,
+    18.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 12,
+   "align": "LEFT",
+   "text": "成果",
+   "color": "#F2D290"
+  },
+  {
+   "id": "t57",
+   "kind": "text",
+   "box": [
+    714.0,
+    528.0,
+    208.0,
+    40.0
+   ],
+   "font": "BODY",
+   "font_px": 13,
+   "align": "LEFT",
+   "text": "全国市场调查与分析大赛一等奖 · SCI论文1篇（一作）",
+   "color": "#F2D290"
+  },
+  {
+   "id": "t58",
+   "kind": "text",
+   "box": [
+    963.0,
+    413.26,
+    54.0,
+    35.1
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 28,
+   "align": "CENTER",
+   "text": "邓",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t59",
+   "kind": "text",
+   "box": [
+    1026.0,
+    404.0,
+    184.0,
+    28.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 20,
+   "align": "LEFT",
+   "text": "邓煜婕",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t60",
+   "kind": "text",
+   "box": [
+    1026.0,
+    438.0,
+    82.0,
+    19.0
+   ],
+   "font": "BODY_M",
+   "font_px": 13,
+   "align": "CENTER",
+   "text": "财务总监",
+   "color": "#F2D290"
+  },
+  {
+   "id": "t61",
+   "kind": "text",
+   "box": [
+    966.0,
+    477.0,
+    30.0,
+    18.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 12,
+   "align": "LEFT",
+   "text": "方向",
+   "color": "#16C7F0"
+  },
+  {
+   "id": "t62",
+   "kind": "text",
+   "box": [
+    1000.0,
+    476.0,
+    208.0,
+    23.0
+   ],
+   "font": "BODY",
+   "font_px": 13,
+   "align": "LEFT",
+   "text": "技术经济与管理",
+   "color": "#C3D6F2"
+  },
+  {
+   "id": "t63",
+   "kind": "text",
+   "box": [
+    966.0,
+    503.0,
+    30.0,
+    18.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 12,
+   "align": "LEFT",
+   "text": "职责",
+   "color": "#5B9BFF"
+  },
+  {
+   "id": "t64",
+   "kind": "text",
+   "box": [
+    1000.0,
+    502.0,
+    208.0,
+    40.0
+   ],
+   "font": "BODY",
+   "font_px": 13,
+   "align": "LEFT",
+   "text": "融资测算、财务模型与资本运作体系搭建",
+   "color": "#C3D6F2"
+  },
+  {
+   "id": "t65",
+   "kind": "text",
+   "box": [
+    966.0,
+    546.0,
+    30.0,
+    18.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 12,
+   "align": "LEFT",
+   "text": "成果",
+   "color": "#F2D290"
+  },
+  {
+   "id": "t66",
+   "kind": "text",
+   "box": [
+    1000.0,
+    545.0,
+    208.0,
+    40.0
+   ],
+   "font": "BODY",
+   "font_px": 13,
+   "align": "LEFT",
+   "text": "参与省重点项目 · SCI论文1篇",
+   "color": "#F2D290"
+  },
+  {
+   "id": "t67",
+   "kind": "text",
+   "box": [
+    400.0,
+    622.0,
+    70.0,
+    38.0
+   ],
+   "font": "DISP_NUM",
+   "font_px": 32,
+   "align": "RIGHT",
+   "text": "14",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t68",
+   "kind": "text",
+   "box": [
+    474.0,
+    626.0,
+    30.0,
+    24.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 15,
+   "align": "LEFT",
+   "text": "篇",
+   "color": "#FFFFFF"
+  },
+  {
+   "id": "t69",
+   "kind": "text",
+   "box": [
+    500.0,
+    630.0,
+    150.0,
+    22.0
+   ],
+   "font": "BODY_M",
+   "font_px": 14.5,
+   "align": "LEFT",
+   "text": "累计 SCI 论文",
+   "color": "#C3D6F2"
+  },
+  {
+   "id": "t70",
+   "kind": "text",
+   "box": [
+    650.0,
+    622.0,
+    70.0,
+    38.0
+   ],
+   "font": "DISP_NUM",
+   "font_px": 32,
+   "align": "RIGHT",
+   "text": "4",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t71",
+   "kind": "text",
+   "box": [
+    724.0,
+    626.0,
+    30.0,
+    24.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 15,
+   "align": "LEFT",
+   "text": "项",
+   "color": "#FFFFFF"
+  },
+  {
+   "id": "t72",
+   "kind": "text",
+   "box": [
+    750.0,
+    630.0,
+    150.0,
+    22.0
+   ],
+   "font": "BODY_M",
+   "font_px": 14.5,
+   "align": "LEFT",
+   "text": "授权发明专利",
+   "color": "#C3D6F2"
+  },
+  {
+   "id": "t73",
+   "kind": "text",
+   "box": [
+    900.0,
+    622.0,
+    70.0,
+    38.0
+   ],
+   "font": "DISP_NUM",
+   "font_px": 32,
+   "align": "RIGHT",
+   "text": "7",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t74",
+   "kind": "text",
+   "box": [
+    974.0,
+    626.0,
+    30.0,
+    24.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 15,
+   "align": "LEFT",
+   "text": "项",
+   "color": "#FFFFFF"
+  },
+  {
+   "id": "t75",
+   "kind": "text",
+   "box": [
+    1000.0,
+    630.0,
+    150.0,
+    22.0
+   ],
+   "font": "BODY_M",
+   "font_px": 14.5,
+   "align": "LEFT",
+   "text": "国家级竞赛奖项",
+   "color": "#C3D6F2"
+  },
+  {
+   "id": "t76",
+   "kind": "text",
+   "box": [
+    1156.0,
+    630.0,
+    200.0,
+    22.0
+   ],
+   "font": "BODY",
+   "font_px": 13.5,
+   "align": "LEFT",
+   "text": "六领域能力互补 · 院士团队支撑",
+   "color": "#8FB0DA"
+  }
+ ]
+}

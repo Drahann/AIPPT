@@ -1,0 +1,685 @@
+{
+ "canvas": [
+  1280,
+  720
+ ],
+ "shapes": [
+  {
+   "id": "t1",
+   "kind": "text",
+   "box": [
+    300.0,
+    6.0,
+    680.0,
+    50.0
+   ],
+   "font": "DISP_KAI",
+   "font_px": 52,
+   "align": "CENTER",
+   "text": "落地前景",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t2",
+   "kind": "text",
+   "box": [
+    300.0,
+    52.0,
+    680.0,
+    20.0
+   ],
+   "font": "BODY_M",
+   "font_px": 18,
+   "align": "CENTER",
+   "text": "TIE331萜类化合物辅助稀土金属回收 · 产业落地全景",
+   "color": "#C3D6F2"
+  },
+  {
+   "id": "t3",
+   "kind": "text",
+   "box": [
+    31.0,
+    80.0,
+    48.0,
+    38.0
+   ],
+   "font": "DISP_NUM",
+   "font_px": 20,
+   "align": "CENTER",
+   "text": "01",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t4",
+   "kind": "text",
+   "box": [
+    87.0,
+    76.0,
+    400.0,
+    28.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 24,
+   "align": "LEFT",
+   "text": "产业化实施路径",
+   "color": "#FFFFFF"
+  },
+  {
+   "id": "t5",
+   "kind": "text",
+   "box": [
+    87.0,
+    102.0,
+    500.0,
+    20.0
+   ],
+   "font": "BODY_M",
+   "font_px": 18,
+   "align": "LEFT",
+   "text": "已完成实验室验证 · 具备中试放大条件 · 三阶段推进",
+   "color": "#F2D290"
+  },
+  {
+   "id": "t6",
+   "kind": "text",
+   "box": [
+    35.0,
+    113.0,
+    42.0,
+    34.0
+   ],
+   "font": "DISP_NUM",
+   "font_px": 18,
+   "align": "CENTER",
+   "text": "02",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t7",
+   "kind": "text",
+   "box": [
+    83.0,
+    109.0,
+    200.0,
+    22.0
+   ],
+   "font": "BODY_B",
+   "font_px": 18,
+   "align": "LEFT",
+   "text": "中试验证与标杆突破",
+   "color": "#5B9BFF"
+  },
+  {
+   "id": "t8",
+   "kind": "text",
+   "box": [
+    354.0,
+    109.0,
+    60.0,
+    22.0
+   ],
+   "font": "BODY_M",
+   "font_px": 18,
+   "align": "RIGHT",
+   "text": "第一年",
+   "color": "#F2D290"
+  },
+  {
+   "id": "t9",
+   "kind": "text",
+   "box": [
+    35.0,
+    150.0,
+    379.0,
+    121.0
+   ],
+   "font": "BODY",
+   "font_px": 18,
+   "align": "LEFT",
+   "text": "完成TIE331工艺参数固化与中试放大，对接2家稀土回收领域标杆企业开展小批量试用，验证单级萃取效率（目标回收率≥85%）与工艺适配性，形成可复制的技术实施方案。",
+   "color": "#C3D6F2"
+  },
+  {
+   "id": "t10",
+   "kind": "text",
+   "box": [
+    450.0,
+    113.0,
+    42.0,
+    34.0
+   ],
+   "font": "DISP_NUM",
+   "font_px": 18,
+   "align": "CENTER",
+   "text": "03",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t11",
+   "kind": "text",
+   "box": [
+    498.0,
+    109.0,
+    200.0,
+    22.0
+   ],
+   "font": "BODY_B",
+   "font_px": 18,
+   "align": "LEFT",
+   "text": "产品拓展与网络构建",
+   "color": "#5B9BFF"
+  },
+  {
+   "id": "t12",
+   "kind": "text",
+   "box": [
+    769.0,
+    109.0,
+    60.0,
+    22.0
+   ],
+   "font": "BODY_M",
+   "font_px": 18,
+   "align": "RIGHT",
+   "text": "第二年",
+   "color": "#F2D290"
+  },
+  {
+   "id": "t13",
+   "kind": "text",
+   "box": [
+    450.0,
+    150.0,
+    379.0,
+    121.0
+   ],
+   "font": "BODY",
+   "font_px": 18,
+   "align": "LEFT",
+   "text": "推进TIE332-TIE350系列开发，拓展至3家标杆客户，深化校企协同合作，积累跨场景应用数据，完善\"技术方案+定制服务\"轻资产服务模式。",
+   "color": "#C3D6F2"
+  },
+  {
+   "id": "t14",
+   "kind": "text",
+   "box": [
+    865.0,
+    113.0,
+    42.0,
+    34.0
+   ],
+   "font": "DISP_NUM",
+   "font_px": 18,
+   "align": "CENTER",
+   "text": "04",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t15",
+   "kind": "text",
+   "box": [
+    913.0,
+    109.0,
+    200.0,
+    22.0
+   ],
+   "font": "BODY_B",
+   "font_px": 18,
+   "align": "LEFT",
+   "text": "模式固化与规模预备",
+   "color": "#5B9BFF"
+  },
+  {
+   "id": "t16",
+   "kind": "text",
+   "box": [
+    1184.0,
+    109.0,
+    60.0,
+    22.0
+   ],
+   "font": "BODY_M",
+   "font_px": 18,
+   "align": "RIGHT",
+   "text": "第三年",
+   "color": "#F2D290"
+  },
+  {
+   "id": "t17",
+   "kind": "text",
+   "box": [
+    865.0,
+    150.0,
+    379.0,
+    121.0
+   ],
+   "font": "BODY",
+   "font_px": 18,
+   "align": "LEFT",
+   "text": "完成TIE331-TIE381全系产品矩阵优化，依托客户反馈闭环迭代技术，实现累计销售收入20万元目标，验证商业模式可行性，为规模化复制奠定实证基础与客户资源储备。",
+   "color": "#C3D6F2"
+  },
+  {
+   "id": "t18",
+   "kind": "text",
+   "box": [
+    200.0,
+    300.0,
+    48.0,
+    38.0
+   ],
+   "font": "DISP_NUM",
+   "font_px": 20,
+   "align": "CENTER",
+   "text": "05",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t19",
+   "kind": "text",
+   "box": [
+    35.0,
+    340.0,
+    379.0,
+    28.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 24,
+   "align": "CENTER",
+   "text": "市场推广策略",
+   "color": "#FFFFFF"
+  },
+  {
+   "id": "t20",
+   "kind": "text",
+   "box": [
+    35.0,
+    368.0,
+    379.0,
+    20.0
+   ],
+   "font": "BODY_M",
+   "font_px": 18,
+   "align": "CENTER",
+   "text": "点验证·线链接·面扩散",
+   "color": "#F2D290"
+  },
+  {
+   "id": "t21",
+   "kind": "text",
+   "box": [
+    62.0,
+    398.0,
+    350.0,
+    22.0
+   ],
+   "font": "BODY_B",
+   "font_px": 18,
+   "align": "LEFT",
+   "text": "精准锚定标杆合作",
+   "color": "#5B9BFF"
+  },
+  {
+   "id": "t22",
+   "kind": "text",
+   "box": [
+    37.0,
+    422.0,
+    375.0,
+    98.0
+   ],
+   "font": "BODY",
+   "font_px": 18,
+   "align": "LEFT",
+   "text": "聚焦稀土回收企业及萃取剂生产商，针对单级萃取效率低、溶剂损耗高等痛点，以小批量试用快速验证TIE331产品在回收率提升与成本控制方面的实效，形成可量化合作案例。",
+   "color": "#C3D6F2"
+  },
+  {
+   "id": "t23",
+   "kind": "text",
+   "box": [
+    62.0,
+    524.0,
+    350.0,
+    22.0
+   ],
+   "font": "BODY_B",
+   "font_px": 18,
+   "align": "LEFT",
+   "text": "校企资源协同赋能",
+   "color": "#5B9BFF"
+  },
+  {
+   "id": "t24",
+   "kind": "text",
+   "box": [
+    37.0,
+    548.0,
+    375.0,
+    98.0
+   ],
+   "font": "BODY",
+   "font_px": 18,
+   "align": "LEFT",
+   "text": "联动新西伯利亚国立大学科研平台，举办稀土绿色回收技术研讨会，以实证案例吸引产业链企业参与，建立高意向客户清单，实现技术背书与资源网络双驱动。",
+   "color": "#C3D6F2"
+  },
+  {
+   "id": "t25",
+   "kind": "text",
+   "box": [
+    62.0,
+    650.0,
+    350.0,
+    22.0
+   ],
+   "font": "BODY_B",
+   "font_px": 18,
+   "align": "LEFT",
+   "text": "梯度渗透市场覆盖",
+   "color": "#5B9BFF"
+  },
+  {
+   "id": "t26",
+   "kind": "text",
+   "box": [
+    37.0,
+    674.0,
+    375.0,
+    98.0
+   ],
+   "font": "BODY",
+   "font_px": 18,
+   "align": "LEFT",
+   "text": "立足标杆客户细分领域，通过定向技术分享、行业白皮书、线上直播与专业会议组合策略，推动成功模式向区域及跨应用场景有序复制，稳步扩大市场影响力与品牌认知度。",
+   "color": "#C3D6F2"
+  },
+  {
+   "id": "t27",
+   "kind": "text",
+   "box": [
+    615.0,
+    300.0,
+    48.0,
+    38.0
+   ],
+   "font": "DISP_NUM",
+   "font_px": 20,
+   "align": "CENTER",
+   "text": "06",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t28",
+   "kind": "text",
+   "box": [
+    450.0,
+    340.0,
+    379.0,
+    28.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 24,
+   "align": "CENTER",
+   "text": "综合效益展望",
+   "color": "#FFFFFF"
+  },
+  {
+   "id": "t29",
+   "kind": "text",
+   "box": [
+    450.0,
+    368.0,
+    379.0,
+    20.0
+   ],
+   "font": "BODY_M",
+   "font_px": 18,
+   "align": "CENTER",
+   "text": "经济+社会双重效益",
+   "color": "#F2D290"
+  },
+  {
+   "id": "t30",
+   "kind": "text",
+   "box": [
+    477.0,
+    398.0,
+    350.0,
+    22.0
+   ],
+   "font": "BODY_B",
+   "font_px": 18,
+   "align": "LEFT",
+   "text": "经济效益",
+   "color": "#5B9BFF"
+  },
+  {
+   "id": "t31",
+   "kind": "text",
+   "box": [
+    452.0,
+    422.0,
+    375.0,
+    121.0
+   ],
+   "font": "BODY",
+   "font_px": 18,
+   "align": "LEFT",
+   "text": "轻资产运营模式显著降低初期投入，依托溶剂可循环特性压缩客户侧与项目侧长期成本；三年内验证商业模式可行性，后续通过技术授权、定制服务等高附加值路径提升盈利空间，形成\"销售-反馈-优化\"良性现金流循环。",
+   "color": "#C3D6F2"
+  },
+  {
+   "id": "t32",
+   "kind": "text",
+   "box": [
+    477.0,
+    547.0,
+    350.0,
+    22.0
+   ],
+   "font": "BODY_B",
+   "font_px": 18,
+   "align": "LEFT",
+   "text": "社会效益",
+   "color": "#5B9BFF"
+  },
+  {
+   "id": "t33",
+   "kind": "text",
+   "box": [
+    452.0,
+    571.0,
+    375.0,
+    121.0
+   ],
+   "font": "BODY",
+   "font_px": 18,
+   "align": "LEFT",
+   "text": "推动工业废弃物中稀土资源高效绿色回收，减少环境污染，惠及稀土产业及受污染地区人群；为行业提供可推广的资源化技术方案，助力工艺升级与国家循环经济战略实施，彰显科技赋能可持续发展的社会价值。",
+   "color": "#C3D6F2"
+  },
+  {
+   "id": "t34",
+   "kind": "text",
+   "box": [
+    1030.0,
+    300.0,
+    48.0,
+    38.0
+   ],
+   "font": "DISP_NUM",
+   "font_px": 20,
+   "align": "CENTER",
+   "text": "07",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t35",
+   "kind": "text",
+   "box": [
+    865.0,
+    340.0,
+    379.0,
+    28.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 24,
+   "align": "CENTER",
+   "text": "风险应对机制",
+   "color": "#FFFFFF"
+  },
+  {
+   "id": "t36",
+   "kind": "text",
+   "box": [
+    865.0,
+    368.0,
+    379.0,
+    20.0
+   ],
+   "font": "BODY_M",
+   "font_px": 18,
+   "align": "CENTER",
+   "text": "市场·技术·运营三维防控",
+   "color": "#F2D290"
+  },
+  {
+   "id": "t37",
+   "kind": "text",
+   "box": [
+    892.0,
+    398.0,
+    350.0,
+    22.0
+   ],
+   "font": "BODY_B",
+   "font_px": 18,
+   "align": "LEFT",
+   "text": "市场风险",
+   "color": "#5B9BFF"
+  },
+  {
+   "id": "t38",
+   "kind": "text",
+   "box": [
+    867.0,
+    422.0,
+    375.0,
+    75.0
+   ],
+   "font": "BODY",
+   "font_px": 18,
+   "align": "LEFT",
+   "text": "采用\"精准锚定+梯度扩张\"策略，优先验证高匹配度客户，预留运营资金应对需求波动，动态优化推广节奏。",
+   "color": "#C3D6F2"
+  },
+  {
+   "id": "t39",
+   "kind": "text",
+   "box": [
+    892.0,
+    501.0,
+    350.0,
+    22.0
+   ],
+   "font": "BODY_B",
+   "font_px": 18,
+   "align": "LEFT",
+   "text": "技术风险",
+   "color": "#5B9BFF"
+  },
+  {
+   "id": "t40",
+   "kind": "text",
+   "box": [
+    867.0,
+    525.0,
+    375.0,
+    75.0
+   ],
+   "font": "BODY",
+   "font_px": 18,
+   "align": "LEFT",
+   "text": "依托高校科研平台与中试验证闭环持续优化工艺参数，建立客户反馈实时迭代机制，确保技术与产业需求同步演进。",
+   "color": "#C3D6F2"
+  },
+  {
+   "id": "t41",
+   "kind": "text",
+   "box": [
+    892.0,
+    604.0,
+    350.0,
+    22.0
+   ],
+   "font": "BODY_B",
+   "font_px": 18,
+   "align": "LEFT",
+   "text": "运营风险",
+   "color": "#5B9BFF"
+  },
+  {
+   "id": "t42",
+   "kind": "text",
+   "box": [
+    867.0,
+    628.0,
+    375.0,
+    121.0
+   ],
+   "font": "BODY",
+   "font_px": 18,
+   "align": "LEFT",
+   "text": "核心团队持股激励（融资后合计34.3%）强化长期绑定；专项资金账户与分阶段拨付制度保障资金高效使用；轻资产结构降低固定成本负担，全面提升项目抗风险韧性与可持续发展能力。",
+   "color": "#C3D6F2"
+  },
+  {
+   "id": "t43",
+   "kind": "text",
+   "box": [
+    30.0,
+    706.0,
+    1220.0,
+    18.0
+   ],
+   "font": "BODY_M",
+   "font_px": 18,
+   "align": "CENTER",
+   "text": "TIE331 · 萜类化合物辅助稀土金属回收 · 落地前景规划",
+   "color": "#8FB0DA"
+  }
+ ]
+}

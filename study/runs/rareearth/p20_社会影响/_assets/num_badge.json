@@ -1,0 +1,21 @@
+{
+ "function": "number_backplate",
+ "family": "blue_tech",
+ "theme": "科技HUD",
+ "palette": "青色 钴蓝 金 发光",
+ "prompt": "a 科技HUD glowing ringed disc / hexagon backplate, 青色 钴蓝 金 发光, hollow center, a glowing hexagonal ring badge disc, hollow dark center, concentric tech rings, on pure black, no text, centered, generous size, on pure solid #000000 black background, high detail, no text, no words, no letters",
+ "size": "1280*1280",
+ "box": "96x96",
+ "composite": "normal",
+ "alpha": true,
+ "preserveAspectRatio": "none",
+ "final_size": [
+  1152,
+  1168
+ ],
+ "fill_frac": 0.899,
+ "opaque_frac": 0.443,
+ "stretch_vs_box": 1.014,
+ "warnings": [],
+ "render_hint": "place at box with preserveAspectRatio=\"none\", NORMAL blend (alpha is real)"
+}

@@ -1,0 +1,7 @@
+{
+ "drop_unbound_placeholders": true,
+ "slots": {},
+ "extras": [
+  {"type": "image", "href": "gen/motif.png", "box": [820, 360, 460, 360], "blend": "screen", "opacity": 0.5, "preserve": "xMidYMid slice"}
+ ]
+}

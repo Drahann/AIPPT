@@ -1,0 +1,23 @@
+{
+ "function": "card_frame",
+ "family": "",
+ "theme": "通用",
+ "palette": "dark blue and gold",
+ "prompt": "Full-bleed horizontal card frame panel, deep navy blue tech HUD style, translucent glass panel with subtle blue gradient, thin gold border lines with decorative corner brackets, faint hexagonal mesh texture at edges only, clean empty center for text, no text no letters, premium dark blue and gold tech aesthetic, the whole graphic FILLS THE ENTIRE IMAGE edge to edge, zero margin, full-bleed, on a solid pure black #000000 background, matte, no white background, clean, no text, no words, no letters, IMPORTANT: enlarge the subject to completely fill the frame, no empty black border",
+ "size": "1280*560",
+ "box": "410x180",
+ "composite": "normal",
+ "alpha": true,
+ "preserveAspectRatio": "none",
+ "final_size": [
+  1184,
+  487
+ ],
+ "fill_frac": 0.805,
+ "opaque_frac": 0.189,
+ "stretch_vs_box": 1.067,
+ "warnings": [
+  "LOW-FILL 81% — subject did not fill the frame"
+ ],
+ "render_hint": "place at box with preserveAspectRatio=\"none\", NORMAL blend (alpha is real)"
+}

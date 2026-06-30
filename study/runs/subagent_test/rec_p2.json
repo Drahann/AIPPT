@@ -1,0 +1,180 @@
+{
+ "canvas": [
+  1280,
+  720
+ ],
+ "source": {
+  "design": "reference-driven liangyao; archetype roadmap_3stage (trapezoid stage bands)"
+ },
+ "shapes": [
+  {
+   "id": "title",
+   "kind": "text",
+   "box": [
+    40,
+    64,
+    760,
+    60
+   ],
+   "text": "落地前景",
+   "align": "LEFT",
+   "font_px": 48.0,
+   "font": "汉仪雅酷黑W",
+   "color": "#FFFFFF",
+   "bold": true
+  },
+  {
+   "id": "subt",
+   "kind": "text",
+   "box": [
+    42,
+    120,
+    1180,
+    26
+   ],
+   "text": "三、分阶段实施路径与关键里程碑 · 项目落地严格遵循“验证—中试—注册—量产”逻辑，设定清晰可执行的里程碑  (2/3)",
+   "align": "LEFT",
+   "font_px": 17.0,
+   "font": "汉仪粗宋简",
+   "color": "#34D5F1"
+  },
+  {
+   "id": "S1_tag",
+   "kind": "text",
+   "box": [
+    70,
+    196,
+    360,
+    30
+   ],
+   "text": "短期",
+   "align": "CENTER",
+   "font_px": 30.0,
+   "font": "潮字社曾玉波手书简",
+   "color": "#F2BA02",
+   "bold": true
+  },
+  {
+   "id": "S1_yr",
+   "kind": "text",
+   "box": [
+    70,
+    232,
+    360,
+    26
+   ],
+   "text": "0–6个月",
+   "align": "CENTER",
+   "font_px": 21.0,
+   "font": "汉仪雅酷黑简",
+   "color": "#FFFFFF"
+  },
+  {
+   "id": "S1_b",
+   "kind": "text",
+   "box": [
+    86,
+    300,
+    332,
+    330
+   ],
+   "text": "完成公司注册与GMP中试线建设，同步推进纯化工艺优化及第三方全项检测。",
+   "align": "LEFT",
+   "font_px": 17.0,
+   "font": "汉仪粗宋简",
+   "color": "#FFFFFF"
+  },
+  {
+   "id": "S2_tag",
+   "kind": "text",
+   "box": [
+    460,
+    196,
+    360,
+    30
+   ],
+   "text": "中期",
+   "align": "CENTER",
+   "font_px": 30.0,
+   "font": "潮字社曾玉波手书简",
+   "color": "#F2BA02",
+   "bold": true
+  },
+  {
+   "id": "S2_yr",
+   "kind": "text",
+   "box": [
+    460,
+    232,
+    360,
+    26
+   ],
+   "text": "6–18个月",
+   "align": "CENTER",
+   "font_px": 21.0,
+   "font": "汉仪雅酷黑简",
+   "color": "#FFFFFF"
+  },
+  {
+   "id": "S2_b",
+   "kind": "text",
+   "box": [
+    476,
+    300,
+    332,
+    330
+   ],
+   "text": "取得检测认证报告，启动医疗器械注册申报流程，实现与海生医疗、先健科技等首批客户商业化交付。",
+   "align": "LEFT",
+   "font_px": 17.0,
+   "font": "汉仪粗宋简",
+   "color": "#FFFFFF"
+  },
+  {
+   "id": "S3_tag",
+   "kind": "text",
+   "box": [
+    850,
+    196,
+    360,
+    30
+   ],
+   "text": "长期",
+   "align": "CENTER",
+   "font_px": 30.0,
+   "font": "潮字社曾玉波手书简",
+   "color": "#F2BA02",
+   "bold": true
+  },
+  {
+   "id": "S3_yr",
+   "kind": "text",
+   "box": [
+    850,
+    232,
+    360,
+    26
+   ],
+   "text": "18–36个月",
+   "align": "CENTER",
+   "font_px": 21.0,
+   "font": "汉仪雅酷黑简",
+   "color": "#FFFFFF"
+  },
+  {
+   "id": "S3_b",
+   "kind": "text",
+   "box": [
+    866,
+    300,
+    338,
+    360
+   ],
+   "text": "依托验证成果与成本优势，加速国产涂层原料替代进程，向神经介入、结构性心脏病等高值耗材场景拓展，并通过“区域深耕+行业复制”策略，逐步覆盖长三角、珠三角等血管介入产业集群，形成全国性市场影响力。",
+   "align": "LEFT",
+   "font_px": 17.0,
+   "font": "汉仪粗宋简",
+   "color": "#FFFFFF"
+  }
+ ]
+}

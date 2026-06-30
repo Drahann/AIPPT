@@ -1,0 +1,17 @@
+{
+ "function": "ribbon",
+ "family": "blue_tech",
+ "theme": "tech",
+ "palette": "royal blue, cyan, gold edge",
+ "prompt": "a tech ribbon banner strip, royal blue, cyan, gold edge, subtle glow, horizontal angular tech title ribbon banner, parallelogram chevron ends, glowing edge, empty center, on pure solid black background, centered, high detail, no text, no words, no letters",
+ "size": "1440*512",
+ "box": "300x44",
+ "composite": "screen",
+ "preserveAspectRatio": "none",
+ "aspect_matched": false,
+ "cropped_to_content": [
+  1248,
+  251
+ ],
+ "render_hint": "place at box with preserveAspectRatio=\"none\", style=\"mix-blend-mode:screen\""
+}

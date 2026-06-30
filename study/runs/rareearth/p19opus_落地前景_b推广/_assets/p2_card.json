@@ -1,0 +1,21 @@
+{
+ "function": "card_frame",
+ "family": "blue_tech",
+ "theme": "通用",
+ "palette": "#19E0FF,#04102B",
+ "prompt": "a deep-blue sci-tech vertical card frame, the rectangular frame OCCUPIES THE ENTIRE IMAGE from edge to edge with zero black border: dark navy translucent glass panel, a continuous bright glowing cyan rounded-rectangle border touching all four image edges, notched HUD corners, faint circuit traces inside the border, large dark empty center for text, electric cyan on deep navy, full-bleed, fills the whole canvas, the whole graphic FILLS THE ENTIRE IMAGE edge to edge, zero margin, full-bleed, on a solid pure black #000000 background, matte, no white background, clean, no text, no words, no letters, IMPORTANT: enlarge the subject to completely fill the frame, no empty black border",
+ "size": "1088*1280",
+ "box": "372x440",
+ "composite": "normal",
+ "alpha": true,
+ "preserveAspectRatio": "none",
+ "final_size": [
+  1008,
+  1224
+ ],
+ "fill_frac": 0.89,
+ "opaque_frac": 0.099,
+ "stretch_vs_box": 1.027,
+ "warnings": [],
+ "render_hint": "place at box with preserveAspectRatio=\"none\", NORMAL blend (alpha is real)"
+}

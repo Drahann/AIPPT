@@ -1,0 +1,13 @@
+{
+ "function": "title_flank",
+ "family": "med_blue_white",
+ "theme": "medical molecule wheat sci-fi",
+ "palette": "#00FFFF,#016DFF",
+ "prompt": "a symmetric pair of medical molecule wheat sci-fi decorative ornaments flanking a title, left and right mirrored, #00FFFF,#016DFF glowing, single left-side ornament only, symmetric leaf and hexagon shapes, no central emblem, on pure solid black background, centered, high detail, no text, no words, no letters",
+ "size": "1280*512",
+ "box": "150x60",
+ "composite": "screen",
+ "preserveAspectRatio": "none",
+ "aspect_matched": true,
+ "render_hint": "place at box with preserveAspectRatio=\"none\", style=\"mix-blend-mode:screen\""
+}

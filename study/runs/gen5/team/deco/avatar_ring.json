@@ -1,0 +1,13 @@
+{
+ "function": "avatar_ring",
+ "family": "med_blue_white",
+ "theme": "blue cyan sci-fi HUD portrait ring",
+ "palette": "#15F7F9,#0070C0",
+ "prompt": "a decorative blue cyan sci-fi HUD portrait ring circular portrait frame ring with hollow center, #15F7F9,#0070C0, hollow transparent center, hexagonal tech ring, glowing, on pure solid black background, centered, high detail, no text, no words, no letters",
+ "size": "1280*1280",
+ "box": "130x130",
+ "composite": "screen",
+ "preserveAspectRatio": "none",
+ "aspect_matched": true,
+ "render_hint": "place at box with preserveAspectRatio=\"none\", style=\"mix-blend-mode:screen\""
+}

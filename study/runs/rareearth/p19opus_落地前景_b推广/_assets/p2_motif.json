@@ -1,0 +1,23 @@
+{
+ "function": "motif",
+ "family": "blue_tech",
+ "theme": "通用",
+ "palette": "#19E0FF,#04102B",
+ "prompt": "a glowing deep-blue sci-tech hexagon network node emblem, interconnected hexagons with luminous cyan nodes and thin light circuit lines on pure black background, futuristic technology motif, electric cyan and blue, centered, centered, generous size, drawn in light luminous strokes on a solid pure black #000000 background, no white background, clean, no text, no words, no letters",
+ "size": "1280*1280",
+ "box": "150x150",
+ "composite": "normal",
+ "alpha": true,
+ "preserveAspectRatio": "none",
+ "final_size": [
+  1039,
+  898
+ ],
+ "fill_frac": 0.623,
+ "opaque_frac": 0.28,
+ "stretch_vs_box": 1.157,
+ "warnings": [
+  "STRETCH x1.16 (asset 1.16 vs box 1.00) — placement will distort"
+ ],
+ "render_hint": "place at box with preserveAspectRatio=\"none\", NORMAL blend (alpha is real)"
+}

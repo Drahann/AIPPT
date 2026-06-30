@@ -1,0 +1,303 @@
+{
+ "canvas": [
+  1280,
+  720
+ ],
+ "shapes": [
+  {
+   "id": "t1",
+   "kind": "text",
+   "box": [
+    224.0,
+    22.0,
+    840.0,
+    50.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 46,
+   "align": "LEFT",
+   "text": "落地前景 · 产业化实施路径",
+   "grad": [
+    "#9BFCFF",
+    "#0BF9FE",
+    "#16A8E0"
+   ]
+  },
+  {
+   "id": "t2",
+   "kind": "text",
+   "box": [
+    226.0,
+    78.0,
+    900.0,
+    26.0
+   ],
+   "font": "BODY_M",
+   "font_px": 20,
+   "align": "LEFT",
+   "text": "TIE331 萜类化合物辅助稀土金属回收  ·  三阶段产业化推进路径",
+   "color": "#BFE0F2"
+  },
+  {
+   "id": "t3",
+   "kind": "text",
+   "box": [
+    300.0,
+    116.0,
+    830.0,
+    90.0
+   ],
+   "font": "BODY",
+   "font_px": 20,
+   "align": "LEFT",
+   "text": "项目当前已完成实验室系统验证，技术方案在高酸度、含氟硫等复杂工业废液环境中展现出优异的铈离子选择性萃取能力、两相分离清晰度及溶剂循环稳定性，具备中试放大条件，并据产业验证阶段定位制定三阶段推进路径。",
+   "color": "#BFE0F2"
+  },
+  {
+   "id": "t4",
+   "kind": "text",
+   "box": [
+    122.0,
+    276.0,
+    112.0,
+    58.0
+   ],
+   "font": "DISP_NUM",
+   "font_px": 50,
+   "align": "LEFT",
+   "text": "01",
+   "grad": [
+    "#9BFCFF",
+    "#0BF9FE",
+    "#16A8E0"
+   ]
+  },
+  {
+   "id": "t5",
+   "kind": "text",
+   "box": [
+    222.0,
+    282.0,
+    172.0,
+    26.0
+   ],
+   "font": "BODY_M",
+   "font_px": 19,
+   "align": "LEFT",
+   "text": "推进阶段",
+   "color": "#86B6D8"
+  },
+  {
+   "id": "t6",
+   "kind": "text",
+   "box": [
+    222.0,
+    310.0,
+    172.0,
+    30.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 24,
+   "align": "LEFT",
+   "text": "第一年",
+   "grad": [
+    "#FFFFFF",
+    "#D8ECFB"
+   ]
+  },
+  {
+   "id": "t7",
+   "kind": "text",
+   "box": [
+    114.0,
+    348.0,
+    284.0,
+    30.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 22,
+   "align": "CENTER",
+   "text": "中试验证 · 标杆突破",
+   "color": "#FFFFFF"
+  },
+  {
+   "id": "t8",
+   "kind": "text",
+   "box": [
+    109.0,
+    436.0,
+    294.0,
+    218.0
+   ],
+   "font": "BODY",
+   "font_px": 19,
+   "align": "LEFT",
+   "text": "完成TIE331工艺参数固化与中试放大，对接2家稀土回收领域标杆企业开展小批量试用，验证单级萃取效率（目标回收率≥85%）与工艺适配性，形成可复制的技术实施方案。",
+   "color": "#BFE0F2"
+  },
+  {
+   "id": "t9",
+   "kind": "text",
+   "box": [
+    524.0,
+    246.0,
+    112.0,
+    58.0
+   ],
+   "font": "DISP_NUM",
+   "font_px": 50,
+   "align": "LEFT",
+   "text": "02",
+   "grad": [
+    "#9BFCFF",
+    "#0BF9FE",
+    "#16A8E0"
+   ]
+  },
+  {
+   "id": "t10",
+   "kind": "text",
+   "box": [
+    624.0,
+    252.0,
+    172.0,
+    26.0
+   ],
+   "font": "BODY_M",
+   "font_px": 19,
+   "align": "LEFT",
+   "text": "推进阶段",
+   "color": "#86B6D8"
+  },
+  {
+   "id": "t11",
+   "kind": "text",
+   "box": [
+    624.0,
+    280.0,
+    172.0,
+    30.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 24,
+   "align": "LEFT",
+   "text": "第二年",
+   "grad": [
+    "#FFFFFF",
+    "#D8ECFB"
+   ]
+  },
+  {
+   "id": "t12",
+   "kind": "text",
+   "box": [
+    516.0,
+    318.0,
+    284.0,
+    30.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 22,
+   "align": "CENTER",
+   "text": "产品拓展 · 网络构建",
+   "color": "#FFFFFF"
+  },
+  {
+   "id": "t13",
+   "kind": "text",
+   "box": [
+    511.0,
+    406.0,
+    294.0,
+    218.0
+   ],
+   "font": "BODY",
+   "font_px": 19,
+   "align": "LEFT",
+   "text": "推进TIE332-TIE350系列开发，拓展至3家标杆客户，深化校企协同合作，积累跨场景应用数据，完善“技术方案+定制服务”轻资产服务模式。",
+   "color": "#BFE0F2"
+  },
+  {
+   "id": "t14",
+   "kind": "text",
+   "box": [
+    926.0,
+    216.0,
+    112.0,
+    58.0
+   ],
+   "font": "DISP_NUM",
+   "font_px": 50,
+   "align": "LEFT",
+   "text": "03",
+   "grad": [
+    "#9BFCFF",
+    "#0BF9FE",
+    "#16A8E0"
+   ]
+  },
+  {
+   "id": "t15",
+   "kind": "text",
+   "box": [
+    1026.0,
+    222.0,
+    172.0,
+    26.0
+   ],
+   "font": "BODY_M",
+   "font_px": 19,
+   "align": "LEFT",
+   "text": "推进阶段",
+   "color": "#86B6D8"
+  },
+  {
+   "id": "t16",
+   "kind": "text",
+   "box": [
+    1026.0,
+    250.0,
+    172.0,
+    30.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 24,
+   "align": "LEFT",
+   "text": "第三年",
+   "grad": [
+    "#FFFFFF",
+    "#D8ECFB"
+   ]
+  },
+  {
+   "id": "t17",
+   "kind": "text",
+   "box": [
+    918.0,
+    288.0,
+    284.0,
+    30.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 22,
+   "align": "CENTER",
+   "text": "模式固化 · 规模预备",
+   "color": "#FFFFFF"
+  },
+  {
+   "id": "t18",
+   "kind": "text",
+   "box": [
+    913.0,
+    376.0,
+    294.0,
+    218.0
+   ],
+   "font": "BODY",
+   "font_px": 19,
+   "align": "LEFT",
+   "text": "完成TIE331-TIE381全系产品矩阵优化，依托客户反馈闭环迭代技术，实现累计销售收入20万元目标，验证商业模式可行性，为规模化复制奠定实证基础与客户资源储备。",
+   "color": "#BFE0F2"
+  }
+ ]
+}

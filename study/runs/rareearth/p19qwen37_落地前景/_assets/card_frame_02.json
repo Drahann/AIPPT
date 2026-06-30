@@ -1,0 +1,24 @@
+{
+ "function": "card_frame",
+ "family": "blue_tech",
+ "theme": "通用",
+ "palette": "deep blue, cyan, gold",
+ "prompt": "A sleek tech card frame filling the entire frame edge-to-edge. Dark navy blue translucent panel with dual-line border: outer thin gold line, inner thin cyan line running along all four edges. Small HUD tick marks along top and bottom edges. Diagonal cut corner accent at top-left and bottom-right corners with golden highlight. Subtle circuit pattern at edges only. Center completely empty for text. Full-bleed to all edges, pure black background for alpha keyout., the whole graphic FILLS THE ENTIRE IMAGE edge to edge, zero margin, full-bleed, on a solid pure black #000000 background, matte, no white background, clean, no text, no words, no letters, IMPORTANT: enlarge the subject to completely fill the frame, no empty black border",
+ "size": "1280*1040",
+ "box": "295x240",
+ "composite": "normal",
+ "alpha": true,
+ "preserveAspectRatio": "none",
+ "final_size": [
+  1184,
+  837
+ ],
+ "fill_frac": 0.742,
+ "opaque_frac": 0.054,
+ "stretch_vs_box": 1.151,
+ "warnings": [
+  "STRETCH x1.15 (asset 1.41 vs box 1.23) — placement will distort",
+  "LOW-FILL 74% — subject did not fill the frame"
+ ],
+ "render_hint": "place at box with preserveAspectRatio=\"none\", NORMAL blend (alpha is real)"
+}

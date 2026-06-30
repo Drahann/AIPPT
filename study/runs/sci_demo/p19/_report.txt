@@ -1,0 +1,54 @@
+slide 19/21 | EMU 12192000x6858000 -> 1280x720 | shapes:52 imgs:1
+==============================================================================================================
+sh00 shp[   464, 267   358x 341]
+sh01 shp[   853, 267   358x 341]
+sh02 shp[    74, 267   358x 341]
+sh03 TXT[    69,  91   364x  87]  {字体圈欣意冠黑体 64.0px #FFCD37 CENTER}  <<初创期>>
+sh04 shp[   464, 190   358x  77] flipH
+sh05 TXT[   464, 203   358x  48]  {字体圈欣意冠黑体 32.0px B CENTER}  <<2025-2028>>
+sh06 shp[   853, 190   358x  77] flipH
+sh07 TXT[   853, 203   356x  48]  {字体圈欣意冠黑体 32.0px B CENTER}  <<2029年以后>>
+sh08 TXT[   464,  96   358x  87]  {字体圈欣意冠黑体 64.0px #FFCD37 CENTER}  <<成长期>>
+sh09 TXT[   837,  96   364x  87]  {字体圈欣意冠黑体 64.0px #FFCD37 CENTER}  <<成熟期>>
+sh10 TXT[   488, 278   134x  38]  {OPPOSans R 24.0px B #FFFFFF LEFT}  <<小标题内容>>
+sh11 TXT[   488, 321   322x  29]  {OPPOSans R 18.7px #FFFFFF LEFT}  <<请输入相关文字内容请输入相关文字内>>
+sh12 shp[   490, 359   320x   0]
+sh13 TXT[   489, 368   169x  38]  {OPPOSans R 24.0px B #FFFFFF}  <<小标题内容>>
+sh14 TXT[   489, 412   322x  92]  {OPPOSans R 18.7px #FFFFFF LEFT}  <<请输入相关文字内容请输入相关文 / 内容请输入相关文 / 内容请输入相关文字内容请输入相关>>
+sh15 TXT[   866, 271   142x  38]  {OPPOSans R 24.0px B #FFFFFF LEFT}  <<小标题内容>>
+sh16 TXT[   866, 305   322x  61]  {OPPOSans R 18.7px #FFFFFF LEFT}  <<请输入相关文字内容请输入相关文字内容请输入相关文字内容请输入相关文>>
+sh17 TXT[   866, 371   142x  38]  {OPPOSans R 24.0px B #FFFFFF LEFT}  <<小标题内容>>
+sh18 TXT[   866, 406   322x  61]  {OPPOSans R 18.7px #FFFFFF LEFT}  <<请输入相关文字内容请输入相关文字内容请输入相关文字内>>
+sh19 TXT[   864, 472   153x  38]  {OPPOSans R 24.0px B #FFFFFF LEFT}  <<小标题内容>>
+sh20 TXT[   864, 510   322x  92]  {OPPOSans R 18.7px #FFFFFF LEFT}  <<请输入相关文字内容请输入相关文字内容请输入相关文字内容请输入相关文字内容请输入相关文字内>>
+sh21 TXT[   489, 513   212x  38]  {OPPOSans R 24.0px B #FFFFFF LEFT}  <<小标题内容>>
+sh22 TXT[   489, 556   322x  29]  {OPPOSans R 18.7px #FFFFFF LEFT}  <<请输入相关文字内容请输入相关>>
+sh23 shp[   488, 513   320x   0]
+sh24 shp[   864, 371   320x   0]
+sh25 shp[   868, 472   320x   0]
+sh26 shp[    27,  24  1227x  56] fill=#FFFFFF
+sh27 TXT[   203,  37    97x  29]  {OPPOSans R}  <<产品介绍>>
+sh28 shp[   332,  34     0x  35]
+sh29 TXT[   364,  37    97x  29]  {OPPOSans R}  <<研发历程>>
+sh30 shp[   493,  34     0x  35]
+sh31 shp[   654,  34     0x  35]
+sh32 TXT[   686,  37    97x  29]  {OPPOSans R}  <<商业模式>>
+sh33 TXT[   525,  37    97x  29]  {OPPOSans R}  <<团队简介>>
+sh34 TXT[    40,  37    99x  29]  {OPPOSans R}  <<项目背景>>
+sh35 shp[   170,  34     0x  35]
+sh36 shp[  1201,  30    45x  42]
+sh37 PIC[  1212,  40    23x  23] pic01.png(44x44)
+sh38 TXT[  1028,  27   156x  48]  {字体圈欣意冠黑体 32.0px #03A2FF LEFT}  <<阶段性目标>>
+sh39 TXT[   847,  37    97x  29]  {#03A2FF}  <<未来规划>>
+sh40 shp[   815,  34     0x  35]
+sh41 shp[    75, 190   358x  77] flipH
+sh42 TXT[    69, 203   364x  48]  {字体圈欣意冠黑体 32.0px B CENTER}  <<2024-2025>>
+sh43 TXT[    93, 310   358x  29]  {OPPOSans R 18.7px #FFFFFF LEFT}  <<请输入相关文字内容请输入相关文字内>>
+sh44 TXT[    93, 423   341x  29]  {OPPOSans R 18.7px #FFFFFF LEFT}  <<请输入相关文字内容请输入相关文字内容>>
+sh45 TXT[    93, 508   342x  61]  {OPPOSans R 18.7px #FFFFFF LEFT}  <<请输入相关文字内容请输入相关文字内容请输入相关文字内容请输入>>
+sh46 TXT[    93, 343   206x  29]  {OPPOSans R 18.7px #FFFFFF LEFT}  <<请输入相关文>>
+sh47 shp[    93, 381   320x   0]
+sh48 shp[    93, 464   320x   0]
+sh49 TXT[    93, 273   144x  38]  {OPPOSans R 24.0px B #FFFFFF LEFT}  <<小标题内容>>
+sh50 TXT[    93, 382   144x  38]  {OPPOSans R 24.0px B #FFFFFF LEFT}  <<小标题内容>>
+sh51 TXT[    93, 467   144x  38]  {OPPOSans R 24.0px B #FFFFFF LEFT}  <<小标题内容>>

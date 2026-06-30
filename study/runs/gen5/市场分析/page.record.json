@@ -1,0 +1,709 @@
+{
+ "canvas": [
+  1280,
+  720
+ ],
+ "shapes": [
+  {
+   "id": "t1",
+   "kind": "text",
+   "box": [
+    108.0,
+    40.0,
+    760.0,
+    62.0
+   ],
+   "font": "DISP_KAI",
+   "font_px": 50,
+   "align": "LEFT",
+   "text": "市场分析",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t2",
+   "kind": "text",
+   "box": [
+    112.0,
+    108.0,
+    820.0,
+    26.0
+   ],
+   "font": "BODY_M",
+   "font_px": 16,
+   "align": "LEFT",
+   "text": "血管介入导管涂层 · 高增长细分赛道 · 国产高性能替代窗口期",
+   "color": "#C3D6F2"
+  },
+  {
+   "id": "t3",
+   "kind": "text",
+   "box": [
+    84.0,
+    168.0,
+    400.0,
+    30.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 23,
+   "align": "LEFT",
+   "text": "市场规模 · 高增长赛道",
+   "color": "#FFFFFF"
+  },
+  {
+   "id": "t4",
+   "kind": "text",
+   "box": [
+    84.0,
+    220.0,
+    250.0,
+    22.0
+   ],
+   "font": "BODY_M",
+   "font_px": 15,
+   "align": "LEFT",
+   "text": "全球医用涂层市场",
+   "color": "#16C7F0"
+  },
+  {
+   "id": "t5",
+   "kind": "text",
+   "box": [
+    84.0,
+    251.25,
+    120.0,
+    19.5
+   ],
+   "font": "BODY_M",
+   "font_px": 13.5,
+   "align": "CENTER",
+   "text": "CAGR 10.2%",
+   "color": "#F2D290"
+  },
+  {
+   "id": "t6",
+   "kind": "text",
+   "box": [
+    92.0,
+    369.27272727272725,
+    100.0,
+    26.0
+   ],
+   "font": "DISP_NUM",
+   "font_px": 20,
+   "align": "CENTER",
+   "text": "58",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t7",
+   "kind": "text",
+   "box": [
+    92.0,
+    458.0,
+    100.0,
+    36.0
+   ],
+   "font": "BODY_M",
+   "font_px": 15,
+   "align": "CENTER",
+   "text": "2025",
+   "color": "#C3D6F2"
+  },
+  {
+   "id": "t8",
+   "kind": "text",
+   "box": [
+    192.0,
+    295.6363636363636,
+    100.0,
+    26.0
+   ],
+   "font": "DISP_NUM",
+   "font_px": 20,
+   "align": "CENTER",
+   "text": "139",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t9",
+   "kind": "text",
+   "box": [
+    192.0,
+    458.0,
+    100.0,
+    36.0
+   ],
+   "font": "BODY_M",
+   "font_px": 15,
+   "align": "CENTER",
+   "text": "2035E",
+   "color": "#C3D6F2"
+  },
+  {
+   "id": "t10",
+   "kind": "text",
+   "box": [
+    92.0,
+    470.0,
+    200.0,
+    20.0
+   ],
+   "font": "BODY",
+   "font_px": 13,
+   "align": "CENTER",
+   "text": "单位：亿美元",
+   "color": "#8FB0DA"
+  },
+  {
+   "id": "t11",
+   "kind": "text",
+   "box": [
+    342.0,
+    220.0,
+    250.0,
+    22.0
+   ],
+   "font": "BODY_M",
+   "font_px": 15,
+   "align": "LEFT",
+   "text": "中国抗凝涂层细分",
+   "color": "#16C7F0"
+  },
+  {
+   "id": "t12",
+   "kind": "text",
+   "box": [
+    342.0,
+    251.25,
+    116.0,
+    19.5
+   ],
+   "font": "BODY_M",
+   "font_px": 13.5,
+   "align": "CENTER",
+   "text": "CAGR 5.9%",
+   "color": "#F2D290"
+  },
+  {
+   "id": "t13",
+   "kind": "text",
+   "box": [
+    350.0,
+    338.8181818181818,
+    100.0,
+    26.0
+   ],
+   "font": "DISP_NUM",
+   "font_px": 20,
+   "align": "CENTER",
+   "text": "91.5",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t14",
+   "kind": "text",
+   "box": [
+    350.0,
+    458.0,
+    100.0,
+    36.0
+   ],
+   "font": "BODY_M",
+   "font_px": 15,
+   "align": "CENTER",
+   "text": "2023",
+   "color": "#C3D6F2"
+  },
+  {
+   "id": "t15",
+   "kind": "text",
+   "box": [
+    450.0,
+    297.27272727272725,
+    100.0,
+    26.0
+   ],
+   "font": "DISP_NUM",
+   "font_px": 20,
+   "align": "CENTER",
+   "text": "137.2",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t16",
+   "kind": "text",
+   "box": [
+    450.0,
+    458.0,
+    100.0,
+    36.0
+   ],
+   "font": "BODY_M",
+   "font_px": 15,
+   "align": "CENTER",
+   "text": "2030E",
+   "color": "#C3D6F2"
+  },
+  {
+   "id": "t17",
+   "kind": "text",
+   "box": [
+    350.0,
+    470.0,
+    200.0,
+    20.0
+   ],
+   "font": "BODY",
+   "font_px": 13,
+   "align": "CENTER",
+   "text": "单位：亿元",
+   "color": "#8FB0DA"
+  },
+  {
+   "id": "t18",
+   "kind": "text",
+   "box": [
+    84.0,
+    520.0,
+    162.0,
+    40.0
+   ],
+   "font": "DISP_NUM",
+   "font_px": 34,
+   "align": "CENTER",
+   "text": "＜20%",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t19",
+   "kind": "text",
+   "box": [
+    84.0,
+    566.0,
+    162.0,
+    22.0
+   ],
+   "font": "BODY_M",
+   "font_px": 13.5,
+   "align": "CENTER",
+   "text": "高端涂层国产化率",
+   "color": "#C3D6F2"
+  },
+  {
+   "id": "t20",
+   "kind": "text",
+   "box": [
+    256.0,
+    520.0,
+    162.0,
+    40.0
+   ],
+   "font": "DISP_NUM",
+   "font_px": 34,
+   "align": "CENTER",
+   "text": "＞80%",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t21",
+   "kind": "text",
+   "box": [
+    256.0,
+    566.0,
+    162.0,
+    22.0
+   ],
+   "font": "BODY_M",
+   "font_px": 13.5,
+   "align": "CENTER",
+   "text": "进口肝素市场份额",
+   "color": "#C3D6F2"
+  },
+  {
+   "id": "t22",
+   "kind": "text",
+   "box": [
+    428.0,
+    520.0,
+    162.0,
+    40.0
+   ],
+   "font": "DISP_NUM",
+   "font_px": 34,
+   "align": "CENTER",
+   "text": "+17%",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t23",
+   "kind": "text",
+   "box": [
+    428.0,
+    566.0,
+    162.0,
+    22.0
+   ],
+   "font": "BODY_M",
+   "font_px": 13.5,
+   "align": "CENTER",
+   "text": "创新器械审批增速",
+   "color": "#C3D6F2"
+  },
+  {
+   "id": "t24",
+   "kind": "text",
+   "box": [
+    84.0,
+    612.0,
+    504.0,
+    20.0
+   ],
+   "font": "BODY",
+   "font_px": 12.5,
+   "align": "LEFT",
+   "text": "数据来源：全球医用涂层及中国抗凝涂层细分市场规模测算（项目行业分析）",
+   "color": "#8FB0DA"
+  },
+  {
+   "id": "t25",
+   "kind": "text",
+   "box": [
+    656.0,
+    172.0,
+    42.0,
+    26.0
+   ],
+   "font": "DISP_NUM",
+   "font_px": 20,
+   "align": "CENTER",
+   "text": "①",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t26",
+   "kind": "text",
+   "box": [
+    712.0,
+    172.0,
+    494.0,
+    28.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 20,
+   "align": "LEFT",
+   "text": "结构性机会与痛点",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t27",
+   "kind": "text",
+   "box": [
+    660.0,
+    208.0,
+    544.0,
+    86.0
+   ],
+   "font": "BODY",
+   "font_px": 14.5,
+   "align": "LEFT",
+   "text": "高端造影导管长期依赖进口动物源肝素，国产化率偏低；现有方案普遍存在血源安全风险、成本高企、功能单一、批次稳定性不足。集采深化与供应链安全战略下，复合型国产涂层需求迫切。",
+   "color": "#C3D6F2"
+  },
+  {
+   "id": "t28",
+   "kind": "text",
+   "box": [
+    660.0,
+    275.25,
+    88.0,
+    19.5
+   ],
+   "font": "BODY_M",
+   "font_px": 13.5,
+   "align": "CENTER",
+   "text": "国产化率低",
+   "color": "#CFE0F2"
+  },
+  {
+   "id": "t29",
+   "kind": "text",
+   "box": [
+    756.0,
+    275.25,
+    74.0,
+    19.5
+   ],
+   "font": "BODY_M",
+   "font_px": 13.5,
+   "align": "CENTER",
+   "text": "血源风险",
+   "color": "#CFE0F2"
+  },
+  {
+   "id": "t30",
+   "kind": "text",
+   "box": [
+    838.0,
+    275.25,
+    74.0,
+    19.5
+   ],
+   "font": "BODY_M",
+   "font_px": 13.5,
+   "align": "CENTER",
+   "text": "成本高企",
+   "color": "#CFE0F2"
+  },
+  {
+   "id": "t31",
+   "kind": "text",
+   "box": [
+    920.0,
+    275.25,
+    74.0,
+    19.5
+   ],
+   "font": "BODY_M",
+   "font_px": 13.5,
+   "align": "CENTER",
+   "text": "功能单一",
+   "color": "#CFE0F2"
+  },
+  {
+   "id": "t32",
+   "kind": "text",
+   "box": [
+    656.0,
+    338.0,
+    42.0,
+    26.0
+   ],
+   "font": "DISP_NUM",
+   "font_px": 20,
+   "align": "CENTER",
+   "text": "②",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t33",
+   "kind": "text",
+   "box": [
+    712.0,
+    338.0,
+    494.0,
+    28.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 20,
+   "align": "LEFT",
+   "text": "谷原焕生精准契合",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t34",
+   "kind": "text",
+   "box": [
+    660.0,
+    374.0,
+    544.0,
+    86.0
+   ],
+   "font": "BODY",
+   "font_px": 14.5,
+   "align": "LEFT",
+   "text": "植物源大米蛋白基材从根本规避动物源风险，低致敏、无病毒隐患；工艺创新实现抗凝、润滑、成膜稳定多重功能一体化集成，弥补现有涂层功能割裂；同步显著优化成本结构。",
+   "color": "#C3D6F2"
+  },
+  {
+   "id": "t35",
+   "kind": "text",
+   "box": [
+    660.0,
+    441.25,
+    88.0,
+    19.5
+   ],
+   "font": "BODY_M",
+   "font_px": 13.5,
+   "align": "CENTER",
+   "text": "植物源安全",
+   "color": "#CFE0F2"
+  },
+  {
+   "id": "t36",
+   "kind": "text",
+   "box": [
+    756.0,
+    441.25,
+    88.0,
+    19.5
+   ],
+   "font": "BODY_M",
+   "font_px": 13.5,
+   "align": "CENTER",
+   "text": "多功能集成",
+   "color": "#CFE0F2"
+  },
+  {
+   "id": "t37",
+   "kind": "text",
+   "box": [
+    852.0,
+    441.25,
+    74.0,
+    19.5
+   ],
+   "font": "BODY_M",
+   "font_px": 13.5,
+   "align": "CENTER",
+   "text": "成本优化",
+   "color": "#CFE0F2"
+  },
+  {
+   "id": "t38",
+   "kind": "text",
+   "box": [
+    656.0,
+    504.0,
+    42.0,
+    26.0
+   ],
+   "font": "DISP_NUM",
+   "font_px": 20,
+   "align": "CENTER",
+   "text": "③",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t39",
+   "kind": "text",
+   "box": [
+    712.0,
+    504.0,
+    494.0,
+    28.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 20,
+   "align": "LEFT",
+   "text": "战略机会与结论",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t40",
+   "kind": "text",
+   "box": [
+    660.0,
+    540.0,
+    544.0,
+    106.0
+   ],
+   "font": "BODY",
+   "font_px": 14.5,
+   "align": "LEFT",
+   "text": "立足血管介入导管涂层高增长细分领域，以植物源非药物抗凝技术直击行业瓶颈，填补国产高性能涂层原料空白。在国产替代加速与创新器械审批提速的政策环境下，随中试验证推进与注册路径明晰，有望快速切入高端耗材供应链，在国产替代浪潮中把握市场先机。",
+   "color": "#C3D6F2"
+  },
+  {
+   "id": "t41",
+   "kind": "text",
+   "box": [
+    660.0,
+    627.25,
+    102.0,
+    19.5
+   ],
+   "font": "BODY_M",
+   "font_px": 13.5,
+   "align": "CENTER",
+   "text": "填补国产空白",
+   "color": "#CFE0F2"
+  },
+  {
+   "id": "t42",
+   "kind": "text",
+   "box": [
+    770.0,
+    627.25,
+    74.0,
+    19.5
+   ],
+   "font": "BODY_M",
+   "font_px": 13.5,
+   "align": "CENTER",
+   "text": "政策驱动",
+   "color": "#CFE0F2"
+  },
+  {
+   "id": "t43",
+   "kind": "text",
+   "box": [
+    852.0,
+    627.25,
+    102.0,
+    19.5
+   ],
+   "font": "BODY_M",
+   "font_px": 13.5,
+   "align": "CENTER",
+   "text": "把握替代先机",
+   "color": "#CFE0F2"
+  }
+ ]
+}

@@ -1,0 +1,92 @@
+slide 14/21 | EMU 12192000x6858000 -> 1280x720 | shapes:90 imgs:7
+==============================================================================================================
+sh00 PIC[    37, 135   196x 266] pic01.png(1200x1800)
+sh01 shp[    35, 403   200x 202]
+sh02 shp[    27,  24  1227x  56] fill=#FFFFFF
+sh03 TXT[   203,  37    97x  29]  {OPPOSans R}  <<产品介绍>>
+sh04 shp[   332,  34     0x  35]
+sh05 TXT[   364,  37    97x  29]  {OPPOSans R}  <<研发历程>>
+sh06 shp[   493,  34     0x  35]
+sh07 shp[   654,  34     0x  35]
+sh08 TXT[   686,  37    97x  29]  {OPPOSans R 24.0px B #ADACAC CENTER}  <<商业模式>>
+sh09 TXT[   525,  37    97x  29]  {#03A2FF}  <<团队简介>>
+sh10 TXT[    40,  37    99x  29]  {OPPOSans R}  <<项目背景>>
+sh11 shp[   170,  34     0x  35]
+sh12 shp[  1201,  30    45x  42]
+sh13 PIC[  1212,  40    23x  23] pic02.png(44x44)
+sh14 TXT[  1046,  27   129x  48]  {字体圈欣意冠黑体 32.0px #03A2FF LEFT}  <<专家顾问>>
+sh15 TXT[   847,  37    97x  29]  {OPPOSans R 24.0px B #ADACAC CENTER}  <<未来规划>>
+sh16 shp[   815,  34     0x  35]
+sh17 shp[    33, 202     0x 413]
+sh18 shp[   -28, 369   159x  32] rot90.0
+sh19 TXT[    32, 315    31x 123]  {OPPOSans H 18.7px LEFT}  <<请输入职业>>
+sh20 TXT[    62, 403   109x  39]  {OPPOSans H grad['#00FFFF', '#03A2FF'] LEFT}  <<XXX>>
+sh21 TXT[    63, 440   174x  66]  {OPPOSans R 18.7px #FFFFFF LEFT}  <<请输入此人物在行业内的主要成就>>
+sh22 shp[   150, 413    22x  22] rot90.0 fill=#00FFFF
+sh23 shp[   164, 413    22x  22] rot90.0 fill=#00FFFF
+sh24 shp[   178, 413    22x  22] rot90.0 fill=#00FFFF
+sh25 shp[    67, 403   134x   0]
+sh26 shp[   203, 403    26x   0]
+sh27 TXT[    64, 510   174x  66]  {OPPOSans R 18.7px #FFFFFF LEFT}  <<请输入此人物在行业内的主要成就>>
+sh28 PIC[   238, 182   196x 266] pic03.png(1200x1800)
+sh29 shp[   236, 450   200x 202]
+sh30 shp[   234, 250     0x 413]
+sh31 shp[   173, 417   159x  32] rot90.0
+sh32 TXT[   232, 363    31x 123]  {OPPOSans H 18.7px LEFT}  <<请输入职业>>
+sh33 TXT[   263, 451   109x  39]  {OPPOSans H grad['#00FFFF', '#03A2FF'] LEFT}  <<XXX>>
+sh34 TXT[   264, 487   174x  66]  {OPPOSans R 18.7px #FFFFFF LEFT}  <<请输入此人物在行业内的主要成就>>
+sh35 shp[   351, 460    22x  22] rot90.0 fill=#00FFFF
+sh36 shp[   365, 460    22x  22] rot90.0 fill=#00FFFF
+sh37 shp[   379, 460    22x  22] rot90.0 fill=#00FFFF
+sh38 shp[   268, 451   134x   0]
+sh39 TXT[   265, 557   174x  66]  {OPPOSans R 18.7px #FFFFFF LEFT}  <<请输入此人物在行业内的主要成就>>
+sh40 PIC[   444, 135   196x 266] pic04.png(1200x1800)
+sh41 shp[   443, 403   200x 202]
+sh42 shp[   441, 202     0x 413]
+sh43 shp[   380, 369   159x  32] rot90.0
+sh44 TXT[   439, 315    31x 123]  {OPPOSans H 18.7px LEFT}  <<请输入职业>>
+sh45 TXT[   470, 403   109x  39]  {OPPOSans H grad['#00FFFF', '#03A2FF'] LEFT}  <<XXX>>
+sh46 TXT[   471, 440   174x  66]  {OPPOSans R 18.7px #FFFFFF LEFT}  <<请输入此人物在行业内的主要成就>>
+sh47 shp[   558, 413    22x  22] rot90.0 fill=#00FFFF
+sh48 shp[   572, 413    22x  22] rot90.0 fill=#00FFFF
+sh49 shp[   586, 413    22x  22] rot90.0 fill=#00FFFF
+sh50 shp[   475, 403   134x   0]
+sh51 shp[   610, 403    26x   0]
+sh52 TXT[   472, 510   174x  66]  {OPPOSans R 18.7px #FFFFFF LEFT}  <<请输入此人物在行业内的主要成就>>
+sh53 PIC[   645, 182   196x 266] pic05.png(1200x1800)
+sh54 shp[   644, 450   200x 202]
+sh55 shp[   642, 250     0x 413]
+sh56 shp[   581, 417   159x  32] rot90.0
+sh57 TXT[   640, 363    31x 123]  {OPPOSans H 18.7px LEFT}  <<请输入职业>>
+sh58 TXT[   671, 451   109x  39]  {OPPOSans H grad['#00FFFF', '#03A2FF'] LEFT}  <<XXX>>
+sh59 TXT[   672, 487   174x  66]  {OPPOSans R 18.7px #FFFFFF LEFT}  <<请输入此人物在行业内的主要成就>>
+sh60 shp[   758, 460    22x  22] rot90.0 fill=#00FFFF
+sh61 shp[   772, 460    22x  22] rot90.0 fill=#00FFFF
+sh62 shp[   786, 460    22x  22] rot90.0 fill=#00FFFF
+sh63 shp[   676, 451   134x   0]
+sh64 TXT[   673, 557   174x  66]  {OPPOSans R 18.7px #FFFFFF LEFT}  <<请输入此人物在行业内的主要成就>>
+sh65 PIC[   847, 135   196x 266] pic06.png(1200x1800)
+sh66 shp[   846, 403   200x 202]
+sh67 shp[   844, 202     0x 413]
+sh68 shp[   783, 369   159x  32] rot90.0
+sh69 TXT[   842, 315    31x 123]  {OPPOSans H 18.7px LEFT}  <<请输入职业>>
+sh70 TXT[   873, 403   109x  39]  {OPPOSans H grad['#00FFFF', '#03A2FF'] LEFT}  <<XXX>>
+sh71 TXT[   874, 440   174x  66]  {OPPOSans R 18.7px #FFFFFF LEFT}  <<请输入此人物在行业内的主要成就>>
+sh72 shp[   961, 413    22x  22] rot90.0 fill=#00FFFF
+sh73 shp[   975, 413    22x  22] rot90.0 fill=#00FFFF
+sh74 shp[   989, 413    22x  22] rot90.0 fill=#00FFFF
+sh75 shp[   878, 403   134x   0]
+sh76 shp[  1013, 403    26x   0]
+sh77 TXT[   875, 510   174x  66]  {OPPOSans R 18.7px #FFFFFF LEFT}  <<请输入此人物在行业内的主要成就>>
+sh78 PIC[  1048, 182   196x 266] pic07.png(1200x1800)
+sh79 shp[  1047, 450   200x 202]
+sh80 shp[  1045, 250     0x 413]
+sh81 shp[   984, 417   159x  32] rot90.0
+sh82 TXT[  1043, 363    31x 123]  {OPPOSans H 18.7px LEFT}  <<请输入职业>>
+sh83 TXT[  1074, 451   109x  39]  {OPPOSans H grad['#00FFFF', '#03A2FF'] LEFT}  <<XXX>>
+sh84 TXT[  1075, 487   174x  66]  {OPPOSans R 18.7px #FFFFFF LEFT}  <<请输入此人物在行业内的主要成就>>
+sh85 shp[  1162, 460    22x  22] rot90.0 fill=#00FFFF
+sh86 shp[  1176, 460    22x  22] rot90.0 fill=#00FFFF
+sh87 shp[  1190, 460    22x  22] rot90.0 fill=#00FFFF
+sh88 shp[  1079, 451   134x   0]
+sh89 TXT[  1076, 557   174x  66]  {OPPOSans R 18.7px #FFFFFF LEFT}  <<请输入此人物在行业内的主要成就>>

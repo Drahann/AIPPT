@@ -1,0 +1,21 @@
+{
+ "function": "card_frame",
+ "family": "blue_tech",
+ "theme": "通用",
+ "palette": "deep blue, gold, cyan",
+ "prompt": "A full-bleed high-tech HUD card frame for rare-earth recovery project. Deep navy blue semi-transparent panel filling entire frame edge-to-edge, thin golden border lines along all four edges, small cyan L-shaped corner brackets at all four corners, subtle grid texture at border area only, center completely empty for text. Panel extends fully to all edges with zero margin. Pure black background for alpha keyout., the whole graphic FILLS THE ENTIRE IMAGE edge to edge, zero margin, full-bleed, on a solid pure black #000000 background, matte, no white background, clean, no text, no words, no letters",
+ "size": "1280*1200",
+ "box": "300x280",
+ "composite": "normal",
+ "alpha": true,
+ "preserveAspectRatio": "none",
+ "final_size": [
+  1205,
+  1148
+ ],
+ "fill_frac": 0.868,
+ "opaque_frac": 0.025,
+ "stretch_vs_box": 1.021,
+ "warnings": [],
+ "render_hint": "place at box with preserveAspectRatio=\"none\", NORMAL blend (alpha is real)"
+}

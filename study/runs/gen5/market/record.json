@@ -1,0 +1,55 @@
+{
+  "canvas": [1280, 720],
+  "shapes": [
+    {"id": "title", "kind": "text", "box": [430, 24, 420, 40], "font": "DISP_TITLE", "font_px": 30, "color": "#FFFFFF", "align": "CENTER"},
+    {"id": "subtitle", "kind": "text", "box": [430, 64, 420, 20], "font": "BODY_M", "font_px": 14, "color": "#15F7F9", "align": "CENTER"},
+
+    {"id": "ch_dim", "kind": "text", "box": [78, 150, 150, 28], "font": "BODY_B", "font_px": 15, "color": "#BEF6F9", "align": "CENTER"},
+    {"id": "ch_p1", "kind": "text", "box": [228, 150, 162, 28], "font": "BODY_B", "font_px": 15, "color": "#FFFFFF", "align": "CENTER"},
+    {"id": "ch_p2", "kind": "text", "box": [390, 150, 162, 28], "font": "BODY_B", "font_px": 15, "color": "#FFFFFF", "align": "CENTER"},
+    {"id": "ch_p3", "kind": "text", "box": [552, 150, 162, 28], "font": "BODY_B", "font_px": 15, "color": "#FFFFFF", "align": "CENTER"},
+    {"id": "ch_p4", "kind": "text", "box": [714, 150, 188, 28], "font": "BODY_B", "font_px": 15, "color": "#0A1F3C", "align": "CENTER"},
+
+    {"id": "r1_dim", "kind": "text", "box": [78, 196, 150, 56], "font": "BODY_B", "font_px": 14, "color": "#15F7F9", "align": "CENTER"},
+    {"id": "r1_p1", "kind": "text", "box": [230, 196, 158, 56], "font": "BODY", "font_px": 13, "color": "#D8E6F5", "align": "CENTER"},
+    {"id": "r1_p2", "kind": "text", "box": [392, 196, 158, 56], "font": "BODY", "font_px": 13, "color": "#D8E6F5", "align": "CENTER"},
+    {"id": "r1_p3", "kind": "text", "box": [554, 196, 158, 56], "font": "BODY", "font_px": 13, "color": "#D8E6F5", "align": "CENTER"},
+    {"id": "r1_p4", "kind": "text", "box": [716, 196, 184, 56], "font": "BODY_B", "font_px": 13, "color": "#FFFFFF", "align": "CENTER"},
+
+    {"id": "r2_dim", "kind": "text", "box": [78, 268, 150, 56], "font": "BODY_B", "font_px": 14, "color": "#15F7F9", "align": "CENTER"},
+    {"id": "r2_p1", "kind": "text", "box": [230, 268, 158, 56], "font": "BODY", "font_px": 13, "color": "#D8E6F5", "align": "CENTER"},
+    {"id": "r2_p2", "kind": "text", "box": [392, 268, 158, 56], "font": "BODY", "font_px": 13, "color": "#D8E6F5", "align": "CENTER"},
+    {"id": "r2_p3", "kind": "text", "box": [554, 268, 158, 56], "font": "BODY", "font_px": 13, "color": "#D8E6F5", "align": "CENTER"},
+    {"id": "r2_p4", "kind": "text", "box": [716, 268, 184, 56], "font": "BODY_B", "font_px": 13, "color": "#FFFFFF", "align": "CENTER"},
+
+    {"id": "r3_dim", "kind": "text", "box": [78, 340, 150, 56], "font": "BODY_B", "font_px": 14, "color": "#15F7F9", "align": "CENTER"},
+    {"id": "r3_p1", "kind": "text", "box": [230, 340, 158, 56], "font": "BODY", "font_px": 13, "color": "#D8E6F5", "align": "CENTER"},
+    {"id": "r3_p2", "kind": "text", "box": [392, 340, 158, 56], "font": "BODY", "font_px": 13, "color": "#D8E6F5", "align": "CENTER"},
+    {"id": "r3_p3", "kind": "text", "box": [554, 340, 158, 56], "font": "BODY", "font_px": 13, "color": "#D8E6F5", "align": "CENTER"},
+    {"id": "r3_p4", "kind": "text", "box": [716, 340, 184, 56], "font": "BODY_B", "font_px": 13, "color": "#FFFFFF", "align": "CENTER"},
+
+    {"id": "r4_dim", "kind": "text", "box": [78, 412, 150, 56], "font": "BODY_B", "font_px": 14, "color": "#15F7F9", "align": "CENTER"},
+    {"id": "r4_p1", "kind": "text", "box": [230, 412, 158, 56], "font": "BODY", "font_px": 13, "color": "#D8E6F5", "align": "CENTER"},
+    {"id": "r4_p2", "kind": "text", "box": [392, 412, 158, 56], "font": "BODY", "font_px": 13, "color": "#D8E6F5", "align": "CENTER"},
+    {"id": "r4_p3", "kind": "text", "box": [554, 412, 158, 56], "font": "BODY", "font_px": 13, "color": "#D8E6F5", "align": "CENTER"},
+    {"id": "r4_p4", "kind": "text", "box": [716, 412, 184, 56], "font": "BODY_B", "font_px": 13, "color": "#FFFFFF", "align": "CENTER"},
+
+    {"id": "concl", "kind": "text", "box": [78, 500, 824, 96], "font": "BODY", "font_px": 14, "color": "#CFE0F2", "align": "LEFT"},
+
+    {"id": "rt1_t", "kind": "text", "box": [960, 92, 300, 24], "font": "BODY_B", "font_px": 16, "color": "#15F7F9", "align": "LEFT"},
+    {"id": "rt1_b", "kind": "text", "box": [960, 116, 300, 40], "font": "BODY", "font_px": 12, "color": "#CFE0F2", "align": "LEFT"},
+    {"id": "rt2_t", "kind": "text", "box": [960, 192, 300, 24], "font": "BODY_B", "font_px": 16, "color": "#15F7F9", "align": "LEFT"},
+    {"id": "rt2_b", "kind": "text", "box": [960, 216, 300, 40], "font": "BODY", "font_px": 12, "color": "#CFE0F2", "align": "LEFT"},
+    {"id": "rt3_t", "kind": "text", "box": [960, 292, 300, 24], "font": "BODY_B", "font_px": 16, "color": "#15F7F9", "align": "LEFT"},
+    {"id": "rt3_b", "kind": "text", "box": [960, 316, 300, 40], "font": "BODY", "font_px": 12, "color": "#CFE0F2", "align": "LEFT"},
+    {"id": "rt4_t", "kind": "text", "box": [960, 392, 300, 24], "font": "BODY_B", "font_px": 16, "color": "#15F7F9", "align": "LEFT"},
+    {"id": "rt4_b", "kind": "text", "box": [960, 416, 300, 40], "font": "BODY", "font_px": 12, "color": "#CFE0F2", "align": "LEFT"},
+
+    {"id": "rt_head", "kind": "text", "box": [930, 56, 330, 24], "font": "BODY_B", "font_px": 14, "color": "#FFC000", "align": "LEFT"},
+
+    {"id": "n1", "kind": "text", "box": [930, 92, 22, 22], "font": "DISP_NUM", "font_px": 14, "color": "#04256C", "align": "CENTER"},
+    {"id": "n2", "kind": "text", "box": [930, 192, 22, 22], "font": "DISP_NUM", "font_px": 14, "color": "#04256C", "align": "CENTER"},
+    {"id": "n3", "kind": "text", "box": [930, 292, 22, 22], "font": "DISP_NUM", "font_px": 14, "color": "#04256C", "align": "CENTER"},
+    {"id": "n4", "kind": "text", "box": [930, 392, 22, 22], "font": "DISP_NUM", "font_px": 14, "color": "#04256C", "align": "CENTER"}
+  ]
+}

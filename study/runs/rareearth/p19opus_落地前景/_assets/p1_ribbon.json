@@ -1,0 +1,21 @@
+{
+ "function": "ribbon",
+ "family": "blue_tech",
+ "theme": "通用",
+ "palette": "#19E0FF,#04102B",
+ "prompt": "a deep-blue sci-tech header banner plate that fills the whole image edge to edge: a horizontal HUD title bar, dark navy with a bright glowing cyan top edge and angled clipped corners, subtle hexagon and circuit accents on the sides, dark center reserved for a title, electric cyan on deep navy, full-bleed, the whole graphic FILLS THE ENTIRE IMAGE edge to edge, zero margin, full-bleed, on a solid pure black #000000 background, matte, no white background, clean, no text, no words, no letters",
+ "size": "1280*544",
+ "box": "300x128",
+ "composite": "normal",
+ "alpha": true,
+ "preserveAspectRatio": "none",
+ "final_size": [
+  1280,
+  544
+ ],
+ "fill_frac": 0.999,
+ "opaque_frac": 0.122,
+ "stretch_vs_box": 1.004,
+ "warnings": [],
+ "render_hint": "place at box with preserveAspectRatio=\"none\", NORMAL blend (alpha is real)"
+}

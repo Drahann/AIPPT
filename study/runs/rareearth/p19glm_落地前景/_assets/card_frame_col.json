@@ -1,0 +1,23 @@
+{
+ "function": "card_frame",
+ "family": "",
+ "theme": "通用",
+ "palette": "dark blue and gold",
+ "prompt": "Full-bleed vertical card frame panel, deep navy blue tech HUD style, translucent dark blue glass panel with subtle vertical gradient, thin gold accent border with decorative L-shaped corner brackets at all four corners, faint hexagonal mesh texture and circuit trace lines concentrated at edges and corners only, clean empty center for text content, no text no letters no numbers, premium aerospace dashboard aesthetic, dark blue and gold color scheme, the whole graphic FILLS THE ENTIRE IMAGE edge to edge, zero margin, full-bleed, on a solid pure black #000000 background, matte, no white background, clean, no text, no words, no letters, IMPORTANT: enlarge the subject to completely fill the frame, no empty black border",
+ "size": "1184*1280",
+ "box": "400x430",
+ "composite": "normal",
+ "alpha": true,
+ "preserveAspectRatio": "none",
+ "final_size": [
+  1024,
+  1208
+ ],
+ "fill_frac": 0.816,
+ "opaque_frac": 0.109,
+ "stretch_vs_box": 1.097,
+ "warnings": [
+  "LOW-FILL 82% — subject did not fill the frame"
+ ],
+ "render_hint": "place at box with preserveAspectRatio=\"none\", NORMAL blend (alpha is real)"
+}

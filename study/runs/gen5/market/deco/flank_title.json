@@ -1,0 +1,13 @@
+{
+ "function": "title_flank",
+ "family": "med_blue_white",
+ "theme": "医疗科技 分子 麦穗 HUD",
+ "palette": "#00FFFF,#016DFF",
+ "prompt": "a symmetric pair of 医疗科技 分子 麦穗 HUD decorative ornaments flanking a title, left and right mirrored, #00FFFF,#016DFF glowing, on pure solid black background, centered, high detail, no text, no words, no letters",
+ "size": "1440*512",
+ "box": "520x70",
+ "composite": "screen",
+ "preserveAspectRatio": "none",
+ "aspect_matched": false,
+ "render_hint": "place at box with preserveAspectRatio=\"none\", style=\"mix-blend-mode:screen\""
+}

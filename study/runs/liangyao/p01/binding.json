@@ -1,0 +1,20 @@
+{
+ "_archetype": "cover",
+ "_h2": "封面",
+ "_note": "Title 4-char calligraphy 良药智纪 -> 谷原焕生 (same font + per-char gradient kept from record). Hero pic03 (3D device) -> content-regen hero_b (vascular catheter + glowing coating), screen-blended to drop its black bg. All info text from plan.",
+ "drop_unbound_placeholders": true,
+ "slots": {
+  "sh35": "谷",
+  "sh36": "原",
+  "sh37": "焕",
+  "sh38": "生",
+  "sh47": "大米蛋白基医用级血管介入导管涂层原料",
+  "sh50": "参赛组别", "sh51": "创业组",
+  "sh52": "依托平台", "sh53": "宁波大学医学部",
+  "sh33": "负责人：王炯桦",
+  "sh54": "运营主体：宁波谷泽新生生物科技"
+ },
+ "extras": [
+  {"type": "image", "href": "gen/hero_b.png", "box": [726, -38, 554, 677], "blend": "screen", "preserve": "xMidYMid meet"}
+ ]
+}

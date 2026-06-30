@@ -1,0 +1,13 @@
+{
+ "function": "glow",
+ "family": "med_blue_white",
+ "theme": "蓝色分子光晕",
+ "palette": "#00FFFF,#0070C0",
+ "prompt": "a soft glowing light streak / lens flare, #00FFFF,#0070C0, on pure solid black background, centered, high detail, no text, no words, no letters",
+ "size": "1280*1280",
+ "box": "300x300",
+ "composite": "screen",
+ "preserveAspectRatio": "none",
+ "aspect_matched": true,
+ "render_hint": "place at box with preserveAspectRatio=\"none\", style=\"mix-blend-mode:screen\""
+}

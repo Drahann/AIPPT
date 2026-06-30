@@ -1,0 +1,207 @@
+{
+ "slots": {},
+ "extras": [
+  {
+   "type": "rect",
+   "box": [
+    0,
+    0,
+    1280,
+    720
+   ],
+   "rx": 0,
+   "fill": "rgba(3,12,30,0.46)"
+  },
+  {
+   "type": "image",
+   "box": [
+    66.0,
+    22.0,
+    130.0,
+    81.0
+   ],
+   "href": "_assets/p2_flankL.png",
+   "preserve": "none",
+   "function": "title_flank"
+  },
+  {
+   "type": "image",
+   "box": [
+    1084.0,
+    22.0,
+    130.0,
+    81.0
+   ],
+   "href": "_assets/p2_flankL.png",
+   "preserve": "none",
+   "flipH": true,
+   "function": "title_flank"
+  },
+  {
+   "type": "line",
+   "p": [
+    226.0,
+    74.0,
+    760.0,
+    74.0
+   ],
+   "color": "rgba(11,249,254,0.55)",
+   "w": 2
+  },
+  {
+   "type": "image",
+   "box": [
+    1070.0,
+    96.0,
+    150.0,
+    130.0
+   ],
+   "href": "_assets/p2_motif.png",
+   "preserve": "none",
+   "function": "motif"
+  },
+  {
+   "type": "image",
+   "box": [
+    70.0,
+    116.0,
+    300.0,
+    95.0
+   ],
+   "href": "_assets/p2_ribbon.png",
+   "preserve": "none",
+   "function": "ribbon"
+  },
+  {
+   "type": "line",
+   "p": [
+    436.0,
+    294.0,
+    478.0,
+    294.0
+   ],
+   "color": "rgba(11,249,254,0.5)",
+   "w": 2
+  },
+  {
+   "type": "line",
+   "p": [
+    838.0,
+    294.0,
+    880.0,
+    294.0
+   ],
+   "color": "rgba(11,249,254,0.5)",
+   "w": 2
+  },
+  {
+   "type": "image",
+   "box": [
+    70.0,
+    234.0,
+    372.0,
+    451.0
+   ],
+   "href": "_assets/p2_card.png",
+   "preserve": "none",
+   "function": "card_frame"
+  },
+  {
+   "type": "image",
+   "box": [
+    106.0,
+    250.0,
+    300.0,
+    95.0
+   ],
+   "href": "_assets/p2_ribbon.png",
+   "preserve": "none",
+   "function": "ribbon"
+  },
+  {
+   "type": "image",
+   "box": [
+    96.0,
+    358.0,
+    320.0,
+    229.0
+   ],
+   "href": "_assets/p2_bgpanel.png",
+   "preserve": "none",
+   "function": "bg_panel"
+  },
+  {
+   "type": "image",
+   "box": [
+    472.0,
+    234.0,
+    372.0,
+    451.0
+   ],
+   "href": "_assets/p2_card.png",
+   "preserve": "none",
+   "function": "card_frame"
+  },
+  {
+   "type": "image",
+   "box": [
+    508.0,
+    250.0,
+    300.0,
+    95.0
+   ],
+   "href": "_assets/p2_ribbon.png",
+   "preserve": "none",
+   "function": "ribbon"
+  },
+  {
+   "type": "image",
+   "box": [
+    498.0,
+    358.0,
+    320.0,
+    229.0
+   ],
+   "href": "_assets/p2_bgpanel.png",
+   "preserve": "none",
+   "function": "bg_panel"
+  },
+  {
+   "type": "image",
+   "box": [
+    874.0,
+    234.0,
+    372.0,
+    451.0
+   ],
+   "href": "_assets/p2_card.png",
+   "preserve": "none",
+   "function": "card_frame"
+  },
+  {
+   "type": "image",
+   "box": [
+    910.0,
+    250.0,
+    300.0,
+    95.0
+   ],
+   "href": "_assets/p2_ribbon.png",
+   "preserve": "none",
+   "function": "ribbon"
+  },
+  {
+   "type": "image",
+   "box": [
+    900.0,
+    358.0,
+    320.0,
+    229.0
+   ],
+   "href": "_assets/p2_bgpanel.png",
+   "preserve": "none",
+   "function": "bg_panel"
+  }
+ ],
+ "drop_unbound_placeholders": false
+}

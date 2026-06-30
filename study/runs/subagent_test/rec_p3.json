@@ -1,0 +1,25 @@
+{
+ "canvas": [1280, 720],
+ "source": {"design": "reference-driven liangyao; archetype content 3-card"},
+ "shapes": [
+  {"id": "title", "kind": "text", "box": [40, 64, 760, 60],
+   "text": "落地前景", "align": "LEFT", "font_px": 48.0, "font": "汉仪雅酷黑W", "color": "#FFFFFF", "bold": true},
+  {"id": "subt", "kind": "text", "box": [42, 122, 900, 28],
+   "text": "四、市场拓展前景与可持续发展能力  (3/3)", "align": "LEFT", "font_px": 19.0, "font": "汉仪粗宋简", "color": "#34D5F1"},
+
+  {"id": "C1_h", "kind": "text", "box": [96, 286, 320, 60],
+   "text": "精准切入高潜力赛道", "align": "LEFT", "font_px": 22.0, "font": "汉仪雅酷黑简", "color": "#F2BA02", "bold": true},
+  {"id": "C1_b", "kind": "text", "box": [96, 360, 322, 300],
+   "text": "聚焦冠脉/外周血管造影导管等高端医疗器械涂层领域，直击进口原料成本高、供应链依赖强、生物安全性存疑等行业痛点，以植物源、低成本、高性能优势构建核心竞争力。", "align": "LEFT", "font_px": 16.0, "font": "汉仪粗宋简", "color": "#FFFFFF"},
+
+  {"id": "C2_h", "kind": "text", "box": [486, 286, 320, 60],
+   "text": "闭环推广策略驱动增长", "align": "LEFT", "font_px": 22.0, "font": "汉仪雅酷黑简", "color": "#30C0B4", "bold": true},
+  {"id": "C2_b", "kind": "text", "box": [486, 360, 322, 320],
+   "text": "以灯塔客户验证案例为支点，联动宁波大学科研平台与院士团队开展产教融合活动，高效整合上下游资源；通过“线上内容矩阵+线下技术研讨会+行业展会”组合策略，实现从区域试点到全国复制的梯度扩张。", "align": "LEFT", "font_px": 16.0, "font": "汉仪粗宋简", "color": "#FFFFFF"},
+
+  {"id": "C3_h", "kind": "text", "box": [876, 286, 320, 60],
+   "text": "盈利模式清晰稳健", "align": "LEFT", "font_px": 22.0, "font": "汉仪雅酷黑简", "color": "#E54C5E", "bold": true},
+  {"id": "C3_b", "kind": "text", "box": [876, 360, 326, 320],
+   "text": "依托规模化生产与供应链优化持续提升毛利率，预计在医疗器械注册获批并实现稳定供货后进入盈利周期，中长期通过技术迭代与场景延伸拓展增长空间，具备显著的国产替代价值与产业化可持续性。", "align": "LEFT", "font_px": 16.0, "font": "汉仪粗宋简", "color": "#FFFFFF"}
+ ]
+}

@@ -1,0 +1,221 @@
+{
+ "deck_id": "蓝白色医疗--gzh：xx的百宝箱",
+ "canvas": [
+  1280,
+  720
+ ],
+ "theme": {
+  "palette": {
+   "dk1": "#000000",
+   "lt1": "#FFFFFF",
+   "dk2": "#0E2841",
+   "lt2": "#E8E8E8",
+   "accent1": "#156082",
+   "accent2": "#E97132",
+   "accent3": "#196B24",
+   "accent4": "#0F9ED5",
+   "accent5": "#A02B93",
+   "accent6": "#4EA72E",
+   "hlink": "#467886",
+   "folHlink": "#96607D"
+  },
+  "font_scheme": {
+   "major": [
+    "等线 Light",
+    ""
+   ],
+   "minor": [
+    "等线",
+    ""
+   ]
+  }
+ },
+ "typography": {
+  "title_family": "演示流云楷",
+  "subtitle_family": "梦源黑体 CN W23",
+  "body_family": "等线",
+  "families_seen": [
+   "等线",
+   "演示流云楷",
+   "梦源黑体 CN W23",
+   "思源宋体 CN Heavy",
+   "阿里巴巴普惠体 B",
+   "字体传奇特战体-免费商用",
+   "江城斜宋体 900W"
+  ],
+  "size_ramp": [
+   19,
+   13,
+   37,
+   24,
+   64,
+   21,
+   204,
+   43,
+   192,
+   193
+  ]
+ },
+ "skin": {
+  "primary": "#024BDC",
+  "accent_cyan": "#196B24",
+  "bg_deep": "#081C58",
+  "text": "#FFFFFF",
+  "text_dim": "#E8E8E8",
+  "accents": [
+   "#024BDC",
+   "#030A93",
+   "#02065E",
+   "#0E419C"
+  ],
+  "palette_measured": [
+   "#FEF8AC",
+   "#FFFFFF",
+   "#FEF9BA",
+   "#024BDC",
+   "#7F7F7F",
+   "#02065E",
+   "#FFFFCC",
+   "#030A93",
+   "#0E419C",
+   "#223A68"
+  ],
+  "bg_samples": [
+   "#C8E0F5",
+   "#F6F9FC",
+   "#081C58",
+   "#033189",
+   "#D3E5F5"
+  ],
+  "backgrounds": [
+   "chrome_bg_7c991b3f6d54.png"
+  ]
+ },
+ "style_desc": "深蓝科技风背景搭配3D玻璃质感DNA装饰，橙白粗体字凸显现代医学专业感。",
+ "render_tags": [
+  "Tech",
+  "Medical",
+  "3D",
+  "Modern",
+  "Professional",
+  "Blue"
+ ],
+ "design_system": {
+  "type_ramp": [
+   {
+    "px": 204,
+    "count": 4
+   },
+   {
+    "px": 193,
+    "count": 2
+   },
+   {
+    "px": 192,
+    "count": 2
+   },
+   {
+    "px": 80,
+    "count": 1
+   },
+   {
+    "px": 64,
+    "count": 4
+   },
+   {
+    "px": 53,
+    "count": 13
+   },
+   {
+    "px": 48,
+    "count": 1
+   },
+   {
+    "px": 43,
+    "count": 2
+   }
+  ],
+  "content_margins": {
+   "left": 0.0,
+   "top": 3.1,
+   "right": 0.0,
+   "bottom": 0.0
+  },
+  "common_colors": [
+   "#FEF8AC",
+   "#FFFFFF",
+   "#FEF9BA",
+   "#024BDC",
+   "#7F7F7F",
+   "#02065E",
+   "#FFFFCC",
+   "#030A93",
+   "#0E419C",
+   "#223A68"
+  ],
+  "decos_per_page": 9.9,
+  "common_box_sizes": [
+   {
+    "w": 0,
+    "h": 10,
+    "n": 182
+   },
+   {
+    "w": 10,
+    "h": 0,
+    "n": 70
+   },
+   {
+    "w": 100,
+    "h": 40,
+    "n": 59
+   },
+   {
+    "w": 120,
+    "h": 40,
+    "n": 29
+   },
+   {
+    "w": 210,
+    "h": 0,
+    "n": 26
+   },
+   {
+    "w": 30,
+    "h": 40,
+    "n": 26
+   },
+   {
+    "w": 90,
+    "h": 30,
+    "n": 26
+   },
+   {
+    "w": 80,
+    "h": 30,
+    "n": 26
+   }
+  ]
+ },
+ "chrome_decorations": [],
+ "source_pptx": "W:\\ppt\\挑战杯 互联网+三创赛 创青春 国赛金奖级PPT 模板\\创赛PPT\\蓝白色医疗--gzh：xx的百宝箱.pptx",
+ "family": "med_blue_white",
+ "track": "general_chuangsai",
+ "pages": [
+  "med_blue_white_26c204da_p01",
+  "med_blue_white_26c204da_p02",
+  "med_blue_white_26c204da_p03",
+  "med_blue_white_26c204da_p04",
+  "med_blue_white_26c204da_p05",
+  "med_blue_white_26c204da_p06",
+  "med_blue_white_26c204da_p07",
+  "med_blue_white_26c204da_p08",
+  "med_blue_white_26c204da_p09",
+  "med_blue_white_26c204da_p10",
+  "med_blue_white_26c204da_p11",
+  "med_blue_white_26c204da_p12",
+  "med_blue_white_26c204da_p13",
+  "med_blue_white_26c204da_p14",
+  "med_blue_white_26c204da_p15"
+ ]
+}

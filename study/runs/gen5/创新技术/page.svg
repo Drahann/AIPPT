@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 720" width="1280" height="720">
+<defs><linearGradient id="g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FBF1C6"/><stop offset="50%" stop-color="#F2D290"/><stop offset="100%" stop-color="#E2B25E"/></linearGradient><linearGradient id="g2" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FBF1C6"/><stop offset="50%" stop-color="#F2D290"/><stop offset="100%" stop-color="#E2B25E"/></linearGradient><linearGradient id="g3" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FBF1C6"/><stop offset="50%" stop-color="#F2D290"/><stop offset="100%" stop-color="#E2B25E"/></linearGradient><linearGradient id="g4" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FBF1C6"/><stop offset="50%" stop-color="#F2D290"/><stop offset="100%" stop-color="#E2B25E"/></linearGradient><linearGradient id="g5" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FBF1C6"/><stop offset="50%" stop-color="#F2D290"/><stop offset="100%" stop-color="#E2B25E"/></linearGradient><linearGradient id="g6" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FBF1C6"/><stop offset="50%" stop-color="#F2D290"/><stop offset="100%" stop-color="#E2B25E"/></linearGradient><linearGradient id="g7" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FBF1C6"/><stop offset="50%" stop-color="#F2D290"/><stop offset="100%" stop-color="#E2B25E"/></linearGradient><linearGradient id="g8" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FBF1C6"/><stop offset="50%" stop-color="#F2D290"/><stop offset="100%" stop-color="#E2B25E"/></linearGradient><linearGradient id="g9" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FBF1C6"/><stop offset="50%" stop-color="#F2D290"/><stop offset="100%" stop-color="#E2B25E"/></linearGradient><linearGradient id="g10" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FBF1C6"/><stop offset="50%" stop-color="#F2D290"/><stop offset="100%" stop-color="#E2B25E"/></linearGradient></defs>
+<image href="file:///W:/ppt/study/runs/gen5/_decos/base.png" x="0" y="0" width="1280" height="720"/>
+<rect x="0.0" y="0.0" width="1280.0" height="720.0" rx="0" fill="rgba(6,14,40,0.50)"/>
+<image href="file:///W:/ppt/study/runs/gen5/_decos/glow.png" x="360.0" y="6.0" width="560.0" height="150.0" preserveAspectRatio="none" style="opacity:0.45;mix-blend-mode:screen"/>
+<image href="file:///W:/ppt/study/runs/gen5/_decos/nano.png" x="1112.0" y="14.0" width="150.0" height="150.0" preserveAspectRatio="none" style="opacity:0.8;mix-blend-mode:screen"/>
+<line x1="64" y1="56" x2="76" y2="69.0" stroke="#F2D290" stroke-width="4"/>
+<line x1="64" y1="88" x2="76" y2="69.0" stroke="#F2D290" stroke-width="4"/>
+<line x1="77" y1="56" x2="89" y2="69.0" stroke="#F2D290" stroke-width="4"/>
+<line x1="77" y1="88" x2="89" y2="69.0" stroke="#F2D290" stroke-width="4"/>
+<line x1="110" y1="102" x2="234.0" y2="102" stroke="rgba(242,210,144,0.6)" stroke-width="2"/>
+<rect x="56.0" y="132.0" width="1168.0" height="50.0" rx="10" fill="rgba(10,28,68,0.5)" stroke="rgba(120,180,255,0.3)" stroke-width="1.4"/>
+<rect x="56.0" y="196.0" width="373.0" height="468.0" rx="14" fill="rgba(8,22,55,0.70)" stroke="rgba(120,180,255,0.42)" stroke-width="1.4"/>
+<line x1="60" y1="220" x2="60" y2="200" stroke="#F2D290" stroke-width="3"/>
+<line x1="60" y1="200" x2="80" y2="200" stroke="#F2D290" stroke-width="3"/>
+<line x1="405" y1="200" x2="425" y2="200" stroke="#F2D290" stroke-width="3"/>
+<line x1="425" y1="200" x2="425" y2="220" stroke="#F2D290" stroke-width="3"/>
+<line x1="60" y1="640" x2="60" y2="660" stroke="#F2D290" stroke-width="3"/>
+<line x1="60" y1="660" x2="80" y2="660" stroke="#F2D290" stroke-width="3"/>
+<line x1="405" y1="660" x2="425" y2="660" stroke="#F2D290" stroke-width="3"/>
+<line x1="425" y1="660" x2="425" y2="640" stroke="#F2D290" stroke-width="3"/>
+<rect x="74.0" y="208.0" width="48.0" height="48.0" rx="24" fill="rgba(15,45,105,0.78)" stroke="#F2D290" stroke-width="2"/>
+<line x1="78" y1="364" x2="407" y2="364" stroke="rgba(242,210,144,0.55)" stroke-width="1.6"/>
+<rect x="237.5" y="359.0" width="10.0" height="10.0" rx="1" fill="#F2D290" opacity="0.95"/>
+<rect x="186.5" y="372.0" width="112.0" height="112.0" rx="56" fill="rgba(20,55,120,0.45)" stroke="#F2D290" stroke-width="2"/>
+<rect x="201.1" y="386.6" width="82.9" height="82.9" rx="41.44" fill="none" stroke="rgba(120,180,255,0.55)" stroke-width="1.4"/>
+<line x1="301.5" y1="428.0" x2="309.5" y2="428.0" stroke="#F2D290" stroke-width="1.6"/>
+<line x1="293.5954988232819" y1="457.5" x2="300.5237020535574" y2="461.5" stroke="#F2D290" stroke-width="1.6"/>
+<line x1="272.0" y1="479.0954988232819" x2="276.0" y2="486.0237020535574" stroke="#F2D290" stroke-width="1.6"/>
+<line x1="242.5" y1="487.0" x2="242.5" y2="495.0" stroke="#F2D290" stroke-width="1.6"/>
+<line x1="213.0" y1="479.0954988232819" x2="209.0" y2="486.0237020535574" stroke="#F2D290" stroke-width="1.6"/>
+<line x1="191.4045011767181" y1="457.5" x2="184.4762979464426" y2="461.5" stroke="#F2D290" stroke-width="1.6"/>
+<line x1="183.5" y1="428.0" x2="175.5" y2="428.0" stroke="#F2D290" stroke-width="1.6"/>
+<line x1="191.4045011767181" y1="398.5" x2="184.4762979464426" y2="394.5" stroke="#F2D290" stroke-width="1.6"/>
+<line x1="212.99999999999997" y1="376.9045011767181" x2="208.99999999999997" y2="369.9762979464426" stroke="#F2D290" stroke-width="1.6"/>
+<line x1="242.5" y1="369.0" x2="242.5" y2="361.0" stroke="#F2D290" stroke-width="1.6"/>
+<line x1="272.0" y1="376.9045011767181" x2="276.0" y2="369.9762979464426" stroke="#F2D290" stroke-width="1.6"/>
+<line x1="293.59549882328184" y1="398.5" x2="300.5237020535574" y2="394.5" stroke="#F2D290" stroke-width="1.6"/>
+<rect x="86.0" y="502.0" width="7.0" height="7.0" rx="2" fill="#F2D290"/>
+<rect x="86.0" y="527.0" width="7.0" height="7.0" rx="2" fill="#F2D290"/>
+<rect x="86.0" y="552.0" width="7.0" height="7.0" rx="2" fill="#F2D290"/>
+<rect x="86.0" y="577.0" width="7.0" height="7.0" rx="2" fill="#F2D290"/>
+<rect x="70.0" y="586.0" width="345.0" height="64.0" rx="8" fill="rgba(20,55,120,0.5)" stroke="rgba(242,210,144,0.85)" stroke-width="1.1"/>
+<rect x="453.0" y="196.0" width="373.0" height="468.0" rx="14" fill="rgba(8,22,55,0.70)" stroke="rgba(120,180,255,0.42)" stroke-width="1.4"/>
+<line x1="457" y1="220" x2="457" y2="200" stroke="#F2D290" stroke-width="3"/>
+<line x1="457" y1="200" x2="477" y2="200" stroke="#F2D290" stroke-width="3"/>
+<line x1="802" y1="200" x2="822" y2="200" stroke="#F2D290" stroke-width="3"/>
+<line x1="822" y1="200" x2="822" y2="220" stroke="#F2D290" stroke-width="3"/>
+<line x1="457" y1="640" x2="457" y2="660" stroke="#F2D290" stroke-width="3"/>
+<line x1="457" y1="660" x2="477" y2="660" stroke="#F2D290" stroke-width="3"/>
+<line x1="802" y1="660" x2="822" y2="660" stroke="#F2D290" stroke-width="3"/>
+<line x1="822" y1="660" x2="822" y2="640" stroke="#F2D290" stroke-width="3"/>
+<rect x="471.0" y="208.0" width="48.0" height="48.0" rx="24" fill="rgba(15,45,105,0.78)" stroke="#F2D290" stroke-width="2"/>
+<line x1="475" y1="364" x2="804" y2="364" stroke="rgba(242,210,144,0.55)" stroke-width="1.6"/>
+<rect x="634.5" y="359.0" width="10.0" height="10.0" rx="1" fill="#F2D290" opacity="0.95"/>
+<rect x="583.5" y="372.0" width="112.0" height="112.0" rx="56" fill="rgba(20,55,120,0.45)" stroke="#F2D290" stroke-width="2"/>
+<rect x="598.1" y="386.6" width="82.9" height="82.9" rx="41.44" fill="none" stroke="rgba(120,180,255,0.55)" stroke-width="1.4"/>
+<line x1="698.5" y1="428.0" x2="706.5" y2="428.0" stroke="#F2D290" stroke-width="1.6"/>
+<line x1="690.5954988232819" y1="457.5" x2="697.5237020535574" y2="461.5" stroke="#F2D290" stroke-width="1.6"/>
+<line x1="669.0" y1="479.0954988232819" x2="673.0" y2="486.0237020535574" stroke="#F2D290" stroke-width="1.6"/>
+<line x1="639.5" y1="487.0" x2="639.5" y2="495.0" stroke="#F2D290" stroke-width="1.6"/>
+<line x1="610.0" y1="479.0954988232819" x2="606.0" y2="486.0237020535574" stroke="#F2D290" stroke-width="1.6"/>
+<line x1="588.4045011767181" y1="457.5" x2="581.4762979464426" y2="461.5" stroke="#F2D290" stroke-width="1.6"/>
+<line x1="580.5" y1="428.0" x2="572.5" y2="428.0" stroke="#F2D290" stroke-width="1.6"/>
+<line x1="588.4045011767181" y1="398.5" x2="581.4762979464426" y2="394.5" stroke="#F2D290" stroke-width="1.6"/>
+<line x1="610.0" y1="376.9045011767181" x2="606.0" y2="369.9762979464426" stroke="#F2D290" stroke-width="1.6"/>
+<line x1="639.5" y1="369.0" x2="639.5" y2="361.0" stroke="#F2D290" stroke-width="1.6"/>
+<line x1="669.0" y1="376.9045011767181" x2="673.0" y2="369.9762979464426" stroke="#F2D290" stroke-width="1.6"/>
+<line x1="690.5954988232819" y1="398.5" x2="697.5237020535574" y2="394.5" stroke="#F2D290" stroke-width="1.6"/>
+<rect x="483.0" y="502.0" width="7.0" height="7.0" rx="2" fill="#F2D290"/>
+<rect x="483.0" y="527.0" width="7.0" height="7.0" rx="2" fill="#F2D290"/>
+<rect x="483.0" y="552.0" width="7.0" height="7.0" rx="2" fill="#F2D290"/>
+<rect x="483.0" y="577.0" width="7.0" height="7.0" rx="2" fill="#F2D290"/>
+<rect x="467.0" y="586.0" width="345.0" height="64.0" rx="8" fill="rgba(20,55,120,0.5)" stroke="rgba(242,210,144,0.85)" stroke-width="1.1"/>
+<rect x="850.0" y="196.0" width="373.0" height="468.0" rx="14" fill="rgba(8,22,55,0.70)" stroke="rgba(120,180,255,0.42)" stroke-width="1.4"/>
+<line x1="854" y1="220" x2="854" y2="200" stroke="#F2D290" stroke-width="3"/>
+<line x1="854" y1="200" x2="874" y2="200" stroke="#F2D290" stroke-width="3"/>
+<line x1="1199" y1="200" x2="1219" y2="200" stroke="#F2D290" stroke-width="3"/>
+<line x1="1219" y1="200" x2="1219" y2="220" stroke="#F2D290" stroke-width="3"/>
+<line x1="854" y1="640" x2="854" y2="660" stroke="#F2D290" stroke-width="3"/>
+<line x1="854" y1="660" x2="874" y2="660" stroke="#F2D290" stroke-width="3"/>
+<line x1="1199" y1="660" x2="1219" y2="660" stroke="#F2D290" stroke-width="3"/>
+<line x1="1219" y1="660" x2="1219" y2="640" stroke="#F2D290" stroke-width="3"/>
+<rect x="868.0" y="208.0" width="48.0" height="48.0" rx="24" fill="rgba(15,45,105,0.78)" stroke="#F2D290" stroke-width="2"/>
+<line x1="872" y1="364" x2="1201" y2="364" stroke="rgba(242,210,144,0.55)" stroke-width="1.6"/>
+<rect x="1031.5" y="359.0" width="10.0" height="10.0" rx="1" fill="#F2D290" opacity="0.95"/>
+<rect x="980.5" y="372.0" width="112.0" height="112.0" rx="56" fill="rgba(20,55,120,0.45)" stroke="#F2D290" stroke-width="2"/>
+<rect x="995.1" y="386.6" width="82.9" height="82.9" rx="41.44" fill="none" stroke="rgba(120,180,255,0.55)" stroke-width="1.4"/>
+<line x1="1095.5" y1="428.0" x2="1103.5" y2="428.0" stroke="#F2D290" stroke-width="1.6"/>
+<line x1="1087.5954988232818" y1="457.5" x2="1094.5237020535574" y2="461.5" stroke="#F2D290" stroke-width="1.6"/>
+<line x1="1066.0" y1="479.0954988232819" x2="1070.0" y2="486.0237020535574" stroke="#F2D290" stroke-width="1.6"/>
+<line x1="1036.5" y1="487.0" x2="1036.5" y2="495.0" stroke="#F2D290" stroke-width="1.6"/>
+<line x1="1007.0" y1="479.0954988232819" x2="1003.0" y2="486.0237020535574" stroke="#F2D290" stroke-width="1.6"/>
+<line x1="985.4045011767181" y1="457.5" x2="978.4762979464426" y2="461.5" stroke="#F2D290" stroke-width="1.6"/>
+<line x1="977.5" y1="428.0" x2="969.5" y2="428.0" stroke="#F2D290" stroke-width="1.6"/>
+<line x1="985.4045011767181" y1="398.5" x2="978.4762979464426" y2="394.5" stroke="#F2D290" stroke-width="1.6"/>
+<line x1="1007.0" y1="376.9045011767181" x2="1003.0" y2="369.9762979464426" stroke="#F2D290" stroke-width="1.6"/>
+<line x1="1036.5" y1="369.0" x2="1036.5" y2="361.0" stroke="#F2D290" stroke-width="1.6"/>
+<line x1="1066.0" y1="376.9045011767181" x2="1070.0" y2="369.9762979464426" stroke="#F2D290" stroke-width="1.6"/>
+<line x1="1087.5954988232818" y1="398.5" x2="1094.5237020535574" y2="394.5" stroke="#F2D290" stroke-width="1.6"/>
+<rect x="880.0" y="502.0" width="7.0" height="7.0" rx="2" fill="#F2D290"/>
+<rect x="880.0" y="527.0" width="7.0" height="7.0" rx="2" fill="#F2D290"/>
+<rect x="880.0" y="552.0" width="7.0" height="7.0" rx="2" fill="#F2D290"/>
+<rect x="880.0" y="577.0" width="7.0" height="7.0" rx="2" fill="#F2D290"/>
+<rect x="864.0" y="586.0" width="345.0" height="64.0" rx="8" fill="rgba(20,55,120,0.5)" stroke="rgba(242,210,144,0.85)" stroke-width="1.1"/>
+<text x="108" y="88" text-anchor="start" font-family="'华文行楷','STXingkai','Source Han Serif CN Heavy','KaiTi',serif" font-size="50.0" fill="url(#g1)"><tspan x="108" dy="0.0">创新技术</tspan></text>
+<text x="112" y="126" text-anchor="start" font-family="'OPPOSans M','Source Han Sans CN Medium','Microsoft YaHei',sans-serif" font-size="16.0" fill="#C3D6F2"><tspan x="112" dy="0.0">三项核心技术体系 · 高纯制备 / 疏水定向调控 / 纳米涂层稳定 · 全链条创新突破</tspan></text>
+<text x="78" y="162" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="8.7" fill="#C3D6F2"><tspan x="78" dy="0.0">针对导管涂层原料成本高（单支超15元）、批次稳定性弱、功能单一等产业瓶颈，系统构建三项核心技术，聚焦高纯蛋白制备、疏水性定向调控与纳米涂层稳定，实现从原料纯化到功能涂层的全链条创新突破。</tspan></text>
+<text x="98" y="241" text-anchor="middle" font-family="'Alibaba PuHuiTi H','OPPOSans B','Source Han Sans CN Heavy','Arial',sans-serif" font-size="24.0" fill="url(#g2)"><tspan x="98" dy="0.0">01</tspan></text>
+<text x="134" y="240" text-anchor="start" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="22.0" fill="url(#g3)"><tspan x="134" dy="0.0">组合排杂纯化</tspan></text>
+<text x="78" y="289" text-anchor="start" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="17.0" fill="#FFFFFF"><tspan x="78" dy="0.0">大米蛋白组合排杂纯化技术</tspan></text>
+<text x="78" y="325" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="14.0" fill="#C3D6F2"><tspan x="78" dy="0.0">皂化脱脂 + 协同酶解 + CSAP亲和离子交</tspan><tspan x="78" dy="18.5">换层析联用，高选择性富集目标白蛋白组分。</tspan></text>
+<text x="242" y="442" text-anchor="middle" font-family="'Alibaba PuHuiTi H','OPPOSans B','Source Han Sans CN Heavy','Arial',sans-serif" font-size="52.0" fill="url(#g4)"><tspan x="242" dy="0.0">99.99</tspan></text>
+<text x="242" y="477" text-anchor="middle" font-family="'OPPOSans M','Source Han Sans CN Medium','Microsoft YaHei',sans-serif" font-size="15.0" fill="#16C7F0"><tspan x="242" dy="0.0">蛋白纯度（传统工艺 ≤85%）</tspan></text>
+<text x="102" y="512" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="14.0" fill="#C3D6F2"><tspan x="102" dy="0.0">内毒素含量降至 0.005 EU/mg</tspan></text>
+<text x="102" y="537" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="14.0" fill="#C3D6F2"><tspan x="102" dy="0.0">回收率稳定 60%</tspan></text>
+<text x="102" y="562" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="14.0" fill="#C3D6F2"><tspan x="102" dy="0.0">批次误差 RSD ＜ 3%</tspan></text>
+<text x="102" y="587" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="14.0" fill="#C3D6F2"><tspan x="102" dy="0.0">满足医用辅料级标准</tspan></text>
+<text x="82" y="609" text-anchor="start" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="13.5" fill="#F2D290"><tspan x="82" dy="0.0">代表性成果</tspan></text>
+<text x="82" y="628" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="8.1" fill="#C3D6F2"><tspan x="82" dy="0.0">发明专利 CN202510262436.6 · Foods / J.Food </tspan><tspan x="82" dy="10.7">Eng（SCI Q1）2篇</tspan></text>
+<text x="495" y="241" text-anchor="middle" font-family="'Alibaba PuHuiTi H','OPPOSans B','Source Han Sans CN Heavy','Arial',sans-serif" font-size="24.0" fill="url(#g5)"><tspan x="495" dy="0.0">02</tspan></text>
+<text x="531" y="240" text-anchor="start" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="22.0" fill="url(#g6)"><tspan x="531" dy="0.0">pH共架改性增溶</tspan></text>
+<text x="475" y="289" text-anchor="start" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="17.0" fill="#FFFFFF"><tspan x="475" dy="0.0">大米蛋白 pH 共架改性增溶技术</tspan></text>
+<text x="475" y="325" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="14.0" fill="#C3D6F2"><tspan x="475" dy="0.0">调控体系pH构建亲水共架结构，修饰二硫键并引入</tspan><tspan x="475" dy="18.5">双亲性组装结构域，重构亲疏水平衡。</tspan></text>
+<text x="640" y="442" text-anchor="middle" font-family="'Alibaba PuHuiTi H','OPPOSans B','Source Han Sans CN Heavy','Arial',sans-serif" font-size="52.0" fill="url(#g7)"><tspan x="640" dy="0.0">96.8</tspan></text>
+<text x="640" y="477" text-anchor="middle" font-family="'OPPOSans M','Source Han Sans CN Medium','Microsoft YaHei',sans-serif" font-size="15.0" fill="#16C7F0"><tspan x="640" dy="0.0">蛋白溶解度（传统 ＜10%）</tspan></text>
+<text x="499" y="512" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="14.0" fill="#C3D6F2"><tspan x="499" dy="0.0">摩擦系数低至 0.001（优于进口肝素）</tspan></text>
+<text x="499" y="537" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="14.0" fill="#C3D6F2"><tspan x="499" dy="0.0">抗凝活性亚组分占比 ＞30%</tspan></text>
+<text x="499" y="562" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="14.0" fill="#C3D6F2"><tspan x="499" dy="0.0">分子分散性显著提升</tspan></text>
+<text x="499" y="587" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="14.0" fill="#C3D6F2"><tspan x="499" dy="0.0">破解水相功能协同壁垒</tspan></text>
+<text x="479" y="609" text-anchor="start" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="13.5" fill="#F2D290"><tspan x="479" dy="0.0">代表性成果</tspan></text>
+<text x="479" y="628" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="8.1" fill="#C3D6F2"><tspan x="479" dy="0.0">发明专利 CN202610489470.1 · Food&amp;Bioprocess</tspan><tspan x="479" dy="10.7"> Tech（SCI Q1）</tspan></text>
+<text x="892" y="241" text-anchor="middle" font-family="'Alibaba PuHuiTi H','OPPOSans B','Source Han Sans CN Heavy','Arial',sans-serif" font-size="24.0" fill="url(#g8)"><tspan x="892" dy="0.0">03</tspan></text>
+<text x="928" y="240" text-anchor="start" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="22.0" fill="url(#g9)"><tspan x="928" dy="0.0">纳米共组装稳定</tspan></text>
+<text x="872" y="289" text-anchor="start" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="17.0" fill="#FFFFFF"><tspan x="872" dy="0.0">谷-清蛋白纳米共组装涂层稳定技术</tspan></text>
+<text x="872" y="325" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="14.0" fill="#C3D6F2"><tspan x="872" dy="0.0">谷蛋白:清蛋白=3:7 梯度配比，构建50nm</tspan><tspan x="872" dy="18.5">单分散纳米胶体，界面交联锁合形成致密薄膜。</tspan></text>
+<text x="1036" y="442" text-anchor="middle" font-family="'Alibaba PuHuiTi H','OPPOSans B','Source Han Sans CN Heavy','Arial',sans-serif" font-size="52.0" fill="url(#g10)"><tspan x="1036" dy="0.0">98.2</tspan></text>
+<text x="1036" y="477" text-anchor="middle" font-family="'OPPOSans M','Source Han Sans CN Medium','Microsoft YaHei',sans-serif" font-size="15.0" fill="#16C7F0"><tspan x="1036" dy="0.0">血栓抑制率</tspan></text>
+<text x="896" y="512" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="14.0" fill="#C3D6F2"><tspan x="896" dy="0.0">涂层划痕脱落面积 ＜2%</tspan></text>
+<text x="896" y="537" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="14.0" fill="#C3D6F2"><tspan x="896" dy="0.0">血小板黏附率降至 17.9%</tspan></text>
+<text x="896" y="562" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="14.0" fill="#C3D6F2"><tspan x="896" dy="0.0">单支导管涂层成本降低 60%</tspan></text>
+<text x="896" y="587" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="14.0" fill="#C3D6F2"><tspan x="896" dy="0.0">关键指标全面优于进口肝素</tspan></text>
+<text x="876" y="609" text-anchor="start" font-family="'Alibaba PuHuiTi H','Source Han Sans CN Heavy','Microsoft YaHei',sans-serif" font-size="13.5" fill="#F2D290"><tspan x="876" dy="0.0">代表性成果</tspan></text>
+<text x="876" y="628" text-anchor="start" font-family="'OPPOSans R','Source Han Sans CN Regular','Microsoft YaHei',sans-serif" font-size="8.1" fill="#C3D6F2"><tspan x="876" dy="0.0">发明专利 CN202510600358.6 · J.Cereal Sci / </tspan><tspan x="876" dy="10.7">CCA（SCI Q2）3篇</tspan></text>
+</svg>

@@ -1,0 +1,21 @@
+{
+ "function": "number_backplate",
+ "family": "",
+ "theme": "通用",
+ "palette": "dark blue and gold",
+ "prompt": "Full-bleed square tech badge backplate, deep navy blue dark background, thin gold ring border with decorative tick marks around edge, subtle blue glow center, hollow geometric design with no text no numbers no letters, premium HUD dashboard aesthetic, dark blue and gold, centered, generous size, drawn in light luminous strokes on a solid pure black #000000 background, no white background, clean, no text, no words, no letters",
+ "size": "1280*1280",
+ "box": "52x52",
+ "composite": "normal",
+ "alpha": true,
+ "preserveAspectRatio": "none",
+ "final_size": [
+  1054,
+  1056
+ ],
+ "fill_frac": 0.677,
+ "opaque_frac": 0.095,
+ "stretch_vs_box": 1.002,
+ "warnings": [],
+ "render_hint": "place at box with preserveAspectRatio=\"none\", NORMAL blend (alpha is real)"
+}

@@ -1,0 +1,46 @@
+slide 6/6 | EMU 12192000x6858000 -> 1280x720 | shapes:44 imgs:7
+==============================================================================================================
+sh00 shp[     0, 582  1280x  84]
+sh01 shp[   302, 248   322x 172] rot270.0
+sh02 shp[   564, 182   698x 286]
+sh03 shp[  1011, 191   290x 258]
+sh04 shp[    75, 192   302x 302]
+sh05 TXT[    31,  62   218x  68]  {汉仪雅酷黑W 48.0px #FFFFFF LEFT}  <<解决方案>>
+sh06 TXT[     0,  21  1280x  32]  {汉仪粗宋简 18.7px #91ABDF RIGHT}  <<命题分析    解决方案    实现成果    核心优势    运营模式    财务分析    团队>>
+sh07 PIC[   342,  12   217x 109] pic01.png(1418x709)
+sh08 TXT[   144, 365   159x  46]  {汉仪雅酷黑简 32.0px #34D5F1 CENTER}  <<目标客户>>
+sh09 TXT[    20, 281    98x  98] fill=#FFFFFF  {汉仪雅酷黑简 #34D5F1 CENTER}  <<文字内容>>
+sh10 TXT[   313, 281    98x  98] fill=#FFFFFF  {汉仪雅酷黑简 #34D5F1 CENTER}  <<文字内容>>
+sh11 TXT[   175, 431    98x  98] fill=#FFFFFF  {汉仪雅酷黑简 #34D5F1 CENTER}  <<文字内容>>
+sh12 TXT[   564, 179    96x 289]  {汉仪雅酷黑简 32.0px #FFFFFF CENTER}  <<文 / 字 / 内 / 容>>
+sh13 PIC[   454, 346   220x  21] rot90.0 pic02.png(4399x512) a=0.75
+sh14 TXT[   691, 213   159x  51]  {汉仪粗宋简 26.7px #FFFFFF RIGHT}  <<文字内容>>
+sh15 shp[  1090, 239     8x   8] rot90.0 fill=#FFFFFF
+sh16 shp[  1090, 290     8x   8] rot90.0 fill=#FFFFFF
+sh17 TXT[   330, 583   743x  32]  {汉仪粗宋简 18.7px #FFFFFF LEFT}  <<请在此处输入文字内容，注意要言简意骇。请在此处输入文字内容，突出重点。>>
+sh18 TXT[   329, 616   822x  29]  {汉仪粗宋简 18.7px #FFFFFF LEFT}  <<请在此处输入文字内容，注意要言简意骇。请在此处输入文字内容，注意要言简意骇，突出重点。>>
+sh19 PIC[   175, 260    96x  96] pic03.png(800x800)
+sh20 TXT[   173, 140    98x  98] fill=#FFFFFF  {汉仪雅酷黑简 #34D5F1 CENTER}  <<文字内容>>
+sh21 shp[   670, 200   185x  67]
+sh22 PIC[   683, 214    53x  53] pic04.png(1024x1024)
+sh23 PIC[   687, 301    45x  45] pic05.png(1024x1024)
+sh24 PIC[   687, 392    45x  45] pic06.png(1024x1024)
+sh25 TXT[   691, 304   159x  51]  {汉仪粗宋简 26.7px #FFFFFF RIGHT}  <<文字内容>>
+sh26 shp[   670, 291   185x  67]
+sh27 TXT[   694, 394   159x  51]  {汉仪粗宋简 26.7px #FFFFFF RIGHT}  <<文字内容>>
+sh28 shp[   672, 382   184x  67]
+sh29 shp[   872, 234     2x 181]
+sh30 shp[   862, 230     8x   8]
+sh31 shp[   865, 411     8x   8]
+sh32 shp[   872, 324    34x   0]
+sh33 shp[   862, 320     8x   8]
+sh34 shp[   896, 287   172x  67] fill=#FFFFFF
+sh35 TXT[   903, 294   157x  53] fill=#34D5F1  {汉仪雅酷黑简 32.0px #FFFFFF CENTER}  <<文字>>
+sh36 shp[  1090, 340     8x   8] rot90.0 fill=#FFFFFF
+sh37 shp[  1090, 391     8x   8] rot90.0 fill=#FFFFFF
+sh38 TXT[  1101, 224   159x  51]  {汉仪粗宋简 26.7px #FFFFFF LEFT}  <<关键词>>
+sh39 TXT[  1103, 273   159x  51]  {汉仪粗宋简 26.7px #FFFFFF LEFT}  <<关键词>>
+sh40 TXT[  1104, 323   159x  51]  {汉仪粗宋简 26.7px #FFFFFF LEFT}  <<关键词>>
+sh41 TXT[  1106, 373   159x  51]  {汉仪粗宋简 26.7px #FFFFFF LEFT}  <<关键词>>
+sh42 shp[     0, 666  1280x  51]
+sh43 PIC[   228, 557    98x 104] pic07.png(1601x1688)

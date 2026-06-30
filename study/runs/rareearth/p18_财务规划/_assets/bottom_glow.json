@@ -1,0 +1,13 @@
+{
+ "function": "glow",
+ "family": "blue_tech",
+ "theme": "深蓝科技HUD",
+ "palette": "cyan, electric blue, soft white",
+ "prompt": "a soft glowing light streak / lens flare, cyan, electric blue, soft white, wide soft horizontal light sweep along the bottom, gentle curved energy arc, atmospheric, on pure solid black background, centered, high detail, no text, no words, no letters",
+ "size": "1440*512",
+ "box": "1280x300",
+ "composite": "screen",
+ "preserveAspectRatio": "none",
+ "aspect_matched": false,
+ "render_hint": "place at box with preserveAspectRatio=\"none\", style=\"mix-blend-mode:screen\""
+}

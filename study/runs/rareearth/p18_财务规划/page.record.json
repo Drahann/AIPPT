@@ -1,0 +1,530 @@
+{
+ "canvas": [
+  1280,
+  720
+ ],
+ "shapes": [
+  {
+   "id": "t1",
+   "kind": "text",
+   "box": [
+    314.0,
+    35.5,
+    165.0,
+    30.0
+   ],
+   "font": "BODY_B",
+   "font_px": 21,
+   "align": "CENTER",
+   "text": "项目背景",
+   "color": "#CFE0F5"
+  },
+  {
+   "id": "t2",
+   "kind": "text",
+   "box": [
+    488.0,
+    35.5,
+    165.0,
+    30.0
+   ],
+   "font": "BODY_B",
+   "font_px": 21,
+   "align": "CENTER",
+   "text": "技术方案",
+   "color": "#CFE0F5"
+  },
+  {
+   "id": "t3",
+   "kind": "text",
+   "box": [
+    662.0,
+    35.5,
+    165.0,
+    30.0
+   ],
+   "font": "BODY_B",
+   "font_px": 21,
+   "align": "CENTER",
+   "text": "市场分析",
+   "color": "#CFE0F5"
+  },
+  {
+   "id": "t4",
+   "kind": "text",
+   "box": [
+    836.0,
+    35.5,
+    165.0,
+    30.0
+   ],
+   "font": "BODY_B",
+   "font_px": 21,
+   "align": "CENTER",
+   "text": "财务规划",
+   "color": "#FFFFFF"
+  },
+  {
+   "id": "t5",
+   "kind": "text",
+   "box": [
+    1010.0,
+    35.5,
+    165.0,
+    30.0
+   ],
+   "font": "BODY_B",
+   "font_px": 21,
+   "align": "CENTER",
+   "text": "风险控制",
+   "color": "#CFE0F5"
+  },
+  {
+   "id": "t6",
+   "kind": "text",
+   "box": [
+    48.0,
+    6.0,
+    320.0,
+    60.0
+   ],
+   "font": "字体圈欣意冠黑体",
+   "font_px": 50,
+   "align": "LEFT",
+   "text": "财务规划",
+   "grad": [
+    "#BBBBBB",
+    "#F2F2F2",
+    "#FFFFFF",
+    "#BFBFBF",
+    "#D8D8D8"
+   ]
+  },
+  {
+   "id": "t7",
+   "kind": "text",
+   "box": [
+    150.0,
+    110.0,
+    980.0,
+    50.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 36,
+   "align": "CENTER",
+   "text": "融资 1000 万元 · 出让 30% 股权 · 三年累计销售收入 20 万元",
+   "grad": [
+    "#FCE9B8",
+    "#F2C14E",
+    "#E0A93B"
+   ]
+  },
+  {
+   "id": "t8",
+   "kind": "text",
+   "box": [
+    70.0,
+    204.0,
+    528.0,
+    40.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 30,
+   "align": "CENTER",
+   "text": "资金使用 · 分阶段执行计划",
+   "color": "#FFFFFF"
+  },
+  {
+   "id": "t9",
+   "kind": "text",
+   "box": [
+    454.0,
+    248.0,
+    150.0,
+    26.0
+   ],
+   "font": "BODY_M",
+   "font_px": 16,
+   "align": "RIGHT",
+   "text": "单位：资金占比",
+   "color": "#9DBDE6"
+  },
+  {
+   "id": "t10",
+   "kind": "text",
+   "box": [
+    98.0,
+    248.0,
+    120.0,
+    24.0
+   ],
+   "font": "BODY_M",
+   "font_px": 15,
+   "align": "LEFT",
+   "text": "当年投入占比",
+   "color": "#CFE0F5"
+  },
+  {
+   "id": "t11",
+   "kind": "text",
+   "box": [
+    95.22666666666666,
+    319.6923076923077,
+    154.88,
+    36.0
+   ],
+   "font": "DISP_NUM",
+   "font_px": 30,
+   "align": "CENTER",
+   "text": "40%",
+   "grad": [
+    "#FCE9B8",
+    "#F2C14E",
+    "#E0A93B"
+   ]
+  },
+  {
+   "id": "t12",
+   "kind": "text",
+   "box": [
+    95.22666666666666,
+    558.0,
+    154.88,
+    36.0
+   ],
+   "font": "BODY_M",
+   "font_px": 15,
+   "align": "CENTER",
+   "text": "第一年\n工艺优化·2家客户",
+   "color": "#CFE0F5"
+  },
+  {
+   "id": "t13",
+   "kind": "text",
+   "box": [
+    256.56,
+    319.6923076923077,
+    154.88,
+    36.0
+   ],
+   "font": "DISP_NUM",
+   "font_px": 30,
+   "align": "CENTER",
+   "text": "40%",
+   "grad": [
+    "#FCE9B8",
+    "#F2C14E",
+    "#E0A93B"
+   ]
+  },
+  {
+   "id": "t14",
+   "kind": "text",
+   "box": [
+    256.56,
+    558.0,
+    154.88,
+    36.0
+   ],
+   "font": "BODY_M",
+   "font_px": 15,
+   "align": "CENTER",
+   "text": "第二年\nTIE332-350·3家客户",
+   "color": "#CFE0F5"
+  },
+  {
+   "id": "t15",
+   "kind": "text",
+   "box": [
+    417.8933333333334,
+    415.8461538461538,
+    154.88,
+    36.0
+   ],
+   "font": "DISP_NUM",
+   "font_px": 30,
+   "align": "CENTER",
+   "text": "20%",
+   "grad": [
+    "#FCE9B8",
+    "#F2C14E",
+    "#E0A93B"
+   ]
+  },
+  {
+   "id": "t16",
+   "kind": "text",
+   "box": [
+    417.8933333333334,
+    558.0,
+    154.88,
+    36.0
+   ],
+   "font": "BODY_M",
+   "font_px": 15,
+   "align": "CENTER",
+   "text": "第三年\n矩阵完善·规模复制",
+   "color": "#CFE0F5"
+  },
+  {
+   "id": "t17",
+   "kind": "text",
+   "box": [
+    76.0,
+    622.0,
+    516.0,
+    44.0
+   ],
+   "font": "BODY",
+   "font_px": 15,
+   "align": "CENTER",
+   "text": "资金拨付与里程碑节点严格挂钩，核心团队与投资方协同监督，确保投入效率与目标一致。",
+   "color": "#CFE0F5"
+  },
+  {
+   "id": "t18",
+   "kind": "text",
+   "box": [
+    687.0,
+    204.0,
+    528.0,
+    40.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 30,
+   "align": "CENTER",
+   "text": "资金分配结构",
+   "color": "#FFFFFF"
+  },
+  {
+   "id": "t19",
+   "kind": "text",
+   "box": [
+    783.0,
+    361.0,
+    160.0,
+    30.0
+   ],
+   "font": "DISP_NUM",
+   "font_px": 30,
+   "align": "CENTER",
+   "text": "1000万",
+   "grad": [
+    "#FCE9B8",
+    "#F2C14E",
+    "#E0A93B"
+   ]
+  },
+  {
+   "id": "t20",
+   "kind": "text",
+   "box": [
+    783.0,
+    393.0,
+    160.0,
+    22.0
+   ],
+   "font": "BODY_M",
+   "font_px": 15,
+   "align": "CENTER",
+   "text": "专项融资",
+   "color": "#CFE0F5"
+  },
+  {
+   "id": "t21",
+   "kind": "text",
+   "box": [
+    741.0,
+    492.0,
+    192.0,
+    30.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 20,
+   "align": "LEFT",
+   "text": "研发投入",
+   "color": "#FFFFFF"
+  },
+  {
+   "id": "t22",
+   "kind": "text",
+   "box": [
+    851.0,
+    488.0,
+    86.0,
+    40.0
+   ],
+   "font": "DISP_NUM",
+   "font_px": 32,
+   "align": "RIGHT",
+   "text": "50%",
+   "grad": [
+    "#FCE9B8",
+    "#F2C14E",
+    "#E0A93B"
+   ]
+  },
+  {
+   "id": "t23",
+   "kind": "text",
+   "box": [
+    741.0,
+    530.0,
+    196.0,
+    38.0
+   ],
+   "font": "BODY",
+   "font_px": 14,
+   "align": "LEFT",
+   "text": "萃取剂工艺·新品TIE332-381",
+   "color": "#CFE0F5"
+  },
+  {
+   "id": "t24",
+   "kind": "text",
+   "box": [
+    1019.0,
+    492.0,
+    192.0,
+    30.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 20,
+   "align": "LEFT",
+   "text": "运营支出",
+   "color": "#FFFFFF"
+  },
+  {
+   "id": "t25",
+   "kind": "text",
+   "box": [
+    1129.0,
+    488.0,
+    86.0,
+    40.0
+   ],
+   "font": "DISP_NUM",
+   "font_px": 32,
+   "align": "RIGHT",
+   "text": "30%",
+   "grad": [
+    "#FCE9B8",
+    "#F2C14E",
+    "#E0A93B"
+   ]
+  },
+  {
+   "id": "t26",
+   "kind": "text",
+   "box": [
+    1019.0,
+    530.0,
+    196.0,
+    38.0
+   ],
+   "font": "BODY",
+   "font_px": 14,
+   "align": "LEFT",
+   "text": "管理·知产维护·流动资金",
+   "color": "#CFE0F5"
+  },
+  {
+   "id": "t27",
+   "kind": "text",
+   "box": [
+    741.0,
+    602.0,
+    192.0,
+    30.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 20,
+   "align": "LEFT",
+   "text": "市场推广",
+   "color": "#FFFFFF"
+  },
+  {
+   "id": "t28",
+   "kind": "text",
+   "box": [
+    851.0,
+    598.0,
+    86.0,
+    40.0
+   ],
+   "font": "DISP_NUM",
+   "font_px": 32,
+   "align": "RIGHT",
+   "text": "10%",
+   "grad": [
+    "#FCE9B8",
+    "#F2C14E",
+    "#E0A93B"
+   ]
+  },
+  {
+   "id": "t29",
+   "kind": "text",
+   "box": [
+    741.0,
+    640.0,
+    196.0,
+    38.0
+   ],
+   "font": "BODY",
+   "font_px": 14,
+   "align": "LEFT",
+   "text": "标杆对接·白皮书·精准营销",
+   "color": "#CFE0F5"
+  },
+  {
+   "id": "t30",
+   "kind": "text",
+   "box": [
+    1019.0,
+    602.0,
+    192.0,
+    30.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 20,
+   "align": "LEFT",
+   "text": "团队建设",
+   "color": "#FFFFFF"
+  },
+  {
+   "id": "t31",
+   "kind": "text",
+   "box": [
+    1129.0,
+    598.0,
+    86.0,
+    40.0
+   ],
+   "font": "DISP_NUM",
+   "font_px": 32,
+   "align": "RIGHT",
+   "text": "10%",
+   "grad": [
+    "#FCE9B8",
+    "#F2C14E",
+    "#E0A93B"
+   ]
+  },
+  {
+   "id": "t32",
+   "kind": "text",
+   "box": [
+    1019.0,
+    640.0,
+    196.0,
+    38.0
+   ],
+   "font": "BODY",
+   "font_px": 14,
+   "align": "LEFT",
+   "text": "研发工艺市场人才·激励",
+   "color": "#CFE0F5"
+  }
+ ]
+}

@@ -1,0 +1,21 @@
+{
+ "function": "bullet_marker",
+ "family": "",
+ "theme": "通用",
+ "palette": "dark blue and gold",
+ "prompt": "Full-bleed small circular tech bullet marker, deep navy blue dark center with thin gold ring border, tiny decorative crosshair dot, HUD dashboard aesthetic, no text no letters, dark blue and gold, centered, generous size, drawn in light luminous strokes on a solid pure black #000000 background, no white background, clean, no text, no words, no letters",
+ "size": "1280*1280",
+ "box": "24x24",
+ "composite": "normal",
+ "alpha": true,
+ "preserveAspectRatio": "none",
+ "final_size": [
+  1280,
+  1280
+ ],
+ "fill_frac": 0.995,
+ "opaque_frac": 0.03,
+ "stretch_vs_box": 1.0,
+ "warnings": [],
+ "render_hint": "place at box with preserveAspectRatio=\"none\", NORMAL blend (alpha is real)"
+}

@@ -1,0 +1,23 @@
+{
+ "items": [
+  {"type": "panel", "box": [78, 196, 360, 476], "radius": 14, "fill": [10, 38, 84, 115], "line": [242, 186, 2, 140], "glow": [242, 186, 2, 45]},
+  {"type": "panel", "box": [468, 196, 360, 476], "radius": 14, "fill": [8, 52, 78, 115], "line": [48, 192, 180, 150], "glow": [48, 192, 180, 50]},
+  {"type": "panel", "box": [858, 196, 360, 476], "radius": 14, "fill": [70, 18, 30, 115], "line": [229, 76, 94, 150], "glow": [229, 76, 94, 50]},
+
+  {"type": "circle", "x": 138, "y": 250, "r": 34, "line": [242, 186, 2, 255], "w": 3},
+  {"type": "circle", "x": 528, "y": 250, "r": 34, "line": [48, 192, 180, 255], "w": 3},
+  {"type": "circle", "x": 918, "y": 250, "r": 34, "line": [229, 76, 94, 255], "w": 3},
+
+  {"type": "number_backplate", "xy": [112, 218], "text": "1", "size": 70, "color": [242, 186, 2, 235]},
+  {"type": "number_backplate", "xy": [504, 218], "text": "2", "size": 70, "color": [48, 213, 180, 235]},
+  {"type": "number_backplate", "xy": [894, 218], "text": "3", "size": 70, "color": [229, 110, 124, 235]},
+
+  {"type": "underline", "x": 96, "y": 348, "w": 270, "color": [242, 186, 2, 220]},
+  {"type": "underline", "x": 486, "y": 348, "w": 290, "color": [48, 213, 180, 220]},
+  {"type": "underline", "x": 876, "y": 348, "w": 250, "color": [229, 76, 94, 220]},
+
+  {"type": "image", "asset": "s06_pic07.png", "box": [330, 560, 84, 90]},
+  {"type": "image", "asset": "s06_pic07.png", "box": [720, 560, 84, 90]},
+  {"type": "image", "asset": "s06_pic07.png", "box": [1110, 560, 84, 90]}
+ ]
+}

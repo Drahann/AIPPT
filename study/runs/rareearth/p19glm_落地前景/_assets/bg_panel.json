@@ -1,0 +1,21 @@
+{
+ "function": "bg_panel",
+ "family": "",
+ "theme": "通用",
+ "palette": "deep navy blue",
+ "prompt": "Full-bleed full canvas deep navy blue tech background panel, very dark blue gradient base, extremely subtle hexagonal mesh grid texture barely visible, faint scattered tech HUD elements like small circles and lines at extreme edges only, mostly clean dark navy center for content overlay, no text no letters, dark blue tones, the whole graphic FILLS THE ENTIRE IMAGE edge to edge, zero margin, full-bleed, on a solid pure black #000000 background, matte, no white background, clean, no text, no words, no letters",
+ "size": "1280*720",
+ "box": "1280x720",
+ "composite": "normal",
+ "alpha": true,
+ "preserveAspectRatio": "none",
+ "final_size": [
+  1280,
+  720
+ ],
+ "fill_frac": 1.0,
+ "opaque_frac": 0.003,
+ "stretch_vs_box": 1.0,
+ "warnings": [],
+ "render_hint": "place at box with preserveAspectRatio=\"none\", NORMAL blend (alpha is real)"
+}

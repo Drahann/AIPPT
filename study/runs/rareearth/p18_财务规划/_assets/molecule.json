@@ -1,0 +1,13 @@
+{
+ "function": "motif",
+ "family": "blue_tech",
+ "theme": "深蓝科技分子",
+ "palette": "cyan, electric blue, gold accents",
+ "prompt": "a 深蓝科技分子 central motif illustration, cyan, electric blue, gold accents, clean, abstract terpenoid molecular ring structure with glowing atom nodes and hexagonal lattice, circular composition, science chemistry, on pure solid black background, centered, high detail, no text, no words, no letters",
+ "size": "1280*1280",
+ "box": "200x200",
+ "composite": "screen",
+ "preserveAspectRatio": "none",
+ "aspect_matched": true,
+ "render_hint": "place at box with preserveAspectRatio=\"none\", style=\"mix-blend-mode:screen\""
+}

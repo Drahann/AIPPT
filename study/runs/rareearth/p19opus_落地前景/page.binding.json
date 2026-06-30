@@ -1,0 +1,195 @@
+{
+ "slots": {},
+ "extras": [
+  {
+   "type": "rect",
+   "box": [
+    0,
+    0,
+    1280,
+    720
+   ],
+   "rx": 0,
+   "fill": "rgba(3,12,30,0.46)"
+  },
+  {
+   "type": "image",
+   "box": [
+    66.0,
+    22.0,
+    130.0,
+    81.0
+   ],
+   "href": "_assets/p1_flankL.png",
+   "preserve": "none",
+   "function": "title_flank"
+  },
+  {
+   "type": "image",
+   "box": [
+    1084.0,
+    22.0,
+    130.0,
+    81.0
+   ],
+   "href": "_assets/p1_flankR.png",
+   "preserve": "none",
+   "flipH": true,
+   "function": "title_flank"
+  },
+  {
+   "type": "line",
+   "p": [
+    226.0,
+    74.0,
+    760.0,
+    74.0
+   ],
+   "color": "rgba(11,249,254,0.55)",
+   "w": 2
+  },
+  {
+   "type": "image",
+   "box": [
+    122.0,
+    110.0,
+    150.0,
+    130.0
+   ],
+   "href": "_assets/p1_motif.png",
+   "preserve": "none",
+   "function": "motif"
+  },
+  {
+   "type": "line",
+   "p": [
+    436.0,
+    318.0,
+    478.0,
+    288.0
+   ],
+   "color": "rgba(11,249,254,0.5)",
+   "w": 2
+  },
+  {
+   "type": "line",
+   "p": [
+    838.0,
+    288.0,
+    880.0,
+    258.0
+   ],
+   "color": "rgba(11,249,254,0.5)",
+   "w": 2
+  },
+  {
+   "type": "image",
+   "box": [
+    70.0,
+    248.0,
+    372.0,
+    450.0
+   ],
+   "href": "_assets/p1_card1.png",
+   "preserve": "none",
+   "function": "card_frame"
+  },
+  {
+   "type": "image",
+   "box": [
+    106.0,
+    266.0,
+    300.0,
+    128.0
+   ],
+   "href": "_assets/p1_ribbon.png",
+   "preserve": "none",
+   "function": "ribbon"
+  },
+  {
+   "type": "image",
+   "box": [
+    91.0,
+    420.0,
+    330.0,
+    250.0
+   ],
+   "href": "_assets/p1_bgpanel.png",
+   "preserve": "none",
+   "function": "bg_panel"
+  },
+  {
+   "type": "image",
+   "box": [
+    472.0,
+    218.0,
+    372.0,
+    450.0
+   ],
+   "href": "_assets/p1_card1.png",
+   "preserve": "none",
+   "function": "card_frame"
+  },
+  {
+   "type": "image",
+   "box": [
+    508.0,
+    236.0,
+    300.0,
+    128.0
+   ],
+   "href": "_assets/p1_ribbon.png",
+   "preserve": "none",
+   "function": "ribbon"
+  },
+  {
+   "type": "image",
+   "box": [
+    493.0,
+    390.0,
+    330.0,
+    250.0
+   ],
+   "href": "_assets/p1_bgpanel.png",
+   "preserve": "none",
+   "function": "bg_panel"
+  },
+  {
+   "type": "image",
+   "box": [
+    874.0,
+    188.0,
+    372.0,
+    450.0
+   ],
+   "href": "_assets/p1_card1.png",
+   "preserve": "none",
+   "function": "card_frame"
+  },
+  {
+   "type": "image",
+   "box": [
+    910.0,
+    206.0,
+    300.0,
+    128.0
+   ],
+   "href": "_assets/p1_ribbon.png",
+   "preserve": "none",
+   "function": "ribbon"
+  },
+  {
+   "type": "image",
+   "box": [
+    895.0,
+    360.0,
+    330.0,
+    250.0
+   ],
+   "href": "_assets/p1_bgpanel.png",
+   "preserve": "none",
+   "function": "bg_panel"
+  }
+ ],
+ "drop_unbound_placeholders": false
+}

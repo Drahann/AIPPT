@@ -1,0 +1,319 @@
+{
+  "canvas": [
+    1280,
+    720
+  ],
+  "shapes": [
+    {
+      "id": "ttl_eq",
+      "kind": "text",
+      "box": [
+        70,
+        120,
+        320,
+        30
+      ],
+      "font": "字体圈欣意冠黑体",
+      "font_px": 22,
+      "color": "#FFFFFF",
+      "align": "LEFT"
+    },
+    {
+      "id": "ttl_use",
+      "kind": "text",
+      "box": [
+        700,
+        120,
+        360,
+        30
+      ],
+      "font": "字体圈欣意冠黑体",
+      "font_px": 22,
+      "color": "#FFFFFF",
+      "align": "LEFT"
+    },
+    {
+      "id": "bn1",
+      "kind": "text",
+      "box": [
+        470,
+        176,
+        360,
+        40
+      ],
+      "font": "字体圈欣意冠黑体",
+      "font_px": 30,
+      "color": "#FFFFFF",
+      "align": "CENTER"
+    },
+    {
+      "id": "bn2",
+      "kind": "text",
+      "box": [
+        470,
+        222,
+        360,
+        30
+      ],
+      "font": "BODY_M",
+      "font_px": 16,
+      "color": "#15F7F9",
+      "align": "CENTER"
+    },
+    {
+      "id": "bn3",
+      "kind": "text",
+      "box": [
+        470,
+        256,
+        360,
+        24
+      ],
+      "font": "BODY",
+      "font_px": 13,
+      "color": "#CFE0F2",
+      "align": "CENTER"
+    },
+    {
+      "id": "u_h",
+      "kind": "text",
+      "box": [
+        70,
+        372,
+        360,
+        24
+      ],
+      "font": "BODY_B",
+      "font_px": 16,
+      "color": "#FFC000",
+      "align": "LEFT"
+    },
+    {
+      "id": "u1",
+      "kind": "text",
+      "box": [
+        70,
+        404,
+        290,
+        40
+      ],
+      "font": "BODY",
+      "font_px": 12.5,
+      "color": "#DCE8F6",
+      "align": "LEFT"
+    },
+    {
+      "id": "u2",
+      "kind": "text",
+      "box": [
+        70,
+        448,
+        290,
+        40
+      ],
+      "font": "BODY",
+      "font_px": 12.5,
+      "color": "#DCE8F6",
+      "align": "LEFT"
+    },
+    {
+      "id": "u3",
+      "kind": "text",
+      "box": [
+        70,
+        492,
+        290,
+        40
+      ],
+      "font": "BODY",
+      "font_px": 12.5,
+      "color": "#DCE8F6",
+      "align": "LEFT"
+    },
+    {
+      "id": "u4",
+      "kind": "text",
+      "box": [
+        70,
+        536,
+        290,
+        40
+      ],
+      "font": "BODY",
+      "font_px": 12.5,
+      "color": "#DCE8F6",
+      "align": "LEFT"
+    },
+    {
+      "id": "g_h",
+      "kind": "text",
+      "box": [
+        400,
+        372,
+        360,
+        24
+      ],
+      "font": "BODY_B",
+      "font_px": 16,
+      "color": "#FFC000",
+      "align": "LEFT"
+    },
+    {
+      "id": "g1",
+      "kind": "text",
+      "box": [
+        400,
+        404,
+        350,
+        38
+      ],
+      "font": "BODY",
+      "font_px": 12.5,
+      "color": "#DCE8F6",
+      "align": "LEFT"
+    },
+    {
+      "id": "g2",
+      "kind": "text",
+      "box": [
+        400,
+        444,
+        350,
+        38
+      ],
+      "font": "BODY",
+      "font_px": 12.5,
+      "color": "#DCE8F6",
+      "align": "LEFT"
+    },
+    {
+      "id": "g3",
+      "kind": "text",
+      "box": [
+        400,
+        484,
+        350,
+        38
+      ],
+      "font": "BODY",
+      "font_px": 12.5,
+      "color": "#DCE8F6",
+      "align": "LEFT"
+    },
+    {
+      "id": "g4",
+      "kind": "text",
+      "box": [
+        400,
+        524,
+        350,
+        56
+      ],
+      "font": "BODY",
+      "font_px": 12.5,
+      "color": "#DCE8F6",
+      "align": "LEFT"
+    },
+    {
+      "id": "c_h",
+      "kind": "text",
+      "box": [
+        790,
+        366,
+        420,
+        24
+      ],
+      "font": "BODY_B",
+      "font_px": 16,
+      "color": "#FFC000",
+      "align": "LEFT"
+    },
+    {
+      "id": "cost1n",
+      "kind": "text",
+      "box": [
+        800,
+        408,
+        160,
+        44
+      ],
+      "font": "DISP_NUM",
+      "font_px": 36,
+      "grad": [
+        "#15F7F9",
+        "#FFFFFF"
+      ],
+      "align": "CENTER"
+    },
+    {
+      "id": "cost1l",
+      "kind": "text",
+      "box": [
+        800,
+        454,
+        160,
+        22
+      ],
+      "font": "BODY",
+      "font_px": 13,
+      "color": "#CFE0F2",
+      "align": "CENTER"
+    },
+    {
+      "id": "cost2n",
+      "kind": "text",
+      "box": [
+        980,
+        408,
+        160,
+        44
+      ],
+      "font": "DISP_NUM",
+      "font_px": 36,
+      "color": "#8AA9CE",
+      "align": "CENTER"
+    },
+    {
+      "id": "cost2l",
+      "kind": "text",
+      "box": [
+        980,
+        454,
+        160,
+        22
+      ],
+      "font": "BODY",
+      "font_px": 13,
+      "color": "#9FB6D4",
+      "align": "CENTER"
+    },
+    {
+      "id": "cost3n",
+      "kind": "text",
+      "box": [
+        800,
+        498,
+        340,
+        44
+      ],
+      "font": "DISP_NUM",
+      "font_px": 30,
+      "color": "#FFC000",
+      "align": "CENTER"
+    },
+    {
+      "id": "cost3l",
+      "kind": "text",
+      "box": [
+        800,
+        544,
+        340,
+        36
+      ],
+      "font": "BODY",
+      "font_px": 12,
+      "color": "#CFE0F2",
+      "align": "CENTER"
+    }
+  ]
+}

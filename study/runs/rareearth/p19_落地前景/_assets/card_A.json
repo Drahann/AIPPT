@@ -1,0 +1,17 @@
+{
+ "function": "card_frame",
+ "family": "blue_tech",
+ "theme": "tech",
+ "palette": "deep navy blue, royal blue, cyan glow, gold edge",
+ "prompt": "decorative tech card frame border with a hollow transparent center, ornate glowing edges, deep navy blue, royal blue, cyan glow, gold edge colors, rounded rectangle HUD card frame, glowing thin border, empty dark center, sci-fi tech panel, on pure solid black background, centered, high detail, no text, no words, no letters",
+ "size": "1280*736",
+ "box": "372x212",
+ "composite": "screen",
+ "preserveAspectRatio": "none",
+ "aspect_matched": true,
+ "cropped_to_content": [
+  1280,
+  736
+ ],
+ "render_hint": "place at box with preserveAspectRatio=\"none\", style=\"mix-blend-mode:screen\""
+}

@@ -1,0 +1,633 @@
+{
+ "canvas": [
+  1280,
+  720
+ ],
+ "shapes": [
+  {
+   "id": "t1",
+   "kind": "text",
+   "box": [
+    108.0,
+    40.0,
+    760.0,
+    64.0
+   ],
+   "font": "DISP_KAI",
+   "font_px": 52,
+   "align": "LEFT",
+   "text": "创新技术",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t2",
+   "kind": "text",
+   "box": [
+    112.0,
+    110.0,
+    820.0,
+    26.0
+   ],
+   "font": "BODY_M",
+   "font_px": 16,
+   "align": "LEFT",
+   "text": "三项核心技术体系 · 高纯制备 / 疏水定向调控 / 纳米涂层稳定 · 全链条创新突破",
+   "color": "#C3D6F2"
+  },
+  {
+   "id": "t3",
+   "kind": "text",
+   "box": [
+    78.0,
+    140.0,
+    1130.0,
+    24.0
+   ],
+   "font": "BODY",
+   "font_px": 15,
+   "align": "LEFT",
+   "text": "针对导管涂层原料成本高（单支超15元）、批次稳定性弱、功能单一等瓶颈，系统构建三项核心技术，聚焦高纯蛋白制备、疏水定向调控与纳米涂层稳定，实现从原料纯化到功能涂层的全链条创新突破。",
+   "color": "#C3D6F2"
+  },
+  {
+   "id": "t4",
+   "kind": "text",
+   "box": [
+    76.0,
+    190.0,
+    60.0,
+    30.0
+   ],
+   "font": "DISP_NUM",
+   "font_px": 26,
+   "align": "LEFT",
+   "text": "01",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t5",
+   "kind": "text",
+   "box": [
+    56.0,
+    192.0,
+    373.0,
+    30.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 23,
+   "align": "CENTER",
+   "text": "组合排杂纯化",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t6",
+   "kind": "text",
+   "box": [
+    76.0,
+    230.0,
+    333.0,
+    48.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 18,
+   "align": "CENTER",
+   "text": "大米蛋白组合排杂纯化技术",
+   "color": "#FFFFFF"
+  },
+  {
+   "id": "t7",
+   "kind": "text",
+   "box": [
+    56.0,
+    304.0,
+    373.0,
+    70.0
+   ],
+   "font": "DISP_NUM",
+   "font_px": 62,
+   "align": "CENTER",
+   "text": "99.99",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t8",
+   "kind": "text",
+   "box": [
+    327.5,
+    326.0,
+    40.0,
+    30.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 26,
+   "align": "LEFT",
+   "text": "%",
+   "color": "#F2D290"
+  },
+  {
+   "id": "t9",
+   "kind": "text",
+   "box": [
+    56.0,
+    376.0,
+    373.0,
+    24.0
+   ],
+   "font": "BODY_M",
+   "font_px": 16,
+   "align": "CENTER",
+   "text": "蛋白纯度（传统工艺 ≤85%）",
+   "color": "#BFE8FF"
+  },
+  {
+   "id": "t10",
+   "kind": "text",
+   "box": [
+    108.0,
+    416.0,
+    295.0,
+    24.0
+   ],
+   "font": "BODY",
+   "font_px": 15.5,
+   "align": "LEFT",
+   "text": "内毒素降至 0.005 EU/mg",
+   "color": "#EAF3FF"
+  },
+  {
+   "id": "t11",
+   "kind": "text",
+   "box": [
+    108.0,
+    444.0,
+    295.0,
+    24.0
+   ],
+   "font": "BODY",
+   "font_px": 15.5,
+   "align": "LEFT",
+   "text": "回收率稳定 60%",
+   "color": "#EAF3FF"
+  },
+  {
+   "id": "t12",
+   "kind": "text",
+   "box": [
+    108.0,
+    472.0,
+    295.0,
+    24.0
+   ],
+   "font": "BODY",
+   "font_px": 15.5,
+   "align": "LEFT",
+   "text": "批次误差 RSD ＜ 3%",
+   "color": "#EAF3FF"
+  },
+  {
+   "id": "t13",
+   "kind": "text",
+   "box": [
+    108.0,
+    500.0,
+    295.0,
+    24.0
+   ],
+   "font": "BODY",
+   "font_px": 15.5,
+   "align": "LEFT",
+   "text": "满足医用辅料级标准",
+   "color": "#EAF3FF"
+  },
+  {
+   "id": "t14",
+   "kind": "text",
+   "box": [
+    80.0,
+    596.0,
+    325.0,
+    20.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 14,
+   "align": "LEFT",
+   "text": "代表性成果",
+   "color": "#F2D290"
+  },
+  {
+   "id": "t15",
+   "kind": "text",
+   "box": [
+    80.0,
+    618.0,
+    325.0,
+    32.0
+   ],
+   "font": "BODY",
+   "font_px": 13.5,
+   "align": "LEFT",
+   "text": "发明专利 CN202510262436.6 · Foods / J.Food Eng（SCI Q1）2篇",
+   "color": "#CFE0F2"
+  },
+  {
+   "id": "t16",
+   "kind": "text",
+   "box": [
+    473.0,
+    190.0,
+    60.0,
+    30.0
+   ],
+   "font": "DISP_NUM",
+   "font_px": 26,
+   "align": "LEFT",
+   "text": "02",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t17",
+   "kind": "text",
+   "box": [
+    453.0,
+    192.0,
+    373.0,
+    30.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 23,
+   "align": "CENTER",
+   "text": "pH共架改性",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t18",
+   "kind": "text",
+   "box": [
+    473.0,
+    230.0,
+    333.0,
+    48.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 18,
+   "align": "CENTER",
+   "text": "大米蛋白 pH 共架改性增溶技术",
+   "color": "#FFFFFF"
+  },
+  {
+   "id": "t19",
+   "kind": "text",
+   "box": [
+    453.0,
+    304.0,
+    373.0,
+    70.0
+   ],
+   "font": "DISP_NUM",
+   "font_px": 62,
+   "align": "CENTER",
+   "text": "96.8",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t20",
+   "kind": "text",
+   "box": [
+    707.5,
+    326.0,
+    40.0,
+    30.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 26,
+   "align": "LEFT",
+   "text": "%",
+   "color": "#F2D290"
+  },
+  {
+   "id": "t21",
+   "kind": "text",
+   "box": [
+    453.0,
+    376.0,
+    373.0,
+    24.0
+   ],
+   "font": "BODY_M",
+   "font_px": 16,
+   "align": "CENTER",
+   "text": "蛋白溶解度（传统 ＜10%）",
+   "color": "#BFE8FF"
+  },
+  {
+   "id": "t22",
+   "kind": "text",
+   "box": [
+    505.0,
+    416.0,
+    295.0,
+    24.0
+   ],
+   "font": "BODY",
+   "font_px": 15.5,
+   "align": "LEFT",
+   "text": "摩擦系数低至 0.001（优于肝素）",
+   "color": "#EAF3FF"
+  },
+  {
+   "id": "t23",
+   "kind": "text",
+   "box": [
+    505.0,
+    444.0,
+    295.0,
+    24.0
+   ],
+   "font": "BODY",
+   "font_px": 15.5,
+   "align": "LEFT",
+   "text": "抗凝活性亚组分 ＞30%",
+   "color": "#EAF3FF"
+  },
+  {
+   "id": "t24",
+   "kind": "text",
+   "box": [
+    505.0,
+    472.0,
+    295.0,
+    24.0
+   ],
+   "font": "BODY",
+   "font_px": 15.5,
+   "align": "LEFT",
+   "text": "分子分散性显著提升",
+   "color": "#EAF3FF"
+  },
+  {
+   "id": "t25",
+   "kind": "text",
+   "box": [
+    505.0,
+    500.0,
+    295.0,
+    24.0
+   ],
+   "font": "BODY",
+   "font_px": 15.5,
+   "align": "LEFT",
+   "text": "破解水相功能协同壁垒",
+   "color": "#EAF3FF"
+  },
+  {
+   "id": "t26",
+   "kind": "text",
+   "box": [
+    477.0,
+    596.0,
+    325.0,
+    20.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 14,
+   "align": "LEFT",
+   "text": "代表性成果",
+   "color": "#F2D290"
+  },
+  {
+   "id": "t27",
+   "kind": "text",
+   "box": [
+    477.0,
+    618.0,
+    325.0,
+    32.0
+   ],
+   "font": "BODY",
+   "font_px": 13.5,
+   "align": "LEFT",
+   "text": "发明专利 CN202610489470.1 · Food&Bioprocess Tech（SCI Q1）",
+   "color": "#CFE0F2"
+  },
+  {
+   "id": "t28",
+   "kind": "text",
+   "box": [
+    870.0,
+    190.0,
+    60.0,
+    30.0
+   ],
+   "font": "DISP_NUM",
+   "font_px": 26,
+   "align": "LEFT",
+   "text": "03",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t29",
+   "kind": "text",
+   "box": [
+    850.0,
+    192.0,
+    373.0,
+    30.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 23,
+   "align": "CENTER",
+   "text": "纳米共组装",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t30",
+   "kind": "text",
+   "box": [
+    870.0,
+    230.0,
+    333.0,
+    48.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 18,
+   "align": "CENTER",
+   "text": "谷-清蛋白纳米共组装涂层稳定技术",
+   "color": "#FFFFFF"
+  },
+  {
+   "id": "t31",
+   "kind": "text",
+   "box": [
+    850.0,
+    304.0,
+    373.0,
+    70.0
+   ],
+   "font": "DISP_NUM",
+   "font_px": 62,
+   "align": "CENTER",
+   "text": "98.2",
+   "grad": [
+    "#FBF1C6",
+    "#F2D290",
+    "#E2B25E"
+   ]
+  },
+  {
+   "id": "t32",
+   "kind": "text",
+   "box": [
+    1104.5,
+    326.0,
+    40.0,
+    30.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 26,
+   "align": "LEFT",
+   "text": "%",
+   "color": "#F2D290"
+  },
+  {
+   "id": "t33",
+   "kind": "text",
+   "box": [
+    850.0,
+    376.0,
+    373.0,
+    24.0
+   ],
+   "font": "BODY_M",
+   "font_px": 16,
+   "align": "CENTER",
+   "text": "血栓抑制率",
+   "color": "#BFE8FF"
+  },
+  {
+   "id": "t34",
+   "kind": "text",
+   "box": [
+    902.0,
+    416.0,
+    295.0,
+    24.0
+   ],
+   "font": "BODY",
+   "font_px": 15.5,
+   "align": "LEFT",
+   "text": "涂层划痕脱落面积 ＜2%",
+   "color": "#EAF3FF"
+  },
+  {
+   "id": "t35",
+   "kind": "text",
+   "box": [
+    902.0,
+    444.0,
+    295.0,
+    24.0
+   ],
+   "font": "BODY",
+   "font_px": 15.5,
+   "align": "LEFT",
+   "text": "血小板黏附率降至 17.9%",
+   "color": "#EAF3FF"
+  },
+  {
+   "id": "t36",
+   "kind": "text",
+   "box": [
+    902.0,
+    472.0,
+    295.0,
+    24.0
+   ],
+   "font": "BODY",
+   "font_px": 15.5,
+   "align": "LEFT",
+   "text": "单支涂层成本降低 60%",
+   "color": "#EAF3FF"
+  },
+  {
+   "id": "t37",
+   "kind": "text",
+   "box": [
+    902.0,
+    500.0,
+    295.0,
+    24.0
+   ],
+   "font": "BODY",
+   "font_px": 15.5,
+   "align": "LEFT",
+   "text": "全面优于进口肝素",
+   "color": "#EAF3FF"
+  },
+  {
+   "id": "t38",
+   "kind": "text",
+   "box": [
+    874.0,
+    596.0,
+    325.0,
+    20.0
+   ],
+   "font": "DISP_TITLE",
+   "font_px": 14,
+   "align": "LEFT",
+   "text": "代表性成果",
+   "color": "#F2D290"
+  },
+  {
+   "id": "t39",
+   "kind": "text",
+   "box": [
+    874.0,
+    618.0,
+    325.0,
+    32.0
+   ],
+   "font": "BODY",
+   "font_px": 13.5,
+   "align": "LEFT",
+   "text": "发明专利 CN202510600358.6 · J.Cereal Sci / CCA（SCI Q2）3篇",
+   "color": "#CFE0F2"
+  }
+ ]
+}
