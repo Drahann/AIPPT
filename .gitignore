@@ -1,0 +1,34 @@
+# ============ secrets (never commit) ============
+**/keys.local.json
+*.key
+
+# ============ huge / external / regenerable (NOT versioned) ============
+# template library (many GB of .pptx) — external input
+挑战杯*/
+# ppt-master is its own git repo (reference project, not part of this project)
+ppt-master/
+# built corpus + decoration library + test outputs (regenerable artifacts; large image sets)
+study/corpus/
+study/assets_lib/
+study/runs/
+# earlier exploration scratch dirs
+study/loop/
+study/build_loop/
+study/contact_sheets/
+study/renders/
+study/metrics/
+study/assets/
+
+# ============ python / misc caches ============
+**/__pycache__/
+*.pyc
+*.tmp
+*.log
+
+# ============ local IDE/editor ============
+.vscode/
+.idea/
+
+# ============ .claude: keep only the skills, ignore local settings/logs ============
+.claude/*
+!.claude/skills
