@@ -56,24 +56,26 @@ def gen_one_rotating(keys, prompt, out, size, negative, start=0):
 
 # function -> prompt scaffold. {theme}/{palette} filled in.  ALL decorations key out to REAL alpha
 # (luminance->alpha) + NORMAL blend (2026-06-30 用户问题4).
-# STYLE (2026-06-30 用户定调): 创赛=学术严谨气质，但**不要扁平成纯色块**。装饰应**精致、有质感、可带纹理/角部
-# 装饰/花纹**，配色与繁简由调用方(prompt-smith)自由发挥，可从克制到适度华丽——唯一红线=**别太光污染、别太
-# 塑料**(no neon/bloom/glossy-plastic/3D/game). 固定 SCAFFOLD 只是兜底，首选 --prompt 现场为每个装饰位设计。
-STYLE = ("refined elegant {palette} decoration with tasteful texture, fine detailing and corner ornament welcome, "
-         "cohesive deep-tech academic mood, matte to soft sheen (never glossy plastic), restrained-to-ornate but clean")
+# STYLE (2026-06-30 用户再校准): 风格**跟随 deck 大类**({theme}=科技/HUD/红旅/农业/医疗…)，配色繁简由调用方
+# (prompt-smith)自由发挥。**适度科技风/适度 HUD 带光感都可以** —— 之前的真问题只是"**过度**塑料/光污染"。
+# 所以唯一红线=**别过度**(no GARISH/over-glow/cheap-plastic/light-pollution)，不再一刀切禁 glow/HUD。
+# 固定 SCAFFOLD 只是兜底，首选 `--prompt` 现场为每个装饰位+这页主题设计。
+STYLE = ("polished {palette} decoration cohesive with the deck's {theme} look, tasteful with refined detailing; "
+         "moderate tech / HUD accents and soft glow are fine — only avoid an OVERDONE garish over-glowing "
+         "cheap-plastic light-pollution look")
 SCAFFOLD = {
-    'card_frame':       "a refined deep-tech information card frame, crisp {palette} border with tasteful corner ornaments and a subtle surface texture near the edges, dark translucent fill, center kept clean for text, " + STYLE,
-    'title_flank':      "an elegant geometric title-side ornament with fine {palette} detailing, " + STYLE,
-    'corner_hud':       "a finely detailed right-angle corner bracket ornament, {palette}, " + STYLE,
-    'number_backplate': "an elegant {palette} ring/medallion backplate with fine detailing, hollow center for a number, " + STYLE,
-    'divider':          "a refined horizontal {palette} divider with a small ornament at center, " + STYLE,
-    'ribbon':           "a refined {palette} header banner bar with tasteful end ornaments, hollow center, " + STYLE,
-    'glow':             "a very faint soft {palette} radial gradient haze, subtle, no streaks",
-    'motif':            "a {palette} monoline outline icon of {theme}, elegant light strokes, dark-mode infographic icon on black, refined, " + STYLE,
-    'bullet_marker':    "a small refined {palette} dot or diamond marker with fine detailing, " + STYLE,
-    'avatar_ring':      "an elegant {palette} circular frame ring with fine detailing, hollow center, " + STYLE,
-    'connector':        "a refined {palette} arrow / flow connector, " + STYLE,
-    'bg_panel':         "a refined deep-tech panel with a subtle {palette} surface texture and a tasteful edge, mostly clean for text, " + STYLE,
+    'card_frame':       "a {theme} information card frame, {palette} border with tasteful detailing, center kept clean for text, " + STYLE,
+    'title_flank':      "a {theme} title-side ornament, {palette}, " + STYLE,
+    'corner_hud':       "a {theme} corner HUD bracket ornament, {palette}, " + STYLE,
+    'number_backplate': "a {theme} ring / medallion backplate for a number, {palette}, hollow center, " + STYLE,
+    'divider':          "a {theme} horizontal divider with a center ornament, {palette}, " + STYLE,
+    'ribbon':           "a {theme} header banner bar, {palette}, hollow center, " + STYLE,
+    'glow':             "a soft {palette} ambient glow / haze, no harsh streaks",
+    'motif':            "a {theme} monoline icon, {palette}, light strokes on black, dark-mode infographic, " + STYLE,
+    'bullet_marker':    "a small {theme} dot or diamond marker, {palette}, " + STYLE,
+    'avatar_ring':      "a {theme} circular frame ring, {palette}, hollow center, " + STYLE,
+    'connector':        "a {theme} arrow / flow connector, {palette}, " + STYLE,
+    'bg_panel':         "a {theme} panel surface, {palette}, mostly clean for text, " + STYLE,
 }
 
 # functions that MUST fill their box edge-to-edge (a frame inset by margin looks shrunken). For these the
@@ -155,12 +157,12 @@ def main():
         rail = ("centered, generous size, drawn in light luminous strokes on a solid pure black #000000 "
                 "background, no white background")
     prompt = base + (f", {a.extra}" if a.extra else "") + f", {rail}, clean, no text, no words, no letters"
-    # anti-PLASTIC negative (bans neon/glow/3D/game) but ALLOWS tasteful texture/pattern — '花纹' is wanted,
-    # only the light-pollution game look is not (2026-06-30 用户: 别扁平成色块、要精致花纹、但别塑料).
+    # negative bans only the OVERDONE extreme (2026-06-30 用户再校准: 适度科技/HUD/光感 OK，只禁过度塑料/光污染).
+    # Moderate glow & HUD are ALLOWED — keep mechanism guards (no white bg / no text) + only the garish extreme.
     neg = ("white background, light background, paper, beige, dark ink on white, "
            "text, watermark, logo, letters, words, chinese characters, signature, small inset, wide black margin, "
-           "photo, neon, bright glow, bloom, lens flare, glossy plastic, shiny, chrome, metallic, 3D render, "
-           "heavy bevel, holographic, video game UI, cyberpunk, oversaturated, garish")
+           "photo, garish, oversaturated, cheap plastic toy, glossy plastic, overblown bloom, excessive glow, "
+           "light pollution, gaudy, tacky")
     size, preserve, matched = pick_size(a.box)
 
     from crop_deco import crop_to_content, keyout_black_to_alpha, content_fill_stats

@@ -70,3 +70,5 @@ COM `Slides.Item(i)` 1-based · SVG→PNG 必 Chrome 顶层 + `file:///` 绝对 
 
 ## 6 · 交付
 每页：`page.svg` + `page.png` + `page.record.json` + `page.binding.json` + 与参考 render 的 `_cmp.png`。报告：参考 page_id、内容覆盖(零删减)、与参考相似度、装饰(库件/AI 生各几张·是否按框各自生)、**`page_gate` 全绿截图/输出**、诚实问题。
+
+**整本导出 .pptx**：所有页都 `page_gate` 全绿后，`python export_pptx.py -o deck.pptx --deck runs/<deck> [--hires]` → 按页号把各页拼成 **16:9 .pptx**(一页一张全幅图=已过门的渲染，`--hires` 用 SVG 2x 重栅格更清晰)。也可显式给页目录定顺序。注：当前是"一页一图"忠实导出(文字已烤进图、不可在 PPT 内编辑)；可编辑文字的原生 pptx 路径仍 parked。
