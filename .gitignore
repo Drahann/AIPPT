@@ -17,6 +17,8 @@ ppt-master/
 .qwen/
 # standalone archive of study/ (large, regenerable)
 study.zip
+corpus.tar.gz
+corpus.part*
 
 # ============ internal scratch / regenerable ============
 study/runs/_transcripts/
