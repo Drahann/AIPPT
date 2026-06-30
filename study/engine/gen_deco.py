@@ -56,22 +56,24 @@ def gen_one_rotating(keys, prompt, out, size, negative, start=0):
 
 # function -> prompt scaffold. {theme}/{palette} filled in.  ALL decorations key out to REAL alpha
 # (luminance->alpha) + NORMAL blend (2026-06-30 用户问题4).
-# STYLE (2026-06-30 用户问题2 重做): 创赛=学术/政务严谨气质，NOT a neon video-game UI. Decorations must be
-# RESTRAINED, FLAT, MATTE — thin precise lines, low contrast, understated. Avoid glow/neon/glossy/3D/HUD.
-STYLE = "flat minimal vector infographic style, thin precise lines, matte, restrained, understated, low contrast, professional academic"
+# STYLE (2026-06-30 用户定调): 创赛=学术严谨气质，但**不要扁平成纯色块**。装饰应**精致、有质感、可带纹理/角部
+# 装饰/花纹**，配色与繁简由调用方(prompt-smith)自由发挥，可从克制到适度华丽——唯一红线=**别太光污染、别太
+# 塑料**(no neon/bloom/glossy-plastic/3D/game). 固定 SCAFFOLD 只是兜底，首选 --prompt 现场为每个装饰位设计。
+STYLE = ("refined elegant {palette} decoration with tasteful texture, fine detailing and corner ornament welcome, "
+         "cohesive deep-tech academic mood, matte to soft sheen (never glossy plastic), restrained-to-ornate but clean")
 SCAFFOLD = {
-    'card_frame':       "a clean rectangular card outline, thin crisp {palette} 1px border, matte dark translucent fill, subtle rounded corners, hollow empty center, " + STYLE,
-    'title_flank':      "a small understated geometric title-side ornament, thin {palette} lines, " + STYLE,
-    'corner_hud':       "a single thin minimal right-angle corner bracket, fine {palette} lines, " + STYLE,
-    'number_backplate': "a simple flat thin {palette} ring / circle outline backplate, matte, hollow empty center, " + STYLE,
-    'divider':          "a thin clean horizontal {palette} rule line with a small center dot, " + STYLE,
-    'ribbon':           "a flat matte {palette} header bar with a subtle notch, low contrast, hollow empty center, " + STYLE,
-    'glow':             "a very faint soft {palette} radial gradient haze, extremely subtle, barely visible, no streaks",
-    'motif':            "a thin {palette} monoline outline icon of {theme}, luminous light strokes, dark-mode infographic icon on black, single-weight, " + STYLE,
-    'bullet_marker':    "a small simple flat {palette} dot or diamond marker, " + STYLE,
-    'avatar_ring':      "a thin flat {palette} circular frame ring, hollow center, " + STYLE,
-    'connector':        "a thin clean {palette} arrow line, " + STYLE,
-    'bg_panel':         "a flat matte rounded panel with a very subtle {palette} tint and a thin quiet edge, low contrast, mostly empty, " + STYLE,
+    'card_frame':       "a refined deep-tech information card frame, crisp {palette} border with tasteful corner ornaments and a subtle surface texture near the edges, dark translucent fill, center kept clean for text, " + STYLE,
+    'title_flank':      "an elegant geometric title-side ornament with fine {palette} detailing, " + STYLE,
+    'corner_hud':       "a finely detailed right-angle corner bracket ornament, {palette}, " + STYLE,
+    'number_backplate': "an elegant {palette} ring/medallion backplate with fine detailing, hollow center for a number, " + STYLE,
+    'divider':          "a refined horizontal {palette} divider with a small ornament at center, " + STYLE,
+    'ribbon':           "a refined {palette} header banner bar with tasteful end ornaments, hollow center, " + STYLE,
+    'glow':             "a very faint soft {palette} radial gradient haze, subtle, no streaks",
+    'motif':            "a {palette} monoline outline icon of {theme}, elegant light strokes, dark-mode infographic icon on black, refined, " + STYLE,
+    'bullet_marker':    "a small refined {palette} dot or diamond marker with fine detailing, " + STYLE,
+    'avatar_ring':      "an elegant {palette} circular frame ring with fine detailing, hollow center, " + STYLE,
+    'connector':        "a refined {palette} arrow / flow connector, " + STYLE,
+    'bg_panel':         "a refined deep-tech panel with a subtle {palette} surface texture and a tasteful edge, mostly clean for text, " + STYLE,
 }
 
 # functions that MUST fill their box edge-to-edge (a frame inset by margin looks shrunken). For these the
@@ -122,11 +124,16 @@ def main():
     ap.add_argument('--palette', default='#19E0FF,#04102B')
     ap.add_argument('--box', default='')
     ap.add_argument('--extra', default='', help='extra prompt detail')
+    ap.add_argument('--prompt', default='', help='PROMPT-SMITH MODE: full custom subject prompt designed on '
+                    'the spot for THIS decoration (overrides the fixed per-function SCAFFOLD). The style '
+                    'guard-rails (full-bleed, black bg, alpha keyout, anti-plastic negative) are still applied.')
     ap.add_argument('-o', '--out', required=True)
     a = ap.parse_args()
     KEYS = _load_keys(a.key)
     start = random.randrange(len(KEYS)) if KEYS else 0    # stagger start so parallel agents don't all hit key[0]
-    scaff = SCAFFOLD.get(a.function, "a {theme} decorative element, {palette}")
+    # base subject: prompt-smith custom prompt if given, else the fixed function scaffold
+    base = a.prompt if a.prompt else SCAFFOLD.get(a.function, "a {theme} decorative element, {palette}").format(
+        theme=a.theme, palette=a.palette)
     # ---- aspect-feasibility guard: refuse box aspects a frame/panel can't be drawn full-bleed at
     #      (this is what produced the bg_panel ×2.23 stretch — a 6:1 box clamped to 2.8:1 then stretched).
     box_asp = None
@@ -140,19 +147,20 @@ def main():
                  f"'{a.function}'. The model would draw it at ~{max(0.42,min(2.4,box_asp)):.2f} and the placement "
                  f"would STRETCH it. Fix: use a box within aspect {SAFE_ASPECT}, or split this strip into "
                  f"stacked rows / use a different function. (2026-06-30 用户问题2)")
-    # ---- FULL-BLEED instruction so the subject reaches all four edges (no black margin to crop away) ----
-    fill = ("the design FILLS THE ENTIRE IMAGE edge to edge, touching all four borders, zero margin, "
-            "full-bleed composition") if a.function in FILL_FRAME else "centered, generous size"
-    # MUST render on solid black with LIGHT-colored strokes so the luminance keyout yields true alpha
-    # (line-art motifs otherwise default to dark-ink-on-white, which can't be keyed -> 2026-06-30 用户问题2).
-    prompt = (scaff.format(theme=a.theme, palette=a.palette)
-              + (f", {a.extra}" if a.extra else "")
-              + f", {fill}, drawn in light luminous {a.palette} strokes on a solid pure black #000000 background, "
-              + "clean, no text, no words, no letters")
+    # ---- guard-rails (always applied, even in prompt-smith mode) ----
+    if a.function in FILL_FRAME:                           # frames/panels must reach all four edges
+        rail = ("the whole graphic FILLS THE ENTIRE IMAGE edge to edge, zero margin, full-bleed, "
+                "on a solid pure black #000000 background, matte, no white background")
+    else:                                                  # motifs/icons: light strokes on black so keyout works
+        rail = ("centered, generous size, drawn in light luminous strokes on a solid pure black #000000 "
+                "background, no white background")
+    prompt = base + (f", {a.extra}" if a.extra else "") + f", {rail}, clean, no text, no words, no letters"
+    # anti-PLASTIC negative (bans neon/glow/3D/game) but ALLOWS tasteful texture/pattern — '花纹' is wanted,
+    # only the light-pollution game look is not (2026-06-30 用户: 别扁平成色块、要精致花纹、但别塑料).
     neg = ("white background, light background, paper, beige, dark ink on white, "
            "text, watermark, logo, letters, words, chinese characters, signature, small inset, wide black margin, "
-           "photo, neon, glow, glowing, bloom, lens flare, glossy, plastic, shiny, metallic, 3D render, bevel, "
-           "holographic, sci-fi HUD, video game UI, cyberpunk, oversaturated, vibrant, busy, ornate")
+           "photo, neon, bright glow, bloom, lens flare, glossy plastic, shiny, chrome, metallic, 3D render, "
+           "heavy bevel, holographic, video game UI, cyberpunk, oversaturated, garish")
     size, preserve, matched = pick_size(a.box)
 
     from crop_deco import crop_to_content, keyout_black_to_alpha, content_fill_stats

@@ -50,11 +50,13 @@ description: 从计划书(按 H2 切页)生成"金奖级"创赛 PPT 页。复刻
 - **`page_gate.py <pXX 目录> --ref <page_id> --cards N` → S6 一键全门(PROVENANCE+FONT-FLOOR+deco_check)。这页 gate 全绿=完成。`RAMP`/`FONT_FLOOR` 字号常量也在此文件。**
 - `clean_base.py <deck_id> <out.png>` → 无内容纯场景底图。
 - `render_page.py` → 确定性渲染(plate + 文字 shapes + extras{image/pie/cards/line/rect/pill})；`svg_to_png.py` → 栅格化。
-- `gen_deco.py --function <f> --box WxH --palette "颜色词" -o out.png` → AI 生功能装饰(默认 `qwen-image-2.0-pro`，**已固化 full-bleed + 真 alpha + 极端比例拒绝**)。`dashscope_t2i.py` → 内容图/主视觉。key 自动读 `engine/keys.local.json`。
+- `gen_deco.py --function <f> --box WxH [--prompt "现场设计的完整提示词"] [--palette "颜色词"] -o out.png` → AI 生功能装饰(默认 `qwen-image-2.0-pro`；**已固化 full-bleed + 真 alpha + 自适应 keyout + 极端比例拒绝 + 5-key 轮询 + 防塑料 negative**)。**`--prompt` = prompt-smith 现场设计(首选)**；省略则用固定模板兜底。`dashscope_t2i.py` → 内容图/主视觉。key 自动读 `engine/keys.local.json`。
 - `deco_stats.py` / `reclassify_family.py` / `corpus_index.py` → 装饰密度参照 / 修 family 错标 / 重建索引。
 
 ### 生图要点
-- **风格=学术/政务严谨，不是网游 UI**(2026-06-30 用户问题2)：装饰要 **flat / matte / 细线 / 低对比 / line-art**，**禁霓虹·发光·塑料·光污染·3D·金属高光·游戏 HUD**(已写进 `gen_deco` scaffold + negative)。线稿 `motif` 用**亮色细线画在黑底**(模型爱画"深线条+白底"→keyout 失败；`gen_deco` 会报 `OPAQUE` 警告，按提示重生)。
+- **风格定调(2026-06-30 用户)**：学术严谨气质，但**别扁平成纯色块**——装饰要**精致、有质感、可带纹理/角部装饰/花纹**(科技网格、cyber 角标、等高线刻度、主题水印纹…)。**配色、繁简、华丽程度由你自由发挥**，可从克制到适度华丽；**唯一红线=别太光污染、别太塑料**(no 霓虹/bloom/塑料高光/3D/金属/游戏 HUD)。卡片**中心留干净给文字**，纹理集中边缘/角部。
+- **优先 prompt-smith 现场设计**：`gen_deco --prompt "<你为这个装饰位现场写的完整提示词>"` 覆盖固定 SCAFFOLD（护栏=full-bleed/黑底/alpha keyout/防塑料 negative 仍自动加）。不传 `--prompt` 才退回 per-function 模板兜底。**别千篇一律套模板**——按这页内容/这个框的语义量身设计。
+- 线稿 `motif` 用**亮色细线画在黑底**(模型爱画"深线条+白底"→keyout 失败；`gen_deco` 报 `OPAQUE` 警告则重生)。
 - **先算 box 再生图**：每张装饰先定它在 1280×720 的目标 box(W×H)，用那个 box 传 `--box`，1:1 放(`preserve:none`)。卡框/pill/长条各按各自 box 分别生。
 - **框比例别太极端**：full-bleed 类(card_frame/bg_panel/ribbon…)框比例须在 **0.42–2.40**，否则 `gen_deco` 直接拒绝(模型画不满→拉伸)。细长条要么拆成堆叠行、要么本就该是更矮胖的面板。
 - `--palette` 传**颜色词不传 hex**(防烤乱码字)；徽章/数字衬板 AI 易烤字→优先库件或"空心几何无数字"重生。
